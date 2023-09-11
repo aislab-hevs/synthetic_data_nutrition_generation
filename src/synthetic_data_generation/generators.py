@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 from prettytable import PrettyTable, ALL, FRAME
 from html import escape
 from scipy.stats import bernoulli
-
+from tqdm import tqdm
 
 # Constants
 person_entity = {
@@ -267,7 +267,8 @@ def generate_user_life_style_data(list_user_id: List[str],
     for k, v in BMI_probabilities_dict.items():
         BMI_values.append(k)
         BMI_prob.append(v)
-    bmis = np.random.choice(BMI_values, size=500, replace=True, p=BMI_prob)
+    bmis = np.random.choice(BMI_values, size=num_users,
+                            replace=True, p=BMI_prob)
     df_user_entity["BMI"] = bmis
     # Generate height
     male_height = np.random.normal(170, 10, 500)
@@ -297,6 +298,7 @@ def generate_user_life_style_data(list_user_id: List[str],
 def generate_health_condition_data(list_user_id: List[str], allergies_probability_dict: Dict[str, Any]):
     df_health_conditions = pd.DataFrame(data=[], columns=["userId", "allergy"])
     df_health_conditions["userId"] = list_user_id
+    num_users = len(list_user_id)
     # Allergy array and probabilities
     allergies = []
     allergies_prob = []
@@ -304,7 +306,7 @@ def generate_health_condition_data(list_user_id: List[str], allergies_probabilit
         allergies.append(k)
         allergies_prob.append(v)
     user_allergies = np.random.choice(
-        allergies, size=500, replace=True, p=allergies_prob)
+        allergies, size=num_users, replace=True, p=allergies_prob)
     df_health_conditions["allergy"] = user_allergies
     return df_health_conditions
 
@@ -627,6 +629,7 @@ def create_a_summary_table(df_total_user, dict_recommendations, simulation_days=
                   "afternoon snacks": 0.4,
                   "lunch": 0.05,
                   "dinner": 0.2}
+    # TODO: add error control to all the functions
     # Create table
     table = HTML_Table(cols=max_cols)
     total_users = df_total_user.shape[0]
@@ -672,7 +675,13 @@ def create_a_summary_table(df_total_user, dict_recommendations, simulation_days=
     for allergy in allergy_index:
         temp_cols = []
         for hl, per_condition_patient in weight_condition.items():
-            users_count = df_counts.loc[(hl, allergy), 'userId']
+            # check number
+            row_number = df_counts.query(
+                "allergy == '{allergy}' and BMI == '{hl}'").shape[0]
+            if row_number > 0:
+                users_count = df_counts.loc[(hl, allergy), 'userId']
+            else:
+                users_count = 0
             temp_cols.append(f"<td style=\"text-align: left;\">{allergy}: {users_count}\
                 <font color=\"red\">({np.round((users_count/total_users)*100, 2)} % total)</font> \
                 <font color=\"green\">({np.round((users_count/per_condition_patient)*100, 2)} % relative)</font> </td>")
@@ -688,7 +697,13 @@ def create_a_summary_table(df_total_user, dict_recommendations, simulation_days=
     for allergy in allergy_index:
         temp_cols = []
         for hl, per_condition_patient in weight_condition.items():
-            users_count = df_counts.loc[(hl, allergy), 'userId']
+            # check number
+            row_number = df_counts.query(
+                "cultural_factor == '{allergy}' and BMI == '{hl}'").shape[0]
+            if row_number > 0:
+                users_count = df_counts.loc[(hl, allergy), 'userId']
+            else:
+                users_count = 0
             temp_cols.append(f"<td style=\"text-align: left;\">{allergy}: {users_count}\
                 <font color=\"red\">({np.round((users_count/total_users)*100, 2)} % total)</font> \
                 <font color=\"green\">({np.round((users_count/per_condition_patient)*100, 2)} % relative)</font> </td>")
@@ -701,7 +716,8 @@ def create_a_summary_table(df_total_user, dict_recommendations, simulation_days=
         df_users_list = []
         users = df_total_user[df_total_user["BMI"] == key]["userId"].tolist()
         for u in users:
-            df_users_list.append(dict_recommendations[u])
+            if u in dict_recommendations.keys():
+                df_users_list.append(dict_recommendations[u])
         temp_dict[key] = pd.concat(df_users_list, axis=0)
     # visualize
     total_recipes = []
@@ -742,3 +758,133 @@ def create_a_summary_table(df_total_user, dict_recommendations, simulation_days=
         table.add_row(f"<tr><td style=\"text-align: left;\", colspan={max_cols}>Total {meal}:\
             {total_recommendations} ({total_meal} uniques)</td></tr>")
     return table
+
+# Legacy simulation function to be eliminated in the future version.
+
+
+def generate_simulations(df_user, transition_matrix, df_recipes_db, days_to_simulated=365):
+    meals_dict = {"breakfast": 0.3,
+                  "morning snacks": 0.05,
+                  "afternoon snacks": 0.4,
+                  "lunch": 0.05,
+                  "dinner": 0.2}
+    simulation_results = {}
+    df_recipes_db["allergies"] = df_recipes_db["allergies"].fillna("")
+    for i in range(len(df_user)):
+        try:
+            user_db = df_user.iloc[i, :]
+            current_state = user_db.BMI
+            # possible_transition = list(transition_matrix[current_state].keys())
+            # if len(possible_transition) > 2:
+            #     next_state = np.random.choice(possible_transition, size=1)
+            # else:
+            #     next_state = np.random.choice(possible_transition, size=1)
+            #     print(f"User next state: {next_state}")
+            print(f"Simulating for user: {user_db.userId}")
+            df_recommendations = pd.DataFrame(columns=[f"{k}_calories" for k in meals_dict.keys()]+list(meals_dict.keys()),
+                                              index=np.arange(1, days_to_simulated+1))
+            # filter cultural factor and allergies
+            # allergy restrictions filter
+            allergies_factor = user_db.allergy
+            if allergies_factor != "None":
+                filtered_recipe_db = df_recipes_db[df_recipes_db["allergies"].str.contains(
+                    allergies_factor)]
+            else:
+                filtered_recipe_db = df_recipes_db
+            if filtered_recipe_db.shape[0] == 0:
+                filtered_recipe_db = df_recipes_db
+            # cultural restrictions filter
+            cultural_factor = user_db.cultural_factor
+            if cultural_factor != "None":
+                cultural_factor = cultural_factor.split("_")[0]
+                filtered_recipe_db = filtered_recipe_db[filtered_recipe_db["cultural_restriction"]
+                                                        == cultural_factor]
+            else:
+                filtered_recipe_db = df_recipes_db
+            if filtered_recipe_db.shape[0] == 0:
+                filtered_recipe_db = df_recipes_db
+            for meal_tp in list(meals_dict.keys()):
+                # generate recommendations
+                # print(f"meal {meal_tp}")
+                daily_calories = user_db.projected_daily_calories
+                meal_db = filtered_recipe_db[filtered_recipe_db["meal_type"] == meal_tp]
+                # print(meal_db.shape)
+                if meal_db.shape[0] == 0:
+                    meal_db = filtered_recipe_db
+                max_calories_meal = daily_calories * meals_dict[meal_tp]
+                possible_recipes = meal_db[meal_db["calories"]
+                                           <= max_calories_meal+np.random.normal(0, 50)]
+                if possible_recipes.shape[0] == 0:
+                    possible_recipes = meal_db
+                choose_recipes = possible_recipes.sample(
+                    days_to_simulated, replace=True)
+                df_recommendations[meal_tp] = choose_recipes["title"].values
+                df_recommendations[f"{meal_tp}_calories"] = choose_recipes["calories"].values
+            simulation_results[f"{user_db.userId}"] = df_recommendations
+        except Exception as e:
+            print(f"Error processing user: {df_user.iloc[i, 0]}, {e}")
+            continue
+    return simulation_results
+
+# Full pipeline to simulation
+
+
+def run_full_simulation(num_users: int,
+                        gender_probabilities: Dict[str, Any],
+                        BMI_probabilities: Dict[str, Any],
+                        allergies_probability_dict: Dict[str, Any],
+                        food_restriction_probability_dict: Dict[str, Any],
+                        flexi_probabilities: Dict[str, Any],
+                        probability_transition_matrix: np.ndarray,
+                        df_recipes: pd.DataFrame,
+                        meals_proba: Dict[str, Any]
+                        ):
+    # Generate user data
+    df_personal_data = generate_personal_data(num_users=num_users,
+                                              person_entity=person_entity,
+                                              gender_probabilities=gender_probabilities)
+    # Generate user status
+    df_user_entity = generate_user_life_style_data(df_personal_data["userId"].tolist(),
+                                                   user_entity=user_entity,
+                                                   df_personal_data=df_personal_data,
+                                                   BMI_probabilities_dict=BMI_probabilities)
+    # Generate health conditions
+    df_health_conditions = generate_health_condition_data(df_personal_data["userId"].tolist(),
+                                                          allergies_probability_dict=allergies_probability_dict)
+    # Generate user goals
+    df_user_goals = generate_user_goals(df_personal_data["userId"].tolist(),
+                                        df_user_entity=df_user_entity)
+    # Generate cultural factors
+    df_cultural_factors = generate_cultural_data(df_personal_data["userId"].tolist(),
+                                                 food_restriction_probability_dict=food_restriction_probability_dict,
+                                                 flexi_probability_dict=flexi_probabilities)
+    # Generate therapy
+    df_treatment, df_user_data = generate_therapy_data(df_personal_data["userId"].tolist(),
+                                                       df_personal_data=df_personal_data,
+                                                       df_user_entity=df_user_entity,
+                                                       df_user_goals=df_user_goals)
+    # Simulate the transition matrix
+    counts = df_user_entity.groupby(by="BMI").count()["userId"]
+    transition_matrix = simulate_final_result(probability_matrix=probability_transition_matrix,
+                                              samples_size_list=dict(
+                                                  counts.items()),
+                                              state_list=counts.index)
+    # unify all the dataframes
+    df_user_join = df_user_data.merge(df_treatment, on="userId")
+    df_user_join = df_user_join.merge(df_cultural_factors,  on="userId")
+    df_user_join = df_user_join.merge(df_health_conditions,  on="userId")
+    df_user_join = df_user_join.merge(
+        df_user_entity[["userId", "BMI"]],  on="userId")
+    # Load recipes database
+    df_recipes_filter = df_recipes[df_recipes["calories"] >= 0.0]
+    # Generates meals plan
+    meals_plan = generate_meals_plan_per_user(
+        df_user_join["userId"].tolist(), meals_proba)
+    # Execute simulation
+    simulation_results = generate_recommendations(df_user_join,
+                                                  transition_matrix=transition_matrix, df_recipes_db=df_recipes_filter,
+                                                  meals_plan=meals_plan,
+                                                  flexi_probabilities_dict=flexi_probabilities)
+    # Create a summary table
+    table = create_a_summary_table(df_user_join, simulation_results)
+    return simulation_results, df_user_join, table
