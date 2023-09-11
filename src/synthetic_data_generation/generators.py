@@ -676,8 +676,10 @@ def create_a_summary_table(df_total_user, dict_recommendations, simulation_days=
         temp_cols = []
         for hl, per_condition_patient in weight_condition.items():
             # check number
+            print(f"hl: {hl}, allergy: {allergy}")
             row_number = df_counts.query(
-                "allergy == '{allergy}' and BMI == '{hl}'").shape[0]
+                f'allergy.str.contains("{allergy.strip()}") and BMI.str.contains("{hl.strip()}")').shape[0]
+            print(f"row number: {row_number}")
             if row_number > 0:
                 users_count = df_counts.loc[(hl, allergy), 'userId']
             else:
@@ -699,7 +701,8 @@ def create_a_summary_table(df_total_user, dict_recommendations, simulation_days=
         for hl, per_condition_patient in weight_condition.items():
             # check number
             row_number = df_counts.query(
-                "cultural_factor == '{allergy}' and BMI == '{hl}'").shape[0]
+                f'cultural_factor.str.contains("{allergy.strip()}") and BMI.str.contains("{hl.strip()}")'
+            ).shape[0]
             if row_number > 0:
                 users_count = df_counts.loc[(hl, allergy), 'userId']
             else:
