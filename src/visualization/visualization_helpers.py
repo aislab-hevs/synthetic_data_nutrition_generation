@@ -5,8 +5,42 @@ import ipywidgets as widgets
 import io
 from collections import OrderedDict
 from typing import Any
+import numpy as np
+import pandas as pd
 
-from synthetic_data_generation.generators import (person_entity)
+from synthetic_data_generation.generators import (person_entity,
+                                                  run_full_simulation)
+
+
+def values_from_dictionary(dictionary):
+    new_dict = {}
+    for k, v in dictionary.items():
+        new_dict[k] = v.value
+    return new_dict
+
+
+def execute_simulation(num_users, num_days, dictionaries, probability_transition_matrix, df_recipes, progress_bar=None):
+    # Todo check dictionaries probabilities
+    # Todo: Get values from dictionaries and send to the simulation function
+    simulation_results, df_user_join, table = run_full_simulation(
+        num_users=num_users,
+        gender_probabilities=values_from_dictionary(
+            dictionaries['gender_probabilities']),
+        BMI_probabilities=values_from_dictionary(
+            dictionaries['BMI_probabilities']),
+        allergies_probability_dict=values_from_dictionary(
+            dictionaries['allergies_probability_dict']),
+        food_restriction_probability_dict=values_from_dictionary(
+            dictionaries['food_restriction_probability_dict']),
+        flexi_probabilities={k: values_from_dictionary(
+            dictionaries['flexi_probabilities'][k]) for k in dictionaries['flexi_probabilities'].keys()},
+        probability_transition_matrix=probability_transition_matrix,
+        df_recipes=df_recipes,
+        meals_proba=values_from_dictionary(dictionaries['meals_proba']),
+        progress_bar=progress_bar,
+        num_days=num_days
+    )
+    return simulation_results, df_user_join, table
 
 
 class FloatProgressBar:
@@ -31,7 +65,7 @@ class FloatProgressBar:
 
     def update(self, value: float, bar_status: str = 'info'):
         if value <= self.max_val and value >= self.min_val:
-            self.progress_bar.value = value
+            self.progress_bar.value += value
             self.progress_bar.bar_style = bar_status
             self._respond_calculus()
 
@@ -45,6 +79,7 @@ class FloatProgressBar:
         value = self.progress_bar.value
         if value >= self.max_val:
             self.progress_bar.bar_style = default_description
+            self.progress_bar.description = "success"
 
 
 class DictValidator:
@@ -72,7 +107,7 @@ class DictValidator:
         self.valid_widget.value = valid_value
 
 
-def form_probability_dict(proba_dict, widget_class, **kwargs):
+def form_probability_dict(proba_dict, widget_class, exclude_validator=False, **kwargs):
     # layout = widgets.Layout(width='auto', height='40px')
     style = {'description_width': 'initial'}
     validator = DictValidator(proba_dict)
@@ -95,7 +130,8 @@ def form_probability_dict(proba_dict, widget_class, **kwargs):
                 style=style,
             )
         # Add observer
-        proba_dict[k].observe(validator.validator_event)
+        if not exclude_validator:
+            proba_dict[k].observe(validator.validator_event)
     if len(proba_dict.keys()) > 3:
         vbox = widgets.VBox(list(proba_dict.values()) +
                             [validator.get_validator_widget()])
@@ -163,14 +199,73 @@ class NotebookUIBuilder:
         return self.main_accordion
 
 
+def process_simulation_results(simulation_results_dict):
+    list_dataframes = []
+    for k in simulation_results_dict.keys():
+        temp_df = simulation_results_dict.get(k)
+        if temp_df is not None:
+            temp_df["userId"] = k
+            list_dataframes.append(temp_df)
+    # concatenate dataframes
+    final_df = pd.concat(list_dataframes, axis=0)
+    return final_df
+
+
 class ExecuteButton:
-    def __init__(self, progress_bar: FloatProgressBar) -> None:
+    def __init__(self, progress_bar: FloatProgressBar, num_users, num_days, dictionaries) -> None:
         self.progress_bar = progress_bar
+        self.num_users = num_users
+        self.num_days = num_days
+        self.dictionaries = dictionaries
         pass
 
     def execute_simulation(self):
         self.progress_bar.display()
-        pass
+        # execute simulation
+        probability_transition_matrix = np.array([[0.65, 0.35, 0.0, 0.0],
+                                                  [0.05, 0.80, 0.15, 0.0],
+                                                  [0.0, 0.28, 0.67, 0.05],
+                                                  [0.0, 0.0, 0.35, 0.65]
+                                                  ])
+        # load recipes data
+        df_recipes = pd.read_csv("processed_recipes_dataset.csv", sep="|")
+        simulation_results, df_user_join, table = execute_simulation(num_users=self.num_users.value,
+                                                                     dictionaries=self.dictionaries,
+                                                                     probability_transition_matrix=probability_transition_matrix,
+                                                                     df_recipes=df_recipes,
+                                                                     progress_bar=self.progress_bar,
+                                                                     num_days=self.num_days.value)
+        self.simulation_results = simulation_results
+        self.df_user_join = df_user_join
+        self.table = table
+        # Show download buttons
+        df_tracking = process_simulation_results(
+            simulation_results_dict=simulation_results)
+        csv_buffer = df_user_join.to_csv()
+        tracking_csv = df_tracking.to_csv()
+        button_1 = DownloadButton(
+            resource=table.render(),
+            filename="summary.html",
+            extension="html",
+            description="Summary Table"
+        )
+
+        button_2 = DownloadButton(
+            resource=csv_buffer,
+            filename="user_data.csv",
+            extension="csv",
+            description="User's data"
+        )
+
+        button_3 = DownloadButton(
+            resource=tracking_csv,
+            filename="tracking.csv",
+            extension="csv",
+            description="User's tracking data"
+        )
+
+        display(HTML(button_1.get_html_button()), HTML(
+            button_2.get_html_button()), HTML(button_3.get_html_button()))
 
     def is_finished(self):
         pass
@@ -200,8 +295,8 @@ def build_full_ui():
     # Allergy array and probabilities
     allergies = ["cow's milk", "eggs", "peanut", "soy",
                  "fish", "tree nuts", "shellfish", "wheat", "None"]
-    allergies_prob = [0.075, 0.075, 0.075,
-                      0.075, 0.075, 0.075, 0.075, 0.075, 0.4]
+    allergies_prob = [0.1, 0.1, 0.1,
+                      0.1, 0.1, 0.1, 0.1, 0.1, 0.2]
     allergies_probability_dict = dict(zip(allergies, allergies_prob))
     # generate different probabilities for the flexible
     food_restrictions = ["vegan_observant",
@@ -245,7 +340,7 @@ def build_full_ui():
                                  "titles": "Allergies"}
     dict_widgets['food_restrictions'] = {"widget_list": form_probability_dict(food_restriction_probability_dict, widgets.FloatSlider, min=0, max=1.0),
                                          "titles": "Food restrictions"}
-    dict_widgets['meal_probabilities'] = {"widget_list": form_probability_dict(meals_proba, widgets.FloatSlider, min=0, max=1.0),
+    dict_widgets['meal_probabilities'] = {"widget_list": form_probability_dict(meals_proba, widgets.FloatSlider, exclude_validator=True, min=0, max=1.0),
                                           "titles": "Meal probabilities"}
     dict_widgets['flexible_probabilities'] = {"widget_list": widgets.Accordion(children=[form_probability_dict(flexi_probabilities[k], widgets.FloatSlider, min=0, max=1.0) for k in flexi_probabilities.keys()],
                                                                                titles=[k.replace("_", " ") for k in flexi_probabilities.keys()]),
@@ -263,7 +358,20 @@ def build_full_ui():
                                       tooltip="Click to start the data generation")
 
     p_bar = FloatProgressBar()
-    button_control = ExecuteButton(p_bar)
+    # parameters
+    # Test the function general
+    general_dict = {
+        'gender_probabilities': gender_probabilities,
+        'BMI_probabilities': BMI_probabilities,
+        'allergies_probability_dict': allergies_probability_dict,
+        'food_restriction_probability_dict': food_restriction_probability_dict,
+        'flexi_probabilities': flexi_probabilities,
+        'meals_proba': meals_proba
+    }
+    button_control = ExecuteButton(p_bar,
+                                   num_users=NUM_USERS,
+                                   num_days=NUM_DAYS,
+                                   dictionaries=general_dict)
     execution_button.on_click(button_control.button_callback)
     display(top_box)
     main_widget.display()

@@ -514,7 +514,8 @@ def generate_recommendations(df_user, transition_matrix,
                              df_recipes_db,
                              meals_plan,
                              flexi_probabilities_dict: dict[str, Any],
-                             days_to_simulated=365):
+                             days_to_simulated=365,
+                             progress_bar=None):
     meals_dict = {"breakfast": 0.3,
                   "morning snacks": 0.05,
                   "afternoon snacks": 0.4,
@@ -524,16 +525,21 @@ def generate_recommendations(df_user, transition_matrix,
         flexi_probabilities_dict=flexi_probabilities_dict)
     simulation_results = {}
     df_recipes_db["allergies"] = df_recipes_db["allergies"].fillna("")
+    update_amount = 90.0/len(df_user)
+    if transition_matrix is not None:
+        pass
     for i in range(len(df_user)):
         # Generate recommendations for each user
         try:
+            if progress_bar is not None:
+                progress_bar.update(update_amount)
             user_db = df_user.iloc[i, :]
             daily_calories = user_db.projected_daily_calories
             daily_calories_list = [
                 daily_calories for i in range(days_to_simulated)]
             flexi_probas = None
             current_state = user_db.BMI
-            print(f"Simulating for user: {user_db.userId}")
+            # print(f"Simulating for user: {user_db.userId}")
             df_recommendations = pd.DataFrame(columns=[f"{k}_calories" for k in meals_dict.keys()]+list(meals_dict.keys()),
                                               index=np.arange(1, days_to_simulated+1))
             # filter cultural factor and allergies
@@ -557,8 +563,8 @@ def generate_recommendations(df_user, transition_matrix,
                 # get flexi_proba
                 flexi_class = df_user.loc[i, "probabilities"]
                 flexi_probas = dict_flexi_probas[flexi_class]
-                print(f"Flexi probas: {flexi_probas}")
-                print(f"Flexi condition: {flexi_class}")
+                # print(f"Flexi probas: {flexi_probas}")
+                # print(f"Flexi condition: {flexi_class}")
             else:
                 filtered_recipe_db = df_recipes_db
             if filtered_recipe_db.shape[0] == 0:
@@ -566,7 +572,7 @@ def generate_recommendations(df_user, transition_matrix,
                 filtered_recipe_db = df_recipes_db
             for meal_tp in ["lunch", "dinner", "breakfast", "morning snacks", "afternoon snacks"]:
                 # generate recommendations
-                print(f"meal {meal_tp}")
+                # print(f"meal {meal_tp}")
                 # generate meals according to meals plan
                 meal = meals_plan[meal_tp]
                 if meal[i] != 0:
@@ -578,7 +584,7 @@ def generate_recommendations(df_user, transition_matrix,
                     for j in range(days_to_simulated):
                         # flexi
                         if flexi_probas is not None:
-                            print("Flexi proba...")
+                            # print("Flexi proba...")
                             list_flexi_classes = [
                                 k for k in flexi_probas.keys()]
                             list_flexi_probas = [flexi_probas[k]
@@ -589,7 +595,7 @@ def generate_recommendations(df_user, transition_matrix,
                                 flexi_meal = flexi_meal.split("_")[0]
                                 meal_db = meal_db[meal_db["cultural_restriction"]
                                                   == flexi_meal]
-                            print(f"Flexi meal chose: {flexi_meal}")
+                            # print(f"Flexi meal chose: {flexi_meal}")
                             if meal_db.shape[0] == 0:
                                 meal_db = filtered_recipe_db[filtered_recipe_db["meal_type"] == meal_tp]
                         max_calories_meal = daily_calories_list[j] * \
@@ -618,12 +624,12 @@ def generate_recommendations(df_user, transition_matrix,
                         0 for i in range(days_to_simulated)]
             simulation_results[f"{user_db.userId}"] = df_recommendations
         except Exception as e:
-            print(f"Error processing user: {df_user.iloc[i, 0]}, {e}")
+            # print(f"Error processing user: {df_user.iloc[i, 0]}, {e}")
             continue
     return simulation_results
 
 
-def create_a_summary_table(df_total_user, dict_recommendations, simulation_days=365, max_cols=4, round_digits=0):
+def create_a_summary_table(df_total_user, dict_recommendations, max_cols=4, round_digits=0):
     meals_dict = {"breakfast": 0.3,
                   "morning snacks": 0.05,
                   "afternoon snacks": 0.4,
@@ -633,6 +639,8 @@ def create_a_summary_table(df_total_user, dict_recommendations, simulation_days=
     # Create table
     table = HTML_Table(cols=max_cols)
     total_users = df_total_user.shape[0]
+    random_user = np.random.choice(list(dict_recommendations.keys()))
+    simulation_days = dict_recommendations.get(random_user).shape[0]
     # Add rows to the table
     table.add_row(
         "<tr><th style=\"text-align: center;\" colspan=\"{span_cols}\"><strong>Tracking simulation: {days} days</strong></th></tr>".format(
@@ -676,10 +684,10 @@ def create_a_summary_table(df_total_user, dict_recommendations, simulation_days=
         temp_cols = []
         for hl, per_condition_patient in weight_condition.items():
             # check number
-            print(f"hl: {hl}, allergy: {allergy}")
+            # print(f"hl: {hl}, allergy: {allergy}")
             row_number = df_counts.query(
                 f'allergy.str.contains("{allergy.strip()}") and BMI.str.contains("{hl.strip()}")').shape[0]
-            print(f"row number: {row_number}")
+            # print(f"row number: {row_number}")
             if row_number > 0:
                 users_count = df_counts.loc[(hl, allergy), 'userId']
             else:
@@ -747,7 +755,7 @@ def create_a_summary_table(df_total_user, dict_recommendations, simulation_days=
         total_recipes.append(len(temp_dict[key]))
         list_vals = [len(temp_dict[key][x].unique())
                      for x in meals_dict.keys()]
-        print(list_vals)
+        # print(list_vals)
         flat_list = []
         total_recipes_unique.append(sum(list_vals))
     table.add_row("<tr>{values}</tr>".format(
@@ -783,7 +791,7 @@ def generate_simulations(df_user, transition_matrix, df_recipes_db, days_to_simu
             # else:
             #     next_state = np.random.choice(possible_transition, size=1)
             #     print(f"User next state: {next_state}")
-            print(f"Simulating for user: {user_db.userId}")
+            # print(f"Simulating for user: {user_db.userId}")
             df_recommendations = pd.DataFrame(columns=[f"{k}_calories" for k in meals_dict.keys()]+list(meals_dict.keys()),
                                               index=np.arange(1, days_to_simulated+1))
             # filter cultural factor and allergies
@@ -840,7 +848,9 @@ def run_full_simulation(num_users: int,
                         flexi_probabilities: Dict[str, Any],
                         probability_transition_matrix: np.ndarray,
                         df_recipes: pd.DataFrame,
-                        meals_proba: Dict[str, Any]
+                        meals_proba: Dict[str, Any],
+                        progress_bar=None,
+                        num_days: int = 365
                         ):
     # Generate user data
     df_personal_data = generate_personal_data(num_users=num_users,
@@ -883,11 +893,16 @@ def run_full_simulation(num_users: int,
     # Generates meals plan
     meals_plan = generate_meals_plan_per_user(
         df_user_join["userId"].tolist(), meals_proba)
+    # update bar
+    if progress_bar is not None:
+        progress_bar.update(10.0)
     # Execute simulation
     simulation_results = generate_recommendations(df_user_join,
                                                   transition_matrix=transition_matrix, df_recipes_db=df_recipes_filter,
                                                   meals_plan=meals_plan,
-                                                  flexi_probabilities_dict=flexi_probabilities)
+                                                  flexi_probabilities_dict=flexi_probabilities,
+                                                  days_to_simulated=num_days,
+                                                  progress_bar=progress_bar)
     # Create a summary table
     table = create_a_summary_table(df_user_join, simulation_results)
     return simulation_results, df_user_join, table
