@@ -53,6 +53,7 @@ class FloatProgressBar:
                  orientation='horizontal') -> None:
         self.min_val = min_value
         self.max_val = max_values
+        self.description = description
         self.progress_bar = widgets.FloatProgress(
             value=initial_value,
             min=min_value,
@@ -72,6 +73,11 @@ class FloatProgressBar:
     def display(self):
         display(self.progress_bar)
 
+    def reset_progress_bar(self):
+        self.progress_bar.value = 0.0
+        self.progress_bar.description = self.description
+        self.progress_bar.bar_style = 'info'
+
     def hide(self):
         self.progress_bar.layout.display = "none"
 
@@ -80,6 +86,14 @@ class FloatProgressBar:
         if value >= self.max_val:
             self.progress_bar.bar_style = default_description
             self.progress_bar.description = "success"
+
+
+def check_sum_proba(self):
+    total_probability = sum([v.value for v in self.dict_proba.values()])
+    if total_probability == 1.0:
+        return True
+    else:
+        return False
 
 
 class DictValidator:
@@ -220,52 +234,67 @@ class ExecuteButton:
         pass
 
     def execute_simulation(self):
-        self.progress_bar.display()
-        # execute simulation
-        probability_transition_matrix = np.array([[0.65, 0.35, 0.0, 0.0],
-                                                  [0.05, 0.80, 0.15, 0.0],
-                                                  [0.0, 0.28, 0.67, 0.05],
-                                                  [0.0, 0.0, 0.35, 0.65]
-                                                  ])
-        # load recipes data
-        df_recipes = pd.read_csv("processed_recipes_dataset.csv", sep="|")
-        simulation_results, df_user_join, table = execute_simulation(num_users=self.num_users.value,
-                                                                     dictionaries=self.dictionaries,
-                                                                     probability_transition_matrix=probability_transition_matrix,
-                                                                     df_recipes=df_recipes,
-                                                                     progress_bar=self.progress_bar,
-                                                                     num_days=self.num_days.value)
-        self.simulation_results = simulation_results
-        self.df_user_join = df_user_join
-        self.table = table
-        # Show download buttons
-        df_tracking = process_simulation_results(
-            simulation_results_dict=simulation_results)
-        csv_buffer = df_user_join.to_csv()
-        tracking_csv = df_tracking.to_csv()
-        button_1 = DownloadButton(
-            resource=table.render(),
-            filename="summary.html",
-            extension="html",
-            description="Summary Table"
-        )
+        try:
+            self.progress_bar.reset_progress_bar()
+            self.progress_bar.display()
+            # execute simulation
+            probability_transition_matrix = np.array([[0.65, 0.35, 0.0, 0.0],
+                                                      [0.05, 0.80, 0.15, 0.0],
+                                                      [0.0, 0.28, 0.67, 0.05],
+                                                      [0.0, 0.0, 0.35, 0.65]
+                                                      ])
+            # validate before execute
+            if self.num_users < 30:
+                raise Exception(
+                    "The minimum number of users to simulate is 30.")
+            if self.num_days < 30:
+                raise Exception("The minimum number of days should be over 30")
+            if not check_sum_proba(self.dictionaries['gender_probabilities']):
+                raise ("Gender probabilities should sum up 1.0")
 
-        button_2 = DownloadButton(
-            resource=csv_buffer,
-            filename="user_data.csv",
-            extension="csv",
-            description="User's data"
-        )
+            # load recipes data
+            df_recipes = pd.read_csv("processed_recipes_dataset.csv", sep="|")
+            simulation_results, df_user_join, table = execute_simulation(num_users=self.num_users.value,
+                                                                         dictionaries=self.dictionaries,
+                                                                         probability_transition_matrix=probability_transition_matrix,
+                                                                         df_recipes=df_recipes,
+                                                                         progress_bar=self.progress_bar,
+                                                                         num_days=self.num_days.value)
+            self.simulation_results = simulation_results
+            self.df_user_join = df_user_join
+            self.table = table
+            # Show download buttons
+            df_tracking = process_simulation_results(
+                simulation_results_dict=simulation_results)
+            csv_buffer = df_user_join.to_csv()
+            tracking_csv = df_tracking.to_csv()
+            button_1 = DownloadButton(
+                resource=table.render(),
+                filename="summary.html",
+                extension="html",
+                description="Summary Table"
+            )
 
-        button_3 = DownloadButton(
-            resource=tracking_csv,
-            filename="tracking.csv",
-            extension="csv",
-            description="User's tracking data"
-        )
+            button_2 = DownloadButton(
+                resource=csv_buffer,
+                filename="user_data.csv",
+                extension="csv",
+                description="User's data"
+            )
 
-        display(HTML(button_1.get_html_button()), HTML(
-            button_2.get_html_button()), HTML(button_3.get_html_button()))
+            button_3 = DownloadButton(
+                resource=tracking_csv,
+                filename="tracking.csv",
+                extension="csv",
+                description="User's tracking data"
+            )
+
+            display(HTML(button_1.get_html_button()), HTML(
+                button_2.get_html_button()), HTML(button_3.get_html_button()))
+        except Exception as e:
+            out = widgets.Output(layout={'border': '1px solid red'})
+            with out:
+                print(f"Error processing inputs: {e}")
 
     def is_finished(self):
         pass
@@ -376,6 +405,3 @@ def build_full_ui():
     display(top_box)
     main_widget.display()
     display(execution_button)
-    # create a progress bar for the simulation
-    # execute the simulation
-    # habilitate the buttons to download

@@ -521,6 +521,9 @@ def generate_recommendations(df_user, transition_matrix,
                   "afternoon snacks": 0.4,
                   "lunch": 0.05,
                   "dinner": 0.2}
+    query_text = {
+        "cultural_restriction =='vegan' |  cultural_restriction =='vegetarian'"
+    }
     dict_flexi_probas = generate_probabilities_for_flexi(
         flexi_probabilities_dict=flexi_probabilities_dict)
     simulation_results = {}
