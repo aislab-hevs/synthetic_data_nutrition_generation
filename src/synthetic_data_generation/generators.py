@@ -522,7 +522,10 @@ def generate_recommendations(df_user, transition_matrix,
                   "lunch": 0.05,
                   "dinner": 0.2}
     query_text = {
-        "cultural_restriction =='vegan' |  cultural_restriction =='vegetarian'"
+        "vegan_observant": "cultural_restriction =='vegan'",
+        "vegetarian_observant": "cultural_restriction =='vegan' |  cultural_restriction =='vegetarian'",
+        "halal_observant": "cultural_restriction =='halal'",
+        "kosher_observant": "cultural_restriction =='kosher'"
     }
     dict_flexi_probas = generate_probabilities_for_flexi(
         flexi_probabilities_dict=flexi_probabilities_dict)
@@ -559,9 +562,14 @@ def generate_recommendations(df_user, transition_matrix,
             # cultural restrictions filter
             cultural_factor = user_db.cultural_factor
             if cultural_factor != "None" and cultural_factor != "flexi_observant":
-                cultural_factor = cultural_factor.split("_")[0]
-                filtered_recipe_db = filtered_recipe_db[filtered_recipe_db["cultural_restriction"]
-                                                        == cultural_factor]
+                # new method
+                filtered_recipe_db = filtered_recipe_db.query(query_text.get(cultural_factor,
+                                                                             default=""
+                                                                             ))
+                # old method:
+                # cultural_factor = cultural_factor.split("_")[0]
+                # filtered_recipe_db = filtered_recipe_db[filtered_recipe_db["cultural_restriction"]
+                #                                         == cultural_factor]
             elif cultural_factor == "flexi_observant":
                 # get flexi_proba
                 flexi_class = df_user.loc[i, "probabilities"]
@@ -691,7 +699,8 @@ def create_a_summary_table(df_total_user, dict_recommendations, max_cols=4, roun
             row_number = df_counts.query(
                 f'allergy.str.contains("{allergy.strip()}") and BMI.str.contains("{hl.strip()}")').shape[0]
             # print(f"row number: {row_number}")
-            if row_number > 0:
+            # check index
+            if row_number > 0 and any(df_counts.index.isin([(hl, allergy)])):
                 users_count = df_counts.loc[(hl, allergy), 'userId']
             else:
                 users_count = 0

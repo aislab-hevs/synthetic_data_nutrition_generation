@@ -88,8 +88,8 @@ class FloatProgressBar:
             self.progress_bar.description = "success"
 
 
-def check_sum_proba(self):
-    total_probability = sum([v.value for v in self.dict_proba.values()])
+def check_sum_proba(dict_proba):
+    total_probability = sum([v.value for v in dict_proba.values()])
     if total_probability == 1.0:
         return True
     else:
@@ -235,6 +235,8 @@ class ExecuteButton:
 
     def execute_simulation(self):
         try:
+            print("simulation starting")
+            # self.progress_bar.hide()
             self.progress_bar.reset_progress_bar()
             self.progress_bar.display()
             # execute simulation
@@ -244,14 +246,13 @@ class ExecuteButton:
                                                       [0.0, 0.0, 0.35, 0.65]
                                                       ])
             # validate before execute
-            if self.num_users < 30:
+            if self.num_users.value < 30:
                 raise Exception(
                     "The minimum number of users to simulate is 30.")
-            if self.num_days < 30:
+            if self.num_days.value < 30:
                 raise Exception("The minimum number of days should be over 30")
             if not check_sum_proba(self.dictionaries['gender_probabilities']):
                 raise ("Gender probabilities should sum up 1.0")
-
             # load recipes data
             df_recipes = pd.read_csv("processed_recipes_dataset.csv", sep="|")
             simulation_results, df_user_join, table = execute_simulation(num_users=self.num_users.value,
@@ -295,6 +296,7 @@ class ExecuteButton:
             out = widgets.Output(layout={'border': '1px solid red'})
             with out:
                 print(f"Error processing inputs: {e}")
+            display(out)
 
     def is_finished(self):
         pass

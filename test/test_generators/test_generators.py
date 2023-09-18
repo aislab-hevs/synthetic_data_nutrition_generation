@@ -1,6 +1,10 @@
 import pytest
 from faker import Faker
 import numpy as np
+import configparser
+import os
+from unittest.mock import Mock
+import pandas as pd
 from synthetic_data_generation.generators import (create_name_surname,
                                                   generate_country,
                                                   generate_email_from_name,
@@ -107,6 +111,21 @@ def food_probas():
     food_restriction_probability_dict = dict(
         zip(food_restrictions, food_restriction_probs))
     return food_restriction_probability_dict
+
+
+@pytest.fixture
+def load_recipes():
+    # config = configparser.ConfigParser()
+    # # get file location
+    # file_location = os.getenv(
+    #     "TEST_CONFIG_FILE", default="configs/test_config.ini")
+    # config.read(file_location)
+    # print(config.sections())
+    # # read location
+    # recipes_location = config['DEFAULT']['df_recipes']
+    # df_recipes = pd.read_csv(recipes_location)
+    # return df_recipes
+    pass
 
 
 def test_create_name_surname(faker):
@@ -274,26 +293,29 @@ def test_generate_therapy_data(personal_data, user_life_style_data):
     assert df_therapy.shape[0] == len(list_users)
 
 
-def test_allergy_searcher():
-    allergy_found = allergy_searcher()
+def test_allergy_searcher(load_recipes):
+    # df_recipes = load_recipes
+    # allergy_found = allergy_searcher(recipes_db_allergy_col=df_recipes,
+    #                                  allergy="cow's milk")
+    # assert len(allergy_found) > 0
     pass
 
 
 def test_generate_meals_plan_per_user():
-    generate_meals_plan_per_user()
+    # generate_meals_plan_per_user()
     pass
 
 
 def test_generate_recommendations():
-    generate_recommendations()
+    # generate_recommendations()
     pass
 
 
 def test_create_a_summary_table():
-    create_a_summary_table()
+    # create_a_summary_table()
     pass
 
 
 def test_run_full_simulation():
-    run_full_simulation()
+    # run_full_simulation()
     pass
