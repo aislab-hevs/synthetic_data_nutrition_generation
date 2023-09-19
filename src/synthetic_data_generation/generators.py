@@ -75,7 +75,7 @@ class Gender(str, Enum):
     female = "F"
 
 
-class BMI_constants(str, Enum):
+class BMIConstants(str, Enum):
     underweight = "underweight"
     healthy = "healthy"
     overweight = "overweight"
@@ -185,11 +185,11 @@ def choose_one_from_list(list_values: List,
 # set the weight
 def calculate_weight_from_height(height: float, bmi: string):
     bmi_numeric = 0.0
-    if bmi == BMI_constants.underweight:
+    if bmi == BMIConstants.underweight:
         bmi_numeric = 18.0
-    elif bmi == BMI_constants.healthy:
+    elif bmi == BMIConstants.healthy:
         bmi_numeric = 21.0
-    elif bmi == BMI_constants.overweight:
+    elif bmi == BMIConstants.overweight:
         bmi_numeric = 28.0
     else:
         bmi_numeric = 32.0
@@ -263,10 +263,10 @@ def generate_health_condition_data(list_user_id: List[str], allergies_probabilit
 
 
 def define_user_goal_according_BMI(bmi: str):
-    if bmi == BMI_constants.underweight:
+    if bmi == BMIConstants.underweight:
         # goal gain muscle
         return f"{NutritionGoals.gain_weight}"
-    elif bmi == BMI_constants.healthy:
+    elif bmi == BMIConstants.healthy:
         # Maintain fit and increase activity if required
         return f"{NutritionGoals.maintain_fit}"
     else:
