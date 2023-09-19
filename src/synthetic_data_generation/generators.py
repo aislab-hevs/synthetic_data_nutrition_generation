@@ -133,11 +133,8 @@ def generate_personal_data(gender_probabilities: Dict[str, Any], num_users: int 
     df_personal_data = pd.DataFrame(
         data=[], columns=list(person_entity.keys()))
     # Generate gender and number of users
-    gender_list = []
-    gender_proba = []
-    for k, v in gender_probabilities.items():
-        gender_list.append(k)
-        gender_proba.append(v)
+    gender_list = list(gender_probabilities.keys())
+    gender_proba = list(gender_probabilities.values())
     df_personal_data["clinical_gender"] = np.random.choice(gender_list,
                                                            size=num_users,
                                                            replace=True,
@@ -222,11 +219,8 @@ def generate_user_life_style_data(list_user_id: List[str],
     df_user_entity["ethnicity"] = choose_one_from_list(
         user_entity.get("ethnicity"), samples=num_users)
     # Generate BMI values
-    BMI_values = []
-    BMI_prob = []
-    for k, v in BMI_probabilities_dict.items():
-        BMI_values.append(k)
-        BMI_prob.append(v)
+    BMI_values = list(BMI_probabilities_dict.keys())
+    BMI_prob = list(BMI_probabilities_dict.values())
     bmis = np.random.choice(BMI_values, size=num_users,
                             replace=True, p=BMI_prob)
     df_user_entity["BMI"] = bmis
@@ -260,11 +254,8 @@ def generate_health_condition_data(list_user_id: List[str], allergies_probabilit
     df_health_conditions["userId"] = list_user_id
     num_users = len(list_user_id)
     # Allergy array and probabilities
-    allergies = []
-    allergies_prob = []
-    for k, v in allergies_probability_dict.items():
-        allergies.append(k)
-        allergies_prob.append(v)
+    allergies = list(allergies.keys())
+    allergies_prob = list(allergies.values())
     user_allergies = np.random.choice(
         allergies, size=num_users, replace=True, p=allergies_prob)
     df_health_conditions["allergy"] = user_allergies
@@ -291,20 +282,11 @@ def generate_user_goals(list_user_id: List[str], df_user_entity: pd.DataFrame) -
     return df_user_goals
 
 
-def generate_probabilities_for_flexi(flexi_probabilities_dict: Dict[str, Any]):
-    return flexi_probabilities_dict
-
-# assign probabilities
-
-
 def assign_probabilities(cultural_factor: str,
                          flexi_probability_dict: Dict[str, Any]):
     if cultural_factor == "flexi_observant":
-        flexi_proba = generate_probabilities_for_flexi(flexi_probability_dict)
-        value = np.random.choice(list(flexi_proba.keys()))
+        value = np.random.choice(list(flexi_probability_dict.keys()))
         return value
-    pass
-
 
 def generate_cultural_data(list_user_id: List[str], food_restriction_probability_dict: Dict[str, Any],
                            flexi_probability_dict: Dict[str, Any]):
@@ -313,26 +295,14 @@ def generate_cultural_data(list_user_id: List[str], food_restriction_probability
     df_cultural_factors["userId"] = list_user_id
     users_number = len(list_user_id)
     # Food restrictions probabilities
-    food_restrictions = []
-    food_restriction_probs = []
-    for k, v in food_restriction_probability_dict.items():
-        food_restrictions.append(k)
-        food_restriction_probs.append(v)
+    food_restrictions = list(food_restriction_probability_dict.keys())
+    food_restriction_probs = list(food_restriction_probability_dict.values())
     # generate cultural restrictions
     food_restrictions_user = np.random.choice(
         food_restrictions, size=users_number, replace=True, p=food_restriction_probs)
     df_cultural_factors["cultural_factor"] = food_restrictions_user
     df_cultural_factors["probabilities"] = None
     # Generate flexi probabilities
-    dict_queries_cultural_factors = {
-        "vegan_observant": "",
-        "vegetarian_observant": "",
-        "halal_observant": "",
-        "kosher_observant": "",
-        "flexi_observant": "None"
-    }
-    flexi_probabilities = generate_probabilities_for_flexi(
-        flexi_probability_dict)
     df_cultural_factors["probabilities"] = df_cultural_factors["cultural_factor"].apply(
         lambda x, flexi_probability_dict: assign_probabilities(x, flexi_probability_dict), flexi_probability_dict=flexi_probability_dict
     )
@@ -487,8 +457,6 @@ def generate_recommendations(df_user, transition_matrix,
         "halal_observant": "cultural_restriction =='halal'",
         "kosher_observant": "cultural_restriction =='kosher'"
     }
-    dict_flexi_probas = generate_probabilities_for_flexi(
-        flexi_probabilities_dict=flexi_probabilities_dict)
     simulation_results = {}
     df_recipes_db["allergies"] = df_recipes_db["allergies"].fillna("")
     update_amount = 90.0/len(df_user)
@@ -504,7 +472,6 @@ def generate_recommendations(df_user, transition_matrix,
             daily_calories_list = [
                 daily_calories for i in range(days_to_simulated)]
             flexi_probas = None
-            current_state = user_db.BMI
             # print(f"Simulating for user: {user_db.userId}")
             df_recommendations = pd.DataFrame(columns=[f"{k}_calories" for k in meals_dict.keys()]+list(meals_dict.keys()),
                                               index=np.arange(1, days_to_simulated+1))
@@ -533,7 +500,7 @@ def generate_recommendations(df_user, transition_matrix,
             elif cultural_factor == "flexi_observant":
                 # get flexi_proba
                 flexi_class = df_user.loc[i, "probabilities"]
-                flexi_probas = dict_flexi_probas[flexi_class]
+                flexi_probas = flexi_probabilities_dict[flexi_class]
                 # print(f"Flexi probas: {flexi_probas}")
                 # print(f"Flexi condition: {flexi_class}")
             else:
@@ -756,7 +723,6 @@ def generate_simulations(df_user, transition_matrix, df_recipes_db, days_to_simu
     for i in range(len(df_user)):
         try:
             user_db = df_user.iloc[i, :]
-            current_state = user_db.BMI
             # possible_transition = list(transition_matrix[current_state].keys())
             # if len(possible_transition) > 2:
             #     next_state = np.random.choice(possible_transition, size=1)
@@ -808,9 +774,6 @@ def generate_simulations(df_user, transition_matrix, df_recipes_db, days_to_simu
             print(f"Error processing user: {df_user.iloc[i, 0]}, {e}")
             continue
     return simulation_results
-
-# Full pipeline to simulation
-
 
 def run_full_simulation(num_users: int,
                         gender_probabilities: Dict[str, Any],
