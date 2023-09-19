@@ -11,6 +11,13 @@ from typing import Any, Dict, List
 
 from synthetic_data_generation.generators import (person_entity,
                                                   run_full_simulation)
+from synthetic_data_generation.constants import (init_age_dict,
+                                                 init_allergies_dict,
+                                                 init_bmi_dict,
+                                                 init_flexi_probabilities,
+                                                 init_food_restrictions,
+                                                 init_gender_dict,
+                                                 meals_proba)
 
 
 def values_from_dictionary(dictionary: Dict[str, Any]):
@@ -273,15 +280,15 @@ class ExecuteButton:
                 raise Exception("Gender probabilities should sum up 1.0")
             if not check_sum_proba(self.dictionaries['age']):
                 raise Exception("Age probabilities should sum up 1.0")
-            if not check_sum_proba(self.dictionaries['bmi']):
+            if not check_sum_proba(self.dictionaries['BMI_probabilities']):
                 raise Exception("BMI probabilities should sum up 1.0")
-            if not check_sum_proba(self.dictionaries['allergies']):
+            if not check_sum_proba(self.dictionaries['allergies_probability_dict']):
                 raise Exception("Allergies probabilities should sum up 1.0")
-            if not check_sum_proba(self.dictionaries['food_restrictions']):
+            if not check_sum_proba(self.dictionaries['food_restriction_probability_dict']):
                 raise Exception(
                     "Food restrictions probabilities should sum up 1.0")
-            for k in self.dictionaries['flexible_probabilities'].keys():
-                if not check_sum_proba(self.dictionaries['flexible_probabilities'][k]):
+            for k in self.dictionaries['flexi_probabilities'].keys():
+                if not check_sum_proba(self.dictionaries['flexi_probabilities'][k]):
                     raise Exception(
                         f"{k.replace('_', ' ')} probabilities should sum up 1.0")
             # load recipes data
@@ -340,54 +347,13 @@ class ExecuteButton:
 
 
 def build_full_ui():
-    # Dictionary initialization
-    # User number
-    NUM_USERS = 100
-    # Generate age range
-    age_range = person_entity.get("age_range")
-    age_probabilities = dict(
-        zip(age_range, [0 for i in range(len(age_range))]))
-    # Male and female distribution
-    gender_probabilities = dict(
-        zip(person_entity.get("clinical_gender"), [0.5, 0.5]))
-    # Generate BMI values
-    BMI_values = ["underweight", "healthy", "overweight", "obesity"]
-    BMI_prob = [0.1, 0.3, 0.3, 0.3]
-    BMI_probabilities = dict(zip(BMI_values, BMI_prob))
-    # Allergy array and probabilities
-    allergies = ["cow's milk", "eggs", "peanut", "soy",
-                 "fish", "tree nuts", "shellfish", "wheat", "None"]
-    allergies_prob = [0.1, 0.1, 0.1,
-                      0.1, 0.1, 0.1, 0.1, 0.1, 0.2]
-    allergies_probability_dict = dict(zip(allergies, allergies_prob))
-    # generate different probabilities for the flexible
-    food_restrictions = ["vegan_observant",
-                         "vegetarian_observant",
-                         "halal_observant",
-                         "kosher_observant",
-                         "None"]
-    flexi_probabilities = {
-        "flexi_vegie": dict(zip(food_restrictions, [0.6, 0.2, 0.05, 0.05, 0.1])),
-        # "flexi_vegetarian" : dict(zip(food_restrictions,[NN, 0.6, 0.05, 0.05, 0.1])),
-        "flexi_vegetarian": dict(zip(food_restrictions, [0.0, 0.6, 0.05, 0.05, 0.3])),
-        "flexi_halal": dict(zip(food_restrictions, [0.1, 0.2, 0.6, 0.0, 0.1])),
-        "flexi_kosher": dict(zip(food_restrictions, [0.1, 0.1, 0.1, 0.6, 0.1]))
-    }
-
-    # Food restrictions probabilities
-    food_restrictions = ["vegan_observant", "vegetarian_observant",
-                         "halal_observant", "kosher_observant", "flexi_observant", "None"]
-    food_restriction_probs = [0.2, 0.3, 0.05, 0.05, 0.1, 0.3]
-    food_restriction_probability_dict = dict(
-        zip(food_restrictions, food_restriction_probs))
-    # meals probabilities
-    meals_proba = {
-        "breakfast": 0.80,
-        "morning snacks": 0.45,
-        "afternoon snacks": 0.40,
-        "lunch": 0.95,
-        "dinner": 0.85
-    }
+    # Get initializers
+    age_probabilities = init_age_dict()
+    gender_probabilities = init_gender_dict()
+    BMI_probabilities = init_bmi_dict()
+    allergies_probability_dict = init_allergies_dict()
+    food_restriction_probability_dict = init_food_restrictions()
+    flexi_probabilities = init_flexi_probabilities()
     # UI building
     # Starting
     # Prepare dictionaries
