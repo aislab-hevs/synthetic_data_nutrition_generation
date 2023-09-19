@@ -106,7 +106,6 @@ class DictValidator:
             description=description,
             style=style
         )
-        self.total_text = "Total probability: {total}"
         self.label = widgets.Label()
 
     def sum_values(self):
@@ -121,7 +120,8 @@ class DictValidator:
             return False
 
     def get_validator_widget(self):
-        self.label.value = f"Total probability: {self.sum_values()}"
+        self.validator_event({})
+        # self.label.value = f"Total probability: {self.sum_values()}"
         box = widgets.VBox([self.label, self.valid_widget])
         return box
 
@@ -134,6 +134,7 @@ class DictValidator:
 def form_probability_dict(proba_dict, widget_class, exclude_validator=False, **kwargs):
     # layout = widgets.Layout(width='auto', height='40px')
     style = {'description_width': 'initial'}
+    list_widgets = []
     validator = DictValidator(proba_dict)
     for k, v in proba_dict.items():
         if kwargs is not None:
@@ -156,9 +157,16 @@ def form_probability_dict(proba_dict, widget_class, exclude_validator=False, **k
         # Add observer
         if not exclude_validator:
             proba_dict[k].observe(validator.validator_event)
+    # create visualization
+    if not exclude_validator:
+        list_widgets = list(proba_dict.values()) + \
+            [validator.get_validator_widget()]
+    else:
+        label = widgets.Label(
+            "The probabilities are independent and can sum more than 1.")
+        list_widgets = list(proba_dict.values()) + [label]
     if len(proba_dict.keys()) > 3:
-        vbox = widgets.VBox(list(proba_dict.values()) +
-                            [validator.get_validator_widget()])
+        vbox = widgets.VBox(list_widgets)
         return vbox
     return widgets.VBox([widgets.Box(list(proba_dict.values())), validator.get_validator_widget()])
 
