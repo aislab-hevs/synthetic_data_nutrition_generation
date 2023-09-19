@@ -102,9 +102,31 @@ class HTML_Table:
         self.rows.append(row)
 
     def _repr_html_(self):
-        return """<table border=\"1\">
+        return """
+    <!DOCTYPE HTML PUBLIC
+	 	"-//W3 Organization//DTD W3 HTML 2.0//EN">
+    <html>
+    <head>
+    <title>
+    Summary Table
+    </title>
+    </head>
+    <body>
+    <table border=\"1\">
         {row}
-    </table>""".format(row="\n".join(self.rows))
+    </table>
+    <p>
+    <ul>
+    <li>
+    Percentage in red color represent the total percentage respect to all users.
+    </li>
+    <li>
+    Percentage in green color represent the percentage respect to health conditions.
+    </li>
+    </ul>
+    </p>
+    </body>
+    </html>""".format(row="\n".join(self.rows))
 
     def render(self):
         return self._repr_html_()
@@ -530,7 +552,7 @@ def generate_recommendations(df_user, transition_matrix,
     dict_flexi_probas = generate_probabilities_for_flexi(
         flexi_probabilities_dict=flexi_probabilities_dict)
     simulation_results = {}
-    df_recipes_db["allergies"] = df_recipes_db["allergies"].fillna("")
+    df_recipes_db[["allergies"]].fillna("", inplace=True)
     update_amount = 90.0/len(df_user)
     if transition_matrix is not None:
         pass
