@@ -330,7 +330,7 @@ def calculate_basal_metabolic_rate(weight: float, height: float, age: int, clini
             return 447.593 + (9.247 * weight) + (3.098 * height) - (4.330 * age)
 
 
-def calculate_daily_calorie_needs(BMR: float, activity_level: str):
+def calculate_daily_calorie_needs(bmr: float, activity_level: str):
     coefficient = 1.9
     match activity_level:
         case ActivityLevel.light_active:
@@ -339,19 +339,17 @@ def calculate_daily_calorie_needs(BMR: float, activity_level: str):
             coefficient = 1.725
         case ActivityLevel.sedentary:
             coefficient = 1.2
-    return coefficient * BMR
+    return coefficient * bmr
 
 
 def define_daily_calorie_plan(nutrition_goal: str, daily_calorie_need: float):
-    projected_calories_need = 0
-    if nutrition_goal == NutritionGoals.gain_weight:
-        projected_calories_need = daily_calorie_need + 500
-    elif nutrition_goal == NutritionGoals.maintain_fit:
-        projected_calories_need = daily_calorie_need
-    else:
-        projected_calories_need = daily_calorie_need - 500
-    return projected_calories_need
-
+    additional_calories = 0
+    match nutrition_goal:
+        case NutritionGoals.gain_weight:
+            additional_calories = 500
+        case NutritionGoals.lose_weight:
+            additional_calories = -500
+    return daily_calorie_need + additional_calories
 
 def generate_diet_plan(weight: float,
                        height: float,
@@ -414,17 +412,7 @@ def simulate_final_result(probability_matrix: np.array, samples_size_list: Dict[
 
 
 def allergy_searcher(recipes_db_allergy_col, allergy: str):
-    res = []
-    allergy_low = allergy.lower()
-    for item in recipes_db_allergy_col.items():
-        text = str(item[1]).lower()
-        if allergy_low in text:
-            print(text)
-            print(allergy_low)
-            res.append(False)
-        else:
-            res.append(True)
-    return res
+    return [allergy.lower() not in str(item).lower() for item in recipes_db_allergy_col.values()]
 
 
 def generate_meals_plan_per_user(users: List[str], probability_dict: Dict[str, float]):
