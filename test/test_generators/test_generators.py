@@ -36,7 +36,7 @@ from synthetic_data_generation.generators import (create_name_surname,
                                                   person_entity,
                                                   user_entity,
                                                   Gender,
-                                                  BMI_constants,
+                                                  BMIConstants,
                                                   NutritionGoals,
                                                   ActivityLevel
                                                   )
@@ -178,7 +178,7 @@ def test_choose_one_from_list():
 
 def test_calculate_weight_from_height():
     weight = calculate_weight_from_height(1.65,
-                                          BMI_constants.overweight)
+                                          BMIConstants.overweight)
     assert np.round(weight, 2) == 76.23
 
 
@@ -199,7 +199,7 @@ def test_generate_health_condition_data(personal_data, allergies_proba):
 
 
 def test_define_user_goal_according_BMI():
-    user_goal = define_user_goal_according_BMI(BMI_constants.overweight)
+    user_goal = define_user_goal_according_BMI(BMIConstants.overweight)
     assert NutritionGoals.lose_weight == user_goal
 
 

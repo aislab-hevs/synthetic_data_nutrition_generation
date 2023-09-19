@@ -47,7 +47,7 @@ user_goals = {
     "user_goals": ["loss_weight", "fit", "food_restrictions"]
 }
 
-class HTML_Table:
+class HTMLTable:
     def __init__(self, cols: int = 4, rows: List[str] = None):
         self.cols = cols
         if rows is not None:
@@ -575,7 +575,7 @@ def create_a_summary_table(df_total_user, dict_recommendations, max_cols=4, roun
                   "dinner": 0.2}
     # TODO: add error control to all the functions
     # Create table
-    table = HTML_Table(cols=max_cols)
+    table = HTMLTable(cols=max_cols)
     total_users = df_total_user.shape[0]
     random_user = np.random.choice(list(dict_recommendations.keys()))
     simulation_days = dict_recommendations.get(random_user).shape[0]
