@@ -7,12 +7,13 @@ from collections import OrderedDict
 from typing import Any
 import numpy as np
 import pandas as pd
+from typing import Any, Dict, List
 
 from synthetic_data_generation.generators import (person_entity,
                                                   run_full_simulation)
 
 
-def values_from_dictionary(dictionary):
+def values_from_dictionary(dictionary: Dict[str, Any]):
     new_dict = {}
     for k, v in dictionary.items():
         new_dict[k] = v.value
@@ -105,20 +106,29 @@ class DictValidator:
             description=description,
             style=style
         )
+        self.total_text = "Total probability: {total}"
+        self.label = widgets.Label()
+
+    def sum_values(self):
+        total_probability = sum([v.value for v in self.dict_proba.values()])
+        return total_probability
 
     def check_sum_proba(self):
-        total_probability = sum([v.value for v in self.dict_proba.values()])
+        total_probability = self.sum_values()
         if total_probability == 1.0:
             return True
         else:
             return False
 
     def get_validator_widget(self):
-        return self.valid_widget
+        self.label.value = f"Total probability: {self.sum_values()}"
+        box = widgets.VBox([self.label, self.valid_widget])
+        return box
 
     def validator_event(self, change):
         valid_value = self.check_sum_proba()
         self.valid_widget.value = valid_value
+        self.label.value = f"Total probability: {self.sum_values()}"
 
 
 def form_probability_dict(proba_dict, widget_class, exclude_validator=False, **kwargs):
