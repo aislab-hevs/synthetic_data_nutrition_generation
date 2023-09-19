@@ -270,7 +270,20 @@ class ExecuteButton:
             if self.num_days.value < 30:
                 raise Exception("The minimum number of days should be over 30")
             if not check_sum_proba(self.dictionaries['gender_probabilities']):
-                raise ("Gender probabilities should sum up 1.0")
+                raise Exception("Gender probabilities should sum up 1.0")
+            if not check_sum_proba(self.dictionaries['age']):
+                raise Exception("Age probabilities should sum up 1.0")
+            if not check_sum_proba(self.dictionaries['bmi']):
+                raise Exception("BMI probabilities should sum up 1.0")
+            if not check_sum_proba(self.dictionaries['allergies']):
+                raise Exception("Allergies probabilities should sum up 1.0")
+            if not check_sum_proba(self.dictionaries['food_restrictions']):
+                raise Exception(
+                    "Food restrictions probabilities should sum up 1.0")
+            for k in self.dictionaries['flexible_probabilities'].keys():
+                if not check_sum_proba(self.dictionaries['flexible_probabilities'][k]):
+                    raise Exception(
+                        f"{k.replace('_', ' ')} probabilities should sum up 1.0")
             # load recipes data
             df_recipes = pd.read_csv("processed_recipes_dataset.csv", sep="|")
             simulation_results, df_user_join, table = execute_simulation(num_users=self.num_users.value,
@@ -410,6 +423,7 @@ def build_full_ui():
     # parameters
     # Test the function general
     general_dict = {
+        'age': age_probabilities,
         'gender_probabilities': gender_probabilities,
         'BMI_probabilities': BMI_probabilities,
         'allergies_probability_dict': allergies_probability_dict,
