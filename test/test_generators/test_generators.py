@@ -33,13 +33,15 @@ from synthetic_data_generation.generators import (create_name_surname,
                                                   generate_recommendations,
                                                   create_a_summary_table,
                                                   run_full_simulation,
-                                                  person_entity,
-                                                  user_entity,
                                                   Gender,
                                                   BMI_constants,
                                                   NutritionGoals,
                                                   ActivityLevel
                                                   )
+
+from synthetic_data_generation.constants import (person_entity,
+                                                 user_entity,
+                                                 BMI_probabilities_dict)
 
 
 @pytest.fixture
@@ -77,8 +79,11 @@ def allergies_proba():
 
 @pytest.fixture
 def user_life_style_data():
-    p_data = personal_data()
-    bmi_proba = BMI_proba()
+    p_data = generate_personal_data(gender_probabilities={"M": 0.2, "F": 0.8},
+                                    num_users=20,
+                                    person_entity=person_entity,
+                                    )
+    bmi_proba = BMI_probabilities_dict
     df_user_entity = generate_user_life_style_data(p_data["userId"].tolist(),
                                                    user_entity=user_entity,
                                                    df_personal_data=p_data,
@@ -117,8 +122,9 @@ def food_probas():
 def load_recipes():
     # config = configparser.ConfigParser()
     # # get file location
-    # file_location = os.getenv(
-    #     "TEST_CONFIG_FILE", default="configs/test_config.ini")
+    file_location = os.getenv(
+        "TEST_CONFIG_FILE", default="configs/test_config.ini")
+    print(f"file location: {file_location}")
     # config.read(file_location)
     # print(config.sections())
     # # read location

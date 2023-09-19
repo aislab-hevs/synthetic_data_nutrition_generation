@@ -78,72 +78,84 @@ meals_calorie_dict = {"breakfast": 0.3,
                       "dinner": 0.2}
 
 # Initializers
-# Dictionary initialization
-# User number
+age_probabilities_dict = {
+    "20-29": 0.30,
+    "30-39": 0.20,
+    "40-49": 0.10,
+    "50-59": 0.10,
+    "60-69": 0.10,
+    "70-79": 0.10,
+    "80-89": 0.10,
+    "90-100": 0.0
+}
 
+gender_probabilities_dict = {
+    "M": 0.5,
+    "F": 0.5
+}
 
-def init_age_dict():
-    # Generate age range
-    age_range = person_entity.get("age_range")
-    age_probabilities = dict(
-        zip(age_range, [0 for i in range(len(age_range))]))
-    return age_probabilities
+BMI_probabilities_dict = {
+    "underweight": 0.10,
+    "healthy": 0.30,
+    "overweight": 0.30,
+    "obesity": 0.30
+}
 
+allergies_probability_dict = {
+    "cow's milk": 0.1,
+    "eggs":  0.1,
+    "peanut": 0.1,
+    "soy": 0.1,
+    "fish":  0.1,
+    "tree nuts": 0.1,
+    "shellfish": 0.1,
+    "wheat": 0.1,
+    "None": 0.2
+}
 
-def init_gender_dict():
-    # Male and female distribution
-    gender_probabilities = dict(
-        zip(person_entity.get("clinical_gender"), [0.5, 0.5]))
-    return gender_probabilities
+food_restriction_probability_dict = {
+    "vegan_observant": 0.2,
+    "vegetarian_observant": 0.3,
+    "halal_observant": 0.05,
+    "kosher_observant": 0.05,
+    "flexi_observant": 0.1,
+    "None": 0.3
+}
 
-
-def init_bmi_dict():
-    # Generate BMI values
-    BMI_values = ["underweight", "healthy", "overweight", "obesity"]
-    BMI_prob = [0.1, 0.3, 0.3, 0.3]
-    BMI_probabilities = dict(zip(BMI_values, BMI_prob))
-    return BMI_probabilities
-
-
-def init_allergies_dict():
-    # Allergy array and probabilities
-    allergies = ["cow's milk", "eggs", "peanut", "soy",
-                 "fish", "tree nuts", "shellfish", "wheat", "None"]
-    allergies_prob = [0.1, 0.1, 0.1,
-                      0.1, 0.1, 0.1, 0.1, 0.1, 0.2]
-    allergies_probability_dict = dict(zip(allergies, allergies_prob))
-    return allergies_probability_dict
-
-
-def init_food_restrictions():
-    # Food restrictions probabilities
-    food_restrictions = ["vegan_observant", "vegetarian_observant",
-                         "halal_observant", "kosher_observant", "flexi_observant", "None"]
-    food_restriction_probs = [0.2, 0.3, 0.05, 0.05, 0.1, 0.3]
-    food_restriction_probability_dict = dict(
-        zip(food_restrictions, food_restriction_probs))
-    return food_restriction_probability_dict
-
-
-def init_flexi_probabilities():
-    # generate different probabilities for the flexible
-    food_restrictions = ["vegan_observant",
-                         "vegetarian_observant",
-                         "halal_observant",
-                         "kosher_observant",
-                         "None"]
-    flexi_probabilities = {
-        "flexi_vegie": dict(zip(food_restrictions, [0.6, 0.2, 0.05, 0.05, 0.1])),
-        # "flexi_vegetarian" : dict(zip(food_restrictions,[NN, 0.6, 0.05, 0.05, 0.1])),
-        "flexi_vegetarian": dict(zip(food_restrictions, [0.0, 0.6, 0.05, 0.05, 0.3])),
-        "flexi_halal": dict(zip(food_restrictions, [0.1, 0.2, 0.6, 0.0, 0.1])),
-        "flexi_kosher": dict(zip(food_restrictions, [0.1, 0.1, 0.1, 0.6, 0.1]))
+flexi_probabilities_dict = {
+    "flexi_vegie": {
+        "vegan_observant": 0.6,
+        "vegetarian_observant": 0.2,
+        "halal_observant": 0.05,
+        "kosher_observant": 0.05,
+        "None": 0.1
+    },
+    "flexi_vegetarian": {
+        "vegan_observant": 0.0,
+        "vegetarian_observant": 0.6,
+        "halal_observant": 0.05,
+        "kosher_observant": 0.05,
+        "None": 0.3
+    },
+    "flexi_halal": {
+        "vegan_observant": 0.1,
+        "vegetarian_observant":  0.2,
+        "halal_observant": 0.6,
+        "kosher_observant": 0.0,
+        "None": 0.1
+    },
+    "flexi_kosher": {
+        "vegan_observant": 0.1,
+        "vegetarian_observant": 0.1,
+        "halal_observant": 0.1,
+        "kosher_observant": 0.6,
+        "None": 0.1
     }
-    return flexi_probabilities
+}
 
 
 # meals probabilities
-meals_proba = {
+meals_proba_dict = {
     "breakfast": 0.80,
     "morning snacks": 0.45,
     "afternoon snacks": 0.40,

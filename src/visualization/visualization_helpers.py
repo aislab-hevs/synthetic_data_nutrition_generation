@@ -8,16 +8,17 @@ from typing import Any
 import numpy as np
 import pandas as pd
 from typing import Any, Dict, List
+import copy
 
 from synthetic_data_generation.generators import (person_entity,
                                                   run_full_simulation)
-from synthetic_data_generation.constants import (init_age_dict,
-                                                 init_allergies_dict,
-                                                 init_bmi_dict,
-                                                 init_flexi_probabilities,
-                                                 init_food_restrictions,
-                                                 init_gender_dict,
-                                                 meals_proba)
+from synthetic_data_generation.constants import (age_probabilities_dict,
+                                                 allergies_probability_dict,
+                                                 BMI_probabilities_dict,
+                                                 flexi_probabilities_dict,
+                                                 food_restriction_probability_dict,
+                                                 gender_probabilities_dict,
+                                                 meals_proba_dict)
 
 
 def values_from_dictionary(dictionary: Dict[str, Any]):
@@ -348,12 +349,14 @@ class ExecuteButton:
 
 def build_full_ui():
     # Get initializers
-    age_probabilities = init_age_dict()
-    gender_probabilities = init_gender_dict()
-    BMI_probabilities = init_bmi_dict()
-    allergies_probability_dict = init_allergies_dict()
-    food_restriction_probability_dict = init_food_restrictions()
-    flexi_probabilities = init_flexi_probabilities()
+    age_probabilities = copy.deepcopy(age_probabilities_dict)
+    gender_probabilities = copy.deepcopy(gender_probabilities_dict)
+    BMI_probabilities = copy.deepcopy(BMI_probabilities_dict)
+    allergies_probability = copy.deepcopy(allergies_probability_dict)
+    food_restriction_probability = copy.deepcopy(
+        food_restriction_probability_dict)
+    flexi_probabilities = copy.deepcopy(flexi_probabilities_dict)
+    meals_proba = copy.deepcopy(meals_proba_dict)
     # UI building
     # Starting
     # Prepare dictionaries
@@ -364,9 +367,9 @@ def build_full_ui():
                               "titles": "Gender"}
     dict_widgets['bmi'] = {"widget_list": form_probability_dict(BMI_probabilities, widgets.FloatSlider, min=0, max=1.0, step=0.1),
                            "titles": "BMI"}
-    dict_widgets['allergies'] = {"widget_list": form_probability_dict(allergies_probability_dict, widgets.FloatSlider, min=0, max=1.0, step=0.1),
+    dict_widgets['allergies'] = {"widget_list": form_probability_dict(allergies_probability, widgets.FloatSlider, min=0, max=1.0, step=0.1),
                                  "titles": "Allergies"}
-    dict_widgets['food_restrictions'] = {"widget_list": form_probability_dict(food_restriction_probability_dict, widgets.FloatSlider, min=0, max=1.0, step=0.1),
+    dict_widgets['food_restrictions'] = {"widget_list": form_probability_dict(food_restriction_probability, widgets.FloatSlider, min=0, max=1.0, step=0.1),
                                          "titles": "Food restrictions"}
     dict_widgets['meal_probabilities'] = {"widget_list": form_probability_dict(meals_proba, widgets.FloatSlider, exclude_validator=True, min=0, max=1.0, step=0.1),
                                           "titles": "Meal probabilities"}
@@ -392,8 +395,8 @@ def build_full_ui():
         'age': age_probabilities,
         'gender_probabilities': gender_probabilities,
         'BMI_probabilities': BMI_probabilities,
-        'allergies_probability_dict': allergies_probability_dict,
-        'food_restriction_probability_dict': food_restriction_probability_dict,
+        'allergies_probability_dict': allergies_probability,
+        'food_restriction_probability_dict': food_restriction_probability,
         'flexi_probabilities': flexi_probabilities,
         'meals_proba': meals_proba
     }
