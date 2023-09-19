@@ -2,15 +2,10 @@ import pandas as pd
 import numpy as np
 from faker import Faker
 from enum import Enum
-from typing import List, Any, Tuple, Dict
+from typing import List, Any, Dict
 import string
 import uuid
-import seaborn as sns
-import matplotlib.pyplot as plt
-from prettytable import PrettyTable, ALL, FRAME
-from html import escape
 from scipy.stats import bernoulli
-from tqdm import tqdm
 
 # Constants
 person_entity = {
@@ -36,30 +31,7 @@ user_entity = {
     "height": []
 }
 
-cultural_factors = {
-    "vegan_observant": [True, False],
-    "vegetarian_observant": [True, False],
-    "halal_observant": [True, False],
-    "kosher_observant": [True, False],
-    "religion_observant": [True, False],
-    "drink_limitation": [True, False],
-    "pescatarian_observant": [True, False],
-    "religion": [],
-    "food_limitation": []
-}
 
-sustainability = {
-    "environmental_harm": [],
-    "eco_score": [],
-    "co2_food_print": [],
-    "recyclable_packaging": []
-}
-
-actions = {
-    "action_type": [],
-    "location": [],
-    "action_date": []
-}
 
 preferences = {
     "breakfast_time": [],
@@ -74,18 +46,6 @@ health_conditions = {
 user_goals = {
     "user_goals": ["loss_weight", "fit", "food_restrictions"]
 }
-
-cultural_factors = {
-    "cultural_factors": []
-}
-
-diet = {
-    "diet_daily_calories": [],
-    "calorie_deficit": []
-}
-
-# Classes
-
 
 class HTML_Table:
     def __init__(self, cols: int = 4, rows: List[str] = None):
