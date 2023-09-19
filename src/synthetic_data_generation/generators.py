@@ -182,17 +182,15 @@ def choose_one_from_list(list_values: List,
     return list(map(lambda x: np.random.choice(list_values, size=size, replace=replace, p=probabilities), range(samples)))
 
 
-# set the weight
 def calculate_weight_from_height(height: float, bmi: string):
-    bmi_numeric = 0.0
-    if bmi == BMIConstants.underweight:
-        bmi_numeric = 18.0
-    elif bmi == BMIConstants.healthy:
-        bmi_numeric = 21.0
-    elif bmi == BMIConstants.overweight:
-        bmi_numeric = 28.0
-    else:
-        bmi_numeric = 32.0
+    bmi_numeric = 32.0
+    match bmi:
+        case BMIConstants.underweight:
+            bmi_numeric = 18.0
+        case BMIConstants.healthy:
+            bmi_numeric = 21.0
+        case BMIConstants.overweight:
+            bmi_numeric = 28.0
     return (height**2)*bmi_numeric
 
 
@@ -263,15 +261,14 @@ def generate_health_condition_data(list_user_id: List[str], allergies_probabilit
 
 
 def define_user_goal_according_BMI(bmi: str):
-    if bmi == BMIConstants.underweight:
-        # goal gain muscle
-        return f"{NutritionGoals.gain_weight}"
-    elif bmi == BMIConstants.healthy:
-        # Maintain fit and increase activity if required
-        return f"{NutritionGoals.maintain_fit}"
-    else:
-        # nutritional goal loss weight
-        return f"{NutritionGoals.lose_weight}"
+    match bmi:
+        case BMIConstants.underweight:
+            goal = f"{NutritionGoals.gain_weight}"
+        case BMIConstants.healthy:
+            goal = f'{NutritionGoals.maintain_fit}'
+        case BMIConstants.overweight:
+            goal = f'{NutritionGoals.lose_weight}'
+    return goal
 
 
 def generate_user_goals(list_user_id: List[str], df_user_entity: pd.DataFrame) -> pd.DataFrame:
@@ -326,25 +323,23 @@ def generate_preferences_data(list_user_id: List[str], df_personal_data: pd.Data
 
 
 def calculate_basal_metabolic_rate(weight: float, height: float, age: int, clinical_gender: str):
-    BMR = 0
-    if Gender.male == clinical_gender:
-        BMR = 88.362 + (13.397 * weight) + (4.799 * height) - (5.677 * age)
-    else:
-        BMR = 447.593 + (9.247 * weight) + (3.098 * height) - (4.330 * age)
-    return BMR
+    match clinical_gender:
+        case Gender.male:
+            return 88.362 + (13.397 * weight) + (4.799 * height) - (5.677 * age) 
+        case Gender.female:
+            return 447.593 + (9.247 * weight) + (3.098 * height) - (4.330 * age)
 
 
 def calculate_daily_calorie_needs(BMR: float, activity_level: str):
-    calories_daily = 0
-    if activity_level == ActivityLevel.sedentary:
-        calories_daily = 1.2 * BMR
-    elif activity_level == ActivityLevel.light_active:
-        calories_daily = 1.375 * BMR
-    elif activity_level == ActivityLevel.moderate_active:
-        calories_daily = 1.725 * BMR
-    else:
-        calories_daily = 1.9 * BMR
-    return calories_daily
+    coefficient = 1.9
+    match activity_level:
+        case ActivityLevel.light_active:
+            coefficient = 1.375
+        case ActivityLevel.moderate_active:
+            coefficient = 1.725
+        case ActivityLevel.sedentary:
+            coefficient = 1.2
+    return coefficient * BMR
 
 
 def define_daily_calorie_plan(nutrition_goal: str, daily_calorie_need: float):
