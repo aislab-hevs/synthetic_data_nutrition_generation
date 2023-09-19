@@ -11,82 +11,11 @@ from prettytable import PrettyTable, ALL, FRAME
 from html import escape
 from scipy.stats import bernoulli
 from tqdm import tqdm
+from .constants import (person_entity,
+                        user_entity)
 
-# Constants
-person_entity = {
-    "userId": str,
-    "username": str,
-    "password": str,
-    "email": str,
-    "name": str,
-    "surname": str,
-    "clinical_gender": ["M", "F"],
-    "current_location": [],
-    "age_range": ["20-29", "30-39", "40-49", "50-59", "60-69", "70-79", "80-89", "90-100"],
-    "living_country": [],
-    "country_of_origin": []
-}
-
-user_entity = {
-    "current_working_status": ["Half-time-worker", "Full-time-worker", "Self-employee", "Unemployed"],
-    "marital_status": ["Single", "Married"],
-    "life_style": ["Sedentary", "Lightly active", "Moderately active", "Very active"],
-    "weight": [],
-    "ethnicity": ["White", "Black", "Latino", "Asian"],
-    "height": []
-}
-
-cultural_factors = {
-    "vegan_observant": [True, False],
-    "vegetarian_observant": [True, False],
-    "halal_observant": [True, False],
-    "kosher_observant": [True, False],
-    "religion_observant": [True, False],
-    "drink_limitation": [True, False],
-    "pescatarian_observant": [True, False],
-    "religion": [],
-    "food_limitation": []
-}
-
-sustainability = {
-    "environmental_harm": [],
-    "eco_score": [],
-    "co2_food_print": [],
-    "recyclable_packaging": []
-}
-
-actions = {
-    "action_type": [],
-    "location": [],
-    "action_date": []
-}
-
-preferences = {
-    "breakfast_time": [],
-    "lunch_time": [],
-    "dinner_time": []
-}
-
-health_conditions = {
-    "food_allergies": []
-}
-
-user_goals = {
-    "user_goals": ["loss_weight", "fit", "food_restrictions"]
-}
-
-cultural_factors = {
-    "cultural_factors": []
-}
-
-diet = {
-    "diet_daily_calories": [],
-    "calorie_deficit": []
-}
 
 # Classes
-
-
 class HTML_Table:
     def __init__(self, cols: int = 4, rows: List[str] = None):
         self.cols = cols
@@ -552,7 +481,8 @@ def generate_recommendations(df_user, transition_matrix,
     dict_flexi_probas = generate_probabilities_for_flexi(
         flexi_probabilities_dict=flexi_probabilities_dict)
     simulation_results = {}
-    df_recipes_db[["allergies"]].fillna("", inplace=True)
+    df_recipes_db = df_recipes_db.copy()
+    df_recipes_db["allergies"] = df_recipes_db["allergies"].fillna("")
     update_amount = 90.0/len(df_user)
     if transition_matrix is not None:
         pass
@@ -814,7 +744,9 @@ def generate_simulations(df_user, transition_matrix, df_recipes_db, days_to_simu
                   "lunch": 0.05,
                   "dinner": 0.2}
     simulation_results = {}
-    df_recipes_db["allergies"] = df_recipes_db["allergies"].fillna("")
+    # Prepare the recipes dataframe
+    mask = df_recipes_db['allergies'].isna()
+    df_recipes_db.loc[mask, "allergies"] = ""
     for i in range(len(df_user)):
         try:
             user_db = df_user.iloc[i, :]
