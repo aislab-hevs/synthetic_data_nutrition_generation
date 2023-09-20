@@ -388,6 +388,8 @@ def build_full_ui():
         defaultValues.food_restriction_probability_dict)
     flexi_probabilities = copy.deepcopy(defaultValues.flexi_probabilities_dict)
     meals_proba = copy.deepcopy(defaultValues.meals_proba_dict)
+    bmi_transition_probabilities = copy.deepcopy(
+        defaultValues.bmi_probability_transition_dict)
     # UI building
     # Starting
     # Prepare dictionaries
@@ -417,9 +419,21 @@ def build_full_ui():
                                               meals_proba, widgets.FloatSlider, exclude_validator=True, min=0, max=1.0, step=0.1),
                                           "titles": "Meal probabilities"}
     dict_widgets['flexible_probabilities'] = {"widget_list":
-                                              widgets.Accordion(children=[form_probability_dict(flexi_probabilities[k], widgets.FloatSlider, min=0, max=1.0, step=0.1) for k in flexi_probabilities.keys()],
+                                              widgets.Accordion(children=[form_probability_dict(flexi_probabilities[k],
+                                                                                                widgets.FloatSlider,
+                                                                                                min=0,
+                                                                                                max=1.0,
+                                                                                                step=0.1) for k in flexi_probabilities.keys()],
                                                                 titles=[k.replace("_", " ") for k in flexi_probabilities.keys()]),
                                               "titles": "Flexible probability"}
+    dict_widgets['transition_probabilities'] = {"widget_list": widgets.Accordion(children=[form_probability_dict(bmi_transition_probabilities[k],
+                                                                                                                 widgets.FloatSlider,
+                                                                                                                 min=0,
+                                                                                                                 max=1.0,
+                                                                                                                 step=0.1) for k in bmi_transition_probabilities.keys()],
+                                                                                 titles=[k.replace("_", " ") for k in bmi_transition_probabilities.keys()]),
+                                                "titles": "BMI transition probability"
+                                                }
     # UI displaying
     style = {'description_width': 'initial'}
     NUM_USERS = widgets.IntText(

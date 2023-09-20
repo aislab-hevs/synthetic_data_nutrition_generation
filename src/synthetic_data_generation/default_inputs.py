@@ -131,15 +131,25 @@ DEFAULT_NUM_USERS = 500
 
 DEFAULT_NUM_DAYS = 365
 
-probability_transition_dict = {
-    "underweight_to_healthy": 0.35,
-    "underweight_to_underweight": 0.65,
-    "healthy_to_healthy": 0.80,
-    "healthy_to_underweight": 0.05,
-    "healthy_to_overweight": 0.15,
-    "overweight_to_healthy": 0.28,
-    "overweight_to_overweight": 0.67,
-    "overweight_to_obese": 0.05,
-    "obese_to_overweight": 0.35,
-    "obese_to_obese": 0.65,
+bmi_probability_transition_dict = {
+    "underweight": {"underweight": 0.65,
+                    "healthy": 0.35,
+                    "overweight": 0.0,
+                    "obese": 0.0
+                    },
+    "healthy": {"underweight": 0.05,
+                "healthy": 0.80,
+                "overweight": 0.15,
+                "obese": 0.0
+                },
+    "overweight": {"underweight": 0.0,
+                   "healthy": 0.30,
+                   "overweight": 0.6,
+                   "obese": 0.10
+                   },
+    "obese": {"underweight": 0.0,
+              "healthy": 0.0,
+              "overweight": 0.35,
+              "obese": 0.65
+              }
 }
