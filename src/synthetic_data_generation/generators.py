@@ -282,16 +282,10 @@ def generate_user_goals(list_user_id: List[str], df_user_entity: pd.DataFrame) -
     return df_user_goals
 
 
-def generate_probabilities_for_flexi(flexi_probabilities_dict: Dict[str, Any]):
-    return flexi_probabilities_dict
-
-# assign probabilities
-
-
 def assign_probabilities(cultural_factor: str,
                          flexi_probability_dict: Dict[str, Any]):
     if cultural_factor == "flexi_observant":
-        flexi_proba = generate_probabilities_for_flexi(flexi_probability_dict)
+        flexi_proba = flexi_probability_dict
         value = np.random.choice(list(flexi_proba.keys()))
         return value
     pass
@@ -315,8 +309,6 @@ def generate_cultural_data(list_user_id: List[str], food_restriction_probability
     df_cultural_factors["cultural_factor"] = food_restrictions_user
     df_cultural_factors["probabilities"] = None
     # Generate flexi probabilities
-    flexi_probabilities = generate_probabilities_for_flexi(
-        flexi_probability_dict)
     df_cultural_factors["probabilities"] = df_cultural_factors["cultural_factor"].apply(
         lambda x, flexi_probability_dict: assign_probabilities(x, flexi_probability_dict), flexi_probability_dict=flexi_probability_dict
     )
@@ -452,8 +444,7 @@ def generate_recommendations(df_user: pd.DataFrame,
         "halal_observant": "cultural_restriction =='halal'",
         "kosher_observant": "cultural_restriction =='kosher'"
     }
-    dict_flexi_probas = generate_probabilities_for_flexi(
-        flexi_probabilities_dict=flexi_probabilities_dict)
+    dict_flexi_probas = flexi_probabilities_dict
     simulation_results = {}
     df_recipes_db = df_recipes_db.copy()
     df_recipes_db["allergies"] = df_recipes_db["allergies"].fillna("")

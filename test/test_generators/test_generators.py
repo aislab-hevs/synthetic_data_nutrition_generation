@@ -18,7 +18,6 @@ from synthetic_data_generation.generators import (create_name_surname,
                                                   generate_health_condition_data,
                                                   define_user_goal_according_BMI,
                                                   generate_user_goals,
-                                                  generate_probabilities_for_flexi,
                                                   assign_probabilities,
                                                   generate_cultural_data,
                                                   generate_preferences_data,
@@ -214,23 +213,6 @@ def test_generate_user_goals(user_life_style_data):
     user_goals = generate_user_goals(list_user_id=list_users,
                                      df_user_entity=life_style)
     assert user_goals.shape[0] == len(list_users)
-
-
-def test_generate_probabilities_for_flexi():
-    food_restrictions = ["vegan_observant",
-                         "vegetarian_observant",
-                         "halal_observant",
-                         "kosher_observant",
-                         "None"]
-    flexi_probabilities = {
-        "flexi_vegie": dict(zip(food_restrictions, [0.6, 0.2, 0.05, 0.05, 0.1])),
-        # "flexi_vegetarian" : dict(zip(food_restrictions,[NN, 0.6, 0.05, 0.05, 0.1])),
-        "flexi_vegetarian": dict(zip(food_restrictions, [0.0, 0.6, 0.05, 0.05, 0.3])),
-        "flexi_halal": dict(zip(food_restrictions, [0.1, 0.2, 0.6, 0.0, 0.1])),
-        "flexi_kosher": dict(zip(food_restrictions, [0.1, 0.1, 0.1, 0.6, 0.1]))
-    }
-    probabilities = generate_probabilities_for_flexi(flexi_probabilities)
-    assert flexi_probabilities == probabilities
 
 
 def test_assign_probabilities(flexi_probas):
