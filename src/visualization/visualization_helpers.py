@@ -267,45 +267,12 @@ class ExecuteButton:
     def execute_simulation(self):
         try:
             print("simulation starting")
+            # TODO: Process the dictionary to extract probabilities
+
             # self.progress_bar.hide()
             self.progress_bar.reset_progress_bar()
             self.progress_bar.display()
             # execute simulation
-            # TODO:get probabilities from the initial file and add as input
-            dict_probability_transitions = defaultValues.probability_transition_dict
-            probability_transition_matrix = np.array([[dict_probability_transitions.get("underweight_to_underweight", 0.0),
-                                                       dict_probability_transitions.get(
-                                                           "underweight_to_healthy", 0.0),
-                                                       dict_probability_transitions.get(
-                                                           "underweight_to_overweight", 0.0),
-                                                       dict_probability_transitions.get(
-                                                           "underweight_to_obese", 0.0)
-                                                       ],
-                                                      [dict_probability_transitions.get("healthy_to_underweight", 0.0),
-                                                       dict_probability_transitions.get(
-                                                           "healthy_to_healthy", 0.0),
-                                                       dict_probability_transitions.get(
-                                                           "healthy_to_overweight", 0.0),
-                                                       dict_probability_transitions.get(
-                                                           "healthy_to_obese", 0.0)
-                                                       ],
-                                                      [dict_probability_transitions.get("overweight_to_underweight", 0.0),
-                                                       dict_probability_transitions.get(
-                                                           "overweight_to_healthy", 0.0),
-                                                       dict_probability_transitions.get(
-                                                           "overweight_to_overweight", 0.0),
-                                                       dict_probability_transitions.get(
-                                                           "overweight_to_obese", 0.0)
-                                                       ],
-                                                      [dict_probability_transitions.get("obese_to_underweight", 0.0),
-                                                       dict_probability_transitions.get(
-                                                           "obese_to_healthy", 0.0),
-                                                       dict_probability_transitions.get(
-                                                           "obese_to_overweight", 0.0),
-                                                       dict_probability_transitions.get(
-                                                           "obese_to_obese", 0.0)
-                                                       ]
-                                                      ])
             # validate before execute
             if self.num_users.value < 30:
                 raise Exception(
@@ -327,6 +294,34 @@ class ExecuteButton:
                 if not check_sum_proba(self.dictionaries['flexi_probabilities'][k]):
                     raise Exception(
                         f"{k.replace('_', ' ')} probabilities should sum up 1.0")
+            # check probabilities for BMI transition
+            for k in self.dictionaries["bmi_transition_proba"].keys():
+                if not check_sum_proba(self.dictionaries["bmi_transition_proba"][k]):
+                    raise Exception(
+                        f"{k.replace('_', ' ')} probabilities should sum up 1.0"
+                    )
+            # Process probability values
+            probability_transition_matrix = np.array([[self.dictionaries["bmi_transition_proba"]["underweight"]["underweight"].value,
+                                                       self.dictionaries["bmi_transition_proba"]["underweight"]["healthy"].value,
+                                                       self.dictionaries["bmi_transition_proba"]["underweight"]["overweight"].value,
+                                                       self.dictionaries["bmi_transition_proba"]["underweight"]["obese"].value,
+                                                       ],
+                                                      [self.dictionaries["bmi_transition_proba"]["healthy"]["underweight"].value,
+                                                       self.dictionaries["bmi_transition_proba"]["healthy"]["healthy"].value,
+                                                       self.dictionaries["bmi_transition_proba"]["healthy"]["overweight"].value,
+                                                       self.dictionaries["bmi_transition_proba"]["healthy"]["obese"].value,
+                                                       ],
+                                                      [self.dictionaries["bmi_transition_proba"]["overweight"]["underweight"].value,
+                                                       self.dictionaries["bmi_transition_proba"]["overweight"]["healthy"].value,
+                                                       self.dictionaries["bmi_transition_proba"]["overweight"]["overweight"].value,
+                                                       self.dictionaries["bmi_transition_proba"]["overweight"]["obese"].value,
+                                                       ],
+                                                      [self.dictionaries["bmi_transition_proba"]["obese"]["underweight"].value,
+                                                       self.dictionaries["bmi_transition_proba"]["obese"]["healthy"].value,
+                                                       self.dictionaries["bmi_transition_proba"]["obese"]["overweight"].value,
+                                                       self.dictionaries["bmi_transition_proba"]["obese"]["obese"].value,
+                                                       ]
+                                                      ])
             # load recipes data
             df_recipes = pd.read_csv("processed_recipes_dataset.csv", sep="|")
             simulation_results, df_user_join, table = execute_simulation(num_users=self.num_users.value,
@@ -457,7 +452,8 @@ def build_full_ui():
         'allergies_probability_dict': allergies_probability,
         'food_restriction_probability_dict': food_restriction_probability,
         'flexi_probabilities': flexi_probabilities,
-        'meals_proba': meals_proba
+        'meals_proba': meals_proba,
+        "bmi_transition_proba": bmi_transition_probabilities
     }
     button_control = ExecuteButton(p_bar,
                                    num_users=NUM_USERS,
