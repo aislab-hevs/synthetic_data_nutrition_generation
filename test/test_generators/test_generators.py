@@ -39,9 +39,9 @@ from synthetic_data_generation.generators import (create_name_surname,
                                                   ActivityLevel
                                                   )
 
-from synthetic_data_generation.constants import (person_entity,
-                                                 user_entity,
-                                                 BMI_probabilities_dict)
+from synthetic_data_generation.default_inputs import (person_entity,
+                                                      user_entity,
+                                                      BMI_probabilities_dict)
 
 
 @pytest.fixture

@@ -372,50 +372,60 @@ class ExecuteButton:
                 print(f"Error processing inputs: {e}")
             display(out)
 
-    def is_finished(self):
-        pass
-
-    def generate_buttons(self):
-        pass
-
     def button_callback(self, b):
         self.execute_simulation()
 
 
 def build_full_ui():
     # Get initializers
-    age_probabilities = copy.deepcopy(age_probabilities_dict)
-    gender_probabilities = copy.deepcopy(gender_probabilities_dict)
-    BMI_probabilities = copy.deepcopy(BMI_probabilities_dict)
-    allergies_probability = copy.deepcopy(allergies_probability_dict)
+    age_probabilities = copy.deepcopy(defaultValues.age_probabilities_dict)
+    gender_probabilities = copy.deepcopy(
+        defaultValues.gender_probabilities_dict)
+    BMI_probabilities = copy.deepcopy(defaultValues.BMI_probabilities_dict)
+    allergies_probability = copy.deepcopy(
+        defaultValues.allergies_probability_dict)
     food_restriction_probability = copy.deepcopy(
-        food_restriction_probability_dict)
-    flexi_probabilities = copy.deepcopy(flexi_probabilities_dict)
-    meals_proba = copy.deepcopy(meals_proba_dict)
+        defaultValues.food_restriction_probability_dict)
+    flexi_probabilities = copy.deepcopy(defaultValues.flexi_probabilities_dict)
+    meals_proba = copy.deepcopy(defaultValues.meals_proba_dict)
     # UI building
     # Starting
     # Prepare dictionaries
     dict_widgets = OrderedDict()
-    dict_widgets['age'] = {"widget_list": form_probability_dict(age_probabilities, widgets.FloatSlider, min=0, max=1.0, step=0.1),
+    dict_widgets['age'] = {"widget_list":
+                           form_probability_dict(
+                               age_probabilities, widgets.FloatSlider, min=0, max=1.0, step=0.1),
                            "titles": "Age"}
-    dict_widgets['gender'] = {"widget_list": form_probability_dict(gender_probabilities, widgets.FloatSlider, min=0, max=1.0, step=0.1),
+    dict_widgets['gender'] = {"widget_list":
+                              form_probability_dict(
+                                  gender_probabilities, widgets.FloatSlider, min=0, max=1.0, step=0.1),
                               "titles": "Gender"}
-    dict_widgets['bmi'] = {"widget_list": form_probability_dict(BMI_probabilities, widgets.FloatSlider, min=0, max=1.0, step=0.1),
+    dict_widgets['bmi'] = {"widget_list":
+                           form_probability_dict(
+                               BMI_probabilities, widgets.FloatSlider, min=0, max=1.0, step=0.1),
                            "titles": "BMI"}
-    dict_widgets['allergies'] = {"widget_list": form_probability_dict(allergies_probability, widgets.FloatSlider, min=0, max=1.0, step=0.1),
+    dict_widgets['allergies'] = {"widget_list":
+                                 form_probability_dict(
+                                     allergies_probability, widgets.FloatSlider, min=0, max=1.0, step=0.1),
                                  "titles": "Allergies"}
-    dict_widgets['food_restrictions'] = {"widget_list": form_probability_dict(food_restriction_probability, widgets.FloatSlider, min=0, max=1.0, step=0.1),
+    dict_widgets['food_restrictions'] = {"widget_list":
+                                         form_probability_dict(
+                                             food_restriction_probability, widgets.FloatSlider, min=0, max=1.0, step=0.1),
                                          "titles": "Food restrictions"}
-    dict_widgets['meal_probabilities'] = {"widget_list": form_probability_dict(meals_proba, widgets.FloatSlider, exclude_validator=True, min=0, max=1.0, step=0.1),
+    dict_widgets['meal_probabilities'] = {"widget_list":
+                                          form_probability_dict(
+                                              meals_proba, widgets.FloatSlider, exclude_validator=True, min=0, max=1.0, step=0.1),
                                           "titles": "Meal probabilities"}
-    dict_widgets['flexible_probabilities'] = {"widget_list": widgets.Accordion(children=[form_probability_dict(flexi_probabilities[k], widgets.FloatSlider, min=0, max=1.0, step=0.1) for k in flexi_probabilities.keys()],
-                                                                               titles=[k.replace("_", " ") for k in flexi_probabilities.keys()]),
+    dict_widgets['flexible_probabilities'] = {"widget_list":
+                                              widgets.Accordion(children=[form_probability_dict(flexi_probabilities[k], widgets.FloatSlider, min=0, max=1.0, step=0.1) for k in flexi_probabilities.keys()],
+                                                                titles=[k.replace("_", " ") for k in flexi_probabilities.keys()]),
                                               "titles": "Flexible probability"}
     # UI displaying
     style = {'description_width': 'initial'}
-    NUM_USERS = widgets.IntText(DEFAULT_NUM_USERS, description="Total users:")
+    NUM_USERS = widgets.IntText(
+        defaultValues.DEFAULT_NUM_USERS, description="Total users:")
     NUM_DAYS = widgets.IntText(
-        DEFAULT_NUM_DAYS, description="Days to generate:", style=style)
+        defaultValues.DEFAULT_NUM_DAYS, description="Days to generate:", style=style)
     top_box = widgets.Box([NUM_USERS, NUM_DAYS], style=style)
     main_widget = NotebookUIBuilder(dict_widgets)
     # Create button to execute the simulation
