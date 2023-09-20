@@ -12,13 +12,18 @@ import copy
 
 from synthetic_data_generation.generators import (person_entity,
                                                   run_full_simulation)
-from synthetic_data_generation.constants import (age_probabilities_dict,
-                                                 allergies_probability_dict,
-                                                 BMI_probabilities_dict,
-                                                 flexi_probabilities_dict,
-                                                 food_restriction_probability_dict,
-                                                 gender_probabilities_dict,
-                                                 meals_proba_dict)
+# from synthetic_data_generation.default_inputs import (age_probabilities_dict,
+#                                                       allergies_probability_dict,
+#                                                       BMI_probabilities_dict,
+#                                                       flexi_probabilities_dict,
+#                                                       food_restriction_probability_dict,
+#                                                       gender_probabilities_dict,
+#                                                       meals_proba_dict,
+#                                                       DEFAULT_NUM_DAYS,
+#                                                       DEFAULT_NUM_USERS,
+#                                                       )
+
+import synthetic_data_generation.default_inputs as defaultValues
 
 
 def values_from_dictionary(dictionary: Dict[str, Any]):
@@ -266,10 +271,40 @@ class ExecuteButton:
             self.progress_bar.reset_progress_bar()
             self.progress_bar.display()
             # execute simulation
-            probability_transition_matrix = np.array([[0.65, 0.35, 0.0, 0.0],
-                                                      [0.05, 0.80, 0.15, 0.0],
-                                                      [0.0, 0.28, 0.67, 0.05],
-                                                      [0.0, 0.0, 0.35, 0.65]
+            # TODO:get probabilities from the initial file and add as input
+            dict_probability_transitions = defaultValues.probability_transition_dict
+            probability_transition_matrix = np.array([[dict_probability_transitions.get("underweight_to_underweight", 0.0),
+                                                       dict_probability_transitions.get(
+                                                           "underweight_to_healthy", 0.0),
+                                                       dict_probability_transitions.get(
+                                                           "underweight_to_overweight", 0.0),
+                                                       dict_probability_transitions.get(
+                                                           "underweight_to_obese", 0.0)
+                                                       ],
+                                                      [dict_probability_transitions.get("healthy_to_underweight", 0.0),
+                                                       dict_probability_transitions.get(
+                                                           "healthy_to_healthy", 0.0),
+                                                       dict_probability_transitions.get(
+                                                           "healthy_to_overweight", 0.0),
+                                                       dict_probability_transitions.get(
+                                                           "healthy_to_obese", 0.0)
+                                                       ],
+                                                      [dict_probability_transitions.get("overweight_to_underweight", 0.0),
+                                                       dict_probability_transitions.get(
+                                                           "overweight_to_healthy", 0.0),
+                                                       dict_probability_transitions.get(
+                                                           "overweight_to_overweight", 0.0),
+                                                       dict_probability_transitions.get(
+                                                           "overweight_to_obese", 0.0)
+                                                       ],
+                                                      [dict_probability_transitions.get("obese_to_underweight", 0.0),
+                                                       dict_probability_transitions.get(
+                                                           "obese_to_healthy", 0.0),
+                                                       dict_probability_transitions.get(
+                                                           "obese_to_overweight", 0.0),
+                                                       dict_probability_transitions.get(
+                                                           "obese_to_obese", 0.0)
+                                                       ]
                                                       ])
             # validate before execute
             if self.num_users.value < 30:
@@ -378,9 +413,9 @@ def build_full_ui():
                                               "titles": "Flexible probability"}
     # UI displaying
     style = {'description_width': 'initial'}
-    NUM_USERS = widgets.IntText(500, description="Total users:")
+    NUM_USERS = widgets.IntText(DEFAULT_NUM_USERS, description="Total users:")
     NUM_DAYS = widgets.IntText(
-        365, description="Days to generate:", style=style)
+        DEFAULT_NUM_DAYS, description="Days to generate:", style=style)
     top_box = widgets.Box([NUM_USERS, NUM_DAYS], style=style)
     main_widget = NotebookUIBuilder(dict_widgets)
     # Create button to execute the simulation

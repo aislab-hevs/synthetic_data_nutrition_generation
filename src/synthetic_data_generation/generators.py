@@ -11,9 +11,9 @@ from prettytable import PrettyTable, ALL, FRAME
 from html import escape
 from scipy.stats import bernoulli
 from tqdm import tqdm
-from .constants import (person_entity,
-                        user_entity,
-                        meals_calorie_dict)
+from .default_inputs import (person_entity,
+                             user_entity,
+                             meals_calorie_dict)
 
 
 # Classes

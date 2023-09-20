@@ -88,7 +88,7 @@ def user_life_style_data():
                                                    user_entity=user_entity,
                                                    df_personal_data=p_data,
                                                    BMI_probabilities_dict=bmi_proba)
-    return df_user_entity
+    return df_user_entity, p_data
 
 
 @pytest.fixture
@@ -210,9 +210,10 @@ def test_define_user_goal_according_BMI():
 
 
 def test_generate_user_goals(user_life_style_data):
-    list_users = user_life_style_data['userId'].tolist()
+    life_style, p_data = user_life_style_data
+    list_users = life_style['userId'].tolist()
     user_goals = generate_user_goals(list_user_id=list_users,
-                                     df_user_entity=user_life_style_data)
+                                     df_user_entity=life_style)
     assert user_goals.shape[0] == len(list_users)
 
 
@@ -287,41 +288,14 @@ def test_generate_diet_plan():
     assert np.round(diet_plan, 2) == np.round(daily_calorie_needs, 2)
 
 
-def test_generate_therapy_data(personal_data, user_life_style_data):
-    list_users = user_life_style_data['userId'].tolist()
+def test_generate_therapy_data(user_life_style_data):
+    life_style, p_data = user_life_style_data
+    list_users = life_style['userId'].tolist()
     user_goals = generate_user_goals(list_user_id=list_users,
-                                     df_user_entity=user_life_style_data)
+                                     df_user_entity=life_style)
     df_therapy, df_user = generate_therapy_data(list_user_id=list_users,
-                                                df_personal_data=personal_data,
+                                                df_personal_data=p_data,
                                                 df_user_goals=user_goals,
-                                                df_user_entity=user_life_style_data
+                                                df_user_entity=life_style
                                                 )
     assert df_therapy.shape[0] == len(list_users)
-
-
-def test_allergy_searcher(load_recipes):
-    # df_recipes = load_recipes
-    # allergy_found = allergy_searcher(recipes_db_allergy_col=df_recipes,
-    #                                  allergy="cow's milk")
-    # assert len(allergy_found) > 0
-    pass
-
-
-def test_generate_meals_plan_per_user():
-    # generate_meals_plan_per_user()
-    pass
-
-
-def test_generate_recommendations():
-    # generate_recommendations()
-    pass
-
-
-def test_create_a_summary_table():
-    # create_a_summary_table()
-    pass
-
-
-def test_run_full_simulation():
-    # run_full_simulation()
-    pass

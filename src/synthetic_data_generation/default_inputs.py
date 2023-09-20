@@ -35,42 +35,6 @@ cultural_factors = {
     "food_limitation": []
 }
 
-sustainability = {
-    "environmental_harm": [],
-    "eco_score": [],
-    "co2_food_print": [],
-    "recyclable_packaging": []
-}
-
-actions = {
-    "action_type": [],
-    "location": [],
-    "action_date": []
-}
-
-preferences = {
-    "breakfast_time": [],
-    "lunch_time": [],
-    "dinner_time": []
-}
-
-health_conditions = {
-    "food_allergies": []
-}
-
-user_goals = {
-    "user_goals": ["loss_weight", "fit", "food_restrictions"]
-}
-
-cultural_factors = {
-    "cultural_factors": []
-}
-
-diet = {
-    "diet_daily_calories": [],
-    "calorie_deficit": []
-}
-
 meals_calorie_dict = {"breakfast": 0.3,
                       "morning snacks": 0.05,
                       "afternoon snacks": 0.4,
@@ -161,4 +125,21 @@ meals_proba_dict = {
     "afternoon snacks": 0.40,
     "lunch": 0.95,
     "dinner": 0.85
+}
+
+DEFAULT_NUM_USERS = 500
+
+DEFAULT_NUM_DAYS = 365
+
+probability_transition_dict = {
+    "underweight_to_healthy": 0.35,
+    "underweight_to_underweight": 0.65,
+    "healthy_to_healthy": 0.80,
+    "healthy_to_underweight": 0.05,
+    "healthy_to_overweight": 0.15,
+    "overweight_to_healthy": 0.28,
+    "overweight_to_overweight": 0.67,
+    "overweight_to_obese": 0.05,
+    "obese_to_overweight": 0.35,
+    "obese_to_obese": 0.65,
 }
