@@ -16,6 +16,9 @@ from .default_inputs import (person_entity,
 
 # Classes
 class HTML_Table:
+    """_summary_
+    """
+
     def __init__(self, cols: int = 4, rows: List[str] = None):
         self.cols = cols
         if rows is not None:

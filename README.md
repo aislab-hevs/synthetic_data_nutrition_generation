@@ -37,6 +37,11 @@ To run the simulation several parameters can be setter trough the GUI in the mai
 * **Flexible probability**: This parameter defines the user's soft-preferences (e.g., a person could have a preference for vegan food but also can take vegetarian food also).
 * **BMI transition probability**: This probabilities define the transition probability between BMI states, this probabilities define if the user change or maintain they current BMI.
 
+## Code Organization
+
+Code is organized in the following setup:
+* In the src folder 
+
 ## Documentation
 
 Todo

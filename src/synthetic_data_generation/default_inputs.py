@@ -42,14 +42,14 @@ meals_calorie_dict = {"breakfast": 0.3,
 
 # Initializers
 age_probabilities_dict = {
-    "20-29": 0.30,
+    "20-29": 0.20,
     "30-39": 0.20,
     "40-49": 0.10,
     "50-59": 0.10,
     "60-69": 0.10,
     "70-79": 0.10,
     "80-89": 0.10,
-    "90-100": 0.00
+    "90-100": 0.10
 }
 
 gender_probabilities_dict = {
@@ -78,11 +78,11 @@ allergies_probability_dict = {
 
 food_restriction_probability_dict = {
     "vegan_observant": 0.2,
-    "vegetarian_observant": 0.3,
-    "halal_observant": 0.05,
-    "kosher_observant": 0.05,
-    "flexi_observant": 0.1,
-    "None": 0.3
+    "vegetarian_observant": 0.2,
+    "halal_observant": 0.10,
+    "kosher_observant": 0.10,
+    "flexi_observant": 0.10,
+    "None": 0.30
 }
 
 flexi_probabilities_dict = {
@@ -139,16 +139,16 @@ bmi_probability_transition_dict = {
     "healthy": {"underweight": 0.10,
                 "healthy": 0.80,
                 "overweight": 0.10,
-                "obese": 0.0
+                "obese": 0.00
                 },
-    "overweight": {"underweight": 0.0,
+    "overweight": {"underweight": 0.00,
                    "healthy": 0.30,
-                   "overweight": 0.6,
+                   "overweight": 0.60,
                    "obese": 0.10
                    },
     "obese": {"underweight": 0.0,
               "healthy": 0.0,
-              "overweight": 0.35,
-              "obese": 0.65
+              "overweight": 0.30,
+              "obese": 0.70
               }
 }

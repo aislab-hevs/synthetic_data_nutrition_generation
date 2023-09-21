@@ -25,7 +25,12 @@ def render_transition_graph(states: List, probability_matrix):
         dot.node(name=state, label=state)
     for i in range(probability_matrix.shape[0]):
         for j in range(probability_matrix.shape[1]):
-            dot.edge(states[i], states[j], f"p={probability_matrix[i][j]}")
+            if (i == 0 and j == 1) or (i == 1 and i == j) or (i > 1 and i > j):
+                dot.edge(states[i], states[j],
+                         f"p={probability_matrix[i][j]}", color="green")
+            else:
+                dot.edge(states[i], states[j],
+                         f"p={probability_matrix[i][j]}", color="red")
     return dot
 
 
