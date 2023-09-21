@@ -2,7 +2,6 @@ from IPython.display import display
 from IPython.display import HTML
 import base64
 import ipywidgets as widgets
-import io
 from collections import OrderedDict
 from typing import Any
 import numpy as np
@@ -270,7 +269,6 @@ class ExecuteButton:
         self.num_days = num_days
         self.dictionaries = dictionaries
         self.out = out
-        pass
 
     def execute_simulation(self):
         try:

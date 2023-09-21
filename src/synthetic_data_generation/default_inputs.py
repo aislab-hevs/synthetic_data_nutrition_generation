@@ -1,4 +1,3 @@
-
 # Constants
 person_entity = {
     "userId": str,
@@ -50,7 +49,7 @@ age_probabilities_dict = {
     "60-69": 0.10,
     "70-79": 0.10,
     "80-89": 0.10,
-    "90-100": 0.0
+    "90-100": 0.00
 }
 
 gender_probabilities_dict = {
@@ -88,18 +87,18 @@ food_restriction_probability_dict = {
 
 flexi_probabilities_dict = {
     "flexi_vegie": {
-        "vegan_observant": 0.6,
-        "vegetarian_observant": 0.2,
+        "vegan_observant": 0.60,
+        "vegetarian_observant": 0.20,
         "halal_observant": 0.05,
         "kosher_observant": 0.05,
-        "None": 0.1
+        "None": 0.10
     },
     "flexi_vegetarian": {
-        "vegan_observant": 0.0,
-        "vegetarian_observant": 0.6,
+        "vegan_observant": 0.00,
+        "vegetarian_observant": 0.60,
         "halal_observant": 0.05,
         "kosher_observant": 0.05,
-        "None": 0.3
+        "None": 0.30
     },
     "flexi_halal": {
         "vegan_observant": 0.1,
@@ -132,14 +131,14 @@ DEFAULT_NUM_USERS = 500
 DEFAULT_NUM_DAYS = 365
 
 bmi_probability_transition_dict = {
-    "underweight": {"underweight": 0.65,
-                    "healthy": 0.35,
+    "underweight": {"underweight": 0.60,
+                    "healthy": 0.40,
                     "overweight": 0.0,
                     "obese": 0.0
                     },
-    "healthy": {"underweight": 0.05,
+    "healthy": {"underweight": 0.10,
                 "healthy": 0.80,
-                "overweight": 0.15,
+                "overweight": 0.10,
                 "obese": 0.0
                 },
     "overweight": {"underweight": 0.0,

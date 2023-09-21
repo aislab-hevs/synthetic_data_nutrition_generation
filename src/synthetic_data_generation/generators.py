@@ -7,7 +7,6 @@ import string
 import uuid
 import seaborn as sns
 import matplotlib.pyplot as plt
-from prettytable import PrettyTable, ALL, FRAME
 from html import escape
 from scipy.stats import bernoulli
 from .default_inputs import (person_entity,
