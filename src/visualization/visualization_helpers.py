@@ -9,21 +9,25 @@ import numpy as np
 import pandas as pd
 from typing import Any, Dict, List
 import copy
+import graphviz as graphv
 
 from synthetic_data_generation.generators import (person_entity,
+                                                  BMI_constants,
                                                   run_full_simulation)
-# from synthetic_data_generation.default_inputs import (age_probabilities_dict,
-#                                                       allergies_probability_dict,
-#                                                       BMI_probabilities_dict,
-#                                                       flexi_probabilities_dict,
-#                                                       food_restriction_probability_dict,
-#                                                       gender_probabilities_dict,
-#                                                       meals_proba_dict,
-#                                                       DEFAULT_NUM_DAYS,
-#                                                       DEFAULT_NUM_USERS,
-#                                                       )
 
 import synthetic_data_generation.default_inputs as defaultValues
+# import warnings
+# warnings.filterwarnings("ignore")
+
+
+def render_transition_graph(states: List, probability_matrix):
+    dot = graphv.Digraph()
+    for state in states:
+        dot.node(name=state, label=state)
+    for i in range(probability_matrix.shape[0]):
+        for j in range(probability_matrix.shape[1]):
+            dot.edge(states[i], states[j], f"p={probability_matrix[i][j]}")
+    return dot
 
 
 def values_from_dictionary(dictionary: Dict[str, Any]):
@@ -139,6 +143,7 @@ class DictValidator:
         return box
 
     def validator_event(self, change):
+        # print("validator event")
         valid_value = self.check_sum_proba()
         self.valid_widget.value = valid_value
         self.label.value = f"Total probability: {self.sum_values()}"
@@ -257,21 +262,29 @@ def process_simulation_results(simulation_results_dict):
 
 
 class ExecuteButton:
-    def __init__(self, progress_bar: FloatProgressBar, num_users, num_days, dictionaries) -> None:
+    def __init__(self, progress_bar: FloatProgressBar,
+                 num_users, num_days, dictionaries,
+                 out: widgets.Output = None) -> None:
         self.progress_bar = progress_bar
         self.num_users = num_users
         self.num_days = num_days
         self.dictionaries = dictionaries
+        self.out = out
         pass
 
     def execute_simulation(self):
         try:
-            print("simulation starting")
-            # TODO: Process the dictionary to extract probabilities
-
             # self.progress_bar.hide()
             self.progress_bar.reset_progress_bar()
-            self.progress_bar.display()
+            if self.out is not None:
+                self.out.clear_output()
+                display(self.out)
+                with self.out:
+                    print("simulation starting")
+                    self.progress_bar.display()
+            else:
+                print("simulation starting")
+                self.progress_bar.display()
             # execute simulation
             # validate before execute
             if self.num_users.value < 30:
@@ -322,6 +335,14 @@ class ExecuteButton:
                                                        self.dictionaries["bmi_transition_proba"]["obese"]["obese"].value,
                                                        ]
                                                       ])
+            # show transition graph
+            if self.out is not None:
+                with self.out:
+                    display(render_transition_graph([BMI_constants.underweight.value,
+                                                     BMI_constants.healthy.value,
+                                                     BMI_constants.overweight.value,
+                                                     BMI_constants.obesity.value],
+                                                    probability_matrix=probability_transition_matrix))
             # load recipes data
             df_recipes = pd.read_csv("processed_recipes_dataset.csv", sep="|")
             simulation_results, df_user_join, table = execute_simulation(num_users=self.num_users.value,
@@ -358,9 +379,13 @@ class ExecuteButton:
                 extension="csv",
                 description="User's tracking data"
             )
-
-            display(HTML(button_1.get_html_button()), HTML(
-                button_2.get_html_button()), HTML(button_3.get_html_button()))
+            if self.out is not None:
+                with self.out:
+                    display(HTML(button_1.get_html_button()), HTML(
+                        button_2.get_html_button()), HTML(button_3.get_html_button()))
+            else:
+                display(HTML(button_1.get_html_button()), HTML(
+                        button_2.get_html_button()), HTML(button_3.get_html_button()))
         except Exception as e:
             out = widgets.Output(layout={'border': '1px solid red'})
             with out:
@@ -441,7 +466,6 @@ def build_full_ui():
     execution_button = widgets.Button(description="Start Generation",
                                       icon="play",
                                       tooltip="Click to start the data generation")
-
     p_bar = FloatProgressBar()
     # parameters
     # Test the function general
@@ -455,11 +479,15 @@ def build_full_ui():
         'meals_proba': meals_proba,
         "bmi_transition_proba": bmi_transition_probabilities
     }
+    out = widgets.Output()
     button_control = ExecuteButton(p_bar,
                                    num_users=NUM_USERS,
                                    num_days=NUM_DAYS,
-                                   dictionaries=general_dict)
+                                   dictionaries=general_dict,
+                                   out=out)
+
     execution_button.on_click(button_control.button_callback)
     display(top_box)
     main_widget.display()
     display(execution_button)
+    # display(out)
