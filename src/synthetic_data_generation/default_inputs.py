@@ -152,3 +152,22 @@ bmi_probability_transition_dict = {
               "obese": 0.70
               }
 }
+
+# legend
+legend_text = """digraph {
+  rankdir=LR
+  node [shape=plaintext]
+  subgraph cluster_01 { 
+    label = "Legend";
+    key [label=<<table border="0" cellpadding="2" cellspacing="0" cellborder="0">
+      <tr><td align="right" port="i1">Health improvement</td></tr>
+      <tr><td align="right" port="i2">Health regression</td></tr>
+      </table>>]
+    key2 [label=<<table border="0" cellpadding="2" cellspacing="0" cellborder="0">
+      <tr><td port="i1">&nbsp;</td></tr>
+      <tr><td port="i2">&nbsp;</td></tr>
+      </table>>]
+    key:i1:e -> key2:i1:w [color=green]
+    key:i2:e -> key2:i2:w [color=red]
+  }
+  }"""

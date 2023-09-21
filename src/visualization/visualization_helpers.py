@@ -19,6 +19,10 @@ import synthetic_data_generation.default_inputs as defaultValues
 # warnings.filterwarnings("ignore")
 
 
+def render_graph_from_text(dot_text: str):
+    return graphv.Source(dot_text)
+
+
 def render_transition_graph(states: List, probability_matrix):
     dot = graphv.Digraph()
     for state in states:
@@ -346,6 +350,7 @@ class ExecuteButton:
                                                      BMI_constants.overweight.value,
                                                      BMI_constants.obesity.value],
                                                     probability_matrix=probability_transition_matrix))
+                    display(render_graph_from_text(defaultValues.legend_text))
             # load recipes data
             df_recipes = pd.read_csv("processed_recipes_dataset.csv", sep="|")
             simulation_results, df_user_join, table = execute_simulation(num_users=self.num_users.value,
