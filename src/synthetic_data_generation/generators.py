@@ -218,29 +218,29 @@ def password_generation(length: int) -> str:
     return ''.join(password)
 
 
-def generate_age_range(probabilities=None,
-                       list_age_range: List = person_entity.get("age_range")):
-    """_summary_
+def generate_age_range(probabilities: List[float] = None,
+                       list_age_range: List[str] = person_entity.get("age_range")) -> str:
+    """Randomly chose an age range from a given age range's list and probabilities' list. 
 
-    :param probabilities: _description_, defaults to None
-    :type probabilities: _type_, optional
-    :param list_age_range: _description_, defaults to person_entity.get("age_range")
-    :type list_age_range: List, optional
-    :return: _description_
-    :rtype: _type_
+    :param probabilities: List of probabilities to chose one age range, probabilities should sum up 1, defaults to None
+    :type probabilities: List[float], optional
+    :param list_age_range: List of age ranges, defaults to person_entity.get("age_range")
+    :type list_age_range: List[str], optional
+    :return: age range randomly chosen based on probabilities.
+    :rtype: str
     """
     return np.random.choice(list_age_range, size=1, replace=True, p=probabilities)[0]
 
 
-def generate_localization(samples, fake: Faker):
-    """_summary_
+def generate_localization(samples: int, fake: Faker) -> List[str]:
+    """Returns a list of localizations.
 
-    :param samples: _description_
-    :type samples: _type_
-    :param fake: _description_
+    :param samples: number of samples to generate
+    :type samples: int
+    :param fake: Faker object
     :type fake: Faker
-    :return: _description_
-    :rtype: _type_
+    :return: List of localizations with len samples
+    :rtype: List[str]
     """
     return list(map(lambda x: fake.locale(), range(samples)))
 
