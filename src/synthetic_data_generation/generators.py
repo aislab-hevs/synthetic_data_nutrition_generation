@@ -18,25 +18,42 @@ from .default_inputs import (person_entity,
 
 # Classes
 class HTML_Table:
-    """_summary_
+    """This classes produces and static html page that visualizes the summary table after data generation.
     """
 
     def __init__(self,
                  cols: int = 4,
-                 rows: List[str] = None):
+                 rows: List[str] = None) -> None:
+        """Constructor method to create HTML_table object able to render an static HTML page with the summary table. 
+
+        :param cols: maximum number of columns in the table, defaults to 4
+        :type cols: int, optional
+        :param rows: List of rows to incorporate in the table, each row is a string containing HTML tags <tr> <th>, defaults to None
+        :type rows: List[str], optional
+        """
         self.cols = cols
         if rows is not None:
             self.rows = rows
         else:
             self.rows = []
 
-    def add_rows(self, new_rows=List[str]):
+    def add_rows(self, new_rows: List[str]) -> None:
+        """Add a list of rows to the HTML table.
+
+        :param new_rows:  List of rows to be added to the HTML table
+        :type new_rows: List[str]
+        """
         self.rows.extend(new_rows)
 
-    def add_row(self, row: str):
+    def add_row(self, row: str) -> None:
+        """Add one row to the HTML table. 
+
+        :param row: row to be added to the table.
+        :type row: str
+        """
         self.rows.append(row)
 
-    def _repr_html_(self):
+    def _repr_html_(self) -> str:
         return """
     <!DOCTYPE HTML PUBLIC
 	 	"-//W3 Organization//DTD W3 HTML 2.0//EN">
@@ -63,16 +80,39 @@ class HTML_Table:
     </body>
     </html>""".format(row="\n".join(self.rows))
 
-    def render(self):
+    def render(self) -> str:
+        """Returns the HTML str that represents the summary table. 
+
+        :return: HTML string representing the HTML summary table. 
+        :rtype: str
+        """
         return self._repr_html_()
 
 
 class Gender(str, Enum):
+    """Enumeration to maintain clinical genders M for male and F for female. 
+
+    :param str: str class to save string constants representing the clinical gender. 
+    :type str: str
+    :param Enum: Enumeration interface
+    :type Enum: Enum
+    """
     male = "M"
     female = "F"
 
 
 class BMI_constants(str, Enum):
+    """Enumeration to maintain the Body Index Mass (BMI) conditions:
+    * underweight
+    * healthy
+    * overweight
+    * obesity.
+
+    :param str: str class to save string constants representing the BMI conditions.
+    :type str: str
+    :param Enum: Enumeration interface
+    :type Enum: Enum
+    """
     underweight = "underweight"
     healthy = "healthy"
     overweight = "overweight"
@@ -80,12 +120,33 @@ class BMI_constants(str, Enum):
 
 
 class NutritionGoals(str, Enum):
+    """Enumeration to maintain the nutrition goals:
+    * lose_weight
+    * maintain_fit
+    * gain_weight.
+
+    :param str: str class to save string constants representing the nutrition goals.
+    :type str: str
+    :param Enum: Enumeration interface
+    :type Enum: Enum
+    """
     lose_weight = "lose_weight"
     maintain_fit = "maintain_fit"
     gain_weight = "gain_weight"
 
 
 class ActivityLevel(str, Enum):
+    """Enumeration to maintain the activity levels:
+    * Sedentary
+    * Lightly active
+    * Moderately active
+    * Very active.
+
+    :param str: str class to save string constants representing the activity level.
+    :type str: str
+    :param Enum: Enumeration interface
+    :type Enum: Enum
+    """
     sedentary = "Sedentary"
     light_active = "Lightly active"
     moderate_active = "Moderately active"
@@ -94,8 +155,17 @@ class ActivityLevel(str, Enum):
 # Functions
 
 
-def create_name_surname(gender: str,
-                        fake: Faker) -> str:
+def create_name_surname(gender: Gender,
+                        fake: Faker) -> List[str]:
+    """Returns a list of string with a simulated name and surname based on clinical gender parameter. 
+
+    :param gender: Clinical gender M for male F for female. 
+    :type gender: Gender
+    :param fake: Faker object 
+    :type fake: Faker
+    :return: List of string in first position the name and in second position the surname. 
+    :rtype: List[str]
+    """
     if gender == Gender.male:
         names = fake.name_male()
     else:
@@ -103,18 +173,45 @@ def create_name_surname(gender: str,
     return names.split(" ")
 
 
-def generate_country(samples,
-                     fake: Faker) -> List:
+def generate_country(samples: int,
+                     fake: Faker) -> List[str]:
+    """Generates a country name. 
+
+    :param samples: Number of country samples to generate. 
+    :type samples: int
+    :param fake: Faker object
+    :type fake: Faker
+    :return: List of country names with len == samples
+    :rtype: List[str]
+    """
     return list(map(lambda x: fake.country(), range(samples)))
 
 
 def generate_email_from_name(name: str,
                              surname: str,
-                             domain: str = "fake.com"):
+                             domain: str = "fake.com") -> str:
+    """Returns an email address from a given name and surname. 
+
+    :param name: user's name 
+    :type name: str
+    :param surname: user's surname
+    :type surname: str
+    :param domain: email domain, defaults to "fake.com"
+    :type domain: str, optional
+    :return: fake email address with the form name.surname@domain
+    :rtype: str
+    """
     return f"{name.lower()}.{surname.lower()}@{domain.lower()}"
 
 
-def password_generation(length):
+def password_generation(length: int) -> str:
+    """Generates a password from a given length. 
+
+    :param length: Password's length 
+    :type length: int
+    :return: Generated password with len length
+    :rtype: str
+    """
     chars = string.ascii_letters + string.digits
     list_chars = list(chars)
     password = np.random.choice(list_chars, length)
@@ -123,16 +220,45 @@ def password_generation(length):
 
 def generate_age_range(probabilities=None,
                        list_age_range: List = person_entity.get("age_range")):
+    """_summary_
+
+    :param probabilities: _description_, defaults to None
+    :type probabilities: _type_, optional
+    :param list_age_range: _description_, defaults to person_entity.get("age_range")
+    :type list_age_range: List, optional
+    :return: _description_
+    :rtype: _type_
+    """
     return np.random.choice(list_age_range, size=1, replace=True, p=probabilities)[0]
 
 
 def generate_localization(samples, fake: Faker):
+    """_summary_
+
+    :param samples: _description_
+    :type samples: _type_
+    :param fake: _description_
+    :type fake: Faker
+    :return: _description_
+    :rtype: _type_
+    """
     return list(map(lambda x: fake.locale(), range(samples)))
 
 
 def generate_personal_data(gender_probabilities: Dict[str, Any],
                            num_users: int = 500,
                            person_entity: Dict[str, Any] = None) -> pd.DataFrame:
+    """_summary_
+
+    :param gender_probabilities: _description_
+    :type gender_probabilities: Dict[str, Any]
+    :param num_users: _description_, defaults to 500
+    :type num_users: int, optional
+    :param person_entity: _description_, defaults to None
+    :type person_entity: Dict[str, Any], optional
+    :return: _description_
+    :rtype: pd.DataFrame
+    """
     # Create Personal data frame
     df_personal_data = pd.DataFrame(
         data=[], columns=list(person_entity.keys()))
@@ -186,11 +312,26 @@ def choose_one_from_list(list_values: List,
                          probabilities: List = None,
                          size: int = 1,
                          replace: bool = True):
+    """_summary_
+
+    :param list_values: _description_
+    :type list_values: List
+    :param samples: _description_
+    :type samples: int
+    :param probabilities: _description_, defaults to None
+    :type probabilities: List, optional
+    :param size: _description_, defaults to 1
+    :type size: int, optional
+    :param replace: _description_, defaults to True
+    :type replace: bool, optional
+    :return: _description_
+    :rtype: _type_
+    """
     return list(map(lambda x: np.random.choice(list_values, size=size, replace=replace, p=probabilities), range(samples)))
 
 
 # set the weight
-def calculate_weight_from_height(height: float, bmi: string):
+def calculate_weight_from_height(height: float, bmi: string) -> float:
     bmi_numeric = 0.0
     if bmi == BMI_constants.underweight:
         bmi_numeric = 18.0

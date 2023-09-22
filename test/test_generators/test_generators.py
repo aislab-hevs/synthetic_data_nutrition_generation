@@ -39,7 +39,9 @@ from synthetic_data_generation.generators import (create_name_surname,
 
 from synthetic_data_generation.default_inputs import (person_entity,
                                                       user_entity,
-                                                      BMI_probabilities_dict)
+                                                      BMI_probabilities_dict,
+                                                      meal_time_distribution
+                                                      )
 
 
 @pytest.fixture
@@ -232,7 +234,8 @@ def test_generate_cultural_data(personal_data, flexi_probas, food_probas):
 def test_generate_preferences_data(personal_data):
     list_users = personal_data["userId"].tolist()
     preferences = generate_preferences_data(list_user_id=list_users,
-                                            df_personal_data=personal_data)
+                                            df_personal_data=personal_data,
+                                            meals_time_distribution=meal_time_distribution)
     assert preferences.shape[0] == len(list_users)
 
 
