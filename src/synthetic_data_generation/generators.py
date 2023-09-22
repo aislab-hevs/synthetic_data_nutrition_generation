@@ -248,15 +248,15 @@ def generate_localization(samples: int, fake: Faker) -> List[str]:
 def generate_personal_data(gender_probabilities: Dict[str, Any],
                            num_users: int = 500,
                            person_entity: Dict[str, Any] = None) -> pd.DataFrame:
-    """_summary_
+    """Generates a pandas Dataframe with personal user data.
 
-    :param gender_probabilities: _description_
+    :param gender_probabilities: Dictionary that contains probability for clinical genders male M and female F
     :type gender_probabilities: Dict[str, Any]
-    :param num_users: _description_, defaults to 500
+    :param num_users: number of users to generate, defaults to 500
     :type num_users: int, optional
-    :param person_entity: _description_, defaults to None
+    :param person_entity: person entity data with the required fields, defaults to None
     :type person_entity: Dict[str, Any], optional
-    :return: _description_
+    :return: Pandas dataframe with users' personal data
     :rtype: pd.DataFrame
     """
     # Create Personal data frame
@@ -307,31 +307,40 @@ def generate_personal_data(gender_probabilities: Dict[str, Any],
     return df_personal_data
 
 
-def choose_one_from_list(list_values: List,
+def choose_one_from_list(list_values: List[Any],
                          samples: int,
-                         probabilities: List = None,
+                         probabilities: List[float] = None,
                          size: int = 1,
                          replace: bool = True):
-    """_summary_
+    """Choose one item from a list given a probability
 
-    :param list_values: _description_
-    :type list_values: List
-    :param samples: _description_
+    :param list_values: List of item to be selected
+    :type list_values: List[Any]
+    :param samples: number of samples to generate
     :type samples: int
-    :param probabilities: _description_, defaults to None
-    :type probabilities: List, optional
-    :param size: _description_, defaults to 1
+    :param probabilities: probability array should sum up 1, defaults to None
+    :type probabilities: List[float], optional
+    :param size: number of element to select at once, defaults to 1
     :type size: int, optional
-    :param replace: _description_, defaults to True
+    :param replace: True for sampling with replacement or not, defaults to True
     :type replace: bool, optional
-    :return: _description_
+    :return: List of choices
     :rtype: _type_
     """
     return list(map(lambda x: np.random.choice(list_values, size=size, replace=replace, p=probabilities), range(samples)))
 
 
 # set the weight
-def calculate_weight_from_height(height: float, bmi: string) -> float:
+def calculate_weight_from_height(height: float, bmi: BMI_constants) -> float:
+    """Returns the user's weight based on their height and Body Mass Index (BMI) value.
+
+    :param height: user's height in meters
+    :type height: float
+    :param bmi: user's BMI condition
+    :type bmi: BMI_constants
+    :return: user's weight in kg
+    :rtype: float
+    """
     bmi_numeric = 0.0
     if bmi == BMI_constants.underweight:
         bmi_numeric = 18.0
@@ -357,6 +366,23 @@ def generate_user_life_style_data(list_user_id: List[str],
                                                            "weight",
                                                            "ethnicity",
                                                            "height"]) -> pd.DataFrame:
+    """Generate user life style data including marital status, current working status, ethnicity and exercise frequency.
+
+    :param list_user_id: List of users' IDs
+    :type list_user_id: List[str]
+    :param user_entity: Probability dictionary for ethnicity values.
+    :type user_entity: Dict[str, Any]
+    :param BMI_probabilities_dict: Probability dictionary for BMI conditions
+    :type BMI_probabilities_dict: Dict[str, Any]
+    :param df_personal_data: Pandas Dataframe with users' personal data (e.g, name, surname, etc)
+    :type df_personal_data: pd.DataFrame
+    :param height_distribution: Probability dictionary for generate height distribution, defaults to height_distribution
+    :type height_distribution: Dict[str, Any], optional
+    :param df_columns: List of columns names for the new Dataframe, defaults to ["userId", "current_working_status", "marital_status", "life_style", "weight", "ethnicity", "height"]
+    :type df_columns: List[str], optional
+    :return: users' life style Dataframe
+    :rtype: pd.DataFrame
+    """
     df_user_entity = pd.DataFrame(data=[], columns=df_columns)
     df_user_entity["userId"] = list_user_id
     num_users = len(list_user_id)
@@ -409,6 +435,15 @@ def generate_user_life_style_data(list_user_id: List[str],
 
 def generate_health_condition_data(list_user_id: List[str],
                                    allergies_probability_dict: Dict[str, Any]):
+    """Generate users health conditions (allergies) based on probability dictionary. 
+
+    :param list_user_id: users' IDs
+    :type list_user_id: List[str]
+    :param allergies_probability_dict: Probability dictionary where keys are allergy conditions and values their probabilities, total probabilities should sum up 1
+    :type allergies_probability_dict: Dict[str, Any]
+    :return: Pandas Dataframe with users IDs and their assigned health condition. 
+    :rtype: _type_
+    """
     df_health_conditions = pd.DataFrame(data=[], columns=["userId", "allergy"])
     df_health_conditions["userId"] = list_user_id
     num_users = len(list_user_id)
@@ -424,7 +459,14 @@ def generate_health_condition_data(list_user_id: List[str],
     return df_health_conditions
 
 
-def define_user_goal_according_BMI(bmi: str):
+def define_user_goal_according_BMI(bmi: BMI_constants) -> NutritionGoals:
+    """Assigns to the user a nutrition goal (e.g., lose weight, maintain weight, gain weight) based on their current BMI.
+
+    :param bmi: Current BMI condition
+    :type bmi: BMI_constants
+    :return: A proposed nutrition goal to improve their health condition. 
+    :rtype: NutritionGoals
+    """
     if bmi == BMI_constants.underweight:
         # goal gain muscle
         return f"{NutritionGoals.gain_weight}"
@@ -437,6 +479,15 @@ def define_user_goal_according_BMI(bmi: str):
 
 
 def generate_user_goals(list_user_id: List[str], df_user_entity: pd.DataFrame) -> pd.DataFrame:
+    """Generate a Dataframe with users' goals. 
+
+    :param list_user_id: users' IDs
+    :type list_user_id: List[str]
+    :param df_user_entity: Dataframe with users' BMI
+    :type df_user_entity: pd.DataFrame
+    :return: Dataframe with users' IDs and users' nutrition goals
+    :rtype: pd.DataFrame
+    """
     df_user_goals = pd.DataFrame(columns=["userId", "nutrition_goal"], data=[])
     df_user_goals["userId"] = list_user_id
     df_user_goals["nutrition_goal"] = df_user_entity["BMI"].apply(
@@ -445,7 +496,16 @@ def generate_user_goals(list_user_id: List[str], df_user_entity: pd.DataFrame) -
 
 
 def assign_probabilities(cultural_factor: str,
-                         flexi_probability_dict: Dict[str, Any]):
+                         flexi_probability_dict: Dict[str, Any]) -> Any:
+    """Choose a cultural factor for divergent flexible (flexi) user.
+
+    :param cultural_factor: user's cultural factor (e.g., None, Kosher observant, Flexi_vegan)
+    :type cultural_factor: str
+    :param flexi_probability_dict: flexible probability dictionary
+    :type flexi_probability_dict: Dict[str, Any]
+    :return: A chosen cultural factor based on probability dictionary
+    :rtype: Any
+    """
     if cultural_factor == "flexi_observant":
         flexi_proba = flexi_probability_dict
         value = np.random.choice(list(flexi_proba.keys()))
@@ -455,7 +515,18 @@ def assign_probabilities(cultural_factor: str,
 
 def generate_cultural_data(list_user_id: List[str],
                            food_restriction_probability_dict: Dict[str, Any],
-                           flexi_probability_dict: Dict[str, Any]):
+                           flexi_probability_dict: Dict[str, Any]) -> pd.DataFrame:
+    """Returns a Pandas Dataframe with users' IDs and assigned cultural factors.
+
+    :param list_user_id: users' IDs list
+    :type list_user_id: List[str]
+    :param food_restriction_probability_dict: probability dictionary with cultural food restrictions
+    :type food_restriction_probability_dict: Dict[str, Any]
+    :param flexi_probability_dict: probability dictionary with flexible probabilities
+    :type flexi_probability_dict: Dict[str, Any]
+    :return: Pandas Dataframe with the chosen cultural food restrictions
+    :rtype: pd.DataFrame
+    """
     df_cultural_factors = pd.DataFrame(
         data=[], columns=["userId", "cultural_factor"])
     df_cultural_factors["userId"] = list_user_id
@@ -482,19 +553,30 @@ def generate_preferences_data(list_user_id: List[str],
                               df_personal_data: pd.DataFrame,
                               meals_time_distribution: Dict[str, Any]
                               ) -> pd.DataFrame:
+    """Returns a Dataframe with user's meals consumption time.
+
+    :param list_user_id: users' IDs list
+    :type list_user_id: List[str]
+    :param df_personal_data: Pandas Dataframe with users data
+    :type df_personal_data: pd.DataFrame
+    :param meals_time_distribution: probability dictionary with mean and std for meals time distribution
+    :type meals_time_distribution: Dict[str, Any]
+    :return: Pandas Dataframe with users' preferences meal time
+    :rtype: pd.DataFrame
+    """
     df_preferences = pd.DataFrame(
         data=[], columns=["userId", "breakfast_time", "lunch_time", "dinner_time"])
     df_preferences["userId"] = df_personal_data["userId"]
     users_number = len(list_user_id)
     # Normal time distribution
-    breakfast_time = np.random.normal(meal_time_distribution["breakfast"]["mean"],
-                                      meal_time_distribution["breakfast"]["std"],
+    breakfast_time = np.random.normal(meals_time_distribution["breakfast"]["mean"],
+                                      meals_time_distribution["breakfast"]["std"],
                                       size=users_number)
-    lunch_time = np.random.normal(meal_time_distribution["lunch"]["mean"],
-                                  meal_time_distribution["lunch"]["std"],
+    lunch_time = np.random.normal(meals_time_distribution["lunch"]["mean"],
+                                  meals_time_distribution["lunch"]["std"],
                                   size=users_number)
-    dinner_time = np.random.normal(meal_time_distribution["dinner"]["mean"],
-                                   meal_time_distribution["dinner"]["std"],
+    dinner_time = np.random.normal(meals_time_distribution["dinner"]["mean"],
+                                   meals_time_distribution["dinner"]["std"],
                                    size=users_number)
     # generate probabilities
     df_preferences["breakfast_time"] = np.round(breakfast_time, 2)
@@ -503,7 +585,20 @@ def generate_preferences_data(list_user_id: List[str],
     return df_preferences
 
 
-def calculate_basal_metabolic_rate(weight: float, height: float, age: int, clinical_gender: str):
+def calculate_basal_metabolic_rate(weight: float, height: float, age: int, clinical_gender: str) -> float:
+    """Calculate basal metabolic rate (BMR) based on user's weight, height, age and clinical gender. 
+
+    :param weight: user's weight
+    :type weight: float
+    :param height: user's height
+    :type height: float
+    :param age: user's age
+    :type age: int
+    :param clinical_gender: user's clinical gender
+    :type clinical_gender: str
+    :return: user's BMR
+    :rtype: float
+    """
     BMR = 0
     if Gender.male == clinical_gender:
         # Numbers here are part of the Basal metabolic rate (BMR) formula.
@@ -513,7 +608,16 @@ def calculate_basal_metabolic_rate(weight: float, height: float, age: int, clini
     return BMR
 
 
-def calculate_daily_calorie_needs(BMR: float, activity_level: str):
+def calculate_daily_calorie_needs(BMR: float, activity_level: ActivityLevel) -> float:
+    """Calculate the daily calorie needs given the BMR and the activity level. 
+
+    :param BMR: Basal Metabolic Rate (BMR)
+    :type BMR: float
+    :param activity_level: user's activity level (e.g., sedentary, light active, moderate active)
+    :type activity_level: ActivityLevel
+    :return: Daily calorie needs
+    :rtype: float
+    """
     calories_daily = 0
     if activity_level == ActivityLevel.sedentary:
         calories_daily = 1.2 * BMR
@@ -526,7 +630,16 @@ def calculate_daily_calorie_needs(BMR: float, activity_level: str):
     return calories_daily
 
 
-def define_daily_calorie_plan(nutrition_goal: str, daily_calorie_need: float):
+def define_daily_calorie_plan(nutrition_goal: NutritionGoals, daily_calorie_need: float) -> float:
+    """Calculate the user's projected calorie needs to reach the nutrition goal according daily calorie needs.
+
+    :param nutrition_goal:user's nutrition goals (e.g., loss weight, maintain, gain weight)
+    :type nutrition_goal: NutritionGoals
+    :param daily_calorie_need: user's daily calorie needs
+    :type daily_calorie_need: float
+    :return: projected daily user's calories needs to reach the nutrition goal
+    :rtype: float
+    """
     projected_calories_need = 0
     if nutrition_goal == NutritionGoals.gain_weight:
         # Add or remove calories to create metabolic deficit
@@ -541,9 +654,26 @@ def define_daily_calorie_plan(nutrition_goal: str, daily_calorie_need: float):
 def generate_diet_plan(weight: float,
                        height: float,
                        age_range: str,
-                       clinical_gender: str,
-                       activity_level: str,
-                       nutrition_goal: str):
+                       clinical_gender: Gender,
+                       activity_level: ActivityLevel,
+                       nutrition_goal: NutritionGoals) -> float:
+    """Generate a full diet plan from an user given their current age range, weight, height, clinical gender, activity level and nutrition goal. 
+
+    :param weight: user's weight
+    :type weight: float
+    :param height: user's height
+    :type height: float
+    :param age_range: user's age range
+    :type age_range: str
+    :param clinical_gender: user's clinical gender
+    :type clinical_gender: Gender
+    :param activity_level: user's activity level 
+    :type activity_level: ActivityLevel
+    :param nutrition_goal: user's nutrition goal
+    :type nutrition_goal: NutritionGoals
+    :return: user's projected daily calorie needs
+    :rtype: float
+    """
     # transform age
     age_list = age_range.split("-")
     age = np.ceil((int(age_list[-1]) - int(age_list[0]))/2 + int(age_list[0]))
@@ -558,6 +688,19 @@ def generate_therapy_data(list_user_id: List[str],
                           df_personal_data: pd.DataFrame,
                           df_user_goals: pd.DataFrame,
                           df_user_entity) -> pd.DataFrame:
+    """Returns a Dataframe 
+
+    :param list_user_id: _description_
+    :type list_user_id: List[str]
+    :param df_personal_data: _description_
+    :type df_personal_data: pd.DataFrame
+    :param df_user_goals: _description_
+    :type df_user_goals: pd.DataFrame
+    :param df_user_entity: _description_
+    :type df_user_entity: _type_
+    :return: _description_
+    :rtype: pd.DataFrame
+    """
     # generate treatment for the users
     df_treatment = pd.DataFrame(
         data=[], columns=["userId", "projected_daily_calories"])
@@ -578,20 +721,6 @@ def generate_therapy_data(list_user_id: List[str],
                                                                                                              "nutrition_goal"]
                                                                                                          ), axis=1))
     return df_treatment, df_user_data
-
-
-def allergy_searcher(recipes_db_allergy_col, allergy: str):
-    res = []
-    allergy_low = allergy.lower()
-    for item in recipes_db_allergy_col.items():
-        text = str(item[1]).lower()
-        if allergy_low in text:
-            print(text)
-            print(allergy_low)
-            res.append(False)
-        else:
-            res.append(True)
-    return res
 
 
 def generate_meals_plan_per_user(users: List[str], probability_dict: Dict[str, float]):
