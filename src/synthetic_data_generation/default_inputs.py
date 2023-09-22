@@ -34,6 +34,40 @@ cultural_factors = {
     "food_limitation": []
 }
 
+height_distribution = {
+    'male': {
+        'mean': 170,
+        'std': 10
+    },
+    'female': {
+        'mean': 160,
+        'std': 10
+    }
+}
+
+meal_time_distribution = {
+    "breakfast": {
+        "mean": 7,
+        "std": 1
+    },
+    "morning snacks": {
+        "mean": 10,
+        "std": 1
+    },
+    "afternoon snacks": {
+        "mean": 4,
+        "std": 1
+    },
+    "lunch": {
+        "mean": 1,
+        "std": 1
+    },
+    "dinner": {
+        "mean": 20,
+        "std": 1
+    }
+}
+
 meals_calorie_dict = {"breakfast": 0.3,
                       "morning snacks": 0.05,
                       "afternoon snacks": 0.4,

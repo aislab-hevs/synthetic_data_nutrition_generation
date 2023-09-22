@@ -11,7 +11,9 @@ from html import escape
 from scipy.stats import bernoulli
 from .default_inputs import (person_entity,
                              user_entity,
-                             meals_calorie_dict)
+                             meals_calorie_dict,
+                             height_distribution,
+                             meal_time_distribution)
 
 
 # Classes
@@ -19,7 +21,9 @@ class HTML_Table:
     """_summary_
     """
 
-    def __init__(self, cols: int = 4, rows: List[str] = None):
+    def __init__(self,
+                 cols: int = 4,
+                 rows: List[str] = None):
         self.cols = cols
         if rows is not None:
             self.rows = rows
@@ -90,7 +94,8 @@ class ActivityLevel(str, Enum):
 # Functions
 
 
-def create_name_surname(gender: str, fake: Faker) -> str:
+def create_name_surname(gender: str,
+                        fake: Faker) -> str:
     if gender == Gender.male:
         names = fake.name_male()
     else:
@@ -98,11 +103,14 @@ def create_name_surname(gender: str, fake: Faker) -> str:
     return names.split(" ")
 
 
-def generate_country(samples, fake: Faker) -> List:
+def generate_country(samples,
+                     fake: Faker) -> List:
     return list(map(lambda x: fake.country(), range(samples)))
 
 
-def generate_email_from_name(name: str, surname: str, domain: str = "fake.com"):
+def generate_email_from_name(name: str,
+                             surname: str,
+                             domain: str = "fake.com"):
     return f"{name.lower()}.{surname.lower()}@{domain.lower()}"
 
 
@@ -113,7 +121,8 @@ def password_generation(length):
     return ''.join(password)
 
 
-def generate_age_range(probabilities=None, list_age_range: List = person_entity.get("age_range")):
+def generate_age_range(probabilities=None,
+                       list_age_range: List = person_entity.get("age_range")):
     return np.random.choice(list_age_range, size=1, replace=True, p=probabilities)[0]
 
 
@@ -121,7 +130,9 @@ def generate_localization(samples, fake: Faker):
     return list(map(lambda x: fake.locale(), range(samples)))
 
 
-def generate_personal_data(gender_probabilities: Dict[str, Any], num_users: int = 500, person_entity: Dict[str, Any] = None) -> pd.DataFrame:
+def generate_personal_data(gender_probabilities: Dict[str, Any],
+                           num_users: int = 500,
+                           person_entity: Dict[str, Any] = None) -> pd.DataFrame:
     # Create Personal data frame
     df_personal_data = pd.DataFrame(
         data=[], columns=list(person_entity.keys()))
@@ -196,6 +207,8 @@ def generate_user_life_style_data(list_user_id: List[str],
                                   user_entity: Dict[str, Any],
                                   BMI_probabilities_dict: Dict[str, Any],
                                   df_personal_data: pd.DataFrame,
+                                  height_distribution: Dict[str,
+                                                            Any] = height_distribution,
                                   df_columns: List[str] = ["userId",
                                                            "current_working_status",
                                                            "marital_status",
@@ -224,13 +237,18 @@ def generate_user_life_style_data(list_user_id: List[str],
                             replace=True, p=BMI_prob)
     df_user_entity["BMI"] = bmis
     # Generate height
-    male_height = np.random.normal(170, 10, 500)
-    female_height = np.random.normal(160, 10, 500)
-    female_number = df_personal_data[df_personal_data["clinical_gender"] == 'F'].shape[0]
+    male_height = np.random.normal(height_distribution["male"]["mean"],
+                                   height_distribution["male"]["std"],
+                                   num_users)
+    female_height = np.random.normal(height_distribution["female"]["mean"],
+                                     height_distribution["female"]["std"],
+                                     num_users)
+    female_number = df_personal_data[df_personal_data["clinical_gender"]
+                                     == Gender.female.value].shape[0]
     male_number = num_users - female_number
-    df_user_entity.loc[df_personal_data["clinical_gender"] == 'F',
+    df_user_entity.loc[df_personal_data["clinical_gender"] == Gender.female.value,
                        "height"] = np.random.choice(female_height, size=female_number)
-    df_user_entity.loc[df_personal_data["clinical_gender"] == 'M',
+    df_user_entity.loc[df_personal_data["clinical_gender"] == Gender.male.value,
                        "height"] = np.random.choice(male_height, size=male_number)
     df_user_entity["height"] = df_user_entity["height"].astype(int)
     # Generate weight
@@ -248,7 +266,8 @@ def generate_user_life_style_data(list_user_id: List[str],
     return df_user_entity
 
 
-def generate_health_condition_data(list_user_id: List[str], allergies_probability_dict: Dict[str, Any]):
+def generate_health_condition_data(list_user_id: List[str],
+                                   allergies_probability_dict: Dict[str, Any]):
     df_health_conditions = pd.DataFrame(data=[], columns=["userId", "allergy"])
     df_health_conditions["userId"] = list_user_id
     num_users = len(list_user_id)
@@ -293,7 +312,8 @@ def assign_probabilities(cultural_factor: str,
     pass
 
 
-def generate_cultural_data(list_user_id: List[str], food_restriction_probability_dict: Dict[str, Any],
+def generate_cultural_data(list_user_id: List[str],
+                           food_restriction_probability_dict: Dict[str, Any],
                            flexi_probability_dict: Dict[str, Any]):
     df_cultural_factors = pd.DataFrame(
         data=[], columns=["userId", "cultural_factor"])
@@ -317,15 +337,24 @@ def generate_cultural_data(list_user_id: List[str], food_restriction_probability
     return df_cultural_factors
 
 
-def generate_preferences_data(list_user_id: List[str], df_personal_data: pd.DataFrame) -> pd.DataFrame:
+def generate_preferences_data(list_user_id: List[str],
+                              df_personal_data: pd.DataFrame,
+                              meals_time_distribution: Dict[str, Any]
+                              ) -> pd.DataFrame:
     df_preferences = pd.DataFrame(
         data=[], columns=["userId", "breakfast_time", "lunch_time", "dinner_time"])
     df_preferences["userId"] = df_personal_data["userId"]
     users_number = len(list_user_id)
     # Normal time distribution
-    breakfast_time = np.random.normal(7, 1, size=users_number)
-    lunch_time = np.random.normal(13, 1, size=users_number)
-    dinner_time = np.random.normal(20, 1, size=users_number)
+    breakfast_time = np.random.normal(meal_time_distribution["breakfast"]["mean"],
+                                      meal_time_distribution["breakfast"]["std"],
+                                      size=users_number)
+    lunch_time = np.random.normal(meal_time_distribution["lunch"]["mean"],
+                                  meal_time_distribution["lunch"]["std"],
+                                  size=users_number)
+    dinner_time = np.random.normal(meal_time_distribution["dinner"]["mean"],
+                                   meal_time_distribution["dinner"]["std"],
+                                   size=users_number)
     # generate probabilities
     df_preferences["breakfast_time"] = np.round(breakfast_time, 2)
     df_preferences["lunch_time"] = np.round(lunch_time, 2)
@@ -336,6 +365,7 @@ def generate_preferences_data(list_user_id: List[str], df_personal_data: pd.Data
 def calculate_basal_metabolic_rate(weight: float, height: float, age: int, clinical_gender: str):
     BMR = 0
     if Gender.male == clinical_gender:
+        # Numbers here are part of the Basal metabolic rate (BMR) formula.
         BMR = 88.362 + (13.397 * weight) + (4.799 * height) - (5.677 * age)
     else:
         BMR = 447.593 + (9.247 * weight) + (3.098 * height) - (4.330 * age)
@@ -358,6 +388,7 @@ def calculate_daily_calorie_needs(BMR: float, activity_level: str):
 def define_daily_calorie_plan(nutrition_goal: str, daily_calorie_need: float):
     projected_calories_need = 0
     if nutrition_goal == NutritionGoals.gain_weight:
+        # Add or remove calories to create metabolic deficit
         projected_calories_need = daily_calorie_need + 500
     elif nutrition_goal == NutritionGoals.maintain_fit:
         projected_calories_need = daily_calorie_need
