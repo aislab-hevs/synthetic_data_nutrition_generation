@@ -688,17 +688,17 @@ def generate_therapy_data(list_user_id: List[str],
                           df_personal_data: pd.DataFrame,
                           df_user_goals: pd.DataFrame,
                           df_user_entity) -> pd.DataFrame:
-    """Returns a Dataframe 
+    """Returns a Dataframe with planned therapy for the user given.
 
-    :param list_user_id: _description_
+    :param list_user_id: User's IDs list.
     :type list_user_id: List[str]
-    :param df_personal_data: _description_
+    :param df_personal_data: Dataframe with users' features.
     :type df_personal_data: pd.DataFrame
-    :param df_user_goals: _description_
+    :param df_user_goals: Dataframe with users' nutritional goals.
     :type df_user_goals: pd.DataFrame
-    :param df_user_entity: _description_
-    :type df_user_entity: _type_
-    :return: _description_
+    :param df_user_entity: Dataframe with additional users' features. 
+    :type df_user_entity: pd.DataFrame
+    :return: Dataframe with the therapies for each user.
     :rtype: pd.DataFrame
     """
     # generate treatment for the users
@@ -723,7 +723,16 @@ def generate_therapy_data(list_user_id: List[str],
     return df_treatment, df_user_data
 
 
-def generate_meals_plan_per_user(users: List[str], probability_dict: Dict[str, float]):
+def generate_meals_plan_per_user(users: List[str], probability_dict: Dict[str, float]) -> Dict[str, Any]:
+    """Generate meals plan per user with meals to consume or not based on meals probabilities. 
+
+    :param users: users' IDs list.
+    :type users: List[str]
+    :param probability_dict: Meals' probability dict.
+    :type probability_dict: Dict[str, float]
+    :return: Dictionary with meals presence or not per user.
+    :rtype: Dict[str, Any]
+    """
     total_users = len(users)
     meal_presence = {}
     for key, proba in probability_dict.items():
@@ -739,7 +748,28 @@ def generate_recommendations(df_user: pd.DataFrame,
                              meals_calorie_dict: Dict[str,
                                                       float] = meals_calorie_dict,
                              days_to_simulated: int = 365,
-                             progress_bar: Any = None):
+                             progress_bar: Any = None) -> Dict[str, pd.DataFrame]:
+    """Generate the simulated tracking data  for users during a given time. 
+
+    :param df_user: Users' data Dataframe.
+    :type df_user: pd.DataFrame
+    :param transition_matrix: probability transition matrix between user states. 
+    :type transition_matrix: np.array
+    :param df_recipes_db: Recipe's Dataframe contains recipes data and features.
+    :type df_recipes_db: pd.DataFrame
+    :param meals_plan: Meals plan per user.
+    :type meals_plan: Any
+    :param flexi_probabilities_dict: Probabilities for flexible users
+    :type flexi_probabilities_dict: dict[str, Any]
+    :param meals_calorie_dict: calorie distribution per meal and user, defaults to meals_calorie_dict
+    :type meals_calorie_dict: Dict[str, float], optional
+    :param days_to_simulated: day top generate simulation, defaults to 365
+    :type days_to_simulated: int, optional
+    :param progress_bar: Progress bar object to be update as the simulation progress, defaults to None
+    :type progress_bar: Any, optional
+    :return: Simulated meals per user during num_days_to_simulate each key is an user and each value is the tracking Dataframe
+    :rtype: Dict[str, pd.DataFrame]
+    """
 
     query_text = {
         "vegan_observant": "cultural_restriction =='vegan'",
@@ -892,8 +922,26 @@ def generate_recommendations(df_user: pd.DataFrame,
     return simulation_results
 
 
-def create_a_summary_table(df_total_user, dict_recommendations, max_cols=4, round_digits=0,
-                           meals_calorie_dict: Dict[str, float] = meals_calorie_dict):
+def create_a_summary_table(df_total_user: pd.DataFrame,
+                           dict_recommendations: Dict[str, pd.DataFrame],
+                           max_cols: int = 4,
+                           round_digits: int = 0,
+                           meals_calorie_dict: Dict[str, float] = meals_calorie_dict) -> HTML_Table:
+    """Return an HTML_Table object that summarizes the generated synthetic dataset. 
+
+    :param df_total_user: Join Dataframe that contains users' features.
+    :type df_total_user: pd.DataFrame
+    :param dict_recommendations: Dictionary with the simulated tracking data where keys are users' IDs and values tracking DataFrames. 
+    :type dict_recommendations: Dict[str, pd.DataFrame]
+    :param max_cols: Maximum number of columns for the table, defaults to 4
+    :type max_cols: int, optional
+    :param round_digits: number of digits to round float results in the table, defaults to 0
+    :type round_digits: int, optional
+    :param meals_calorie_dict: Dictionary with calorie distribution per meal, defaults to meals_calorie_dict
+    :type meals_calorie_dict: Dict[str, float], optional
+    :return: A HTML_table object that can be rendered into an HTML page. 
+    :rtype: HTML_Table
+    """
     # Create table
     table = HTML_Table(cols=max_cols)
     total_users = df_total_user.shape[0]
@@ -1043,7 +1091,34 @@ def run_full_simulation(num_users: int,
                         meals_proba: Dict[str, Any],
                         progress_bar=None,
                         num_days: int = 365
-                        ):
+                        ) -> Tuple[pd.DataFrame, pd.DataFrame, HTML_Table]:
+    """
+
+    :param num_users: Executes the full simulation pipeline and produces a results Dataframe and a HTML summary table. 
+    :type num_users: int
+    :param gender_probabilities: Probability dictionary with the probability to generate male or female users. 
+    :type gender_probabilities: Dict[str, Any]
+    :param BMI_probabilities: Probability dictionary to generate distribution of BMI values (e.g., underweight, healthy, overweight, obesity).
+    :type BMI_probabilities: Dict[str, Any]
+    :param allergies_probability_dict: Probability dictionary with allergies and their occurrence probability.
+    :type allergies_probability_dict: Dict[str, Any]
+    :param food_restriction_probability_dict: Probability dictionary with cultural food restrictions like vegetarian, kosher, etc.
+    :type food_restriction_probability_dict: Dict[str, Any]
+    :param flexi_probabilities: Probability dictionary with divergence probability food. 
+    :type flexi_probabilities: Dict[str, Any]
+    :param probability_transition_matrix: probability of change from one BMI state to another. 
+    :type probability_transition_matrix: np.ndarray
+    :param df_recipes: Recipes' Dataframe.
+    :type df_recipes: pd.DataFrame
+    :param meals_proba: Probability of meal occurrences.
+    :type meals_proba: Dict[str, Any]
+    :param progress_bar: Progress bar widget to be update as the simulation progress, defaults to None
+    :type progress_bar: Any, optional
+    :param num_days: number days to simulate, defaults to 365
+    :type num_days: int, optional
+    :return: Tuple with Tracking DataFrame, Users join DataFrame, and Summary HTML table.
+    :rtype: Tuple[pd.DataFrame, pd.DataFrame, HTML_Table]
+    """
     # Generate user data
     df_personal_data = generate_personal_data(num_users=num_users,
                                               person_entity=person_entity,

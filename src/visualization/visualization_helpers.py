@@ -1,4 +1,4 @@
-from IPython.display import display
+from IPython.display import display, clear_output
 from IPython.display import HTML
 import base64
 import ipywidgets as widgets
@@ -20,10 +20,26 @@ import synthetic_data_generation.default_inputs as defaultValues
 
 
 def render_graph_from_text(dot_text: str):
+    """Render a graph based in dot text. 
+
+    :param dot_text: dot text to be render. 
+    :type dot_text: str
+    :return: Graph constructed from dot text. 
+    :rtype: graphv.Graph
+    """
     return graphv.Source(dot_text)
 
 
-def render_transition_graph(states: List, probability_matrix):
+def render_transition_graph(states: List[str], probability_matrix: np.array) -> graphv.Graph:
+    """Render a transition graph given the list of states and the probability transition matrix. 
+
+    :param states: List of transition states. 
+    :type states: List[str]
+    :param probability_matrix: Probability transition matrix between states. 
+    :type probability_matrix: np.array
+    :return: Transition graph between states with probability given by probability_matrix
+    :rtype: graphv.Graph
+    """
     dot = graphv.Digraph()
     for state in states:
         dot.node(name=state, label=state)
@@ -38,10 +54,18 @@ def render_transition_graph(states: List, probability_matrix):
     return dot
 
 
-def values_from_dictionary(dictionary: Dict[str, Any]):
+def values_from_dictionary(dictionary: Dict[str, Any], round_digits: int = 1) -> Dict[str, float]:
+    """Extract numerical values from widget dictionaries.
+    :param dictionary: Dictionary that contains the key and a widget with numeric attributes.
+    :type dictionary: Dict[str, Any]
+    :param round_digits: round decimal to positions, defaults to 1
+    :type round_digits: int, optional
+    :return: Value dictionary.
+    :rtype: Dict[str, float]
+    """
     new_dict = {}
     for k, v in dictionary.items():
-        new_dict[k] = v.value
+        new_dict[k] = np.round(v.value, round_digits)
     return new_dict
 
 
@@ -114,17 +138,20 @@ class FloatProgressBar:
             self.progress_bar.description = "success"
 
 
-def check_sum_proba(dict_proba):
-    total_probability = sum([v.value for v in dict_proba.values()])
-    if total_probability == 1.0:
+def check_sum_proba(dict_proba, round_digits=1):
+    total_probability = sum([np.round(v.value, round_digits)
+                            for v in dict_proba.values()])
+    # print(f"total proba dict: {total_probability}")
+    if np.round(total_probability, round_digits) == 1.0:
         return True
     else:
         return False
 
 
 class DictValidator:
-    def __init__(self, dict_proba, description="Validity status:"):
+    def __init__(self, dict_proba, description="Validity status:", round_digits: int = 1):
         self.dict_proba = dict_proba
+        self.round_digits = round_digits
         style = {'description_width': 'initial'}
         self.valid_widget = widgets.Valid(
             value=True,
@@ -134,7 +161,8 @@ class DictValidator:
         self.label = widgets.Label()
 
     def sum_values(self):
-        total_probability = sum([v.value for v in self.dict_proba.values()])
+        total_probability = np.round(sum([np.round(v.value, self.round_digits)
+                                          for v in self.dict_proba.values()]), self.round_digits)
         return total_probability
 
     def check_sum_proba(self):
@@ -145,13 +173,18 @@ class DictValidator:
             return False
 
     def get_validator_widget(self):
-        self.validator_event({})
+        # self.validator_event({})
+        self.label.value = f"Total probability: {self.sum_values()}"
         # self.label.value = f"Total probability: {self.sum_values()}"
         box = widgets.VBox([self.label, self.valid_widget])
         return box
 
     def validator_event(self, change):
         # print("validator event")
+        # update dictionary values according to round digits
+        for k in self.dict_proba.keys():
+            self.dict_proba[k].value = np.round(
+                self.dict_proba[k].value, self.round_digits)
         valid_value = self.check_sum_proba()
         self.valid_widget.value = valid_value
         self.label.value = f"Total probability: {self.sum_values()}"
@@ -206,7 +239,7 @@ class DownloadButton:
         self.description = description
         self.html_buttons = '''<html>
                                 <head>
-                                <meta name="viewport" content="width=device-width, initial-scale=1">
+                                <meta name="viewport" content="width=device-width, initial-scale=1.2">
                                 </head>
                                 <body>
                                 <a download="{filename}" href="data:text/{ext};base64,{payload}" download>
@@ -272,7 +305,9 @@ def process_simulation_results(simulation_results_dict):
 class ExecuteButton:
     def __init__(self, progress_bar: FloatProgressBar,
                  num_users, num_days, dictionaries,
-                 out: widgets.Output = None) -> None:
+                 out: widgets.Output = None,
+                 round_digits=2) -> None:
+        self.round_digits = round_digits
         self.progress_bar = progress_bar
         self.num_users = num_users
         self.num_days = num_days
@@ -284,25 +319,22 @@ class ExecuteButton:
             # self.progress_bar.hide()
             self.progress_bar.reset_progress_bar()
             if self.out is not None:
-                self.out.clear_output()
-                display(self.out)
                 with self.out:
-                    print("simulation starting")
-                    self.progress_bar.display()
-            else:
-                print("simulation starting")
-                self.progress_bar.display()
+                    clear_output()
             # execute simulation
             # validate before execute
-            if self.num_users.value < 30:
+            if self.num_users.value < 1:
                 raise Exception(
-                    "The minimum number of users to simulate is 30.")
-            if self.num_days.value < 30:
-                raise Exception("The minimum number of days should be over 30")
+                    f"The minimum number of users to simulate is 1. Current value: {self.num_users.value}")
+            if self.num_days.value < 1:
+                raise Exception(
+                    f"The minimum number of days should be over 1. Current value: {self.num_days.value}")
             if not check_sum_proba(self.dictionaries['gender_probabilities']):
-                raise Exception("Gender probabilities should sum up 1.0")
+                raise Exception(f"Gender probabilities should sum up 1.0. \
+                                Current value: {check_sum_proba(self.dictionaries['gender_probabilities'])}")
             if not check_sum_proba(self.dictionaries['age']):
-                raise Exception("Age probabilities should sum up 1.0")
+                raise Exception("Age probabilities should sum up 1.0."
+                                f"Current value: {[v.value for v in self.dictionaries['age'].values()]}")
             if not check_sum_proba(self.dictionaries['BMI_probabilities']):
                 raise Exception("BMI probabilities should sum up 1.0")
             if not check_sum_proba(self.dictionaries['allergies_probability_dict']):
@@ -345,12 +377,19 @@ class ExecuteButton:
             # show transition graph
             if self.out is not None:
                 with self.out:
+                    with self.out:
+                        print("simulation starting")
+                        self.progress_bar.display()
                     display(render_transition_graph([BMI_constants.underweight.value,
                                                      BMI_constants.healthy.value,
                                                      BMI_constants.overweight.value,
                                                      BMI_constants.obesity.value],
                                                     probability_matrix=probability_transition_matrix))
                     display(render_graph_from_text(defaultValues.legend_text))
+            else:
+                # TODO pass things here
+                print("simulation starting")
+                self.progress_bar.display()
             # load recipes data
             df_recipes = pd.read_csv("processed_recipes_dataset.csv", sep="|")
             simulation_results, df_user_join, table = execute_simulation(num_users=self.num_users.value,
@@ -395,10 +434,17 @@ class ExecuteButton:
                 display(HTML(button_1.get_html_button()), HTML(
                         button_2.get_html_button()), HTML(button_3.get_html_button()))
         except Exception as e:
-            out = widgets.Output(layout={'border': '1px solid red'})
-            with out:
-                print(f"Error processing inputs: {e}")
-            display(out)
+            exceptionOut = widgets.Output(layout={'border': '1px solid red'})
+            if self.out is not None:
+                with self.out:
+                    with exceptionOut:
+                        clear_output()
+                        print(f"Error processing inputs: {e}")
+                    display(exceptionOut)
+            else:
+                with exceptionOut:
+                    print(f"Error processing inputs: {e}")
+                display(exceptionOut)
 
     def button_callback(self, b):
         self.execute_simulation()
@@ -424,7 +470,8 @@ def build_full_ui():
     dict_widgets = OrderedDict()
     dict_widgets['age'] = {"widget_list":
                            form_probability_dict(
-                               age_probabilities, widgets.FloatSlider, min=0, max=1.0, step=0.1),
+                               age_probabilities, widgets.SelectionSlider, options=np.round(np.arange(0.0, 1.1, 0.1), 1).tolist()),
+
                            "titles": "Age"}
     dict_widgets['gender'] = {"widget_list":
                               form_probability_dict(
@@ -498,4 +545,4 @@ def build_full_ui():
     display(top_box)
     main_widget.display()
     display(execution_button)
-    # display(out)
+    display(out)
