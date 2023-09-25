@@ -243,7 +243,7 @@ class DownloadButton:
                                 </head>
                                 <body>
                                 <a download="{filename}" href="data:text/{ext};base64,{payload}" download>
-                                <button class="p-Widget jupyter-widgets jupyter-button widget-button mod-warning">Download {description}</button>
+                                <button class="p-Widget jupyter-widgets jupyter-button widget-button mod-warning" style="width: initial;">Download {description}</button>
                                 </a>
                                 </body>
                                 </html>
@@ -377,17 +377,28 @@ class ExecuteButton:
             # show transition graph
             if self.out is not None:
                 with self.out:
-                    with self.out:
-                        print("simulation starting")
-                        self.progress_bar.display()
-                    display(render_transition_graph([BMI_constants.underweight.value,
-                                                     BMI_constants.healthy.value,
-                                                     BMI_constants.overweight.value,
-                                                     BMI_constants.obesity.value],
-                                                    probability_matrix=probability_transition_matrix))
-                    display(render_graph_from_text(defaultValues.legend_text))
+                    print("simulation starting")
+                    self.progress_bar.display()
+                    transition_graph = render_transition_graph([BMI_constants.underweight.value,
+                                                                BMI_constants.healthy.value,
+                                                                BMI_constants.overweight.value,
+                                                                BMI_constants.obesity.value],
+                                                               probability_matrix=probability_transition_matrix)
+                    legend_text = render_graph_from_text(
+                        defaultValues.legend_text)
+                    box_style = {"align-content": "center"}
+                    box = widgets.VBox(children=[widgets.Image(value=transition_graph.pipe(format="png"), format="png"),
+                                                 widgets.Image(value=legend_text.pipe(format="png"), format="png")],
+                                       style=box_style
+                                       )
+                    display(box)
+                    # display(render_transition_graph([BMI_constants.underweight.value,
+                    #                                  BMI_constants.healthy.value,
+                    #                                  BMI_constants.overweight.value,
+                    #                                  BMI_constants.obesity.value],
+                    #                                 probability_matrix=probability_transition_matrix))
+                    # display(render_graph_from_text(defaultValues.legend_text))
             else:
-                # TODO pass things here
                 print("simulation starting")
                 self.progress_bar.display()
             # load recipes data
@@ -534,6 +545,7 @@ def build_full_ui():
         'meals_proba': meals_proba,
         "bmi_transition_proba": bmi_transition_probabilities
     }
+
     out = widgets.Output()
     button_control = ExecuteButton(p_bar,
                                    num_users=NUM_USERS,
