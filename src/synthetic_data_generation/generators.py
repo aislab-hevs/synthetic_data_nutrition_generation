@@ -70,10 +70,10 @@ class HTML_Table:
     <p>
     <ul>
     <li>
-    Percentage in red color represent the total percentage respect to all users.
+    Percentage in <font color="red">red color</font> represent the total percentage respect to all users.
     </li>
     <li>
-    Percentage in green color represent the percentage respect to health conditions.
+    Percentage in <font color="green">green color</font> represent the percentage respect to health conditions.
     </li>
     </ul>
     </p>
@@ -973,19 +973,29 @@ def create_a_summary_table(df_total_user: pd.DataFrame,
     for idx, item in weight_condition.items():
         weight_gender_count = weight_condition_gender.xs(idx, level=0)[
             "userId"]
+        # Check if M exist
+        male_count = 0
+        female_count = 0
+        if 'M' in weight_gender_count.index:
+            male_count = weight_gender_count.M
+        if 'F' in weight_condition.index:
+            female_count = weight_gender_count.F
         temp_row.append(f"<td style=\"text-align: left;\">Health condition {idx}:\
             {item} users ({np.round((item/total_users)*100, round_digits)} %) \
-                <font color=\"lightblue\">(Male: {np.round((weight_gender_count.M/item)*100, round_digits)}%</font>,\
-                <font color=\"pink\">Female: {np.round((weight_gender_count.F/item)*100, round_digits)}%</font>)</td>")
+                 <p><font color=\"blue\">(Male: {np.round((male_count/item)*100, round_digits)}%),</font> \
+                 <font color=rgb(255, 0, 255)>(Female: {np.round((female_count/item)*100, round_digits)}%</font>)</td>")
     table.add_row("<tr>{row_data}</tr>".format(row_data="".join(temp_row)))
     # Allergies
+    print("Allergies")
     table.add_row(
         "<tr><th style=\"text-align: center;\" colspan=\"{span_cols}\"><strong>Allergies</strong></th></tr>".format(span_cols=max_cols))
     df_groups = df_total_user.groupby(by=["BMI", "allergy"])
     temp_row = []
     temp_cols = []
     df_counts = df_groups.count()
-    allergy_index = list(df_counts.xs("healthy", level=0).index)
+    # print(df_counts)
+    first_level_values = list(df_counts.index.get_level_values(0))
+    allergy_index = list(df_counts.xs(first_level_values[0], level=0).index)
     for allergy in allergy_index:
         temp_cols = []
         for hl, per_condition_patient in weight_condition.items():
@@ -1004,13 +1014,15 @@ def create_a_summary_table(df_total_user: pd.DataFrame,
                 <font color=\"green\">({np.round((users_count/per_condition_patient)*100, 2)} % relative)</font> </td>")
         table.add_row("<tr>{cells}</tr>".format(cells="".join(temp_cols)))
     # Cultural factors
+    print("Cultural factors")
     table.add_row(
         "<tr><th style=\"text-align: center;\" colspan=\"{span_cols}\"><strong>Cultural factors</strong></th></tr>".format(span_cols=max_cols))
     df_groups = df_total_user.groupby(by=["BMI", "cultural_factor"])
     temp_row = []
     temp_cols = []
     df_counts = df_groups.count()
-    allergy_index = list(df_counts.xs("healthy", level=0).index)
+    first_level_values = list(df_counts.index.get_level_values(0))
+    allergy_index = list(df_counts.xs(first_level_values[0], level=0).index)
     for allergy in allergy_index:
         temp_cols = []
         for hl, per_condition_patient in weight_condition.items():
@@ -1027,6 +1039,7 @@ def create_a_summary_table(df_total_user: pd.DataFrame,
                 <font color=\"green\">({np.round((users_count/per_condition_patient)*100, 2)} % relative)</font> </td>")
         table.add_row("<tr>{cells}</tr>".format(cells="".join(temp_cols)))
     # Food summary
+    print("Food summary")
     table.add_row(
         "<tr><th style=\"text-align: center;\" colspan=\"{span_cols}\"><strong>Food Summary</strong></th></tr>".format(span_cols=max_cols))
     temp_dict = {}
@@ -1036,7 +1049,13 @@ def create_a_summary_table(df_total_user: pd.DataFrame,
         for u in users:
             if u in dict_recommendations.keys():
                 df_users_list.append(dict_recommendations[u])
-        temp_dict[key] = pd.concat(df_users_list, axis=0)
+        # check objects to concat
+        if len(df_users_list) > 1:
+            temp_dict[key] = pd.concat(df_users_list, axis=0)
+        elif len(df_users_list) == 1:
+            temp_dict[key] = df_users_list[0]
+        else:
+            temp_dict[key] = pd.DataFrame()
     # visualize
     total_recipes = []
     total_recipes_unique = []
@@ -1048,10 +1067,16 @@ def create_a_summary_table(df_total_user: pd.DataFrame,
     for meal in meals_index:
         temp_cols = []
         for hl, _ in weight_condition.items():
-            mean = temp_dict[hl][f"{meal}_calories"].mean()
-            std = temp_dict[hl][f"{meal}_calories"].std()
-            recipes = len(temp_dict[hl][meal])
-            unique_recipes = len(temp_dict[hl][meal].unique())
+            if not temp_dict[hl].empty:
+                mean = temp_dict[hl][f"{meal}_calories"].mean()
+                std = temp_dict[hl][f"{meal}_calories"].std()
+                recipes = len(temp_dict[hl][meal])
+                unique_recipes = len(temp_dict[hl][meal].unique())
+            else:
+                mean = 0
+                std = 0
+                recipes = 0
+                unique_recipes = 0
             temp_cols.append(f"<td style=\"text-align: left;\">{meal}: {recipes} recipes ({unique_recipes} unique recipes),\
                 calories: {np.round(mean, 1)} Kcals &plusmn; {np.round(std, 1)} Kcals </td>")
         table.add_row("<tr>{cells}</tr>".format(cells="".join(temp_cols)))
@@ -1059,9 +1084,13 @@ def create_a_summary_table(df_total_user: pd.DataFrame,
     table.add_row(
         "<tr><th style=\"text-align: center;\" colspan=\"{span_cols}\"><strong>Totals</strong></th></tr>".format(span_cols=max_cols))
     for key, _ in weight_condition.items():
-        total_recipes.append(len(temp_dict[key]))
-        list_vals = [len(temp_dict[key][x].unique())
-                     for x in meals_calorie_dict.keys()]
+        if not temp_dict[key].empty:
+            total_recipes.append(len(temp_dict[key]))
+            list_vals = [len(temp_dict[key][x].unique())
+                         for x in meals_calorie_dict.keys()]
+        else:
+            list_vals = [0, 0]
+            total_recipes.append(0)
         # print(list_vals)
         flat_list = []
         total_recipes_unique.append(sum(list_vals))
