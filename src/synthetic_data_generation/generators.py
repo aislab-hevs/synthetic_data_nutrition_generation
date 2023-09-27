@@ -858,7 +858,7 @@ def generate_recommendations(df_user: pd.DataFrame,
                     daily_required_calories-500 for i in range(days_to_simulated)]
             flexi_probas = None
             df_recommendations = pd.DataFrame(columns=[f"{k}_calories" for k in meals_calorie_dict.keys()]+list(meals_calorie_dict.keys()),
-                                              index=np.arange(1, days_to_simulated+1))
+                                              index=np.arange(0, days_to_simulated))
             # filter cultural factor and allergies
             # allergy restrictions filter
             allergies_factor = user_db.allergy
@@ -872,15 +872,19 @@ def generate_recommendations(df_user: pd.DataFrame,
                 filtered_recipe_db = df_recipes_db
             # cultural restrictions filter
             cultural_factor = user_db.cultural_factor
-            if cultural_factor != "None" and cultural_factor != "flexi_observant":
-                # new method
-                filtered_recipe_db = filtered_recipe_db.query(query_text.get(cultural_factor,
-                                                                             default=""
-                                                                             ))
-            elif cultural_factor == "flexi_observant":
-                # get flexi_proba
-                flexi_class = df_user.loc[i, "probabilities"]
-                flexi_probas = dict_flexi_probas[flexi_class]
+            if cultural_factor is not None or cultural_factor != "None":
+                if cultural_factor != "None" and cultural_factor != "flexi_observant":
+                    # new method
+                    # print(f"Cultural factor: {cultural_factor}")
+                    filtered_recipe_db = filtered_recipe_db.query(query_text.get(cultural_factor,
+                                                                                 ""
+                                                                                 ))
+                elif cultural_factor == "flexi_observant":
+                    # get flexi_proba
+                    flexi_class = df_user.loc[i, "probabilities"]
+                    flexi_probas = dict_flexi_probas[flexi_class]
+                else:
+                    filtered_recipe_db = df_recipes_db
             else:
                 filtered_recipe_db = df_recipes_db
             if filtered_recipe_db.shape[0] == 0:
@@ -936,7 +940,9 @@ def generate_recommendations(df_user: pd.DataFrame,
             simulation_results[f"{user_db.userId}"] = df_recommendations
         except Exception as e:
             # print(f"Error processing user: {df_user.iloc[i, 0]}, {e}")
+            # print(traceback.print_exc())
             continue
+    # print(f"Simulation len: {len(simulation_results)}")
     return simulation_results
 
 
@@ -1163,22 +1169,22 @@ def create_a_summary_table(df_total_user: pd.DataFrame,
                 # summarize track food
                 selected_users = df_total_user[df_total_user["BMI"] == condition]["userId"].tolist(
                 )
-                print(len(selected_users))
+                # print(len(selected_users))
                 df_users_list = []
                 for u in selected_users:
                     if u in dict_recommendations.keys():
                         df_users_list.append(dict_recommendations[u])
-                print(len(df_users_list))
+                # print(len(df_users_list))
                 # check objects to concat
                 if len(df_users_list) > 1:
                     temp_df = pd.concat(df_users_list, axis=0)
                 elif len(df_users_list) == 1:
                     # one user
-                    print("One user detected")
+                    # print("One user detected")
                     temp_df = df_users_list[0]
                 else:
                     temp_df = pd.DataFrame()
-                print(len(temp_df))
+                # print(len(temp_df))
                 # summarize
                 temp_list = []
                 for meal in list(meals_calorie_dict.keys()):
@@ -1187,8 +1193,8 @@ def create_a_summary_table(df_total_user: pd.DataFrame,
                         std = temp_df[f"{meal}_calories"].std()
                         recipes = len(temp_df[meal])
                         unique_recipes = len(temp_df[meal].unique())
-                        print(
-                            f"calculated values condition {condition}: {meal} mean {mean} std {std}")
+                        # print(
+                        # f"calculated values condition {condition}: {meal} mean {mean} std {std}")
                     else:
                         mean = 0.0
                         std = 0.0
@@ -1239,8 +1245,9 @@ def create_a_summary_table(df_total_user: pd.DataFrame,
         fill_dict["colspan"] = max_cols
         table.set_value(11, fill_dict)
     except Exception as e:
-        print(f"table error: {e}")
-        print(traceback.format_exc())
+        # print(f"table error: {e}")
+        raise Exception(f"Error generating table: {e}")
+        # print(traceback.format_exc())
     return table
 
 # Full pipeline to simulation
