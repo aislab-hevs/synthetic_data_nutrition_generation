@@ -6,7 +6,7 @@ from collections import OrderedDict
 from typing import Any
 import numpy as np
 import pandas as pd
-from typing import Any, Dict, List
+from typing import Any, Dict, List, Tuple
 import copy
 import graphviz as graphv
 
@@ -69,31 +69,10 @@ def values_from_dictionary(dictionary: Dict[str, Any], round_digits: int = 1) ->
     return new_dict
 
 
-def execute_simulation(num_users, num_days, dictionaries, probability_transition_matrix, df_recipes, progress_bar=None):
-    # Todo check dictionaries probabilities
-    # Todo: Get values from dictionaries and send to the simulation function
-    simulation_results, df_user_join, table = run_full_simulation(
-        num_users=num_users,
-        gender_probabilities=values_from_dictionary(
-            dictionaries['gender_probabilities']),
-        BMI_probabilities=values_from_dictionary(
-            dictionaries['BMI_probabilities']),
-        allergies_probability_dict=values_from_dictionary(
-            dictionaries['allergies_probability_dict']),
-        food_restriction_probability_dict=values_from_dictionary(
-            dictionaries['food_restriction_probability_dict']),
-        flexi_probabilities={k: values_from_dictionary(
-            dictionaries['flexi_probabilities'][k]) for k in dictionaries['flexi_probabilities'].keys()},
-        probability_transition_matrix=probability_transition_matrix,
-        df_recipes=df_recipes,
-        meals_proba=values_from_dictionary(dictionaries['meals_proba']),
-        progress_bar=progress_bar,
-        num_days=num_days
-    )
-    return simulation_results, df_user_join, table
-
-
 class FloatProgressBar:
+    """Float progress bar shows the progress in a process.
+    """
+
     def __init__(self, initial_value: float = 0.0,
                  min_value=0.0,
                  max_values=100.0,
@@ -136,6 +115,35 @@ class FloatProgressBar:
         if value >= self.max_val:
             self.progress_bar.bar_style = default_description
             self.progress_bar.description = "success"
+
+
+def execute_simulation(num_users: int,
+                       num_days: int,
+                       dictionaries: Dict[str, Any],
+                       probability_transition_matrix: np.array,
+                       df_recipes: pd.DataFrame,
+                       progress_bar: FloatProgressBar = None) -> Tuple[Any, Any, Any]:
+    # Todo check dictionaries probabilities
+    # Todo: Get values from dictionaries and send to the simulation function
+    simulation_results, df_user_join, table = run_full_simulation(
+        num_users=num_users,
+        gender_probabilities=values_from_dictionary(
+            dictionaries['gender_probabilities']),
+        BMI_probabilities=values_from_dictionary(
+            dictionaries['BMI_probabilities']),
+        allergies_probability_dict=values_from_dictionary(
+            dictionaries['allergies_probability_dict']),
+        food_restriction_probability_dict=values_from_dictionary(
+            dictionaries['food_restriction_probability_dict']),
+        flexi_probabilities={k: values_from_dictionary(
+            dictionaries['flexi_probabilities'][k]) for k in dictionaries['flexi_probabilities'].keys()},
+        probability_transition_matrix=probability_transition_matrix,
+        df_recipes=df_recipes,
+        meals_proba=values_from_dictionary(dictionaries['meals_proba']),
+        progress_bar=progress_bar,
+        num_days=num_days
+    )
+    return simulation_results, df_user_join, table
 
 
 def check_sum_proba(dict_proba, round_digits=1):
