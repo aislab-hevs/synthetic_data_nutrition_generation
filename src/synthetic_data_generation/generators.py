@@ -1230,6 +1230,9 @@ def create_a_summary_table(df_total_user: pd.DataFrame,
                 std = temp_df[f"{meal}_calories"].std()
                 recipes = len(temp_df[meal])
                 unique_recipes = len(temp_df[meal].unique())
+                if unique_recipes == 1:
+                    recipes = 0.0
+                    unique_recipes = 0.0
             else:
                 mean = 0.0
                 std = 0.0
