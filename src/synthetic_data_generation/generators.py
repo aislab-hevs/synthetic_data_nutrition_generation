@@ -4,6 +4,7 @@ from faker import Faker
 from enum import Enum
 from typing import List, Any, Tuple, Dict
 import string
+import os
 import uuid
 import seaborn as sns
 import matplotlib.pyplot as plt
@@ -1253,9 +1254,37 @@ def create_a_summary_table(df_total_user: pd.DataFrame,
         # print(traceback.format_exc())
     return table
 
+
+def process_simulation_results(simulation_results_dict):
+    list_dataframes = []
+    for k in simulation_results_dict.keys():
+        temp_df = simulation_results_dict.get(k)
+        if temp_df is not None:
+            temp_df["userId"] = k
+            list_dataframes.append(temp_df)
+    # concatenate dataframes
+    final_df = pd.concat(list_dataframes, axis=0)
+    return final_df
+
+
+def save_outputs(base_path: str, output_folder: str, files: Dict[str, Any]):
+    if os.path.exists(base_path):
+        target_path = os.path.join(base_path, output_folder)
+        if not os.path.exists(target_path):
+            os.mkdir(target_path)
+        # save files
+        for k in files.keys():
+            # print(f"key: {k}, extension: {k.split('.')[-1]}")
+            if k.split(".")[-1] == "csv":
+                files[k].to_csv(os.path.join(target_path, k))
+            else:
+                with open(os.path.join(target_path, k), 'w') as fs:
+                    fs.write(files[k])
+    else:
+        raise Exception(f"Output folder: {base_path} not found")
+
+
 # Full pipeline to simulation
-
-
 def run_full_simulation(num_users: int,
                         gender_probabilities: Dict[str, Any],
                         BMI_probabilities: Dict[str, Any],
@@ -1345,4 +1374,5 @@ def run_full_simulation(num_users: int,
                                                   progress_bar=progress_bar)
     # Create a summary table
     table = create_a_summary_table(df_user_join, simulation_results)
+    # return the files
     return simulation_results, df_user_join, table

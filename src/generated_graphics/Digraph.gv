@@ -1,0 +1,6 @@
+digraph {
+	A [label="Node A"]
+	B [label="Node B"]
+	A -> B [label="Edge 1"]
+	B -> A [label="Edge 2"]
+}

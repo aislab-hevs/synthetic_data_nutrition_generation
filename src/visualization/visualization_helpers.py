@@ -4,6 +4,8 @@ import base64
 import ipywidgets as widgets
 from collections import OrderedDict
 from typing import Any
+import os
+import datetime as dt
 import numpy as np
 import pandas as pd
 from typing import Any, Dict, List, Tuple
@@ -12,6 +14,8 @@ import graphviz as graphv
 
 from synthetic_data_generation.generators import (person_entity,
                                                   BMI_constants,
+                                                  process_simulation_results,
+                                                  save_outputs,
                                                   run_full_simulation)
 
 import synthetic_data_generation.default_inputs as defaultValues
@@ -298,18 +302,6 @@ class NotebookUIBuilder:
         return self.main_accordion
 
 
-def process_simulation_results(simulation_results_dict):
-    list_dataframes = []
-    for k in simulation_results_dict.keys():
-        temp_df = simulation_results_dict.get(k)
-        if temp_df is not None:
-            temp_df["userId"] = k
-            list_dataframes.append(temp_df)
-    # concatenate dataframes
-    final_df = pd.concat(list_dataframes, axis=0)
-    return final_df
-
-
 class ExecuteButton:
     def __init__(self, progress_bar: FloatProgressBar,
                  num_users, num_days, dictionaries,
@@ -400,12 +392,6 @@ class ExecuteButton:
                                        style=box_style
                                        )
                     display(box)
-                    # display(render_transition_graph([BMI_constants.underweight.value,
-                    #                                  BMI_constants.healthy.value,
-                    #                                  BMI_constants.overweight.value,
-                    #                                  BMI_constants.obesity.value],
-                    #                                 probability_matrix=probability_transition_matrix))
-                    # display(render_graph_from_text(defaultValues.legend_text))
             else:
                 print("simulation starting")
                 self.progress_bar.display()
@@ -420,6 +406,20 @@ class ExecuteButton:
             self.simulation_results = simulation_results
             self.df_user_join = df_user_join
             self.table = table
+            # save result to a temporal  directory
+            base_output_path = os.path.join(os.getcwd(), "outputs")
+            folder_output_name = dt.datetime.now().strftime('%d-%m-%Y_%H-%M-%S')
+            simulation_df = process_simulation_results(simulation_results)
+            files_dict = {
+                "users_dataset.csv": df_user_join,
+                "users_tracking.csv": simulation_df,
+                "summary_table.html": table.render()
+            }
+            save_outputs(
+                base_output_path,
+                folder_output_name,
+                files_dict
+            )
             # Show download buttons
             df_tracking = process_simulation_results(
                 simulation_results_dict=simulation_results)
