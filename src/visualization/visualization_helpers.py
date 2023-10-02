@@ -12,8 +12,10 @@ from typing import Any, Dict, List, Tuple
 import copy
 import graphviz as graphv
 import traceback
+from functools import partial
 
 from synthetic_data_generation.generators import (person_entity,
+                                                  HTML_Table,
                                                   BMI_constants,
                                                   process_simulation_results,
                                                   save_outputs,
@@ -320,6 +322,14 @@ class ExecuteButton:
         self.dictionaries = dictionaries
         self.out = out
 
+    def show_table_preview(self, change: Any,  table: HTML_Table):
+        # print(f"got: {change}")
+        if self.out is not None:
+            with self.out:
+                display(HTML(table.render()))
+        else:
+            display(HTML(table.render()))
+
     def execute_simulation(self):
         try:
             # self.progress_bar.hide()
@@ -422,7 +432,8 @@ class ExecuteButton:
             files_dict = {
                 "users_dataset.csv": df_user_join,
                 "users_tracking.csv": simulation_df,
-                "summary_table.html": table.render()
+                "summary_table.html": table.render(),
+                "transition_graph.png": transition_graph
             }
             save_outputs(
                 base_output_path,
@@ -454,13 +465,32 @@ class ExecuteButton:
                 extension="csv",
                 description="User's tracking data"
             )
+
+            button_4 = widgets.Button(description="Preview table",
+                                      tooltip="Click to show a preview of the table",
+                                      icon='html5')
+
+            button_4.add_class("p-Widget")
+            button_4.add_class("jupyter-widgets")
+            button_4.add_class("jupyter-button")
+            button_4.add_class("widget-button")
+            button_4.add_class("mod-warning")
+
+            partial_table = partial(self.show_table_preview, table=table)
+            button_4.on_click(partial_table)
+
+            button_box = widgets.Box(children=[widgets.HTML(button_1.get_html_button()),
+                                               widgets.HTML(
+                                                   button_2.get_html_button()),
+                                               widgets.HTML(
+                                                   button_3.get_html_button()),
+                                               button_4])
+
             if self.out is not None:
                 with self.out:
-                    display(HTML(button_1.get_html_button()), HTML(
-                        button_2.get_html_button()), HTML(button_3.get_html_button()))
+                    display(button_box)
             else:
-                display(HTML(button_1.get_html_button()), HTML(
-                        button_2.get_html_button()), HTML(button_3.get_html_button()))
+                display(button_box)
         except Exception as e:
             # print(traceback.format_exc())
             exceptionOut = widgets.Output(layout={'border': '1px solid red'})

@@ -1072,7 +1072,7 @@ def create_a_summary_table(df_total_user: pd.DataFrame,
                             "male_stats": male_text})
         # fill health conditions
         condition_template_text = """Health condition {cond}: {user_cond} users ({cond_percent} %)
-        <p>(Male: {male_percent}%), (Female: {female_percent}%) </p>
+        <p>Male: {male_count} ({male_percent}%), Female: {female_count} ({female_percent}%) </p>
         """
         weight_condition = df_total_user["BMI"].value_counts()
         weight_condition_gender = df_total_user.groupby(
@@ -1085,6 +1085,8 @@ def create_a_summary_table(df_total_user: pd.DataFrame,
         for condition in conditions:
             users_condition = 0
             percent_user = 0.0
+            male_count = 0.0
+            female_count = 0.0
             male_percent = 0.0
             female_percent = 0.0
             if condition in list(
@@ -1092,8 +1094,6 @@ def create_a_summary_table(df_total_user: pd.DataFrame,
                 # Check if M exist
                 weight_gender_count = weight_condition_gender.xs(condition, level=0)[
                     "userId"]
-                male_count = 0
-                female_count = 0
                 if 'M' in weight_gender_count.index:
                     male_count = weight_gender_count.M
                 if 'F' in weight_gender_count.index:
@@ -1109,7 +1109,9 @@ def create_a_summary_table(df_total_user: pd.DataFrame,
                                                                              user_cond=users_condition,
                                                                              cond_percent=percent_user,
                                                                              male_percent=male_percent,
-                                                                             female_percent=female_percent
+                                                                             female_percent=female_percent,
+                                                                             male_count=male_count,
+                                                                             female_count=female_count
                                                                              )
         table.set_value(3, fill_dict)
         # fill allergies
@@ -1293,6 +1295,9 @@ def save_outputs(base_path: str, output_folder: str, files: Dict[str, Any]):
             # print(f"key: {k}, extension: {k.split('.')[-1]}")
             if k.split(".")[-1] == "csv":
                 files[k].to_csv(os.path.join(target_path, k))
+            elif k.split(".")[-1] == "png":
+                files[k].render(filename=os.path.join(
+                    target_path, k), format='png')
             else:
                 with open(os.path.join(target_path, k), 'w') as fs:
                     fs.write(files[k])
