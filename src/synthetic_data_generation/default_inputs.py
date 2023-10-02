@@ -47,7 +47,7 @@ height_distribution = {
 
 meal_time_distribution = {
     "breakfast": {
-        "mean": 7,
+        "mean": 8,
         "std": 1
     },
     "morning snacks": {
@@ -55,11 +55,11 @@ meal_time_distribution = {
         "std": 1
     },
     "afternoon snacks": {
-        "mean": 4,
+        "mean": 16,
         "std": 1
     },
     "lunch": {
-        "mean": 1,
+        "mean": 13,
         "std": 1
     },
     "dinner": {

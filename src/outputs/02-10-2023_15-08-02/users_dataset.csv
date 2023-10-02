@@ -1,0 +1,6 @@
+,userId,nutrition_goal,clinical_gender,age_range,life_style,weight,height,projected_daily_calories,cultural_factor,probabilities,allergy,BMI,next_BMI
+0,edwarda6e2,gain_weight,M,20-29,Very active,60.94,184,3628.0,vegetarian_observant,,wheat,underweight,healthy
+1,brandona57b,lose_weight,M,50-59,Very active,70.79,159,2327.0,kosher_observant,,wheat,overweight,overweight
+2,michaelb8c8,lose_weight,M,70-79,Lightly active,70.79,159,1390.0,kosher_observant,,None,overweight,overweight
+3,rhondaaa19,lose_weight,F,30-39,Lightly active,76.23,165,1580.0,vegetarian_observant,,shellfish,overweight,overweight
+4,kayla88da,lose_weight,F,70-79,Lightly active,71.68,160,1262.0,vegetarian_observant,,soy,overweight,obesity

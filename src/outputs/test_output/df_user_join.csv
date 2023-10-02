@@ -1,0 +1,501 @@
+,userId,nutrition_goal,clinical_gender,age_range,life_style,weight,height,projected_daily_calories,cultural_factor,probabilities,allergy,BMI
+0,williama97c,gain_weight,M,40-49,Sedentary,57.03,178,2242.0,vegetarian_observant,,eggs,underweight
+1,williea023,maintain_fit,M,50-59,Moderately active,69.56,182,2728.0,None,,peanut,healthy
+2,cody9f0a,maintain_fit,M,50-59,Sedentary,47.88,151,1371.0,vegan_observant,,None,healthy
+3,tonyb1d9,lose_weight,M,90-100,Moderately active,79.97,169,1970.0,None,,fish,overweight
+4,davidaa10,lose_weight,M,60-69,Sedentary,62.16,149,1021.0,None,,None,overweight
+5,mary8532,lose_weight,F,30-39,Moderately active,92.48,170,2395.0,None,,None,obesity
+6,nicholas8fc5,lose_weight,M,70-79,Sedentary,68.14,156,1089.0,None,,cow's milk,overweight
+7,beckyb325,lose_weight,F,90-100,Very active,69.02,157,1706.0,vegan_observant,,None,overweight
+8,carlosb29f,lose_weight,M,30-39,Moderately active,65.55,153,2092.0,None,,cow's milk,overweight
+9,karaaef3,gain_weight,F,40-49,Sedentary,42.14,153,1840.0,vegetarian_observant,,None,underweight
+10,cynthia85fe,lose_weight,F,90-100,Very active,61.33,148,1518.0,None,,None,overweight
+11,kennethba75,gain_weight,M,60-69,Sedentary,50.2,167,1932.0,None,,None,underweight
+12,patrickb2c6,maintain_fit,M,90-100,Lightly active,59.27,168,1581.0,vegan_observant,,peanut,healthy
+13,phillipb4a3,lose_weight,M,80-89,Moderately active,82.95,161,2070.0,None,,None,obesity
+14,mr.a7d4,maintain_fit,M,90-100,Very active,41.75,141,1492.0,vegetarian_observant,,eggs,healthy
+15,martinaf8b,lose_weight,M,20-29,Sedentary,102.53,179,2115.0,flexi_observant,flexi_kosher,None,obesity
+16,lisa9302,lose_weight,F,40-49,Moderately active,63.0,150,1743.0,vegetarian_observant,,None,overweight
+17,rachael9fa1,lose_weight,F,60-69,Moderately active,70.79,159,1766.0,kosher_observant,,shellfish,overweight
+18,justinb67b,lose_weight,M,20-29,Very active,92.48,170,3303.0,halal_observant,,wheat,obesity
+19,lindsey8631,lose_weight,F,70-79,Very active,94.67,172,2410.0,None,,fish,obesity
+20,madelinea985,lose_weight,F,30-39,Very active,73.93,152,2257.0,vegan_observant,,tree nuts,obesity
+21,janice94c6,lose_weight,F,80-89,Moderately active,71.68,160,1636.0,vegetarian_observant,,shellfish,overweight
+22,danielleb55f,lose_weight,F,80-89,Very active,78.88,157,1962.0,halal_observant,,soy,obesity
+23,nicholas9cd3,maintain_fit,M,30-39,Sedentary,60.69,170,1823.0,vegetarian_observant,,None,healthy
+24,kimberlybf4a,maintain_fit,F,40-49,Lightly active,47.25,150,1588.0,vegetarian_observant,,None,healthy
+25,cynthiab960,lose_weight,F,90-100,Sedentary,73.48,162,962.0,vegetarian_observant,,cow's milk,overweight
+26,christian9185,lose_weight,M,40-49,Very active,95.77,173,3198.0,vegetarian_observant,,None,obesity
+27,april9106,lose_weight,F,40-49,Sedentary,65.55,153,1100.0,vegan_observant,,fish,overweight
+28,jose8a67,lose_weight,M,30-39,Lightly active,72.58,161,1748.0,kosher_observant,,wheat,overweight
+29,michaelae7c,maintain_fit,M,80-89,Moderately active,74.22,188,2592.0,flexi_observant,flexi_vegie,eggs,healthy
+30,daniel8319,gain_weight,M,20-29,Moderately active,48.41,164,2884.0,vegetarian_observant,,soy,underweight
+31,williamaa8e,lose_weight,M,60-69,Very active,81.87,171,2610.0,vegetarian_observant,,soy,overweight
+32,aliceb2a2,maintain_fit,F,30-39,Moderately active,55.11,162,2256.0,flexi_observant,flexi_vegie,shellfish,healthy
+33,sally8627,gain_weight,F,90-100,Lightly active,44.37,157,1783.0,flexi_observant,flexi_vegie,fish,underweight
+34,laurenb555,lose_weight,F,90-100,Lightly active,89.24,167,1396.0,kosher_observant,,None,obesity
+35,jeffreyb608,maintain_fit,M,50-59,Sedentary,68.04,180,1862.0,None,,None,healthy
+36,sabrina9ab2,lose_weight,F,50-59,Moderately active,79.03,168,2020.0,None,,None,overweight
+37,tammybe0a,maintain_fit,F,70-79,Very active,57.17,165,2210.0,None,,tree nuts,healthy
+38,caitlin8265,lose_weight,F,70-79,Moderately active,71.68,160,1711.0,vegan_observant,,None,overweight
+39,jennifera372,maintain_fit,F,70-79,Sedentary,56.48,164,1384.0,vegan_observant,,soy,healthy
+40,moniqueb0d2,maintain_fit,F,80-89,Very active,45.38,147,1814.0,None,,eggs,healthy
+41,jason85a2,lose_weight,M,70-79,Very active,69.9,158,2079.0,None,,wheat,overweight
+42,cynthiaaec4,lose_weight,F,60-69,Lightly active,80.9,159,1435.0,kosher_observant,,peanut,obesity
+43,marcus81bd,maintain_fit,M,60-69,Very active,61.41,171,2590.0,None,,shellfish,healthy
+44,matthewb6cd,lose_weight,M,70-79,Sedentary,101.39,178,1751.0,vegetarian_observant,,None,obesity
+45,mrs.a1b3,lose_weight,F,20-29,Lightly active,63.84,151,1422.0,vegetarian_observant,,fish,overweight
+46,veronicaa9d9,maintain_fit,F,20-29,Moderately active,48.52,152,2172.0,None,,cow's milk,healthy
+47,gregoryadeb,maintain_fit,M,20-29,Sedentary,55.79,163,1772.0,vegetarian_observant,,fish,healthy
+48,dr.892e,maintain_fit,F,80-89,Moderately active,63.58,174,2082.0,kosher_observant,,None,healthy
+49,kathryn91f8,lose_weight,F,80-89,Moderately active,84.77,174,1920.0,None,,cow's milk,overweight
+50,davidb100,lose_weight,M,90-100,Sedentary,74.39,163,1094.0,None,,peanut,overweight
+51,annebfc3,lose_weight,F,70-79,Very active,74.39,163,2000.0,flexi_observant,flexi_halal,None,overweight
+52,evelyn89d9,lose_weight,F,50-59,Moderately active,88.18,166,2155.0,vegan_observant,,fish,obesity
+53,kathryn9149,lose_weight,F,30-39,Sedentary,71.68,160,1246.0,vegan_observant,,peanut,overweight
+54,robert956f,lose_weight,M,70-79,Moderately active,117.96,192,3234.0,vegetarian_observant,,wheat,obesity
+55,marka93d,lose_weight,M,90-100,Lightly active,104.84,181,2006.0,vegan_observant,,fish,obesity
+56,mrs.8ef2,lose_weight,F,30-39,Sedentary,72.96,151,1227.0,flexi_observant,flexi_halal,fish,obesity
+57,johnny8d95,lose_weight,M,50-59,Sedentary,85.02,163,1537.0,vegan_observant,,tree nuts,obesity
+58,arthurb8e2,lose_weight,M,70-79,Lightly active,84.77,174,1746.0,flexi_observant,flexi_kosher,fish,overweight
+59,tracie8144,lose_weight,F,30-39,Sedentary,75.31,164,1301.0,flexi_observant,flexi_vegetarian,eggs,overweight
+60,jamie8a53,lose_weight,F,80-89,Lightly active,70.09,148,1131.0,None,,None,obesity
+61,andrew85b1,maintain_fit,M,20-29,Very active,55.11,162,2779.0,vegetarian_observant,,shellfish,healthy
+62,andrewb13a,lose_weight,M,70-79,Sedentary,77.88,156,1246.0,vegetarian_observant,,None,obesity
+63,lindsay95ed,lose_weight,F,80-89,Very active,76.23,165,1962.0,vegetarian_observant,,soy,overweight
+64,charlesb363,lose_weight,M,80-89,Sedentary,82.95,161,1288.0,None,,None,obesity
+65,robert840e,lose_weight,M,90-100,Sedentary,79.97,169,1218.0,None,,shellfish,overweight
+66,gloria95c5,maintain_fit,F,50-59,Lightly active,56.48,164,1705.0,None,,shellfish,healthy
+67,renee8789,lose_weight,F,30-39,Lightly active,72.58,161,1516.0,flexi_observant,flexi_vegie,None,overweight
+68,melissa96e1,maintain_fit,F,60-69,Sedentary,57.17,165,1448.0,vegetarian_observant,,soy,healthy
+69,miguel8d06,maintain_fit,M,60-69,Lightly active,59.27,168,1815.0,vegetarian_observant,,None,healthy
+70,john8200,lose_weight,M,80-89,Moderately active,70.09,148,1665.0,vegetarian_observant,,shellfish,obesity
+71,sharon8fe7,lose_weight,F,40-49,Lightly active,51.79,136,1086.0,vegetarian_observant,,cow's milk,overweight
+72,jeffrey810a,lose_weight,M,90-100,Moderately active,88.18,166,2135.0,flexi_observant,flexi_vegetarian,None,obesity
+73,larryaeeb,gain_weight,M,20-29,Sedentary,39.96,149,1937.0,vegetarian_observant,,tree nuts,underweight
+74,samanthaa8c8,maintain_fit,F,40-49,Moderately active,47.88,151,2007.0,flexi_observant,flexi_kosher,cow's milk,healthy
+75,corey8976,lose_weight,M,90-100,Very active,85.75,175,2422.0,vegetarian_observant,,wheat,overweight
+76,martin902f,maintain_fit,M,40-49,Moderately active,65.79,177,2698.0,None,,None,healthy
+77,sylvia8440,lose_weight,F,40-49,Moderately active,94.67,172,2366.0,None,,tree nuts,obesity
+78,donaldb86a,gain_weight,M,70-79,Very active,48.41,164,2587.0,vegetarian_observant,,None,underweight
+79,paulaa66,lose_weight,M,60-69,Sedentary,88.18,166,1537.0,vegan_observant,,None,obesity
+80,davida3a2,maintain_fit,M,70-79,Very active,60.69,170,2454.0,vegan_observant,,cow's milk,healthy
+81,brianb73d,maintain_fit,M,50-59,Sedentary,72.65,186,1971.0,kosher_observant,,None,healthy
+82,richard9643,lose_weight,M,40-49,Lightly active,83.8,173,1956.0,None,,shellfish,overweight
+83,randallb59f,lose_weight,M,80-89,Sedentary,70.79,159,1081.0,vegetarian_observant,,None,overweight
+84,melissab722,lose_weight,F,40-49,Sedentary,74.39,163,1235.0,vegan_observant,,fish,overweight
+85,tanya8c0b,lose_weight,F,60-69,Very active,76.88,155,2079.0,vegan_observant,,None,obesity
+86,bradley887c,lose_weight,M,80-89,Sedentary,101.39,178,1683.0,vegetarian_observant,,soy,obesity
+87,david9f23,gain_weight,M,20-29,Very active,57.67,179,3499.0,vegetarian_observant,,None,underweight
+88,heatherb98c,maintain_fit,F,70-79,Sedentary,44.76,146,1187.0,None,,None,healthy
+89,karen8026,lose_weight,F,40-49,Very active,99.12,176,2758.0,None,,soy,obesity
+90,dr.83c0,lose_weight,F,80-89,Moderately active,72.58,161,1656.0,None,,None,overweight
+91,gailbdf3,gain_weight,F,90-100,Moderately active,42.14,153,2053.0,None,,eggs,underweight
+92,jennifera801,maintain_fit,F,70-79,Very active,57.17,165,2210.0,kosher_observant,,None,healthy
+93,williama4ef,maintain_fit,M,50-59,Sedentary,62.85,173,1739.0,flexi_observant,flexi_kosher,fish,healthy
+94,alexisa038,lose_weight,F,70-79,Sedentary,72.96,151,1019.0,None,,peanut,obesity
+95,elizabethad89,maintain_fit,F,80-89,Sedentary,53.09,159,1276.0,vegetarian_observant,,soy,healthy
+96,brian8db0,lose_weight,M,80-89,Lightly active,72.0,150,1275.0,vegetarian_observant,,None,obesity
+97,garybb20,lose_weight,M,30-39,Very active,87.12,165,3013.0,vegan_observant,,wheat,obesity
+98,seanac16,gain_weight,M,70-79,Very active,55.12,175,2858.0,None,,soy,underweight
+99,jasonac7c,maintain_fit,M,90-100,Lightly active,52.42,158,1389.0,kosher_observant,,eggs,healthy
+100,pamelab000,lose_weight,F,20-29,Very active,70.79,159,2325.0,vegan_observant,,tree nuts,overweight
+101,ashleybc6b,lose_weight,F,30-39,Lightly active,90.72,180,1828.0,vegetarian_observant,,shellfish,overweight
+102,samuel92d0,lose_weight,M,40-49,Very active,93.57,171,3124.0,kosher_observant,,soy,obesity
+103,seth8c09,maintain_fit,M,40-49,Very active,68.8,181,3085.0,flexi_observant,flexi_halal,None,healthy
+104,patrickaf76,lose_weight,M,30-39,Lightly active,88.72,178,2158.0,vegan_observant,,tree nuts,overweight
+105,josepha439,lose_weight,M,30-39,Lightly active,82.95,161,1939.0,vegetarian_observant,,peanut,obesity
+106,john85ef,maintain_fit,M,80-89,Very active,62.85,173,2429.0,vegetarian_observant,,peanut,healthy
+107,craig8420,maintain_fit,M,50-59,Very active,47.25,150,2146.0,halal_observant,,None,healthy
+108,donna940c,lose_weight,F,40-49,Sedentary,74.91,153,1204.0,vegan_observant,,cow's milk,obesity
+109,scottb7da,maintain_fit,M,90-100,Moderately active,56.48,164,1885.0,vegan_observant,,eggs,healthy
+110,jaredb429,maintain_fit,M,50-59,Lightly active,54.43,161,1758.0,halal_observant,,shellfish,healthy
+111,andrea8a48,lose_weight,F,90-100,Moderately active,83.98,162,1768.0,None,,None,obesity
+112,rachelb274,lose_weight,F,80-89,Sedentary,76.88,155,1025.0,kosher_observant,,tree nuts,obesity
+113,leslieb5f3,lose_weight,F,60-69,Moderately active,82.95,161,1971.0,None,,None,obesity
+114,kenneth8084,maintain_fit,M,50-59,Sedentary,57.87,166,1618.0,None,,None,healthy
+115,mr.a895,lose_weight,M,60-69,Moderately active,86.73,176,2478.0,vegan_observant,,tree nuts,overweight
+116,nancy9438,lose_weight,F,60-69,Lightly active,61.33,148,1139.0,None,,None,overweight
+117,ashley9cca,gain_weight,F,90-100,Sedentary,43.8,156,1610.0,flexi_observant,flexi_halal,None,underweight
+118,steven98b2,maintain_fit,M,50-59,Moderately active,57.17,165,2301.0,flexi_observant,flexi_vegetarian,tree nuts,healthy
+119,bradleyaead,gain_weight,M,70-79,Very active,56.39,177,2909.0,vegan_observant,,None,underweight
+120,deborah8baa,lose_weight,F,70-79,Moderately active,60.51,147,1463.0,vegan_observant,,shellfish,overweight
+121,elizabethae5f,lose_weight,F,50-59,Sedentary,88.18,166,1347.0,None,,None,obesity
+122,tammy91cf,maintain_fit,F,90-100,Sedentary,60.69,170,1349.0,None,,shellfish,healthy
+123,jennifer98c9,lose_weight,F,40-49,Very active,69.02,157,2117.0,vegetarian_observant,,None,overweight
+124,kimberlyb45b,lose_weight,F,30-39,Very active,76.88,155,2326.0,flexi_observant,flexi_vegetarian,eggs,obesity
+125,michael8484,lose_weight,M,40-49,Moderately active,68.14,156,2078.0,vegetarian_observant,,soy,overweight
+126,cody80f8,lose_weight,M,60-69,Sedentary,99.12,176,1771.0,vegan_observant,,fish,obesity
+127,anthonybba4,lose_weight,M,60-69,Moderately active,84.77,174,2416.0,flexi_observant,flexi_kosher,wheat,overweight
+128,ericaafb3,lose_weight,F,20-29,Moderately active,79.97,169,2265.0,None,,peanut,overweight
+129,jamesbb0a,lose_weight,M,70-79,Sedentary,69.9,158,1129.0,None,,None,overweight
+130,brandona372,maintain_fit,M,90-100,Sedentary,41.75,141,943.0,None,,None,healthy
+131,mereditha269,lose_weight,F,40-49,Lightly active,79.88,158,1537.0,vegan_observant,,cow's milk,obesity
+132,sarahb93c,maintain_fit,F,50-59,Lightly active,51.11,156,1603.0,vegan_observant,,peanut,healthy
+133,amanda9fc2,lose_weight,F,60-69,Lightly active,87.12,165,1540.0,vegetarian_observant,,cow's milk,obesity
+134,emilyba5d,lose_weight,F,30-39,Lightly active,63.84,151,1362.0,vegetarian_observant,,None,overweight
+135,kristenb1b3,maintain_fit,F,70-79,Lightly active,52.42,158,1509.0,None,,peanut,healthy
+136,christopher97dc,lose_weight,M,80-89,Very active,83.98,162,2366.0,flexi_observant,flexi_kosher,None,obesity
+137,andrewa561,lose_weight,M,40-49,Very active,82.84,172,2860.0,vegetarian_observant,,tree nuts,overweight
+138,kelseyb744,lose_weight,F,90-100,Very active,63.0,150,1559.0,vegetarian_observant,,shellfish,overweight
+139,hannah82be,lose_weight,F,80-89,Very active,76.88,155,1915.0,None,,None,obesity
+140,veronicaa724,lose_weight,F,30-39,Moderately active,60.06,137,1701.0,vegetarian_observant,,peanut,obesity
+141,philipafd9,maintain_fit,M,40-49,Sedentary,59.27,168,1720.0,halal_observant,,eggs,healthy
+142,kelsey9776,gain_weight,F,40-49,Moderately active,39.96,149,2370.0,vegetarian_observant,,soy,underweight
+143,allen983b,lose_weight,M,80-89,Sedentary,91.4,169,1470.0,None,,None,obesity
+144,bradleybbb5,lose_weight,M,90-100,Lightly active,80.92,170,1493.0,vegetarian_observant,,shellfish,overweight
+145,debbieac5b,gain_weight,F,70-79,Sedentary,45.51,159,1744.0,None,,eggs,underweight
+146,rogerbb7d,lose_weight,M,90-100,Lightly active,91.4,169,1679.0,vegan_observant,,None,obesity
+147,craig99b4,maintain_fit,M,30-39,Very active,62.85,173,2968.0,flexi_observant,flexi_kosher,wheat,healthy
+148,jennifer9546,maintain_fit,F,30-39,Moderately active,51.11,156,2160.0,None,,eggs,healthy
+149,jamesa6fe,maintain_fit,M,80-89,Lightly active,57.17,165,1600.0,vegetarian_observant,,None,healthy
+150,marya619,lose_weight,F,90-100,Very active,73.48,162,1814.0,vegetarian_observant,,fish,overweight
+151,joeafaa,maintain_fit,M,40-49,Lightly active,62.13,172,2050.0,flexi_observant,flexi_vegetarian,tree nuts,healthy
+152,sandrab740,maintain_fit,F,90-100,Moderately active,52.42,158,1744.0,None,,None,healthy
+153,michael828b,lose_weight,M,90-100,Lightly active,96.87,186,1892.0,kosher_observant,,None,overweight
+154,kevinaee8,lose_weight,M,30-39,Very active,74.91,153,2593.0,vegetarian_observant,,None,obesity
+155,brianb750,lose_weight,M,30-39,Lightly active,86.07,164,2016.0,None,,None,obesity
+156,joseb250,lose_weight,M,40-49,Lightly active,89.24,167,2017.0,None,,wheat,obesity
+157,douglasa910,lose_weight,M,60-69,Very active,80.9,159,2476.0,None,,wheat,obesity
+158,steveb6c8,lose_weight,M,60-69,Moderately active,71.04,149,1892.0,vegetarian_observant,,fish,obesity
+159,aaronbb78,lose_weight,M,40-49,Sedentary,78.09,167,1517.0,halal_observant,,wheat,overweight
+160,aleca4b3,lose_weight,M,40-49,Very active,95.77,173,3198.0,vegetarian_observant,,wheat,obesity
+161,kim8562,gain_weight,F,80-89,Moderately active,48.41,164,2286.0,vegetarian_observant,,cow's milk,underweight
+162,michaela7bd,maintain_fit,M,30-39,Moderately active,75.81,190,3135.0,None,,None,healthy
+163,robertb14d,gain_weight,M,30-39,Lightly active,57.67,179,2592.0,None,,None,underweight
+164,gregory9015,lose_weight,M,70-79,Lightly active,75.31,164,1506.0,None,,None,overweight
+165,rachela06f,maintain_fit,F,20-29,Sedentary,57.87,166,1667.0,vegetarian_observant,,cow's milk,healthy
+166,saraha278,lose_weight,F,30-39,Moderately active,73.93,152,2003.0,vegan_observant,,fish,obesity
+167,hannah891f,maintain_fit,F,70-79,Very active,52.42,158,2085.0,kosher_observant,,None,healthy
+168,jamie9d43,lose_weight,F,70-79,Very active,78.09,167,2089.0,flexi_observant,flexi_vegetarian,soy,overweight
+169,nichole9044,maintain_fit,F,80-89,Very active,52.42,158,2003.0,vegan_observant,,shellfish,healthy
+170,christopher9343,gain_weight,M,90-100,Moderately active,62.27,186,2701.0,flexi_observant,flexi_vegie,soy,underweight
+171,mariebba8,lose_weight,F,90-100,Lightly active,82.84,172,1336.0,vegan_observant,,None,overweight
+172,ashleybe54,lose_weight,F,60-69,Lightly active,63.84,151,1184.0,None,,soy,overweight
+173,angela9369,maintain_fit,F,40-49,Very active,49.16,153,2245.0,None,,wheat,healthy
+174,samantha8273,gain_weight,F,30-39,Sedentary,55.76,176,2129.0,vegetarian_observant,,shellfish,underweight
+175,stevenae53,lose_weight,M,40-49,Lightly active,86.07,164,1938.0,vegetarian_observant,,eggs,obesity
+176,chad8d17,lose_weight,M,40-49,Very active,90.32,168,3014.0,None,,eggs,obesity
+177,erika9555,lose_weight,F,70-79,Moderately active,66.4,154,1595.0,vegetarian_observant,,None,overweight
+178,toddb4d3,lose_weight,M,90-100,Sedentary,79.88,158,1153.0,vegetarian_observant,,wheat,obesity
+179,joe83ee,maintain_fit,M,70-79,Moderately active,56.48,164,2081.0,vegan_observant,,peanut,healthy
+180,madelineb430,maintain_fit,F,50-59,Lightly active,56.48,164,1705.0,vegan_observant,,None,healthy
+181,scottba97,lose_weight,M,70-79,Lightly active,89.24,167,1782.0,vegetarian_observant,,None,obesity
+182,juliea58c,lose_weight,F,20-29,Sedentary,70.09,148,1236.0,vegan_observant,,shellfish,obesity
+183,cody9210,lose_weight,M,80-89,Lightly active,89.71,179,1792.0,None,,fish,overweight
+184,michaela47b,maintain_fit,M,80-89,Moderately active,49.16,153,1723.0,vegan_observant,,fish,healthy
+185,scott822b,maintain_fit,M,60-69,Lightly active,63.58,174,1934.0,None,,shellfish,healthy
+186,jenna89eb,maintain_fit,F,20-29,Sedentary,52.42,158,1577.0,None,,None,healthy
+187,miss9b1a,maintain_fit,F,60-69,Sedentary,62.85,173,1540.0,vegan_observant,,None,healthy
+188,alexis8319,gain_weight,F,50-59,Lightly active,47.24,162,2079.0,None,,soy,underweight
+189,earlae79,maintain_fit,M,30-39,Moderately active,55.79,163,2449.0,None,,tree nuts,healthy
+190,ashleyb2df,lose_weight,F,90-100,Very active,77.88,156,1856.0,vegetarian_observant,,tree nuts,obesity
+191,christine9e15,lose_weight,F,90-100,Very active,89.24,167,2120.0,vegan_observant,,eggs,obesity
+192,shelbya80d,lose_weight,F,50-59,Moderately active,71.68,160,1860.0,vegetarian_observant,,None,overweight
+193,lori974a,lose_weight,F,70-79,Moderately active,103.68,180,2328.0,vegetarian_observant,,None,obesity
+194,michaela961,lose_weight,M,60-69,Lightly active,92.48,170,1940.0,vegan_observant,,fish,obesity
+195,john94a3,lose_weight,M,20-29,Moderately active,90.32,168,2886.0,vegetarian_observant,,shellfish,obesity
+196,ernest8fcb,maintain_fit,M,20-29,Moderately active,57.17,165,2595.0,vegan_observant,,fish,healthy
+197,kelly9b13,lose_weight,F,20-29,Very active,79.88,158,2479.0,vegan_observant,,None,obesity
+198,morganb1c7,gain_weight,F,50-59,Moderately active,43.24,155,2380.0,None,,fish,underweight
+199,robinbf8e,gain_weight,F,40-49,Sedentary,41.04,151,1821.0,None,,None,underweight
+200,michellebca3,lose_weight,F,70-79,Moderately active,55.67,141,1354.0,None,,None,overweight
+201,maryb0f4,lose_weight,F,80-89,Sedentary,77.16,166,1069.0,flexi_observant,flexi_halal,shellfish,overweight
+202,christianac97,lose_weight,M,60-69,Moderately active,75.31,164,2114.0,vegan_observant,,None,overweight
+203,patrickb020,lose_weight,M,40-49,Lightly active,95.77,173,2176.0,vegetarian_observant,,soy,obesity
+204,tracyb749,gain_weight,F,50-59,Lightly active,39.43,148,1920.0,halal_observant,,shellfish,underweight
+205,craig9ba5,maintain_fit,M,90-100,Lightly active,59.98,169,1600.0,vegetarian_observant,,None,healthy
+206,jimmya200,lose_weight,M,40-49,Sedentary,90.72,180,1795.0,vegetarian_observant,,peanut,overweight
+207,renee8ddc,lose_weight,F,60-69,Sedentary,59.68,146,905.0,vegetarian_observant,,None,overweight
+208,alexis8a81,maintain_fit,M,40-49,Sedentary,66.54,178,1895.0,None,,None,healthy
+209,jennifer9b38,lose_weight,F,70-79,Sedentary,61.83,139,851.0,kosher_observant,,peanut,obesity
+210,dominique893d,lose_weight,F,20-29,Lightly active,69.9,158,1529.0,None,,wheat,overweight
+211,craig9ebf,lose_weight,M,70-79,Sedentary,86.07,164,1424.0,halal_observant,,soy,obesity
+212,robert943d,lose_weight,M,30-39,Very active,106.0,182,3649.0,None,,wheat,obesity
+213,brandon88de,maintain_fit,M,20-29,Lightly active,49.16,153,1842.0,vegan_observant,,None,healthy
+214,brian833f,lose_weight,M,40-49,Moderately active,86.07,164,2559.0,None,,eggs,obesity
+215,thomasbc86,lose_weight,M,60-69,Very active,92.48,170,2871.0,vegetarian_observant,,cow's milk,obesity
+216,robert90bc,lose_weight,M,50-59,Lightly active,70.79,159,1546.0,vegetarian_observant,,None,overweight
+217,juan91ee,lose_weight,M,70-79,Moderately active,83.8,173,2287.0,vegetarian_observant,,soy,overweight
+218,sheilab2a7,lose_weight,F,40-49,Lightly active,94.67,172,1784.0,vegan_observant,,peanut,obesity
+219,michelleb432,maintain_fit,F,90-100,Lightly active,49.16,153,1327.0,vegan_observant,,wheat,healthy
+220,carl8ef9,maintain_fit,M,90-100,Moderately active,62.85,173,2107.0,halal_observant,,eggs,healthy
+221,terri90ed,lose_weight,F,30-39,Very active,58.06,144,1931.0,None,,peanut,overweight
+222,jeffreya2f1,maintain_fit,M,60-69,Moderately active,63.58,174,2426.0,None,,None,healthy
+223,brandyb100,maintain_fit,F,90-100,Lightly active,55.11,162,1441.0,None,,wheat,healthy
+224,brent85e1,lose_weight,M,90-100,Very active,91.4,169,2511.0,None,,soy,obesity
+225,anthonya84e,lose_weight,M,20-29,Lightly active,102.53,179,2497.0,vegan_observant,,None,obesity
+226,angelb740,lose_weight,M,60-69,Lightly active,72.96,151,1455.0,flexi_observant,flexi_vegetarian,None,obesity
+227,jessicaaba2,lose_weight,F,50-59,Sedentary,81.92,160,1256.0,halal_observant,,eggs,obesity
+228,kristi9dd1,maintain_fit,F,70-79,Lightly active,46.0,148,1385.0,None,,tree nuts,healthy
+229,philipae48,lose_weight,M,90-100,Lightly active,89.71,179,1714.0,vegetarian_observant,,cow's milk,overweight
+230,jenniferb885,lose_weight,F,20-29,Lightly active,72.58,161,1576.0,None,,eggs,overweight
+231,natalie948d,lose_weight,F,40-49,Sedentary,75.89,154,1218.0,None,,peanut,obesity
+232,kimberly93e6,maintain_fit,F,90-100,Sedentary,48.52,152,1147.0,None,,None,healthy
+233,matthewaa9f,lose_weight,M,30-39,Moderately active,76.23,165,2438.0,None,,shellfish,overweight
+234,claytonb1a9,lose_weight,M,40-49,Sedentary,79.97,169,1559.0,kosher_observant,,None,overweight
+235,lawrenceb853,lose_weight,M,50-59,Sedentary,91.4,169,1674.0,vegan_observant,,eggs,obesity
+236,heather8b84,lose_weight,F,90-100,Very active,83.98,162,1998.0,None,,shellfish,obesity
+237,kimberlyb9a5,maintain_fit,F,80-89,Sedentary,55.79,163,1321.0,None,,fish,healthy
+238,debbiebbf6,lose_weight,F,40-49,Moderately active,85.02,163,2164.0,vegetarian_observant,,None,obesity
+239,stephaniebaf5,lose_weight,F,40-49,Very active,77.16,166,2313.0,halal_observant,,peanut,overweight
+240,jeremiahb843,lose_weight,M,20-29,Very active,79.03,168,2942.0,None,,None,overweight
+241,lisa9eb9,lose_weight,F,60-69,Moderately active,68.14,156,1708.0,vegetarian_observant,,cow's milk,overweight
+242,mckenziebef1,lose_weight,F,60-69,Very active,63.62,141,1764.0,vegetarian_observant,,None,obesity
+243,jamesa48b,lose_weight,M,70-79,Moderately active,79.97,169,2166.0,vegan_observant,,peanut,overweight
+244,kaylab758,gain_weight,F,70-79,Very active,47.24,162,2517.0,vegetarian_observant,,fish,underweight
+245,jessica8c42,maintain_fit,F,30-39,Very active,57.87,166,2557.0,None,,eggs,healthy
+246,hannaha886,lose_weight,F,80-89,Very active,76.23,165,1962.0,None,,tree nuts,overweight
+247,michael99f7,lose_weight,M,30-39,Very active,85.75,175,3069.0,halal_observant,,tree nuts,overweight
+248,amandab614,gain_weight,F,90-100,Moderately active,39.96,149,1997.0,vegan_observant,,None,underweight
+249,corey9ab4,maintain_fit,M,80-89,Lightly active,62.85,173,1758.0,vegan_observant,,None,healthy
+250,martin8032,lose_weight,M,80-89,Sedentary,82.84,172,1350.0,None,,tree nuts,overweight
+251,kimberlyaf6a,lose_weight,F,20-29,Moderately active,67.27,155,1987.0,None,,None,overweight
+252,angel8b0c,maintain_fit,F,70-79,Moderately active,56.48,164,1990.0,vegan_observant,,peanut,healthy
+253,bryana699,lose_weight,M,40-49,Sedentary,76.88,155,1429.0,halal_observant,,peanut,obesity
+254,lisaa0ae,maintain_fit,F,60-69,Lightly active,53.76,160,1594.0,vegetarian_observant,,None,healthy
+255,ricardoa9f0,maintain_fit,M,20-29,Sedentary,76.61,191,2268.0,vegetarian_observant,,cow's milk,healthy
+256,pamela9680,maintain_fit,F,90-100,Lightly active,57.17,165,1480.0,vegetarian_observant,,None,healthy
+257,nicholas8d04,maintain_fit,M,30-39,Sedentary,64.31,175,1910.0,None,,None,healthy
+258,sierra8211,gain_weight,F,70-79,Lightly active,47.82,163,1972.0,None,,cow's milk,underweight
+259,james878a,lose_weight,M,30-39,Sedentary,73.48,162,1482.0,vegan_observant,,tree nuts,overweight
+260,jamesb8d1,lose_weight,M,80-89,Very active,84.77,174,2496.0,vegetarian_observant,,None,overweight
+261,roger8f24,lose_weight,M,70-79,Moderately active,85.02,163,2233.0,vegan_observant,,None,obesity
+262,lisaa138,lose_weight,F,20-29,Moderately active,65.55,153,1949.0,None,,cow's milk,overweight
+263,jeffrey9f6b,lose_weight,M,90-100,Moderately active,88.72,178,2246.0,vegetarian_observant,,peanut,overweight
+264,connieb9d7,maintain_fit,F,20-29,Moderately active,50.45,155,2219.0,vegetarian_observant,,wheat,healthy
+265,jamesb978,lose_weight,M,60-69,Very active,72.0,150,2168.0,vegan_observant,,None,obesity
+266,meghan97ca,maintain_fit,F,40-49,Moderately active,49.8,154,2054.0,vegetarian_observant,,None,healthy
+267,amy9cc6,maintain_fit,F,70-79,Lightly active,56.48,164,1586.0,flexi_observant,flexi_halal,shellfish,healthy
+268,teresa946d,lose_weight,F,20-29,Very active,71.04,149,2270.0,vegetarian_observant,,None,obesity
+269,shawnacf6,maintain_fit,M,80-89,Sedentary,63.58,174,1552.0,vegetarian_observant,,fish,healthy
+270,craig94c7,lose_weight,M,80-89,Sedentary,88.18,166,1401.0,vegetarian_observant,,None,obesity
+271,emily90f6,maintain_fit,F,50-59,Sedentary,47.25,150,1334.0,flexi_observant,flexi_halal,tree nuts,healthy
+272,ronalda780,maintain_fit,M,70-79,Lightly active,57.17,165,1678.0,flexi_observant,flexi_vegetarian,cow's milk,healthy
+273,cynthia9cfb,lose_weight,F,60-69,Moderately active,62.16,149,1575.0,flexi_observant,flexi_kosher,eggs,overweight
+274,scott8b12,lose_weight,M,90-100,Sedentary,62.16,149,817.0,None,,None,overweight
+275,jennifer9ad9,lose_weight,F,30-39,Very active,77.16,166,2396.0,None,,wheat,overweight
+276,michael941c,lose_weight,M,90-100,Moderately active,79.88,158,1877.0,vegan_observant,,None,obesity
+277,andrew9d7d,maintain_fit,M,60-69,Moderately active,49.16,153,1919.0,vegetarian_observant,,wheat,healthy
+278,lindseya441,lose_weight,F,90-100,Lightly active,72.0,150,1105.0,kosher_observant,,None,obesity
+279,daniel9159,maintain_fit,M,60-69,Very active,54.43,161,2321.0,None,,cow's milk,healthy
+280,jasona753,lose_weight,M,30-39,Moderately active,75.31,164,2408.0,halal_observant,,None,overweight
+281,kellyb488,lose_weight,F,60-69,Moderately active,81.92,160,1949.0,vegan_observant,,None,obesity
+282,meganaeec,maintain_fit,F,50-59,Very active,51.76,157,2232.0,vegetarian_observant,,None,healthy
+283,williambd54,lose_weight,M,90-100,Moderately active,80.9,159,1908.0,vegetarian_observant,,tree nuts,obesity
+284,stephanie8e7a,maintain_fit,F,20-29,Moderately active,64.31,175,2547.0,vegetarian_observant,,fish,healthy
+285,lance9658,gain_weight,M,80-89,Lightly active,52.02,170,2039.0,vegan_observant,,peanut,underweight
+286,kathrynb81c,maintain_fit,F,60-69,Moderately active,53.76,160,2000.0,None,,None,healthy
+287,jasmineacd9,maintain_fit,F,30-39,Lightly active,51.76,157,1734.0,flexi_observant,flexi_vegie,peanut,healthy
+288,mrs.b7c9,lose_weight,F,90-100,Lightly active,72.58,161,1159.0,flexi_observant,flexi_vegie,None,overweight
+289,darrell8cb5,lose_weight,M,70-79,Very active,87.72,177,2706.0,vegetarian_observant,,None,overweight
+290,andrewb0e1,lose_weight,M,80-89,Lightly active,83.8,173,1644.0,vegan_observant,,shellfish,overweight
+291,jasmine83b1,maintain_fit,F,90-100,Moderately active,57.17,165,1857.0,vegan_observant,,eggs,healthy
+292,tylerb35b,gain_weight,M,20-29,Very active,39.96,149,2774.0,None,,None,underweight
+293,ianb544,lose_weight,M,50-59,Moderately active,78.88,157,2237.0,vegetarian_observant,,shellfish,obesity
+294,jennifer8535,maintain_fit,F,40-49,Moderately active,56.48,164,2214.0,vegan_observant,,cow's milk,healthy
+295,olivia86a8,maintain_fit,F,60-69,Very active,42.94,143,1912.0,vegan_observant,,soy,healthy
+296,benjamin9057,lose_weight,M,70-79,Very active,83.8,173,2570.0,vegetarian_observant,,peanut,overweight
+297,derrickb914,lose_weight,M,40-49,Very active,80.92,170,2793.0,None,,None,overweight
+298,emily8ff0,maintain_fit,F,60-69,Lightly active,59.27,168,1698.0,flexi_observant,flexi_vegie,None,healthy
+299,kimberlya438,lose_weight,F,50-59,Moderately active,75.31,164,1939.0,None,,peanut,overweight
+300,nataliebe53,lose_weight,F,70-79,Very active,86.07,164,2211.0,None,,soy,obesity
+301,ralphb6b6,lose_weight,M,50-59,Moderately active,81.87,171,2422.0,None,,shellfish,overweight
+302,jamesac9b,lose_weight,M,60-69,Sedentary,80.92,170,1444.0,halal_observant,,fish,overweight
+303,corybc49,gain_weight,M,70-79,Sedentary,61.6,185,2151.0,None,,wheat,underweight
+304,karenaf38,lose_weight,F,50-59,Lightly active,66.4,154,1289.0,vegetarian_observant,,shellfish,overweight
+305,kyleaca5,lose_weight,M,50-59,Lightly active,81.87,171,1829.0,None,,cow's milk,overweight
+306,rebecca8e75,lose_weight,F,30-39,Very active,86.07,164,2541.0,None,,None,obesity
+307,veronica8bda,maintain_fit,F,50-59,Lightly active,46.62,149,1516.0,halal_observant,,peanut,healthy
+308,jenniferb812,maintain_fit,F,70-79,Lightly active,53.76,160,1535.0,None,,None,healthy
+309,michael97dc,lose_weight,M,50-59,Sedentary,68.14,156,1226.0,kosher_observant,,None,overweight
+310,crystal9be6,lose_weight,F,90-100,Sedentary,72.58,161,948.0,vegetarian_observant,,peanut,overweight
+311,jessica9d05,lose_weight,F,50-59,Very active,88.18,166,2425.0,None,,None,obesity
+312,daniel8019,maintain_fit,M,30-39,Moderately active,65.05,176,2770.0,halal_observant,,shellfish,healthy
+313,josebce8,maintain_fit,M,30-39,Moderately active,59.27,168,2571.0,vegetarian_observant,,tree nuts,healthy
+314,michaelbb7f,lose_weight,M,70-79,Sedentary,63.0,150,972.0,vegan_observant,,peanut,overweight
+315,williama341,maintain_fit,M,40-49,Lightly active,60.69,170,2010.0,flexi_observant,flexi_vegetarian,cow's milk,healthy
+316,wandabc5b,maintain_fit,F,20-29,Sedentary,64.31,175,1772.0,vegan_observant,,None,healthy
+317,anthony9088,lose_weight,M,70-79,Moderately active,90.72,180,2505.0,vegetarian_observant,,wheat,overweight
+318,alexisa7da,maintain_fit,F,20-29,Lightly active,55.79,163,1871.0,None,,eggs,healthy
+319,kristina523,lose_weight,F,60-69,Very active,80.9,159,2173.0,None,,cow's milk,obesity
+320,dillon8c60,maintain_fit,M,90-100,Lightly active,59.27,168,1581.0,vegetarian_observant,,cow's milk,healthy
+321,jaredabaf,maintain_fit,M,70-79,Very active,59.27,168,2400.0,halal_observant,,peanut,healthy
+322,kayla984e,maintain_fit,F,80-89,Very active,67.29,179,2387.0,flexi_observant,flexi_kosher,soy,healthy
+323,stephen9302,maintain_fit,M,70-79,Moderately active,56.48,164,2081.0,vegan_observant,,fish,healthy
+324,mrs.8e45,lose_weight,F,70-79,Very active,63.84,151,1744.0,vegan_observant,,None,overweight
+325,ruben8f3f,maintain_fit,M,40-49,Sedentary,80.67,196,2226.0,flexi_observant,flexi_kosher,wheat,healthy
+326,stephen8d06,maintain_fit,M,30-39,Moderately active,52.42,158,2330.0,vegan_observant,,soy,healthy
+327,sarah8817,lose_weight,F,70-79,Moderately active,87.12,165,1984.0,vegan_observant,,None,obesity
+328,jeffrey8eff,lose_weight,M,20-29,Very active,74.39,163,2779.0,vegan_observant,,soy,overweight
+329,loria790,lose_weight,F,20-29,Sedentary,72.0,150,1264.0,None,,tree nuts,obesity
+330,kathryna797,gain_weight,F,60-69,Sedentary,41.04,151,1717.0,None,,None,underweight
+331,christineab7a,lose_weight,F,90-100,Moderately active,94.67,172,1992.0,vegan_observant,,peanut,obesity
+332,chloeb468,lose_weight,F,50-59,Very active,72.0,150,2046.0,flexi_observant,flexi_halal,soy,obesity
+333,thomasbbbe,lose_weight,M,80-89,Sedentary,81.87,171,1328.0,vegan_observant,,None,overweight
+334,stevea837,maintain_fit,M,90-100,Sedentary,60.69,170,1414.0,None,,None,healthy
+335,jamesb5a3,lose_weight,M,30-39,Sedentary,101.08,190,2087.0,vegan_observant,,tree nuts,overweight
+336,sean8132,lose_weight,M,40-49,Sedentary,91.73,181,1817.0,vegetarian_observant,,None,overweight
+337,victor959f,gain_weight,M,20-29,Very active,52.02,170,3273.0,vegetarian_observant,,wheat,underweight
+338,mike93ae,maintain_fit,M,70-79,Moderately active,67.29,179,2455.0,flexi_observant,flexi_vegie,tree nuts,healthy
+339,donna895e,lose_weight,F,60-69,Moderately active,82.95,161,1971.0,kosher_observant,,tree nuts,obesity
+340,mr.b432,lose_weight,M,80-89,Moderately active,90.32,168,2299.0,vegetarian_observant,,None,obesity
+341,richardaec6,gain_weight,M,30-39,Very active,56.39,177,3340.0,vegan_observant,,shellfish,underweight
+342,jodib636,lose_weight,F,50-59,Lightly active,73.93,152,1376.0,halal_observant,,shellfish,obesity
+343,natashabaca,lose_weight,F,20-29,Lightly active,70.09,148,1489.0,vegetarian_observant,,None,obesity
+344,markb6fc,lose_weight,M,60-69,Very active,78.09,167,2478.0,None,,cow's milk,overweight
+345,charles8f22,lose_weight,M,90-100,Lightly active,103.68,180,1978.0,None,,peanut,obesity
+346,lindseya85d,gain_weight,F,60-69,Sedentary,49.6,166,1867.0,None,,None,underweight
+347,tonya8f28,lose_weight,F,70-79,Lightly active,88.18,166,1498.0,vegetarian_observant,,fish,obesity
+348,suzannebeb7,lose_weight,F,50-59,Sedentary,82.84,172,1310.0,kosher_observant,,None,overweight
+349,george852f,maintain_fit,M,80-89,Very active,75.01,189,2884.0,None,,None,healthy
+350,marthab863,lose_weight,F,60-69,Moderately active,85.75,175,2090.0,vegetarian_observant,,fish,overweight
+351,tyler8421,maintain_fit,M,60-69,Lightly active,65.79,177,1994.0,None,,None,healthy
+352,crystala2ca,maintain_fit,F,20-29,Lightly active,54.43,161,1845.0,vegetarian_observant,,None,healthy
+353,teresa858b,lose_weight,F,60-69,Very active,93.77,183,2541.0,vegan_observant,,shellfish,overweight
+354,joanabd7,lose_weight,F,70-79,Very active,86.07,164,2211.0,vegetarian_observant,,fish,obesity
+355,jonathana954,gain_weight,M,20-29,Lightly active,54.5,174,2579.0,vegan_observant,,peanut,underweight
+356,sarah9d19,lose_weight,F,20-29,Very active,88.18,166,2672.0,vegan_observant,,None,obesity
+357,melissa9c52,lose_weight,F,50-59,Very active,67.27,155,1993.0,vegetarian_observant,,fish,overweight
+358,mr.b3f4,maintain_fit,M,60-69,Lightly active,65.05,176,1974.0,None,,eggs,healthy
+359,kathy8f3c,maintain_fit,F,80-89,Very active,44.76,146,1797.0,vegetarian_observant,,None,healthy
+360,michaelbc05,lose_weight,M,20-29,Moderately active,84.77,174,2808.0,vegetarian_observant,,peanut,overweight
+361,tina9585,lose_weight,F,60-69,Lightly active,79.97,169,1466.0,vegetarian_observant,,shellfish,overweight
+362,ashleeacd3,lose_weight,F,70-79,Lightly active,76.88,155,1307.0,None,,shellfish,obesity
+363,brendaa599,maintain_fit,F,60-69,Moderately active,47.25,150,1842.0,None,,cow's milk,healthy
+364,john85b6,lose_weight,M,60-69,Lightly active,89.24,167,1860.0,None,,shellfish,obesity
+365,amber94b4,lose_weight,F,60-69,Very active,100.25,177,2619.0,None,,None,obesity
+366,brianb41e,lose_weight,M,50-59,Very active,100.25,177,3241.0,vegan_observant,,soy,obesity
+367,jasmine9101,lose_weight,F,20-29,Moderately active,71.68,160,2084.0,None,,eggs,overweight
+368,stephenbdee,lose_weight,M,20-29,Lightly active,83.8,173,2112.0,vegetarian_observant,,None,overweight
+369,lisab677,lose_weight,F,40-49,Lightly active,76.88,155,1486.0,flexi_observant,flexi_halal,eggs,obesity
+370,mrs.926c,maintain_fit,F,30-39,Moderately active,56.48,164,2289.0,None,,cow's milk,healthy
+371,nicholasb5d5,lose_weight,M,50-59,Very active,104.3,193,3490.0,halal_observant,,fish,overweight
+372,leslie8a6c,lose_weight,F,40-49,Very active,76.88,155,2244.0,vegetarian_observant,,peanut,obesity
+373,davidb567,lose_weight,M,20-29,Sedentary,86.73,176,1844.0,vegan_observant,,shellfish,overweight
+374,catherineb162,lose_weight,F,60-69,Moderately active,85.02,163,2014.0,vegetarian_observant,,None,obesity
+375,jessica8e08,gain_weight,F,40-49,Very active,47.24,162,2764.0,halal_observant,,None,underweight
+376,robert8e79,lose_weight,M,20-29,Sedentary,85.75,175,1823.0,vegetarian_observant,,eggs,overweight
+377,zachary8cdd,lose_weight,M,80-89,Lightly active,88.72,178,1767.0,flexi_observant,flexi_kosher,None,overweight
+378,justinb623,lose_weight,M,60-69,Very active,75.89,154,2303.0,vegan_observant,,None,obesity
+379,mary9d60,lose_weight,F,80-89,Very active,98.0,175,2404.0,None,,fish,obesity
+380,vanessaa909,lose_weight,F,30-39,Moderately active,72.0,150,1961.0,halal_observant,,wheat,obesity
+381,kelly97ea,gain_weight,F,50-59,Lightly active,39.96,149,1931.0,None,,cow's milk,underweight
+382,kimberlyb190,lose_weight,F,40-49,Moderately active,70.09,148,1845.0,vegetarian_observant,,peanut,obesity
+383,sean9fa7,lose_weight,M,60-69,Sedentary,77.88,156,1314.0,vegetarian_observant,,cow's milk,obesity
+384,katelyn8ec5,maintain_fit,F,70-79,Lightly active,53.09,159,1522.0,kosher_observant,,tree nuts,healthy
+385,scottb09a,lose_weight,M,80-89,Very active,107.16,183,3148.0,None,,shellfish,obesity
+386,debra847f,maintain_fit,F,60-69,Lightly active,55.11,162,1620.0,None,,peanut,healthy
+387,mr.8be6,maintain_fit,M,90-100,Moderately active,68.8,181,2311.0,vegan_observant,,fish,healthy
+388,donna8d69,maintain_fit,F,90-100,Very active,50.45,155,1868.0,vegan_observant,,soy,healthy
+389,frankb65d,lose_weight,M,90-100,Very active,74.91,153,1946.0,vegetarian_observant,,None,obesity
+390,cheryl8876,maintain_fit,F,60-69,Very active,51.76,157,2150.0,None,,cow's milk,healthy
+391,maryb757,lose_weight,F,50-59,Sedentary,71.04,149,1094.0,vegan_observant,,peanut,obesity
+392,tiffany9ac0,gain_weight,F,60-69,Lightly active,43.24,155,1939.0,vegan_observant,,None,underweight
+393,micheala9e9,lose_weight,M,90-100,Very active,88.72,178,2525.0,None,,None,overweight
+394,jamie9fee,lose_weight,F,40-49,Sedentary,76.88,155,1233.0,vegetarian_observant,,None,obesity
+395,jamesba04,gain_weight,M,60-69,Very active,57.03,178,3042.0,vegetarian_observant,,wheat,underweight
+396,marissaaccf,lose_weight,F,40-49,Sedentary,71.04,149,1146.0,None,,None,obesity
+397,rickya2a3,lose_weight,M,20-29,Sedentary,68.14,156,1430.0,vegetarian_observant,,None,overweight
+398,amandabbd7,maintain_fit,F,30-39,Lightly active,49.8,154,1697.0,None,,None,healthy
+399,ericb13f,lose_weight,M,30-39,Moderately active,86.07,164,2657.0,flexi_observant,flexi_halal,None,obesity
+400,robinb25d,lose_weight,F,30-39,Lightly active,77.16,166,1596.0,vegan_observant,,wheat,overweight
+401,michaelbbba,maintain_fit,M,70-79,Very active,56.48,164,2292.0,None,,fish,healthy
+402,thomas99e1,lose_weight,M,70-79,Moderately active,90.32,168,2396.0,None,,None,obesity
+403,adrianaa143,maintain_fit,F,70-79,Very active,53.09,159,2103.0,vegan_observant,,soy,healthy
+404,maryaa63,lose_weight,F,90-100,Sedentary,64.69,152,827.0,None,,None,overweight
+405,whitneyabf8,lose_weight,F,50-59,Moderately active,61.33,148,1631.0,None,,tree nuts,overweight
+406,nicholas9e9d,gain_weight,M,50-59,Moderately active,47.82,163,2569.0,vegetarian_observant,,None,underweight
+407,adriana197,maintain_fit,M,30-39,Moderately active,64.31,175,2745.0,None,,wheat,healthy
+408,jonathanae79,maintain_fit,M,40-49,Lightly active,49.16,153,1686.0,vegetarian_observant,,tree nuts,healthy
+409,kristin8de1,lose_weight,F,70-79,Lightly active,65.55,153,1155.0,vegetarian_observant,,peanut,overweight
+410,jonathanabfd,lose_weight,M,80-89,Lightly active,86.07,164,1626.0,None,,cow's milk,obesity
+411,williamade5,lose_weight,M,60-69,Lightly active,91.73,181,1999.0,vegan_observant,,soy,overweight
+412,denise87e9,lose_weight,F,20-29,Sedentary,84.77,174,1495.0,vegetarian_observant,,shellfish,overweight
+413,jacquelinea04c,maintain_fit,F,90-100,Very active,50.45,155,1868.0,None,,None,healthy
+414,sean8069,maintain_fit,M,80-89,Sedentary,67.29,179,1640.0,vegetarian_observant,,None,healthy
+415,katherineab22,gain_weight,F,70-79,Sedentary,49.0,165,1805.0,None,,cow's milk,underweight
+416,beth9f0b,lose_weight,F,60-69,Sedentary,86.07,164,1265.0,None,,peanut,obesity
+417,dr.a0ae,lose_weight,F,50-59,Very active,83.98,162,2327.0,vegan_observant,,cow's milk,obesity
+418,nicholasa65b,lose_weight,M,90-100,Sedentary,91.4,169,1402.0,vegetarian_observant,,peanut,obesity
+419,theresab1ed,maintain_fit,F,20-29,Lightly active,56.48,164,1884.0,vegan_observant,,None,healthy
+420,codya9c3,lose_weight,M,20-29,Moderately active,80.92,170,2685.0,vegetarian_observant,,None,overweight
+421,stephaniea724,lose_weight,F,70-79,Lightly active,68.14,156,1200.0,kosher_observant,,None,overweight
+422,loganb3bb,lose_weight,M,20-29,Sedentary,93.57,171,1925.0,None,,fish,obesity
+423,victoriabcaf,gain_weight,F,50-59,Lightly active,47.24,162,2079.0,flexi_observant,flexi_kosher,soy,underweight
+424,hannah9dd0,lose_weight,F,80-89,Very active,61.33,148,1600.0,None,,None,overweight
+425,anitaa32f,lose_weight,F,90-100,Lightly active,95.77,173,1505.0,vegetarian_observant,,None,obesity
+426,chris8c8c,gain_weight,M,60-69,Lightly active,52.02,170,2195.0,flexi_observant,flexi_kosher,cow's milk,underweight
+427,susanb5c5,maintain_fit,F,50-59,Sedentary,51.11,156,1399.0,flexi_observant,flexi_vegetarian,fish,healthy
+428,emilya62b,lose_weight,F,80-89,Lightly active,73.48,162,1234.0,vegetarian_observant,,None,overweight
+429,amyb081,gain_weight,F,30-39,Lightly active,46.66,161,2187.0,None,,None,underweight
+430,cassandrab9aa,lose_weight,F,50-59,Very active,63.0,150,1888.0,vegetarian_observant,,None,overweight
+431,angela936a,lose_weight,F,20-29,Lightly active,100.25,177,1996.0,None,,None,obesity
+432,rodneyb6e8,maintain_fit,M,40-49,Moderately active,61.41,171,2547.0,vegetarian_observant,,cow's milk,healthy
+433,darrenad6e,lose_weight,M,20-29,Sedentary,91.4,169,1879.0,vegan_observant,,eggs,obesity
+434,christopher81f9,lose_weight,M,50-59,Sedentary,83.8,173,1575.0,None,,wheat,overweight
+435,spencer83cd,lose_weight,M,20-29,Sedentary,89.24,167,1833.0,vegetarian_observant,,peanut,obesity
+436,leonard99d5,lose_weight,M,80-89,Very active,90.32,168,2582.0,vegan_observant,,None,obesity
+437,dr.b7ad,lose_weight,M,90-100,Very active,79.03,168,2187.0,vegan_observant,,tree nuts,overweight
+438,rachel8883,gain_weight,F,50-59,Sedentary,47.24,162,1878.0,vegetarian_observant,,tree nuts,underweight
+439,kevina364,maintain_fit,M,40-49,Very active,55.11,162,2563.0,vegetarian_observant,,None,healthy
+440,mereditha1d9,maintain_fit,F,40-49,Very active,51.11,156,2297.0,vegetarian_observant,,None,healthy
+441,amanda84c0,lose_weight,F,30-39,Very active,65.44,143,2054.0,vegetarian_observant,,tree nuts,obesity
+442,catherine8ab3,maintain_fit,F,20-29,Moderately active,48.52,152,2172.0,None,,fish,healthy
+443,michael85ad,maintain_fit,M,80-89,Sedentary,59.98,169,1465.0,flexi_observant,flexi_vegetarian,None,healthy
+444,monicaaac4,lose_weight,F,80-89,Very active,98.0,175,2404.0,None,,eggs,obesity
+445,kayla8724,lose_weight,F,60-69,Lightly active,78.88,157,1401.0,None,,tree nuts,obesity
+446,lisaa6a2,maintain_fit,F,70-79,Sedentary,57.17,165,1396.0,None,,peanut,healthy
+447,michael89a5,lose_weight,M,60-69,Sedentary,74.39,163,1298.0,None,,tree nuts,overweight
+448,sean9b20,lose_weight,M,40-49,Lightly active,90.32,168,2043.0,halal_observant,,None,obesity
+449,monicaa65a,lose_weight,F,80-89,Very active,79.97,169,2051.0,vegetarian_observant,,cow's milk,overweight
+450,elaine8335,lose_weight,F,70-79,Sedentary,77.88,156,1092.0,vegetarian_observant,,tree nuts,obesity
+451,shane82a1,gain_weight,M,40-49,Moderately active,56.39,177,2981.0,vegan_observant,,cow's milk,underweight
+452,jacqueline90de,maintain_fit,F,20-29,Moderately active,59.98,169,2446.0,vegetarian_observant,,None,healthy
+453,amberb24a,gain_weight,F,70-79,Lightly active,39.43,148,1801.0,vegetarian_observant,,None,underweight
+454,chelseaa7e1,lose_weight,F,90-100,Very active,75.31,164,1858.0,vegetarian_observant,,tree nuts,overweight
+455,jesse816d,gain_weight,M,80-89,Lightly active,50.8,168,2003.0,vegetarian_observant,,soy,underweight
+456,brian8acc,maintain_fit,M,20-29,Very active,66.54,178,3215.0,halal_observant,,None,healthy
+457,jennya538,lose_weight,F,60-69,Very active,70.79,159,1996.0,None,,None,overweight
+458,autumnae40,gain_weight,F,60-69,Sedentary,39.43,148,1688.0,vegetarian_observant,,None,underweight
+459,sarah86d5,maintain_fit,F,70-79,Sedentary,57.17,165,1396.0,None,,None,healthy
+460,bryce8ace,lose_weight,M,80-89,Moderately active,85.02,163,2135.0,vegetarian_observant,,peanut,obesity
+461,glenbab5,lose_weight,M,60-69,Very active,110.71,186,3481.0,vegetarian_observant,,None,obesity
+462,heidi8d3a,lose_weight,F,80-89,Sedentary,71.04,149,938.0,vegetarian_observant,,shellfish,obesity
+463,paul907e,lose_weight,M,80-89,Sedentary,102.53,179,1707.0,None,,shellfish,obesity
+464,josephacc3,maintain_fit,M,20-29,Very active,68.04,180,3272.0,vegetarian_observant,,cow's milk,healthy
+465,stevenb9a1,lose_weight,M,40-49,Moderately active,75.31,164,2310.0,vegan_observant,,peanut,overweight
+466,jamesa2f0,maintain_fit,M,50-59,Lightly active,51.11,156,1664.0,vegan_observant,,shellfish,healthy
+467,brenda9986,lose_weight,F,70-79,Sedentary,60.51,147,866.0,flexi_observant,flexi_kosher,cow's milk,overweight
+468,katherine8c6d,lose_weight,F,20-29,Lightly active,90.72,180,1887.0,vegetarian_observant,,None,overweight
+469,kelseyaa34,lose_weight,F,70-79,Lightly active,61.33,148,1080.0,halal_observant,,None,overweight
+470,jesseaf5a,maintain_fit,M,60-69,Sedentary,66.54,178,1759.0,vegan_observant,,tree nuts,healthy
+471,gregory88ac,lose_weight,M,60-69,Moderately active,100.02,189,2892.0,vegan_observant,,None,overweight
+472,sandra9845,lose_weight,F,50-59,Lightly active,70.09,148,1310.0,vegetarian_observant,,eggs,obesity
+473,justin81c4,lose_weight,M,90-100,Sedentary,67.27,155,933.0,kosher_observant,,None,overweight
+474,jessicab826,maintain_fit,F,20-29,Very active,65.79,177,2843.0,vegetarian_observant,,wheat,healthy
+475,brooke8fa2,lose_weight,F,60-69,Very active,86.07,164,2294.0,None,,fish,obesity
+476,michaelb0cb,lose_weight,M,30-39,Lightly active,87.12,165,2042.0,flexi_observant,flexi_kosher,tree nuts,obesity
+477,rachel8a4e,lose_weight,F,90-100,Lightly active,80.92,170,1303.0,vegetarian_observant,,fish,overweight
+478,jason8966,maintain_fit,M,60-69,Sedentary,68.04,180,1794.0,vegetarian_observant,,None,healthy
+479,jeanetteabbb,gain_weight,F,70-79,Sedentary,42.14,153,1684.0,halal_observant,,fish,underweight
+480,nicole934f,lose_weight,F,50-59,Very active,90.72,180,2552.0,flexi_observant,flexi_vegie,None,overweight
+481,andrew9dd3,lose_weight,M,60-69,Very active,73.48,162,2315.0,vegan_observant,,eggs,overweight
+482,michaelb060,lose_weight,M,70-79,Lightly active,90.32,168,1809.0,halal_observant,,eggs,obesity
+483,terry9f32,lose_weight,M,40-49,Moderately active,87.12,165,2591.0,vegetarian_observant,,wheat,obesity
+484,gregory93c8,lose_weight,M,90-100,Very active,103.68,180,2924.0,vegan_observant,,None,obesity
+485,carmen96cb,lose_weight,F,80-89,Lightly active,72.58,161,1219.0,vegan_observant,,soy,overweight
+486,amya2e9,lose_weight,F,40-49,Lightly active,71.68,160,1441.0,vegetarian_observant,,None,overweight
+487,kimberlyb997,maintain_fit,F,30-39,Very active,52.42,158,2414.0,vegetarian_observant,,tree nuts,healthy
+488,angelaa093,lose_weight,F,90-100,Lightly active,83.98,162,1308.0,None,,None,obesity
+489,katelynb5b8,lose_weight,F,80-89,Lightly active,75.89,154,1231.0,None,,None,obesity
+490,joanna87a4,lose_weight,F,60-69,Moderately active,78.09,167,1925.0,None,,None,overweight
+491,stephanie9f72,lose_weight,F,40-49,Moderately active,72.96,151,1907.0,None,,None,obesity
+492,lisa8056,lose_weight,F,20-29,Moderately active,69.9,158,2045.0,flexi_observant,flexi_vegie,None,overweight
+493,stephenaeb8,maintain_fit,M,50-59,Moderately active,51.11,156,2087.0,None,,peanut,healthy
+494,ryanbd2d,maintain_fit,M,50-59,Very active,61.41,171,2697.0,None,,fish,healthy
+495,emily89f5,lose_weight,F,80-89,Moderately active,78.88,157,1735.0,flexi_observant,flexi_vegie,None,obesity
+496,scott9017,lose_weight,M,70-79,Sedentary,79.97,169,1354.0,kosher_observant,,None,overweight
+497,stanley8db4,gain_weight,M,20-29,Very active,59.62,182,3576.0,None,,peanut,underweight
+498,lisaa8d7,maintain_fit,F,90-100,Moderately active,70.33,183,2163.0,kosher_observant,,None,healthy
+499,donna95d3,lose_weight,F,50-59,Moderately active,74.39,163,1919.0,None,,None,overweight

@@ -1,0 +1,6 @@
+,userId,nutrition_goal,clinical_gender,age_range,life_style,weight,height,projected_daily_calories,cultural_factor,probabilities,allergy,BMI,next_BMI
+0,caitlin8e82,lose_weight,F,90-100,Moderately active,74.39,163,1621.0,vegetarian_observant,,tree nuts,overweight,overweight
+1,bethbb5a,maintain_fit,F,80-89,Lightly active,54.43,161,1488.0,None,,eggs,healthy,healthy
+2,mrs.918a,lose_weight,F,40-49,Lightly active,80.9,159,1554.0,vegetarian_observant,,shellfish,obesity,overweight
+3,brandona1d7,lose_weight,M,60-69,Moderately active,95.77,173,2662.0,None,,fish,obesity,overweight
+4,tracyb79b,maintain_fit,M,90-100,Sedentary,67.29,179,1572.0,None,,None,healthy,healthy

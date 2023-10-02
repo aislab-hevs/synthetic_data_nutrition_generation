@@ -1,0 +1,491 @@
+,breakfast_calories,morning snacks_calories,afternoon snacks_calories,lunch_calories,dinner_calories,breakfast,morning snacks,afternoon snacks,lunch,dinner
+1,200.0,120.0,120.0,150.0,350.0, Vegan Breakfast Quinoa Salad, Kale Chips," Vegan Lentil Soup - 120 kcals per portion, 4 portions, no allergic warnings, origin", Ratatouille, Vegan Lasagna
+2,300.0,90.0,120.0,150.0,300.0, Vegan Breakfast Bars - 300 calories per portion | 1 portion | Contains nuts | Origin, Stuffed Dates, Guacamole and Veggie Sticks, Tom Yum Soup, Couscous Salad
+3,250.0,100.0,480.0,150.0,400.0, Avocado Toast, Fresh Fruit Salad, Vegan Lentil Burgers, Ratatouille, Vegan Tofu Katsu Curry
+4,400.0,100.0,740.0,150.0,150.0, Vegan Breakfast Quiche - 400 calories per portion | 1 portion | Contains gluten | Origin, Toasted Coconut Chips, Vegan Buffalo Cauliflower Wings, Lentil Soup, Lentil Soup
+5,100.0,120.0,640.0,150.0,400.0, Vegan Breakfast Rice Pudding, Vegan Energy Balls, Vegan Tofu Scramble, Veggie Spring Rolls, Vegan Ramen
+6,700.0,100.0,90.0,150.0,300.0, Vegan Breakfast Crepe Cake, Energy Balls," Roasted Brussels Sprouts with Balsamic Glaze - 90 kcals per portion, 4 portions, no allergic warnings, origin", Tomato Basil Soup," Moroccan Lentil Soup (300 calories/portion, 4 portions) - Morocco
+"
+7,300.0,100.0,130.0,150.0,300.0, Vegan Coconut Chia Pancakes - 300 calories per portion | 1 portion | Contains gluten | Origin, Overnight Chia Pudding," Vegan Thai Spring Rolls - 130 kcals per portion, 4 portions, no allergic warnings, origin", Cabbage Stir-Fry," Greek Vegan Tzatziki with Pita Bread (300 calories/portion, 2 portions) - Greece
+"
+8,250.0,80.0,700.0,150.0,317.0, Vegan Pancakes - 250 calories per portion | 2 portions | Contains gluten | Origin, Fruit Salad, Vegan Pad Thai, Ratatouille, Quinoa Stuffed Bell Peppers
+9,350.0,100.0,760.0,150.0,450.0, Vegan Protein Pancakes - 350 calories per portion | 1 portion | Contains gluten | Origin, Fresh Fruit Salad, Vegan Indian Samosa Chaat, Tom Yum Soup," Indian Vegan Malai Kofta (450 calories/portion, 3 portions) - India
+"
+10,250.0,120.0,140.0,150.0,300.0, Vegan Breakfast Bruschetta, Vegan Energy Balls," Vegan Sweet Potato Wedges - 140 kcals per portion, 4 portions, no allergic warnings, origin", Tomato Basil Soup, Quinoa Fried Rice
+11,300.0,120.0,380.0,150.0,300.0, Vegan Breakfast Stromboli, Vegan Energy Balls, Vegan Chocolate Chip Cookies, Tomato Basil Soup," Greek Vegan Tzatziki with Pita Bread (300 calories/portion, 2 portions) - Greece
+"
+12,400.0,100.0,900.0,150.0,300.0, Vegan Breakfast Stuffed Sweet Potatoes - 400 calories per portion | 1 portion | None | Origin, Fresh Fruit Salad, Vegan Stuffed Mushrooms, Tomato Basil Soup, Veggie Fajitas
+13,250.0,80.0,680.0,150.0,220.0, Vegan Matcha Overnight Oats - 250 calories per portion | 2 portions | None | Origin, Fruit Salad, Vegan Broccoli Cheddar Soup, Tomato Basil Soup, Chickpea and Vegetable Stir Fry
+14,250.0,100.0,130.0,150.0,450.0, Tofu Scramble - 250 calories per portion | 2 portions | None | Origin, Overnight Chia Pudding," Veggie Sushi Rolls with Spicy Tofu - 130 kcals per portion, 4 portions, no allergic warnings, origin", Lentil Soup," Vegan Vegetable Biryani - 450 calories per portion, 2 portions, may contain mustard"
+15,400.0,100.0,120.0,150.0,300.0, Vegan Breakfast Tamales - 400 calories per portion | 1 portion | Contains gluten | Origin, Energy Balls," Vegan Chocolate Chip Cookies - 120 kcals per portion, 4 portions, no allergic warnings, origin", Ratatouille, Lentil and Vegetable Curry
+16,250.0,90.0,200.0,150.0,250.0, Vegan Berry Parfait - 250 calories per portion | 2 portions | Contains nuts | Origin, Stuffed Dates," Quinoa Salad with Roasted Vegetables - 200 kcals per portion, 4 portions, no allergic warnings, origin", Lentil Soup, Vegan Pizza
+17,650.0,100.0,140.0,150.0,240.0, Vegan Breakfast Zucchini Bread, Toasted Coconut Chips," Maple Roasted Nuts - 140 kcals per portion, 4 portions, no allergic warnings, origin", Veggie Spring Rolls, Vegetable Fried Rice
+18,500.0,120.0,80.0,150.0,350.0, Vegan Breakfast Burrito, Roasted Brussels Sprouts," Baked Kale Chips - 80 kcals per portion, 4 portions, no allergic warnings, origin", Tomato Basil Soup, Falafel Wrap
+19,300.0,100.0,200.0,150.0,220.0, Vegan Breakfast Spring Rolls - 300 calories per portion | 1 portion | Contains soy | Origin, Roasted Pumpkin Seeds," Vegan Mango Smoothie Bowl - 200 kcals per portion, 4 portions, no allergic warnings, origin", Cabbage Stir-Fry, Lentil and Vegetable Stir Fry
+20,400.0,100.0,160.0,150.0,350.0, Vegan Breakfast Empanadas - 400 calories per portion | 1 portion | Contains gluten | Origin, Roasted Edamame," Vegan Broccoli and Cheese Bites - 160 kcals per portion, 4 portions, no allergic warnings, origin", Tom Yum Soup," Greek Vegan Gigantes Plaki (350 calories/portion, 2 portions) - Greece
+"
+21,400.0,100.0,160.0,150.0,400.0, Vegan Breakfast Nachos - 400 calories per portion | 1 portion | Contains soy | Origin, Toasted Coconut Chips," Vegan Spinach and Artichoke Stuffed Mushrooms - 160 kcals per portion, 4 portions, no allergic warnings, origin", Ratatouille," Moroccan Vegetable Paella (400 calories/portion, 2 portions) - Morocco
+"
+22,200.0,120.0,360.0,150.0,289.0, Vegan Oatmeal Raisin Cookies - 200 calories per portion | 2 portions | Contains gluten | Origin, Hummus with Veggies, Vegan Turkish Delight, Veggie Spring Rolls, Chickpea and Spinach Stew
+23,400.0,80.0,640.0,150.0,400.0, Vegan Breakfast Skillet, Stuffed Dates, Vegan Tofu Scramble, Tomato Basil Soup, Vegan Pad See Ew
+24,250.0,80.0,120.0,150.0,250.0, Vegan Green Breakfast Bowl - 250 calories per portion | 2 portions | None | Origin, Fruit Salad," Vegan Lentil Soup - 120 kcals per portion, 4 portions, no allergic warnings, origin", Veggie Spring Rolls," Vegan Black Bean Soup - 250 calories per portion, 3 portions, may contain gluten"
+25,350.0,100.0,920.0,150.0,250.0, Quinoa Porridge - 350 calories per portion | 1 portion | Contains nuts | Origin, Roasted Pumpkin Seeds, Vegan Butter Chicken, Tomato Basil Soup," Mediterranean Quinoa Salad (250 calories/portion, 2 portions) - Greece
+"
+26,70.0,100.0,280.0,150.0,159.0, Fruit Salad, Roasted Almonds, Vegan Lemon Poppy Seed Muffins, Veggie Spring Rolls, Quinoa Stuffed Mushrooms
+27,350.0,120.0,820.0,150.0,350.0, Vegan Breakfast Pizza - 350 calories per portion | 1 portion | Contains gluten | Origin, Kale Chips, Vegan Lasagna, Ratatouille," Vegan Cauliflower Fried Rice - 350 calories per portion, 4 portions, None, China
+"
+28,50.0,90.0,300.0,150.0,350.0, Vegan Breakfast Stuffed Tomatoes, Stuffed Dates, Veggie Spring Rolls, Cabbage Stir-Fry," Vegan Sweet and Sour Tofu - 350 calories per portion, 4 portions, None, China
+"
+29,300.0,100.0,160.0,150.0,350.0, Vegan Breakfast Potato Hash - 300 calories per portion | 1 portion | None | Origin, Roasted Pumpkin Seeds, Roasted Chickpeas, Lentil Soup, Vegan Eggplant Parmesan
+30,400.0,120.0,960.0,150.0,400.0, Vegan French Toast, Roasted Chickpeas, Vegan Meatballs with Marinara Sauce, Tomato Basil Soup," Chickpea and Vegetable Tagine - 400 calories per portion, 2 portions, may contain gluten"
+31,300.0,120.0,180.0,150.0,400.0, Vegan Mango Coconut Chia Pudding - 300 calories per portion | 1 portion | None | Origin, Roasted Chickpeas," Vegan Banana Bread - 180 kcals per portion, 4 portions, no allergic warnings, origin", Lentil Soup, Vegan Pad See Ew
+32,50.0,120.0,140.0,150.0,300.0, Vegan Breakfast Smoothie, Kale Chips," Vegan Mediterranean Pasta Salad - 140 kcals per portion, 4 portions, no allergic warnings, origin", Ratatouille," Vegan Thai Green Curry - 300 calories per portion, 2 portions, may contain tofu"
+33,300.0,120.0,160.0,150.0,100.0, Vegan Blueberry Muffins - 300 calories per portion | 1 portion | Contains gluten | Origin, Hummus with Veggies, Vegan Mexican Street Corn, Veggie Spring Rolls," Japanese Miso Soup with Tofu (100 calories/portion, 4 portions) - Japan
+"
+34,400.0,100.0,200.0,150.0,350.0, Vegan Cinnamon Rolls, Chilled Gazpacho," Vegan Peanut Butter Banana Smoothie - 200 kcals per portion, 4 portions, allergic warning (peanuts), origin", Tom Yum Soup, Falafel Wrap
+35,700.0,80.0,400.0,150.0,350.0, Vegan Breakfast Crepe Cake, Stuffed Dates, Vegan Caesar Salad, Tom Yum Soup, Thai Red Curry
+36,750.0,90.0,720.0,150.0,419.0, Vegan Breakfast Casserole, Quinoa Energy Bites, Vegetable Samosas, Tomato Basil Soup, Lentil Shepherd's Pie
+37,300.0,90.0,100.0,150.0,350.0, Vegan Chocolate Banana Smoothie Bowl - 300 calories per portion | 1 portion | None | Origin, Quinoa Energy Bites," Roasted Cauliflower Hummus - 100 kcals per portion, 4 portions, no allergic warnings, origin", Ratatouille, Mushroom Risotto Stuffed Peppers
+38,300.0,100.0,120.0,150.0,350.0, Vegan Breakfast Bars - 300 calories per portion | 1 portion | Contains nuts | Origin, Chilled Gazpacho," Vegan Lentil Soup - 120 kcals per portion, 4 portions, no allergic warnings, origin", Tom Yum Soup, Vegan Curry with Rice
+39,350.0,100.0,90.0,150.0,200.0, Vegan Breakfast Pizza - 350 calories per portion | 1 portion | Contains gluten | Origin, Fresh Fruit Salad," Guacamole with Tortilla Chips - 90 kcals per portion, 4 portions, allergic warning (avocado), origin", Lentil Soup," Chinese Vegan Hot and Sour Soup (200 calories/portion, 4 portions) - China
+
+"
+40,150.0,120.0,160.0,150.0,300.0, Vegan Egg Muffins - 150 calories per portion | 2 portions | None | Origin, Roasted Brussels Sprouts, Vegan Mexican Street Corn, Tom Yum Soup, Stuffed Bell Peppers
+41,150.0,120.0,90.0,150.0,210.0, Vegan Breakfast Fajitas, Roasted Chickpeas," Roasted Brussels Sprouts with Balsamic Glaze - 90 kcals per portion, 4 portions, no allergic warnings, origin", Tomato Basil Soup, Lentil and Vegetable Stir Fry
+42,250.0,120.0,660.0,150.0,400.0, Vegan Blueberry Muffin Overnight Oats - 250 calories per portion | 2 portions | Contains gluten | Origin, Toasted Coconut Chips, Vegan Pesto Pasta, Tomato Basil Soup," Mexican Vegan Quesadillas (400 calories/portion, 2 portions) - Mexico
+"
+43,150.0,100.0,130.0,150.0,250.0, Vegan Breakfast Pita Pockets, Chilled Gazpacho," Stuffed Mini Portobello Mushrooms - 130 kcals per portion, 4 portions, no allergic warnings, origin", Tom Yum Soup, Mediterranean Couscous Salad
+44,300.0,120.0,120.0,150.0,300.0, Vegan Pumpkin Spice Granola - 300 calories per portion | 1 portion | Contains nuts | Origin, Toasted Coconut Chips," Roasted Chickpeas - 120 kcals per portion, 4 portions, no allergic warnings, origin", Ratatouille," Vegan Thai Green Curry - 300 calories per portion, 2 portions, may contain tofu"
+45,250.0,90.0,100.0,150.0,250.0, Vegan Oatmeal Chocolate Chip Cookies - 250 calories per portion | 2 portions | Contains gluten | Origin, Quinoa Energy Bites," Stuffed Mini Peppers with Vegan Cream Cheese - 100 kcals per portion, 4 portions, no allergic warnings, origin", Veggie Spring Rolls," Vegan Sushi Rolls (250 calories/portion, 4 portions) - Japan
+"
+46,250.0,100.0,940.0,150.0,119.0, Raw Vegan Breakfast Bars - 250 calories per portion | 2 portions | Contains nuts | Origin, Overnight Chia Pudding, Chickpea Curry with Rice, Tomato Basil Soup, Vegan Gazpacho
+47,650.0,100.0,160.0,150.0,150.0, Vegan Breakfast Muesli, Roasted Edamame," Sweet Potato and Black Bean Quesadillas - 160 kcals per portion, 4 portions, no allergic warnings, origin", Tomato Basil Soup, Minestrone Soup
+48,400.0,90.0,200.0,150.0,200.0, Vegan Breakfast Quiche - 400 calories per portion | 1 portion | Contains gluten | Origin, Stuffed Dates," Vegan Pancakes with Maple Syrup - 200 kcals per portion, 4 portions, no allergic warnings, origin", Tomato Basil Soup," Italian Vegan Bruschetta (200 calories/portion, 4 portions) - Italy
+"
+49,300.0,100.0,240.0,150.0,200.0, Vegan Breakfast Tiramisu, Toasted Coconut Chips, Vegan Stuffed Portobello Mushrooms, Cabbage Stir-Fry, Butternut Squash Soup
+50,550.0,100.0,130.0,150.0,250.0, Vegan Breakfast Chili, Roasted Edamame," Veggie Sushi Rolls with Spicy Tofu - 130 kcals per portion, 4 portions, no allergic warnings, origin", Ratatouille, Vegetable Curry
+51,200.0,80.0,130.0,150.0,400.0, Vegan Breakfast Quiche Lorraine, Fruit Salad," Baked Falafel with Tahini Sauce - 130 kcals per portion, 4 portions, allergic warning (sesame), origin", Tomato Basil Soup," Mexican Vegan Pozole (400 calories/portion, 3 portions) - Mexico
+
+"
+52,350.0,120.0,130.0,150.0,300.0, Vegan Breakfast Couscous - 350 calories per portion | 1 portion | Contains gluten | Origin, Roasted Brussels Sprouts," Veggie Sushi Rolls with Spicy Tofu - 130 kcals per portion, 4 portions, no allergic warnings, origin", Cabbage Stir-Fry," Lentil Tacos - 300 calories per portion, 4 portions, None, Mexico
+"
+53,350.0,100.0,760.0,150.0,400.0, Vegan Breakfast Croissant, Roasted Pumpkin Seeds, Vegan Indian Samosa Chaat, Ratatouille, Vegan Mapo Tofu
+54,750.0,120.0,280.0,150.0,300.0, Vegan Breakfast Sweet Potato Hash, Vegan Energy Balls, Vegan Chocolate Mousse, Ratatouille, Vegan Tikka Masala
+55,350.0,120.0,150.0,150.0,250.0, Vegan Apricot and Almond Granola Bars - 350 calories per portion | 1 portion | Contains nuts | Origin, Toasted Coconut Chips," Caponata Bruschetta - 150 kcals per portion, 4 portions, no allergic warnings, origin", Tom Yum Soup, Mediterranean Couscous Salad
+56,300.0,120.0,200.0,150.0,350.0, Vegan Granola - 300 calories per portion | 1 portion | Contains nuts | Origin, Roasted Brussels Sprouts, Vegan Thai Papaya Salad, Tomato Basil Soup," Vegan Meatballs with Marinara Sauce - 350 calories per portion, 4 portions, Gluten, Italy
+"
+57,250.0,90.0,280.0,150.0,450.0, Tofu Scramble - 250 calories per portion | 2 portions | None | Origin, Quinoa Energy Bites, Vegan Lemon Poppy Seed Muffins, Ratatouille, Vegan Pad Thai
+58,300.0,120.0,90.0,150.0,300.0, Vegan Coconut Chia Pancakes - 300 calories per portion | 1 portion | Contains gluten | Origin, Roasted Chickpeas," Baked Zucchini Chips - 90 kcals per portion, 4 portions, no allergic warnings, origin", Tomato Basil Soup," Cauliflower Tikka Masala - 300 calories per portion, 4 portions, None, India
+
+"
+59,400.0,100.0,240.0,150.0,150.0, Vegan Breakfast Empanadas - 400 calories per portion | 1 portion | Contains gluten | Origin, Roasted Almonds, Vegan Spinach Dip with Pita Chips, Tomato Basil Soup, Cauliflower Fried Rice
+60,300.0,120.0,180.0,150.0,300.0, Vegan Apple Cinnamon Quinoa - 300 calories per portion | 1 portion | None | Origin, Vegan Energy Balls," Vegan Strawberry Shortcake - 180 kcals per portion, 4 portions, no allergic warnings, origin", Tomato Basil Soup," Indian Chana Masala (300 calories/portion, 3 portions) - India
+
+"
+61,200.0,100.0,140.0,150.0,221.0, Vegan Breakfast Enchiladas, Overnight Chia Pudding," Vegan Greek Salad - 140 kcals per portion, 4 portions, no allergic warnings, origin", Lentil Soup, Zucchini Noodles with Pesto
+62,600.0,100.0,400.0,150.0,250.0, Vegan Breakfast Danish, Energy Balls, Vegan Japanese Mochi, Tom Yum Soup, Lentil Salad
+63,350.0,80.0,140.0,150.0,150.0, Vegan Chocolate Peanut Butter Smoothie - 350 calories per portion | 1 portion | Contains nuts | Origin, Fruit Salad," Mexican Street Corn Salad - 140 kcals per portion, 4 portions, no allergic warnings, origin", Tom Yum Soup, Veggie Stir-Fry
+64,300.0,90.0,170.0,150.0,320.0, Vegan Pumpkin Spice Pancakes - 300 calories per portion | 1 portion | Contains gluten | Origin, Quinoa Energy Bites," Vegan Mediterranean Flatbread - 170 kcals per portion, 4 portions, no allergic warnings, origin", Tom Yum Soup, Vegan Lentil Meatballs
+65,50.0,100.0,560.0,150.0,300.0, Vegan Breakfast Energy Balls, Baked Apple Chips, Vegan Pancakes, Ratatouille," Vegan Baked Falafel - 300 calories per portion, 3 portions, may contain gluten"
+66,200.0,100.0,200.0,150.0,250.0, Vegan Green Smoothie - 200 calories per portion | 2 portions | None | Origin, Chilled Gazpacho, Stuffed Grape Leaves, Tomato Basil Soup, Vegan Zucchini Bread
+67,400.0,120.0,200.0,150.0,150.0, Vegan Breakfast Casserole - 400 calories per portion | 1 portion | None | Origin, Roasted Chickpeas," Vegan Strawberry Banana Smoothie - 200 kcals per portion, 4 portions, no allergic warnings, origin", Ratatouille, Lentil Soup
+68,300.0,120.0,60.0,150.0,250.0, Vegan Granola - 300 calories per portion | 1 portion | Contains nuts | Origin, Roasted Brussels Sprouts," Sliced Apples with Cinnamon - 60 kcals per portion, 4 portions, no allergic warnings, origin", Lentil Soup, Cauliflower Buffalo Wings
+69,200.0,100.0,150.0,150.0,250.0, Overnight Chia Pudding, Chilled Gazpacho," Vegan Zucchini Fritters with Vegan Sour Cream - 150 kcals per portion, 4 portions, no allergic warnings, origin", Cabbage Stir-Fry, Portobello Mushroom Steaks
+70,450.0,120.0,640.0,150.0,188.0, Vegan Breakfast Lassi, Roasted Brussels Sprouts, Vegan Tofu Scramble, Ratatouille, Lentil and Vegetable Stir Fry
+71,400.0,120.0,200.0,150.0,280.0, Vegan Breakfast Quesadilla - 400 calories per portion | 1 portion | Contains gluten | Origin, Kale Chips," Vegan Pancakes with Maple Syrup - 200 kcals per portion, 4 portions, no allergic warnings, origin", Lentil Soup, Lentil Bolognese
+72,300.0,120.0,480.0,150.0,400.0, Vegan Peanut Butter Banana Smoothie - 300 calories per portion | 1 portion | Contains nuts | Origin, Kale Chips, Vegan Cucumber Sushi Rolls, Ratatouille," Vegan Tamales - 400 calories per portion, 4 portions, None, Mexico
+"
+73,200.0,100.0,140.0,150.0,300.0, Vegan Oatmeal Raisin Cookies - 200 calories per portion | 2 portions | Contains gluten | Origin, Fresh Fruit Salad," Roasted Beetroot Dip with Pita Bread - 140 kcals per portion, 4 portions, no allergic warnings, origin", Ratatouille," British Vegan Ploughman's Lunch (300 calories/portion, 3 portions) - United Kingdom
+"
+74,250.0,100.0,120.0,150.0,250.0, Vegan Blueberry Muffin Overnight Oats - 250 calories per portion | 2 portions | Contains gluten | Origin, Fresh Fruit Salad," Roasted Cauliflower Bites - 120 kcals per portion, 4 portions, no allergic warnings, origin", Lentil Soup, Tofu and Vegetable Kebabs
+75,200.0,100.0,640.0,150.0,200.0, Vegan Chocolate Chia Pudding - 200 calories per portion | 2 portions | None | Origin, Overnight Chia Pudding, Vegan Tofu Scramble, Lentil Soup," Mexican Vegan Guacamole (200 calories/portion, 4 portions) - Mexico
+"
+76,200.0,120.0,640.0,150.0,450.0, Vegan Green Smoothie - 200 calories per portion | 2 portions | None | Origin, Roasted Chickpeas, Vegan Ratatouille, Tom Yum Soup, Veggie Paella
+77,350.0,120.0,120.0,150.0,350.0, Vegan Protein Pancakes - 350 calories per portion | 1 portion | Contains gluten | Origin, Toasted Coconut Chips, Guacamole and Veggie Sticks, Cabbage Stir-Fry, Vegan Pizza
+78,350.0,120.0,720.0,150.0,180.0, Vegan Savory Breakfast Muffins - 350 calories per portion | 1 portion | Contains gluten | Origin, Hummus with Veggies, Vegan Black Bean Quesadillas, Ratatouille, Tofu Stir-Fry
+79,350.0,80.0,960.0,150.0,300.0, Vegan Mushroom and Spinach Omelette - 350 calories per portion | 1 portion | None | Origin, Stuffed Dates, Vegan Southwestern Black Bean Salad, Ratatouille," Moroccan Vegetable Lentil Stew (300 calories/portion, 4 portions) - Morocco
+"
+80,400.0,120.0,440.0,150.0,450.0, Vegan Breakfast Sushi - 400 calories per portion | 1 portion | Contains soy | Origin, Toasted Coconut Chips, Vegan Chili, Lentil Soup, Vegan Sushi Sandwich
+81,200.0,80.0,200.0,150.0,250.0, Vegan Chocolate Chia Pudding - 200 calories per portion | 2 portions | None | Origin, Stuffed Dates, Stuffed Grape Leaves, Tomato Basil Soup, Sushi Roll
+82,300.0,120.0,900.0,150.0,100.0, Fruit Smoothie Bowl - 300 calories per portion | 1 portion | None | Origin, Vegan Energy Balls, Vegan Stuffed Mushrooms, Ratatouille," Japanese Miso Soup with Tofu (100 calories/portion, 4 portions) - Japan
+"
+83,750.0,120.0,340.0,150.0,350.0, Vegan Breakfast Stuffed Mushrooms, Vegan Energy Balls, Vegan Nachos, Ratatouille, Vegan Stuffed Peppers
+84,300.0,100.0,940.0,150.0,200.0, Vegan Pumpkin Spice Pancakes - 300 calories per portion | 1 portion | Contains gluten | Origin, Roasted Pumpkin Seeds, Chickpea Curry with Rice, Tomato Basil Soup," Italian Caprese Salad (200 calories/portion, 2 portions) - Italy
+"
+85,100.0,100.0,80.0,150.0,320.0, Vegan Breakfast Bagel, Roasted Almonds, Vegan Carrot Cake Energy Balls, Cabbage Stir-Fry, Zucchini and Carrot Noodles with Peanut Sauce
+86,550.0,100.0,400.0,150.0,300.0, Vegan Breakfast Cobbler, Energy Balls, Vegan Japanese Mochi, Tomato Basil Soup, Vegan Fajitas
+87,500.0,100.0,420.0,150.0,300.0, Vegan Breakfast Croque Madame, Energy Balls, Vegan Potato Salad, Cabbage Stir-Fry, Vegetable Curry
+88,300.0,90.0,580.0,150.0,305.0, Vegan Chocolate Protein Shake - 300 calories per portion | 1 portion | None | Origin, Quinoa Energy Bites, Falafel with Tahini Sauce, Tomato Basil Soup, Sweet Potato and Black Bean Enchiladas
+89,200.0,90.0,380.0,150.0,160.0, Vegan Breakfast Cookies - 200 calories per portion | 2 portions | Contains gluten | Origin, Quinoa Energy Bites, Vegan Chocolate Chip Cookies, Lentil Soup," Vegan Tofu Scramble - 160 calories per portion, 1 portion, may contain soy"
+90,400.0,100.0,170.0,150.0,350.0, Vegan Breakfast Tater Tots - 400 calories per portion | 1 portion | Contains gluten | Origin, Fresh Fruit Salad," Roasted Red Pepper Hummus with Pita Bread - 170 kcals per portion, 4 portions, no allergic warnings, origin", Ratatouille," Vegan Lentil Coconut Curry - 350 calories per portion, 2 portions, may contain mustard"
+91,350.0,120.0,480.0,150.0,350.0, Vegan Breakfast Pizza - 350 calories per portion | 1 portion | Contains gluten | Origin, Hummus with Veggies, Vegan Cucumber Sushi Rolls, Cabbage Stir-Fry, Lentil and Vegetable Curry with Coconut Milk
+92,150.0,100.0,160.0,150.0,300.0, Vegan Breakfast Fruit Pizza, Roasted Pumpkin Seeds," Vegan Raspberry Bars - 160 kcals per portion, 4 portions, no allergic warnings, origin", Ratatouille," Lentil Samosas - 300 calories per portion, 4 portions, None, India
+"
+93,300.0,100.0,80.0,150.0,350.0, Vegan Granola - 300 calories per portion | 1 portion | Contains nuts | Origin, Roasted Almonds," Edamame Beans - 80 kcals per portion, 4 portions, no allergic warnings, origin", Ratatouille, Vegan Gyros
+94,250.0,120.0,660.0,150.0,250.0, Vegan Breakfast Bruschetta - 250 calories per portion | 2 portions | Contains gluten | Origin, Hummus with Veggies, Vegan Pesto Pasta, Veggie Spring Rolls, Mediterranean Couscous Salad
+95,50.0,120.0,120.0,150.0,400.0, Vegan Breakfast Energy Balls, Toasted Coconut Chips," Vegan Lentil Soup - 120 kcals per portion, 4 portions, no allergic warnings, origin", Ratatouille," Vegan Quiche - 400 calories per portion, 4 portions, Gluten, Various
+"
+96,400.0,100.0,200.0,150.0,380.0, Vegan Breakfast Stuffed Sweet Potatoes - 400 calories per portion | 1 portion | None | Origin, Roasted Edamame," Vegan Peanut Butter Banana Smoothie - 200 kcals per portion, 4 portions, allergic warning (peanuts), origin", Tomato Basil Soup, Vegan Bibimbap
+97,300.0,120.0,70.0,150.0,200.0, Vegan Chocolate Protein Shake - 300 calories per portion | 1 portion | None | Origin, Roasted Chickpeas," Fruit Salad - 70 kcals per portion, 4 portions, no allergic warnings, origin", Ratatouille, Quinoa Salad
+98,750.0,100.0,180.0,150.0,350.0, Vegan Breakfast Sweet Potato Hash, Roasted Almonds," Baked Falafel Salad - 180 kcals per portion, 4 portions, allergic warning (sesame), origin", Lentil Soup, Mexican Quinoa Bowl
+99,300.0,100.0,90.0,150.0,419.0, Vegan Buckwheat Banana Pancakes - 300 calories per portion | 1 portion | Contains gluten | Origin, Toasted Coconut Chips," Guacamole with Tortilla Chips - 90 kcals per portion, 4 portions, allergic warning (avocado), origin", Ratatouille, Lentil Shepherd's Pie
+100,550.0,100.0,200.0,150.0,300.0, Granola with Soy Milk, Roasted Edamame," Vegan Strawberry Banana Smoothie - 200 kcals per portion, 4 portions, no allergic warnings, origin", Tom Yum Soup," Chickpea Curry - 300 calories per portion, 4 portions, may contain mustard"
+101,400.0,100.0,100.0,150.0,300.0, Vegan Breakfast Tostadas - 400 calories per portion | 1 portion | Contains soy | Origin, Overnight Chia Pudding," Homemade Hummus with Carrot Sticks - 100 kcals per portion, 4 portions, no allergic warnings, origin", Tomato Basil Soup," Peanut Noodle Salad - 300 calories per portion, 4 portions, Peanuts, Various
+"
+102,450.0,80.0,240.0,150.0,400.0, Vegan Breakfast Muffins, Stuffed Dates, Vegan Spinach Dip with Pita Chips, Cabbage Stir-Fry," Italian Pasta Primavera (400 calories/portion, 2 portions) - Italy
+"
+103,350.0,120.0,100.0,150.0,250.0, Vegan Sweet Potato Hash Browns - 350 calories per portion | 1 portion | None | Origin, Roasted Chickpeas," Stuffed Mini Peppers with Vegan Cream Cheese - 100 kcals per portion, 4 portions, no allergic warnings, origin", Tom Yum Soup, Stuffed Bell Peppers
+104,300.0,120.0,120.0,150.0,300.0, Vegan Breakfast Parfait, Roasted Brussels Sprouts, Vegan Caprese Skewers, Tomato Basil Soup, Lentil Shepherd's Pie
+105,300.0,100.0,140.0,150.0,200.0, Fruit Smoothie Bowl - 300 calories per portion | 1 portion | None | Origin, Roasted Almonds," Vegan Mediterranean Pasta Salad - 140 kcals per portion, 4 portions, no allergic warnings, origin", Lentil Soup," Butternut Squash Soup - 200 calories per portion, 4 portions, None, Various
+"
+106,150.0,100.0,200.0,150.0,390.0, Vegan Energy Balls - 150 calories per portion | 2 portions | Contains nuts | Origin, Roasted Pumpkin Seeds, Hummus and Pita Bread, Ratatouille, Vegan Lasagna
+107,200.0,100.0,100.0,150.0,350.0, Overnight Chia Pudding, Roasted Edamame," Crispy Baked Tofu Bites - 100 kcals per portion, 4 portions, no allergic warnings, origin", Lentil Soup," Vegan Lentil Coconut Curry - 350 calories per portion, 2 portions, may contain mustard"
+108,400.0,120.0,840.0,150.0,150.0, Vegan Cinnamon Rolls, Roasted Brussels Sprouts, Vegan Tomato Bruschetta, Ratatouille," Lentil Soup - 150 calories per portion, 6 portions, None, Various
+"
+109,250.0,100.0,180.0,150.0,350.0, Avocado Toast, Roasted Pumpkin Seeds," Vegan Strawberry Shortcake - 180 kcals per portion, 4 portions, no allergic warnings, origin", Lentil Soup, Lentil and Vegetable Curry with Coconut Milk
+110,50.0,120.0,640.0,150.0,400.0, Vegan Breakfast Stuffed Tomatoes, Vegan Energy Balls, Vegan Tofu Scramble, Tom Yum Soup, Vegan Mapo Tofu
+111,400.0,80.0,800.0,150.0,320.0, Veggie Sausage and Hash Browns - 400 calories per portion | 1 portion | Contains soy | Origin, Stuffed Dates, Vegan Teriyaki Tofu Bowl, Tom Yum Soup, Sweet and Sour Tofu
+112,350.0,120.0,160.0,150.0,400.0, Tofu Scramble, Kale Chips, Vegan Mexican Street Corn, Cabbage Stir-Fry," Tomato and Basil Pasta - 400 calories per portion, 3 portions, may contain gluten"
+113,250.0,80.0,840.0,150.0,400.0, Vegan Breakfast Bruschetta - 250 calories per portion | 2 portions | Contains gluten | Origin, Stuffed Dates, Vegan Almond Joy Energy Balls, Tom Yum Soup," Vegan Tamales - 400 calories per portion, 4 portions, None, Mexico
+"
+114,400.0,100.0,100.0,150.0,200.0, Vegan Breakfast Fried Rice, Toasted Coconut Chips," Vegan Energy Balls - 100 kcals per portion, 4 portions, no allergic warnings, origin", Cabbage Stir-Fry, Mediterranean Quinoa Bowl
+115,350.0,90.0,150.0,150.0,400.0, Vegan Breakfast Couscous - 350 calories per portion | 1 portion | Contains gluten | Origin, Quinoa Energy Bites," Vegan Chocolate Avocado Mousse - 150 kcals per portion, 4 portions, allergic warning (avocado), origin", Tom Yum Soup, Jackfruit BBQ Sandwich
+116,450.0,100.0,150.0,150.0,200.0, Vegan Breakfast Muffuletta, Overnight Chia Pudding," Cucumber and Avocado Sushi Rolls - 150 kcals per portion, 4 portions, allergic warning (avocado), origin", Veggie Spring Rolls, Spaghetti Aglio e Olio
+117,150.0,80.0,120.0,150.0,250.0, Chia Pudding - 150 calories per portion | 1 portion | None | Origin, Fruit Salad," Black Bean Salsa with Tortilla Chips - 120 kcals per portion, 4 portions, no allergic warnings, origin", Lentil Soup," Greek Vegan Fava Beans (250 calories/portion, 4 portions) - Greece
+"
+118,200.0,120.0,80.0,150.0,250.0, Overnight Chia Pudding, Kale Chips, Vegan Carrot Cake Energy Balls, Lentil Soup," Veggie Dumplings - 250 calories per portion, 4 portions, Gluten, Various
+
+"
+119,400.0,100.0,140.0,150.0,250.0, Vegan Breakfast Tater Tots - 400 calories per portion | 1 portion | Contains gluten | Origin, Roasted Pumpkin Seeds," Vegan Sweet Potato Wedges - 140 kcals per portion, 4 portions, no allergic warnings, origin", Tomato Basil Soup, Sushi Roll
+120,250.0,80.0,480.0,150.0,200.0, Vegan Berry Chia Smoothie - 250 calories per portion | 2 portions | None | Origin, Stuffed Dates, Vegan Cucumber Sushi Rolls, Veggie Spring Rolls," Tofu Stir-Fry - 200 calories per portion, 4 portions, Soy, China
+"
+121,350.0,100.0,520.0,150.0,200.0, Vegan Breakfast Grits - 350 calories per portion | 1 portion | None | Origin, Roasted Pumpkin Seeds, Vegan Spinach and Artichoke Crostini, Veggie Spring Rolls, Ratatouille
+122,450.0,120.0,560.0,150.0,350.0, Vegan Breakfast Muffuletta, Hummus with Veggies, Vegan Chickpea Salad Sandwich, Cabbage Stir-Fry," Vegan Lentil Coconut Curry - 350 calories per portion, 2 portions, may contain mustard"
+123,250.0,120.0,640.0,150.0,350.0, Vegan Beetroot and Apple Smoothie - 250 calories per portion | 2 portions | None | Origin, Hummus with Veggies, Vegan Ratatouille, Tomato Basil Soup, Vegan Butternut Squash Ravioli
+124,500.0,100.0,140.0,150.0,400.0, Vegan Breakfast Cookies, Fresh Fruit Salad," Vegan Mediterranean Pasta Salad - 140 kcals per portion, 4 portions, no allergic warnings, origin", Lentil Soup, Lentil Biryani
+125,50.0,100.0,150.0,150.0,350.0, Vegan Breakfast Energy Balls, Fresh Fruit Salad," Cucumber and Avocado Sushi Rolls - 150 kcals per portion, 4 portions, allergic warning (avocado), origin", Lentil Soup, Quinoa and Black Bean Burgers
+126,200.0,120.0,180.0,150.0,400.0, Vegan Breakfast Cookies - 200 calories per portion | 2 portions | Contains gluten | Origin, Kale Chips," Vegan Pumpkin Muffins - 180 kcals per portion, 4 portions, no allergic warnings, origin", Tom Yum Soup," Lentil Bolognese - 400 calories per portion, 4 portions, Gluten, Italy
+"
+127,400.0,120.0,180.0,150.0,250.0, Vegan Quinoa Breakfast Skillet - 400 calories per portion | 1 portion | None | Origin, Kale Chips," Roasted Chickpea Salad - 180 kcals per portion, 4 portions, no allergic warnings, origin", Tomato Basil Soup, Roasted Vegetable Salad
+128,200.0,100.0,560.0,150.0,350.0, Vegan Breakfast Quinoa Salad, Baked Apple Chips, Vegan Mediterranean Pasta Salad, Cabbage Stir-Fry," Spaghetti Aglio e Olio - 350 calories per portion, 4 portions, None, Italy
+"
+129,150.0,90.0,420.0,150.0,220.0, Vegan Peanut Butter Banana Smoothie, Stuffed Dates, Vegan Potato Salad, Tom Yum Soup, Lentil and Vegetable Stir Fry
+130,400.0,120.0,180.0,150.0,220.0, Vegan Breakfast Stuffed Mushrooms - 400 calories per portion | 1 portion | None | Origin, Toasted Coconut Chips," Vegan Blueberry Muffins - 180 kcals per portion, 4 portions, no allergic warnings, origin", Cabbage Stir-Fry, Quinoa and Vegetable Stir Fry
+131,150.0,90.0,320.0,150.0,220.0, Vegan Breakfast Fruit Pizza, Stuffed Dates, Vegan Breaded Zucchini Sticks, Tomato Basil Soup, Spicy Black Bean Soup
+132,500.0,120.0,740.0,150.0,250.0, Vegan Breakfast Vegetable Stir-Fry, Roasted Chickpeas, Vegan Buffalo Cauliflower Wings, Ratatouille," Moroccan Chickpea Stew (250 calories/portion, 4 portions) - Morocco
+"
+133,450.0,120.0,920.0,150.0,350.0, Vegan Biscuits and Gravy - 450 calories per portion | 1 portion | Contains gluten | Origin, Roasted Brussels Sprouts, Vegan French Onion Dip, Tom Yum Soup, Falafel Wrap
+134,600.0,100.0,820.0,150.0,250.0, Vegan Waffles, Energy Balls, Vegan Lasagna, Lentil Soup," Vegan Tomato and Vegetable Paella - 250 calories per portion, 3 portions, may contain gluten"
+135,300.0,100.0,160.0,150.0,450.0, Vegan Buckwheat Banana Pancakes - 300 calories per portion | 1 portion | Contains gluten | Origin, Baked Apple Chips," Vegan Spinach and Artichoke Stuffed Breadsticks - 160 kcals per portion, 4 portions, no allergic warnings, origin", Veggie Spring Rolls," Thai Vegan Yellow Curry (450 calories/portion, 2 portions) - Thailand
+"
+136,550.0,100.0,130.0,150.0,250.0, Vegan Smoothie Bowl, Roasted Almonds," Sweet and Spicy Roasted Cashews - 130 kcals per portion, 4 portions, allergic warning (cashews), origin", Veggie Spring Rolls, Cucumber Avocado Sushi Rolls
+137,250.0,120.0,90.0,150.0,150.0, Vegan Blueberry Muffin Overnight Oats - 250 calories per portion | 2 portions | Contains gluten | Origin, Roasted Brussels Sprouts," Rice Cakes with Almond Butter - 90 kcals per portion, 4 portions, allergic warning (almonds), origin", Veggie Spring Rolls, Lentil Soup with Kale
+138,250.0,100.0,140.0,150.0,200.0, Vegan Cinnamon Apple Oatmeal - 250 calories per portion | 2 portions | None | Origin, Chilled Gazpacho," Vegan Greek Salad - 140 kcals per portion, 4 portions, no allergic warnings, origin", Tom Yum Soup, Lentil Soup
+139,650.0,100.0,100.0,150.0,320.0, Vegan Breakfast Zucchini Bread, Roasted Edamame," Baked Tofu Nuggets - 100 kcals per portion, 4 portions, no allergic warnings, origin", Tom Yum Soup, Thai Green Curry Noodles
+140,400.0,120.0,200.0,150.0,300.0, Vegan Breakfast Burrito - 400 calories per portion | 1 portion | None | Origin, Toasted Coconut Chips, Vegan Chocolate Covered Strawberries, Lentil Soup, Vegan Sushi
+141,300.0,120.0,130.0,150.0,350.0, Avocado Toast - 300 calories per portion | 1 portion | None | Origin, Toasted Coconut Chips," Oven-Baked Sweet Potato Fries - 130 kcals per portion, 4 portions, no allergic warnings, origin", Tom Yum Soup, Mushroom Tacos
+142,300.0,100.0,90.0,150.0,300.0, Avocado Toast - 300 calories per portion | 1 portion | None | Origin, Fresh Fruit Salad," Baked Zucchini Chips - 90 kcals per portion, 4 portions, no allergic warnings, origin", Tomato Basil Soup, Vegetable Biryani
+143,150.0,100.0,740.0,150.0,300.0, Vegan Egg Muffins - 150 calories per portion | 2 portions | None | Origin, Baked Apple Chips, Vegan Buffalo Cauliflower Wings, Tomato Basil Soup, Jackfruit Tacos
+144,550.0,120.0,70.0,150.0,300.0, Vegan Smoothie Bowl, Hummus with Veggies," Watermelon and Mint Salad - 70 kcals per portion, 4 portions, no allergic warnings, origin", Lentil Soup, Lentil Biryani
+145,300.0,120.0,160.0,150.0,300.0, Vegan Apple Cinnamon Quinoa - 300 calories per portion | 1 portion | None | Origin, Vegan Energy Balls," Vegan Spinach and Mushroom Tartlets - 160 kcals per portion, 4 portions, no allergic warnings, origin", Tom Yum Soup, Teriyaki Tofu Bowl
+146,400.0,120.0,140.0,150.0,250.0, Vegan Breakfast Casserole - 400 calories per portion | 1 portion | None | Origin, Hummus with Veggies," Roasted Beetroot Dip with Pita Bread - 140 kcals per portion, 4 portions, no allergic warnings, origin", Tomato Basil Soup, Mushroom Risotto
+147,250.0,90.0,180.0,150.0,350.0, Vegan Coconut Yogurt with Fruit - 250 calories per portion | 1 portion | None | Origin, Stuffed Dates," Roasted Chickpea Salad - 180 kcals per portion, 4 portions, no allergic warnings, origin", Cabbage Stir-Fry, Vegan Ravioli
+148,350.0,100.0,920.0,150.0,300.0, Vegan Breakfast Bars, Overnight Chia Pudding, Vegan Thai Spring Rolls, Lentil Soup, Tofu and Vegetable Curry
+149,400.0,100.0,100.0,150.0,300.0, Vegan Breakfast Burrito - 400 calories per portion | 1 portion | None | Origin, Chilled Gazpacho," Vegan Spinach and Artichoke Dip - 100 kcals per portion, 4 portions, no allergic warnings, origin", Tomato Basil Soup, Vegan Fajitas
+150,250.0,100.0,150.0,150.0,170.0, Vegan Chocolate Banana Chia Pudding - 250 calories per portion | 2 portions | None | Origin, Baked Apple Chips," Zucchini Fritters - 150 kcals per portion, 4 portions, no allergic warnings, origin", Ratatouille, Miso Soup with Tofu and Vegetables
+151,500.0,100.0,140.0,150.0,400.0, Vegan Breakfast Burrito, Fresh Fruit Salad," Vegan Sweet Potato Wedges - 140 kcals per portion, 4 portions, no allergic warnings, origin", Veggie Spring Rolls," British Vegan Bubble and Squeak (400 calories/portion, 2 portions) - United Kingdom
+"
+152,400.0,80.0,150.0,150.0,220.0, Vegan Cinnamon Rolls, Fruit Salad," Zucchini Fritters - 150 kcals per portion, 4 portions, no allergic warnings, origin", Tom Yum Soup, Lentil and Vegetable Stir Fry
+153,200.0,100.0,760.0,150.0,450.0, Vegan Matcha Chia Pudding - 200 calories per portion | 1 portion | None | Origin, Baked Apple Chips, Vegan Cinnamon Rolls, Tom Yum Soup," Vegan Tofu and Vegetable Curry - 450 calories per portion, 2 portions, may contain soy"
+154,200.0,120.0,280.0,150.0,200.0, Vegan Matcha Chia Pudding - 200 calories per portion | 1 portion | None | Origin, Toasted Coconut Chips, Vegan Greek Salad, Tom Yum Soup, Lentil Curry
+155,200.0,100.0,120.0,150.0,300.0, Vegan Oatmeal Raisin Cookies - 200 calories per portion | 2 portions | Contains gluten | Origin, Energy Balls," Chia Pudding with Fresh Berries - 120 kcals per portion, 4 portions, no allergic warnings, origin", Ratatouille," Vegan Mushroom Stroganoff - 300 calories per portion, 2 portions, may contain gluten"
+156,500.0,120.0,320.0,150.0,250.0, Vegan Breakfast Vegetable Stir-Fry, Hummus with Veggies, Vegan Raspberry Oat Bars, Lentil Soup, Chickpea Flour Pancakes
+157,400.0,120.0,440.0,150.0,350.0, Vegan Tofu Benedict - 400 calories per portion | 1 portion | Contains soy | Origin, Toasted Coconut Chips, Vegan Roasted Red Pepper Dip, Ratatouille, Tofu Tikka Masala
+158,650.0,80.0,520.0,150.0,200.0, Vegan Breakfast Sandwich, Fruit Salad, Vegan Thai Coconut Curry Soup, Veggie Spring Rolls, Greek Salad
+159,300.0,100.0,200.0,150.0,300.0, Vegan Breakfast Spring Rolls - 300 calories per portion | 1 portion | Contains soy | Origin, Baked Apple Chips," Vegan Mango Smoothie Bowl - 200 kcals per portion, 4 portions, no allergic warnings, origin", Ratatouille, Vegetable Curry
+160,400.0,120.0,400.0,150.0,300.0, Vegan Breakfast Empanadas - 400 calories per portion | 1 portion | Contains gluten | Origin, Roasted Chickpeas, Zucchini Fritters, Tom Yum Soup, Spicy Lentil and Potato Curry
+161,250.0,100.0,100.0,150.0,200.0, Vegan Breakfast Oats and Berries, Toasted Coconut Chips," Roasted Garlic Hummus with Veggie Sticks - 100 kcals per portion, 4 portions, no allergic warnings, origin", Ratatouille," Lentil Spinach Salad - 200 calories per portion, 4 portions, None, Various
+"
+162,400.0,120.0,120.0,150.0,250.0, Vegan Breakfast Burrito - 400 calories per portion | 1 portion | None | Origin, Hummus with Veggies," Vegan Pumpkin Spice Energy Balls - 120 kcals per portion, 4 portions, no allergic warnings, origin", Ratatouille," Moroccan Chickpea Pancakes (250 calories/portion, 4 portions) - Morocco
+"
+163,250.0,100.0,400.0,150.0,200.0, Vegan Blueberry Muffin Overnight Oats - 250 calories per portion | 2 portions | Contains gluten | Origin, Roasted Edamame, Vegan Japanese Mochi, Cabbage Stir-Fry, Greek Salad
+164,250.0,100.0,150.0,150.0,400.0, Vegan Breakfast Quesadilla, Roasted Pumpkin Seeds," Vegan Ratatouille - 150 kcals per portion, 4 portions, no allergic warnings, origin", Ratatouille," Greek Vegan Dolmades (400 calories/portion, 2 portions) - Greece
+"
+165,600.0,100.0,260.0,150.0,300.0, Vegan Breakfast Danish, Energy Balls, Spicy Mango Salsa, Ratatouille," Vegan Thai Green Curry - 300 calories per portion, 2 portions, may contain tofu"
+166,200.0,100.0,200.0,150.0,350.0, Vegan Matcha Chia Pudding - 200 calories per portion | 1 portion | None | Origin, Roasted Edamame," Vegan Mango Smoothie Bowl - 200 kcals per portion, 4 portions, no allergic warnings, origin", Cabbage Stir-Fry, Vegan Meatballs in Tomato Sauce
+167,250.0,80.0,520.0,150.0,250.0, Sweet Potato Toast - 250 calories per portion | 1 portion | None | Origin, Fruit Salad, Vegan Mac and Cheese, Lentil Soup, Stuffed Acorn Squash
+168,100.0,100.0,140.0,150.0,400.0, Vegan Breakfast Bagel, Fresh Fruit Salad," Cauliflower Buffalo Wings - 140 kcals per portion, 4 portions, no allergic warnings, origin", Ratatouille, Vegan Goulash
+169,400.0,120.0,960.0,150.0,250.0, Vegan Breakfast Tostadas - 400 calories per portion | 1 portion | Contains soy | Origin, Vegan Energy Balls, Vegan Southwestern Black Bean Salad, Tom Yum Soup, Cauliflower Buffalo Wings
+170,250.0,100.0,180.0,150.0,350.0, Vegan Beetroot and Apple Smoothie - 250 calories per portion | 2 portions | None | Origin, Roasted Almonds," Vegan Apple Cinnamon Granola Bars - 180 kcals per portion, 4 portions, no allergic warnings, origin", Lentil Soup," Italian Vegan Eggplant Rollatini (350 calories/portion, 2 portions) - Italy
+"
+171,500.0,100.0,80.0,150.0,400.0, Vegan Breakfast Burrito, Baked Apple Chips, Vegan Peanut Butter Energy Bars, Tom Yum Soup," Mexican Vegan Fajitas (400 calories/portion, 2 portions) - Mexico
+"
+172,300.0,80.0,130.0,150.0,350.0, Vegan Chocolate Protein Shake - 300 calories per portion | 1 portion | None | Origin, Fruit Salad," Baked Falafel with Tahini Sauce - 130 kcals per portion, 4 portions, allergic warning (sesame), origin", Tom Yum Soup, Thai Red Curry
+173,200.0,120.0,500.0,150.0,460.0, Vegan Breakfast Cookies - 200 calories per portion | 2 portions | Contains gluten | Origin, Roasted Chickpeas, Roasted Vegetable Skewers, Veggie Spring Rolls, Creamy Vegan Mushroom Pasta
+174,70.0,100.0,150.0,150.0,400.0, Fruit Salad, Overnight Chia Pudding," Caponata Bruschetta - 150 kcals per portion, 4 portions, no allergic warnings, origin", Veggie Spring Rolls," Mexican Vegan Pozole (400 calories/portion, 3 portions) - Mexico
+
+"
+175,450.0,120.0,130.0,150.0,350.0, Vegan Breakfast Pho, Roasted Chickpeas," Vegan Thai Spring Rolls - 130 kcals per portion, 4 portions, no allergic warnings, origin", Veggie Spring Rolls, Mexican Quinoa Bowl
+176,400.0,100.0,960.0,150.0,400.0, Veggie Sausage and Hash Browns - 400 calories per portion | 1 portion | Contains soy | Origin, Roasted Almonds, Vegan Southwestern Black Bean Salad, Cabbage Stir-Fry, Falafel Wrap
+177,450.0,100.0,280.0,150.0,400.0, Vegan Biscuits and Gravy - 450 calories per portion | 1 portion | Contains gluten | Origin, Chilled Gazpacho, Baked Tofu Nuggets, Veggie Spring Rolls," Lentil Spinach Bolognese - 400 calories per portion, 4 portions, None, Italy
+"
+178,200.0,80.0,100.0,150.0,350.0, Vegan Breakfast Phyllo Cups, Stuffed Dates," Baked Tofu Nuggets - 100 kcals per portion, 4 portions, no allergic warnings, origin", Tom Yum Soup," British Vegan Scotch Broth (350 calories/portion, 2 portions) - United Kingdom
+"
+179,200.0,100.0,180.0,150.0,250.0, Vegan French Toast - 200 calories per portion | 2 portions | Contains gluten | Origin, Chilled Gazpacho," Vegan Black Bean Brownies - 180 kcals per portion, 4 portions, no allergic warnings, origin", Veggie Spring Rolls, Roasted Vegetable Salad
+180,350.0,80.0,140.0,150.0,200.0, Vegan Breakfast Couscous - 350 calories per portion | 1 portion | Contains gluten | Origin, Fruit Salad," Vegan Cinnamon Sugar Donuts - 140 kcals per portion, 4 portions, no allergic warnings, origin", Tom Yum Soup, Greek Stuffed Peppers
+181,250.0,80.0,180.0,150.0,317.0, Avocado Toast, Stuffed Dates," Vegan Apple Cinnamon Granola Bars - 180 kcals per portion, 4 portions, no allergic warnings, origin", Tom Yum Soup, Vegan Paella
+182,200.0,100.0,380.0,150.0,250.0, Vegan Breakfast Phyllo Cups, Baked Apple Chips, Vegan Chocolate Chip Cookies, Lentil Soup, Vegan Soba Noodle Salad
+183,350.0,90.0,700.0,150.0,350.0, Vegan Breakfast Quinoa Bowl - 350 calories per portion | 1 portion | Contains nuts | Origin, Quinoa Energy Bites, Vegan Pad Thai, Cabbage Stir-Fry," Italian Vegan Pasta Aglio e Olio (350 calories/portion, 2 portions) - Italy
+"
+184,400.0,100.0,240.0,150.0,350.0, Vegan Breakfast Quesadilla - 400 calories per portion | 1 portion | Contains gluten | Origin, Chilled Gazpacho, Veggie Sushi Rolls, Tom Yum Soup," Vegetable Paella - 350 calories per portion, 4 portions, None, Spain
+
+"
+185,250.0,100.0,110.0,150.0,240.0, Vegan Matcha Overnight Oats - 250 calories per portion | 2 portions | None | Origin, Energy Balls," Oatmeal Raisin Energy Balls - 110 kcals per portion, 4 portions, no allergic warnings, origin", Lentil Soup, Spaghetti Aglio e Olio
+186,400.0,120.0,90.0,150.0,400.0, Vegan Breakfast Hand Pies, Roasted Brussels Sprouts," Guacamole with Tortilla Chips - 90 kcals per portion, 4 portions, allergic warning (avocado), origin", Veggie Spring Rolls, Vegan Ramen
+187,300.0,100.0,480.0,150.0,310.0, Vegan Breakfast Parfait, Toasted Coconut Chips, Spinach and Mushroom Quesadillas, Tomato Basil Soup, Vegan Lentil Curry
+188,250.0,100.0,200.0,150.0,200.0, Tofu Scramble - 250 calories per portion | 2 portions | None | Origin, Chilled Gazpacho, Stuffed Grape Leaves, Veggie Spring Rolls," Italian Vegan Garlic Bread (200 calories/portion, 2 portions) - Italy
+"
+189,600.0,100.0,100.0,150.0,400.0, Vegan Breakfast Tofu Bowl, Roasted Almonds," Baked Tofu Nuggets - 100 kcals per portion, 4 portions, no allergic warnings, origin", Cabbage Stir-Fry," British Vegan Cottage Pie (400 calories/portion, 4 portions) - United Kingdom
+"
+190,150.0,100.0,60.0,150.0,350.0, Vegan Energy Balls - 150 calories per portion | 2 portions | Contains nuts | Origin, Roasted Edamame," Sliced Apples with Cinnamon - 60 kcals per portion, 4 portions, no allergic warnings, origin", Ratatouille," Quinoa Stuffed Bell Peppers - 350 calories per portion, 4 portions, None, Various
+"
+191,200.0,80.0,280.0,150.0,246.0, Vegan Matcha Chia Pudding - 200 calories per portion | 1 portion | None | Origin, Stuffed Dates, Vegan Greek Salad, Veggie Spring Rolls, Black Bean and Corn Salad
+192,300.0,90.0,130.0,150.0,294.0, Veggie Tofu Scramble Wrap - 300 calories per portion | 1 portion | None | Origin, Stuffed Dates," Baked Falafel with Tahini Sauce - 130 kcals per portion, 4 portions, allergic warning (sesame), origin", Tom Yum Soup, Vegan Lentil Sloppy Joes
+193,700.0,120.0,80.0,150.0,350.0, Vegan Breakfast Dutch Baby Pancake, Roasted Brussels Sprouts," Edamame Beans - 80 kcals per portion, 4 portions, no allergic warnings, origin", Tomato Basil Soup, Vegan Ramen
+194,300.0,100.0,200.0,150.0,220.0, Vegan Mango Coconut Chia Pudding - 300 calories per portion | 1 portion | None | Origin, Chilled Gazpacho," Vegan Pancakes with Maple Syrup - 200 kcals per portion, 4 portions, no allergic warnings, origin", Cabbage Stir-Fry, Spicy Black Bean Soup
+195,250.0,120.0,320.0,150.0,250.0, Sweet Potato Toast - 250 calories per portion | 1 portion | None | Origin, Vegan Energy Balls, Vegan Raspberry Oat Bars, Tomato Basil Soup, Tofu and Vegetable Kebabs
+196,550.0,100.0,360.0,150.0,350.0, Vegan Smoothie Bowl, Energy Balls, Vegan Turkish Delight, Cabbage Stir-Fry," Lentil Coconut Curry Soup - 350 calories per portion, 4 portions, None, India
+
+Please note that the portion sizes and calorie counts are approximate, and you may need to adjust the recipe based on your specific dietary needs and restrictions"
+197,300.0,120.0,150.0,150.0,450.0, Vegan Coconut Chia Pancakes - 300 calories per portion | 1 portion | Contains gluten | Origin, Kale Chips," Cucumber and Avocado Sushi Rolls - 150 kcals per portion, 4 portions, allergic warning (avocado), origin", Lentil Soup, Vegan Sushi Sandwich
+198,550.0,100.0,180.0,150.0,200.0, Vegan Smoothie Bowl, Toasted Coconut Chips," Baked Falafel Salad - 180 kcals per portion, 4 portions, allergic warning (sesame), origin", Ratatouille," Italian Caprese Salad (200 calories/portion, 2 portions) - Italy
+"
+199,700.0,120.0,840.0,150.0,320.0, Acai Bowl, Toasted Coconut Chips, Vegan Almond Joy Energy Balls, Tomato Basil Soup, Roasted Vegetable Pasta
+200,250.0,120.0,160.0,150.0,246.0, Vegan Breakfast Crepes, Kale Chips," Vegan Spinach and Artichoke Stuffed Mushrooms - 160 kcals per portion, 4 portions, no allergic warnings, origin", Veggie Spring Rolls, Black Bean and Corn Salad
+201,500.0,100.0,200.0,150.0,400.0, Vegan Breakfast Vegetable Stir-Fry, Energy Balls, Vegan Thai Papaya Salad, Tomato Basil Soup," Stuffed Bell Peppers with Quinoa - 400 calories per portion, 4 portions, None, Various
+"
+202,450.0,90.0,170.0,150.0,350.0, Vegan Breakfast Muffins, Stuffed Dates," Vegan Mediterranean Flatbread - 170 kcals per portion, 4 portions, no allergic warnings, origin", Cabbage Stir-Fry, Vegan Gyros
+203,450.0,120.0,920.0,150.0,150.0, Quinoa Breakfast Bowl, Toasted Coconut Chips, Vegan French Onion Dip, Tom Yum Soup, Butternut Squash Soup
+204,400.0,100.0,140.0,150.0,160.0, Vegan Tofu Benedict - 400 calories per portion | 1 portion | Contains soy | Origin, Energy Balls," Roasted Beetroot Dip with Pita Bread - 140 kcals per portion, 4 portions, no allergic warnings, origin", Cabbage Stir-Fry," Vegan Tofu Scramble - 160 calories per portion, 1 portion, may contain soy"
+205,350.0,120.0,100.0,150.0,450.0, Vegan Sweet Potato Hash Browns - 350 calories per portion | 1 portion | None | Origin, Vegan Energy Balls," Baked Tofu Nuggets - 100 kcals per portion, 4 portions, no allergic warnings, origin", Cabbage Stir-Fry," Indian Vegan Paneer Tikka Masala (450 calories/portion, 3 portions) - India
+"
+206,750.0,120.0,560.0,150.0,200.0, Vegan Breakfast Sweet Potato Hash, Roasted Chickpeas, Vegan Pancakes, Cabbage Stir-Fry," Butternut Squash Soup - 200 calories per portion, 4 portions, None, Various
+"
+207,600.0,120.0,400.0,150.0,150.0, Vegan Breakfast BLT, Kale Chips, Zucchini Fritters, Tom Yum Soup," Lentil Soup - 150 calories per portion, 4 portions, may contain soy and gluten"
+208,300.0,100.0,860.0,150.0,350.0, Vegan Mango Turmeric Smoothie Bowl - 300 calories per portion | 1 portion | None | Origin, Roasted Pumpkin Seeds, Vegan Biryani, Ratatouille, Quinoa and Black Bean Burgers
+209,300.0,100.0,920.0,150.0,350.0, Vegan Blueberry Muffins - 300 calories per portion | 1 portion | Contains gluten | Origin, Overnight Chia Pudding, Vegan Butter Chicken, Tom Yum Soup, Veggie Burger
+210,400.0,100.0,160.0,150.0,350.0, Vegan Breakfast Stuffed Sweet Potatoes - 400 calories per portion | 1 portion | None | Origin, Energy Balls, Vegan Mexican Street Corn, Cabbage Stir-Fry, Mexican Quinoa Bowl
+211,100.0,120.0,420.0,150.0,250.0, Vegan Breakfast Bagel, Vegan Energy Balls, Vegan Potato Salad, Tom Yum Soup, Tofu Stir-Fry
+212,650.0,120.0,880.0,150.0,250.0, Vegan Breakfast Zucchini Bread, Roasted Chickpeas, Jackfruit Tacos, Veggie Spring Rolls, Vegan Soba Noodle Salad
+213,250.0,80.0,170.0,150.0,400.0, Sweet Potato Toast - 250 calories per portion | 1 portion | None | Origin, Fruit Salad," Roasted Red Pepper Hummus with Pita Bread - 170 kcals per portion, 4 portions, no allergic warnings, origin", Cabbage Stir-Fry," Lentil Spinach Bolognese - 400 calories per portion, 4 portions, None, Italy
+"
+214,200.0,120.0,200.0,150.0,350.0, Vegan Breakfast Phyllo Cups, Roasted Brussels Sprouts," Vegan Baked Raspberry Oatmeal - 200 kcals per portion, 4 portions, no allergic warnings, origin", Veggie Spring Rolls, Vegan Bolognese
+215,350.0,100.0,720.0,150.0,300.0, Vegan Spinach and Mushroom Quiche - 350 calories per portion | 1 portion | Contains gluten | Origin, Chilled Gazpacho, Vegetable Samosas, Tom Yum Soup," Italian Vegan Minestrone Soup (300 calories/portion, 4 portions) - Italy
+"
+216,700.0,100.0,680.0,150.0,300.0, Vegan Breakfast Crepe Cake, Overnight Chia Pudding, Vegan Protein Bars, Cabbage Stir-Fry, Quinoa-Stuffed Bell Peppers
+217,750.0,120.0,120.0,150.0,300.0, Vegan Breakfast Sweet Potato Hash, Roasted Chickpeas," Black Bean Salsa with Tortilla Chips - 120 kcals per portion, 4 portions, no allergic warnings, origin", Ratatouille, Vegan Kimchi Pancakes
+218,400.0,100.0,160.0,150.0,320.0, Vegan Breakfast Tater Tots - 400 calories per portion | 1 portion | Contains gluten | Origin, Roasted Pumpkin Seeds," Sweet Potato and Black Bean Quesadillas - 160 kcals per portion, 4 portions, no allergic warnings, origin", Ratatouille, Moroccan Vegetable Tagine
+219,700.0,100.0,80.0,150.0,400.0, Vegan Breakfast Crepe Cake, Energy Balls, Vegan Peanut Butter Energy Bars, Tom Yum Soup, Sweet Potato and Black Bean Enchiladas
+220,550.0,100.0,240.0,150.0,320.0, Vegan Breakfast Pesto Pasta, Chilled Gazpacho, Vegan Roasted Cauliflower Bites, Lentil Soup, Mediterranean Pasta Salad
+221,250.0,100.0,150.0,150.0,350.0, Vegan Chocolate Banana Chia Pudding - 250 calories per portion | 2 portions | None | Origin, Roasted Edamame," Zucchini Fritters - 150 kcals per portion, 4 portions, no allergic warnings, origin", Ratatouille, Vegan Meatballs in Tomato Sauce
+222,300.0,120.0,460.0,150.0,300.0, Vegan Peanut Butter Banana Smoothie - 300 calories per portion | 1 portion | Contains nuts | Origin, Kale Chips, Veggie Tacos, Veggie Spring Rolls, Vegan General Tso's Tofu
+223,300.0,100.0,560.0,150.0,300.0, Vegan Pumpkin Spice Pancakes - 300 calories per portion | 1 portion | Contains gluten | Origin, Overnight Chia Pudding, Vegan Pancakes, Tom Yum Soup," Chinese Vegan Eggplant with Garlic Sauce (300 calories/portion, 3 portions) - China
+"
+224,400.0,80.0,100.0,150.0,200.0, Vegan Breakfast Spanakopita, Stuffed Dates," Roasted Garlic Hummus with Veggie Sticks - 100 kcals per portion, 4 portions, no allergic warnings, origin", Veggie Spring Rolls, Mediterranean Quinoa Bowl
+225,700.0,90.0,200.0,150.0,250.0, Vegan Scones, Stuffed Dates," Vegan Peanut Butter Banana Smoothie - 200 kcals per portion, 4 portions, allergic warning (peanuts), origin", Lentil Soup, Tofu Tikka Masala
+226,250.0,100.0,320.0,150.0,400.0, Vegan Breakfast Quesadilla, Energy Balls, Vegan Breaded Zucchini Sticks, Lentil Soup, Vegan Pad Thai
+227,300.0,120.0,200.0,150.0,250.0, Avocado Toast - 300 calories per portion | 1 portion | None | Origin, Roasted Chickpeas," Vegan Mango Smoothie Bowl - 200 kcals per portion, 4 portions, no allergic warnings, origin", Tom Yum Soup, Ratatouille-Stuffed Tomatoes
+228,350.0,80.0,880.0,150.0,250.0, Quinoa Porridge - 350 calories per portion | 1 portion | Contains nuts | Origin, Fruit Salad, Vegan Stuffed Dates with Nut Butter, Veggie Spring Rolls," Jackfruit Tacos - 250 calories per portion, 4 portions, None, Mexico
+
+"
+229,300.0,100.0,180.0,150.0,350.0, Vegan Apple Cinnamon Quinoa - 300 calories per portion | 1 portion | None | Origin, Overnight Chia Pudding," Sticky Coconut Rice Balls - 180 kcals per portion, 4 portions, no allergic warnings, origin", Veggie Spring Rolls," Japanese Vegan Hiyashi Chuka (350 calories/portion, 2 portions) - Japan
+"
+230,600.0,120.0,120.0,150.0,380.0, Vegan Waffles, Kale Chips," Vegan Cucumber Sushi Rolls - 120 kcals per portion, 4 portions, no allergic warnings, origin", Lentil Soup, Vegan Bibimbap
+231,350.0,100.0,130.0,150.0,400.0, Vegan Protein Pancakes - 350 calories per portion | 1 portion | Contains gluten | Origin, Roasted Edamame," Veggie Sushi Rolls with Quinoa - 130 kcals per portion, 4 portions, no allergic warnings, origin", Ratatouille," Vegan Mushroom Stroganoff - 400 calories per portion, 4 portions, None, Russia
+"
+232,550.0,80.0,760.0,150.0,400.0, Vegan Breakfast Pesto Pasta, Fruit Salad, Vegan Indian Samosa Chaat, Veggie Spring Rolls, Lentil Biryani
+233,700.0,120.0,920.0,150.0,350.0, Vegan Breakfast Dutch Baby Pancake, Roasted Brussels Sprouts, Vegan French Onion Dip, Tomato Basil Soup," Vegan Korean Bibimbap - 350 calories per portion, 4 portions, None, Korea
+"
+234,200.0,100.0,200.0,150.0,300.0, Vegan Oatmeal Raisin Cookies - 200 calories per portion | 2 portions | Contains gluten | Origin, Overnight Chia Pudding," Vegan Broccoli Pesto Pasta - 200 kcals per portion, 4 portions, no allergic warnings, origin", Ratatouille," Japanese Vegan Tempura (300 calories/portion, 4 portions) - Japan
+"
+235,600.0,90.0,90.0,150.0,400.0, Vegan Breakfast Biscotti, Quinoa Energy Bites," Baked Zucchini Chips - 90 kcals per portion, 4 portions, no allergic warnings, origin", Tomato Basil Soup, Thai Red Curry
+236,200.0,100.0,900.0,150.0,300.0, Vegan Breakfast Enchiladas, Chilled Gazpacho, Vegan Stuffed Mushrooms, Tom Yum Soup, Veggie Korma
+237,400.0,100.0,100.0,150.0,250.0, Vegan Breakfast Tofu Wrap - 400 calories per portion | 1 portion | Contains soy | Origin, Overnight Chia Pudding," Stuffed Mini Peppers with Vegan Cream Cheese - 100 kcals per portion, 4 portions, no allergic warnings, origin", Tom Yum Soup," Spicy Eggplant Curry - 250 calories per portion, 4 portions, None, India
+"
+238,450.0,100.0,120.0,150.0,200.0, Quinoa Breakfast Bowl, Roasted Edamame, Vegan Mediterranean Hummus Bowl, Veggie Spring Rolls," Vegan Buffalo Cauliflower Wings - 200 calories per portion, 4 portions, None, United States
+"
+239,250.0,80.0,880.0,150.0,300.0, Vegan Blueberry Muffin Overnight Oats - 250 calories per portion | 2 portions | Contains gluten | Origin, Stuffed Dates, Vegan Red Lentil Curry, Ratatouille, Vegan Lentil Tacos
+240,500.0,100.0,90.0,150.0,250.0, Vegan Breakfast Burrito, Energy Balls," Caprese Skewers with Vegan Mozzarella - 90 kcals per portion, 4 portions, no allergic warnings, origin", Veggie Spring Rolls, Thai Peanut Noodles
+241,300.0,120.0,500.0,150.0,250.0, Vegan Sweet Potato Pancakes - 300 calories per portion | 1 portion | Contains gluten | Origin, Kale Chips, Roasted Vegetable Skewers, Veggie Spring Rolls, Vegetable Curry
+242,350.0,100.0,560.0,150.0,200.0, Tofu Scramble, Toasted Coconut Chips, Vegan Pancakes, Tom Yum Soup," Italian Vegan Garlic Bread (200 calories/portion, 2 portions) - Italy
+"
+243,500.0,120.0,180.0,150.0,250.0, Vegan Breakfast Cookies, Hummus with Veggies," Blueberry Oatmeal Muffins - 180 kcals per portion, 4 portions, no allergic warnings, origin", Tom Yum Soup, Veggie Stir-Fry with Quinoa
+244,400.0,120.0,80.0,150.0,200.0, Vegan Breakfast Stuffed Sweet Potatoes - 400 calories per portion | 1 portion | None | Origin, Toasted Coconut Chips," Baked Kale Chips - 80 kcals per portion, 4 portions, no allergic warnings, origin", Ratatouille, Vegan Caprese Salad
+245,300.0,80.0,120.0,150.0,294.0, Vegan Coconut Chia Pancakes - 300 calories per portion | 1 portion | Contains gluten | Origin, Stuffed Dates," Roasted Cauliflower Bites - 120 kcals per portion, 4 portions, no allergic warnings, origin", Ratatouille, Vegan Lentil Sloppy Joes
+246,650.0,90.0,720.0,150.0,400.0, Vegan Breakfast Zucchini Bread, Quinoa Energy Bites, Vegan Black Bean Quesadillas, Tomato Basil Soup, Thai Green Curry
+247,250.0,90.0,920.0,150.0,150.0, Vegan Breakfast Shakshuka, Stuffed Dates, Vegan Thai Spring Rolls, Ratatouille, Cauliflower Fried Rice
+248,400.0,100.0,240.0,150.0,160.0, Vegan Breakfast Stuffed Sweet Potatoes - 400 calories per portion | 1 portion | None | Origin, Roasted Edamame, Vegan Roasted Cauliflower Bites, Cabbage Stir-Fry," Vegan Mediterranean Couscous Salad - 160 calories per portion, 3 portions, may contain gluten"
+249,400.0,100.0,140.0,150.0,400.0, Vegan Quinoa Breakfast Skillet - 400 calories per portion | 1 portion | None | Origin, Roasted Almonds," Maple Roasted Nuts - 140 kcals per portion, 4 portions, no allergic warnings, origin", Cabbage Stir-Fry," Japanese Vegan Yakisoba Noodles (400 calories/portion, 2 portions) - Japan
+
+"
+250,250.0,100.0,120.0,150.0,400.0, Vegan Beetroot and Apple Smoothie - 250 calories per portion | 2 portions | None | Origin, Energy Balls," Vegan Oatmeal Raisin Cookies - 120 kcals per portion, 4 portions, no allergic warnings, origin", Cabbage Stir-Fry," British Vegan Cottage Pie (400 calories/portion, 4 portions) - United Kingdom
+"
+251,350.0,120.0,120.0,150.0,400.0, Vegan Savory Breakfast Muffins - 350 calories per portion | 1 portion | Contains gluten | Origin, Vegan Energy Balls, Vegan Mediterranean Hummus Bowl, Lentil Soup," Vegan Pad Thai - 400 calories per portion, 2 portions, Soy and peanuts, Thailand
+"
+252,350.0,80.0,560.0,150.0,320.0, Vegan Mushroom and Spinach Omelette - 350 calories per portion | 1 portion | None | Origin, Stuffed Dates, Vegan Mediterranean Pasta Salad, Tomato Basil Soup, Moroccan Vegetable Tagine
+253,450.0,100.0,280.0,150.0,400.0, Vegan Breakfast Lassi, Chilled Gazpacho, Vegan Chocolate Mousse, Ratatouille," Vegan Mushroom Risotto - 400 calories per portion, 4 portions, None, Italy
+"
+254,150.0,120.0,320.0,150.0,350.0, Vegan Breakfast Pita Pockets, Hummus with Veggies, Vegan Breaded Zucchini Sticks, Veggie Spring Rolls," Japanese Vegan Teriyaki Tofu (350 calories/portion, 2 portions) - Japan
+"
+255,600.0,100.0,280.0,150.0,350.0, Vegan Waffles, Roasted Pumpkin Seeds, Vegan Chocolate Mousse, Cabbage Stir-Fry," Vegan Spinach and Mushroom Quesadilla - 350 calories per portion, 2 portions, may contain gluten"
+256,450.0,80.0,140.0,150.0,240.0, Vegan Breakfast Muffins, Stuffed Dates," Vegan Sweet Potato Wedges - 140 kcals per portion, 4 portions, no allergic warnings, origin", Ratatouille, Vegan Margherita Pizza
+257,350.0,100.0,320.0,150.0,350.0, Vegan Mushroom and Spinach Omelette - 350 calories per portion | 1 portion | None | Origin, Roasted Edamame, Vegan Mediterranean Flatbread Pizza, Veggie Spring Rolls," Spaghetti Aglio e Olio - 350 calories per portion, 4 portions, None, Italy
+"
+258,250.0,90.0,100.0,150.0,280.0, Vegan Oatmeal Raisin Overnight Oats - 250 calories per portion | 2 portions | Contains gluten | Origin, Quinoa Energy Bites," Homemade Hummus with Carrot Sticks - 100 kcals per portion, 4 portions, no allergic warnings, origin", Cabbage Stir-Fry, Vegan Stuffed Shells
+259,350.0,90.0,820.0,150.0,350.0, Vegan Mushroom and Spinach Omelette - 350 calories per portion | 1 portion | None | Origin, Stuffed Dates, Vegan Lasagna, Lentil Soup, Vegan Nachos
+260,400.0,100.0,240.0,150.0,280.0, Vegan Breakfast Quesadilla - 400 calories per portion | 1 portion | Contains gluten | Origin, Baked Apple Chips, Vegan Roasted Cauliflower Bites, Cabbage Stir-Fry, Vegan Stuffed Shells
+261,350.0,100.0,920.0,150.0,305.0, Vegan Spinach and Mushroom Quiche - 350 calories per portion | 1 portion | Contains gluten | Origin, Energy Balls, Vegan Thai Spring Rolls, Veggie Spring Rolls, Vegan Pho
+262,350.0,100.0,160.0,150.0,350.0, Vegan Sweet Potato Hash Browns - 350 calories per portion | 1 portion | None | Origin, Energy Balls," Vegan Pesto Pasta Salad - 160 kcals per portion, 4 portions, no allergic warnings, origin", Lentil Soup, Vegan Gyros
+263,150.0,90.0,680.0,150.0,250.0, Vegan Peanut Butter Banana Smoothie, Quinoa Energy Bites, Sweet and Sour Tofu, Lentil Soup," Red Lentil Dal - 250 calories per portion, 4 portions, None, India
+"
+264,450.0,120.0,160.0,150.0,350.0, Vegan Biscuits and Gravy - 450 calories per portion | 1 portion | Contains gluten | Origin, Hummus with Veggies, Vegan Spinach and Mushroom Puff Pastry, Cabbage Stir-Fry, Vegan Nachos
+265,500.0,100.0,200.0,150.0,400.0, Vegan Breakfast Burrito, Fresh Fruit Salad," Vegan Peanut Butter Banana Smoothie - 200 kcals per portion, 4 portions, allergic warning (peanuts), origin", Cabbage Stir-Fry," Vegan Tamales - 400 calories per portion, 4 portions, None, Mexico
+"
+266,150.0,100.0,130.0,150.0,250.0, Vegan Energy Balls - 150 calories per portion | 2 portions | Contains nuts | Origin, Toasted Coconut Chips," Veggie Sushi Rolls with Quinoa - 130 kcals per portion, 4 portions, no allergic warnings, origin", Tom Yum Soup," Mediterranean Quinoa Salad (250 calories/portion, 2 portions) - Greece
+"
+267,300.0,100.0,100.0,150.0,300.0, Vegan Pumpkin Muffins - 300 calories per portion | 2 portions | Contains gluten | Origin, Roasted Pumpkin Seeds," Roasted Cauliflower Hummus - 100 kcals per portion, 4 portions, no allergic warnings, origin", Tomato Basil Soup," Tahini Chickpea Salad - 300 calories per portion, 4 portions, None, Various
+"
+268,250.0,100.0,640.0,150.0,300.0, Vegan Matcha Overnight Oats - 250 calories per portion | 2 portions | None | Origin, Toasted Coconut Chips, Vegan Ratatouille, Lentil Soup, Lentil and Vegetable Stir-Fry
+269,550.0,120.0,700.0,150.0,450.0, Vegan Smoothie Bowl, Toasted Coconut Chips, Vegan Pad Thai, Ratatouille," Thai Vegan Massaman Curry (450 calories/portion, 2 portions) - Thailand
+"
+270,450.0,120.0,90.0,150.0,300.0, Vegan Breakfast Muffins, Toasted Coconut Chips," Guacamole with Tortilla Chips - 90 kcals per portion, 4 portions, allergic warning (avocado), origin", Tomato Basil Soup, Spicy Lentil and Potato Curry
+271,750.0,90.0,130.0,150.0,400.0, Vegan Breakfast Casserole, Quinoa Energy Bites," Sweet and Spicy Roasted Cashews - 130 kcals per portion, 4 portions, allergic warning (cashews), origin", Ratatouille, Spaghetti Aglio e Olio
+272,750.0,100.0,120.0,150.0,400.0, Vegan Breakfast Stuffed Mushrooms, Chilled Gazpacho," Vegan Pumpkin Spice Energy Balls - 120 kcals per portion, 4 portions, no allergic warnings, origin", Lentil Soup," British Vegan Lentil Shepherd's Pie (400 calories/portion, 3 portions) - United Kingdom
+"
+273,400.0,100.0,320.0,150.0,200.0, Vegan Breakfast Empanadas - 400 calories per portion | 1 portion | Contains gluten | Origin, Roasted Almonds, Vegan Raspberry Oat Bars, Lentil Soup," Vegan Buffalo Cauliflower Wings - 200 calories per portion, 4 portions, None, United States
+"
+274,700.0,100.0,320.0,150.0,350.0, Vegan Scones, Chilled Gazpacho, Quinoa Salad, Cabbage Stir-Fry, Vegan Nachos
+275,150.0,120.0,680.0,150.0,400.0, Vegan Pancakes, Roasted Brussels Sprouts, Vegan Protein Bars, Veggie Spring Rolls," Mexican Vegan Pozole (400 calories/portion, 3 portions) - Mexico
+
+"
+276,200.0,80.0,200.0,150.0,350.0, Vegan Breakfast Enchiladas, Stuffed Dates," Vegan Broccoli Pesto Pasta - 200 kcals per portion, 4 portions, no allergic warnings, origin", Ratatouille," Mexican Rice and Beans - 350 calories per portion, 4 portions, None, Mexico
+"
+277,250.0,100.0,160.0,150.0,356.0, Vegan Chocolate Chia Seed Pudding - 250 calories per portion | 2 portions | None | Origin, Energy Balls," Sweet Potato and Black Bean Quesadillas - 160 kcals per portion, 4 portions, no allergic warnings, origin", Tom Yum Soup, Vegan Miso Ramen
+278,250.0,100.0,110.0,150.0,450.0, Vegan Beetroot and Apple Smoothie - 250 calories per portion | 2 portions | None | Origin, Chilled Gazpacho," Oatmeal Raisin Energy Balls - 110 kcals per portion, 4 portions, no allergic warnings, origin", Tomato Basil Soup," British Vegan Cornish Pasty (450 calories/portion, 2 portions) - United Kingdom
+"
+279,250.0,100.0,160.0,150.0,293.0, Vegan Maple Pecan Overnight Oats - 250 calories per portion | 2 portions | Contains nuts | Origin, Roasted Pumpkin Seeds," Vegan Coconut Curry Rice Balls - 160 kcals per portion, 4 portions, no allergic warnings, origin", Lentil Soup, Vegan Spinach and Artichoke Dip
+280,250.0,120.0,840.0,150.0,180.0, Vegan Overnight Chia Pudding - 250 calories per portion | 2 portions | None | Origin, Roasted Chickpeas, Tempeh Stir-Fry, Cabbage Stir-Fry, Mediterranean Salad
+281,400.0,120.0,660.0,150.0,300.0, Vegan Breakfast Fried Rice, Roasted Brussels Sprouts, Vegan Pesto Pasta, Lentil Soup, Vegan Fajitas
+282,250.0,80.0,780.0,150.0,350.0, Vegan Raspberry Almond Scones - 250 calories per portion | 2 portions | Contains gluten and nuts | Origin, Fruit Salad, Lentil Sloppy Joes, Ratatouille," Lentil Mushroom Burgers - 350 calories per portion, 4 portions, Gluten, United States
+"
+283,200.0,120.0,520.0,150.0,180.0, Vegan Matcha Chia Pudding - 200 calories per portion | 1 portion | None | Origin, Hummus with Veggies, Vegan Mac and Cheese, Veggie Spring Rolls, Lentil Soup
+284,150.0,120.0,760.0,150.0,300.0, Vegan Pancakes, Vegan Energy Balls, Moroccan Couscous, Ratatouille," Chinese Sesame Noodles (300 calories/portion, 4 portions) - China
+"
+285,350.0,120.0,200.0,150.0,150.0, Vegan Bagel with Tofu Cream Cheese - 350 calories per portion | 1 portion | Contains gluten | Origin, Roasted Brussels Sprouts," Vegan Mango Smoothie Bowl - 200 kcals per portion, 4 portions, no allergic warnings, origin", Lentil Soup," Ratatouille - 150 calories per portion, 6 portions, None, France
+"
+286,550.0,100.0,160.0,150.0,220.0, Vegan Breakfast Pesto Pasta, Baked Apple Chips," Vegan Spinach and Artichoke Stuffed Breadsticks - 160 kcals per portion, 4 portions, no allergic warnings, origin", Cabbage Stir-Fry, Lentil Soup with Quinoa
+287,300.0,100.0,640.0,150.0,300.0, Vegan Sweet Potato Pancakes - 300 calories per portion | 1 portion | Contains gluten | Origin, Overnight Chia Pudding, Vegan Baked Falafel Bowl, Tom Yum Soup, Lentil Shepherd's Pie
+288,650.0,80.0,160.0,150.0,350.0, Vegan Breakfast Muesli, Fruit Salad," Vegan Samosas - 160 kcals per portion, 4 portions, no allergic warnings, origin", Veggie Spring Rolls, Vegan Meatballs in Tomato Sauce
+289,750.0,100.0,560.0,150.0,300.0, Vegan Quinoa Breakfast Cookies, Chilled Gazpacho, Vegan Mediterranean Pasta Salad, Cabbage Stir-Fry," Lentil Tacos - 300 calories per portion, 4 portions, None, Mexico
+"
+290,650.0,80.0,160.0,150.0,294.0, Vegan Breakfast Sandwich, Fruit Salad," Grilled Portobello Mushroom Burger - 160 kcals per portion, 4 portions, no allergic warnings, origin", Cabbage Stir-Fry, Vegan Lentil Sloppy Joes
+291,350.0,100.0,900.0,150.0,250.0, Vegan Apricot and Almond Granola Bars - 350 calories per portion | 1 portion | Contains nuts | Origin, Energy Balls, Vegan Stuffed Mushrooms, Ratatouille, Lentil Salad
+292,300.0,100.0,800.0,150.0,320.0, Vegan Almond Butter Toast - 300 calories per portion | 1 portion | Contains nuts | Origin, Overnight Chia Pudding, Vegan Teriyaki Tofu Bowl, Tomato Basil Soup, Mediterranean Vegan Wrap
+293,600.0,100.0,80.0,150.0,400.0, Vegan Waffles, Roasted Almonds," Edamame Beans - 80 kcals per portion, 4 portions, no allergic warnings, origin", Tom Yum Soup, Vegan Paella
+294,400.0,100.0,720.0,150.0,250.0, Vegan Quinoa Breakfast Skillet - 400 calories per portion | 1 portion | None | Origin, Baked Apple Chips, Vegan Black Bean Quesadillas, Lentil Soup, Stuffed Bell Peppers
+295,350.0,120.0,180.0,150.0,250.0, Vegan Breakfast Burrito Bowl, Roasted Brussels Sprouts," Roasted Chickpea Salad - 180 kcals per portion, 4 portions, no allergic warnings, origin", Tomato Basil Soup," Vegan Black Bean Soup - 250 calories per portion, 3 portions, may contain gluten"
+296,300.0,80.0,960.0,150.0,300.0, Vegan Granola - 300 calories per portion | 1 portion | Contains nuts | Origin, Fruit Salad, Vegan Buffalo Cauliflower Pizza, Tom Yum Soup," Vegan Spaghetti with Marinara Sauce - 300 calories per portion, 2 portions, may contain gluten"
+297,250.0,120.0,800.0,150.0,346.0, Vegan Breakfast Quesadilla, Vegan Energy Balls, Vegan Teriyaki Tofu Bowl, Tom Yum Soup, Sweet Potato and Lentil Curry
+298,50.0,100.0,720.0,150.0,350.0, Vegan Breakfast Stuffed Tomatoes, Baked Apple Chips, Vegan Lemon Bars, Lentil Soup, Thai Coconut Curry
+299,300.0,100.0,980.0,150.0,200.0, Vegan Apple Cinnamon Quinoa - 300 calories per portion | 1 portion | None | Origin, Roasted Almonds, Vegan Sushi Burrito, Tomato Basil Soup," Italian Vegan Garlic Bread (200 calories/portion, 2 portions) - Italy
+"
+300,300.0,100.0,480.0,150.0,150.0, Vegan Breakfast Tostadas, Roasted Edamame, Vegan Cucumber Sushi Rolls, Tom Yum Soup, Lentil Soup with Kale
+301,200.0,120.0,100.0,150.0,350.0, Overnight Chia Pudding, Toasted Coconut Chips," Roasted Cauliflower Hummus - 100 kcals per portion, 4 portions, no allergic warnings, origin", Tomato Basil Soup," Lentil Mushroom Burgers - 350 calories per portion, 4 portions, Gluten, United States
+"
+302,200.0,100.0,180.0,150.0,400.0, Vegan Oatmeal Raisin Cookies - 200 calories per portion | 2 portions | Contains gluten | Origin, Roasted Edamame," Vegan Black Bean Brownies - 180 kcals per portion, 4 portions, no allergic warnings, origin", Veggie Spring Rolls," Greek Vegan Moussaka (400 calories/portion, 2 portions) - Greece
+
+"
+303,500.0,100.0,180.0,150.0,250.0, Vegan Breakfast Cookies, Roasted Edamame," Vegan Pumpkin Muffins - 180 kcals per portion, 4 portions, no allergic warnings, origin", Veggie Spring Rolls," Lentil Spinach Curry - 250 calories per portion, 4 portions, None, India
+"
+304,150.0,100.0,840.0,150.0,250.0, Vegan Breakfast Fajitas, Roasted Almonds, Tempeh Stir-Fry, Ratatouille," Vegan Lentil and Vegetable Casserole - 250 calories per portion, 4 portions, may contain gluten"
+305,400.0,100.0,840.0,150.0,290.0, Vegan Breakfast Empanadas - 400 calories per portion | 1 portion | Contains gluten | Origin, Baked Apple Chips, Vegan Tomato Bruschetta, Tomato Basil Soup, Moroccan Lentil Salad
+306,300.0,100.0,130.0,150.0,350.0, Vegan Chocolate Banana Smoothie Bowl - 300 calories per portion | 1 portion | None | Origin, Baked Apple Chips," Baked Falafel with Tahini Sauce - 130 kcals per portion, 4 portions, allergic warning (sesame), origin", Ratatouille," Vegan Fajitas - 350 calories per portion, 4 portions, None, Mexico
+"
+307,400.0,90.0,300.0,150.0,450.0, Vegan Breakfast Quesadilla - 400 calories per portion | 1 portion | Contains gluten | Origin, Quinoa Energy Bites, Veggie Spring Rolls, Tomato Basil Soup," Indian Vegan Paneer Tikka Masala (450 calories/portion, 3 portions) - India
+"
+308,250.0,100.0,90.0,150.0,300.0, Vegan Pancakes - 250 calories per portion | 2 portions | Contains gluten | Origin, Roasted Almonds," Roasted Brussels Sprouts with Balsamic Glaze - 90 kcals per portion, 4 portions, no allergic warnings, origin", Cabbage Stir-Fry, Tofu and Vegetable Curry
+309,200.0,100.0,720.0,150.0,250.0, Overnight Oats - 200 calories per portion | 2 portions | Contains gluten | Origin, Baked Apple Chips, Vegan Lemon Bars, Tom Yum Soup, Ratatouille-Stuffed Tomatoes
+310,200.0,100.0,120.0,150.0,200.0, Vegan Breakfast Quinoa Salad, Roasted Almonds," Vegan Avocado Toast - 120 kcals per portion, 4 portions, allergic warning (avocado), origin", Lentil Soup, Vegan Bibimbap
+311,250.0,120.0,90.0,150.0,350.0, Vegan Breakfast Bruschetta, Toasted Coconut Chips," Rice Cakes with Almond Butter - 90 kcals per portion, 4 portions, allergic warning (almonds), origin", Tomato Basil Soup, Thai Coconut Curry
+312,350.0,120.0,920.0,150.0,250.0, Vegan Breakfast Burrito Bowl, Roasted Chickpeas, Vegan Butter Chicken, Lentil Soup, Lentil Salad
+313,200.0,90.0,880.0,150.0,450.0, Vegan Breakfast Quiche Lorraine, Quinoa Energy Bites, Jackfruit Tacos, Cabbage Stir-Fry, Vegan Pad Thai
+314,400.0,120.0,640.0,150.0,400.0, Vegan Breakfast Stuffed Peppers - 400 calories per portion | 1 portion | None | Origin, Vegan Energy Balls, Vegan Ratatouille, Cabbage Stir-Fry," Mexican Vegan Tostadas (400 calories/portion, 2 portions) - Mexico
+"
+315,550.0,120.0,160.0,150.0,250.0, Vegan Breakfast Chili, Kale Chips," Vegan Broccoli and Cheese Bites - 160 kcals per portion, 4 portions, no allergic warnings, origin", Tom Yum Soup," Veggie Dumplings - 250 calories per portion, 4 portions, Gluten, Various
+
+"
+316,250.0,100.0,540.0,150.0,350.0, Vegan Green Breakfast Bowl - 250 calories per portion | 2 portions | None | Origin, Energy Balls, Stuffed Bell Peppers, Tom Yum Soup," Lentil Walnut Veggie Burger - 350 calories per portion, 4 portions, Nuts, United States
+"
+317,400.0,80.0,150.0,150.0,400.0, Vegan Breakfast Sushi - 400 calories per portion | 1 portion | Contains soy | Origin, Fruit Salad," Cucumber and Avocado Sushi Rolls - 150 kcals per portion, 4 portions, allergic warning (avocado), origin", Veggie Spring Rolls," Mexican Vegan Fajitas (400 calories/portion, 2 portions) - Mexico
+"
+318,300.0,100.0,320.0,150.0,350.0, Vegan Breakfast Tostadas, Chilled Gazpacho, Vegan Breaded Zucchini Sticks, Cabbage Stir-Fry," Vegan Fajitas - 350 calories per portion, 4 portions, None, Mexico
+"
+319,400.0,100.0,240.0,150.0,350.0, Vegan Breakfast Hand Pies, Energy Balls, Vegan Stuffed Portobello Mushrooms, Tom Yum Soup, Moroccan Vegetable Tagine
+320,600.0,120.0,440.0,150.0,250.0, Vegan Breakfast Tofu Bowl, Kale Chips, Vegan Chili, Tom Yum Soup, Vegan Zucchini Bread
+321,400.0,100.0,760.0,150.0,300.0, Vegan Breakfast Empanadas - 400 calories per portion | 1 portion | Contains gluten | Origin, Chilled Gazpacho, Moroccan Couscous, Lentil Soup, Teriyaki Tofu Bowl
+322,400.0,100.0,100.0,150.0,400.0, Vegan Spinach and Mushroom Breakfast Wrap - 400 calories per portion | 1 portion | None | Origin, Roasted Edamame," Baked Tofu Nuggets - 100 kcals per portion, 4 portions, no allergic warnings, origin", Veggie Spring Rolls," Vegan Stuffed Cabbage Rolls - 400 calories per portion, 4 portions, None, Various
+"
+323,150.0,100.0,440.0,150.0,300.0, Vegan Egg Muffins - 150 calories per portion | 2 portions | None | Origin, Chilled Gazpacho, Vegan Roasted Red Pepper Dip, Cabbage Stir-Fry," Vegan Mushroom Stroganoff - 300 calories per portion, 2 portions, may contain gluten"
+324,150.0,120.0,200.0,150.0,250.0, Vegan Breakfast Fruit Pizza, Roasted Chickpeas, Vegan Thai Papaya Salad, Ratatouille, Cauliflower Buffalo Wings
+325,400.0,100.0,280.0,150.0,345.0, Vegan Breakfast Stuffed Mushrooms - 400 calories per portion | 1 portion | None | Origin, Fresh Fruit Salad, Vegan Lemon Poppy Seed Muffins, Ratatouille, Eggplant Parmesan
+326,600.0,100.0,160.0,150.0,250.0, Vegan Waffles, Overnight Chia Pudding, Roasted Chickpeas, Ratatouille, Lentil Loaf
+327,500.0,100.0,120.0,150.0,400.0, Vegan Breakfast Risotto, Toasted Coconut Chips," Vegan Coconut Lime Energy Balls - 120 kcals per portion, 4 portions, no allergic warnings, origin", Cabbage Stir-Fry," Vegan Mushroom Gyros - 400 calories per portion, 4 portions, None, Greece
+"
+328,450.0,120.0,440.0,150.0,320.0, Vegan Breakfast Muffuletta, Vegan Energy Balls, Vegan Gyoza, Lentil Soup, Chickpea Salad Sandwich
+329,550.0,120.0,620.0,150.0,300.0, Vegan Breakfast Pesto Pasta, Hummus with Veggies, Bean Burritos, Veggie Spring Rolls, Sweet Potato Curry
+330,450.0,120.0,140.0,150.0,390.0, Vegan Breakfast Lassi, Roasted Brussels Sprouts," Vegan Lemon Bars - 140 kcals per portion, 4 portions, no allergic warnings, origin", Tom Yum Soup, Vegan Jambalaya
+331,400.0,120.0,100.0,150.0,300.0, Vegan Breakfast Empanadas - 400 calories per portion | 1 portion | Contains gluten | Origin, Kale Chips," Roasted Garlic Hummus with Veggie Sticks - 100 kcals per portion, 4 portions, no allergic warnings, origin", Tomato Basil Soup, Lentil Meatballs in Marinara Sauce
+332,250.0,100.0,560.0,150.0,250.0, Vegan Breakfast Quesadilla, Overnight Chia Pudding, Vegan Mediterranean Pasta Salad, Ratatouille," Mediterranean Quinoa Salad (250 calories/portion, 2 portions) - Greece
+"
+333,400.0,100.0,580.0,150.0,400.0, Vegan Cinnamon Rolls, Chilled Gazpacho, Falafel with Tahini Sauce, Tom Yum Soup, Jackfruit BBQ Sandwich
+334,250.0,100.0,80.0,150.0,300.0, Vegan Oatmeal Raisin Overnight Oats - 250 calories per portion | 2 portions | Contains gluten | Origin, Overnight Chia Pudding," Baked Apple Chips - 80 kcals per portion, 4 portions, no allergic warnings, origin", Cabbage Stir-Fry, Vegan Soba Noodle Stir-Fry
+335,400.0,100.0,400.0,150.0,450.0, Vegan Breakfast Stuffed Peppers - 400 calories per portion | 1 portion | None | Origin, Chilled Gazpacho, Zucchini Fritters, Ratatouille, Vegan Bibimbap Bowl
+336,150.0,120.0,640.0,150.0,250.0, Vegan Breakfast Fruit Pizza, Roasted Brussels Sprouts, Vegan Tofu Scramble, Tomato Basil Soup," Thai Pineapple Fried Rice - 250 calories per portion, 4 portions, None, Thailand
+"
+337,450.0,100.0,140.0,150.0,300.0, Vegan Blueberry Muffins, Roasted Pumpkin Seeds," Roasted Beetroot Dip with Pita Bread - 140 kcals per portion, 4 portions, no allergic warnings, origin", Tomato Basil Soup, Vegan Soba Noodle Stir-Fry
+338,400.0,120.0,160.0,150.0,200.0, Vegan Breakfast Quiche - 400 calories per portion | 1 portion | Contains gluten | Origin, Hummus with Veggies," Vegan Bruschetta Pasta Salad - 160 kcals per portion, 4 portions, no allergic warnings, origin", Tom Yum Soup, Lentil Curry
+339,600.0,90.0,180.0,150.0,350.0, Vegan Breakfast BLT, Quinoa Energy Bites, Lentil Soup, Tomato Basil Soup," Vegan Chili - 350 calories per portion, 4 portions, None, United States
+"
+340,350.0,100.0,180.0,150.0,412.0, Vegan Breakfast Bars, Toasted Coconut Chips," Vegan Strawberry Shortcake - 180 kcals per portion, 4 portions, no allergic warnings, origin", Lentil Soup, Spaghetti Aglio e Olio
+341,70.0,80.0,560.0,150.0,450.0, Fruit Salad, Fruit Salad, Vegan Chickpea Salad Sandwich, Tom Yum Soup, Mushroom Risotto
+342,250.0,100.0,960.0,150.0,300.0, Vegan Breakfast Bruschetta - 250 calories per portion | 2 portions | Contains gluten | Origin, Energy Balls, Vegan Southwestern Black Bean Salad, Tom Yum Soup," Moroccan Lentil Soup (300 calories/portion, 4 portions) - Morocco
+"
+343,350.0,120.0,460.0,150.0,320.0, Vegan Breakfast Banana Bread, Kale Chips, Veggie Tacos, Tomato Basil Soup, Vegan Lentil Meatballs
+344,200.0,100.0,180.0,150.0,400.0, Vegan Breakfast Frittata, Toasted Coconut Chips," Blueberry Oatmeal Muffins - 180 kcals per portion, 4 portions, no allergic warnings, origin", Ratatouille, Vegan Tamales
+345,250.0,80.0,620.0,150.0,221.0, Vegan Coconut Yogurt with Fruit - 250 calories per portion | 1 portion | None | Origin, Fruit Salad, Bean Burritos, Ratatouille, Zucchini Noodles with Pesto
+346,400.0,100.0,140.0,150.0,450.0, Vegan Breakfast Stuffed Sweet Potatoes - 400 calories per portion | 1 portion | None | Origin, Toasted Coconut Chips," Mexican Street Corn Salad - 140 kcals per portion, 4 portions, no allergic warnings, origin", Lentil Soup, Vegetable Pad Thai
+347,300.0,100.0,600.0,150.0,350.0, Vegan Buckwheat Banana Pancakes - 300 calories per portion | 1 portion | Contains gluten | Origin, Roasted Edamame, Vegan Mushroom Risotto, Ratatouille," Vegan Korean Bibimbap - 350 calories per portion, 4 portions, None, Korea
+"
+348,300.0,120.0,70.0,150.0,350.0, Berry Quinoa Breakfast Bowl - 300 calories per portion | 1 portion | Contains nuts | Origin, Hummus with Veggies," Fruit Salad - 70 kcals per portion, 4 portions, no allergic warnings, origin", Tomato Basil Soup, Vegan Ramen
+349,350.0,90.0,560.0,150.0,400.0, Vegan Mushroom and Spinach Omelette - 350 calories per portion | 1 portion | None | Origin, Quinoa Energy Bites, Vegan Chickpea Salad Sandwich, Cabbage Stir-Fry," Tomato and Basil Pasta - 400 calories per portion, 3 portions, may contain gluten"
+350,400.0,100.0,160.0,150.0,400.0, Vegan Breakfast Tostadas - 400 calories per portion | 1 portion | Contains soy | Origin, Roasted Almonds," Grilled Portobello Mushroom Burger - 160 kcals per portion, 4 portions, no allergic warnings, origin", Ratatouille," Japanese Vegan Yakisoba Noodles (400 calories/portion, 2 portions) - Japan
+
+"
+351,250.0,100.0,720.0,150.0,350.0, Vegan Breakfast Oats and Berries, Roasted Almonds, Vegan Lemon Bars, Cabbage Stir-Fry, Vegan Nachos
+352,400.0,120.0,840.0,150.0,300.0, Vegan French Toast, Vegan Energy Balls, Vegan Tomato Bruschetta, Tom Yum Soup," Lentil Mushroom Meatballs - 300 calories per portion, 4 portions, None, Various
+"
+353,700.0,120.0,920.0,150.0,200.0, Vegan Scones, Toasted Coconut Chips, Vegan Thai Spring Rolls, Cabbage Stir-Fry, Spicy Black Bean Soup
+354,300.0,120.0,120.0,150.0,450.0, Vegan Breakfast Spring Rolls - 300 calories per portion | 1 portion | Contains soy | Origin, Kale Chips," Vegan Cucumber Sushi Rolls - 120 kcals per portion, 4 portions, no allergic warnings, origin", Veggie Spring Rolls," Thai Vegan Yellow Curry (450 calories/portion, 2 portions) - Thailand
+"
+355,250.0,80.0,90.0,150.0,256.0, Vegan Oatmeal Chocolate Chip Cookies - 250 calories per portion | 2 portions | Contains gluten | Origin, Fruit Salad," Roasted Brussels Sprouts with Balsamic Glaze - 90 kcals per portion, 4 portions, no allergic warnings, origin", Ratatouille, Vegan BLT Sandwich
+356,600.0,120.0,100.0,150.0,200.0, Vegan Breakfast BLT, Kale Chips," Baked Tofu Nuggets - 100 kcals per portion, 4 portions, no allergic warnings, origin", Tomato Basil Soup," Lentil Curry (200 calories/portion, 4 portions) - India
+"
+357,300.0,100.0,150.0,150.0,400.0, Vegan Pumpkin Muffins - 300 calories per portion | 2 portions | Contains gluten | Origin, Energy Balls," Vegan Zucchini Bread - 150 kcals per portion, 4 portions, no allergic warnings, origin", Veggie Spring Rolls, Vegan Tofu Katsu Curry
+358,100.0,100.0,280.0,150.0,160.0, Vegan Breakfast Falafel, Roasted Edamame, Vegan Chocolate Mousse, Tomato Basil Soup," Vegan Tofu Scramble - 160 calories per portion, 1 portion, may contain soy"
+359,350.0,80.0,180.0,150.0,350.0, Vegan Breakfast Banana Bread, Stuffed Dates," Vegan Nachos with Salsa - 180 kcals per portion, 4 portions, no allergic warnings, origin", Tomato Basil Soup, Thai Red Curry
+360,200.0,120.0,620.0,150.0,250.0, Vegan Chocolate Chia Pudding - 200 calories per portion | 2 portions | None | Origin, Vegan Energy Balls, Bean Burritos, Tom Yum Soup, Vegan Fettuccine Alfredo
+361,250.0,100.0,160.0,150.0,280.0, Vegan Berry Chia Smoothie - 250 calories per portion | 2 portions | None | Origin, Roasted Edamame, Roasted Chickpeas, Tom Yum Soup, Roasted Cauliflower Tacos
+362,400.0,120.0,420.0,150.0,245.0, Vegan French Toast, Kale Chips, Vegan Potato Salad, Lentil Soup, Tofu Stir Fry
+363,700.0,100.0,100.0,150.0,400.0, Vegan Breakfast Crepe Cake, Overnight Chia Pudding," Stuffed Mini Peppers with Vegan Cream Cheese - 100 kcals per portion, 4 portions, no allergic warnings, origin", Ratatouille, Vegan Lasagna
+364,400.0,120.0,90.0,150.0,300.0, Vegan Breakfast Tamales - 400 calories per portion | 1 portion | Contains gluten | Origin, Hummus with Veggies," Baked Zucchini Chips - 90 kcals per portion, 4 portions, no allergic warnings, origin", Ratatouille, Quinoa Salad
+365,150.0,100.0,120.0,150.0,250.0, Vegan Energy Balls - 150 calories per portion | 2 portions | Contains nuts | Origin, Roasted Edamame," Vegan Cucumber Sushi Rolls - 120 kcals per portion, 4 portions, no allergic warnings, origin", Tomato Basil Soup, Tofu Stir-Fry

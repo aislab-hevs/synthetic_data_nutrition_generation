@@ -1,0 +1,6 @@
+,userId,nutrition_goal,clinical_gender,age_range,life_style,weight,height,projected_daily_calories,cultural_factor,probabilities,allergy,BMI,next_BMI
+0,patriciaab24,gain_weight,F,70-79,Moderately active,37.32,144,2077.0,None,,fish,underweight,healthy
+1,alison8d5a,lose_weight,F,90-100,Moderately active,98.0,175,2061.0,vegan_observant,,None,obesity,obesity
+2,joseph8336,lose_weight,M,60-69,Moderately active,83.8,173,2385.0,None,,wheat,overweight,overweight
+3,alan936d,maintain_fit,M,20-29,Lightly active,51.11,156,1898.0,vegetarian_observant,,eggs,healthy,healthy
+4,megan8f50,maintain_fit,F,30-39,Sedentary,52.42,158,1525.0,None,,None,healthy,overweight

@@ -1,0 +1,6 @@
+,userId,nutrition_goal,clinical_gender,age_range,life_style,weight,height,projected_daily_calories,cultural_factor,probabilities,allergy,BMI,next_BMI
+0,victoriaa76e,lose_weight,F,70-79,Lightly active,69.02,157,1216.0,None,,eggs,overweight,healthy
+1,sonyab4d9,lose_weight,F,40-49,Very active,58.06,144,1848.0,kosher_observant,,cow's milk,overweight,overweight
+2,brittany8f9d,maintain_fit,F,60-69,Sedentary,51.76,157,1358.0,None,,peanut,healthy,underweight
+3,crystal9f57,maintain_fit,F,20-29,Very active,41.16,140,2192.0,vegetarian_observant,,wheat,healthy,underweight
+4,denise8a81,lose_weight,F,60-69,Moderately active,54.88,140,1411.0,vegan_observant,,peanut,overweight,overweight

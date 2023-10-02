@@ -1,0 +1,610 @@
+,breakfast_calories,morning snacks_calories,afternoon snacks_calories,lunch_calories,dinner_calories,breakfast,morning snacks,afternoon snacks,lunch,dinner
+1,350.0,100.0,200.0,20.0,119.0," Apple cinnamon muffins - 350 calories per portion, 2 portions, contains gluten, origin", Roasted Chickpeas, Quinoa-Stuffed Bell Peppers, Moroccan Mint Tea, Vegan Gazpacho
+2,250.0,90.0,160.0,20.0,350.0, Tropical Smoothie, Vegetarian Spring Rolls," Mini Pizza Bagels - 160 kcals per portion, 4 portions, contains gluten, dairy (USA)", Moroccan Mint Tea," Vegetable Paella - 350 calories per portion, 4 portions, None, Spain
+
+"
+3,100.0,90.0,280.0,20.0,383.0, Healthy Fruit Salad, Quinoa Energy Bites," Mujadara - 280 kcals per portion, 3 portions, contains gluten (Lebanon)", Moroccan Mint Tea, Falafel Burger
+4,380.0,100.0,50.0,20.0,350.0," Peanut butter and jelly overnight oats (380 calories per portion, 2 portions, contains nuts, American origin)
+", Roasted Beetroot Chips, Fruit Salad, Moroccan Mint Tea," Mexican Rice Casserole - 350 calories/portion, 4 portions, contains gluten (Mexico)
+"
+5,200.0,100.0,160.0,20.0,400.0, Avocado Toast, Edamame, Roasted Eggplant Dip, Moroccan Mint Tea," Sweet Potato and Black Bean Enchiladas - 400 calories/portion, 4 portions, contains gluten and beans (Mexico)
+
+"
+6,350.0,80.0,300.0,20.0,380.0," Moroccan msemen (folded pancakes) with honey (350kcals per portion, 2 portions, origin", Stuffed Dates, Chicken Shawarma Wraps, Moroccan Mint Tea," Vegetable Pot Pie - 380kcals per portion, 4 portions
+"
+7,160.0,100.0,180.0,20.0,260.0," Cream cheese stuffed strawberries (160 calories per portion, 2 portions, contains dairy, American origin)
+"," Mint Yogurt Dip with Vegetable Sticks - 100kcals per portion, 2 portions
+    Origin", Strawberry and banana smoothie, Moroccan Mint Tea, Mexican Stuffed Zucchini
+8,300.0,100.0,180.0,20.0,300.0, Vegan Pumpkin Spice Pancakes - 300 calories per portion | 1 portion | Contains gluten | Origin, Mini Frittatas - Approx, Granola Bars, Moroccan Mint Tea, Vegan Tofu Scramble
+9,400.0,100.0,230.0,20.0,400.0," Venezuelan arepas with cheese and avocado - 400 calories per portion, 1 portion, contains gluten and dairy, origin"," Dates Stuffed with Almond Butter - 100kcals per portion, 2 portions
+    Origin", Sweet Potato and Black Bean Quesadillas, Moroccan Mint Tea, Vegan Paella with Artichokes
+10,550.0,90.0,120.0,20.0,300.0, Breakfast Nachos, Turkish-style boiled eggs, No-Bake Energy Bars, Moroccan Mint Tea, Turkish Eggplant Casserole (Imam Bayildi)
+11,350.0,100.0,120.0,20.0,400.0, Baked Oatmeal, Toasted Coconut Chips, Pita Chips with Homemade Salsa, Moroccan Mint Tea," Thai Green Curry with Tofu (400 calories/portion, 2 portions) - Thailand
+"
+12,300.0,100.0,80.0,20.0,300.0," Almond butter and banana toast (300 calories per portion, 2 portions, contains nuts, American origin)
+", Rice Paper Spring Rolls," Edamame Beans - 80 kcals per portion, 4 portions, no allergic warnings, origin", Moroccan Mint Tea, Quinoa Stuffed Bell Peppers
+13,300.0,100.0,250.0,20.0,350.0, Vegan Oatmeal Raisin Cookies, Fruit salad, Quinoa Salad, Moroccan Mint Tea, Vegan Gyros
+14,400.0,100.0,80.0,20.0,450.0," Hungarian pogácsa (cheese biscuits) with tea (400kcals per portion, 2 portions, origin", Fruit salad, Stuffed Mushrooms, Moroccan Mint Tea," Spinach and Ricotta Stuffed Manicotti - 450 calories/portion, 4 portions, contains gluten and dairy (Italy)
+"
+15,400.0,100.0,120.0,20.0,400.0, Vegetarian Quiche Lorraine, Overnight Chia Pudding," Pico de Gallo with Tortilla Chips - 120 kcals per portion, 1 portion, contains gluten (Mexico)", Moroccan Mint Tea, Vegan Tamales
+16,250.0,80.0,200.0,20.0,400.0," Smoothie bowl - 250 calories per portion, 1 portion, may contain nuts, origin", Energy Balls," Vegan Mango Smoothie Bowl - 200 kcals per portion, 4 portions, no allergic warnings, origin", Moroccan Mint Tea, Veggie Sushi Bowl
+17,400.0,90.0,100.0,20.0,450.0, Aloo Paratha (Potato Stuffed Flatbread), Stuffed Dates, Baked Zucchini Fries, Moroccan Mint Tea, Tofu Tikka Masala
+18,350.0,100.0,700.0,20.0,400.0, Vegan Savory Breakfast Muffins - 350 calories per portion | 1 portion | Contains gluten | Origin, Tomato Basil Bruschetta, Vegan Pad Thai, Moroccan Mint Tea," Vegetarian stuffed bell peppers with quinoa and black beans (400 calories per portion, 4 portions, vegan-friendly, origin"
+19,200.0,80.0,280.0,20.0,300.0, Veggie Breakfast Couscous, Stuffed Dates, Veggie Pita Pockets, Moroccan Mint Tea, Ratatouille Stuffed Portobello Mushrooms
+20,200.0,90.0,180.0,20.0,250.0, Vegetarian Quiche, Fruit Salad, Guacamole with vegetable sticks, Moroccan Mint Tea," Greek Tabbouleh Salad - 250 calories/portion, 4 portions, contains gluten (Greece)
+
+"
+21,400.0,90.0,130.0,20.0,350.0, Vegan Breakfast Tostadas - 400 calories per portion | 1 portion | Contains soy | Origin, Fruit Salad, Mini Vegetable Quesadillas, Moroccan Mint Tea, Vegan Burritos
+22,300.0,80.0,250.0,20.0,200.0, Vegan Peanut Butter Banana Smoothie - 300 calories per portion | 1 portion | Contains nuts | Origin, Baked Apple Chips, Cheese and Spinach Triangles, Moroccan Mint Tea," Vegan Creamy Cauliflower Soup - 200 calories per portion, 4 portions, None, Various
+"
+23,250.0,80.0,120.0,20.0,350.0, Vegan Breakfast Oats and Berries, Stuffed Dates, Caprese Salad Skewers, Moroccan Mint Tea, Mexican Quinoa Bowl
+24,300.0,100.0,150.0,20.0,350.0, Apple Cinnamon Porridge, Cucumber Sandwiches, Edamame Salad, Moroccan Mint Tea," Vegetarian bibimbap - 350 calories per portion, 4 portions, contains gluten and soy (Korea)
+"
+25,300.0,100.0,90.0,20.0,400.0, Chocolate Chia Protein Pudding, Energy Balls, Zucchini Pizza Bites, Moroccan Mint Tea," General Tso's tofu with steamed rice (400 calories per portion, 3 portions, contains gluten and soy, origin"
+26,400.0,70.0,290.0,20.0,250.0," Indonesian nasi goreng (fried rice) with chicken and vegetables (400kcals per portion, 2 portions, origin", Fresh Fruit Salad," Baked Brie with Cranberry Sauce - 290 kcals per portion, 2 portions, contains dairy (France)", Moroccan Mint Tea, Stuffed Bell Peppers
+27,300.0,90.0,150.0,20.0,400.0, Vegan Protein Smoothie, Stuffed Dates," Mini Vegetable Quiches - 150 kcals per portion, 6 portions, contains dairy (France)", Moroccan Mint Tea, Vegetable Biryani
+28,350.0,100.0,100.0,20.0,340.0," French toast with maple syrup - 350 calories per portion, 2 portions, contains gluten and dairy, origin", Cucumber Sandwich, Cinnamon Sugar Apple Slices, Moroccan Mint Tea," Quinoa-Stuffed Mushrooms with Spinach and Feta - 340kcals per portion, 4 portions, contains dairy
+
+Please note that the portion sizes and calorie counts are approximate and can vary based on specific ingredients and preparation methods"
+29,550.0,100.0,240.0,20.0,250.0, Spanish Tortilla," Cinnamon Apple Chips - 100kcals per portion, 2 portions
+    Origin", Spinach and Artichoke Dip, Moroccan Mint Tea," Ratatouille - 250 calories per portion, 3 portions, may contain onions and garlic"
+30,300.0,100.0,180.0,20.0,350.0, Vegan Breakfast Bars - 300 calories per portion | 1 portion | Contains nuts | Origin, Edamame, Cheesy Garlic Bread, Moroccan Mint Tea," Chinese Egg Fried Rice - 350 calories/portion, 4 portions, contains eggs and gluten (China)
+"
+31,250.0,80.0,160.0,20.0,250.0, Ragi (Finger Millet) Pancakes, Fruit Salad, Baked apples with cinnamon and honey, Moroccan Mint Tea, Veggie Stir-Fry with Quinoa
+32,450.0,90.0,220.0,20.0,350.0, Nutella Stuffed French Toast, Vegetarian Spring Rolls, Stuffed Bell Peppers, Moroccan Mint Tea," Vegetable korma with basmati rice - 350 calories per portion, 4 portions, contains nuts (India)
+"
+33,350.0,100.0,300.0,20.0,400.0, Veggie Oatmeal Bowl, Som Tam (Papaya Salad), Chicken Fried Rice, Moroccan Mint Tea, Vegetable Biryani
+34,400.0,100.0,140.0,20.0,250.0," Quinoa porridge with coconut milk - 400 calories per portion, 2 portions, no allergic warnings, origin", Berry Chia Detox Water, Greek Yogurt with Apple and Cinnamon, Moroccan Mint Tea," Moroccan Lentil Salad - 250 calories/portion, 4 portions, contains nuts (Morocco)
+"
+35,300.0,80.0,200.0,20.0,250.0, Shakshuka with Spinach, Baked Apple Chips, Stuffed Bell Peppers, Moroccan Mint Tea, Vegan Stuffed Bell Peppers
+36,400.0,50.0,300.0,20.0,400.0, Vegan Breakfast Fried Rice, Baked Apple Chips - Approx, Sweet potato and black bean quesadillas, Moroccan Mint Tea," Greek Moussaka - 400kcals per portion, 4 portions, contains dairy (Greece)
+"
+37,350.0,100.0,200.0,20.0,350.0, Vegan Mushroom and Spinach Omelette - 350 calories per portion | 1 portion | None | Origin, Boiled chickpeas, Fruit and Yogurt Parfait, Moroccan Mint Tea," Vegetable paella – 350 calories per portion, 4 portions, vegan-friendly (origin"
+38,300.0,100.0,180.0,20.0,400.0, Quinoa Breakfast Bowl, Fresh Fruit Salad, Dates stuffed with almond butter, Moroccan Mint Tea, Cauliflower and Chickpea Curry
+39,350.0,100.0,100.0,20.0,300.0," German-style potato pancakes with applesauce - 350 calories per portion, 2 portions, contains gluten, origin", Roasted Pumpkin Seeds, Edamame, Moroccan Mint Tea, Lentil Bolognese
+40,450.0,100.0,240.0,20.0,300.0," Persian barbari bread with feta and cucumber (450kcals per portion, 2 portions, origin"," Mint Yogurt Dip with Vegetable Sticks - 100kcals per portion, 2 portions
+    Origin", Veggie Sushi Rolls, Moroccan Mint Tea," Quinoa and black bean stuffed peppers - 300 calories per portion, 4 portions, none
+"
+41,350.0,90.0,210.0,20.0,220.0, Spinach and Goat Cheese Omelette, Rice Paper Rolls," Savory Cheese Bites - 210 kcals per portion, 4 portions, contains gluten, dairy (Various)", Moroccan Mint Tea, Lentil and Kale Soup
+42,400.0,100.0,200.0,20.0,350.0," Huevos Rancheros with black beans (400 calories per portion, 2 portions, nut-free, Mexican origin)
+", Vegetable Crudité with Hummus, Chicken and Vegetable Spring Rolls, Moroccan Mint Tea," Mexican Rice - 350 calories per portion, 4 portions, no allergic warnings, Origin"
+43,350.0,100.0,120.0,20.0,250.0," Avocado toast with poached eggs (350kcals per portion, 2 portions, origin", Chilled Gazpacho Soup - Approx, Veggie Sushi Rolls, Moroccan Mint Tea," Veggie fajitas - 250 calories per portion, 4 portions, contains gluten (Mexico)
+"
+44,400.0,100.0,520.0,20.0,300.0," Spinach and mushroom breakfast burrito (400 calories per portion, 2 portions, nut-free, Mexican origin)
+", Energy Balls, Vegan Spinach and Artichoke Crostini, Moroccan Mint Tea, Caprese Stuffed Portobello Mushrooms
+45,300.0,100.0,200.0,20.0,180.0, Saffron Yogurt with Fruit, Roasted Edamame, Spinach and artichoke dip with tortilla chips, Moroccan Mint Tea," Lentil and vegetable soup - 180 calories per portion, 6 portions, none
+"
+46,500.0,80.0,120.0,20.0,350.0, Breakfast Burrito, Fruit Salad, Veggie Stuffed Mushrooms, Moroccan Mint Tea," Butternut squash and lentil curry - 350 calories per portion, 4 portions, contains nuts (India)
+"
+47,350.0,50.0,200.0,20.0,400.0," English crumpets with butter and jam (350kcals per portion, 2 portions, dairy allergies, origin"," Fruit Salad - 50kcals per portion, 2 portions
+   Origin", Cheese and Crackers, Moroccan Mint Tea," Black bean and vegetable enchiladas - 400 kcals per portion, 4 portions, vegetarian, contains gluten
+"
+48,350.0,100.0,520.0,20.0,300.0, Lemon Poppy Seed Pancakes, Baked Apple Chips, Vegan Thai Coconut Curry Soup, Moroccan Mint Tea, Quinoa Stuffed Bell Peppers
+49,400.0,100.0,200.0,20.0,380.0, Vegan Breakfast Spanakopita, Cucumber and Hummus Rolls," Vegan Pumpkin Pancakes - 200 kcals per portion, 4 portions, no allergic warnings, origin", Moroccan Mint Tea," Quinoa Salad with Avocado and Black Beans - 380kcals per portion, 4 portions, contains legumes
+"
+50,200.0,100.0,200.0,20.0,300.0, Papaya Boat with Lime," Dates Stuffed with Almond Butter - 100kcals per portion, 2 portions
+    Origin", Cilantro Lime Shrimp Skewers, Moroccan Mint Tea, Quinoa and Vegetable Stuffed Bell Peppers
+51,350.0,90.0,150.0,20.0,400.0, Chocolate Peanut Butter Overnight Oats, Turkish-style boiled eggs, Mini quinoa sliders, Moroccan Mint Tea," Sweet potato gnocchi with sage butter - 400 calories per portion, 4 portions, contains gluten and dairy (Italy)
+"
+52,300.0,100.0,80.0,20.0,450.0, Vegan Breakfast Parfait, Quinoa Energy Bites, Chocolate-dipped strawberries, Moroccan Mint Tea, Ginger Soy Glazed Salmon
+53,250.0,100.0,200.0,20.0,300.0," Pumpkin pie smoothie (250 calories per portion, 2 portions, nut-free, American origin)
+", Chilled Gazpacho Soup - Approx, Quinoa-Stuffed Bell Peppers, Moroccan Mint Tea," Greek Vegan Tzatziki with Pita Bread (300 calories/portion, 2 portions) - Greece
+"
+54,350.0,80.0,200.0,20.0,400.0, Banana Walnut Bread, Fresh Watermelon Slices - Approx, Mini Vegetable Spring Rolls, Moroccan Mint Tea," Chickpea and spinach stew with crusty bread (400 calories per portion, 3 portions, vegan-friendly, origin"
+55,300.0,100.0,150.0,20.0,210.0, Quinoa Breakfast Bowl, Roasted Beetroot Chips," Stuffed Mini Bell Peppers - 150 kcals per portion, 4 portions, gluten-free (Various)", Moroccan Mint Tea," Greek Stuffed Tomatoes - 210kcals per portion, 4 portions
+"
+56,300.0,100.0,160.0,20.0,400.0, Veggie Tofu Scramble Wrap - 300 calories per portion | 1 portion | None | Origin, Vegetable Crudité with Hummus, Avocado and Tomato Bruschetta, Moroccan Mint Tea, Vegetarian Enchiladas
+57,400.0,100.0,180.0,20.0,160.0, Vegan Cinnamon Rolls, Roasted Almonds, Cheese and tomato bruschetta, Moroccan Mint Tea," Vegan Mediterranean Couscous Salad - 160 calories per portion, 3 portions, may contain gluten"
+58,300.0,100.0,300.0,20.0,100.0, Banana Nut Smoothie Bowl, Greek Salad Skewers, Mini Veggie Pizzas, Moroccan Mint Tea," Japanese Miso Soup with Tofu (100 calories/portion, 4 portions) - Japan
+"
+59,50.0,100.0,800.0,20.0,280.0, Vegan Breakfast Smoothie, Toasted Coconut Chips, Vegan Spinach Artichoke Dip, Moroccan Mint Tea, Vegan Tikka Masala
+60,300.0,100.0,960.0,20.0,270.0, Sweet Potato Hash Browns," Dates Stuffed with Almond Butter - 100kcals per portion, 2 portions
+    Origin", Vegan Buffalo Cauliflower Pizza, Moroccan Mint Tea," Spinach and Feta Puff Pastry Bites - 270kcals per portion, 4 portions, contains dairy
+"
+61,300.0,80.0,140.0,20.0,300.0, Chia Seed Pudding Parfait," Carrot Sticks with Hummus - 80kcals per portion, 2 portions
+   Origin", Greek Yogurt Bark, Moroccan Mint Tea, Moroccan Vegetable Tagine
+62,250.0,80.0,150.0,20.0,180.0, Tropical Green Smoothie, Baked Apple Chips, Peanut Butter Banana Roll-Ups, Moroccan Mint Tea," Lentil and vegetable soup - 180 calories per portion, 6 portions, none
+"
+63,300.0,70.0,160.0,20.0,250.0, Tofu Scramble, Fresh Fruit Salad," Rice Cakes with Avocado - 160 kcals per portion, 3 portions, gluten-free (Various)", Moroccan Mint Tea," Roasted Cauliflower Tacos - 250 calories per portion, 4 portions, None, Mexico
+"
+64,550.0,100.0,180.0,20.0,350.0," Eggs Benedict - 550 calories per portion, 2 portions, contains gluten and dairy, origin", Roasted Beetroot Chips, Greek Stuffed Grape Leaves (Dolmas), Moroccan Mint Tea," Greek Spinach Pie - 350 calories/portion, 4 portions, contains gluten and dairy (Greece)
+"
+65,500.0,100.0,120.0,20.0,250.0, Vegan Breakfast Croque Madame, Baked Zucchini Chips - Approx, Fruit Salad, Moroccan Mint Tea, Spinach and Goat Cheese Stuffed Portobello Mushrooms
+66,400.0,90.0,160.0,20.0,400.0, Shakshuka with Halloumi Cheese, Turkish-style boiled eggs, Sliced Apples with Peanut Butter, Moroccan Mint Tea, Vegan Shawarma
+67,500.0,70.0,150.0,20.0,350.0," Pancake cereal - 500 calories per portion, 2 portions, contains gluten and dairy, origin", Fresh Fruit Salad, Mini crustless quiche with spinach and feta, Moroccan Mint Tea," Vegetable paella – 350 calories per portion, 4 portions, vegan-friendly (origin"
+68,350.0,100.0,160.0,20.0,320.0, Vegan Pear and Walnut Oatmeal - 350 calories per portion | 1 portion | Contains nuts | Origin, Boiled chickpeas," Baked Falafel Bites - 160 kcals per portion, 5 portions, contains gluten (Middle East)", Moroccan Mint Tea," Vegan lasagna with cashew cheese – 320 calories per portion, 4 portions, vegan-friendly (origin"
+69,350.0,100.0,80.0,20.0,350.0," Pita bread with hummus and vegetables - 350 calories per portion, 2 portions, contains gluten, origin", Cucumber Rolls with Cream Cheese," Edamame Beans - 80 kcals per portion, 4 portions, no allergic warnings, origin", Moroccan Mint Tea," Greek Stuffed Peppers with Rice and Feta - 350kcals per portion, 4 portions, contains dairy
+"
+70,550.0,100.0,200.0,20.0,200.0, Sausage Gravy and Biscuits, Toasted Coconut Chips, Banana Bread, Moroccan Mint Tea," Chinese Vegan Hot and Sour Soup (200 calories/portion, 4 portions) - China
+
+"
+71,300.0,80.0,260.0,20.0,400.0, Greek Yogurt with Honey and Pistachios, Fruit Salad, Black Bean Nachos, Moroccan Mint Tea," Veggie burger with sweet potato fries – 400 calories per portion, 4 portions, vegetarian-friendly
+"
+72,150.0,80.0,200.0,20.0,300.0, Vegan Breakfast Pita Pockets, Apple with Cinnamon, Stuffed grape leaves with rice and herbs, Moroccan Mint Tea," Cauliflower Tikka Masala - 300 calories per portion, 4 portions, None, India
+
+"
+73,250.0,100.0,100.0,20.0,400.0, Vegan Cinnamon Apple Oatmeal - 250 calories per portion | 2 portions | None | Origin, Caprese Skewers," Stuffed Mini Peppers with Vegan Cream Cheese - 100 kcals per portion, 4 portions, no allergic warnings, origin", Moroccan Mint Tea," Vegetarian stuffed zucchini boats with quinoa and cheese (400 calories per portion, 3 portions, contains dairy, origin"
+74,350.0,100.0,100.0,20.0,320.0," Mediterranean-style omelette with tomatoes and feta (350 calories per portion, 2 portions, contains dairy, Greek origin)
+", Boiled chickpeas," Baked Tofu Nuggets - 100 kcals per portion, 4 portions, no allergic warnings, origin", Moroccan Mint Tea, Thai Red Curry with Vegetables
+75,250.0,80.0,180.0,20.0,400.0, Vegan Berry Parfait - 250 calories per portion | 2 portions | Contains nuts | Origin, Fruit Salad, Smashed avocado and tomato toast, Moroccan Mint Tea, Beef and Broccoli Stir Fry
+76,250.0,100.0,220.0,20.0,260.0, Banana Bread, Berry Chia Detox Water," Baba Ghanoush Stuffed Pita Pockets - 220 kcals per portion, 3 portions, contains gluten (Middle East)", Moroccan Mint Tea," Greek Style Lemon Potatoes - 260kcals per portion, 4 portions
+"
+77,400.0,100.0,280.0,20.0,350.0, Vegan Breakfast Empanadas - 400 calories per portion | 1 portion | Contains gluten | Origin, Rice Paper Spring Rolls, Veggie Pita Pockets, Moroccan Mint Tea, Vegan Paella
+78,400.0,100.0,180.0,20.0,200.0, Veggie Sausage Breakfast Sandwich, Boiled chickpeas, Caprese Bruschetta, Moroccan Mint Tea," Italian Caprese Salad (200 calories/portion, 2 portions) - Italy
+"
+79,700.0,100.0,300.0,20.0,350.0, Vegan Breakfast Crepe Cake, Chilled Gazpacho Soup - Approx, Chicken Satay with Peanut Sauce, Moroccan Mint Tea," Eggplant Parmesan - 350 calories per portion, 4 portions, contains gluten and dairy (Italy)
+"
+80,650.0,100.0,180.0,20.0,400.0, Vegan Breakfast Kimbap, Energy Balls, Mini mushroom and spinach quiches, Moroccan Mint Tea," Sweet Potato and Black Bean Enchiladas - 400 calories/portion, 4 portions, contains gluten and beans (Mexico)
+
+"
+81,320.0,100.0,300.0,20.0,350.0," Zucchini and goat cheese frittata (320 calories per portion, 2 portions, contains dairy, Italian origin)
+", Fresh Fruit Salad, Cheese and fruit platter, Moroccan Mint Tea, Mexican Quinoa Stuffed Bell Peppers
+82,300.0,100.0,900.0,20.0,450.0, Vegetable Upma, Energy Balls - Approx, Vegan Stuffed Mushrooms, Moroccan Mint Tea," Thai Vegan Pineapple Curry (450 calories/portion, 2 portions) - Thailand
+"
+83,300.0,100.0,140.0,20.0,450.0," Brazilian pão de queijo (cheese bread) with coffee (300kcals per portion, 2 portions, dairy allergies, origin", Carrot Sticks with Ranch Dip, Mozzarella sticks served with marinara sauce, Moroccan Mint Tea," Lemon herb grilled salmon with quinoa and roasted vegetables – 450 calories per portion, 2 portions, contains fish
+"
+84,350.0,100.0,90.0,20.0,180.0, Egg Stuffed Peppers, Fruit Salad," Miso Soup - 90 kcals per portion, 4 portions, contains soy (Japan)", Moroccan Mint Tea," Ratatouille - 180kcals per portion, 4 portions, vegan (France)
+"
+85,450.0,100.0,160.0,20.0,450.0, Vegan Breakfast Enchiladas - 450 calories per portion | 1 portion | Contains gluten | Origin," Cinnamon Apple Chips - 100kcals per portion, 2 portions
+    Origin", Mini Quiches, Moroccan Mint Tea, Spinach and Feta Stuffed Chicken Breast
+86,250.0,80.0,180.0,20.0,356.0, Vegan Breakfast Sushi Rolls, Apple with Cinnamon, Tabbouleh, Moroccan Mint Tea, Vegan Miso Ramen
+87,400.0,90.0,120.0,20.0,400.0," Breakfast pizza with eggs, bacon, and cheese (400 calories per portion, 2 portions, contains dairy, American origin)
+", Vegetarian Spring Rolls, Greek Yogurt with Berries, Moroccan Mint Tea, Vegan Kimchi Fried Rice
+88,300.0,100.0,180.0,20.0,280.0, Vegan Breakfast Potato Hash - 300 calories per portion | 1 portion | None | Origin, Baked Zucchini Chips - Approx, Caprese Bruschetta, Moroccan Mint Tea, Vegan Stuffed Shells
+89,380.0,70.0,170.0,20.0,400.0," Israeli-style salad with scrambled eggs (380 calories per portion, 2 portions, nut-free, Israeli origin)
+", Kale chips, Mushroom Bruschetta, Moroccan Mint Tea," Veggie Pad Thai - 400 calories/portion, 4 portions, Origin"
+90,650.0,100.0,60.0,20.0,290.0, Vegan Breakfast Kimbap, Toasted Coconut Chips," Sliced Apples with Cinnamon - 60 kcals per portion, 4 portions, no allergic warnings, origin", Moroccan Mint Tea, Vegan Lentil Tacos
+91,50.0,80.0,120.0,20.0,380.0, Vegan Breakfast Stuffed Tomatoes," Carrot Sticks with Hummus - 80kcals per portion, 2 portions
+   Origin", Vegetable sushi rolls, Moroccan Mint Tea," Vegan stuffed bell peppers with rice and beans – 380 calories per portion, 4 portions, vegan-friendly
+"
+92,300.0,100.0,290.0,20.0,410.0," Blueberry almond smoothie (300 calories per portion, 2 portions, contains nuts, American origin)
+", Roasted Chickpeas," Antipasto Skewers - 290 kcals per portion, 3 portions, contains dairy (Italy)", Moroccan Mint Tea, Vegan Buddha Bowl
+93,300.0,90.0,80.0,20.0,300.0, Vegan Almond Butter Toast - 300 calories per portion | 1 portion | Contains nuts | Origin, Vegetarian Spring Rolls, Fresh Fruit Salad, Moroccan Mint Tea, Vegetable Curry
+94,150.0,100.0,80.0,20.0,350.0, Chia Pudding - 150 calories per portion | 1 portion | None | Origin, Guacamole Stuffed Cherry Tomatoes, Coconut macaroons, Moroccan Mint Tea," Spinach and Ricotta Stuffed Shells - 350 calories per portion, 4 portions, contains gluten (pasta), Origin"
+95,350.0,100.0,180.0,20.0,250.0," Baked beans on toast (350kcals per portion, 2 portions, origin", Baked Zucchini Chips - Approx, Mini Crab Cakes, Moroccan Mint Tea, Portobello Mushroom Steaks
+96,400.0,80.0,300.0,20.0,400.0, Veggie Sausage Breakfast Sandwich, Energy Balls, Caprese stuffed avocado, Moroccan Mint Tea, Beef and Broccoli Stir Fry
+97,400.0,100.0,100.0,20.0,320.0," Scrambled tofu with turmeric and veggies (400 calories per portion, 2 portions, nut-free, American origin)
+", Energy Balls, Cinnamon Sugar Apple Slices, Moroccan Mint Tea," Spinach and Mushroom Frittata - 320kcals per portion, 4 portions, contains dairy
+"
+98,300.0,70.0,150.0,20.0,230.0, Vegan Coconut Chia Pancakes - 300 calories per portion | 1 portion | Contains gluten | Origin, Fresh Fruit Salad, Baked Buffalo Cauliflower Bites, Moroccan Mint Tea," Quinoa-Stuffed Bell Peppers - 230kcals per portion, 4 portions, gluten-free
+"
+99,250.0,90.0,250.0,20.0,250.0," Coconut chia pudding with mango (250kcals per portion, 2 portions)
+", Quinoa Energy Bites, Mini whole wheat pita pizza, Moroccan Mint Tea, Moroccan Chickpea Stew
+100,250.0,100.0,120.0,20.0,250.0, Egg and Cheese Breakfast Taco, Fruit Salad, Ricotta Stuffed Cherry Tomatoes, Moroccan Mint Tea, Portobello Mushroom Burger
+101,500.0,100.0,150.0,20.0,350.0, Cheesy Egg and Bacon Casserole," Mint Yogurt Dip with Vegetable Sticks - 100kcals per portion, 2 portions
+    Origin", Caprese Skewers, Moroccan Mint Tea," Lentil Coconut Curry - 350 calories per portion, 4 portions, None, India
+"
+102,350.0,100.0,150.0,20.0,350.0," Indian masala dosa with chutney and sambar (350kcals per portion, 2 portions, origin", Mini Frittatas - Approx, Greek-Style Feta and Olive Dip, Moroccan Mint Tea," Vegetable curry with basmati rice - 350 calories per portion, 4 portions, contains nuts (India)
+"
+103,450.0,90.0,240.0,20.0,340.0," Jamaican ackee and saltfish with Johnny cakes - 450 calories per portion, 2 portions, contains gluten, origin", Quinoa Energy Bites, Greek Stuffed Grape Leaves, Moroccan Mint Tea," Quinoa-Stuffed Mushrooms with Spinach and Feta - 340kcals per portion, 4 portions, contains dairy
+
+Please note that the portion sizes and calorie counts are approximate and can vary based on specific ingredients and preparation methods"
+104,400.0,80.0,200.0,20.0,350.0, Vegan Quinoa Breakfast Skillet - 400 calories per portion | 1 portion | None | Origin, Baked Apple Chips, Stuffed tomatoes with couscous and vegetables, Moroccan Mint Tea, Butternut Squash Risotto
+105,400.0,90.0,250.0,20.0,450.0," Polish scrambled eggs with kielbasa and sauerkraut (400kcals per portion, 2 portions, pork allergies, origin", Fruit Salad, Baked Samosas, Moroccan Mint Tea," Chicken Enchiladas - 450 calories per portion, 4 portions, contains gluten (tortillas), Origin"
+106,350.0,100.0,220.0,20.0,400.0, Vegan Bagel with Tofu Cream Cheese - 350 calories per portion | 1 portion | Contains gluten | Origin, Cucumber Sandwiches, Caprese Bruschetta, Moroccan Mint Tea, Stuffed Mushrooms
+107,320.0,100.0,260.0,20.0,300.0," Caramelized onion and goat cheese tart (320 calories per portion, 2 portions, contains dairy, French origin)
+"," Dates Stuffed with Almond Butter - 100kcals per portion, 2 portions
+    Origin", Greek Stuffed Mushrooms, Moroccan Mint Tea," Lentil Mushroom Meatballs - 300 calories per portion, 4 portions, None, Various
+"
+108,500.0,80.0,220.0,20.0,250.0," Eggs Benedict with ham and hollandaise sauce (500kcals per portion, 2 portions)
+", Hard-Boiled Eggs, Vegan Banana Pancakes, Moroccan Mint Tea, Tofu Stir-Fry
+109,350.0,100.0,160.0,20.0,400.0, Zucchini and Parmesan Muffins, Rice Cake with Hummus and Cucumber, Quinoa Stuffed Tomatoes, Moroccan Mint Tea, Vegan Enchiladas
+110,200.0,100.0,200.0,20.0,250.0, Vegan Breakfast Cookies - 200 calories per portion | 2 portions | Contains gluten | Origin, Roasted Almonds, Caprese stuffed avocados, Moroccan Mint Tea, Mushroom Risotto
+111,300.0,80.0,200.0,20.0,250.0, Chocolate Chia Protein Pudding, Hard-Boiled Eggs, Tomato and Avocado Bruschetta, Moroccan Mint Tea, Vegan Sushi Bowl
+112,700.0,100.0,180.0,20.0,450.0, Vegan Breakfast Crepe Cake, Baked Apple Chips, Shrimp Summer Rolls, Moroccan Mint Tea," Greek Moussaka - 450 calories per portion, 6 portions, contains dairy (cheese), Origin"
+113,450.0,100.0,180.0,20.0,350.0," Egyptian hawawshi (meat-stuffed pita) with ground beef and spices (450kcals per portion, 2 portions, origin", Cucumber Rolls with Cream Cheese, Granola Bars, Moroccan Mint Tea," Veggie stir-fry with tofu and brown rice - 350 kcals per portion, 4 portions, vegetarian, contains gluten, soy
+"
+114,300.0,100.0,120.0,20.0,250.0," Zucchini and carrot muffins (300kcals per portion, 2 portions)
+", Tomato Basil Bruschetta, Greek Yogurt Dip with Veggies, Moroccan Mint Tea," Veggie Noodle Stir Fry - 250 calories/portion, 4 portions, Origin"
+115,400.0,90.0,150.0,20.0,400.0," Apple cinnamon baked oatmeal (400kcals per portion, 2 portions)
+", Vegetarian Spring Rolls, Roasted Chickpeas, Moroccan Mint Tea, Thai Pineapple Fried Rice
+116,250.0,80.0,220.0,20.0,400.0, Vegan Breakfast Sushi, Fruit Salad, Mango Salsa with Tortilla Chips, Moroccan Mint Tea, Vegetable Curry with Roti
+117,350.0,70.0,180.0,20.0,350.0," Veggie fajita scramble with tofu (350 calories per portion, 2 portions, nut-free, Mexican origin)
+", Kale chips," Vegan Apple Cinnamon Granola Bars - 180 kcals per portion, 4 portions, no allergic warnings, origin", Moroccan Mint Tea," Mexican Street Corn Pasta Salad - 350 calories/portion, 4 portions, contains gluten (Mexico)
+"
+118,450.0,70.0,560.0,20.0,250.0, Vegan Breakfast Pho, Kale chips, Vegan Pancakes, Moroccan Mint Tea," Vegan Korean Bibimbap - 250 calories per portion, 2 portions, may contain soy"
+119,350.0,100.0,120.0,20.0,300.0, Spinach and Goat Cheese Omelette, Watermelon and feta skewers, Basil pesto pasta salad, Moroccan Mint Tea," Vegan Teriyaki Jackfruit - 300 calories per portion, 4 portions, None, Various
+"
+120,200.0,100.0,100.0,20.0,400.0, Banana Pancakes, Fruit salad, Tuna Salad Stuffed Tomatoes, Moroccan Mint Tea," Mediterranean grilled vegetables with feta cheese and orzo (400 calories per portion, 3 portions, contains gluten and dairy, origin"
+121,380.0,80.0,320.0,20.0,300.0," Ricotta and berry-stuffed French toast (380 calories per portion, 2 portions, contains dairy, American origin)
+", Fresh Watermelon Slices - Approx, Spicy Peanut Noodles, Moroccan Mint Tea," Lentil Bolognese - 300 calories/portion, 4 portions, Origin"
+122,320.0,100.0,200.0,20.0,350.0," Ricotta and berry-stuffed crepes (320 calories per portion, 2 portions, contains dairy, French origin)
+", Guacamole Stuffed Cherry Tomatoes, Nachos with Salsa and Cheese, Moroccan Mint Tea," Mexican Rice - 350 calories per portion, 4 portions, no allergic warnings, Origin"
+123,550.0,100.0,180.0,20.0,300.0, Breakfast Pizza, Toasted Coconut Chips," Roasted Chickpea Salad - 180 kcals per portion, 4 portions, no allergic warnings, origin", Moroccan Mint Tea," Greek-style roasted vegetables with feta – 300 calories per portion, 4 portions, contains dairy (origin"
+124,50.0,100.0,540.0,20.0,250.0, Vegan Breakfast Sushi Burrito, Greek Salad Skewers, Stuffed Bell Peppers, Moroccan Mint Tea, Vegan Soba Noodle Salad
+125,250.0,100.0,120.0,20.0,450.0," Peach and almond smoothie - 250 calories per portion, 1 portion, may contain nuts, origin", Caprese Skewers, Mediterranean Salad, Moroccan Mint Tea," Roasted Vegetable and Goat Cheese Tart - 450 calories/portion, 4 portions, contains gluten and dairy (Various)
+"
+126,250.0,80.0,200.0,20.0,400.0, Sweet Potato Toast - 250 calories per portion | 1 portion | None | Origin, Hard-Boiled Eggs, Spinach and artichoke dip with tortilla chips, Moroccan Mint Tea," Mushroom Risotto - 400 calories/portion, 4 portions, Origin"
+127,350.0,100.0,150.0,20.0,399.0," Ethiopian injera (sourdough flatbread) with lentil stew (350kcals per portion, 2 portions, origin", Boiled chickpeas, Greek Tzatziki Dip with Pita Bread, Moroccan Mint Tea, Sweet Potato and Black Bean Chili
+128,350.0,100.0,160.0,20.0,300.0," Turkish borek with feta and spinach (350kcals per portion, 2 portions, origin", Roasted Chickpeas, Vegan Spinach and Mushroom Puff Pastry, Moroccan Mint Tea," Vegan Teriyaki Jackfruit - 300 calories per portion, 4 portions, None, Various
+"
+129,300.0,100.0,840.0,20.0,350.0, Aloo Paratha, Fruit Smoothie Popsicles - Approx, Vegan Almond Joy Energy Balls, Moroccan Mint Tea, Lemon Garlic Butter Shrimp
+130,400.0,100.0,180.0,20.0,450.0, Nutella Banana Croissant," Dates Stuffed with Almond Butter - 100kcals per portion, 2 portions
+    Origin", Vegetable sushi rolls, Moroccan Mint Tea, Thai Green Curry with Chicken
+131,320.0,100.0,240.0,20.0,450.0," Vegetable and cheese strata (320 calories per portion, 2 portions, contains dairy, American origin)
+", Corn on the Cob, Chickpea and Vegetable Curry, Moroccan Mint Tea," Vegetable Stroganoff - 450 calories/portion, 4 portions, contains gluten and dairy (Russia)
+"
+132,250.0,100.0,130.0,20.0,400.0, Vegan Chocolate Banana Smoothie, Roasted Pumpkin Seeds," Stuffed Mini Portobello Mushrooms - 130 kcals per portion, 4 portions, no allergic warnings, origin", Moroccan Mint Tea," Beef and Mushroom Stroganoff - 400 calories per portion, 4 portions, contains gluten (flour), Origin"
+133,400.0,100.0,250.0,20.0,450.0, Spinach and Feta Quiche, Overnight Chia Pudding, Mini Spinach and Ricotta Calzones, Moroccan Mint Tea," Mushroom Risotto - 450 calories/portion, 4 portions, contains garlic and dairy (Italy)
+"
+134,250.0,100.0,120.0,20.0,350.0," Chia seed pudding with coconut milk (250 calories per portion, 2 portions, nut-free, American origin)
+", Kiwi and Strawberry Smoothie," Vegan Coconut Lime Energy Balls - 120 kcals per portion, 4 portions, no allergic warnings, origin", Moroccan Mint Tea," Vegetarian fajitas with peppers and onions – 350 calories per portion, 4 portions, vegan-friendly (origin"
+135,200.0,100.0,220.0,20.0,300.0, Avocado Toast, Roasted Pumpkin Seeds, Roasted Red Pepper and Goat Cheese Crostini, Moroccan Mint Tea, Vegan Lentil Tacos
+136,500.0,80.0,100.0,20.0,450.0," Iranian kaleh pacheh (sheep's head and hoof soup) - 500 calories per portion, 2 portions, no allergic warnings, origin", Fruit Salad," Baked Tofu Nuggets - 100 kcals per portion, 4 portions, no allergic warnings, origin", Moroccan Mint Tea, Lemon Garlic Shrimp Pasta
+137,200.0,100.0,150.0,20.0,380.0, Veggie Breakfast Couscous, Vegetable Crudité with Hummus, Quinoa salad with vegetables, Moroccan Mint Tea," Vegetable Curry with Chickpeas - 380kcals per portion, 4 portions, contains legumes
+"
+138,400.0,100.0,150.0,20.0,300.0, Mexican Sopes, Fruit salad, Blueberry Oat Muffins, Moroccan Mint Tea, Lentil Soup with Bread
+139,750.0,100.0,400.0,20.0,250.0, Vegan Quinoa Breakfast Cookies, Cucumber and Hummus Rolls, Vegan Japanese Mochi, Moroccan Mint Tea," Falafel salad with tahini dressing - 250 calories per portion, 4 portions, contains gluten (Middle East)
+"
+140,300.0,100.0,760.0,20.0,250.0, Shakarkandi ki Chaat (Sweet Potato Chaat), Roasted Chickpeas, Vegan Cinnamon Rolls, Moroccan Mint Tea," Vegan Lentil and Vegetable Casserole - 250 calories per portion, 4 portions, may contain gluten"
+141,350.0,100.0,250.0,20.0,300.0, Vegan Breakfast Couscous - 350 calories per portion | 1 portion | Contains gluten | Origin, Kiwi and Strawberry Smoothie, Mini Cheesecakes, Moroccan Mint Tea, Quinoa and Vegetable Stuffed Bell Peppers
+142,350.0,100.0,150.0,20.0,300.0, Quinoa Porridge with Caramelized Bananas, Energy Balls - Approx, Avocado Toast, Moroccan Mint Tea, Quinoa and Lentil Salad
+143,200.0,100.0,150.0,20.0,250.0, Raspberry Coconut Breakfast Bars, Cucumber Sandwiches, Vegetable Frittata, Moroccan Mint Tea, Thai Peanut Noodles
+144,400.0,100.0,180.0,20.0,300.0, Vegetarian Breakfast Strata, Baked Zucchini Chips - Approx, Baked buffalo chicken meatballs, Moroccan Mint Tea," Spinach and Ricotta Stuffed Shells - 300 calories/portion, 4 portions, contains gluten and dairy (Italy)
+
+"
+145,350.0,100.0,180.0,20.0,300.0," Cheesy scrambled eggs - 350 calories per portion, 1 portion, contains dairy, origin", Boiled chickpeas, Stuffed Jalapeno Poppers, Moroccan Mint Tea, Veggie Enchiladas
+146,400.0,100.0,150.0,20.0,350.0, Vegan Breakfast Sushi - 400 calories per portion | 1 portion | Contains soy | Origin," Apple Slices with Caramel Dip - 100kcals per portion, 2 portions
+    Origin", Olive Tapenade Crostini, Moroccan Mint Tea," Mushroom and goat cheese flatbread - 350 calories per portion, 4 portions, contains gluten and dairy
+"
+147,400.0,100.0,250.0,20.0,200.0, Tofu Benedict, Cucumber and Tomato Salad, Avocado Egg Salad Lettuce Wraps, Moroccan Mint Tea, Vegan Goulash
+148,400.0,100.0,180.0,20.0,400.0, Pancakes with Maple Syrup, Corn on the Cob, Mini zucchini and cheese frittatas, Moroccan Mint Tea, Vegan Lasagna
+149,400.0,100.0,240.0,20.0,350.0, Tofu Benedict, Roasted Edamame," Matzah with Cream Cheese - 240 kcals per portion, 3 portions, contains dairy (Jewish)", Moroccan Mint Tea," Vegan Stir-Fried Noodles - 350 calories per portion, 4 portions, None, Various
+"
+150,300.0,100.0,140.0,20.0,400.0, Chia Seed Pancakes, Baked Apple Chips, Mozzarella sticks served with marinara sauce, Moroccan Mint Tea," Moroccan Vegetable Paella (400 calories/portion, 2 portions) - Morocco
+"
+151,350.0,70.0,150.0,20.0,200.0, Chocolate Banana Smoothie Bowl, Kale chips, Mini quinoa sliders, Moroccan Mint Tea, Vegan Goulash
+152,300.0,100.0,120.0,20.0,420.0, Idli and Sambar, Overnight Chia Pudding, Veggie Egg Muffins, Moroccan Mint Tea," Caprese Grilled Cheese Sandwich - 420kcals per portion, 2 portions, contains dairy
+"
+153,350.0,100.0,220.0,20.0,400.0, Homemade Granola with Yogurt, Fruit salad, Sesame Ginger Edamame, Moroccan Mint Tea," Stuffed Cabbage Rolls - 400 calories per portion, 4 portions, contains gluten (rice), Origin"
+154,350.0,100.0,180.0,20.0,200.0, Zucchini Fritters with Yogurt Sauce, Roasted Almonds, Antipasto Skewers, Moroccan Mint Tea," Veggie Stir-Fry with Tofu - 200 calories/portion, 4 portions, contains soy (China)
+"
+155,350.0,100.0,160.0,20.0,320.0, Homemade Granola with Yogurt, Vegetable Crudité with Hummus, Tomato and Mozzarella Skewers, Moroccan Mint Tea," Cauliflower fried rice with tofu – 320 calories per portion, 3 portions, vegan-friendly
+"
+156,200.0,100.0,480.0,20.0,350.0, Vegan Oatmeal Raisin Cookies - 200 calories per portion | 2 portions | Contains gluten | Origin, Caprese Skewers, Vegan Cucumber Sushi Rolls, Moroccan Mint Tea," Vegetarian bibimbap - 350 calories per portion, 4 portions, contains gluten and soy (Korea)
+"
+157,400.0,100.0,250.0,20.0,250.0, Vegan Breakfast Skillet," Apple Slices with Caramel Dip - 100kcals per portion, 2 portions
+    Origin", Mini chicken pot pies, Moroccan Mint Tea, Sushi Roll
+158,300.0,90.0,210.0,20.0,180.0," Turkish Menemen with eggs, tomatoes, and peppers (300kcals per portion, 2 portions, origin", Stuffed Dates, Tomato and Mozzarella Bruschetta, Moroccan Mint Tea, Mediterranean Salad
+159,300.0,100.0,180.0,20.0,300.0," Zucchini and carrot muffins (300kcals per portion, 2 portions)
+", Carrot Sticks with Ranch Dip, Thai Fresh Spring Rolls, Moroccan Mint Tea," Moroccan Lentil Burgers (300 calories/portion, 4 portions) - Morocco
+"
+160,250.0,80.0,150.0,20.0,350.0, Vegan Tofu Benedict, Avocado Deviled Eggs, Black Bean and Corn Salsa, Moroccan Mint Tea," Spinach and Goat Cheese Stuffed Mushrooms - 350kcals per portion, 4 portions, contains dairy
+
+"
+161,300.0,80.0,160.0,20.0,320.0, Veggie Breakfast Quesadilla," Carrot Sticks with Hummus - 80kcals per portion, 2 portions
+   Origin", Bruschetta with Tomato and Basil, Moroccan Mint Tea," Greek Gigantes Plaki - 320kcals per portion, 4 portions
+"
+162,550.0,100.0,220.0,20.0,450.0, Breakfast Nachos, Overnight Chia Pudding, Strawberry Banana Smoothie, Moroccan Mint Tea," Mushroom and spinach pasta with garlic bread (450 calories per portion, 2 portions, contains gluten, origin"
+163,300.0,100.0,200.0,20.0,246.0, Tofu Scramble Breakfast Burrito, Roasted Beetroot Chips, Caramelized Onion and Goat Cheese Tartlets, Moroccan Mint Tea, Vegan Teriyaki Tofu
+164,200.0,100.0,200.0,20.0,300.0, Vegan Chocolate Chia Pudding - 200 calories per portion | 2 portions | None | Origin, Berry Chia Detox Water," Quinoa Salad with Roasted Vegetables - 200 kcals per portion, 4 portions, no allergic warnings, origin", Moroccan Mint Tea," Greek Pita Sandwiches - 300 calories/portion, 4 portions, contains gluten (Greece)
+"
+165,200.0,100.0,200.0,20.0,200.0, Vegan Breakfast Quinoa Salad, Toasted Coconut Chips," Berry Smoothie Bowl - 200 kcals per portion, 2 portions, contains dairy (USA)", Moroccan Mint Tea," Greek-style stuffed zucchini - 200 calories per portion, 4 portions, none (Greece)
+"
+166,250.0,100.0,160.0,20.0,350.0, Vegan Banana Bread - 250 calories per portion | 2 portions | Contains gluten | Origin, Cucumber and Tomato Salad," Peanut Butter Banana Sushi - 160 kcals per portion, 2 portions, contains peanuts (USA)", Moroccan Mint Tea, Vegan Soba Noodle Salad
+167,400.0,100.0,160.0,20.0,300.0, Vegan Breakfast Burrito Bowl - 400 calories per portion | 1 portion | None | Origin, Cucumber and Tomato Salad, Stuffed Jalapeno Poppers, Moroccan Mint Tea," Spinach and feta phyllo triangles - 300 calories per portion, 4 portions, contains gluten and dairy (Greece)
+"
+168,300.0,100.0,150.0,20.0,200.0, Cheesy Grits, Cucumber Rolls with Cream Cheese, Black Bean and Corn Salsa with Tortilla Chips, Moroccan Mint Tea," Lentil soup with vegetables – 200 calories per portion, 6 portions, vegan-friendly (origin"
+169,450.0,80.0,840.0,20.0,270.0, Dutch Baby Pancake, Stuffed Dates, Tempeh Stir-Fry, Moroccan Mint Tea," Greek Briam with Feta Cheese - 270kcals per portion, 4 portions, contains dairy
+"
+170,400.0,80.0,100.0,20.0,350.0, Vegan Breakfast Fried Rice, Kale Chips, Bruschetta, Moroccan Mint Tea, Butternut Squash Risotto
+171,220.0,100.0,220.0,20.0,450.0," Vegetable frittata - 220 calories per portion, 4 portions, no allergic warnings, origin", Watermelon Fruit Pizza, Veggie Mediterranean Flatbread, Moroccan Mint Tea, Veggie Paella
+172,400.0,50.0,150.0,20.0,400.0," Egyptian feteer meshaltet (layered pastry) with honey - 400 calories per portion, 2 portions, contains gluten, origin"," Homemade Fruit Popsicles - 50kcals per portion, 2 portions
+    Origin", Veggie Nuggets, Moroccan Mint Tea, Vegetarian Shepherd's Pie
+173,280.0,100.0,360.0,20.0,320.0," Oatmeal with apples and cinnamon (280 calories per portion, 2 portions, nut-free, American origin)
+", Energy Balls - Approx, Vegan Zucchini Noodles with Pesto, Moroccan Mint Tea," Vegetable curry with basmati rice – 320 calories per portion, 4 portions, vegan-friendly (origin"
+174,200.0,100.0,110.0,20.0,300.0, Caprese Avocado Toast," Raspberry Yogurt Popsicles - 100kcals per portion, 2 portions
+    Origin"," Edamame - 110 kcals per portion, 2 portions, contains soy (Japan)", Moroccan Mint Tea," Vegetarian lasagna with garden salad - 300 kcals per portion, 6 portions, vegetarian, contains gluten
+"
+175,300.0,100.0,150.0,20.0,250.0, Tropical Mango Chia Pudding, Rice Paper Spring Rolls, Tomato and Mozzarella Bruschetta, Moroccan Mint Tea," Falafel salad with tahini dressing - 250 calories per portion, 4 portions, contains gluten (Middle East)
+"
+176,450.0,100.0,160.0,20.0,300.0, Lemon Poppy Seed Pancakes, Rice Paper Spring Rolls, Roasted Chickpeas, Moroccan Mint Tea, Mediterranean Veggie Pizza
+177,300.0,100.0,180.0,20.0,300.0, Tofu Scramble, Rice Paper Spring Rolls, Rice paper rolls with shrimp and vegetables, Moroccan Mint Tea," Greek Spinach and Feta Pie - 300 calories/portion, 4 portions, contains gluten and dairy (Greece)
+"
+178,250.0,90.0,140.0,20.0,250.0, Vegan Chocolate Chia Seed Pudding - 250 calories per portion | 2 portions | None | Origin, Rice Paper Rolls, Roasted Red Pepper Dip with Pita Chips, Moroccan Mint Tea, Vegan Swedish Meatballs
+179,450.0,80.0,220.0,20.0,450.0, Nutella Stuffed French Toast, Fruit Salad, Mango Coconut Chia Pudding, Moroccan Mint Tea, Mushroom Risotto
+180,200.0,100.0,90.0,20.0,250.0, Avocado Toast, Som Tam (Papaya Salad), Chicken satay skewers, Moroccan Mint Tea," Moroccan Chickpea Pancakes (250 calories/portion, 4 portions) - Morocco
+"
+181,250.0,100.0,840.0,20.0,350.0," Tofu scramble with vegetables (250kcals per portion, 2 portions, soy allergies, origin", Fruit Salad, Tempeh Stir-Fry, Moroccan Mint Tea," Greek Stuffed Peppers with Rice and Feta - 350kcals per portion, 4 portions, contains dairy
+"
+182,250.0,100.0,180.0,20.0,400.0," Almond joy smoothie (250 calories per portion, 2 portions, contains nuts, American origin)
+", Chilled Gazpacho, Spinach and cheese stuffed mushrooms, Moroccan Mint Tea, Vegan Pho
+183,400.0,100.0,120.0,20.0,300.0, Vegan Tofu Benedict - 400 calories per portion | 1 portion | Contains soy | Origin, Zesty Lime Popcorn - Approx, Veggie Egg Muffins, Moroccan Mint Tea," Spinach and feta phyllo triangles - 300 calories per portion, 4 portions, contains gluten and dairy (Greece)
+"
+184,450.0,100.0,250.0,20.0,450.0, Bacon and Egg Muffins, Cucumber Rolls with Hummus - Approx, Baked salmon cakes, Moroccan Mint Tea, Greek Style Baked Chicken
+185,300.0,90.0,880.0,20.0,400.0, Shakarkandi ki Chaat (Sweet Potato Chaat), Quinoa Energy Bites, Vegan Stuffed Dates with Nut Butter, Moroccan Mint Tea," Greek Spanakopita - 400 calories per portion, 4 portions, contains dairy (cheese), Origin"
+186,430.0,100.0,170.0,20.0,400.0," Cinnamon raisin French toast (430 calories per portion, 2 portions, contains dairy, American origin)
+", Cucumber Slices with Tzatziki - Approx, Roasted Beetroot and Goat Cheese Crostini, Moroccan Mint Tea," Vegetarian stuffed bell peppers with quinoa and black beans (400 calories per portion, 4 portions, vegan-friendly, origin"
+187,350.0,70.0,250.0,20.0,310.0, Vegan Breakfast Bars, Fresh Fruit Salad, Avocado Chocolate Mousse, Moroccan Mint Tea," Spinach and Feta Stuffed Peppers - 310kcals per portion, 4 portions, contains dairy
+"
+188,300.0,80.0,180.0,20.0,300.0, Vegan Chocolate Protein Shake - 300 calories per portion | 1 portion | None | Origin, Hard-Boiled Eggs, Apple Slices with Cinnamon Yogurt Dip, Moroccan Mint Tea, Quinoa Fried Rice
+189,350.0,100.0,220.0,20.0,450.0," Middle Eastern labneh with za'atar and bread - 350 calories per portion, 2 portions, contains gluten and dairy, origin", Vegetable Crudité with Hummus," Poppy Seed Cake - 220 kcals per portion, 3 portions, contains gluten (Various)", Moroccan Mint Tea," Grilled chicken breast with quinoa and roasted vegetables (450 calories per portion, 2 portions, origin"
+190,350.0,100.0,160.0,20.0,250.0," Apple cinnamon quinoa breakfast bowl (350 calories per portion, 2 portions, nut-free, American origin)
+", Chilled Gazpacho, Baked apples with cinnamon and honey, Moroccan Mint Tea, Tofu and Vegetable Kebabs
+191,400.0,100.0,170.0,20.0,350.0," Malaysian roti canai with curry dipping sauce (400kcals per portion, 2 portions, origin", Roasted Chickpeas, Corn tortilla chips with salsa, Moroccan Mint Tea, Vegan Goulash
+192,400.0,80.0,150.0,20.0,420.0, Vegan Breakfast Burrito - 400 calories per portion | 1 portion | None | Origin, Kale Chips, Steamed edamame, Moroccan Mint Tea," Teriyaki beef with broccoli and noodles - 420 kcals per portion, 3 portions, contains gluten, soy
+"
+193,250.0,100.0,180.0,20.0,200.0, Banana and Almond Butter Toast, Energy Balls, Roasted Pumpkin Seeds, Moroccan Mint Tea," Vegan Buffalo Cauliflower Wings - 200 calories per portion, 4 portions, None, United States
+"
+194,300.0,50.0,180.0,20.0,350.0, Vegan Breakfast Spring Rolls - 300 calories per portion | 1 portion | Contains soy | Origin," Fruit Salad - 50kcals per portion, 2 portions
+   Origin", Baked Jalapeno Poppers, Moroccan Mint Tea," Greek Orzo Salad - 350 calories/portion, 4 portions, contains gluten (Greece)
+"
+195,250.0,50.0,90.0,20.0,450.0, Vegan Sausage and Biscuits, Baked Apple Chips - Approx, Peanut butter energy balls, Moroccan Mint Tea," Beef and Vegetable Curry - 450 calories per portion, 4 portions, contains nuts (cashews), Origin"
+196,450.0,60.0,120.0,20.0,450.0, Nutella Stuffed French Toast, Cucumber and tomato salad, Stuffed Dates with Almonds, Moroccan Mint Tea, Thai Red Curry with Chicken
+197,400.0,100.0,280.0,20.0,300.0, Bagel with Cream Cheese and Smoked Salmon, Cucumber Sandwiches, Sweet Potato and Black Bean Quesadillas, Moroccan Mint Tea," Vegetarian lasagna with garden salad - 300 kcals per portion, 6 portions, vegetarian, contains gluten
+"
+198,400.0,100.0,180.0,20.0,250.0," Turkish sesame bagel with cream cheese and olives (400kcals per portion, 1 portion, dairy allergies, origin", Som Tam (Papaya Salad)," Berry Parfait - 180 kcals per portion, 2 portions, contains dairy (Various)", Moroccan Mint Tea, Mediterranean Couscous Salad
+199,400.0,100.0,120.0,20.0,300.0, English Muffin Breakfast Pizza, Fruit Smoothie Popsicles - Approx, Spinach and Feta Stuffed Mushrooms, Moroccan Mint Tea," Greek Gigantes Plaki - 300 calories/portion, 4 portions, contains garlic (Greece)
+"
+200,200.0,100.0,150.0,20.0,400.0," Oatmeal with berries - 200 calories per portion, 2 portions, no allergic warnings, origin", Cucumber Rolls with Cream Cheese," Stuffed Mini Bell Peppers - 150 kcals per portion, 4 portions, gluten-free (Various)", Moroccan Mint Tea, Vegan Goulash
+201,320.0,100.0,700.0,20.0,400.0," Caramelized onion and goat cheese tart (320 calories per portion, 2 portions, contains dairy, French origin)
+", Watermelon and feta skewers, Vegan Pad Thai, Moroccan Mint Tea, Cauliflower and Chickpea Curry
+202,300.0,100.0,180.0,20.0,350.0," Egyptian ful medames (fava bean dish) with olive oil and lemon (300kcals per portion, 2 portions, origin", Fruit Salad, Black Bean Brownies, Moroccan Mint Tea, Quinoa and Black Bean Burgers
+203,350.0,100.0,150.0,20.0,350.0," Moroccan msemen (folded pancakes) with honey (350kcals per portion, 2 portions, origin", Cucumber Slices with Tzatziki - Approx, Caprese Salad, Moroccan Mint Tea, Chickpea Salad Sandwich
+204,500.0,80.0,180.0,20.0,200.0, Vegan Breakfast Risotto," Carrot Sticks with Hummus - 80kcals per portion, 2 portions
+   Origin", Veggie Fritters, Moroccan Mint Tea, Vegan Bibimbap
+205,300.0,100.0,150.0,20.0,400.0," Spinach and mushroom frittata (300kcals per portion, 2 portions)
+", Energy Balls - Approx, Caprese skewers, Moroccan Mint Tea," Sweet potato gnocchi with sage butter - 400 calories per portion, 4 portions, contains gluten and dairy (Italy)
+"
+206,200.0,100.0,150.0,20.0,350.0, Vegan Matcha Chia Pudding - 200 calories per portion | 1 portion | None | Origin, Vegetable Crudité with Hummus, Roasted Chickpeas, Moroccan Mint Tea," Greek Salad with Grilled Chicken - 350 calories per portion, 4 portions, contains dairy (cheese), Origin"
+207,400.0,50.0,180.0,20.0,380.0, Tofu Benedict, Baked Apple Chips - Approx, Stuffed Bell Peppers with Quinoa and Black Beans, Moroccan Mint Tea," Quinoa-stuffed bell peppers with black beans and corn – 380 calories per portion, 4 portions, vegan-friendly
+"
+208,250.0,100.0,190.0,20.0,400.0, Avocado Toast, Chilled Gazpacho Soup - Approx, Black Bean Dip with Tortilla Chips, Moroccan Mint Tea," Veggie Bibimbap - 400 calories/portion, 4 portions, contains gluten and soy (Korea)
+"
+209,280.0,100.0,520.0,20.0,250.0," Cottage cheese and tomato on rye bread (280 calories per portion, 2 portions, contains dairy, Russian origin)
+", Fresh Juice - Approx, Vegan Spinach and Artichoke Crostini, Moroccan Mint Tea, Vegan Stuffed Bell Peppers
+210,350.0,80.0,110.0,20.0,350.0, Coconut Chia Pudding, Energy Balls," Zucchini Fritters - 110 kcals per portion, 5 portions, contains gluten, dairy (Various)", Moroccan Mint Tea," Vegetable Korma - 350kcals per portion, 4 portions, contains nuts (India)
+"
+211,400.0,100.0,300.0,20.0,400.0, Vegan Breakfast Tostadas - 400 calories per portion | 1 portion | Contains soy | Origin, Watermelon Fruit Pizza, Mini Margherita Pizzas, Moroccan Mint Tea," Chickpea and spinach stew with crusty bread (400 calories per portion, 3 portions, vegan-friendly, origin"
+212,350.0,100.0,440.0,20.0,420.0, Zucchini and Parmesan Muffins, Cucumber and Tomato Salad, Vegan Gyoza, Moroccan Mint Tea," Chicken and vegetable stir-fry – 420 calories per portion, 2 portions
+"
+213,450.0,80.0,170.0,20.0,200.0," Breakfast quesadilla with eggs, cheese, and vegetables (450kcals per portion, 2 portions)
+", Fruit Salad, Sweet Corn Fritters, Moroccan Mint Tea, Quinoa Stuffed Mushrooms
+214,300.0,100.0,200.0,20.0,350.0, Vegan Mango Turmeric Smoothie Bowl - 300 calories per portion | 1 portion | None | Origin, Chilled Gazpacho, Chicken lettuce wraps, Moroccan Mint Tea," Vegetable curry with basmati rice - 350 calories per portion, 4 portions, contains nuts (India)
+"
+215,400.0,100.0,220.0,20.0,250.0," Sri Lankan hoppers with coconut sambol - 400 calories per portion, 2 portions, contains gluten, origin", Fresh Fruit Salad, Beetroot Hummus with Pita Bread, Moroccan Mint Tea, Vegetable Curry
+216,450.0,60.0,250.0,20.0,250.0, Dutch Baby Pancake, Fruit Salad - Approx, Chicken Caesar Lettuce Wraps, Moroccan Mint Tea, Portobello Mushroom Burger
+217,350.0,100.0,180.0,20.0,250.0, Broccoli and Cheese Frittata, Edamame, Blueberry Muffins, Moroccan Mint Tea, Cauliflower Buffalo Wings
+218,400.0,100.0,240.0,20.0,200.0, Quinoa Breakfast Bowl, Roasted Edamame, Thai Vegetable Spring Rolls, Moroccan Mint Tea," Greek stuffed bell peppers - 200 calories per portion, 4 portions, none (Greece)
+"
+219,550.0,80.0,90.0,20.0,200.0, Eggs Benedict, Hard-Boiled Eggs," Bruschetta with Fresh Tomatoes and Basil - 90 kcals per portion, 4 portions, no allergic warnings, origin", Moroccan Mint Tea," Avocado and Tomato Salad - 200 calories/portion, 2 portions, Origin"
+220,350.0,100.0,90.0,20.0,300.0," Turkish borek with feta and spinach (350kcals per portion, 2 portions, origin", Fruit salad," Guacamole with Tortilla Chips - 90 kcals per portion, 4 portions, allergic warning (avocado), origin", Moroccan Mint Tea, Quinoa Salad
+221,250.0,100.0,150.0,20.0,300.0, Veggie Omelette, Chilled Gazpacho, Roasted Red Pepper and Feta Dip, Moroccan Mint Tea," Lentil and vegetable shepherd's pie - 300 calories per portion, 4 portions, none
+"
+222,250.0,80.0,150.0,20.0,350.0, Vegan Cinnamon Apple Oatmeal - 250 calories per portion | 2 portions | None | Origin, Fruit Salad, Veggie Nuggets, Moroccan Mint Tea," Chickpea Salad Sandwich - 350 calories per portion, 2 portions, may contain gluten"
+223,400.0,100.0,180.0,20.0,400.0, Breakfast Quesadilla, Kiwi and Strawberry Smoothie," Vegan Strawberry Shortcake - 180 kcals per portion, 4 portions, no allergic warnings, origin", Moroccan Mint Tea, Grilled Lemon Herb Chicken
+224,300.0,100.0,290.0,20.0,180.0, Vegan Protein Smoothie," Rice Cake with Almond Butter - 100kcals per portion, 2 portions
+    Origin"," Cheese Quesadilla - 290 kcals per portion, 2 portions, contains gluten, dairy (Mexico)", Moroccan Mint Tea," Greek salad - 180 calories per portion, 4 portions, contains dairy (Greece)
+"
+225,200.0,90.0,250.0,20.0,350.0, Vegan Banana Bread, Quinoa Energy Bites, Stuffed Mushrooms, Moroccan Mint Tea," Lentil Tacos - 350kcals per portion, 4 portions, contains legumes (Mexico)
+"
+226,400.0,70.0,200.0,20.0,380.0," Turkish breakfast (tomato, cucumber, olives, cheese, bread) - 400 calories per portion, 2 portions, contains gluten and dairy, origin", Kale chips," Vegan Pumpkin Pancakes - 200 kcals per portion, 4 portions, no allergic warnings, origin", Moroccan Mint Tea," Lemon garlic grilled tofu with quinoa and roasted vegetables – 380 calories per portion, 3 portions, vegan-friendly
+"
+227,350.0,90.0,300.0,20.0,200.0, Vegan Breakfast Stuffed Peppers, Rice Paper Rolls, Baked Buffalo Chicken Wings, Moroccan Mint Tea, Spicy Black Bean Soup
+228,350.0,100.0,300.0,20.0,400.0," Rwandan akabenz (fried plantains) with yogurt - 350 calories per portion, 2 portions, contains dairy, origin"," Mediterranean Style Feta Stuffed Dates - 100kcals per portion, 2 portions
+    Origin", Caprese stuffed avocado, Moroccan Mint Tea," Veggie Paella - 400 calories/portion, 4 portions, contains saffron (Spain)
+"
+229,350.0,100.0,180.0,20.0,350.0, Cranberry Orange Muffins, Boiled chickpeas, Mini Spinach and Mushroom Quiches, Moroccan Mint Tea," Thai Red Curry with Vegetables - 350 calories per portion, 4 portions, contains shellfish (fish sauce), Origin"
+230,300.0,100.0,160.0,20.0,285.0, Vegan Breakfast Tacos - 300 calories per portion | 2 portions | None | Origin, Som Tam (Papaya Salad), Mini Chicken Satay Skewers, Moroccan Mint Tea, Stuffed Bell Peppers
+231,450.0,100.0,100.0,20.0,300.0," Mexican gorditas with beans, cheese, and salsa (450kcals per portion, 2 portions, origin"," Raspberry Yogurt Popsicles - 100kcals per portion, 2 portions
+    Origin", Baked Zucchini Fries, Moroccan Mint Tea, Vegan Pho
+232,200.0,100.0,120.0,20.0,300.0, Roasted Vegetable Breakfast Tacos, Energy Balls - Approx, Tabouli salad, Moroccan Mint Tea, Tofu and Vegetable Curry
+233,400.0,60.0,150.0,20.0,250.0, Vegan Breakfast Sushi - 400 calories per portion | 1 portion | Contains soy | Origin, Fruit Salad - Approx, Greek-Style Feta and Olive Dip, Moroccan Mint Tea," Vegan Teriyaki Tofu - 250 calories per portion, 4 portions, Soy, Japan
+"
+234,350.0,100.0,160.0,20.0,300.0," Turkish borek with feta and spinach (350kcals per portion, 2 portions, origin", Berry Chia Detox Water," Grilled Portobello Mushroom Burger - 160 kcals per portion, 4 portions, no allergic warnings, origin", Moroccan Mint Tea, Quinoa Stuffed Bell Peppers
+235,300.0,80.0,200.0,20.0,200.0," Singaporean kaya toast - 300 calories per portion, 2 portions, contains gluten and dairy, origin", Fruit Salad, Greek Yogurt with Mango and Pistachios, Moroccan Mint Tea," Tomato and mozzarella tart - 200 calories per portion, 4 portions, contains gluten and dairy (Italy)
+"
+236,180.0,100.0,720.0,20.0,288.0, Overnight Chia Pudding," Mediterranean Style Feta Stuffed Dates - 100kcals per portion, 2 portions
+    Origin", Vegan Black Bean Quesadillas, Moroccan Mint Tea, Chickpea and Vegetable Curry
+237,400.0,100.0,120.0,20.0,450.0," Italian caprese frittata with tomatoes, mozzarella, and basil (400kcals per portion, 2 portions, origin", Frozen Grapes, Watermelon and Feta Skewers, Moroccan Mint Tea, Chickpea Tikka Masala
+238,300.0,100.0,180.0,20.0,250.0, Chocolate Chia Protein Pudding, Vegetable Crudité with Hummus, Grilled Halloumi Skewers, Moroccan Mint Tea, Vegan Caesar Salad
+239,500.0,100.0,220.0,20.0,400.0, Blueberry Pancakes, Edamame, Teriyaki Chicken Skewers, Moroccan Mint Tea," Vegan Paella - 400 calories per portion, 4 portions, None, Spain
+"
+240,400.0,80.0,300.0,20.0,250.0," Italian breakfast panini with prosciutto and mozzarella - 400 calories per portion, 1 portion, contains gluten and dairy, origin", Fruit Salad, Vegetable Pizza Rolls, Moroccan Mint Tea," Moroccan Lentil Salad - 250 calories per portion, 4 portions, None, Morocco
+"
+241,300.0,100.0,160.0,20.0,200.0, Turkish Menemen, Fruit Salad, Pita Bread and Hummus, Moroccan Mint Tea," Vegan BBQ Tofu - 200 calories per portion, 4 portions, Soy, United States
+"
+242,400.0,80.0,200.0,20.0,450.0, Turkish Menemen with Feta Cheese, Baked Apple Chips, Veggie Sushi Burrito, Moroccan Mint Tea," Mushroom Risotto - 450 calories per portion, 2 portions, may contain mushrooms"
+243,350.0,100.0,480.0,20.0,400.0, Vegan Protein Pancakes, Watermelon Fruit Pizza, Vegan Cucumber Sushi Rolls, Moroccan Mint Tea, Mushroom and Spinach Lasagna
+244,320.0,100.0,120.0,20.0,400.0," Baked eggs with asparagus and Parmesan (320 calories per portion, 2 portions, contains dairy, Italian origin)
+", Edamame," Fruit Smoothie - 120 kcals per portion, 2 portions, gluten-free (USA)", Moroccan Mint Tea," Mexican black bean soup with cornbread (400 calories per portion, 3 portions, vegan-friendly, origin"
+245,400.0,100.0,600.0,20.0,400.0, Almond Croissant, Energy Balls, Vegan Shepherd's Pie, Moroccan Mint Tea," Honey Sesame Chicken - 400 calories per portion, 4 portions, contains gluten (soy sauce), Origin"
+246,400.0,80.0,100.0,20.0,300.0," Vietnamese banh mi sandwich with eggs - 400 calories per portion, 2 portions, contains gluten, origin", Fruit Salad," Vegan Spinach and Artichoke Dip - 100 kcals per portion, 4 portions, no allergic warnings, origin", Moroccan Mint Tea, Stuffed Bell Peppers
+247,400.0,80.0,150.0,20.0,225.0," Mediterranean-style omelette with olives and feta (400 calories per portion, 2 portions, contains dairy, Greek origin)
+", Fresh Watermelon Slices - Approx," Hummus with Veggies - 150 kcals per portion, 3 portions, may contain sesame (Middle East)", Moroccan Mint Tea, Vegan Stuffed Mushrooms
+248,300.0,70.0,240.0,20.0,290.0," Acai bowl - 300 calories per portion, 1 portion, no allergic warnings, origin", Fresh Fruit Salad, Thai Vegetable Spring Rolls, Moroccan Mint Tea," Spinach and Ricotta Stuffed Tomatoes - 290kcals per portion, 4 portions, contains dairy
+"
+249,200.0,80.0,300.0,20.0,200.0, Spinach and Mushroom Breakfast Tacos, Fruit Salad, Stuffed bell peppers with quinoa and black beans, Moroccan Mint Tea," Spanakopita - 200 calories per portion, 6 portions, contains gluten and dairy (Greece)
+"
+250,200.0,100.0,200.0,20.0,300.0, Vegan French Toast - 200 calories per portion | 2 portions | Contains gluten | Origin, Stuffed Dates - Approx, Veggie Quesadillas, Moroccan Mint Tea," Lentil and vegetable shepherd's pie - 300 calories per portion, 4 portions, none
+"
+251,400.0,100.0,250.0,20.0,200.0," Iraqi masgouf (grilled fish) with flatbread - 400 calories per portion, 2 portions, contains gluten, origin", Fresh Juice - Approx, Lentil soup, Moroccan Mint Tea, Ratatouille
+252,750.0,100.0,120.0,20.0,380.0, Vegan Breakfast Casserole, Boiled chickpeas," Vegan Oatmeal Raisin Cookies - 120 kcals per portion, 4 portions, no allergic warnings, origin", Moroccan Mint Tea," Grilled shrimp and pineapple skewers with quinoa - 380 kcals per portion, 3 portions, contains shellfish
+"
+253,450.0,100.0,120.0,20.0,300.0," Bagel with cream cheese and smoked salmon - 450 calories per portion, 1 portion, contains gluten and dairy, origin", Energy Balls," Black Bean Salsa with Tortilla Chips - 120 kcals per portion, 4 portions, no allergic warnings, origin", Moroccan Mint Tea," Lentil soup with crusty bread - 300 kcals per portion, 6 portions, vegetarian, contains gluten
+"
+254,400.0,100.0,200.0,20.0,400.0, Vegan Breakfast Quiche - 400 calories per portion | 1 portion | Contains gluten | Origin, Rice Cake with Hummus and Cucumber, Cheese and Crackers, Moroccan Mint Tea," Vegetarian pad Thai with tofu and vegetables (400 calories per portion, 3 portions, contains soy, origin"
+255,350.0,100.0,180.0,20.0,400.0, Acai Bowl, Fruit Smoothie Popsicles - Approx, Roasted Pumpkin Seeds, Moroccan Mint Tea," Spaghetti aglio e olio – 400 calories per portion, 3 portions, vegan-friendly (origin"
+256,250.0,100.0,340.0,20.0,200.0, Greek Feta and Tomato Toast, Berry Chia Detox Water, Vegan Nachos, Moroccan Mint Tea," Greek-style stuffed zucchini - 200 calories per portion, 4 portions, none (Greece)
+"
+257,400.0,100.0,350.0,20.0,400.0," Quinoa porridge with coconut milk - 400 calories per portion, 2 portions, no allergic warnings, origin", Overnight Chia Pudding, Avocado and black bean quesadilla, Moroccan Mint Tea," Vegetable Pot Pie - 400 calories/portion, 4 portions, contains gluten (Various)
+"
+258,400.0,100.0,140.0,20.0,250.0, Spinach and Feta Quiche, Rice Paper Spring Rolls, Cheese Stuffed Jalapenos, Moroccan Mint Tea, Vegan Fettuccine Alfredo
+259,380.0,80.0,150.0,20.0,400.0," Peanut butter and jelly overnight oats (380 calories per portion, 2 portions, contains nuts, American origin)
+", Avocado Deviled Eggs, Stuffed mushrooms with cream cheese and bacon, Moroccan Mint Tea," Vegan Mushroom Gyros - 400 calories per portion, 4 portions, None, Greece
+"
+260,550.0,100.0,120.0,20.0,280.0, Eggs Benedict, Caprese Skewers, Vegan Chia Seed Pudding, Moroccan Mint Tea," Lentil Curry - 280kcals per portion, 4 portions, contains legumes (India)
+"
+261,500.0,100.0,620.0,20.0,400.0," Malaysian nasi lemak (coconut rice with condiments) - 500 calories per portion, 2 portions, contains gluten, origin", Stuffed Dates - Approx, Bean Burritos, Moroccan Mint Tea," Moroccan chickpea stew with couscous (400 calories per portion, 3 portions, vegan-friendly, origin"
+262,400.0,100.0,130.0,20.0,350.0, Mexican Sopes," Apple Slices with Caramel Dip - 100kcals per portion, 2 portions
+    Origin"," Sweet and Spicy Roasted Cashews - 130 kcals per portion, 4 portions, allergic warning (cashews), origin", Moroccan Mint Tea," Mushroom and goat cheese flatbread - 350 calories per portion, 4 portions, contains gluten and dairy
+"
+263,300.0,100.0,150.0,20.0,300.0, Breakfast Couscous with Fresh Fruit, Fresh Fruit Salad, Veggie Kabobs, Moroccan Mint Tea," Baked Ziti - 300 calories/portion, 4 portions, Origin"
+264,650.0,100.0,140.0,20.0,200.0, Vegan Breakfast Muesli, Cucumber Sandwiches, Blueberry Oat Bars, Moroccan Mint Tea," Veggie Stir-Fry with Tofu - 200 calories/portion, 4 portions, contains soy (China)
+"
+265,350.0,90.0,150.0,20.0,450.0, Breakfast Bruschetta, Quinoa Energy Bites, Mini crustless quiche with spinach and feta, Moroccan Mint Tea," Pesto and sun-dried tomato stuffed chicken breast with roasted potatoes - 450 kcals per portion, 4 portions, contains lactose
+"
+266,300.0,100.0,180.0,20.0,430.0, Blueberry Banana Breakfast Bars, Roasted Beetroot Chips, Dates stuffed with almond butter, Moroccan Mint Tea," Caprese Stuffed Garlic Bread - 430kcals per portion, 2 portions, contains dairy (Italy)
+"
+267,400.0,100.0,250.0,20.0,400.0," Indian idli with coconut chutney and sambar (400kcals per portion, 2 portions, origin", Tomato Basil Bruschetta," Cheese Puffs - 250 kcals per portion, 2 portions, contains gluten, dairy (France)", Moroccan Mint Tea, Stuffed Portobello Mushrooms with Quinoa
+268,550.0,100.0,120.0,20.0,300.0, Breakfast Pizza, Greek Salad Skewers, Roasted Cauliflower Popcorn, Moroccan Mint Tea, Lentil Soup with Bread
+269,200.0,80.0,210.0,20.0,380.0, Apple Cinnamon Porridge, Fruit Salad, Greek Feta and Olive Tapenade Crostini, Moroccan Mint Tea," Spinach and Ricotta Stuffed Shells - 380kcals per portion, 4 portions, contains dairy (Italy)
+"
+270,350.0,80.0,120.0,20.0,300.0," Moroccan msemen (folded pancakes) with honey (350kcals per portion, 2 portions, origin", Kale Chips, Stuffed Dates with Almonds, Moroccan Mint Tea, Vegan Tofu Scramble
+271,400.0,80.0,280.0,20.0,300.0, Veggie Bagel Sandwich, Avocado Deviled Eggs," Greek Spanakopita - 280 kcals per portion, 3 portions, contains gluten, dairy (Greece)", Moroccan Mint Tea, Vegan Soba Noodle Stir-Fry
+272,300.0,100.0,180.0,20.0,450.0, Vegan Chocolate Protein Shake - 300 calories per portion | 1 portion | None | Origin, Berry Chia Detox Water, Greek Olive Breadsticks, Moroccan Mint Tea," Ham and cheese stuffed chicken breast with roasted potatoes - 450 kcals per portion, 4 portions, contains lactose
+"
+273,250.0,100.0,200.0,20.0,300.0, Tropical Green Smoothie, Edamame," Vegan Pancakes with Maple Syrup - 200 kcals per portion, 4 portions, no allergic warnings, origin", Moroccan Mint Tea," Tahini Chickpea Salad - 300 calories per portion, 4 portions, None, Various
+"
+274,200.0,100.0,150.0,20.0,220.0, Vegan Breakfast Tacos, Rice Paper Spring Rolls," Stuffed Mini Bell Peppers - 150 kcals per portion, 4 portions, gluten-free (Various)", Moroccan Mint Tea, Lentil and Kale Soup
+275,350.0,100.0,80.0,20.0,150.0, Vegan Protein Pancakes, Baked Apple Chips," Baked Kale Chips - 80 kcals per portion, 4 portions, no allergic warnings, origin", Moroccan Mint Tea, Spinach and Feta Stuffed Mushrooms
+276,250.0,100.0,180.0,20.0,250.0," Overnight oats - 250 calories per portion, 2 portions, contains gluten, origin", Roasted Beetroot Chips, Thai Fresh Spring Rolls, Moroccan Mint Tea, Vegan Kung Pao Tofu
+277,380.0,80.0,120.0,20.0,300.0," Pancake roll-ups filled with peanut butter and bananas (380 calories per portion, 2 portions, contains nuts, American origin)
+", Fresh Watermelon Slices - Approx, Pumpkin Hummus with Carrot Sticks, Moroccan Mint Tea," Thai Vegan Tom Kha Soup (300 calories/portion, 4 portions) - Thailand
+
+"
+278,400.0,100.0,400.0,20.0,300.0," Maltese pastizzi (ricotta-filled pastries) - 400 calories per portion, 2 portions, contains gluten and dairy, origin", Fruit Salad, Vegan Tzatziki and Pita Bread, Moroccan Mint Tea, Mexican Quinoa Stuffed Bell Peppers
+279,400.0,80.0,160.0,20.0,280.0," Quinoa porridge with coconut milk - 400 calories per portion, 2 portions, no allergic warnings, origin", Kale Chips," Cinnamon Sugar Pretzels - 160 kcals per portion, 3 portions, contains gluten (USA)", Moroccan Mint Tea," Beef and Broccoli Stir-Fry - 280 calories per portion, 4 portions, contains gluten (soy sauce), Origin"
+280,400.0,60.0,200.0,20.0,300.0, Vegan Quinoa Breakfast Skillet - 400 calories per portion | 1 portion | None | Origin, Fruit Salad - Approx, Greek salad, Moroccan Mint Tea," Chana masala - 300 calories per portion, 4 portions, contains nuts (India)
+"
+281,300.0,100.0,120.0,20.0,400.0, Vegan Protein Smoothie, Cucumber and Tomato Salad, Greek Yogurt Dip with Veggies, Moroccan Mint Tea, Vegan Paella
+282,300.0,100.0,120.0,20.0,300.0, Avocado Toast, Vegetable Crudité with Hummus, Watermelon and Feta Skewers, Moroccan Mint Tea," Vegetable Fajitas - 300 calories/portion, 4 portions, contains gluten (Mexico)
+"
+283,400.0,80.0,120.0,20.0,400.0," American pancakes with maple syrup - 400 calories per portion, 2 portions, contains gluten and dairy, origin", Fruit Salad, Veggie Stuffed Mushrooms, Moroccan Mint Tea, Vegan Mapo Tofu
+284,350.0,100.0,240.0,20.0,150.0, Veggie Oatmeal Bowl, Fruit Smoothie Popsicles - Approx, Spinach and Artichoke Dip, Moroccan Mint Tea, Cauliflower Fried Rice
+285,300.0,80.0,250.0,20.0,300.0, Banana Nut Smoothie Bowl, Mango with Chili Powder, Chicken and vegetable lettuce wraps, Moroccan Mint Tea," Vegetable Curry - 300kcals per portion, 4 portions (Various)
+"
+286,350.0,100.0,440.0,20.0,320.0," Israeli shakshuka with eggplant and tahini (350kcals per portion, 2 portions, origin", Berry Chia Detox Water, Vegan Gyoza, Moroccan Mint Tea," Mushroom and black bean tacos – 320 calories per portion, 4 portions, vegetarian-friendly
+"
+287,350.0,80.0,250.0,20.0,400.0," Grilled halloumi with tomatoes and cucumber (350kcals per portion, 2 portions, origin", Fruit Salad, Zucchini and ricotta crostini, Moroccan Mint Tea," Mediterranean stuffed tomatoes with quinoa and olives (400 calories per portion, 3 portions, vegan-friendly, origin"
+288,300.0,80.0,170.0,20.0,400.0," Avocado toast - 300 calories per portion, 2 portions, may contain gluten, origin", Fresh Watermelon Slices - Approx, Mushroom Bruschetta, Moroccan Mint Tea, Caprese Flatbread
+289,350.0,100.0,160.0,20.0,400.0, Chocolate Banana Smoothie Bowl, Greek yogurt with berries," Cucumber Bites with Herbed Cream Cheese - 160 kcals per portion, 4 portions, contains dairy (Various)", Moroccan Mint Tea," Mexican Vegan Tostadas (400 calories/portion, 2 portions) - Mexico
+"
+290,350.0,100.0,100.0,20.0,300.0," Banana pecan pancakes (350 calories per portion, 2 portions, contains nuts, American origin)
+"," Mint Yogurt Dip with Vegetable Sticks - 100kcals per portion, 2 portions
+    Origin", Greek Yogurt Fruit Dip, Moroccan Mint Tea, Lentil and Vegetable Stir-Fry
+291,350.0,80.0,70.0,20.0,400.0, Vegan Mushroom and Spinach Omelette - 350 calories per portion | 1 portion | None | Origin, Fresh Watermelon Slices - Approx, Stuffed Cucumbers, Moroccan Mint Tea, Spaghetti Aglio e Olio
+292,50.0,100.0,220.0,20.0,240.0, Vegan Breakfast Energy Balls," Apple Slices with Caramel Dip - 100kcals per portion, 2 portions
+    Origin", Roasted Red Pepper and Feta Crostini, Moroccan Mint Tea, Vegan Lentil Soup
+293,500.0,100.0,220.0,20.0,400.0," Breakfast pizza - 500 calories per portion, 1 portion, contains gluten, origin", Fruit Salad, Veggie-Stuffed Pita Pockets, Moroccan Mint Tea, Vegetable Pot Pie
+294,250.0,100.0,200.0,20.0,450.0, Greek Yogurt Parfait Bowl," Raspberry Yogurt Popsicles - 100kcals per portion, 2 portions
+    Origin", Baked Sweet Potato Fries, Moroccan Mint Tea, Thai Basil Tofu Stir-Fry
+295,350.0,100.0,200.0,20.0,300.0," Veggie fajita scramble with tofu (350 calories per portion, 2 portions, nut-free, Mexican origin)
+", Chilled Gazpacho Soup - Approx," Vegan Pancakes with Maple Syrup - 200 kcals per portion, 4 portions, no allergic warnings, origin", Moroccan Mint Tea," British Vegan Ploughman's Lunch (300 calories/portion, 3 portions) - United Kingdom
+"
+296,400.0,100.0,760.0,20.0,450.0, Aloo Paratha (Potato Stuffed Flatbread), Som Tam (Papaya Salad), Moroccan Couscous, Moroccan Mint Tea, Vegetable Pad Thai
+297,400.0,100.0,300.0,20.0,350.0," Vietnamese banh mi sandwich with eggs - 400 calories per portion, 2 portions, contains gluten, origin", Toasted Coconut Chips, Cheese and Crackers, Moroccan Mint Tea," Vegetable korma with basmati rice - 350 calories per portion, 4 portions, contains nuts (India)
+"
+298,400.0,100.0,200.0,20.0,250.0, Aloo Paratha (Potato Stuffed Flatbread), Baked Zucchini Chips - Approx, Cheese and Spinach Puffs, Moroccan Mint Tea, Vegan Caesar Salad
+299,200.0,100.0,960.0,20.0,300.0, Vegetarian Quiche, Roasted Beetroot Chips, Vegan Buffalo Cauliflower Pizza, Moroccan Mint Tea, Stuffed Bell Peppers
+300,300.0,100.0,360.0,20.0,400.0, Mushroom and Tomato Omelette, Cucumber and Hummus Rolls, Vegetable Tempura, Moroccan Mint Tea," Vegetable Lasagna - 400 calories/portion, 4 portions, contains gluten and dairy (Italy)
+
+"
+301,150.0,100.0,180.0,20.0,250.0, Chia Pudding - 150 calories per portion | 1 portion | None | Origin, Rice Paper Spring Rolls," Tapioca Pudding - 180 kcals per portion, 3 portions, contains dairy (World)", Moroccan Mint Tea, Stuffed Acorn Squash
+302,400.0,100.0,120.0,20.0,220.0, Vegan Quinoa Breakfast Skillet - 400 calories per portion | 1 portion | None | Origin," Dates Stuffed with Almond Butter - 100kcals per portion, 2 portions
+    Origin", Guacamole and Veggie Sticks, Moroccan Mint Tea, Chickpea and Vegetable Stir Fry
+303,350.0,100.0,100.0,20.0,400.0, Vegan Breakfast Bars, Caprese Skewers, Fruit Salad, Moroccan Mint Tea, Vegan Moussaka
+304,250.0,100.0,120.0,20.0,250.0, Vegan Banana Bread," Cinnamon Apple Chips - 100kcals per portion, 2 portions
+    Origin", Spinach and Feta Pinwheels, Moroccan Mint Tea," Quinoa Stuffed Mushrooms - 250 calories/portion, 4 portions, Origin"
+305,350.0,50.0,120.0,20.0,355.0, Blueberry Muffins," Fruit Salad - 50kcals per portion, 2 portions
+   Origin"," Energy Balls - 120 kcals per portion, 8 portions, contains nuts (USA)", Moroccan Mint Tea, Chickpea Salad
+306,300.0,80.0,150.0,20.0,250.0," Shakriya (Lebanese rice pudding) - 300 calories per portion, 2 portions, contains dairy, origin"," Carrot Sticks with Hummus - 80kcals per portion, 2 portions
+   Origin", Spinach and feta stuffed chicken breast, Moroccan Mint Tea, Vegan Kung Pao Tofu
+307,350.0,80.0,100.0,20.0,260.0, Baked Eggs in Avocado, Hard-Boiled Eggs, Fruit Salad, Moroccan Mint Tea," Greek Spanakopita - 260kcals per portion, 4 portions, contains dairy (Greece)
+"
+308,600.0,80.0,220.0,20.0,350.0, Vegan Breakfast Tofu Bowl, Avocado Deviled Eggs, Cauliflower and Chickpea Salad, Moroccan Mint Tea," Italian Eggplant Parmesan (350 calories/portion, 2 portions) - Italy
+"
+309,450.0,100.0,80.0,20.0,200.0," Vegan breakfast sandwich with tempeh and avocado (450kcals per portion, 2 portions)
+", Som Tam (Papaya Salad), Greek Salad Skewers, Moroccan Mint Tea," Black Bean and Corn Salad - 200 calories per portion, 4 portions, None, Various
+"
+310,200.0,100.0,280.0,20.0,400.0, Blueberry Almond Baked Oatmeal, Roasted Beetroot Chips, Veggie Flatbread Pizza, Moroccan Mint Tea," Lasagna rolls with spinach and ricotta - 400 kcals per portion, 4 portions, contains gluten, lactose
+"
+311,500.0,80.0,180.0,20.0,300.0," Vietnamese pho noodle soup with beef (500kcals per portion, 2 portions, origin", Stuffed Dates, Mini zucchini and cheese frittatas, Moroccan Mint Tea," Greek Pita Sandwiches - 300 calories/portion, 4 portions, contains gluten (Greece)
+"
+312,400.0,80.0,280.0,20.0,350.0, Vegan Breakfast Quesadilla - 400 calories per portion | 1 portion | Contains gluten | Origin, Energy Balls," Mini Cheesecakes - 280 kcals per portion, 3 portions, contains dairy (USA)", Moroccan Mint Tea," Chickpea Curry - 350 calories/portion, 4 portions, Origin"
+313,350.0,70.0,200.0,20.0,300.0," Veggie breakfast wrap with scrambled eggs (350kcals per portion, 2 portions, origin", Kale chips," Smoothie bowl (banana, spinach, almond milk, toppings)", Moroccan Mint Tea," Vegetarian Chili - 300 calories/portion, 4 portions, contains beans (Various)
+
+"
+314,550.0,100.0,150.0,20.0,400.0," Eggs Benedict - 550 calories per portion, 2 portions, contains gluten and dairy, origin", Cucumber Slices with Tzatziki - Approx, Mixed berry salad with honey citrus dressing, Moroccan Mint Tea, Cauliflower and Chickpea Curry
+315,350.0,100.0,180.0,20.0,350.0," Israeli shakshuka with eggplant and tahini (350kcals per portion, 2 portions, origin", Guacamole Stuffed Cherry Tomatoes, Apple Slices with Cinnamon Yogurt Dip, Moroccan Mint Tea," Mexican Quinoa Salad - 350 calories/portion, 4 portions, contains cilantro (Mexico)
+"
+316,250.0,90.0,200.0,20.0,450.0, Blueberry Oatmeal Breakfast Bars, Stuffed Dates, Vegan Chocolate Covered Strawberries, Moroccan Mint Tea, Thai Red Curry with Chicken
+317,400.0,100.0,150.0,20.0,200.0, Turkish Poached Eggs with Yogurt, Rice Cake with Hummus and Cucumber, Quinoa-stuffed mushrooms, Moroccan Mint Tea," Italian Vegan Bruschetta (200 calories/portion, 4 portions) - Italy
+"
+318,450.0,100.0,200.0,20.0,300.0, Sausage and Egg Breakfast Sandwich, Energy Balls, Cheese and Spinach Puffs, Moroccan Mint Tea," Vegetable Curry - 300kcals per portion, 4 portions (Various)
+"
+319,200.0,100.0,180.0,20.0,400.0, Tofu Scramble, Fresh Juice - Approx," Chocolate Covered Pretzels - 180 kcals per portion, 4 portions, contains gluten (USA)", Moroccan Mint Tea, Black Bean Enchiladas
+320,250.0,100.0,200.0,20.0,300.0, Vegan Blueberry Muffin Overnight Oats - 250 calories per portion | 2 portions | Contains gluten | Origin, Quinoa Energy Bites, Stuffed Grape Leaves, Moroccan Mint Tea," Black Bean Enchiladas - 300 calories/portion, 4 portions, Origin"
+321,300.0,100.0,100.0,20.0,300.0, Vegetable Frittata, Cucumber and Tomato Salad, Stuffed Mushrooms, Moroccan Mint Tea, Greek Orzo Salad
+322,320.0,100.0,80.0,20.0,320.0," Mushroom and goat cheese frittata (320 calories per portion, 2 portions, contains dairy, French origin)
+", Tomato Basil Bruschetta, Chocolate-dipped strawberries, Moroccan Mint Tea, Vegan Gumbo
+323,300.0,80.0,380.0,20.0,200.0, Vegan Pumpkin Muffins - 300 calories per portion | 2 portions | Contains gluten | Origin, Apple with Cinnamon, Mini chicken and vegetable pot pies, Moroccan Mint Tea," Lentil curry - 200 calories per portion, 6 portions, contains gluten (India)
+"
+324,300.0,100.0,180.0,20.0,300.0, Vegan Pumpkin Muffins - 300 calories per portion | 2 portions | Contains gluten | Origin, Vegetable Crudité with Hummus," Pineapple Salsa with Tortilla Chips - 180 kcals per portion, 3 portions, contains gluten (Various)", Moroccan Mint Tea, Vegan Sushi
+325,500.0,100.0,150.0,20.0,300.0, Cheddar and Herb Quiche, Roasted Almonds, Mexican Street Corn, Moroccan Mint Tea," Tuscan white bean and vegetable soup (300 calories per portion, 4 portions, vegan-friendly, origin"
+326,200.0,100.0,280.0,20.0,420.0, Vegan Scones - 200 calories per portion | 2 portions | Contains gluten | Origin, Mini Frittatas - Approx, Mini Vegetable Quiches, Moroccan Mint Tea," Honey soy glazed chicken with sesame noodles - 420 kcals per portion, 2 portions, contains gluten, soy
+"
+327,350.0,100.0,200.0,20.0,400.0, Vegan Blueberry Acai Smoothie Bowl - 350 calories per portion | 1 portion | None | Origin, Watermelon and feta skewers, Chicken and vegetable lettuce wraps, Moroccan Mint Tea," Mexican Vegan Fajitas (400 calories/portion, 2 portions) - Mexico
+"
+328,450.0,100.0,150.0,20.0,450.0," Quiche Lorraine with bacon and cheese (450kcals per portion, 2 portions, pork allergies, origin", Cucumber Rolls with Hummus - Approx, Peanut Butter Banana Roll-Ups, Moroccan Mint Tea," Butternut Squash and Sage Pasta - 450 calories/portion, 4 portions, contains gluten (Italy)
+"
+329,150.0,90.0,200.0,20.0,250.0, Vegan Egg Muffins - 150 calories per portion | 2 portions | None | Origin, Vegetarian Spring Rolls, Baked buffalo cauliflower bites, Moroccan Mint Tea, Ratatouille
+330,300.0,80.0,480.0,20.0,400.0, Shakshuka with Spinach, Fruit Salad, Vegan Lentil Burgers, Moroccan Mint Tea," Eggplant and Zucchini Gratin - 400 calories/portion, 4 portions, Origin"
+331,400.0,100.0,250.0,20.0,350.0, Vegan Breakfast Quesadilla - 400 calories per portion | 1 portion | Contains gluten | Origin, Stuffed Dates - Approx, Mini chicken pot pies, Moroccan Mint Tea, Thai Green Curry
+332,400.0,100.0,100.0,20.0,400.0," Caprese breakfast sandwich with avocado (400 calories per portion, 2 portions, contains dairy, Italian origin)
+"," Mint Yogurt Dip with Vegetable Sticks - 100kcals per portion, 2 portions
+    Origin", Tomato Basil Soup, Moroccan Mint Tea," Vegan Chili - 400 calories per portion, 6 portions, may contain beans"
+333,250.0,100.0,160.0,20.0,450.0, Banana and Almond Butter Toast, Caprese Skewers, Spinach and Feta Stuffed Mushrooms, Moroccan Mint Tea," Baked ziti with Italian sausage - 450 kcals per portion, 5 portions, contains gluten, lactose
+"
+334,150.0,90.0,100.0,20.0,350.0, Fruit Salad, Rice Paper Rolls, Baked Zucchini Fries, Moroccan Mint Tea," Caprese Stuffed Avocado - 350 calories/portion, 2 portions, Origin"
+335,300.0,100.0,100.0,20.0,400.0, Vegan Apple Cinnamon Quinoa - 300 calories per portion | 1 portion | None | Origin, Edamame, Baked Buffalo Cauliflower Bites, Moroccan Mint Tea," Stuffed bell peppers with ground beef and rice - 400 kcals per portion, 4 portions, contains lactose
+"
+336,250.0,100.0,180.0,20.0,150.0," Syrian ka'ak (sesame bread rings) - 250 calories per portion, 1 portion, contains gluten, origin", Roasted Pumpkin Seeds, Strawberry and banana smoothie, Moroccan Mint Tea, Veggie Stir-Fry
+337,400.0,100.0,150.0,20.0,220.0," Quinoa and black bean breakfast bowl (400 calories per portion, 2 portions, nut-free, American origin)
+", Fruit Smoothie Popsicles - Approx, Bruschetta, Moroccan Mint Tea, Chickpea Salad
+338,400.0,100.0,600.0,20.0,170.0, Veggie Bagel Sandwich, Som Tam (Papaya Salad), Vegan Mushroom Risotto, Moroccan Mint Tea, Vegan Caprese Salad
+339,200.0,100.0,250.0,20.0,200.0, Tomato Basil Tofu Scramble, Caprese Skewers, Spinach and Feta Rolls, Moroccan Mint Tea," Lentil Spinach Salad - 200 calories per portion, 4 portions, None, Various
+"
+340,200.0,100.0,320.0,20.0,380.0, Vegan Scones - 200 calories per portion | 2 portions | Contains gluten | Origin, Rice Paper Spring Rolls, Quinoa Salad, Moroccan Mint Tea," Quinoa Salad with Avocado and Black Beans - 380kcals per portion, 4 portions, contains legumes
+"
+341,250.0,100.0,280.0,20.0,400.0," Almond butter and banana smoothie (250kcals per portion, 1 portion, nut allergies)
+", Energy Balls," Greek Spanakopita - 280 kcals per portion, 3 portions, contains gluten, dairy (Greece)", Moroccan Mint Tea," Stuffed Bell Peppers with Ground Beef and Rice - 400 calories per portion, 4 portions, no allergic warnings, Origin"
+342,200.0,100.0,120.0,20.0,280.0, Overnight Chia Pudding, Kiwi and Strawberry Smoothie, Cucumber Sandwiches, Moroccan Mint Tea, Vegan Stuffed Shells
+343,400.0,100.0,300.0,20.0,150.0, Nutella Banana Croissant, Overnight Chia Pudding, Chicken Shawarma Wraps, Moroccan Mint Tea, Butternut Squash Soup
+344,350.0,100.0,200.0,20.0,100.0," Vegetarian breakfast quiche with broccoli and feta (350 calories per portion, 2 portions, contains dairy, American origin)
+", Baked Apple Chips, Fruit and Yogurt Parfait, Moroccan Mint Tea," Japanese Miso Soup with Tofu (100 calories/portion, 4 portions) - Japan
+"
+345,350.0,100.0,200.0,20.0,350.0," Yogurt and fruit smoothie bowl (350 calories per portion, 2 portions, contains dairy, American origin)
+", Caprese Skewers," Vegan Pumpkin Pancakes - 200 kcals per portion, 4 portions, no allergic warnings, origin", Moroccan Mint Tea," Quinoa-stuffed acorn squash with roasted vegetables - 350 kcals per portion, 3 portions, vegetarian, gluten-free
+"
+346,450.0,100.0,280.0,20.0,200.0," Nigerian moi moi (steamed bean pudding) with fish (450kcals per portion, 2 portions, origin", Vegetable Crudité with Hummus, Greek Spinach and Cheese Rolls, Moroccan Mint Tea, Greek Salad
+347,250.0,80.0,500.0,20.0,450.0, Buckwheat Porridge, Mango with Chili Powder, Roasted Vegetable Skewers, Moroccan Mint Tea," Baked ziti with Italian sausage - 450 kcals per portion, 5 portions, contains gluten, lactose
+"
+348,400.0,80.0,300.0,20.0,350.0, Chorizo Breakfast Burrito, Fresh Squeezed Orange Juice, Mini Pita Pizzas, Moroccan Mint Tea, Vegan Pesto Pasta
+349,300.0,80.0,540.0,20.0,400.0, Avocado Toast, Kale Chips, Stuffed Bell Peppers, Moroccan Mint Tea," Mushroom risotto – 400 calories per portion, 4 portions, vegetarian-friendly
+"
+350,450.0,100.0,180.0,20.0,200.0," Peanut butter and banana smoothie bowl (450 calories per portion, 2 portions, contains nuts, American origin)
+", Roasted Almonds, Cheesy Garlic Breadsticks, Moroccan Mint Tea, Greek Salad
+351,400.0,100.0,120.0,20.0,450.0," Brazilian tapioca pancake filled with cheese - 400 calories per portion, 2 portions, contains gluten and dairy, origin", Roasted Beetroot Chips, Veggie Egg Muffins, Moroccan Mint Tea, Greek Style Baked Chicken
+352,400.0,80.0,280.0,20.0,200.0, Vegan Breakfast Tater Tots - 400 calories per portion | 1 portion | Contains gluten | Origin," Carrot Sticks with Hummus - 80kcals per portion, 2 portions
+   Origin", Apple and Cinnamon Muffins, Moroccan Mint Tea, Lentil and Vegetable Bolognese
+353,400.0,100.0,180.0,20.0,350.0, Vegetable Omelette with Hash Browns," Mint Yogurt Dip with Vegetable Sticks - 100kcals per portion, 2 portions
+    Origin", Tuna Salad Lettuce Wraps, Moroccan Mint Tea," Lentil Curry - 350 calories/portion, 4 portions, Origin"
+354,250.0,60.0,200.0,20.0,300.0, Tofu Scramble - 250 calories per portion | 2 portions | None | Origin, Fruit Salad - Approx, Vegan Chocolate Covered Strawberries, Moroccan Mint Tea," Vegetable and tofu stir-fry - 300 calories per portion, 4 portions, contains soy
+"
+355,400.0,100.0,920.0,20.0,220.0, Veggie Breakfast Pizza Rolls, Watermelon Fruit Pizza, Vegan Butter Chicken, Moroccan Mint Tea," Shrimp Stir-Fry with Vegetables - 220 calories per portion, 4 portions, contains shellfish, Origin"
+356,300.0,100.0,220.0,20.0,250.0, Veggie Bagel Sandwich, Rice Paper Spring Rolls, Sweet Chili Lime Chicken Skewers, Moroccan Mint Tea, Thai Peanut Noodles
+357,250.0,100.0,160.0,20.0,350.0, Vegan Coconut Yogurt with Fruit - 250 calories per portion | 1 portion | None | Origin, Fresh Fruit Salad," Baked Sweet Potato Fries - 160 kcals per portion, 3 portions, may contain gluten (USA)", Moroccan Mint Tea," Mushroom and goat cheese flatbread - 350 calories per portion, 4 portions, contains gluten and dairy
+"
+358,300.0,80.0,300.0,20.0,280.0, Greek Yogurt Parfait, Apple with Cinnamon, Mini Veggie Pizzas, Moroccan Mint Tea, Vegan Quiche
+359,400.0,100.0,80.0,20.0,400.0," Brazilian tapioca crepes with coconut and condensed milk (400kcals per portion, 2 portions, dairy allergies, origin", Cucumber Rolls with Cream Cheese, Stuffed Dates with Almond Butter, Moroccan Mint Tea," Mushroom and truffle risotto - 400 calories per portion, 4 portions, contains gluten and dairy (Italy)
+"
+360,300.0,80.0,320.0,20.0,350.0, Vegan Breakfast Spring Rolls - 300 calories per portion | 1 portion | Contains soy | Origin, Fresh Watermelon Slices - Approx, Vegan Breaded Zucchini Sticks, Moroccan Mint Tea," British Vegan Scotch Broth (350 calories/portion, 2 portions) - United Kingdom
+"
+361,350.0,100.0,180.0,20.0,300.0, Vegan Breakfast Tacos, Cucumber and Tomato Salad," Blueberry Oatmeal Muffins - 180 kcals per portion, 4 portions, no allergic warnings, origin", Moroccan Mint Tea, Vegetable Biryani
+362,200.0,100.0,160.0,20.0,250.0, Vegan Chocolate Chia Pudding - 200 calories per portion | 2 portions | None | Origin, Chilled Gazpacho Soup - Approx," Chia Seed Pudding - 160 kcals per portion, 4 portions, gluten-free (Various)", Moroccan Mint Tea," Vegan Caesar Salad - 250 calories per portion, 4 portions, None, United States
+"
+363,300.0,100.0,360.0,20.0,200.0, Vegan Pumpkin Muffins - 300 calories per portion | 2 portions | Contains gluten | Origin, Corn on the Cob, Vegan Zucchini Noodles with Pesto, Moroccan Mint Tea," Caprese Stuffed Avocado - 200 calories/portion, 4 portions, contains dairy (Italy)
+"
+364,450.0,100.0,200.0,20.0,450.0," Tunisian brik (stuffed pastry) with tuna and egg (450kcals per portion, 2 portions, origin", Roasted Pumpkin Seeds," Vegan Broccoli Pesto Pasta - 200 kcals per portion, 4 portions, no allergic warnings, origin", Moroccan Mint Tea," Chicken Enchiladas - 450 calories per portion, 4 portions, contains gluten (tortillas), Origin"
+365,200.0,100.0,150.0,20.0,240.0, Caprese Avocado Toast, Chilled Gazpacho," Zucchini Fritters - 150 kcals per portion, 4 portions, no allergic warnings, origin", Moroccan Mint Tea, Spaghetti Aglio e Olio

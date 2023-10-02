@@ -1,0 +1,933 @@
+,breakfast_calories,morning snacks_calories,afternoon snacks_calories,lunch_calories,dinner_calories,breakfast,morning snacks,afternoon snacks,lunch,dinner
+1,150.0,240.0,220.0,300.0,80.0, Fruit Smoothie, Spinach and Feta Puffs," Chocolate Mousse - 220 kcals per portion, 2 portions, contains dairy (France)", Lentil Bolognese," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+2,250.0,90.0,250.0,400.0,80.0, Overnight Chia Pudding, Vegetarian Spring Rolls, Mini Chicken Tacos, Mediterranean stuffed peppers with quinoa and feta," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+3,150.0,180.0,180.0,400.0,80.0, Greek Yogurt with Berries, Banana Bread, Tabbouleh, Roasted Vegetable Pasta," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+4,250.0,210.0,220.0,400.0,80.0, Smoothie Bowl, Tofu Scramble, Greek tzatziki with pita chips, Vegetable Biryani," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+5,250.0,150.0,160.0,250.0,80.0, Vegan Blueberry Muffin Overnight Oats - 250 calories per portion | 2 portions | Contains gluten | Origin, Chocolate Covered Strawberries," Baked Falafel Bites - 160 kcals per portion, 5 portions, contains gluten (Middle East)", Vegetarian sushi rolls," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+6,200.0,180.0,250.0,400.0,80.0, Vegan Pumpkin Pancakes, Egg Muffins, Tuna salad on whole grain crackers," Israeli Falafel Pita with Tahini Sauce (400 calories per portion, serves 4, contains gluten, origin"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+7,200.0,280.0,250.0,350.0,80.0, Vegan Oatmeal Raisin Cookies - 200 calories per portion | 2 portions | Contains gluten | Origin, Spinach Quiche, Avocado Egg Salad Lettuce Wraps," Vegetable Stir-Fry with Tofu
+Total calories per portion"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+8,150.0,200.0,120.0,250.0,80.0, Vegan Breakfast Pita Pockets, Chocolate Covered Strawberries, Roasted chickpeas, Baked falafel with tzatziki sauce," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+9,250.0,250.0,180.0,300.0,80.0, Cucumber Sandwich, Greek yogurt pancakes with maple syrup, Greek Salad, Quinoa-stuffed tomatoes," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+10,200.0,180.0,100.0,450.0,80.0," Spinach and feta stuffed mushrooms - 200 calories per portion, 2 portions, contains dairy, origin", Zucchini Bread, Veggie Pinwheels, Chicken and Mushroom Stir Fry," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+11,150.0,200.0,140.0,350.0,80.0, Vegan Breakfast Pita Pockets, Vegan Breakfast Cookies, Baked sweet potato fries, Mushroom risotto," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+12,200.0,250.0,120.0,400.0,80.0," Miso soup with tofu and seaweed (200kcals per portion, 2 portions, soy allergies, Japan)
+", Vegan Chocolate Banana Bread, Stuffed Dates with Almonds," Mexican Chicken Quesadilla (400 calories per portion, serves 2, contains gluten and dairy, origin"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+13,200.0,220.0,200.0,700.0,80.0, Vegan Blueberry Pancakes, Sweet Potato Pancakes, Spinach Dip, Sweet Potato and Lentil Curry," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+14,250.0,150.0,120.0,250.0,80.0, Vegan Pancake Skewers, Quinoa and Black Bean Salad, Greek Yogurt Parfait, Veggie Sushi Rolls," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+15,250.0,200.0,220.0,400.0,80.0, Vegan Cinnamon Apple Oatmeal - 250 calories per portion | 2 portions | None | Origin, Antipasto Skewers, Teriyaki Chicken Skewers, Mango Salad," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+16,250.0,200.0,250.0,500.0,80.0, Vegan Berry Parfait - 250 calories per portion | 2 portions | Contains nuts | Origin, Chocolate Chia Pudding, Veggie Quesadillas, Vegetarian Taco Salad," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+17,250.0,220.0,250.0,450.0,80.0, Cucumber Sandwich, Vegan Protein Bars, Tomato Basil Bruschetta Pizza, Greek Chicken Gyro Salad," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+18,200.0,180.0,220.0,400.0,80.0, Vegetable Frittata, Vegan Banana Nut Bread, Caramelized Onion Tart," Quinoa Stuffed Cabbage Rolls - 400kcals per portion, 4 portions"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+19,200.0,150.0,250.0,700.0,80.0, Mexican Black Bean Breakfast Wrap," Cheese Stuffed Mini Bell Peppers - 150kcals per portion, 2 portions
+    Origin", Spinach and Feta Rolls, Sweet Potato and Chickpea Stew," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+20,250.0,180.0,210.0,400.0,80.0, Cucumber Sandwich, Oatmeal cookies, Greek Feta and Olive Tapenade Crostini," Greek Pita Pockets - 400kcals per portion, 1 portion, contains gluten, dairy (Greece)
+"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+21,200.0,300.0,100.0,350.0,80.0, Vegan Pumpkin Pancakes, Sweet Potato and Black Bean Breakfast Hash, Stuffed Dates with Almond Butter, Chicken Satay with Peanut Sauce," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+22,200.0,250.0,180.0,250.0,80.0, Veggie Breakfast Fritters, Spinach and Feta Pita Pockets," Vegan Strawberry Shortcake - 180 kcals per portion, 4 portions, no allergic warnings, origin"," Teriyaki Tofu and Vegetable Stir-Fry (250 calories per portion, serves 4, contains soy, origin"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+23,200.0,150.0,90.0,350.0,80.0," Spinach and feta stuffed mushrooms - 200 calories per portion, 2 portions, contains dairy, origin", Mini Caprese Skewers - Approx," Caprese Skewers - 90 kcals per portion, 6 portions, contains dairy (Italy)"," Broccoli and Cheddar Soup - 350 calories per portion, 4 portions, contains dairy, International
+"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+24,250.0,150.0,120.0,500.0,80.0, Overnight Oats, Fruit Smoothie, Vegan Energy Balls," Moroccan Chicken Pastilla (500 calories per portion, serves 2, contains nuts, origin"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+25,250.0,180.0,80.0,400.0,80.0, Vegan Breakfast Oats and Berries, Vegan Energy Bars, Energy Balls," Chinese Vegetable Lo Mein - 400 calories per portion, 4 portions, vegetarian, Chinese
+"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+26,250.0,100.0,220.0,350.0,80.0, Vegan Maple Pecan Overnight Oats - 250 calories per portion | 2 portions | Contains nuts | Origin, Energy Balls - Approx, Sweet Chili Lime Chicken Skewers," Greek Souvlaki Skewers - 350 calories per portion, 4 portions, contains dairy, Greek
+"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+27,200.0,250.0,120.0,300.0,80.0, Tofu Scramble, Greek Yogurt with Honey, Dark Chocolate Energy Balls," Chinese Mapo Tofu - 300 calories per portion, 4 portions, vegetarian, Chinese
+"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+28,200.0,250.0,200.0,450.0,80.0, Vegan Matcha Chia Pudding - 200 calories per portion | 1 portion | None | Origin, Spinach and Feta Hand Pies, Vegan Thai Papaya Salad, Greek Spinach Pie (Spanakopita)," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+29,200.0,250.0,270.0,420.0,80.0, Tomato Basil Tofu Scramble, Peanut Butter and Jelly Smoothie," Matzah Brei - 270 kcals per portion, 2 portions, contains gluten (Jewish)"," Lentil Sloppy Joes - 420kcals per portion, 2 portions, contains legumes, gluten
+"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+30,50.0,150.0,200.0,400.0,80.0, Vegan Breakfast Energy Balls, Baked Egg Cups, Yogurt parfait," Quinoa Black Bean Burgers - 400kcals per portion, 2 portions, no allergies
+"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+31,250.0,100.0,90.0,300.0,80.0, Muesli with Almond Milk, Fruit Salad, Zucchini fritters, Lebanese Chicken Manakish," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+32,250.0,150.0,190.0,450.0,80.0, Vegan Oatmeal Raisin Overnight Oats - 250 calories per portion | 2 portions | Contains gluten | Origin, Bruschetta with Mozzarella, Cucumber sushi rolls, Cauliflower Alfredo Pasta," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+33,250.0,150.0,100.0,150.0,80.0, Vegan Breakfast Crepes," Cream Cheese and Cucumber Tea Sandwiches - 150kcals per portion, 2 portions
+    Origin", Greek yogurt with mixed berries, Spinach and feta stuffed bell peppers," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+34,250.0,150.0,220.0,300.0,80.0, Avocado Toast, Baked Cinnamon Apple Chips," Avocado Toast - 220 kcals per portion, 3 portions, contains gluten (Various)"," Lentil and Sweet Potato Chili - 300kcals per portion, 2 portions"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+35,200.0,200.0,150.0,300.0,80.0," Vegetable omelette - 200 calories per portion, 2 portions, no allergic warnings, origin"," Stuffed Grape Leaves (Dolma) - 200kcals per portion, 1 portion
+    Origin", Paprika and Cumin Spiced Roasted Chickpeas," Vegetarian Sushi Rolls - 300 calories
+    - Total portions"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+36,200.0,180.0,220.0,400.0,80.0, Veggie Breakfast Pizza Rolls, Cereal Bars, Chicken Satay Lettuce Wraps," Greek Pasta Salad - 400kcals per portion, 2 portions"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+37,250.0,250.0,150.0,350.0,80.0, Tropical Green Smoothie, Overnight Oats, Greek Yogurt Dip with Veggies," Vietnamese Lemongrass Tofu Skewers - 350 calories per portion, 4 portions, vegetarian, Vietnamese
+"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+38,200.0,150.0,200.0,350.0,80.0, Vegan Breakfast Enchiladas," Tomato and Mozzarella Skewers - 150kcals per portion, 2 portions
+    Origin", Avocado Toast," Greek Spinach and Feta Stuffed Peppers - 350kcals per portion, 2 portions, nut-free, Greece
+"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+39,200.0,180.0,90.0,400.0,80.0, Tomato Basil Tofu Scramble, Egg muffins with spinach and feta, Zucchini Pizza Bites, Vietnamese Caramelized Pork," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+40,250.0,350.0,150.0,350.0,80.0, Vegan Breakfast Strata, Vegan Breakfast Burrito, Cucumber Sandwiches, Vegan Tacos," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+41,200.0,180.0,160.0,300.0,80.0, Tofu Scramble, Spinach and Feta Phyllo Triangles, Roasted Sweet Potato Slices, Vegan Jamaican Jerk Tofu," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+42,250.0,200.0,70.0,350.0,80.0," Chia seed pudding with mixed berries (250kcals per portion, 2 portions)
+", Guacamole with Tortilla Chips - Approx, Baked kale chips, Indian Vegetable Samosas," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+43,250.0,100.0,160.0,350.0,80.0, Vegan Overnight Chia Pudding - 250 calories per portion | 2 portions | None | Origin," Dates Stuffed with Almond Butter - 100kcals per portion, 2 portions
+    Origin", Greek Yogurt with Honey and Nuts," Quinoa Stuffed Tomatoes - 350kcals per portion, 4 portions"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+44,250.0,160.0,140.0,200.0,80.0, Vegan Breakfast Sushi Rolls, Roasted Chickpeas," Apple Slices with Almond Butter - 140 kcals per portion, 2 portions, contains tree nuts (USA)", Quinoa Stuffed Mushrooms," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+45,200.0,220.0,120.0,300.0,80.0, Vegetarian Quiche, Apple cinnamon overnight oats, Greek tomato and feta dip with pita chips, Greek Chickpea Salad," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+46,150.0,180.0,100.0,400.0,80.0, Vegan Pancakes, Banana Bread, Chocolate-Dipped Strawberries," Stuffed Bell Peppers with Rice and Beans - 400kcals per portion, 2 portions, contains legumes, gluten
+"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+47,200.0,300.0,80.0,250.0,80.0, Mini Vegetable Quiche, Healthy Veggie Nachos," Chocolate Dipped Strawberries - 80 kcals per portion, 4 portions, contains dairy (USA)"," Hummus Wrap - 250kcals per portion, 2 portions, gluten-free, Middle Eastern
+"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+48,200.0,300.0,100.0,250.0,80.0, Mexican Black Bean Breakfast Wrap, Sweet Potato Toast with Avocado - Approx, Stuffed Mushrooms," Vegetable Stir-Fry - 250kcals per portion, 3 portions, no allergies, Origin"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+49,200.0,150.0,280.0,400.0,80.0, Avocado Toast, Roasted Chickpeas - Approx, Vegan Chocolate Mousse," Roasted Vegetable Sandwich - 400kcals per portion, 2 portions, no allergies
+"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+50,200.0,100.0,120.0,320.0,80.0, Vegan Matcha Chia Pudding - 200 calories per portion | 1 portion | None | Origin, Quinoa Energy Bites, Mini pizza rolls," Veggie Stir-Fry - 320kcals per portion, 2 portions, contains soy
+"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+51,250.0,80.0,180.0,350.0,80.0, Banana Bread, Avocado Deviled Eggs," Pineapple Salsa with Tortilla Chips - 180 kcals per portion, 3 portions, contains gluten (Various)", Lentil and Vegetable Stir Fry," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+52,220.0,150.0,280.0,400.0,80.0," Vegetable frittata - 220 calories per portion, 4 portions, no allergic warnings, origin", Yogurt Parfait, Vegan Chocolate Mousse," Eggplant and Zucchini Lasagna - 400kcals per portion, 2 portions, contains gluten, dairy (Italy)
+"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+53,150.0,180.0,160.0,300.0,80.0, Vegan Pancakes, Peanut butter on rice cakes, Quinoa Stuffed Tomatoes, Quinoa-stuffed tomatoes," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+54,250.0,260.0,80.0,300.0,80.0, Overnight Chia Pudding, Vegan Blueberry Scones, Veggie Spring Rolls," Teriyaki Chicken with Veggie Stir Fry - 300kcals per portion, 3 portions, dairy-free, International
+"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+55,250.0,180.0,250.0,350.0,80.0, Overnight Chia Pudding, Vegetable Omelette, Cheese and Spinach Triangles, Eggplant parmesan with marinara sauce," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+56,250.0,220.0,210.0,300.0,80.0, Egg and Cheese Breakfast Taco, Vegan Apple Cinnamon Muesli, Greek Feta and Olive Tapenade Crostini," Chinese Hot and Sour Soup - 300 calories per portion, 4 portions, vegetarian, Chinese
+"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+57,250.0,350.0,250.0,450.0,80.0," Coconut chia pudding with mango (250kcals per portion, 2 portions)
+", Veggie Nachos with Salsa and Guacamole, Tuna salad on whole grain crackers, Chicken and Vegetable Curry," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+58,250.0,200.0,150.0,300.0,80.0, Vegan Pancakes - 250 calories per portion | 2 portions | Contains gluten | Origin, Caprese Skewers with Balsamic Glaze, Zucchini chips," Greek Dolmades - 300 calories per portion, 4 portions, vegetarian, Greek
+
+"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+59,250.0,100.0,160.0,400.0,80.0, Buckwheat Porridge, Cucumber and Hummus Rolls," Vegan Bruschetta Pasta Salad - 160 kcals per portion, 4 portions, no allergic warnings, origin", Vegan Stuffed Bell Peppers," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+60,200.0,300.0,90.0,250.0,80.0, Raspberry Coconut Breakfast Bars, Pancake Skewers, Zucchini fritters, Mixed vegetable curry," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+61,250.0,250.0,220.0,300.0,80.0, Tomato Basil Bruschetta, Quinoa Salad with Veggies, Cheese and Spinach Triangles," Lentil and Vegetable Curry - 300kcals per portion, 4 portions"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+62,250.0,150.0,200.0,550.0,80.0, Vegan Breakfast Bruschetta - 250 calories per portion | 2 portions | Contains gluten | Origin, Cherry Tomatoes with Mozzarella - Approx, Baked buffalo cauliflower bites," Vegan Mushroom Risotto Stuffed Acorn Squash
+Total calories per portion"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+63,50.0,200.0,180.0,260.0,80.0, Vegan Breakfast Energy Balls, Egg Salad Lettuce Wraps," Vegan Banana Bread - 180 kcals per portion, 4 portions, no allergic warnings, origin"," Zucchini Noodles with Pesto - 260kcals per portion, 2 portions, contains nuts (Italy)
+"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+64,250.0,160.0,250.0,200.0,80.0, Vegan Breakfast Bruschetta, Cherry Tomatoes with Cottage Cheese, Mini chicken and vegetable skewers, Greek yogurt and fruit parfait," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+65,70.0,200.0,180.0,200.0,80.0, Fruit Salad, Chocolate Chia Pudding, Greek Tzatziki with Pita Bread," Quinoa Salad - 200 calories
+   - Total portions"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+66,250.0,200.0,150.0,400.0,80.0, Overnight Chia Oats," Raspberry Oat Bars - 200kcals per portion, 1 portion
+    Origin", Tomato and Mozzarella Skewers, Mexican Chicken Enchiladas," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+67,250.0,250.0,200.0,350.0,80.0, Banana and Almond Butter Toast, Cinnamon Sugar Donuts - Approx, Vegetable Dumplings," Thai Green Curry with Tofu - 350 calories
+    - Total portions"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+68,250.0,150.0,200.0,400.0,80.0," Banana walnut muffins (250 calories per portion, 2 portions, contains nuts, American origin)
+", Carrot Soup - Approx," Vegan Pancakes with Maple Syrup - 200 kcals per portion, 4 portions, no allergic warnings, origin", Veggie Biryani," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+69,50.0,150.0,240.0,250.0,80.0, Vegan Breakfast Smoothie, Granola Bar with Dark Chocolate Chips, Mini Chicken Samosas," Lentil Salad - 250kcals per portion, 2 portions, contains legumes
+"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+70,250.0,150.0,140.0,300.0,80.0," Tofu scramble with vegetables (250kcals per portion, 2 portions, soy allergies, origin"," Chickpea Salad - 150kcals per portion, 2 portions
+    Origin"," Roasted Beetroot Dip with Pita Bread - 140 kcals per portion, 4 portions, no allergic warnings, origin"," Moroccan Vegetable Tagine - 300 calories
+    - Total portions"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+71,200.0,200.0,90.0,350.0,80.0, Vegan Breakfast Quinoa Salad, Cauliflower Buffalo Wings, Vegetable Spring Rolls, Lentil and vegetable shepherd's pie," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+72,250.0,350.0,120.0,350.0,80.0, Vegan Chocolate Banana Chia Pudding - 250 calories per portion | 2 portions | None | Origin, Smoked salmon and cream cheese bagel, Spiced Roasted Chickpeas, Thai Coconut Curry Soup," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+73,200.0,300.0,120.0,200.0,80.0, Blueberry Almond Baked Oatmeal, Veggie Breakfast Pizza, Greek Yogurt Dip with Veggies," Oven-Baked Sweet Potato Fries (200 calories per portion, serves 4, no allergies, origin"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+74,200.0,100.0,160.0,400.0,80.0, Papaya Boat with Lime, Greek Salad Skewers, Quinoa Stuffed Tomatoes," Vegan Hungarian Goulash
+Total calories per portion"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+75,250.0,250.0,90.0,400.0,80.0, Sweet Potato Toast - 250 calories per portion | 1 portion | None | Origin, Mini Spinach and Cheese Quiche - Approx, Cinnamon roasted chickpeas," Moroccan Chickpea Tagine - 400kcals per portion, 2 portions, dairy-free, Morocco
+"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+76,250.0,150.0,200.0,300.0,80.0, Vegan Pancakes - 250 calories per portion | 2 portions | Contains gluten | Origin, Zucchini Fritters, Veggie burger sliders," Thai Green Papaya Salad (300 calories per portion, serves 4, contains peanuts and fish sauce, origin"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+77,250.0,150.0,250.0,350.0,80.0, Blueberry Oatmeal Breakfast Bars," Caprese Salad Skewers - 150kcals per portion, 2 portions
+     Origin", Guacamole with Tortilla Chips, Turkish Kofta Kebabs," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+78,100.0,240.0,250.0,350.0,80.0, Vegan Breakfast Falafel, Vegan Raspberry Muffins, Baked salmon cakes, Chopped antipasto salad," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+79,250.0,250.0,120.0,300.0,80.0, Vegan Breakfast Oats and Berries, Raspberries and Cream Oatmeal, Vegetable sushi rolls, Zucchini noodles with pesto and cherry tomatoes," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+80,200.0,250.0,180.0,350.0,80.0, Vegan Pumpkin Pancakes, Peanut Butter and Jelly Smoothie, Grilled Halloumi Skewers," Roasted Eggplant and Hummus Wrap (350 calories per portion, serves 2, contains gluten, origin"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+81,250.0,300.0,240.0,430.0,80.0, Tofu Scramble - 250 calories per portion | 2 portions | None | Origin, Banana and Almond Butter Crepes, Veggie Couscous Salad," Veggie Paella - 430kcals per portion, 2 portions, contains gluten
+"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+82,200.0,200.0,150.0,400.0,80.0," Yogurt and fruit smoothie (200 calories per portion, 2 portions, contains dairy, American origin)
+"," Black Bean and Corn Salsa with Tortilla Chips - 200kcals per portion, 1 portion
+    Origin", Caprese Salad Skewers, Vegetable Lasagna," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+83,250.0,250.0,150.0,400.0,80.0, Vegan Blueberry Chia Pancakes, Greek Saganaki, Spinach and ricotta stuffed shells," Vegan Lentil Sloppy Joes
+Total calories per portion"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+84,250.0,100.0,210.0,300.0,80.0, Vegan Overnight Chia Pudding - 250 calories per portion | 2 portions | None | Origin, Fruit Salad, Veggie Pizza Bagels, Lebanese Fattoush Salad," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+85,160.0,180.0,120.0,300.0,80.0," Cream cheese stuffed strawberries (160 calories per portion, 2 portions, contains dairy, American origin)
+", Veggie Stuffed Bell Peppers, Guacamole and Veggie Sticks," Vegan Lentil Soup (300 calories per portion, serves 6, no allergies, origin"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+86,250.0,150.0,90.0,600.0,80.0, Greek Yogurt with Honey and Nuts, Zucchini Noodles with Marinara Sauce," Vegan Caprese Salad Skewers - 90 kcals per portion, 4 portions, no allergic warnings, origin", Veggie Paella," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+87,150.0,160.0,90.0,350.0,80.0, Chia Pudding, Cottage cheese and cucumber wraps," Baked Zucchini Chips - 90 kcals per portion, 4 portions, no allergic warnings, origin"," Mexican Enchilada Stuffed Bell Peppers (350 calories per portion, serves 4, contains gluten, origin"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+88,250.0,300.0,120.0,400.0,80.0," British eggy soldiers - 250 calories per portion, 1 portion, contains gluten, origin", Veggie Breakfast Pizza," Energy Balls - 120 kcals per portion, 8 portions, contains nuts (USA)"," Tomato and Mozzarella Panini - 400kcals per portion, 2 portions, contains dairy
+"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+89,50.0,250.0,150.0,350.0,80.0, Vegan Breakfast Energy Balls, Cornbread," Vegan Zucchini Fritters with Vegan Sour Cream - 150 kcals per portion, 4 portions, no allergic warnings, origin", Greek salad with grilled chicken," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+90,250.0,150.0,200.0,600.0,80.0, Overnight Oats, Cucumber and Hummus Bites, Spinach and artichoke dip with tortilla chips," Chicken Korma - 600kcals per portion, 2 portions"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+91,200.0,200.0,140.0,400.0,80.0, Raspberry Coconut Breakfast Bars, Veggie frittata, Bacon-Wrapped Asparagus," Eggplant Parmesan - 400kcals per portion, 2 portions, lacto-vegetarian, Italy
+"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+92,200.0,300.0,200.0,180.0,80.0," Oatmeal with banana and almond (200kcals per portion, 2 portions, nut allergies, origin", Whole Wheat Bagel with Cream Cheese, Tofu Vegetable Skewers, Spinach and artichoke dip," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+93,150.0,200.0,160.0,250.0,80.0, Fruit Smoothie, Antipasto Skewers, Greek Yogurt with Honey and Nuts, Greek Quinoa Salad," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+94,200.0,150.0,180.0,400.0,80.0," Oatmeal with berries - 200 calories per portion, 2 portions, no allergic warnings, origin", Greek Yogurt with Berries, Cheesy Garlic Breadsticks, Thai Green Curry," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+95,250.0,200.0,90.0,300.0,80.0, Vegan Chocolate Banana Chia Pudding - 250 calories per portion | 2 portions | None | Origin, Vegan Protein Bars," Caprese Skewers - 90 kcals per portion, 6 portions, contains dairy (Italy)"," Greek Baked Feta - 300kcals per portion, 2 portions, contains dairy, Origin"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+96,200.0,150.0,80.0,150.0,80.0, Vegetable Frittata, Baked Sweet Potato Fries, Energy Balls, Ratatouille," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+97,150.0,210.0,120.0,400.0,80.0, Vegan Egg Muffins - 150 calories per portion | 2 portions | None | Origin, Sweet Potato and Black Bean Quesadilla, Caprese Pasta Salad," Thai Red Curry with Shrimp - 400 calories per portion, 4 portions, contains dairy and shellfish, Thai
+"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+98,250.0,240.0,120.0,350.0,80.0, Vegan Tofu Benedict, Vegan Pear and Walnut Bread, No-Bake Energy Bars," Spinach and Mushroom Quesadilla - 350 calories per portion, 2 portions, contains dairy, Mexican
+"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+99,250.0,160.0,100.0,150.0,80.0, Vegan Green Breakfast Bowl - 250 calories per portion | 2 portions | None | Origin, Tomato and mozzarella skewers, Chocolate Covered Strawberries," Cucumber Avocado Salad - 150kcals per portion, 2 portions, nut-free, International
+"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+100,250.0,180.0,180.0,550.0,80.0, Vegan Sausage and Biscuits, Carrot Cake Muffins," Baked Falafel Salad - 180 kcals per portion, 4 portions, allergic warning (sesame), origin"," Vegan Thai Basil Fried Rice
+Total calories per portion"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+101,150.0,90.0,240.0,300.0,80.0, Fruit Salad, Rice Paper Rolls," Matzah with Cream Cheese - 240 kcals per portion, 3 portions, contains dairy (Jewish)"," Asian Noodle Salad with Sesame Ginger Dressing (300 calories per portion, serves 4, contains gluten and soy, origin"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+102,250.0,150.0,160.0,350.0,80.0, Vegan Banana Bread - 250 calories per portion | 2 portions | Contains gluten | Origin, Sautéed Mushrooms on Toast - Approx," Vegan Spinach and Artichoke Stuffed Mushrooms - 160 kcals per portion, 4 portions, no allergic warnings, origin", Tofu and Vegetable Kebabs," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+103,250.0,300.0,230.0,400.0,80.0, Greek Feta and Tomato Toast, Peanut Butter and Banana Smoothie," Baked Mozzarella Sticks - 230 kcals per portion, 4 portions, contains gluten, dairy (USA)", Falafel Salad," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+104,200.0,250.0,180.0,300.0,80.0, Oatmeal with Berries, Mini Spinach and Cheese Quiche - Approx, Baked Mozzarella Sticks," Chickpea Salad Sandwich - 300kcals per portion, 2 portions, no allergies
+"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+105,250.0,200.0,250.0,400.0,80.0, Vegan Breakfast Bruschetta," Greek Style Tzatziki with Pita Chips - 200kcals per portion, 1 portion
+    Origin", Peanut Butter Banana Roll-Ups, Quinoa Buddha Bowl," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+106,200.0,200.0,100.0,300.0,80.0, Spinach and Feta Stuffed Portobello Mushrooms, Red Pepper and Tomato Soup, Chocolate-Dipped Strawberries," Greek Spanakopita Triangles - 300 calories
+    - Total portions"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+107,100.0,400.0,160.0,350.0,80.0, Vegan Breakfast Rice Pudding, Acai Bowl, Cucumber and Cream Cheese Bites, Vegan Eggplant Rollatini," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+108,200.0,200.0,150.0,500.0,80.0, Avocado Toast, Chickpea Salad, Ricotta Stuffed Mushrooms," Israeli Sabich Bowl - 500 calories
+    - Total portions"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+109,250.0,200.0,200.0,300.0,80.0, Raspberry Chia Jam Toast, Scrambled eggs with spinach," Apple Cinnamon Muffins - 200 kcals per portion, 3 portions, contains gluten (USA)"," Israeli Egg Salad Wrap (300 calories per portion, serves 2, contains gluten and eggs, origin"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+110,250.0,120.0,150.0,400.0,80.0, Vegan Berry Parfait - 250 calories per portion | 2 portions | Contains nuts | Origin, Hummus with Veggies, Greek Tzatziki Dip with Pita Bread," Lentil and Chickpea Curry - 400 calories
+    - Total portions"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+111,160.0,150.0,140.0,350.0,80.0," Cream cheese stuffed strawberries (160 calories per portion, 2 portions, contains dairy, American origin)
+", Green Smoothie," Caprese pinwheels (tortilla with mozzarella, tomato, basil)", Vegan Argentinian Chimichurri Grilled Vegetables," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+112,250.0,150.0,220.0,250.0,80.0, Veggie Omelette, Mozzarella Sticks, Strawberry Banana Smoothie, Lentil Soup with Spinach," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+113,200.0,150.0,250.0,400.0,80.0, Vegan Breakfast Quinoa Salad, Vegan Banana Pancakes, Spinach and Artichoke Dip with Pita Chips, Turkish Chicken Pilaf," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+114,200.0,220.0,80.0,350.0,80.0, Mexican Black Bean Breakfast Wrap, Ricotta Pancakes, Cheese and spinach stuffed mushrooms, Vegan Tacos with Avocado Salsa," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+115,250.0,180.0,280.0,350.0,80.0, Egg and Cheese Breakfast Taco, Banana Bread, Vegan Greek Salad," Quinoa Taco Salad - 350kcals per portion, 3 portions, no allergies, Origin"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+116,160.0,250.0,180.0,350.0,80.0," Cream cheese stuffed strawberries (160 calories per portion, 2 portions, contains dairy, American origin)
+", Overnight Oats, Greek Yogurt Parfait," Lentil Meatballs - 350kcals per portion, 2 portions, contains legumes
+"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+117,250.0,170.0,150.0,280.0,80.0, Vegan Oatmeal Chocolate Chip Cookies - 250 calories per portion | 2 portions | Contains gluten | Origin, Chocolate Chia Pudding, Roasted Red Pepper Hummus with Pita Bread," Lentil and Sweet Potato Curry - 280kcals per portion, 4 portions, vegan, International
+"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+118,150.0,150.0,200.0,350.0,80.0, Greek Yogurt with Berries," Cheese Stuffed Mini Bell Peppers - 150kcals per portion, 2 portions
+    Origin", Banana Bread, Mexican Beef Tacos," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+119,200.0,100.0,200.0,350.0,80.0, Congee, Energy Balls, Stuffed Bell Peppers, Vegetable Stir-Fry," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+120,250.0,150.0,180.0,350.0,80.0, Whole Wheat Veggie Breakfast Wrap," Tomato Bruschetta - 150kcals per portion, 2 portions
+    Origin", Veggie Quesadillas, Lentil and Spinach Curry," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+121,150.0,300.0,150.0,200.0,80.0, Scrambled Tofu, Grilled Halloumi Skewers - Approx, Roasted Chickpeas, Lentil soup," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+122,200.0,220.0,60.0,400.0,80.0, Caprese Avocado Toast, Baked Sweet Potato Chips," Sliced Apples with Cinnamon - 60 kcals per portion, 4 portions, no allergic warnings, origin", Quinoa-Stuffed Bell Peppers," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+123,250.0,220.0,200.0,350.0,80.0, Tofu Scramble - 250 calories per portion | 2 portions | None | Origin, Blueberry muffins, Sweet Potato Fries," Falafel with Tahini Sauce - 350 calories per portion, 4 portions, vegetarian, Middle Eastern
+"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+124,250.0,100.0,150.0,200.0,80.0, Tropical Smoothie, Fruit Smoothie Popsicles - Approx, Mixed berry smoothie," Quinoa Salad - 200kcals per portion, 4 portions, no allergies
+"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+125,250.0,100.0,200.0,150.0,80.0, Vegan Coconut Yogurt with Fruit - 250 calories per portion | 1 portion | None | Origin, Frozen Grapes, Baked Falafel, Lentil Soup," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+126,200.0,200.0,90.0,350.0,80.0, Vegan Oatmeal Raisin Cookies - 200 calories per portion | 2 portions | Contains gluten | Origin, Mixed Nuts - Approx, Cucumber Sandwiches, Vegan Stuffed Zucchini," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+127,250.0,80.0,170.0,390.0,80.0," Blueberry almond muffins (250 calories per portion, 2 portions, contains nuts, American origin)
+", Avocado Deviled Eggs, Roasted Beetroot and Goat Cheese Crostini," Greek Pasta Primavera - 390kcals per portion, 2 portions, contains gluten, dairy (Greece)
+"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+128,200.0,300.0,180.0,400.0,80.0, Blueberry Almond Baked Oatmeal, Apple Cinnamon Muffins," Roasted Red Pepper and Feta Dip - 180 kcals per portion, 3 portions, contains dairy (Various)", Thai Green Curry," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+129,250.0,180.0,200.0,350.0,80.0, Overnight Chia Oats, Baked Oatmeal Cups, Cilantro Lime Shrimp Skewers, Vegan Pesto Pasta with Roasted Tomatoes," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+130,200.0,200.0,120.0,250.0,80.0, Poha (Flattened Rice), Chickpea Salad Wraps," Pico de Gallo with Tortilla Chips - 120 kcals per portion, 1 portion, contains gluten (Mexico)", Turkish Baklava," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+131,100.0,180.0,150.0,410.0,80.0, Vegan Breakfast Falafel, Zucchini Bread, Tomato and Mozzarella Skewers," Greek Style Orzo with Roasted Vegetables - 410kcals per portion, 2 portions, contains gluten, dairy (Greece)
+"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+132,250.0,220.0,80.0,450.0,80.0, Vegan Breakfast Pizza, Banana Pancakes, Fruit Salad," Italian Vegan Pizza
+Total calories per portion"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+133,250.0,300.0,200.0,200.0,80.0, Greek Yogurt Parfait Bowl, Vegetable Potstickers with Soy Dipping Sauce, Mini Chicken and Vegetable Skewers, Moroccan Lentil Soup," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+134,200.0,150.0,100.0,390.0,80.0," Oatmeal with berries - 200 calories per portion, 2 portions, no allergic warnings, origin"," Assorted Mini Muffins - 150kcals per portion, 2 portions
+    Origin", Gazpacho Soup," Tomato and Mozzarella Pasta Salad - 390kcals per portion, 2 portions, contains gluten, dairy (Italy)
+"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+135,200.0,200.0,210.0,800.0,80.0, Mexican Black Bean Breakfast Wrap, Banana Sushi, Greek Feta and Olive Tapenade Crostini, Mexican Quinoa Stuffed Bell Peppers," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+136,250.0,250.0,150.0,250.0,80.0, Banana and Almond Butter Toast, Garlic Bread, Stuffed Grape Leaves, Vegan Moroccan Couscous," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+137,160.0,250.0,100.0,400.0,80.0," Cream cheese stuffed strawberries (160 calories per portion, 2 portions, contains dairy, American origin)
+", Greek Yogurt Pancakes, Greek yogurt with honey and walnuts," Israeli Falafel Burger - 400 calories per portion, 2 portions, vegetarian, Israeli
+"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+138,250.0,250.0,200.0,200.0,80.0, Buckwheat Porridge, Veggie Sushi Rolls, Mini Apple Hand Pies, Spinach and cheese stuffed portobello mushrooms," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+139,200.0,220.0,180.0,200.0,80.0, Vegan Breakfast Quiche Lorraine, Oatmeal with Berries, Apple Slices with Cinnamon Yogurt Dip," Vegan Mushroom and Lentil Soup
+Total calories per portion"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+140,250.0,180.0,200.0,250.0,80.0," Almond joy smoothie (250 calories per portion, 2 portions, contains nuts, American origin)
+", Antipasto Skewers, Stuffed Grape Leaves," Italian Minestrone Soup
+Total calories per portion"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+141,250.0,120.0,120.0,600.0,80.0, Egg and Cheese Breakfast Taco, Cottage Cheese with Sliced Tomato, Spinach and Feta Pinwheels, Bean and Vegetable Burrito," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+142,200.0,200.0,100.0,350.0,80.0," Miso soup with tofu and seaweed (200kcals per portion, 2 portions, soy allergies, Japan)
+", Spinach and Cheese Empanadas, Cheese and bacon stuffed mushrooms, Thai Coconut Curry Soup," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+143,150.0,300.0,150.0,300.0,80.0, Vegan Energy Balls - 150 calories per portion | 2 portions | Contains nuts | Origin, Rice Paper Rolls with Peanut Dipping Sauce," Tabbouleh Salad - 150 kcals per portion, 4 portions, contains gluten (Lebanon)"," Curried Chickpea Salad - 300kcals per portion, 4 portions, no allergies, Origin"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+144,250.0,250.0,180.0,350.0,80.0, Vegan Coconut Yogurt with Fruit - 250 calories per portion | 1 portion | None | Origin, Apple Cinnamon Granola, Pesto and Tomato Tart," Sushi Bowl with Smoked Salmon (350 calories per portion, serves 2, contains fish and gluten, origin"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+145,50.0,150.0,140.0,250.0,80.0, Vegan Breakfast Stuffed Tomatoes, Vegan Chocolate Chip Cookies," Roasted Chickpeas - 140 kcals per portion, 4 portions, gluten-free (World)"," Quinoa Stuffed Bell Peppers (250 calories per portion, serves 4, no allergies, origin"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+146,200.0,280.0,240.0,400.0,80.0, Vegetarian Quiche, Berry Smoothie Bowl, Vegan Stuffed Portobello Mushrooms," Grilled Chicken Caesar Salad - 400kcals per portion, 2 portions, gluten-free, International
+
+"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+147,250.0,250.0,160.0,550.0,80.0," Almond joy smoothie (250 calories per portion, 2 portions, contains nuts, American origin)
+", Rice Pudding," Vegan Spinach and Artichoke Stuffed Mushrooms - 160 kcals per portion, 4 portions, no allergic warnings, origin", Portobello Mushroom Burger," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+148,220.0,200.0,270.0,400.0,80.0," Scrambled eggs with toast - 220 calories per portion, 2 portions, no allergic warnings, origin", Blueberry Overnight Oats," Matzah Brei - 270 kcals per portion, 2 portions, contains gluten (Jewish)"," Chinese General Tso's Chicken - 400 calories per portion, 2 portions, contains dairy, Chinese
+
+"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+149,250.0,300.0,180.0,200.0,80.0," Banana walnut muffins (250 calories per portion, 2 portions, contains nuts, American origin)
+", Quinoa Stuffed Bell Peppers, Veggie Quesadillas, Vietnamese Spring Rolls," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+150,250.0,120.0,180.0,300.0,80.0, Greek Yogurt Parfait Bowl, Baked Cheese Twists," Blueberry Oatmeal Muffins - 180 kcals per portion, 4 portions, no allergic warnings, origin"," Creamy Tomato Soup - 300kcals per portion, 2 portions, contains dairy, Origin"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+151,250.0,200.0,180.0,250.0,80.0, Vegan Raspberry Almond Scones - 250 calories per portion | 2 portions | Contains gluten and nuts | Origin, Chocolate Chia Pudding, Spinach and cheese stuffed mushrooms," Teriyaki Tofu Stir-Fry (250 calories per portion, serves 4, contains soy, origin"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+152,250.0,250.0,160.0,250.0,80.0," Fruit smoothie bowl topped with granola (250kcals per portion, 2 portions, nut allergies, origin", Apple Slices with Almond Butter," Vegan Raspberry Bars - 160 kcals per portion, 4 portions, no allergic warnings, origin"," Caprese Salad - 250 calories
+    - Total portions"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+153,250.0,180.0,200.0,200.0,80.0, Mozzarella and Tomato Bruschetta, Quinoa Cakes," Berry Smoothie Bowl - 200 kcals per portion, 2 portions, contains dairy (USA)", Greek briam," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+154,50.0,300.0,200.0,300.0,80.0, Vegan Breakfast Stuffed Tomatoes, Spinach and Ricotta Tart, Baked Falafel, Vegan BBQ Chickpea Pizza," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+155,250.0,150.0,100.0,350.0,80.0," Almond joy smoothie (250 calories per portion, 2 portions, contains nuts, American origin)
+", Sweet Corn Fritters, Chocolate Banana Smoothie, Cauliflower crust pizza with vegetables," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+156,250.0,200.0,180.0,200.0,80.0, Vegan Breakfast Sushi Rolls, Zucchini Fritters, Cheesy Garlic Breadsticks, Spinach and cheese stuffed portobello mushrooms," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+157,200.0,180.0,160.0,350.0,80.0," Oatmeal with berries - 200 calories per portion, 2 portions, no allergic warnings, origin", Mediterranean Stuffed Tomatoes, Stuffed Jalapeno Poppers," Greek Salad with Lemon-Herb Chicken (350 calories per portion, serves 2, no allergies, origin"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+158,250.0,200.0,120.0,300.0,80.0," Vegan overnight oats with almond milk and berries (250kcals per portion, 2 portions, nut allergies)
+", Greek Yogurt with Honey and Berries, Vegetable sushi rolls, Moroccan Couscous Salad," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+159,200.0,200.0,150.0,450.0,80.0, Spanish Tortilla, Rice Paper Spring Rolls, Zucchini chips, Mushroom Risotto," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+160,200.0,180.0,180.0,400.0,80.0, Spinach Tomato Feta Frittata, Samosas, Baked Jalapeno Poppers," Mexican Chicken Enchiladas - 400 calories per portion, 4 portions, contains dairy, Mexican
+"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+161,70.0,100.0,220.0,250.0,80.0, Fruit Salad, Caprese Skewers, Guacamole with Tortilla Chips, Lebanese fattoush salad," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+162,250.0,250.0,100.0,250.0,80.0," Chia seed pudding with coconut milk (250 calories per portion, 2 portions, nut-free, American origin)
+", Greek Yogurt with Honey, Stuffed Dates, Greek Yogurt and Berry Parfait," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+163,200.0,160.0,110.0,300.0,80.0, Vegan Banana Bread, Egg white omelette with veggies," Sweet Potato Rounds - 110 kcals per portion, 4 portions, gluten-free (USA)"," Moroccan Quinoa Pilaf with Roasted Vegetables (300 calories per portion, serves 6, contains legumes, origin"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+164,250.0,170.0,150.0,350.0,80.0, Muesli with Almond Milk, Banana Chia Pudding," Hummus with Veggies - 150 kcals per portion, 3 portions, may contain sesame (Middle East)", Grilled Chicken with Steamed Vegetables," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+165,50.0,300.0,240.0,350.0,80.0, Vegan Breakfast Energy Balls, Vegan Chocolate Banana Bread, Peanut butter and banana sushi rolls, Moroccan Chickpea Stew," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+166,250.0,100.0,120.0,300.0,80.0, Banana Bread, Toasted Coconut Chips," Vegan Almond Butter Energy Balls - 120 kcals per portion, 4 portions, allergic warning (almonds), origin"," Smashed Chickpea Salad Sandwich - 300kcals per portion, 3 portions, nut-free, International
+"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+167,250.0,150.0,210.0,350.0,80.0, Vegan Breakfast Sushi Rolls, Roasted Red Pepper Hummus, Greek Feta and Olive Tapenade Crostini," Mexican Quinoa Stuffed Peppers (350 calories per portion, serves 4, contains legumes, origin"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+168,200.0,210.0,150.0,350.0,80.0, Vegetable Frittata, Quinoa Sushi Rolls, Roasted Brussels Sprouts," Vegan Sushi Bowl
+Total calories per portion"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+169,250.0,250.0,200.0,380.0,80.0, Vegan Blueberry Chia Pancakes," Greek Yogurt with Honey and Walnuts - 250kcals per portion, 1 portion
+   Origin", Avocado toast," Avocado and Chickpea Salad - 380kcals per portion, 2 portions, contains legumes
+"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+170,50.0,250.0,140.0,500.0,80.0, Vegan Breakfast Sushi Burrito, Almond Butter Toast, Baked sweet potato fries," Vegetarian Bibimbap - 500 calories
+    - Total portions"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+171,200.0,250.0,100.0,200.0,80.0, Tofu Scramble, Raspberries and Cream Oatmeal, Hummus with Veggies, Vegan Spaghetti Aglio e Olio," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+172,100.0,250.0,100.0,250.0,80.0, Vegan Breakfast Rice Pudding, Stuffed Tomatoes with Couscous," Roasted Garlic Hummus with Veggie Sticks - 100 kcals per portion, 4 portions, no allergic warnings, origin"," Tomato Basil Bruschetta - 250kcals per portion, 4 portions, lacto-vegetarian, Italy
+
+"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+173,250.0,180.0,100.0,400.0,80.0, Sweet Potato Toast - 250 calories per portion | 1 portion | None | Origin, Fresh Berry Parfait," Vegan Spinach and Artichoke Dip - 100 kcals per portion, 4 portions, no allergic warnings, origin"," Israeli Falafel Burger - 400 calories per portion, 2 portions, vegetarian, Israeli
+"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+174,100.0,250.0,120.0,400.0,80.0, Healthy Fruit Salad, Spinach and Mushroom Quiche," Pico de Gallo with Tortilla Chips - 120 kcals per portion, 1 portion, contains gluten (Mexico)"," Lentil and Chickpea Curry - 400 calories
+    - Total portions"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+175,250.0,200.0,150.0,350.0,80.0, Vegan Tofu Benedict, Tofu Scramble with Veggies, Carrot Hummus with Pita Chips, Veggie Curry Noodles," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+176,150.0,120.0,180.0,250.0,80.0, Greek Yogurt with Berries, Cottage Cheese with Tomato," Trail mix (nuts, dried fruits, seeds)"," Vegan Pumpkin Soup
+Total calories per portion"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+177,250.0,300.0,140.0,350.0,80.0, Vegan Breakfast Bruschetta - 250 calories per portion | 2 portions | Contains gluten | Origin, Quinoa Salad with Chickpeas and Veggies," Vegan Greek Salad - 140 kcals per portion, 4 portions, no allergic warnings, origin"," Grilled Portobello Mushroom Burger (350 calories per portion, serves 2, no allergies, origin"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+178,200.0,170.0,110.0,400.0,80.0," Spinach and feta stuffed mushrooms - 200 calories per portion, 2 portions, contains dairy, origin", Veggie wrap," Zucchini Fritters - 110 kcals per portion, 5 portions, contains gluten, dairy (Various)", Chana Masala," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+179,250.0,300.0,180.0,800.0,80.0, Tofu Scramble - 250 calories per portion | 2 portions | None | Origin, Sweet Potato and Black Bean Breakfast Hash, Mini Pizza Bagels, Greek Moussaka," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+180,250.0,300.0,150.0,400.0,80.0," Fruit smoothie bowl topped with granola (250kcals per portion, 2 portions, nut allergies, origin", Sweet Potato Fries, Zucchini chips," Caprese Stuffed Chicken Breast - 400kcals per portion, 3 portions, lacto-vegetarian, Italy
+"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+181,250.0,80.0,180.0,350.0,80.0, Vegan Breakfast Oats and Berries, Avocado Deviled Eggs, Apple and Cheese Quesadillas," Chickpea Salad - 350kcals per portion, 2 portions, no allergies
+"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+182,100.0,150.0,120.0,350.0,80.0, Vegan Breakfast Rice Pudding, Granola Bar with Dark Chocolate Chips, Fruit Smoothie, Vegan Argentinian Chimichurri Grilled Vegetables," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+183,220.0,250.0,120.0,200.0,80.0," Vegetable frittata - 220 calories per portion, 4 portions, no allergic warnings, origin"," French Toast Sticks - 250kcals per portion, 1 portion
+    Origin", Cheese Stuffed Jalapenos, Vietnamese Spring Rolls," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+184,250.0,220.0,200.0,300.0,80.0, Cucumber Sandwich, Tofu Scramble, Chickpea Salad," Israeli Eggplant Salad - 300 calories per portion, 4 portions, vegetarian, Israeli
+"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+185,200.0,250.0,150.0,280.0,80.0, Quinoa Breakfast Burrito, Overnight Chia Pudding with Berries, Vegan Banana Bread," Lentil Salad with Roasted Vegetables - 280kcals per portion, 4 portions, no allergies
+"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+186,200.0,200.0,180.0,400.0,80.0, Papaya Boat with Lime, Vegan Protein Bars, Mini vegetable quinoa bites," Lentil Shepherd's Pie - 400 calories
+    - Total portions"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+187,250.0,250.0,220.0,180.0,80.0, Vegan Coconut Yogurt with Fruit - 250 calories per portion | 1 portion | None | Origin, Blueberry Pancakes," Poppy Seed Cake - 220 kcals per portion, 3 portions, contains gluten (Various)", Roasted beet and feta salad," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+188,200.0,150.0,250.0,350.0,80.0, Greek Yogurt Pancakes, Coconut Chia Pudding, Falafel with Tahini Sauce," Greek Orzo Salad - 350kcals per portion, 4 portions"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+189,250.0,100.0,100.0,200.0,80.0," Shakarkandi ki chaat (Indian sweet potato salad) - 250 calories per portion, 2 portions, no allergic warnings, origin", Edamame, Asian cucumber salad," Tofu Stir-Fry - 200 calories
+   - Total portions"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+190,250.0,250.0,140.0,250.0,80.0, Vegan Banana Muffins, Veggie Omelette, Greek Yogurt Bark, Vegetable bibimbap bowls," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+191,250.0,250.0,240.0,350.0,80.0, Banana and Almond Butter Toast, Avocado Toast, Veggie Couscous Salad," Mushroom and Herb Quiche - 350 calories
+    - Total portions"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+192,200.0,200.0,160.0,350.0,80.0, Spinach Tomato Feta Frittata, Tofu Scramble with Veggies, Carrot Zucchini Muffins, Thai Coconut Curry Soup," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+193,150.0,150.0,150.0,350.0,80.0, Vegan Breakfast Pita Pockets, Roasted Garlic Hummus, Veggie Nuggets, Baked salmon with lemon and dill," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+194,250.0,150.0,280.0,400.0,80.0, Blueberry Oatmeal Breakfast Bars, Oatmeal with Cinnamon - Approx, Vegan Lemon Poppy Seed Muffins, Veggie Tacos," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+195,150.0,180.0,150.0,200.0,80.0, Vegan Breakfast Pita Pockets, Bell pepper and cream cheese stuffed mushrooms," Stuffed Mini Bell Peppers - 150 kcals per portion, 4 portions, gluten-free (Various)", Spinach and cheese stuffed portobello mushrooms," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+196,250.0,170.0,120.0,350.0,80.0, Greek Yogurt with Honey and Nuts, Chia Seed Pudding, Caprese Skewers, Mexican black bean and sweet potato salad," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+197,200.0,150.0,220.0,420.0,80.0, Blueberry Almond Baked Oatmeal, Roasted Red Pepper Hummus," Greek Yogurt Parfait - 220 kcals per portion, 2 portions, contains dairy (Greece)"," Butternut Squash Risotto - 420kcals per portion, 2 portions, contains dairy (Italy)
+"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+198,200.0,180.0,120.0,300.0,80.0, Vegan Breakfast Cookies - 200 calories per portion | 2 portions | Contains gluten | Origin, Cereal Bars," Vegan Avocado Toast - 120 kcals per portion, 4 portions, allergic warning (avocado), origin"," Vegan Vietnamese Summer Rolls with Peanut Sauce (300 calories per portion, serves 6, contains gluten, peanuts, and soy, origin"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+199,250.0,150.0,200.0,700.0,80.0, Oatmeal with Fresh Berries, Homemade Vegan Trail Mix, Chicken and Vegetable Spring Rolls, Spinach Lasagna," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+200,200.0,180.0,250.0,400.0,80.0," Oatmeal with berries - 200 calories per portion, 2 portions, no allergic warnings, origin", Easy Homemade Granola, Pork Satay with Peanut Sauce," Moroccan Chickpea Tagine - 400kcals per portion, 2 portions, dairy-free, Morocco
+"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+201,250.0,200.0,240.0,350.0,80.0, Banana Bread," Scrambled Eggs on Toast - 200kcals per portion, 1 portion
+   Origin", Veggie Sushi Rolls, Vegan Stuffed Zucchini," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+202,200.0,200.0,240.0,300.0,80.0, Mediterranean Vegetable Omelette, Banana Bread Overnight Oats, Veggie Couscous Salad," Greek Moussaka - 300kcals per portion, 2 portions, gluten-free, Greece
+"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+203,250.0,210.0,80.0,410.0,80.0, Blueberry Oatmeal Breakfast Bars, Spinach and Cheese Pinwheels," Baked Kale Chips - 80 kcals per portion, 4 portions, no allergic warnings, origin"," Veggie Penne Pasta - 410kcals per portion, 2 portions, contains gluten, dairy (Italy)
+"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+204,200.0,200.0,180.0,400.0,80.0, Vegan Green Smoothie - 200 calories per portion | 2 portions | None | Origin," Chocolate Protein Balls - 200kcals per portion, 1 portion
+    Origin", Mini Spinach and Mushroom Quiches, Vegan Spicy Peanut Noodles," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+205,250.0,200.0,120.0,150.0,80.0, Banana Bread, Chickpea Salad, Vegan Mediterranean Hummus Bowl, Spinach and cheese stuffed tomatoes," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+206,250.0,220.0,100.0,400.0,80.0, Sourdough Toast with Almond Butter, Blueberry almond smoothie, Baked Zucchini Fries, Spaghetti with marinara sauce and turkey meatballs," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+207,200.0,150.0,240.0,200.0,80.0, Vegan French Toast - 200 calories per portion | 2 portions | Contains gluten | Origin, Rainbow Veggie Skewers, Greek Stuffed Grape Leaves, Minestrone soup," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+208,250.0,200.0,140.0,600.0,80.0, Vegan Breakfast Sushi Rolls, Chickpea Salad Wraps, Crispy Baked Potato Skins, Chicken Tikka Masala," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+209,150.0,250.0,200.0,350.0,80.0, Vegan Pancakes, Tomato and Mozzarella Bruschetta, Caprese stuffed avocados, Vegan Gyros," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+210,200.0,250.0,220.0,400.0,80.0, Vegan Green Smoothie - 200 calories per portion | 2 portions | None | Origin, Oatmeal Raisin Cookies, Nutella Stuffed French Toast, Spaghetti with marinara sauce and turkey meatballs," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+211,250.0,260.0,160.0,420.0,80.0, Vegan Breakfast Bruschetta, Vegan Spinach and Mushroom Quiche, Stuffed Jalapeno Poppers," Veggie Ratatouille Tart - 420kcals per portion, 2 portions, contains gluten
+"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+212,250.0,100.0,120.0,390.0,80.0, Vegan Blueberry Muffin Overnight Oats - 250 calories per portion | 2 portions | Contains gluten | Origin, Cucumber Slices with Tzatziki - Approx, Tzatziki and pita chips," Tomato and Mozzarella Pasta Salad - 390kcals per portion, 2 portions, contains gluten, dairy (Italy)
+"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+213,50.0,200.0,120.0,400.0,80.0, Vegan Breakfast Smoothie," Coconut Chia Seed Pudding - 200kcals per portion, 1 portion
+    Origin", Baked Pita Chips with Hummus," Veggie Noodle Stir Fry - 400kcals per portion, 2 portions, vegan, International
+"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+214,150.0,200.0,150.0,250.0,80.0, Vegan Energy Balls - 150 calories per portion | 2 portions | Contains nuts | Origin, Roasted Eggplant Dip with Pita Chips - Approx, Cucumber and Cream Cheese Sandwiches," Roasted Eggplant Wrap - 250kcals per portion, 3 portions, dairy-free, International
+
+"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+215,150.0,150.0,180.0,300.0,80.0, Vegan Egg Muffins - 150 calories per portion | 2 portions | None | Origin, Vegan Raspberry Thumbprint Cookies, Greek Spanakopita," Veggie Burger - 300kcals per portion, 2 portions, no allergies
+"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+216,200.0,180.0,150.0,320.0,80.0, Spinach and Feta Stuffed Portobello Mushrooms, Cereal Bars, Stuffed Mushrooms with Cream Cheese," Quinoa and Black Bean Salad - 320kcals per portion, 2 portions, contains legumes
+"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+217,250.0,150.0,200.0,300.0,80.0, Greek Yogurt with Honey and Nuts, Pear with Goat Cheese, Blueberry oat muffins, Greek Style Chickpea Sandwich," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+218,200.0,170.0,80.0,300.0,80.0, Vegan Matcha Chia Pudding - 200 calories per portion | 1 portion | None | Origin, Walnut Energy Bars, Veggie sticks with hummus, Vegetable stir-fry with tofu," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+219,200.0,300.0,180.0,250.0,80.0, Overnight Oats - 200 calories per portion | 2 portions | Contains gluten | Origin, Banana Nut Smoothie Bowl, Black Bean Brownies," Lentil Soup - 250kcals per portion, 6 portions, no allergies, Origin"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+220,250.0,180.0,120.0,200.0,80.0, Vegan Breakfast Bruschetta, Vegan Energy Bars, Mediterranean Salad, Caprese salad," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+221,200.0,250.0,100.0,250.0,80.0, Vegetarian Quiche, Vegetable Frittata Muffins, Baked Kale Chips, Mexican Corn and Avocado Salad," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+222,200.0,140.0,150.0,300.0,80.0, Poha (Flattened Rice), Scrambled Eggs - Approx, Roasted Chickpeas, Lebanese Chicken Manakish," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+223,200.0,150.0,150.0,300.0,80.0, Vegan Breakfast Tacos, Vegan Banana Pancakes," Vegan Ratatouille - 150 kcals per portion, 4 portions, no allergic warnings, origin", Vegan Mushroom and Chestnut Wellington," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+224,200.0,200.0,60.0,250.0,80.0, Vegan Breakfast Frittata, Stuffed Bell Peppers - Approx, Cucumber and cream cheese bites, Vietnamese Summer Rolls," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+225,250.0,250.0,240.0,350.0,80.0, Vegan Breakfast Enchiladas, Avocado Toast with Tomato and Basil, Thai Vegetable Spring Rolls, Mediterranean Hummus Wrap," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+226,100.0,150.0,240.0,400.0,80.0, Vegan Breakfast Rice Pudding, Baked Sweet Potato Fries, Vegan Spinach Dip with Pita Chips," Veggie Sushi Burrito - 400kcals per portion, 1 portion, contains soy, gluten (Japan)
+"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+227,250.0,350.0,50.0,350.0,80.0," Cereal with milk and sliced strawberries (250kcals per portion, 1 portion, lactose allergies)
+", Spinach and Artichoke Dip with Whole Wheat Crackers, Fruit Salad," Greek Spanakopita (350 calories per portion, serves 2, contains gluten and dairy, origin"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+228,200.0,300.0,200.0,250.0,80.0, Veggie Breakfast Fritters, Spinach and Ricotta Tart, Baked Falafel," Quinoa Stuffed Bell Peppers (250 calories per portion, serves 4, no allergies, origin"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+229,250.0,200.0,250.0,400.0,80.0, Vegan Breakfast Sushi Rolls, Egg Salad Lettuce Wraps, Cheese and Spinach Triangles," Grilled Vegetable Panini - 400kcals per portion, 2 portions, no allergies
+"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+230,250.0,250.0,180.0,250.0,80.0, Overnight Chia Oats, Veggie Sushi Bowl," Vegan Blueberry Muffins - 180 kcals per portion, 4 portions, no allergic warnings, origin"," Lebanese Tabbouleh - 250kcals per portion, 3 portions, nut-free, Lebanon
+
+"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+231,250.0,150.0,220.0,400.0,80.0, Middle Eastern Shakshuka," Mixed Berry Muffins - 150kcals per portion, 2 portions
+    Origin", Veggie-Stuffed Pita Pockets, Falafel Salad," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+232,250.0,250.0,160.0,350.0,80.0, Spinach and Mushroom Oatmeal, Stuffed Grape Leaves (Dolmas), Veggie Sausage Rolls, Vegetable and Tofu Skewers," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+233,250.0,250.0,150.0,280.0,80.0, Vegan Pancake Skewers, Veggie Sushi Rolls, Baked Parmesan Zucchini Fries," Vegetable Sushi Rolls - 280kcals per portion, 4 portions, no allergies, Origin"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+234,200.0,300.0,280.0,400.0,80.0," Greek yogurt with honey and walnuts (200 calories per portion, 2 portions, contains dairy and nuts, Greek origin)
+", Veggie Breakfast Casserole, Cucumber and Avocado Sushi," Caprese Panini - 400kcals per portion, 2 portions"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+235,250.0,250.0,250.0,400.0,80.0," Overnight oats with berries and almond milk (250 calories per portion, 2 portions, nut-free, American origin)
+", Vegan Potato Pancakes, Mini chicken quesadilla, Hummus Wrap," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+236,250.0,150.0,250.0,150.0,80.0, Vegan Breakfast Sushi Rolls," Cheese Stuffed Mini Bell Peppers - 150kcals per portion, 2 portions
+    Origin", Mini Spinach and Ricotta Calzones," Caponata - 150kcals per portion, 4 portions, no allergies, Origin"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+237,50.0,150.0,90.0,300.0,80.0, Vegan Breakfast Energy Balls," Mini Spinach and Feta Quiches - 150kcals per portion, 2 portions
+    Origin", Zucchini Pizza Bites, Greek Dolmades," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+238,250.0,300.0,80.0,350.0,80.0, Vegan Pancake Skewers," Stuffed Bell Peppers with Quinoa and Feta - 300kcals per portion, 1 portion
+    Origin"," Edamame Beans - 80 kcals per portion, 4 portions, no allergic warnings, origin", Chicken and Vegetable Noodle Stir Fry," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+239,250.0,150.0,250.0,400.0,80.0, Tropical Smoothie, Roasted Vegetable Skewers, Mini Chicken Tacos," Roasted Vegetable Quinoa Bowl - 400kcals per portion, 3 portions, dairy-free, International
+"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+240,250.0,220.0,250.0,200.0,80.0, Vegetable Scramble, Greek Stuffed Grape Leaves, Guacamole with Tortilla Chips, Vegan Creamy Broccoli Soup," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+241,250.0,150.0,160.0,800.0,80.0, Vegan Coconut Yogurt with Fruit - 250 calories per portion | 1 portion | None | Origin, Watermelon and Feta Salad - Approx, Vegan Spinach and Mushroom Puff Pastry, Vegetarian Philly Cheesesteak," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+242,250.0,150.0,160.0,250.0,80.0, Muesli with Almond Milk," Mini Vegetable Frittatas - 150kcals per portion, 2 portions
+    Origin", Tomato and Mozzarella Skewers, Lentil and vegetable stew," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+243,250.0,150.0,200.0,400.0,80.0, Vegan Breakfast Bruschetta, Honey Roasted Almonds - Approx, Stuffed Bell Peppers," Spicy Chicken Wrap - 400kcals per portion, 2 portions"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+244,250.0,120.0,120.0,350.0,80.0, Vegan Banana Muffins, Greek yogurt with honey, Pumpkin Hummus with Carrot Sticks," Chicken Caesar Salad - 350kcals per portion, 2 portions"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+245,250.0,250.0,140.0,250.0,80.0, Vegan Maple Pecan Overnight Oats - 250 calories per portion | 2 portions | Contains nuts | Origin," Greek Style Spanakopita (Spinach Pie) - 250kcals per portion, 1 portion
+    Origin", Blueberry Oat Bars, Minestrone Soup," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+246,260.0,180.0,160.0,300.0,80.0," Cheese and vegetable frittata (260 calories per portion, 2 portions, contains dairy, Italian origin)
+", Strawberry and banana smoothie, Roasted Eggplant Dip," Vegan Pho
+Total calories per portion"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+247,200.0,200.0,120.0,400.0,80.0, Peanut Butter and Banana Smoothie, Chocolate Protein Balls, Zucchini Fritters, Veggie Biryani," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+248,250.0,220.0,90.0,450.0,80.0, Vegan Chocolate Banana Smoothie, Greek Stuffed Grape Leaves," Cauliflower Buffalo Wings - 90 kcals per portion, 4 portions, contains gluten (USA)"," Greek Pita Pizza - 450kcals per portion, 2 portions"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+249,250.0,200.0,130.0,380.0,80.0, Vegan Coconut Yogurt with Fruit - 250 calories per portion | 1 portion | None | Origin, Mixed Nuts - Approx," Stuffed Mini Portobello Mushrooms - 130 kcals per portion, 4 portions, no allergic warnings, origin"," Quinoa and Sweet Potato Salad - 380kcals per portion, 2 portions, gluten-free
+"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+250,200.0,160.0,180.0,400.0,80.0, Blueberry Muffins, Egg muffins with turkey and cheese, Veggie Snack Wrap, Vegan Pasta Primavera," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+251,250.0,250.0,150.0,300.0,80.0, Yogurt Parfait, Cucumber and Tomato Sandwich with Hummus, Baked Parmesan Zucchini Fries, Vegan Black Bean Soup," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+252,250.0,150.0,180.0,450.0,80.0," Vegan overnight oats with almond milk and berries (250kcals per portion, 2 portions, nut allergies)
+"," Onion and Cheese Mini Quiches - 150kcals per portion, 2 portions
+    Origin", Mini zucchini and cheese frittatas," Moroccan Chicken Tagine with Olives and Preserved Lemons (450 calories per portion, serves 2, contains olives, origin"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+253,200.0,160.0,100.0,250.0,80.0, Vegan Breakfast Frittata, Zucchini Chips, Stuffed Mushrooms, Vegetable Stir-Fried Rice," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+254,200.0,150.0,180.0,500.0,80.0, Vegan Matcha Chia Pudding - 200 calories per portion | 1 portion | None | Origin, Baked Cinnamon Apple Chips, Baked Jalapeno Poppers," Greek Lemon Chicken - 500kcals per portion, 2 portions"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+255,150.0,150.0,120.0,400.0,80.0, Vegan Peanut Butter Banana Smoothie, Coconut Chia Pudding, Watermelon and feta skewers, Vegan Ramen," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+256,250.0,200.0,200.0,300.0,80.0, Vegan Breakfast Pizza, Vegan Banana Bread, Bruschetta with Mozzarella and Basil," Vegan Spinach and Artichoke Dip
+Total calories per portion"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+257,200.0,300.0,200.0,280.0,80.0, Zucchini Bread, Cinnamon Sugar Donuts, Mini Chicken and Vegetable Pies," Lentil Shepherd's Pie - 280kcals per portion, 4 portions, nut-free, International
+"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+258,250.0,180.0,140.0,250.0,80.0, Greek Yogurt with Honey and Nuts, Mango Chia Pudding," Roasted Chickpeas - 140 kcals per portion, 4 portions, gluten-free (World)"," Greek Fava Bean Dip - 250kcals per portion, 4 portions, no allergies, Origin"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+259,250.0,250.0,80.0,150.0,80.0, Vegan Berry Parfait - 250 calories per portion | 2 portions | Contains nuts | Origin, Apple Cinnamon Oatmeal, Veggie Noodle Salad," Lentil Soup - 150kcals per portion, 6 portions"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+260,200.0,150.0,240.0,320.0,80.0, Raspberry Coconut Breakfast Bars, Spicy Roasted Chickpeas, Vegan Spinach Dip with Pita Chips," Veggie Stuffed Zucchini Boats - 320kcals per portion, 2 portions, gluten-free
+"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+261,250.0,150.0,120.0,400.0,80.0," Almond butter and banana smoothie (250kcals per portion, 1 portion, nut allergies)
+", Vegan Raspberry Thumbprint Cookies, Pita Chips with Homemade Salsa, Quinoa and Black Bean Burrito Bowl," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+262,200.0,200.0,160.0,250.0,80.0, Vegan Chocolate Chia Pudding - 200 calories per portion | 2 portions | None | Origin," Mini Sausage Rolls - 200kcals per portion, 2 portions
+    Origin"," Zucchini Bread - 160 kcals per portion, 4 portions, contains gluten (USA)"," Lentil and Tomato Salad - 250kcals per portion, 2 portions"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+263,250.0,240.0,180.0,200.0,80.0, Cheesy Spinach Pita Pocket, Peanut butter and jelly rice cakes, Grilled Halloumi Skewers," Spicy Lentil Soup
+Total calories per portion"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+264,250.0,80.0,150.0,300.0,80.0, Mozzarella and Tomato Bruschetta, Fresh Watermelon Slices - Approx, Edamame Salad," Smashed Chickpea Salad Sandwich - 300kcals per portion, 3 portions, nut-free, International
+"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+265,200.0,50.0,160.0,300.0,80.0, Raspberry Coconut Breakfast Bars," Homemade Fruit Popsicles - 50kcals per portion, 2 portions
+    Origin"," Cinnamon Sugar Pretzels - 160 kcals per portion, 3 portions, contains gluten (USA)"," Moroccan Chickpea Salad (300 calories per portion, serves 4, contains legumes, origin"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+266,200.0,200.0,180.0,250.0,80.0, Oatmeal with Berries, Oat Bars, Fruit skewers with yogurt dip," Greek Orzo Salad - 250kcals per portion, 4 portions, no allergies, Origin"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+267,200.0,120.0,160.0,400.0,80.0, Roasted Vegetable Breakfast Tacos, Melon and Prosciutto Skewers, Baked Parmesan Zucchini Fries, Vegan Portobello Mushroom Burger," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+268,200.0,150.0,210.0,350.0,80.0," Vegetable omelette - 200 calories per portion, 2 portions, no allergic warnings, origin", Pumpkin Spice Latte," Caramelized Onion Tartlet - 210 kcals per portion, 3 portions, contains gluten, dairy (France)", Caprese quinoa salad," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+269,200.0,240.0,120.0,400.0,80.0, Vegan Breakfast Quiche Lorraine, Spinach and Feta Puffs, Hummus with Carrot Sticks," Chinese Vegetable Lo Mein - 400 calories per portion, 4 portions, vegetarian, Chinese
+"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+270,70.0,250.0,160.0,200.0,80.0, Fruit Salad, Vegan Banana Bread," Cinnamon Sugar Pretzels - 160 kcals per portion, 3 portions, contains gluten (USA)", Greek Feta and Spinach Stuffed Mushrooms," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+271,200.0,220.0,170.0,300.0,80.0, Vegan Breakfast Quiche Lorraine, Sweet Potato Toast, Sweet Corn Fritters, Vegan Pad Thai," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+272,250.0,180.0,90.0,150.0,80.0, Vegan Banana Bread - 250 calories per portion | 2 portions | Contains gluten | Origin, Vegan Pumpkin Bread, Buffalo cauliflower dip with celery sticks, Lentil and Vegetable Soup," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+273,250.0,150.0,100.0,400.0,80.0," Almond joy smoothie (250 calories per portion, 2 portions, contains nuts, American origin)
+", Watermelon and Feta Salad - Approx, Thai Fresh Spring Rolls, Vietnamese Caramelized Pork," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+274,250.0,80.0,140.0,350.0,80.0, Vegan Oatmeal Raisin Overnight Oats - 250 calories per portion | 2 portions | Contains gluten | Origin, Fruit Salad," Caprese pinwheels (tortilla with mozzarella, tomato, basil)"," Spinach and Feta Stuffed Chicken Breast - 350kcals per portion, 2 portions"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+275,200.0,200.0,200.0,450.0,80.0, Spanish Tortilla, Vegan Almond Milk Smoothie, Chicken skewers with peanut sauce, Quinoa Stuffed Peppers," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+276,200.0,160.0,120.0,400.0,80.0, Avocado Toast, Egg muffins with turkey and cheese, Vegan Mediterranean Hummus Bowl, Chicken and vegetable stir-fry with brown rice," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+277,250.0,200.0,150.0,350.0,80.0," Chia seed pudding with coconut milk (250 calories per portion, 2 portions, nut-free, American origin)
+", Vegan Protein Bars, Greek Feta Dip with Veggies, Chicken Caesar Wrap," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+278,250.0,200.0,200.0,300.0,80.0," British eggy soldiers - 250 calories per portion, 1 portion, contains gluten, origin", Caprese Salad Skewers, Almond butter energy bites," Greek Quinoa Stuffed Portobello Mushrooms (300 calories per portion, serves 4, contains dairy, origin"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+279,250.0,150.0,280.0,400.0,80.0, Smoothie Bowl, Veggie Roll-Up, Mini chicken lettuce wraps," Veggie Tacos with Homemade Tortillas
+Total calories per portion"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+280,150.0,100.0,180.0,350.0,80.0, Fruit Salad," Dates Stuffed with Almond Butter - 100kcals per portion, 2 portions
+    Origin"," Roasted Chickpea Salad - 180 kcals per portion, 4 portions, no allergic warnings, origin", Indian Vegetable Samosas," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+281,250.0,200.0,180.0,350.0,80.0," Overnight oats with berries and almond milk (250 calories per portion, 2 portions, nut-free, American origin)
+", Quinoa Stuffed Bell Peppers, Cheesy Garlic Breadsticks, Black bean and corn salad with avocado dressing," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+282,250.0,100.0,180.0,600.0,80.0, Cucumber Sandwich, Roasted Chickpeas, Rice paper rolls with shrimp and vegetables," Greek Lamb Gyro - 600kcals per portion, 4 portions"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+283,200.0,300.0,80.0,250.0,80.0, Vegan Breakfast Cookies - 200 calories per portion | 2 portions | Contains gluten | Origin, Fruit smoothie bowl, Roasted Cauliflower Bites, Vegan Korean Japchae," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+284,250.0,200.0,120.0,400.0,80.0, Greek Yogurt with Honey and Nuts, Zucchini Fritters," Fruit Smoothie - 120 kcals per portion, 2 portions, gluten-free (USA)"," Veggie Tacos with Homemade Tortillas
+Total calories per portion"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+285,100.0,200.0,150.0,350.0,80.0," Sliced fruit salad - 100 calories per portion, 1 portion, no allergic warnings, origin", Beet Hummus with Whole Wheat Pita Chips, Stuffed Jalapenos with Cream Cheese," Thai Green Curry with Tofu (350 calories per portion, serves 4, contains soy, origin"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+286,250.0,200.0,180.0,350.0,80.0, Tofu Scramble - 250 calories per portion | 2 portions | None | Origin, Greek Salad Skewers," Pineapple Salsa with Tortilla Chips - 180 kcals per portion, 3 portions, contains gluten (Various)", Mushroom risotto," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+287,70.0,200.0,150.0,400.0,80.0, Fruit Salad, Scrambled eggs with spinach, Roasted Chickpeas," Mexican Beef Tacos with Guacamole (400 calories per portion, serves 2, contains gluten, origin"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+288,150.0,200.0,180.0,300.0,80.0, Fruit Salad, Roasted Beet and Goat Cheese Salad," Blueberry Oatmeal Muffins - 180 kcals per portion, 4 portions, no allergic warnings, origin", Turkish Lentil Soup," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+289,50.0,100.0,100.0,450.0,80.0, Vegan Breakfast Smoothie, Carrot Sticks with Ranch Dip, Thai Fresh Spring Rolls," Vegan Mac and Cheese
+Total calories per portion"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+290,100.0,150.0,120.0,200.0,80.0," Sliced fruit salad - 100 calories per portion, 1 portion, no allergic warnings, origin"," Mixed Berry Muffins - 150kcals per portion, 2 portions
+    Origin", Peanut Butter Energy Balls," Greek Lemon Potatoes - 200kcals per portion, 4 portions, dairy-free, Greece
+"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+291,250.0,150.0,280.0,350.0,80.0, Sourdough Toast with Almond Butter, Watermelon and Feta Skewers, Apple and Cinnamon Muffins, Baked zucchini boats stuffed with ground turkey," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+292,200.0,300.0,180.0,650.0,80.0, Quinoa Veggie Breakfast Skillet, Vegan Pancakes, Blueberry Muffins, Ratatouille Quiche," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+293,250.0,300.0,200.0,350.0,80.0," Coconut chia pudding with mango (250kcals per portion, 2 portions)
+", Carrot Cake Overnight Oats, Chicken Fajita Skewers," Chinese Szechuan Tofu - 350 calories per portion, 4 portions, vegetarian, Chinese
+"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+294,200.0,200.0,120.0,300.0,80.0, Overnight Oats - 200 calories per portion | 2 portions | Contains gluten | Origin, Stuffed Mushrooms," Caprese salad skewers (cherry tomatoes, mozzarella, basil)"," Greek Lemon Chicken Soup (300 calories per portion, serves 6, contains gluten and eggs, origin"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+295,250.0,300.0,250.0,350.0,80.0, Vegan Oatmeal Chocolate Chip Cookies - 250 calories per portion | 2 portions | Contains gluten | Origin, Quinoa Salad with Chickpeas and Veggies, Greek Baklava," Spaghetti Squash Pad Thai (350 calories per portion, serves 4, contains nuts and shellfish, origin"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+296,50.0,180.0,100.0,300.0,80.0, Vegan Breakfast Sushi Burrito, Bell pepper and cream cheese stuffed mushrooms, Cinnamon Sugar Apple Slices," Veggie Burger - 300kcals per portion, 2 portions, no allergies
+"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+297,250.0,150.0,190.0,300.0,80.0, Vegan Breakfast Enchiladas, Sautéed Mushrooms on Toast - Approx, Greek Spinach and Feta Pinwheels," Greek Moussaka - 300kcals per portion, 2 portions, gluten-free, Greece
+"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+298,250.0,250.0,200.0,300.0,80.0, Vegan Breakfast Crepes," Greek Style Spanakopita (Spinach Pie) - 250kcals per portion, 1 portion
+    Origin", Stuffed Eggplant," Indian Masoor Dal (300 calories per portion, serves 6, contains legumes, origin"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+299,200.0,250.0,120.0,350.0,80.0, Papaya Boat with Lime, Spinach and Feta Hand Pies, Spiced Roasted Chickpeas," Thai Green Curry with Tofu (350 calories per portion, serves 4, contains soy, origin"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+300,250.0,220.0,130.0,400.0,80.0, Overnight Oats, Blueberry and almond muffins," Stuffed Mini Portobello Mushrooms - 130 kcals per portion, 4 portions, no allergic warnings, origin"," Israeli Shawarma Chicken Salad (400 calories per portion, serves 2, contains dairy, origin"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+301,250.0,180.0,150.0,250.0,80.0, Avocado Toast, Apple Cinnamon Muffins, Mexican Street Corn, Quinoa and roasted vegetable salad," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+302,200.0,280.0,150.0,400.0,80.0," Miso soup with tofu and seaweed (200kcals per portion, 2 portions, soy allergies, Japan)
+", Vegan Scones, Ricotta Stuffed Mushrooms, Argentinian empanadas," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+303,200.0,300.0,80.0,400.0,80.0, Spinach Tomato Feta Frittata, Veggie Burrito with Black Beans and Rice, Fresh Fruit Salad, Mexican chicken tortilla soup," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+304,200.0,200.0,280.0,400.0,80.0, Spinach Tomato Feta Frittata," Baked Cheese and Spinach Stuffed Mushrooms - 200kcals per portion, 1 portion
+    Origin", Mini Vegetable Quiches," Greek Spanakopita Wrap - 400kcals per portion, 2 portions, lacto-vegetarian, Greece
+"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+305,250.0,250.0,220.0,420.0,80.0, Vegan Overnight Chia Pudding - 250 calories per portion | 2 portions | None | Origin, Baked Falafel, Indian Samosa Chaat," Ratatouille Galette - 420kcals per portion, 2 portions, contains gluten (France)
+
+Please note that the calorie counts are approximate and can vary depending on portion size and specific ingredients used"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+306,50.0,200.0,180.0,500.0,80.0, Vegan Breakfast Stuffed Tomatoes, Vegan Breakfast Cookies, Fruit skewers with yogurt dip," Greek Chicken Souvlaki - 500kcals per portion, 2 portions"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+307,250.0,300.0,160.0,300.0,80.0, Middle Eastern Shakshuka, Peanut Butter and Banana Smoothie," Vegan Samosas - 160 kcals per portion, 4 portions, no allergic warnings, origin"," Israeli Eggplant Salad - 300 calories per portion, 4 portions, vegetarian, Israeli
+"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+308,250.0,300.0,170.0,400.0,80.0, Vegan Breakfast Shakshuka, Banana and Almond Butter Crepes," Egg Salad Lettuce Wraps - 170 kcals per portion, 3 portions, contains egg (USA)"," Thai Green Curry with Tofu - 400 calories per portion, 4 portions, vegetarian, Thai
+"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+309,250.0,180.0,130.0,350.0,80.0, Vegan Matcha Overnight Oats - 250 calories per portion | 2 portions | None | Origin, Zucchini Bread," Baked Falafel with Tahini Sauce - 130 kcals per portion, 4 portions, allergic warning (sesame), origin", Vegan Tacos," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+310,100.0,200.0,120.0,300.0,80.0, Vegan Breakfast Falafel, Vegan Protein Pancakes, Spinach and Feta Pinwheels," Cauliflower Fried Rice - 300 calories per portion, 4 portions, vegetarian, Chinese
+"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+311,220.0,220.0,80.0,600.0,80.0," Vegetable frittata - 220 calories per portion, 4 portions, no allergic warnings, origin", Frittata, Cucumber cream cheese roll-ups," Greek Gyro with Tzatziki Sauce - 600 calories
+    - Total portions"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+312,250.0,160.0,160.0,250.0,80.0," Smoothie bowl - 250 calories per portion, 1 portion, may contain nuts, origin", Zucchini fritters, Chocolate Dipped Pretzels," Israeli Grilled Eggplant Salad (250 calories per portion, serves 4, contains sesame, origin"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+313,200.0,150.0,160.0,550.0,80.0, Quinoa Breakfast Burrito, Spicy Roasted Chickpeas, Strawberry Parfait," Vegan Mushroom Risotto
+Total calories per portion"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+314,250.0,180.0,200.0,550.0,80.0, Vegan Blueberry Chia Pancakes, Vegetable Omelette, Grilled Chicken Skewers," Thai Red Curry with Shrimp - 550 calories
+    - Total portions"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+315,250.0,200.0,160.0,300.0,80.0, Vegetable Scramble, Greek Yogurt and Honey Toast, Zucchini Fritters, Korean Japchae," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+316,200.0,150.0,190.0,280.0,80.0, Vegan Breakfast Enchiladas, Greek Yogurt Parfait, Black Bean Dip with Tortilla Chips," Lentil and Sweet Potato Curry - 280kcals per portion, 4 portions, vegan, International
+"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+317,250.0,150.0,150.0,300.0,80.0, Muesli with Almond Milk," Chickpea Salad - 150kcals per portion, 2 portions
+    Origin", Greek Salad Skewers," Vegan Caesar Pasta Salad
+Total calories per portion"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+318,250.0,300.0,210.0,400.0,80.0, Vegan Breakfast Oats and Berries, Vegan Banana Pancakes, Tomato and Mozzarella Bruschetta," Thai Green Curry with Chicken - 400 calories per portion, 4 portions, contains dairy and poultry, Thai
+"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+319,260.0,160.0,220.0,400.0,80.0," Cheese and vegetable frittata (260 calories per portion, 2 portions, contains dairy, Italian origin)
+", Berry Smoothie, Quinoa Salad," Roasted Vegetable Quinoa Bowl - 400kcals per portion, 3 portions, dairy-free, International
+"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+320,150.0,250.0,90.0,300.0,80.0, Vegan Energy Balls - 150 calories per portion | 2 portions | Contains nuts | Origin, Veggie Samosas, Mini Quiche, Greek Baklava," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+321,250.0,350.0,250.0,400.0,80.0, Vegan Blueberry Muffin Overnight Oats - 250 calories per portion | 2 portions | Contains gluten | Origin," Country Style Biscuits with Gravy - 350kcals per portion, 1 portion
+    Origin", Greek Spanakopita Triangles," Greek Pita Sandwich - 400kcals per portion, 2 portions, contains dairy, Origin"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+322,200.0,250.0,180.0,200.0,80.0, Vegan Breakfast Quinoa Salad, Greek Spinach and Feta Puff Pastry," Spinach and Mushroom Quesadillas - 180 kcals per portion, 4 portions, no allergic warnings, origin", Thai Green Papaya Salad," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+323,200.0,300.0,80.0,400.0,80.0, Vegan Green Smoothie - 200 calories per portion | 2 portions | None | Origin," Shakshuka - 300kcals per portion, 1 portion
+    Origin"," Popcorn - 80 kcals per portion, 4 portions, gluten-free (World)", Greek gigantes plaki," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+324,250.0,160.0,120.0,300.0,80.0, Cheesy Spinach Pita Pocket, Edamame Hummus and Rice Cakes, Vegetable sushi rolls," Indian Masoor Dal (300 calories per portion, serves 6, contains legumes, origin"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+325,250.0,200.0,180.0,400.0,80.0, Vegan Banana Bread, Vegan Blueberry Chia Pudding, Roasted Pumpkin Seeds," Sweet Potato and Black Bean Burrito Bowl - 400 calories per portion, 4 portions, vegetarian, Mexican
+"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+326,250.0,250.0,120.0,500.0,80.0, Banana and Almond Butter Toast, Quiche Lorraine, Vegetable sushi rolls, Chicken and Vegetable Curry," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+327,250.0,280.0,150.0,250.0,80.0, Stuffed French Toast, Greek yogurt with mango and coconut flakes," Beet Hummus with Carrot Sticks - 150 kcals per portion, 4 portions, may contain sesame (Middle East)"," Vegan Pumpkin Soup
+Total calories per portion"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+328,150.0,220.0,150.0,400.0,80.0, Fruit Salad, Carrot Cake Overnight Oats, Pineapple and Coconut Energy Balls," Vegan Hungarian Goulash
+Total calories per portion"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+329,250.0,250.0,120.0,300.0,80.0, Ragi (Finger Millet) Pancakes, Vegan Protein Brownies, Vegetable sushi rolls, Sushi rolls with avocado and cucumber," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+330,200.0,300.0,190.0,350.0,80.0, Quinoa Veggie Breakfast Skillet, Banana and Blueberry Protein Smoothie, Black Bean Dip with Tortilla Chips, Japanese Tempura," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+331,200.0,200.0,200.0,650.0,80.0, Spinach and Mushroom Breakfast Tacos, Vegetable Omelette, Mini Chicken and Vegetable Pies, Veggie Pad Thai," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+332,200.0,180.0,120.0,300.0,80.0," Vegetable omelette - 200 calories per portion, 2 portions, no allergic warnings, origin", Oatmeal Raisin Cookies, Hummus Stuffed Mini Peppers, Roasted vegetable quiche," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+333,250.0,150.0,200.0,350.0,80.0," Overnight oats - 250 calories per portion, 2 portions, contains gluten, origin", Vegan Chocolate Mousse, Chicken Lettuce Wraps, Chicken Caesar Wrap," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+334,250.0,150.0,150.0,280.0,80.0," Vegan overnight oats with almond milk and berries (250kcals per portion, 2 portions, nut allergies)
+", Mini Vegetable Frittatas," Hummus with Veggies - 150 kcals per portion, 3 portions, may contain sesame (Middle East)"," Lentil Bolognese - 280kcals per portion, 4 portions, nut-free, International
+"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+335,200.0,120.0,120.0,390.0,80.0, Oatmeal with Berries, Baked Cheese Twists," Energy Balls - 120 kcals per portion, 8 portions, contains nuts (USA)"," Greek Chickpea Salad - 390kcals per portion, 2 portions, contains legumes, dairy (Greece)
+"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+336,250.0,130.0,80.0,600.0,80.0, Spinach and Mushroom Oatmeal, Rice cakes with avocado and tomato," Rice Paper Veggie Rolls - 80 kcals per portion, 4 portions, contains soy (Vietnam)"," Greek Lamb Gyro - 600kcals per portion, 4 portions"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+337,250.0,200.0,120.0,400.0,80.0, Banana and Almond Butter Toast, Fruit and Yogurt Parfait, Tomato and Mozzarella Skewers, Greek Moussaka Wrap," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+338,150.0,300.0,120.0,700.0,80.0, Chia Pudding, Lentil Soup with Crusty Bread," Vegan Oatmeal Raisin Cookies - 120 kcals per portion, 4 portions, no allergic warnings, origin", Sweet Potato and Lentil Curry," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+339,250.0,150.0,250.0,370.0,80.0, Mozzarella and Tomato Bruschetta, Pumpkin Energy Balls, Mini whole wheat pita pizza," Mediterranean Wrap - 370kcals per portion, 1 portion, contains gluten
+"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+340,200.0,250.0,180.0,300.0,80.0, Quinoa Veggie Breakfast Skillet," French Toast Sticks - 250kcals per portion, 1 portion
+    Origin", Oatmeal Raisin Cookies," Feta and Spinach Stuffed Portobello Mushrooms - 300 calories
+    - Total portions"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+341,100.0,200.0,180.0,450.0,80.0, Vegan Breakfast Rice Pudding," Raspberry Oat Bars - 200kcals per portion, 1 portion
+    Origin", Baked Teriyaki Tofu Skewers," Vegan Sweet Potato and Black Bean Enchiladas
+Total calories per portion"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+342,150.0,150.0,100.0,500.0,80.0, Chia Pudding - 150 calories per portion | 1 portion | None | Origin, Yogurt Parfait, Dark Chocolate Covered Almonds," Moroccan Lamb Tagine with Apricots (500 calories per portion, serves 2, no allergies, origin"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+343,250.0,120.0,220.0,400.0,80.0, Overnight Chia Pudding, Hummus with Veggies, Teriyaki Chicken Skewers," Vegan Lentil Bolognese
+Total calories per portion"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+344,200.0,250.0,180.0,400.0,80.0, Veggie Breakfast Couscous," French Toast Sticks - 250kcals per portion, 1 portion
+    Origin", Baked Jalapeno Poppers, Thai Green Curry," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+345,200.0,350.0,180.0,350.0,80.0, Avocado Toast, Blueberry Scones, Grilled Halloumi Skewers," Italian Margherita Pasta (350 calories per portion, serves 2, contains gluten and dairy, origin"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+346,50.0,100.0,240.0,350.0,80.0, Vegan Breakfast Sushi Burrito," Raspberry Yogurt Popsicles - 100kcals per portion, 2 portions
+    Origin", Mini Chicken Samosas, Sweet potato and chickpea curry," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+347,200.0,300.0,180.0,350.0,80.0, Apple Cinnamon Porridge, Breakfast quesadilla," Vegan Nachos with Salsa - 180 kcals per portion, 4 portions, no allergic warnings, origin", Vegetable and tofu noodle bowl," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+348,250.0,200.0,90.0,400.0,80.0, Vegan Breakfast Strata," Stuffed Grape Leaves (Dolma) - 200kcals per portion, 1 portion
+    Origin", Zucchini fritters, Mediterranean stuffed eggplant," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+349,150.0,150.0,150.0,500.0,80.0, Fruit Salad, Oatmeal Raisin Energy Bites, Pineapple and Coconut Energy Balls, Grilled Tandoori Chicken," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+350,200.0,180.0,70.0,150.0,80.0, Caprese Avocado Toast, Baked Oatmeal Cups, Fruit Salad, Tomato Basil Soup," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+351,250.0,100.0,200.0,400.0,80.0, Veggie Omelette, Quinoa Energy Bites, Chicken Lettuce Wraps, Baked sweet and sour tofu with vegetables," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+352,250.0,300.0,280.0,400.0,80.0, Vegan Breakfast Sushi Rolls, Healthy Veggie Nachos, Vegan Lemon Poppy Seed Muffins," Caprese Panini - 400 calories
+    - Total portions"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+353,160.0,150.0,80.0,400.0,80.0," Cream cheese stuffed strawberries (160 calories per portion, 2 portions, contains dairy, American origin)
+", Apple slices with almond butter," Veggie Spring Rolls with Peanut Sauce - 80 kcals per portion, 4 portions, allergic warning (peanuts), origin", Vegan Jackfruit Curry," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+354,200.0,150.0,280.0,150.0,80.0, Banana Pancakes, Vegan Chocolate Chip Cookies, Veggie and Cream Cheese Roll-ups, Tom Yum Soup," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+355,150.0,300.0,150.0,350.0,80.0, Fruit Salad, Vegan Cinnamon Funnel Cake," Strawberry Spinach Salad - 150 kcals per portion, 3 portions, contains dairy (USA)"," Mushroom and Spinach Quesadilla - 350kcals per portion, 2 portions, nut-free, International
+"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+356,250.0,180.0,250.0,150.0,80.0, Vegan Banana Bread - 250 calories per portion | 2 portions | Contains gluten | Origin, Banana Bread, Coconut chia pudding, Veggie Spring Rolls," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+357,200.0,200.0,180.0,500.0,80.0, Blueberry Almond Baked Oatmeal, Roasted Red Pepper and Tomato Soup, Greek Yogurt Parfait, Ratatouille Tart," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+358,150.0,200.0,80.0,300.0,80.0, Vegan Energy Balls - 150 calories per portion | 2 portions | Contains nuts | Origin, Granola Bar, Greek Salad Skewers," Veggie Wrap with Hummus - 300 calories per portion, 2 portions, vegetarian, International
+"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+359,250.0,120.0,190.0,300.0,80.0, Vegan Breakfast Oats and Berries, Cottage Cheese with Sliced Tomato, Black Bean Dip with Tortilla Chips," Italian Bruschetta - 300 calories
+    - Total portions"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+360,180.0,250.0,140.0,350.0,80.0, Overnight Chia Pudding, Pumpkin Muffins, Greek Yogurt with Apple and Cinnamon," Israeli Couscous Salad - 350 calories per portion, 4 portions, vegetarian, Israeli
+"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+361,250.0,180.0,120.0,300.0,80.0, Greek Yogurt Parfait Bowl, Avocado Toast, Spinach and Feta Pinwheels, Vegetable biryani," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+362,200.0,250.0,200.0,500.0,80.0, Quinoa Breakfast Burrito," Peanut Butter Banana Roll-Ups - 250kcals per portion, 1 portion
+    Origin", Spring Rolls with Peanut Sauce, Mediterranean Stuffed Peppers," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+363,250.0,180.0,180.0,250.0,80.0," Syrian ka'ak (sesame bread rings) - 250 calories per portion, 1 portion, contains gluten, origin", Bruschetta with Tomatoes and Basil, Mini cauliflower pizza bites, Chicken Noodle Soup," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+364,200.0,250.0,120.0,200.0,80.0, Mediterranean Vegetable Omelette, Mushroom Bruschetta," Black Bean Salsa with Tortilla Chips - 120 kcals per portion, 4 portions, no allergic warnings, origin", Gazpacho," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+365,200.0,200.0,180.0,350.0,80.0, Spinach and Feta Stuffed Portobello Mushrooms, Stuffed Artichoke, Mini spanakopita triangles (spinach and feta), Caprese Panini," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"

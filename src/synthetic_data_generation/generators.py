@@ -265,6 +265,7 @@ def generate_localization(samples: int, fake: Faker) -> List[str]:
 
 
 def generate_personal_data(gender_probabilities: Dict[str, Any],
+                           age_probabilities: Dict[str, Any],
                            num_users: int = 500,
                            person_entity: Dict[str, Any] = None) -> pd.DataFrame:
     """Generates a pandas Dataframe with personal user data.
@@ -321,8 +322,16 @@ def generate_personal_data(gender_probabilities: Dict[str, Any],
     df_personal_data["userId"] = df_personal_data["name"].apply(
         lambda x: x.lower()+str(uuid.uuid4()).split("-")[-2])
     # Generate age range
-    df_personal_data["age_range"] = list(
-        map(lambda x: generate_age_range(), range(num_users)))
+    # Generate gender and number of users
+    age_list = []
+    age_proba = []
+    for k, v in age_probabilities.items():
+        age_list.append(k)
+        age_proba.append(v)
+    df_personal_data["age_range"] = np.random.choice(age_list,
+                                                     size=num_users,
+                                                     replace=True,
+                                                     p=age_proba)
     return df_personal_data
 
 
@@ -766,6 +775,8 @@ def generate_recommendations(df_user: pd.DataFrame,
                              flexi_probabilities_dict: dict[str, Any],
                              meals_calorie_dict: Dict[str,
                                                       float] = meals_calorie_dict,
+                             meals_time_dict: Dict[str,
+                                                   Dict] = meal_time_distribution,
                              days_to_simulated: int = 365,
                              progress_bar: Any = None) -> Dict[str, pd.DataFrame]:
     """Generate the simulated tracking data  for users during a given time. 
@@ -858,7 +869,9 @@ def generate_recommendations(df_user: pd.DataFrame,
                 daily_calories_list = [
                     daily_required_calories-500 for i in range(days_to_simulated)]
             flexi_probas = None
-            df_recommendations = pd.DataFrame(columns=[f"{k}_calories" for k in meals_calorie_dict.keys()]+list(meals_calorie_dict.keys()),
+            df_recommendations = pd.DataFrame(columns=[f"{k}_calories" for k in meals_calorie_dict.keys()] +
+                                              [f"{k}_time" for k in meals_calorie_dict.keys()] +
+                                              list(meals_calorie_dict.keys()),
                                               index=np.arange(0, days_to_simulated))
             # filter cultural factor and allergies
             # allergy restrictions filter
@@ -932,6 +945,9 @@ def generate_recommendations(df_user: pd.DataFrame,
                     total_simulations = pd.concat(meal_chosen)
                     total_simulations.reset_index(inplace=True)
                     df_recommendations[f"{meal_tp}_calories"] = total_simulations['calories']
+                    df_recommendations[f"{meal_tp}_time"] = np.random.normal(loc=meals_time_dict[meal_tp]['mean'],
+                                                                             scale=meals_time_dict[meal_tp]['std'],
+                                                                             size=days_to_simulated)
                     df_recommendations[meal_tp] = total_simulations['title']
                 else:
                     df_recommendations[meal_tp] = [
@@ -1286,6 +1302,7 @@ def save_outputs(base_path: str, output_folder: str, files: Dict[str, Any]):
 
 # Full pipeline to simulation
 def run_full_simulation(num_users: int,
+                        age_probabilities: Dict[str, Any],
                         gender_probabilities: Dict[str, Any],
                         BMI_probabilities: Dict[str, Any],
                         allergies_probability_dict: Dict[str, Any],
@@ -1294,6 +1311,8 @@ def run_full_simulation(num_users: int,
                         probability_transition_matrix: np.ndarray,
                         df_recipes: pd.DataFrame,
                         meals_proba: Dict[str, Any],
+                        meals_time_dict: Dict[str,
+                                              Any] = meal_time_distribution,
                         progress_bar=None,
                         num_days: int = 365
                         ) -> Tuple[pd.DataFrame, pd.DataFrame, HTML_Table]:
@@ -1326,6 +1345,7 @@ def run_full_simulation(num_users: int,
     """
     # Generate user data
     df_personal_data = generate_personal_data(num_users=num_users,
+                                              age_probabilities=age_probabilities,
                                               person_entity=person_entity,
                                               gender_probabilities=gender_probabilities)
     # Generate user status
@@ -1371,7 +1391,8 @@ def run_full_simulation(num_users: int,
                                                   meals_plan=meals_plan,
                                                   flexi_probabilities_dict=flexi_probabilities,
                                                   days_to_simulated=num_days,
-                                                  progress_bar=progress_bar)
+                                                  progress_bar=progress_bar,
+                                                  meals_time_dict=meals_time_dict)
     # Create a summary table
     table = create_a_summary_table(df_user_join, simulation_results)
     # return the files

@@ -11,6 +11,7 @@ import pandas as pd
 from typing import Any, Dict, List, Tuple
 import copy
 import graphviz as graphv
+import traceback
 
 from synthetic_data_generation.generators import (person_entity,
                                                   BMI_constants,
@@ -131,6 +132,8 @@ def execute_simulation(num_users: int,
     # Todo: Get values from dictionaries and send to the simulation function
     simulation_results, df_user_join, table = run_full_simulation(
         num_users=num_users,
+        age_probabilities=values_from_dictionary(
+            dictionaries['age']),
         gender_probabilities=values_from_dictionary(
             dictionaries['gender_probabilities']),
         BMI_probabilities=values_from_dictionary(
@@ -141,6 +144,9 @@ def execute_simulation(num_users: int,
             dictionaries['food_restriction_probability_dict']),
         flexi_probabilities={k: values_from_dictionary(
             dictionaries['flexi_probabilities'][k]) for k in dictionaries['flexi_probabilities'].keys()},
+        meals_time_dict={
+            k: values_from_dictionary(dictionaries["meal_time"][k]) for k in dictionaries["meal_time"].keys()
+        },
         probability_transition_matrix=probability_transition_matrix,
         df_recipes=df_recipes,
         meals_proba=values_from_dictionary(dictionaries['meals_proba']),
@@ -395,8 +401,11 @@ class ExecuteButton:
             else:
                 print("simulation starting")
                 self.progress_bar.display()
-            # load recipes data
-            df_recipes = pd.read_csv("processed_recipes_dataset.csv", sep="|")
+            # load recipes data todo make this parametrizable
+            current_dir = os.getcwd()
+            default_path_recipes = "recipes/processed_recipes_dataset.csv"
+            df_recipes = pd.read_csv(os.path.join(current_dir, default_path_recipes),
+                                     sep="|")
             simulation_results, df_user_join, table = execute_simulation(num_users=self.num_users.value,
                                                                          dictionaries=self.dictionaries,
                                                                          probability_transition_matrix=probability_transition_matrix,
@@ -453,6 +462,7 @@ class ExecuteButton:
                 display(HTML(button_1.get_html_button()), HTML(
                         button_2.get_html_button()), HTML(button_3.get_html_button()))
         except Exception as e:
+            # print(traceback.format_exc())
             exceptionOut = widgets.Output(layout={'border': '1px solid red'})
             if self.out is not None:
                 with self.out:
@@ -480,6 +490,8 @@ def build_full_ui():
     food_restriction_probability = copy.deepcopy(
         defaultValues.food_restriction_probability_dict)
     flexi_probabilities = copy.deepcopy(defaultValues.flexi_probabilities_dict)
+    meals_time_distribution = copy.deepcopy(
+        defaultValues.meal_time_distribution)
     meals_proba = copy.deepcopy(defaultValues.meals_proba_dict)
     bmi_transition_probabilities = copy.deepcopy(
         defaultValues.bmi_probability_transition_dict)
@@ -528,6 +540,15 @@ def build_full_ui():
                                                                                  titles=[k.replace("_", " ") for k in bmi_transition_probabilities.keys()]),
                                                 "titles": "BMI transition probability"
                                                 }
+    dict_widgets['meal_time'] = {"widget_list":
+                                 widgets.Accordion(children=[form_probability_dict(meals_time_distribution[k],
+                                                                                   widgets.IntSlider,
+                                                                                   exclude_validator=True,
+                                                                                   min=0,
+                                                                                   max=24,
+                                                                                   step=1) for k in meals_time_distribution.keys()],
+                                                   titles=[k.replace("_", " ") for k in meals_time_distribution.keys()]),
+                                 "titles": "Meal time"}
     # UI displaying
     style = {'description_width': 'initial'}
     NUM_USERS = widgets.IntText(
@@ -551,7 +572,8 @@ def build_full_ui():
         'food_restriction_probability_dict': food_restriction_probability,
         'flexi_probabilities': flexi_probabilities,
         'meals_proba': meals_proba,
-        "bmi_transition_proba": bmi_transition_probabilities
+        "bmi_transition_proba": bmi_transition_probabilities,
+        "meal_time": meals_time_distribution
     }
 
     out = widgets.Output()

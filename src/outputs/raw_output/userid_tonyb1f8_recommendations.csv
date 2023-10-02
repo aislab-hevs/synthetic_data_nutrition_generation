@@ -1,0 +1,888 @@
+,breakfast_calories,morning snacks_calories,afternoon snacks_calories,lunch_calories,dinner_calories,breakfast,morning snacks,afternoon snacks,lunch,dinner
+1,200.0,200.0,180.0,250.0,350.0, Tofu Scramble, Tofu and Vegetable Stir-Fry, Crispy Tofu Bites, Vegetarian sushi rolls," Vegetarian bibimbap - 350 calories per portion, 4 portions, contains gluten and soy (Korea)
+"
+2,350.0,200.0,280.0,500.0,300.0, Vegan Breakfast Tacos, Tofu and Vegetable Stir-Fry, Vegan Nachos, Veggie Soba Noodle Stir-Fry," Vegetable and tofu stir-fry - 300 calories per portion, 4 portions, contains soy
+"
+3,400.0,300.0,280.0,650.0,150.0, Tofu Benedict, Vegetable Potstickers with Soy Dipping Sauce, Vegan Nachos, Veggie Lo Mein," Greek Salad with Tofu - 150 calories/portion, 4 portions, contains soy (Greece)
+"
+4,350.0,200.0,180.0,350.0,200.0, Vegan Breakfast Burrito, Tofu and Vegetable Stir-Fry, Crispy Tofu Bites, Vegetable and Tofu Skewers," Veggie Stir-Fry with Tofu - 200 calories/portion, 4 portions, contains soy (China)
+"
+5,150.0,200.0,180.0,650.0,200.0, Scrambled Tofu, Tofu Scramble with Veggies, Crispy Tofu Bites, Veggie Lo Mein," Tofu and Broccoli Stir-Fry - 200 calories/portion, 4 portions, contains soy (China)
+"
+6,350.0,300.0,180.0,350.0,300.0, Vegan Breakfast Tacos, Vegetable Potstickers with Soy Dipping Sauce, Crispy Tofu Bites," Veggie Bibimbap - 350kcals per portion, 2 portions, contains soy (Korea)
+"," Vegetable and tofu stir-fry - 300 calories per portion, 4 portions, contains soy
+"
+7,350.0,200.0,100.0,450.0,350.0, Vegan Breakfast Tacos, Tofu and Vegetable Stir-Fry, Edamame, Moroccan Couscous," Veggie stir-fried rice - 350 calories per portion, 4 portions, contains soy (China)
+"
+8,400.0,200.0,280.0,350.0,350.0, Vegan Breakfast Hash, Tofu Scramble with Veggies, Vegan Nachos, Vegetable Stir-Fry," Vegetarian bibimbap - 350 calories per portion, 4 portions, contains gluten and soy (Korea)
+"
+9,400.0,200.0,280.0,350.0,250.0, Vegan Breakfast Hash, Tofu Scramble with Veggies, Vegan Nachos," Veggie Bibimbap - 350kcals per portion, 2 portions, contains soy (Korea)
+"," Tofu and vegetable kabobs - 250 calories per portion, 4 portions, contains soy
+"
+10,400.0,200.0,180.0,280.0,200.0, Veggie Sausage Breakfast Sandwich, Tofu Scramble with Veggies, Crispy Tofu Bites," Tofu Stir-Fry - 280kcals per portion, 2 portions, contains soy (China)
+"," Veggie Stir-Fry with Tofu - 200 calories/portion, 4 portions, contains soy (China)
+"
+11,400.0,300.0,180.0,250.0,150.0, Vegan Breakfast Hash, Vegetable Potstickers with Soy Dipping Sauce, Crispy Tofu Bites, Veggie Sushi Rolls," Greek Salad with Tofu - 150 calories/portion, 4 portions, contains soy (Greece)
+"
+12,200.0,300.0,180.0,450.0,350.0, Tomato Basil Tofu Scramble, Vegetable Potstickers with Soy Dipping Sauce, Crispy Tofu Bites, Moroccan Couscous," Vegetarian bibimbap - 350 calories per portion, 4 portions, contains gluten and soy (Korea)
+"
+13,200.0,200.0,100.0,250.0,200.0, Veggie Breakfast Wrap with Tofu Scramble, Tofu Scramble with Veggies, Edamame, Vegetarian sushi bowl," Cauliflower Fried Rice - 200 calories/portion, 4 portions, contains soy (China)
+"
+14,350.0,200.0,180.0,250.0,300.0, Vegan Breakfast Burrito, Tofu Scramble with Veggies, Crispy Tofu Bites, Vegetarian sushi bowl," Chickpea and vegetable stir-fry - 300 calories per portion, 4 portions, contains soy (Middle East)
+"
+15,200.0,300.0,100.0,320.0,250.0, Tofu Scramble, Vegetable Potstickers with Soy Dipping Sauce, Edamame," Veggie Stir-Fry - 320kcals per portion, 2 portions, contains soy
+"," Tofu and vegetable kabobs - 250 calories per portion, 4 portions, contains soy
+"
+16,350.0,300.0,180.0,500.0,200.0, Vegan Breakfast Burrito, Vegetable Potstickers with Soy Dipping Sauce, Crispy Tofu Bites, Veggie Soba Noodle Stir-Fry," Tofu and Broccoli Stir-Fry - 200 calories/portion, 4 portions, contains soy (China)
+"
+17,400.0,200.0,100.0,280.0,200.0, Vegan Breakfast Hash, Tofu Scramble with Veggies, Edamame," Tofu Stir-Fry - 280kcals per portion, 2 portions, contains soy (China)
+"," Cauliflower Fried Rice - 200 calories/portion, 4 portions, contains soy (China)
+"
+18,200.0,200.0,100.0,400.0,350.0, Tofu Scramble, Tofu and Vegetable Stir-Fry, Edamame, Veggie Fried Rice," Vegetarian bibimbap - 350 calories per portion, 4 portions, contains gluten and soy (Korea)
+"
+19,400.0,200.0,100.0,400.0,300.0, Tofu Benedict, Tofu Scramble with Veggies, Edamame," Veggie Sushi Burrito - 400kcals per portion, 1 portion, contains soy, gluten (Japan)
+"," Vegetable and tofu stir-fry - 300 calories per portion, 4 portions, contains soy
+"
+20,200.0,200.0,180.0,400.0,200.0, Tofu Scramble, Tofu Scramble with Veggies, Crispy Tofu Bites, Veggie Fried Rice," Tofu and Broccoli Stir-Fry - 200 calories/portion, 4 portions, contains soy (China)
+"
+21,400.0,200.0,100.0,750.0,300.0, Veggie Sausage Breakfast Sandwich, Tofu Scramble with Veggies, Edamame, Tofu Pad Thai," Vegetable and tofu stir-fry - 300 calories per portion, 4 portions, contains soy
+"
+22,400.0,200.0,280.0,350.0,250.0, Vegan Breakfast Hash, Tofu and Vegetable Stir-Fry, Vegan Nachos, Vegetable Stir-Fry," Tofu and vegetable kabobs - 250 calories per portion, 4 portions, contains soy
+"
+23,400.0,200.0,280.0,650.0,350.0, Vegan Breakfast Hash, Tofu Scramble with Veggies, Vegan Nachos, Veggie Lo Mein," Vegetarian bibimbap - 350 calories per portion, 4 portions, contains gluten and soy (Korea)
+"
+24,400.0,200.0,180.0,350.0,300.0, Veggie Sausage Breakfast Sandwich, Tofu and Vegetable Stir-Fry, Crispy Tofu Bites, Vegetable and Tofu Skewers," Vegetable and tofu stir-fry - 300 calories per portion, 4 portions, contains soy
+"
+25,350.0,200.0,180.0,350.0,300.0, Vegan Breakfast Tacos, Tofu Scramble with Veggies, Crispy Tofu Bites, Vegetable Stir-Fry," Vegetable Sushi Rolls - 300 calories/portion, 4 portions, contains soy (Japan)
+
+"
+26,150.0,200.0,100.0,280.0,300.0, Scrambled Tofu, Tofu and Vegetable Stir-Fry, Edamame," Tofu Stir-Fry - 280kcals per portion, 2 portions, contains soy (China)
+"," Vegetable Sushi Rolls - 300 calories/portion, 4 portions, contains soy (Japan)
+
+"
+27,150.0,200.0,180.0,400.0,300.0, Scrambled Tofu, Tofu Scramble with Veggies, Crispy Tofu Bites, Vegetarian Spring Rolls," Vegetable and tofu stir-fry - 300 calories per portion, 4 portions, contains soy
+"
+28,400.0,200.0,180.0,250.0,300.0, Tofu Benedict, Tofu and Vegetable Stir-Fry, Crispy Tofu Bites, Veggie Sushi Rolls," Chickpea and vegetable stir-fry - 300 calories per portion, 4 portions, contains soy (Middle East)
+"
+29,400.0,200.0,100.0,650.0,250.0, Vegan Breakfast Hash, Tofu and Vegetable Stir-Fry, Edamame, Veggie Lo Mein," Tofu and vegetable kabobs - 250 calories per portion, 4 portions, contains soy
+"
+30,200.0,200.0,280.0,280.0,350.0, Veggie Breakfast Wrap with Tofu Scramble, Tofu Scramble with Veggies, Vegan Nachos," Tofu Stir-Fry - 280kcals per portion, 2 portions, contains soy (China)
+"," Vegetarian bibimbap - 350 calories per portion, 4 portions, contains gluten and soy (Korea)
+"
+31,400.0,200.0,180.0,380.0,350.0, Tofu Benedict, Tofu Scramble with Veggies, Crispy Tofu Bites," Veggie Bibimbap Bowl - 380kcals per portion, 2 portions, contains soy (Korea)
+"," Vegetarian bibimbap - 350 calories per portion, 4 portions, contains gluten and soy (Korea)
+"
+32,400.0,300.0,100.0,250.0,300.0, Vegan Breakfast Hash, Vegetable Potstickers with Soy Dipping Sauce, Edamame, Veggie Sushi Rolls," Vegetable and tofu stir-fry - 300 calories per portion, 4 portions, contains soy
+"
+33,200.0,200.0,280.0,400.0,250.0, Tomato Basil Tofu Scramble, Tofu and Vegetable Stir-Fry, Vegan Nachos, Vegetarian Spring Rolls," Tofu and vegetable kabobs - 250 calories per portion, 4 portions, contains soy
+"
+34,400.0,200.0,100.0,600.0,250.0, Tofu Benedict, Tofu Scramble with Veggies, Edamame, Veggie Pho," Tofu and vegetable kabobs - 250 calories per portion, 4 portions, contains soy
+"
+35,200.0,200.0,180.0,600.0,200.0, Tofu Scramble, Tofu Scramble with Veggies, Crispy Tofu Bites, Veggie Pho," Tofu and Broccoli Stir-Fry - 200 calories/portion, 4 portions, contains soy (China)
+"
+36,200.0,200.0,100.0,400.0,350.0, Veggie Breakfast Wrap with Tofu Scramble, Tofu Scramble with Veggies, Edamame, Vegetarian Spring Rolls," Vegetarian bibimbap - 350 calories per portion, 4 portions, contains gluten and soy (Korea)
+"
+37,350.0,300.0,180.0,600.0,200.0, Vegan Breakfast Burrito, Vegetable Potstickers with Soy Dipping Sauce, Crispy Tofu Bites, Veggie Pho," Veggie Stir-Fry with Tofu - 200 calories/portion, 4 portions, contains soy (China)
+"
+38,400.0,200.0,280.0,250.0,300.0, Vegan Breakfast Hash, Tofu Scramble with Veggies, Vegan Nachos, Veggie Sushi Rolls," Vegetable Sushi Rolls - 300 calories/portion, 4 portions, contains soy (Japan)
+
+"
+39,400.0,200.0,280.0,380.0,350.0, Vegan Breakfast Hash, Tofu Scramble with Veggies, Vegan Nachos," Veggie Bibimbap Bowl - 380kcals per portion, 2 portions, contains soy (Korea)
+"," Vegetarian bibimbap - 350 calories per portion, 4 portions, contains gluten and soy (Korea)
+"
+40,200.0,200.0,280.0,320.0,350.0, Veggie Breakfast Wrap with Tofu Scramble, Tofu Scramble with Veggies, Vegan Nachos," Veggie Stir-Fry - 320kcals per portion, 2 portions, contains soy
+"," Vegetarian bibimbap - 350 calories per portion, 4 portions, contains gluten and soy (Korea)
+"
+41,400.0,200.0,280.0,650.0,300.0, Veggie Sausage Breakfast Sandwich, Tofu Scramble with Veggies, Vegan Nachos, Veggie Lo Mein," Vegetable Sushi Rolls - 300 calories/portion, 4 portions, contains soy (Japan)
+
+"
+42,200.0,200.0,280.0,650.0,200.0, Tofu Scramble, Tofu and Vegetable Stir-Fry, Vegan Nachos, Veggie Lo Mein," Cauliflower Fried Rice - 200 calories/portion, 4 portions, contains soy (China)
+"
+43,350.0,200.0,280.0,280.0,350.0, Vegan Protein Pancakes, Tofu and Vegetable Stir-Fry, Vegan Nachos," Tofu Stir-Fry - 280kcals per portion, 2 portions, contains soy (China)
+"," Veggie stir-fried rice - 350 calories per portion, 4 portions, contains soy (China)
+"
+44,150.0,300.0,280.0,450.0,350.0, Scrambled Tofu, Vegetable Potstickers with Soy Dipping Sauce, Vegan Nachos, Moroccan Couscous," Vegetarian bibimbap - 350 calories per portion, 4 portions, contains gluten and soy (Korea)
+"
+45,150.0,200.0,100.0,400.0,300.0, Scrambled Tofu, Tofu and Vegetable Stir-Fry, Edamame," Veggie Sushi Burrito - 400kcals per portion, 1 portion, contains soy, gluten (Japan)
+"," Vegetable and tofu stir-fry - 300 calories per portion, 4 portions, contains soy
+"
+46,350.0,300.0,100.0,400.0,300.0, Vegan Breakfast Tacos, Vegetable Potstickers with Soy Dipping Sauce, Edamame," Veggie Sushi Burrito - 400kcals per portion, 1 portion, contains soy, gluten (Japan)
+"," Vegetable and tofu stir-fry - 300 calories per portion, 4 portions, contains soy
+"
+47,200.0,200.0,180.0,500.0,350.0, Tomato Basil Tofu Scramble, Tofu Scramble with Veggies, Crispy Tofu Bites, Veggie Soba Noodle Stir-Fry," Vegetarian bibimbap - 350 calories per portion, 4 portions, contains gluten and soy (Korea)
+"
+48,350.0,200.0,280.0,450.0,350.0, Vegan Protein Pancakes, Tofu and Vegetable Stir-Fry, Vegan Nachos, Moroccan Couscous," Vegetarian bibimbap - 350 calories per portion, 4 portions, contains gluten and soy (Korea)
+"
+49,350.0,200.0,100.0,400.0,200.0, Vegan Breakfast Burrito, Tofu Scramble with Veggies, Edamame, Vegetarian Spring Rolls," Tofu and Broccoli Stir-Fry - 200 calories/portion, 4 portions, contains soy (China)
+"
+50,150.0,200.0,100.0,350.0,200.0, Scrambled Tofu, Tofu and Vegetable Stir-Fry, Edamame, Vegetable Stir-Fry," Veggie Stir-Fry with Tofu - 200 calories/portion, 4 portions, contains soy (China)
+"
+51,350.0,200.0,280.0,450.0,350.0, Vegan Protein Pancakes, Tofu Scramble with Veggies, Vegan Nachos, Moroccan Couscous," Vegetarian bibimbap - 350 calories per portion, 4 portions, contains gluten and soy (Korea)
+"
+52,400.0,300.0,180.0,750.0,300.0, Tofu Benedict, Vegetable Potstickers with Soy Dipping Sauce, Crispy Tofu Bites, Tofu Pad Thai," Vegetable Sushi Rolls - 300 calories/portion, 4 portions, contains soy (Japan)
+
+"
+53,350.0,200.0,180.0,500.0,350.0, Vegan Breakfast Burrito, Tofu and Vegetable Stir-Fry, Crispy Tofu Bites, Veggie Soba Noodle Stir-Fry," Vegetarian bibimbap - 350 calories per portion, 4 portions, contains gluten and soy (Korea)
+"
+54,350.0,200.0,100.0,360.0,350.0, Vegan Protein Pancakes, Tofu and Vegetable Stir-Fry, Edamame," Veggie Sushi Bowl - 360kcals per portion, 2 portions, contains soy, gluten (Japan)
+"," Veggie stir-fried rice - 350 calories per portion, 4 portions, contains soy (China)
+"
+55,400.0,200.0,280.0,250.0,300.0, Veggie Sausage Breakfast Sandwich, Tofu Scramble with Veggies, Vegan Nachos, Veggie Sushi Rolls," Chickpea and vegetable stir-fry - 300 calories per portion, 4 portions, contains soy (Middle East)
+"
+56,400.0,300.0,280.0,250.0,350.0, Veggie Sausage Breakfast Sandwich, Vegetable Potstickers with Soy Dipping Sauce, Vegan Nachos, Vegetarian sushi rolls," Veggie stir-fried rice - 350 calories per portion, 4 portions, contains soy (China)
+"
+57,200.0,300.0,280.0,400.0,300.0, Tomato Basil Tofu Scramble, Vegetable Potstickers with Soy Dipping Sauce, Vegan Nachos," Veggie Sushi Burrito - 400kcals per portion, 1 portion, contains soy, gluten (Japan)
+"," Vegetable and tofu stir-fry - 300 calories per portion, 4 portions, contains soy
+"
+58,400.0,300.0,100.0,380.0,300.0, Tofu Benedict, Vegetable Potstickers with Soy Dipping Sauce, Edamame," Veggie Bibimbap Bowl - 380kcals per portion, 2 portions, contains soy (Korea)
+"," Vegetable and tofu stir-fry - 300 calories per portion, 4 portions, contains soy
+"
+59,400.0,300.0,100.0,350.0,300.0, Vegan Breakfast Hash, Vegetable Potstickers with Soy Dipping Sauce, Edamame, Vegetable and Tofu Skewers," Vegetable and tofu stir-fry - 300 calories per portion, 4 portions, contains soy
+"
+60,350.0,200.0,280.0,750.0,350.0, Vegan Breakfast Tacos, Tofu Scramble with Veggies, Vegan Nachos, Tofu Pad Thai," Vegetarian bibimbap - 350 calories per portion, 4 portions, contains gluten and soy (Korea)
+"
+61,400.0,200.0,280.0,320.0,150.0, Tofu Benedict, Tofu Scramble with Veggies, Vegan Nachos," Veggie Sushi Rolls - 320kcals per portion, 2 portions, contains soy, gluten (Japan)
+"," Greek Salad with Tofu - 150 calories/portion, 4 portions, contains soy (Greece)
+"
+62,400.0,200.0,180.0,400.0,350.0, Vegan Breakfast Hash, Tofu Scramble with Veggies, Crispy Tofu Bites," Veggie Sushi Burrito - 400kcals per portion, 1 portion, contains soy, gluten (Japan)
+"," Vegetarian bibimbap - 350 calories per portion, 4 portions, contains gluten and soy (Korea)
+"
+63,400.0,300.0,100.0,360.0,350.0, Vegan Breakfast Hash, Vegetable Potstickers with Soy Dipping Sauce, Edamame," Veggie Sushi Bowl - 360kcals per portion, 2 portions, contains soy, gluten (Japan)
+"," Veggie stir-fried rice - 350 calories per portion, 4 portions, contains soy (China)
+"
+64,200.0,200.0,100.0,650.0,300.0, Veggie Breakfast Wrap with Tofu Scramble, Tofu and Vegetable Stir-Fry, Edamame, Veggie Lo Mein," Vegetable and tofu stir-fry - 300 calories per portion, 4 portions, contains soy
+"
+65,150.0,200.0,280.0,320.0,300.0, Scrambled Tofu, Tofu Scramble with Veggies, Vegan Nachos," Veggie Stir-Fry - 320kcals per portion, 2 portions, contains soy
+"," Vegetable and tofu stir-fry - 300 calories per portion, 4 portions, contains soy
+"
+66,200.0,200.0,280.0,450.0,350.0, Tofu Scramble, Tofu and Vegetable Stir-Fry, Vegan Nachos, Vegetarian Sushi Bowl," Vegetarian bibimbap - 350 calories per portion, 4 portions, contains gluten and soy (Korea)
+"
+67,200.0,300.0,100.0,400.0,300.0, Veggie Breakfast Wrap with Tofu Scramble, Vegetable Potstickers with Soy Dipping Sauce, Edamame," Veggie Sushi Burrito - 400kcals per portion, 1 portion, contains soy, gluten (Japan)
+"," Vegetable Sushi Rolls - 300 calories/portion, 4 portions, contains soy (Japan)
+
+"
+68,400.0,200.0,100.0,350.0,200.0, Veggie Sausage Breakfast Sandwich, Tofu Scramble with Veggies, Edamame, Vegetable Stir-Fry," Tofu and Broccoli Stir-Fry - 200 calories/portion, 4 portions, contains soy (China)
+"
+69,400.0,300.0,100.0,650.0,300.0, Veggie Sausage Breakfast Sandwich, Vegetable Potstickers with Soy Dipping Sauce, Edamame, Veggie Lo Mein," Chickpea and vegetable stir-fry - 300 calories per portion, 4 portions, contains soy (Middle East)
+"
+70,200.0,200.0,100.0,500.0,200.0, Tofu Scramble, Tofu and Vegetable Stir-Fry, Edamame, Veggie Soba Noodle Stir-Fry," Veggie Stir-Fry with Tofu - 200 calories/portion, 4 portions, contains soy (China)
+"
+71,200.0,300.0,100.0,250.0,300.0, Tofu Scramble, Vegetable Potstickers with Soy Dipping Sauce, Edamame, Veggie Sushi Rolls," Vegetable and tofu stir-fry - 300 calories per portion, 4 portions, contains soy
+"
+72,350.0,200.0,280.0,400.0,300.0, Vegan Protein Pancakes, Tofu and Vegetable Stir-Fry, Vegan Nachos, Veggie Fried Rice," Vegetable and tofu stir-fry - 300 calories per portion, 4 portions, contains soy
+"
+73,150.0,200.0,100.0,750.0,200.0, Scrambled Tofu, Tofu Scramble with Veggies, Edamame, Tofu Pad Thai," Tofu and Broccoli Stir-Fry - 200 calories/portion, 4 portions, contains soy (China)
+"
+74,350.0,300.0,280.0,250.0,200.0, Vegan Breakfast Burrito, Vegetable Potstickers with Soy Dipping Sauce, Vegan Nachos, Vegetarian sushi bowl," Cauliflower Fried Rice - 200 calories/portion, 4 portions, contains soy (China)
+"
+75,200.0,200.0,180.0,250.0,150.0, Tofu Scramble, Tofu and Vegetable Stir-Fry, Crispy Tofu Bites, Vegetarian sushi rolls," Greek Salad with Tofu - 150 calories/portion, 4 portions, contains soy (Greece)
+"
+76,400.0,200.0,180.0,750.0,350.0, Veggie Sausage Breakfast Sandwich, Tofu and Vegetable Stir-Fry, Crispy Tofu Bites, Tofu Pad Thai," Vegetarian bibimbap - 350 calories per portion, 4 portions, contains gluten and soy (Korea)
+"
+77,150.0,300.0,100.0,360.0,350.0, Scrambled Tofu, Vegetable Potstickers with Soy Dipping Sauce, Edamame," Veggie Sushi Bowl - 360kcals per portion, 2 portions, contains soy, gluten (Japan)
+"," Vegetarian bibimbap - 350 calories per portion, 4 portions, contains gluten and soy (Korea)
+"
+78,400.0,300.0,280.0,500.0,200.0, Vegan Breakfast Hash, Vegetable Potstickers with Soy Dipping Sauce, Vegan Nachos, Veggie Soba Noodle Stir-Fry," Tofu and Broccoli Stir-Fry - 200 calories/portion, 4 portions, contains soy (China)
+"
+79,400.0,200.0,280.0,500.0,350.0, Vegan Breakfast Hash, Tofu and Vegetable Stir-Fry, Vegan Nachos, Veggie Soba Noodle Stir-Fry," Vegetarian bibimbap - 350 calories per portion, 4 portions, contains gluten and soy (Korea)
+"
+80,350.0,200.0,100.0,350.0,200.0, Vegan Breakfast Tacos, Tofu Scramble with Veggies, Edamame, Vegetable Stir-Fry," Tofu and Broccoli Stir-Fry - 200 calories/portion, 4 portions, contains soy (China)
+"
+81,400.0,200.0,100.0,350.0,350.0, Tofu Benedict, Tofu Scramble with Veggies, Edamame, Vegetable Stir-Fry," Vegetarian bibimbap - 350 calories per portion, 4 portions, contains gluten and soy (Korea)
+"
+82,350.0,300.0,180.0,450.0,200.0, Vegan Breakfast Burrito, Vegetable Potstickers with Soy Dipping Sauce, Crispy Tofu Bites, Vegetarian Sushi Bowl," Cauliflower Fried Rice - 200 calories/portion, 4 portions, contains soy (China)
+"
+83,150.0,200.0,100.0,350.0,200.0, Scrambled Tofu, Tofu and Vegetable Stir-Fry, Edamame," Veggie Bibimbap - 350kcals per portion, 2 portions, contains soy (Korea)
+"," Veggie Stir-Fry with Tofu - 200 calories/portion, 4 portions, contains soy (China)
+"
+84,200.0,200.0,180.0,350.0,350.0, Tomato Basil Tofu Scramble, Tofu and Vegetable Stir-Fry, Crispy Tofu Bites," Veggie Bibimbap - 350kcals per portion, 2 portions, contains soy (Korea)
+"," Vegetarian bibimbap - 350 calories per portion, 4 portions, contains gluten and soy (Korea)
+"
+85,350.0,200.0,180.0,350.0,350.0, Vegan Breakfast Tacos, Tofu Scramble with Veggies, Crispy Tofu Bites," Veggie Bibimbap - 350kcals per portion, 2 portions, contains soy (Korea)
+"," Veggie stir-fried rice - 350 calories per portion, 4 portions, contains soy (China)
+"
+86,200.0,200.0,180.0,400.0,200.0, Tofu Scramble, Tofu Scramble with Veggies, Crispy Tofu Bites," Veggie Sushi Burrito - 400kcals per portion, 1 portion, contains soy, gluten (Japan)
+"," Tofu and Broccoli Stir-Fry - 200 calories/portion, 4 portions, contains soy (China)
+"
+87,150.0,300.0,280.0,250.0,300.0, Scrambled Tofu, Vegetable Potstickers with Soy Dipping Sauce, Vegan Nachos, Vegetarian sushi bowl," Vegetable and tofu stir-fry - 300 calories per portion, 4 portions, contains soy
+"
+88,400.0,200.0,180.0,500.0,350.0, Vegan Breakfast Hash, Tofu Scramble with Veggies, Crispy Tofu Bites, Veggie Soba Noodle Stir-Fry," Veggie stir-fried rice - 350 calories per portion, 4 portions, contains soy (China)
+"
+89,350.0,200.0,100.0,250.0,350.0, Vegan Breakfast Burrito, Tofu and Vegetable Stir-Fry, Edamame, Veggie Sushi Rolls," Vegetarian bibimbap - 350 calories per portion, 4 portions, contains gluten and soy (Korea)
+"
+90,350.0,300.0,180.0,320.0,350.0, Vegan Protein Pancakes, Vegetable Potstickers with Soy Dipping Sauce, Crispy Tofu Bites," Veggie Sushi Rolls - 320kcals per portion, 2 portions, contains soy, gluten (Japan)
+"," Vegetarian bibimbap - 350 calories per portion, 4 portions, contains gluten and soy (Korea)
+"
+91,350.0,200.0,280.0,360.0,300.0, Vegan Breakfast Tacos, Tofu Scramble with Veggies, Vegan Nachos," Veggie Sushi Bowl - 360kcals per portion, 2 portions, contains soy, gluten (Japan)
+"," Vegetable and tofu stir-fry - 300 calories per portion, 4 portions, contains soy
+"
+92,200.0,200.0,180.0,280.0,300.0, Tomato Basil Tofu Scramble, Tofu and Vegetable Stir-Fry, Crispy Tofu Bites," Tofu Stir-Fry - 280kcals per portion, 2 portions, contains soy (China)
+"," Chickpea and vegetable stir-fry - 300 calories per portion, 4 portions, contains soy (Middle East)
+"
+93,200.0,200.0,180.0,360.0,300.0, Tomato Basil Tofu Scramble, Tofu Scramble with Veggies, Crispy Tofu Bites," Veggie Sushi Bowl - 360kcals per portion, 2 portions, contains soy, gluten (Japan)
+"," Vegetable and tofu stir-fry - 300 calories per portion, 4 portions, contains soy
+"
+94,400.0,200.0,280.0,350.0,300.0, Vegan Breakfast Hash, Tofu and Vegetable Stir-Fry, Vegan Nachos," Veggie Bibimbap - 350kcals per portion, 2 portions, contains soy (Korea)
+"," Vegetable Sushi Rolls - 300 calories/portion, 4 portions, contains soy (Japan)
+
+"
+95,200.0,200.0,180.0,250.0,200.0, Veggie Breakfast Wrap with Tofu Scramble, Tofu and Vegetable Stir-Fry, Crispy Tofu Bites, Vegetarian sushi bowl," Veggie Stir-Fry with Tofu - 200 calories/portion, 4 portions, contains soy (China)
+"
+96,200.0,200.0,280.0,350.0,350.0, Tofu Scramble, Tofu Scramble with Veggies, Vegan Nachos, Vegetable and Tofu Skewers," Vegetarian bibimbap - 350 calories per portion, 4 portions, contains gluten and soy (Korea)
+"
+97,200.0,300.0,280.0,320.0,250.0, Tomato Basil Tofu Scramble, Vegetable Potstickers with Soy Dipping Sauce, Vegan Nachos," Veggie Stir-Fry - 320kcals per portion, 2 portions, contains soy
+"," Tofu and vegetable kabobs - 250 calories per portion, 4 portions, contains soy
+"
+98,350.0,200.0,180.0,450.0,150.0, Vegan Breakfast Burrito, Tofu and Vegetable Stir-Fry, Crispy Tofu Bites, Moroccan Couscous," Greek Salad with Tofu - 150 calories/portion, 4 portions, contains soy (Greece)
+"
+99,400.0,300.0,180.0,380.0,350.0, Tofu Benedict, Vegetable Potstickers with Soy Dipping Sauce, Crispy Tofu Bites," Veggie Bibimbap Bowl - 380kcals per portion, 2 portions, contains soy (Korea)
+"," Vegetarian bibimbap - 350 calories per portion, 4 portions, contains gluten and soy (Korea)
+"
+100,400.0,200.0,100.0,400.0,350.0, Veggie Sausage Breakfast Sandwich, Tofu Scramble with Veggies, Edamame, Veggie Fried Rice," Vegetarian bibimbap - 350 calories per portion, 4 portions, contains gluten and soy (Korea)
+"
+101,200.0,200.0,280.0,450.0,150.0, Tomato Basil Tofu Scramble, Tofu Scramble with Veggies, Vegan Nachos, Vegetarian Sushi Bowl," Greek Salad with Tofu - 150 calories/portion, 4 portions, contains soy (Greece)
+"
+102,200.0,300.0,180.0,400.0,350.0, Tomato Basil Tofu Scramble, Vegetable Potstickers with Soy Dipping Sauce, Crispy Tofu Bites, Veggie Fried Rice," Vegetarian bibimbap - 350 calories per portion, 4 portions, contains gluten and soy (Korea)
+"
+103,200.0,200.0,180.0,400.0,350.0, Tofu Scramble, Tofu Scramble with Veggies, Crispy Tofu Bites," Veggie Sushi Burrito - 400kcals per portion, 1 portion, contains soy, gluten (Japan)
+"," Vegetarian bibimbap - 350 calories per portion, 4 portions, contains gluten and soy (Korea)
+"
+104,200.0,300.0,280.0,650.0,300.0, Veggie Breakfast Wrap with Tofu Scramble, Vegetable Potstickers with Soy Dipping Sauce, Vegan Nachos, Veggie Lo Mein," Vegetable and tofu stir-fry - 300 calories per portion, 4 portions, contains soy
+"
+105,200.0,200.0,280.0,600.0,350.0, Veggie Breakfast Wrap with Tofu Scramble, Tofu and Vegetable Stir-Fry, Vegan Nachos, Veggie Pho," Vegetarian bibimbap - 350 calories per portion, 4 portions, contains gluten and soy (Korea)
+"
+106,400.0,300.0,180.0,350.0,300.0, Veggie Sausage Breakfast Sandwich, Vegetable Potstickers with Soy Dipping Sauce, Crispy Tofu Bites, Vegetable Stir-Fry," Vegetable Sushi Rolls - 300 calories/portion, 4 portions, contains soy (Japan)
+
+"
+107,150.0,300.0,280.0,250.0,350.0, Scrambled Tofu, Vegetable Potstickers with Soy Dipping Sauce, Vegan Nachos, Veggie Sushi Rolls," Vegetarian bibimbap - 350 calories per portion, 4 portions, contains gluten and soy (Korea)
+"
+108,200.0,200.0,100.0,380.0,200.0, Tomato Basil Tofu Scramble, Tofu and Vegetable Stir-Fry, Edamame," Veggie Bibimbap Bowl - 380kcals per portion, 2 portions, contains soy (Korea)
+"," Veggie Stir-Fry with Tofu - 200 calories/portion, 4 portions, contains soy (China)
+"
+109,200.0,200.0,100.0,280.0,300.0, Veggie Breakfast Wrap with Tofu Scramble, Tofu and Vegetable Stir-Fry, Edamame," Tofu Stir-Fry - 280kcals per portion, 2 portions, contains soy (China)
+"," Vegetable and tofu stir-fry - 300 calories per portion, 4 portions, contains soy
+"
+110,350.0,200.0,180.0,600.0,350.0, Vegan Breakfast Tacos, Tofu Scramble with Veggies, Crispy Tofu Bites, Veggie Pho," Vegetarian bibimbap - 350 calories per portion, 4 portions, contains gluten and soy (Korea)
+"
+111,400.0,300.0,100.0,500.0,200.0, Veggie Sausage Breakfast Sandwich, Vegetable Potstickers with Soy Dipping Sauce, Edamame, Veggie Soba Noodle Stir-Fry," Tofu and Broccoli Stir-Fry - 200 calories/portion, 4 portions, contains soy (China)
+"
+112,350.0,200.0,280.0,250.0,250.0, Vegan Breakfast Burrito, Tofu Scramble with Veggies, Vegan Nachos, Vegetarian sushi rolls," Tofu and vegetable kabobs - 250 calories per portion, 4 portions, contains soy
+"
+113,400.0,200.0,280.0,350.0,300.0, Tofu Benedict, Tofu and Vegetable Stir-Fry, Vegan Nachos," Veggie Bibimbap - 350kcals per portion, 2 portions, contains soy (Korea)
+"," Vegetable Sushi Rolls - 300 calories/portion, 4 portions, contains soy (Japan)
+
+"
+114,350.0,200.0,100.0,360.0,350.0, Vegan Breakfast Burrito, Tofu and Vegetable Stir-Fry, Edamame," Veggie Sushi Bowl - 360kcals per portion, 2 portions, contains soy, gluten (Japan)
+"," Vegetarian bibimbap - 350 calories per portion, 4 portions, contains gluten and soy (Korea)
+"
+115,200.0,200.0,280.0,250.0,300.0, Veggie Breakfast Wrap with Tofu Scramble, Tofu Scramble with Veggies, Vegan Nachos, Vegetarian sushi bowl," Vegetable and tofu stir-fry - 300 calories per portion, 4 portions, contains soy
+"
+116,200.0,200.0,280.0,650.0,300.0, Tomato Basil Tofu Scramble, Tofu Scramble with Veggies, Vegan Nachos, Veggie Lo Mein," Vegetable and tofu stir-fry - 300 calories per portion, 4 portions, contains soy
+"
+117,350.0,300.0,280.0,380.0,300.0, Vegan Breakfast Burrito, Vegetable Potstickers with Soy Dipping Sauce, Vegan Nachos," Veggie Bibimbap Bowl - 380kcals per portion, 2 portions, contains soy (Korea)
+"," Vegetable and tofu stir-fry - 300 calories per portion, 4 portions, contains soy
+"
+118,200.0,200.0,280.0,350.0,300.0, Tomato Basil Tofu Scramble, Tofu and Vegetable Stir-Fry, Vegan Nachos," Veggie Bibimbap - 350kcals per portion, 2 portions, contains soy (Korea)
+"," Vegetable and tofu stir-fry - 300 calories per portion, 4 portions, contains soy
+"
+119,200.0,200.0,280.0,360.0,200.0, Veggie Breakfast Wrap with Tofu Scramble, Tofu and Vegetable Stir-Fry, Vegan Nachos," Veggie Sushi Bowl - 360kcals per portion, 2 portions, contains soy, gluten (Japan)
+"," Veggie Stir-Fry with Tofu - 200 calories/portion, 4 portions, contains soy (China)
+"
+120,350.0,200.0,100.0,320.0,150.0, Vegan Protein Pancakes, Tofu and Vegetable Stir-Fry, Edamame," Veggie Stir-Fry - 320kcals per portion, 2 portions, contains soy
+"," Greek Salad with Tofu - 150 calories/portion, 4 portions, contains soy (Greece)
+"
+121,200.0,200.0,180.0,350.0,150.0, Tomato Basil Tofu Scramble, Tofu and Vegetable Stir-Fry, Crispy Tofu Bites, Vegetable and Tofu Skewers," Greek Salad with Tofu - 150 calories/portion, 4 portions, contains soy (Greece)
+"
+122,350.0,200.0,180.0,400.0,350.0, Vegan Breakfast Burrito, Tofu Scramble with Veggies, Crispy Tofu Bites, Vegetarian Spring Rolls," Vegetarian bibimbap - 350 calories per portion, 4 portions, contains gluten and soy (Korea)
+"
+123,350.0,200.0,180.0,250.0,300.0, Vegan Breakfast Burrito, Tofu Scramble with Veggies, Crispy Tofu Bites, Veggie Sushi Rolls," Vegetable Sushi Rolls - 300 calories/portion, 4 portions, contains soy (Japan)
+
+"
+124,200.0,200.0,100.0,450.0,300.0, Tofu Scramble, Tofu and Vegetable Stir-Fry, Edamame, Vegetarian Sushi Bowl," Vegetable and tofu stir-fry - 300 calories per portion, 4 portions, contains soy
+"
+125,150.0,200.0,100.0,380.0,200.0, Scrambled Tofu, Tofu and Vegetable Stir-Fry, Edamame," Veggie Bibimbap Bowl - 380kcals per portion, 2 portions, contains soy (Korea)
+"," Tofu and Broccoli Stir-Fry - 200 calories/portion, 4 portions, contains soy (China)
+"
+126,150.0,200.0,280.0,600.0,350.0, Scrambled Tofu, Tofu Scramble with Veggies, Vegan Nachos, Veggie Pho," Vegetarian bibimbap - 350 calories per portion, 4 portions, contains gluten and soy (Korea)
+"
+127,350.0,200.0,280.0,350.0,200.0, Vegan Protein Pancakes, Tofu Scramble with Veggies, Vegan Nachos, Vegetable Stir-Fry," Tofu and Broccoli Stir-Fry - 200 calories/portion, 4 portions, contains soy (China)
+"
+128,350.0,200.0,280.0,250.0,350.0, Vegan Breakfast Burrito, Tofu and Vegetable Stir-Fry, Vegan Nachos, Veggie Sushi Rolls," Vegetarian bibimbap - 350 calories per portion, 4 portions, contains gluten and soy (Korea)
+"
+129,350.0,200.0,180.0,450.0,300.0, Vegan Breakfast Tacos, Tofu and Vegetable Stir-Fry, Crispy Tofu Bites, Vegetarian Sushi Bowl," Vegetable and tofu stir-fry - 300 calories per portion, 4 portions, contains soy
+"
+130,350.0,300.0,100.0,750.0,200.0, Vegan Breakfast Burrito, Vegetable Potstickers with Soy Dipping Sauce, Edamame, Tofu Pad Thai," Veggie Stir-Fry with Tofu - 200 calories/portion, 4 portions, contains soy (China)
+"
+131,200.0,200.0,280.0,350.0,200.0, Tomato Basil Tofu Scramble, Tofu Scramble with Veggies, Vegan Nachos," Veggie Bibimbap - 350kcals per portion, 2 portions, contains soy (Korea)
+"," Veggie Stir-Fry with Tofu - 200 calories/portion, 4 portions, contains soy (China)
+"
+132,200.0,300.0,280.0,380.0,350.0, Veggie Breakfast Wrap with Tofu Scramble, Vegetable Potstickers with Soy Dipping Sauce, Vegan Nachos," Veggie Bibimbap Bowl - 380kcals per portion, 2 portions, contains soy (Korea)
+"," Vegetarian bibimbap - 350 calories per portion, 4 portions, contains gluten and soy (Korea)
+"
+133,200.0,300.0,180.0,450.0,350.0, Veggie Breakfast Wrap with Tofu Scramble, Vegetable Potstickers with Soy Dipping Sauce, Crispy Tofu Bites, Vegetarian Sushi Bowl," Vegetarian bibimbap - 350 calories per portion, 4 portions, contains gluten and soy (Korea)
+"
+134,400.0,200.0,280.0,280.0,300.0, Veggie Sausage Breakfast Sandwich, Tofu Scramble with Veggies, Vegan Nachos," Tofu Stir-Fry - 280kcals per portion, 2 portions, contains soy (China)
+"," Vegetable and tofu stir-fry - 300 calories per portion, 4 portions, contains soy
+"
+135,400.0,200.0,100.0,400.0,350.0, Vegan Breakfast Hash, Tofu Scramble with Veggies, Edamame, Veggie Fried Rice," Veggie stir-fried rice - 350 calories per portion, 4 portions, contains soy (China)
+"
+136,350.0,300.0,280.0,500.0,200.0, Vegan Protein Pancakes, Vegetable Potstickers with Soy Dipping Sauce, Vegan Nachos, Veggie Soba Noodle Stir-Fry," Cauliflower Fried Rice - 200 calories/portion, 4 portions, contains soy (China)
+"
+137,350.0,200.0,280.0,600.0,200.0, Vegan Breakfast Burrito, Tofu Scramble with Veggies, Vegan Nachos, Veggie Pho," Tofu and Broccoli Stir-Fry - 200 calories/portion, 4 portions, contains soy (China)
+"
+138,400.0,200.0,100.0,500.0,350.0, Tofu Benedict, Tofu Scramble with Veggies, Edamame, Veggie Soba Noodle Stir-Fry," Vegetarian bibimbap - 350 calories per portion, 4 portions, contains gluten and soy (Korea)
+"
+139,350.0,300.0,280.0,400.0,350.0, Vegan Breakfast Burrito, Vegetable Potstickers with Soy Dipping Sauce, Vegan Nachos, Vegetarian Spring Rolls," Vegetarian bibimbap - 350 calories per portion, 4 portions, contains gluten and soy (Korea)
+"
+140,350.0,200.0,280.0,650.0,300.0, Vegan Breakfast Burrito, Tofu Scramble with Veggies, Vegan Nachos, Veggie Lo Mein," Vegetable and tofu stir-fry - 300 calories per portion, 4 portions, contains soy
+"
+141,200.0,200.0,180.0,280.0,300.0, Tomato Basil Tofu Scramble, Tofu and Vegetable Stir-Fry, Crispy Tofu Bites," Tofu Stir-Fry - 280kcals per portion, 2 portions, contains soy (China)
+"," Vegetable and tofu stir-fry - 300 calories per portion, 4 portions, contains soy
+"
+142,150.0,300.0,280.0,500.0,200.0, Scrambled Tofu, Vegetable Potstickers with Soy Dipping Sauce, Vegan Nachos, Veggie Soba Noodle Stir-Fry," Cauliflower Fried Rice - 200 calories/portion, 4 portions, contains soy (China)
+"
+143,400.0,300.0,180.0,450.0,250.0, Veggie Sausage Breakfast Sandwich, Vegetable Potstickers with Soy Dipping Sauce, Crispy Tofu Bites, Vegetarian Sushi Bowl," Tofu and vegetable kabobs - 250 calories per portion, 4 portions, contains soy
+"
+144,350.0,200.0,100.0,320.0,200.0, Vegan Breakfast Tacos, Tofu and Vegetable Stir-Fry, Edamame," Veggie Sushi Rolls - 320kcals per portion, 2 portions, contains soy, gluten (Japan)
+"," Tofu and Broccoli Stir-Fry - 200 calories/portion, 4 portions, contains soy (China)
+"
+145,400.0,200.0,280.0,450.0,200.0, Vegan Breakfast Hash, Tofu and Vegetable Stir-Fry, Vegan Nachos, Vegetarian Sushi Bowl," Veggie Stir-Fry with Tofu - 200 calories/portion, 4 portions, contains soy (China)
+"
+146,400.0,300.0,180.0,350.0,350.0, Veggie Sausage Breakfast Sandwich, Vegetable Potstickers with Soy Dipping Sauce, Crispy Tofu Bites, Vegetable and Tofu Skewers," Vegetarian bibimbap - 350 calories per portion, 4 portions, contains gluten and soy (Korea)
+"
+147,350.0,300.0,180.0,250.0,250.0, Vegan Protein Pancakes, Vegetable Potstickers with Soy Dipping Sauce, Crispy Tofu Bites, Veggie Sushi Rolls," Tofu and vegetable kabobs - 250 calories per portion, 4 portions, contains soy
+"
+148,200.0,200.0,100.0,350.0,300.0, Veggie Breakfast Wrap with Tofu Scramble, Tofu Scramble with Veggies, Edamame, Vegetable Stir-Fry," Chickpea and vegetable stir-fry - 300 calories per portion, 4 portions, contains soy (Middle East)
+"
+149,400.0,200.0,180.0,250.0,200.0, Vegan Breakfast Hash, Tofu Scramble with Veggies, Crispy Tofu Bites, Vegetarian sushi rolls," Cauliflower Fried Rice - 200 calories/portion, 4 portions, contains soy (China)
+"
+150,350.0,300.0,280.0,350.0,300.0, Vegan Breakfast Tacos, Vegetable Potstickers with Soy Dipping Sauce, Vegan Nachos, Vegetable and Tofu Skewers," Vegetable and tofu stir-fry - 300 calories per portion, 4 portions, contains soy
+"
+151,400.0,200.0,100.0,750.0,300.0, Veggie Sausage Breakfast Sandwich, Tofu and Vegetable Stir-Fry, Edamame, Tofu Pad Thai," Chickpea and vegetable stir-fry - 300 calories per portion, 4 portions, contains soy (Middle East)
+"
+152,200.0,200.0,180.0,500.0,150.0, Veggie Breakfast Wrap with Tofu Scramble, Tofu and Vegetable Stir-Fry, Crispy Tofu Bites, Veggie Soba Noodle Stir-Fry," Greek Salad with Tofu - 150 calories/portion, 4 portions, contains soy (Greece)
+"
+153,200.0,300.0,280.0,360.0,300.0, Tomato Basil Tofu Scramble, Vegetable Potstickers with Soy Dipping Sauce, Vegan Nachos," Veggie Sushi Bowl - 360kcals per portion, 2 portions, contains soy, gluten (Japan)
+"," Chickpea and vegetable stir-fry - 300 calories per portion, 4 portions, contains soy (Middle East)
+"
+154,350.0,300.0,280.0,450.0,300.0, Vegan Breakfast Burrito, Vegetable Potstickers with Soy Dipping Sauce, Vegan Nachos, Vegetarian Sushi Bowl," Vegetable and tofu stir-fry - 300 calories per portion, 4 portions, contains soy
+"
+155,400.0,200.0,100.0,350.0,200.0, Veggie Sausage Breakfast Sandwich, Tofu and Vegetable Stir-Fry, Edamame, Vegetable Stir-Fry," Veggie Stir-Fry with Tofu - 200 calories/portion, 4 portions, contains soy (China)
+"
+156,200.0,200.0,180.0,350.0,350.0, Veggie Breakfast Wrap with Tofu Scramble, Tofu and Vegetable Stir-Fry, Crispy Tofu Bites, Vegetable Stir-Fry," Vegetarian bibimbap - 350 calories per portion, 4 portions, contains gluten and soy (Korea)
+"
+157,200.0,200.0,280.0,350.0,300.0, Tomato Basil Tofu Scramble, Tofu Scramble with Veggies, Vegan Nachos, Vegetable Stir-Fry," Chickpea and vegetable stir-fry - 300 calories per portion, 4 portions, contains soy (Middle East)
+"
+158,200.0,200.0,180.0,280.0,350.0, Tofu Scramble, Tofu and Vegetable Stir-Fry, Crispy Tofu Bites," Tofu Stir-Fry - 280kcals per portion, 2 portions, contains soy (China)
+"," Vegetarian bibimbap - 350 calories per portion, 4 portions, contains gluten and soy (Korea)
+"
+159,200.0,200.0,100.0,400.0,300.0, Tomato Basil Tofu Scramble, Tofu Scramble with Veggies, Edamame, Veggie Fried Rice," Vegetable and tofu stir-fry - 300 calories per portion, 4 portions, contains soy
+"
+160,400.0,300.0,280.0,350.0,300.0, Vegan Breakfast Hash, Vegetable Potstickers with Soy Dipping Sauce, Vegan Nachos, Vegetable Stir-Fry," Vegetable and tofu stir-fry - 300 calories per portion, 4 portions, contains soy
+"
+161,400.0,200.0,180.0,380.0,150.0, Vegan Breakfast Hash, Tofu and Vegetable Stir-Fry, Crispy Tofu Bites," Veggie Bibimbap Bowl - 380kcals per portion, 2 portions, contains soy (Korea)
+"," Greek Salad with Tofu - 150 calories/portion, 4 portions, contains soy (Greece)
+"
+162,350.0,200.0,180.0,600.0,350.0, Vegan Breakfast Tacos, Tofu and Vegetable Stir-Fry, Crispy Tofu Bites, Veggie Pho," Vegetarian bibimbap - 350 calories per portion, 4 portions, contains gluten and soy (Korea)
+"
+163,400.0,300.0,100.0,400.0,350.0, Veggie Sausage Breakfast Sandwich, Vegetable Potstickers with Soy Dipping Sauce, Edamame," Veggie Sushi Burrito - 400kcals per portion, 1 portion, contains soy, gluten (Japan)
+"," Vegetarian bibimbap - 350 calories per portion, 4 portions, contains gluten and soy (Korea)
+"
+164,350.0,200.0,280.0,400.0,200.0, Vegan Protein Pancakes, Tofu Scramble with Veggies, Vegan Nachos, Veggie Fried Rice," Cauliflower Fried Rice - 200 calories/portion, 4 portions, contains soy (China)
+"
+165,350.0,200.0,180.0,400.0,350.0, Vegan Breakfast Tacos, Tofu and Vegetable Stir-Fry, Crispy Tofu Bites, Vegetarian Spring Rolls," Vegetarian bibimbap - 350 calories per portion, 4 portions, contains gluten and soy (Korea)
+"
+166,200.0,200.0,280.0,750.0,250.0, Tofu Scramble, Tofu and Vegetable Stir-Fry, Vegan Nachos, Tofu Pad Thai," Tofu and vegetable kabobs - 250 calories per portion, 4 portions, contains soy
+"
+167,200.0,300.0,280.0,320.0,200.0, Veggie Breakfast Wrap with Tofu Scramble, Vegetable Potstickers with Soy Dipping Sauce, Vegan Nachos," Veggie Sushi Rolls - 320kcals per portion, 2 portions, contains soy, gluten (Japan)
+"," Tofu and Broccoli Stir-Fry - 200 calories/portion, 4 portions, contains soy (China)
+"
+168,400.0,200.0,280.0,750.0,300.0, Vegan Breakfast Hash, Tofu Scramble with Veggies, Vegan Nachos, Tofu Pad Thai," Vegetable Sushi Rolls - 300 calories/portion, 4 portions, contains soy (Japan)
+
+"
+169,400.0,200.0,100.0,650.0,300.0, Vegan Breakfast Hash, Tofu and Vegetable Stir-Fry, Edamame, Veggie Lo Mein," Vegetable Sushi Rolls - 300 calories/portion, 4 portions, contains soy (Japan)
+
+"
+170,200.0,200.0,180.0,450.0,250.0, Tofu Scramble, Tofu and Vegetable Stir-Fry, Crispy Tofu Bites, Vegetarian Sushi Bowl," Tofu and vegetable kabobs - 250 calories per portion, 4 portions, contains soy
+"
+171,200.0,200.0,100.0,750.0,200.0, Tomato Basil Tofu Scramble, Tofu Scramble with Veggies, Edamame, Tofu Pad Thai," Cauliflower Fried Rice - 200 calories/portion, 4 portions, contains soy (China)
+"
+172,400.0,300.0,100.0,320.0,350.0, Vegan Breakfast Hash, Vegetable Potstickers with Soy Dipping Sauce, Edamame," Veggie Sushi Rolls - 320kcals per portion, 2 portions, contains soy, gluten (Japan)
+"," Vegetarian bibimbap - 350 calories per portion, 4 portions, contains gluten and soy (Korea)
+"
+173,400.0,200.0,100.0,750.0,200.0, Tofu Benedict, Tofu and Vegetable Stir-Fry, Edamame, Tofu Pad Thai," Cauliflower Fried Rice - 200 calories/portion, 4 portions, contains soy (China)
+"
+174,200.0,200.0,180.0,650.0,350.0, Tomato Basil Tofu Scramble, Tofu Scramble with Veggies, Crispy Tofu Bites, Veggie Lo Mein," Veggie stir-fried rice - 350 calories per portion, 4 portions, contains soy (China)
+"
+175,200.0,200.0,180.0,500.0,200.0, Tofu Scramble, Tofu Scramble with Veggies, Crispy Tofu Bites, Veggie Soba Noodle Stir-Fry," Veggie Stir-Fry with Tofu - 200 calories/portion, 4 portions, contains soy (China)
+"
+176,200.0,300.0,100.0,500.0,200.0, Tofu Scramble, Vegetable Potstickers with Soy Dipping Sauce, Edamame, Veggie Soba Noodle Stir-Fry," Tofu and Broccoli Stir-Fry - 200 calories/portion, 4 portions, contains soy (China)
+"
+177,200.0,200.0,180.0,350.0,350.0, Tofu Scramble, Tofu and Vegetable Stir-Fry, Crispy Tofu Bites, Vegetable Stir-Fry," Vegetarian bibimbap - 350 calories per portion, 4 portions, contains gluten and soy (Korea)
+"
+178,200.0,200.0,180.0,500.0,200.0, Tofu Scramble, Tofu and Vegetable Stir-Fry, Crispy Tofu Bites, Veggie Soba Noodle Stir-Fry," Tofu and Broccoli Stir-Fry - 200 calories/portion, 4 portions, contains soy (China)
+"
+179,350.0,200.0,180.0,400.0,350.0, Vegan Breakfast Tacos, Tofu Scramble with Veggies, Crispy Tofu Bites," Veggie Sushi Burrito - 400kcals per portion, 1 portion, contains soy, gluten (Japan)
+"," Veggie stir-fried rice - 350 calories per portion, 4 portions, contains soy (China)
+"
+180,350.0,300.0,100.0,350.0,300.0, Vegan Protein Pancakes, Vegetable Potstickers with Soy Dipping Sauce, Edamame," Veggie Bibimbap - 350kcals per portion, 2 portions, contains soy (Korea)
+"," Vegetable Sushi Rolls - 300 calories/portion, 4 portions, contains soy (Japan)
+
+"
+181,400.0,300.0,280.0,280.0,300.0, Tofu Benedict, Vegetable Potstickers with Soy Dipping Sauce, Vegan Nachos," Tofu Stir-Fry - 280kcals per portion, 2 portions, contains soy (China)
+"," Vegetable and tofu stir-fry - 300 calories per portion, 4 portions, contains soy
+"
+182,200.0,200.0,100.0,280.0,300.0, Tofu Scramble, Tofu Scramble with Veggies, Edamame," Tofu Stir-Fry - 280kcals per portion, 2 portions, contains soy (China)
+"," Vegetable and tofu stir-fry - 300 calories per portion, 4 portions, contains soy
+"
+183,400.0,300.0,100.0,400.0,300.0, Veggie Sausage Breakfast Sandwich, Vegetable Potstickers with Soy Dipping Sauce, Edamame, Vegetarian Spring Rolls," Vegetable and tofu stir-fry - 300 calories per portion, 4 portions, contains soy
+"
+184,200.0,300.0,280.0,250.0,200.0, Veggie Breakfast Wrap with Tofu Scramble, Vegetable Potstickers with Soy Dipping Sauce, Vegan Nachos, Veggie Sushi Rolls," Tofu and Broccoli Stir-Fry - 200 calories/portion, 4 portions, contains soy (China)
+"
+185,200.0,200.0,100.0,400.0,250.0, Veggie Breakfast Wrap with Tofu Scramble, Tofu and Vegetable Stir-Fry, Edamame," Veggie Sushi Burrito - 400kcals per portion, 1 portion, contains soy, gluten (Japan)
+"," Tofu and vegetable kabobs - 250 calories per portion, 4 portions, contains soy
+"
+186,200.0,200.0,100.0,450.0,250.0, Tomato Basil Tofu Scramble, Tofu and Vegetable Stir-Fry, Edamame, Vegetarian Sushi Bowl," Tofu and vegetable kabobs - 250 calories per portion, 4 portions, contains soy
+"
+187,400.0,200.0,180.0,750.0,300.0, Veggie Sausage Breakfast Sandwich, Tofu Scramble with Veggies, Crispy Tofu Bites, Tofu Pad Thai," Vegetable and tofu stir-fry - 300 calories per portion, 4 portions, contains soy
+"
+188,400.0,300.0,180.0,350.0,350.0, Tofu Benedict, Vegetable Potstickers with Soy Dipping Sauce, Crispy Tofu Bites, Vegetable and Tofu Skewers," Vegetarian bibimbap - 350 calories per portion, 4 portions, contains gluten and soy (Korea)
+"
+189,400.0,200.0,100.0,350.0,300.0, Vegan Breakfast Hash, Tofu Scramble with Veggies, Edamame," Veggie Bibimbap - 350kcals per portion, 2 portions, contains soy (Korea)
+"," Chickpea and vegetable stir-fry - 300 calories per portion, 4 portions, contains soy (Middle East)
+"
+190,350.0,200.0,280.0,250.0,300.0, Vegan Breakfast Burrito, Tofu and Vegetable Stir-Fry, Vegan Nachos, Vegetarian sushi rolls," Chickpea and vegetable stir-fry - 300 calories per portion, 4 portions, contains soy (Middle East)
+"
+191,350.0,200.0,280.0,250.0,200.0, Vegan Protein Pancakes, Tofu Scramble with Veggies, Vegan Nachos, Vegetarian sushi rolls," Veggie Stir-Fry with Tofu - 200 calories/portion, 4 portions, contains soy (China)
+"
+192,200.0,200.0,180.0,350.0,350.0, Tomato Basil Tofu Scramble, Tofu Scramble with Veggies, Crispy Tofu Bites," Veggie Bibimbap - 350kcals per portion, 2 portions, contains soy (Korea)
+"," Vegetarian bibimbap - 350 calories per portion, 4 portions, contains gluten and soy (Korea)
+"
+193,400.0,200.0,100.0,650.0,300.0, Veggie Sausage Breakfast Sandwich, Tofu Scramble with Veggies, Edamame, Veggie Lo Mein," Vegetable Sushi Rolls - 300 calories/portion, 4 portions, contains soy (Japan)
+
+"
+194,350.0,200.0,180.0,320.0,300.0, Vegan Breakfast Burrito, Tofu Scramble with Veggies, Crispy Tofu Bites," Veggie Stir-Fry - 320kcals per portion, 2 portions, contains soy
+"," Chickpea and vegetable stir-fry - 300 calories per portion, 4 portions, contains soy (Middle East)
+"
+195,200.0,300.0,100.0,500.0,200.0, Tomato Basil Tofu Scramble, Vegetable Potstickers with Soy Dipping Sauce, Edamame, Veggie Soba Noodle Stir-Fry," Cauliflower Fried Rice - 200 calories/portion, 4 portions, contains soy (China)
+"
+196,400.0,200.0,180.0,450.0,350.0, Veggie Sausage Breakfast Sandwich, Tofu Scramble with Veggies, Crispy Tofu Bites, Moroccan Couscous," Vegetarian bibimbap - 350 calories per portion, 4 portions, contains gluten and soy (Korea)
+"
+197,400.0,300.0,100.0,750.0,300.0, Veggie Sausage Breakfast Sandwich, Vegetable Potstickers with Soy Dipping Sauce, Edamame, Tofu Pad Thai," Chickpea and vegetable stir-fry - 300 calories per portion, 4 portions, contains soy (Middle East)
+"
+198,350.0,200.0,100.0,400.0,350.0, Vegan Breakfast Burrito, Tofu Scramble with Veggies, Edamame," Veggie Sushi Burrito - 400kcals per portion, 1 portion, contains soy, gluten (Japan)
+"," Vegetarian bibimbap - 350 calories per portion, 4 portions, contains gluten and soy (Korea)
+"
+199,350.0,200.0,280.0,320.0,300.0, Vegan Protein Pancakes, Tofu Scramble with Veggies, Vegan Nachos," Veggie Stir-Fry - 320kcals per portion, 2 portions, contains soy
+"," Chickpea and vegetable stir-fry - 300 calories per portion, 4 portions, contains soy (Middle East)
+"
+200,350.0,200.0,280.0,320.0,200.0, Vegan Breakfast Burrito, Tofu Scramble with Veggies, Vegan Nachos," Veggie Sushi Rolls - 320kcals per portion, 2 portions, contains soy, gluten (Japan)
+"," Tofu and Broccoli Stir-Fry - 200 calories/portion, 4 portions, contains soy (China)
+"
+201,350.0,300.0,280.0,350.0,350.0, Vegan Breakfast Burrito, Vegetable Potstickers with Soy Dipping Sauce, Vegan Nachos," Veggie Bibimbap - 350kcals per portion, 2 portions, contains soy (Korea)
+"," Vegetarian bibimbap - 350 calories per portion, 4 portions, contains gluten and soy (Korea)
+"
+202,400.0,200.0,180.0,250.0,300.0, Vegan Breakfast Hash, Tofu and Vegetable Stir-Fry, Crispy Tofu Bites, Veggie Sushi Rolls," Chickpea and vegetable stir-fry - 300 calories per portion, 4 portions, contains soy (Middle East)
+"
+203,200.0,300.0,100.0,250.0,200.0, Tomato Basil Tofu Scramble, Vegetable Potstickers with Soy Dipping Sauce, Edamame, Vegetarian sushi bowl," Veggie Stir-Fry with Tofu - 200 calories/portion, 4 portions, contains soy (China)
+"
+204,400.0,300.0,180.0,250.0,300.0, Tofu Benedict, Vegetable Potstickers with Soy Dipping Sauce, Crispy Tofu Bites, Vegetarian sushi rolls," Chickpea and vegetable stir-fry - 300 calories per portion, 4 portions, contains soy (Middle East)
+"
+205,200.0,200.0,280.0,250.0,150.0, Tofu Scramble, Tofu Scramble with Veggies, Vegan Nachos, Vegetarian sushi rolls," Greek Salad with Tofu - 150 calories/portion, 4 portions, contains soy (Greece)
+"
+206,350.0,200.0,180.0,500.0,350.0, Vegan Breakfast Burrito, Tofu and Vegetable Stir-Fry, Crispy Tofu Bites, Veggie Soba Noodle Stir-Fry," Vegetarian bibimbap - 350 calories per portion, 4 portions, contains gluten and soy (Korea)
+"
+207,400.0,200.0,180.0,250.0,300.0, Vegan Breakfast Hash, Tofu and Vegetable Stir-Fry, Crispy Tofu Bites, Vegetarian sushi bowl," Chickpea and vegetable stir-fry - 300 calories per portion, 4 portions, contains soy (Middle East)
+"
+208,350.0,200.0,280.0,360.0,300.0, Vegan Breakfast Tacos, Tofu Scramble with Veggies, Vegan Nachos," Veggie Sushi Bowl - 360kcals per portion, 2 portions, contains soy, gluten (Japan)
+"," Chickpea and vegetable stir-fry - 300 calories per portion, 4 portions, contains soy (Middle East)
+"
+209,400.0,300.0,180.0,350.0,300.0, Tofu Benedict, Vegetable Potstickers with Soy Dipping Sauce, Crispy Tofu Bites, Vegetable and Tofu Skewers," Vegetable Sushi Rolls - 300 calories/portion, 4 portions, contains soy (Japan)
+
+"
+210,350.0,200.0,180.0,450.0,300.0, Vegan Protein Pancakes, Tofu and Vegetable Stir-Fry, Crispy Tofu Bites, Vegetarian Sushi Bowl," Vegetable and tofu stir-fry - 300 calories per portion, 4 portions, contains soy
+"
+211,350.0,200.0,100.0,320.0,300.0, Vegan Breakfast Burrito, Tofu Scramble with Veggies, Edamame," Veggie Sushi Rolls - 320kcals per portion, 2 portions, contains soy, gluten (Japan)
+"," Vegetable and tofu stir-fry - 300 calories per portion, 4 portions, contains soy
+"
+212,400.0,300.0,100.0,650.0,350.0, Vegan Breakfast Hash, Vegetable Potstickers with Soy Dipping Sauce, Edamame, Veggie Lo Mein," Vegetarian bibimbap - 350 calories per portion, 4 portions, contains gluten and soy (Korea)
+"
+213,150.0,200.0,180.0,320.0,200.0, Scrambled Tofu, Tofu and Vegetable Stir-Fry, Crispy Tofu Bites," Veggie Sushi Rolls - 320kcals per portion, 2 portions, contains soy, gluten (Japan)
+"," Tofu and Broccoli Stir-Fry - 200 calories/portion, 4 portions, contains soy (China)
+"
+214,400.0,200.0,180.0,250.0,250.0, Vegan Breakfast Hash, Tofu Scramble with Veggies, Crispy Tofu Bites, Vegetarian sushi rolls," Tofu and vegetable kabobs - 250 calories per portion, 4 portions, contains soy
+"
+215,350.0,200.0,100.0,400.0,350.0, Vegan Protein Pancakes, Tofu and Vegetable Stir-Fry, Edamame, Vegetarian Spring Rolls," Vegetarian bibimbap - 350 calories per portion, 4 portions, contains gluten and soy (Korea)
+"
+216,400.0,200.0,280.0,280.0,200.0, Tofu Benedict, Tofu and Vegetable Stir-Fry, Vegan Nachos," Tofu Stir-Fry - 280kcals per portion, 2 portions, contains soy (China)
+"," Tofu and Broccoli Stir-Fry - 200 calories/portion, 4 portions, contains soy (China)
+"
+217,200.0,200.0,180.0,350.0,350.0, Veggie Breakfast Wrap with Tofu Scramble, Tofu Scramble with Veggies, Crispy Tofu Bites, Vegetable and Tofu Skewers," Vegetarian bibimbap - 350 calories per portion, 4 portions, contains gluten and soy (Korea)
+"
+218,200.0,200.0,180.0,250.0,300.0, Tomato Basil Tofu Scramble, Tofu Scramble with Veggies, Crispy Tofu Bites, Veggie Sushi Rolls," Chickpea and vegetable stir-fry - 300 calories per portion, 4 portions, contains soy (Middle East)
+"
+219,150.0,300.0,100.0,750.0,200.0, Scrambled Tofu, Vegetable Potstickers with Soy Dipping Sauce, Edamame, Tofu Pad Thai," Tofu and Broccoli Stir-Fry - 200 calories/portion, 4 portions, contains soy (China)
+"
+220,350.0,200.0,280.0,320.0,300.0, Vegan Protein Pancakes, Tofu and Vegetable Stir-Fry, Vegan Nachos," Veggie Sushi Rolls - 320kcals per portion, 2 portions, contains soy, gluten (Japan)
+"," Vegetable and tofu stir-fry - 300 calories per portion, 4 portions, contains soy
+"
+221,150.0,200.0,280.0,350.0,300.0, Scrambled Tofu, Tofu and Vegetable Stir-Fry, Vegan Nachos, Vegetable and Tofu Skewers," Vegetable and tofu stir-fry - 300 calories per portion, 4 portions, contains soy
+"
+222,400.0,200.0,100.0,320.0,300.0, Vegan Breakfast Hash, Tofu and Vegetable Stir-Fry, Edamame," Veggie Stir-Fry - 320kcals per portion, 2 portions, contains soy
+"," Vegetable and tofu stir-fry - 300 calories per portion, 4 portions, contains soy
+"
+223,400.0,300.0,280.0,500.0,350.0, Tofu Benedict, Vegetable Potstickers with Soy Dipping Sauce, Vegan Nachos, Veggie Soba Noodle Stir-Fry," Vegetarian bibimbap - 350 calories per portion, 4 portions, contains gluten and soy (Korea)
+"
+224,200.0,200.0,280.0,350.0,200.0, Tofu Scramble, Tofu and Vegetable Stir-Fry, Vegan Nachos, Vegetable and Tofu Skewers," Veggie Stir-Fry with Tofu - 200 calories/portion, 4 portions, contains soy (China)
+"
+225,200.0,200.0,280.0,400.0,250.0, Veggie Breakfast Wrap with Tofu Scramble, Tofu and Vegetable Stir-Fry, Vegan Nachos," Veggie Sushi Burrito - 400kcals per portion, 1 portion, contains soy, gluten (Japan)
+"," Tofu and vegetable kabobs - 250 calories per portion, 4 portions, contains soy
+"
+226,150.0,200.0,280.0,280.0,300.0, Scrambled Tofu, Tofu Scramble with Veggies, Vegan Nachos," Tofu Stir-Fry - 280kcals per portion, 2 portions, contains soy (China)
+"," Vegetable and tofu stir-fry - 300 calories per portion, 4 portions, contains soy
+"
+227,400.0,300.0,100.0,500.0,200.0, Tofu Benedict, Vegetable Potstickers with Soy Dipping Sauce, Edamame, Veggie Soba Noodle Stir-Fry," Veggie Stir-Fry with Tofu - 200 calories/portion, 4 portions, contains soy (China)
+"
+228,400.0,300.0,180.0,400.0,300.0, Tofu Benedict, Vegetable Potstickers with Soy Dipping Sauce, Crispy Tofu Bites," Veggie Sushi Burrito - 400kcals per portion, 1 portion, contains soy, gluten (Japan)
+"," Vegetable and tofu stir-fry - 300 calories per portion, 4 portions, contains soy
+"
+229,400.0,200.0,100.0,400.0,350.0, Tofu Benedict, Tofu and Vegetable Stir-Fry, Edamame, Veggie Fried Rice," Vegetarian bibimbap - 350 calories per portion, 4 portions, contains gluten and soy (Korea)
+"
+230,350.0,300.0,180.0,380.0,350.0, Vegan Breakfast Tacos, Vegetable Potstickers with Soy Dipping Sauce, Crispy Tofu Bites," Veggie Bibimbap Bowl - 380kcals per portion, 2 portions, contains soy (Korea)
+"," Veggie stir-fried rice - 350 calories per portion, 4 portions, contains soy (China)
+"
+231,200.0,200.0,100.0,400.0,350.0, Tofu Scramble, Tofu and Vegetable Stir-Fry, Edamame, Veggie Fried Rice," Vegetarian bibimbap - 350 calories per portion, 4 portions, contains gluten and soy (Korea)
+"
+232,350.0,200.0,100.0,650.0,200.0, Vegan Breakfast Tacos, Tofu and Vegetable Stir-Fry, Edamame, Veggie Lo Mein," Cauliflower Fried Rice - 200 calories/portion, 4 portions, contains soy (China)
+"
+233,400.0,200.0,100.0,750.0,300.0, Vegan Breakfast Hash, Tofu Scramble with Veggies, Edamame, Tofu Pad Thai," Chickpea and vegetable stir-fry - 300 calories per portion, 4 portions, contains soy (Middle East)
+"
+234,350.0,200.0,180.0,400.0,350.0, Vegan Breakfast Tacos, Tofu and Vegetable Stir-Fry, Crispy Tofu Bites, Veggie Fried Rice," Vegetarian bibimbap - 350 calories per portion, 4 portions, contains gluten and soy (Korea)
+"
+235,350.0,200.0,100.0,350.0,300.0, Vegan Breakfast Burrito, Tofu Scramble with Veggies, Edamame," Veggie Bibimbap - 350kcals per portion, 2 portions, contains soy (Korea)
+"," Vegetable Sushi Rolls - 300 calories/portion, 4 portions, contains soy (Japan)
+
+"
+236,200.0,300.0,100.0,380.0,300.0, Veggie Breakfast Wrap with Tofu Scramble, Vegetable Potstickers with Soy Dipping Sauce, Edamame," Veggie Bibimbap Bowl - 380kcals per portion, 2 portions, contains soy (Korea)
+"," Chickpea and vegetable stir-fry - 300 calories per portion, 4 portions, contains soy (Middle East)
+"
+237,200.0,300.0,180.0,250.0,350.0, Tomato Basil Tofu Scramble, Vegetable Potstickers with Soy Dipping Sauce, Crispy Tofu Bites, Vegetarian sushi bowl," Vegetarian bibimbap - 350 calories per portion, 4 portions, contains gluten and soy (Korea)
+"
+238,350.0,300.0,100.0,360.0,200.0, Vegan Breakfast Tacos, Vegetable Potstickers with Soy Dipping Sauce, Edamame," Veggie Sushi Bowl - 360kcals per portion, 2 portions, contains soy, gluten (Japan)
+"," Veggie Stir-Fry with Tofu - 200 calories/portion, 4 portions, contains soy (China)
+"
+239,400.0,200.0,100.0,650.0,200.0, Veggie Sausage Breakfast Sandwich, Tofu and Vegetable Stir-Fry, Edamame, Veggie Lo Mein," Cauliflower Fried Rice - 200 calories/portion, 4 portions, contains soy (China)
+"
+240,350.0,200.0,100.0,320.0,350.0, Vegan Protein Pancakes, Tofu and Vegetable Stir-Fry, Edamame," Veggie Sushi Rolls - 320kcals per portion, 2 portions, contains soy, gluten (Japan)
+"," Vegetarian bibimbap - 350 calories per portion, 4 portions, contains gluten and soy (Korea)
+"
+241,150.0,200.0,100.0,400.0,200.0, Scrambled Tofu, Tofu Scramble with Veggies, Edamame," Veggie Sushi Burrito - 400kcals per portion, 1 portion, contains soy, gluten (Japan)
+"," Cauliflower Fried Rice - 200 calories/portion, 4 portions, contains soy (China)
+"
+242,350.0,200.0,180.0,400.0,350.0, Vegan Breakfast Tacos, Tofu Scramble with Veggies, Crispy Tofu Bites," Veggie Sushi Burrito - 400kcals per portion, 1 portion, contains soy, gluten (Japan)
+"," Vegetarian bibimbap - 350 calories per portion, 4 portions, contains gluten and soy (Korea)
+"
+243,350.0,200.0,100.0,250.0,350.0, Vegan Breakfast Burrito, Tofu and Vegetable Stir-Fry, Edamame, Vegetarian sushi bowl," Vegetarian bibimbap - 350 calories per portion, 4 portions, contains gluten and soy (Korea)
+"
+244,350.0,200.0,280.0,250.0,300.0, Vegan Breakfast Burrito, Tofu Scramble with Veggies, Vegan Nachos, Veggie Sushi Rolls," Vegetable and tofu stir-fry - 300 calories per portion, 4 portions, contains soy
+"
+245,400.0,300.0,280.0,250.0,350.0, Veggie Sausage Breakfast Sandwich, Vegetable Potstickers with Soy Dipping Sauce, Vegan Nachos, Vegetarian sushi bowl," Vegetarian bibimbap - 350 calories per portion, 4 portions, contains gluten and soy (Korea)
+"
+246,400.0,200.0,100.0,380.0,350.0, Vegan Breakfast Hash, Tofu Scramble with Veggies, Edamame," Veggie Bibimbap Bowl - 380kcals per portion, 2 portions, contains soy (Korea)
+"," Vegetarian bibimbap - 350 calories per portion, 4 portions, contains gluten and soy (Korea)
+"
+247,200.0,200.0,280.0,650.0,350.0, Veggie Breakfast Wrap with Tofu Scramble, Tofu and Vegetable Stir-Fry, Vegan Nachos, Veggie Lo Mein," Vegetarian bibimbap - 350 calories per portion, 4 portions, contains gluten and soy (Korea)
+"
+248,350.0,200.0,180.0,400.0,300.0, Vegan Protein Pancakes, Tofu and Vegetable Stir-Fry, Crispy Tofu Bites," Veggie Sushi Burrito - 400kcals per portion, 1 portion, contains soy, gluten (Japan)
+"," Vegetable Sushi Rolls - 300 calories/portion, 4 portions, contains soy (Japan)
+
+"
+249,350.0,200.0,180.0,250.0,200.0, Vegan Protein Pancakes, Tofu and Vegetable Stir-Fry, Crispy Tofu Bites, Vegetarian sushi rolls," Veggie Stir-Fry with Tofu - 200 calories/portion, 4 portions, contains soy (China)
+"
+250,200.0,300.0,180.0,250.0,300.0, Tofu Scramble, Vegetable Potstickers with Soy Dipping Sauce, Crispy Tofu Bites, Veggie Sushi Rolls," Vegetable and tofu stir-fry - 300 calories per portion, 4 portions, contains soy
+"
+251,350.0,300.0,100.0,320.0,300.0, Vegan Breakfast Burrito, Vegetable Potstickers with Soy Dipping Sauce, Edamame," Veggie Sushi Rolls - 320kcals per portion, 2 portions, contains soy, gluten (Japan)
+"," Chickpea and vegetable stir-fry - 300 calories per portion, 4 portions, contains soy (Middle East)
+"
+252,200.0,200.0,180.0,450.0,350.0, Veggie Breakfast Wrap with Tofu Scramble, Tofu Scramble with Veggies, Crispy Tofu Bites, Moroccan Couscous," Vegetarian bibimbap - 350 calories per portion, 4 portions, contains gluten and soy (Korea)
+"
+253,350.0,200.0,280.0,450.0,300.0, Vegan Breakfast Tacos, Tofu Scramble with Veggies, Vegan Nachos, Vegetarian Sushi Bowl," Vegetable and tofu stir-fry - 300 calories per portion, 4 portions, contains soy
+"
+254,400.0,300.0,180.0,400.0,200.0, Vegan Breakfast Hash, Vegetable Potstickers with Soy Dipping Sauce, Crispy Tofu Bites," Veggie Sushi Burrito - 400kcals per portion, 1 portion, contains soy, gluten (Japan)
+"," Veggie Stir-Fry with Tofu - 200 calories/portion, 4 portions, contains soy (China)
+"
+255,150.0,200.0,180.0,350.0,250.0, Scrambled Tofu, Tofu Scramble with Veggies, Crispy Tofu Bites," Veggie Bibimbap - 350kcals per portion, 2 portions, contains soy (Korea)
+"," Tofu and vegetable kabobs - 250 calories per portion, 4 portions, contains soy
+"
+256,400.0,300.0,180.0,320.0,200.0, Tofu Benedict, Vegetable Potstickers with Soy Dipping Sauce, Crispy Tofu Bites," Veggie Sushi Rolls - 320kcals per portion, 2 portions, contains soy, gluten (Japan)
+"," Tofu and Broccoli Stir-Fry - 200 calories/portion, 4 portions, contains soy (China)
+"
+257,350.0,200.0,180.0,320.0,300.0, Vegan Breakfast Tacos, Tofu and Vegetable Stir-Fry, Crispy Tofu Bites," Veggie Stir-Fry - 320kcals per portion, 2 portions, contains soy
+"," Chickpea and vegetable stir-fry - 300 calories per portion, 4 portions, contains soy (Middle East)
+"
+258,200.0,300.0,100.0,350.0,350.0, Tomato Basil Tofu Scramble, Vegetable Potstickers with Soy Dipping Sauce, Edamame, Vegetable and Tofu Skewers," Vegetarian bibimbap - 350 calories per portion, 4 portions, contains gluten and soy (Korea)
+"
+259,200.0,200.0,280.0,400.0,350.0, Tofu Scramble, Tofu Scramble with Veggies, Vegan Nachos, Vegetarian Spring Rolls," Vegetarian bibimbap - 350 calories per portion, 4 portions, contains gluten and soy (Korea)
+"
+260,400.0,200.0,100.0,250.0,350.0, Tofu Benedict, Tofu and Vegetable Stir-Fry, Edamame, Vegetarian sushi rolls," Vegetarian bibimbap - 350 calories per portion, 4 portions, contains gluten and soy (Korea)
+"
+261,200.0,300.0,100.0,250.0,200.0, Tofu Scramble, Vegetable Potstickers with Soy Dipping Sauce, Edamame, Veggie Sushi Rolls," Tofu and Broccoli Stir-Fry - 200 calories/portion, 4 portions, contains soy (China)
+"
+262,350.0,300.0,100.0,400.0,300.0, Vegan Breakfast Tacos, Vegetable Potstickers with Soy Dipping Sauce, Edamame, Veggie Fried Rice," Vegetable Sushi Rolls - 300 calories/portion, 4 portions, contains soy (Japan)
+
+"
+263,400.0,200.0,100.0,350.0,350.0, Veggie Sausage Breakfast Sandwich, Tofu Scramble with Veggies, Edamame, Vegetable Stir-Fry," Vegetarian bibimbap - 350 calories per portion, 4 portions, contains gluten and soy (Korea)
+"
+264,150.0,200.0,100.0,400.0,350.0, Scrambled Tofu, Tofu Scramble with Veggies, Edamame, Vegetarian Spring Rolls," Vegetarian bibimbap - 350 calories per portion, 4 portions, contains gluten and soy (Korea)
+"
+265,350.0,200.0,100.0,360.0,300.0, Vegan Protein Pancakes, Tofu and Vegetable Stir-Fry, Edamame," Veggie Sushi Bowl - 360kcals per portion, 2 portions, contains soy, gluten (Japan)
+"," Vegetable Sushi Rolls - 300 calories/portion, 4 portions, contains soy (Japan)
+
+"
+266,400.0,200.0,280.0,250.0,350.0, Veggie Sausage Breakfast Sandwich, Tofu and Vegetable Stir-Fry, Vegan Nachos, Vegetarian sushi bowl," Vegetarian bibimbap - 350 calories per portion, 4 portions, contains gluten and soy (Korea)
+"
+267,400.0,300.0,280.0,650.0,200.0, Vegan Breakfast Hash, Vegetable Potstickers with Soy Dipping Sauce, Vegan Nachos, Veggie Lo Mein," Tofu and Broccoli Stir-Fry - 200 calories/portion, 4 portions, contains soy (China)
+"
+268,200.0,200.0,180.0,750.0,200.0, Tofu Scramble, Tofu Scramble with Veggies, Crispy Tofu Bites, Tofu Pad Thai," Cauliflower Fried Rice - 200 calories/portion, 4 portions, contains soy (China)
+"
+269,350.0,300.0,280.0,250.0,350.0, Vegan Protein Pancakes, Vegetable Potstickers with Soy Dipping Sauce, Vegan Nachos, Veggie Sushi Rolls," Vegetarian bibimbap - 350 calories per portion, 4 portions, contains gluten and soy (Korea)
+"
+270,350.0,300.0,180.0,280.0,200.0, Vegan Protein Pancakes, Vegetable Potstickers with Soy Dipping Sauce, Crispy Tofu Bites," Tofu Stir-Fry - 280kcals per portion, 2 portions, contains soy (China)
+"," Veggie Stir-Fry with Tofu - 200 calories/portion, 4 portions, contains soy (China)
+"
+271,400.0,200.0,100.0,320.0,300.0, Veggie Sausage Breakfast Sandwich, Tofu and Vegetable Stir-Fry, Edamame," Veggie Stir-Fry - 320kcals per portion, 2 portions, contains soy
+"," Vegetable and tofu stir-fry - 300 calories per portion, 4 portions, contains soy
+"
+272,200.0,200.0,280.0,250.0,200.0, Veggie Breakfast Wrap with Tofu Scramble, Tofu and Vegetable Stir-Fry, Vegan Nachos, Veggie Sushi Rolls," Tofu and Broccoli Stir-Fry - 200 calories/portion, 4 portions, contains soy (China)
+"
+273,200.0,200.0,280.0,250.0,350.0, Tofu Scramble, Tofu and Vegetable Stir-Fry, Vegan Nachos, Vegetarian sushi rolls," Vegetarian bibimbap - 350 calories per portion, 4 portions, contains gluten and soy (Korea)
+"
+274,400.0,300.0,180.0,250.0,150.0, Tofu Benedict, Vegetable Potstickers with Soy Dipping Sauce, Crispy Tofu Bites, Veggie Sushi Rolls," Greek Salad with Tofu - 150 calories/portion, 4 portions, contains soy (Greece)
+"
+275,400.0,200.0,280.0,350.0,200.0, Tofu Benedict, Tofu and Vegetable Stir-Fry, Vegan Nachos," Veggie Bibimbap - 350kcals per portion, 2 portions, contains soy (Korea)
+"," Tofu and Broccoli Stir-Fry - 200 calories/portion, 4 portions, contains soy (China)
+"
+276,350.0,200.0,180.0,250.0,250.0, Vegan Protein Pancakes, Tofu Scramble with Veggies, Crispy Tofu Bites, Veggie Sushi Rolls," Tofu and vegetable kabobs - 250 calories per portion, 4 portions, contains soy
+"
+277,400.0,200.0,180.0,250.0,200.0, Tofu Benedict, Tofu Scramble with Veggies, Crispy Tofu Bites, Veggie Sushi Rolls," Cauliflower Fried Rice - 200 calories/portion, 4 portions, contains soy (China)
+"
+278,200.0,200.0,280.0,400.0,150.0, Tomato Basil Tofu Scramble, Tofu and Vegetable Stir-Fry, Vegan Nachos, Vegetarian Spring Rolls," Greek Salad with Tofu - 150 calories/portion, 4 portions, contains soy (Greece)
+"
+279,350.0,200.0,180.0,380.0,350.0, Vegan Breakfast Tacos, Tofu Scramble with Veggies, Crispy Tofu Bites," Veggie Bibimbap Bowl - 380kcals per portion, 2 portions, contains soy (Korea)
+"," Vegetarian bibimbap - 350 calories per portion, 4 portions, contains gluten and soy (Korea)
+"
+280,200.0,300.0,180.0,280.0,300.0, Veggie Breakfast Wrap with Tofu Scramble, Vegetable Potstickers with Soy Dipping Sauce, Crispy Tofu Bites," Tofu Stir-Fry - 280kcals per portion, 2 portions, contains soy (China)
+"," Vegetable Sushi Rolls - 300 calories/portion, 4 portions, contains soy (Japan)
+
+"
+281,350.0,200.0,100.0,250.0,350.0, Vegan Protein Pancakes, Tofu Scramble with Veggies, Edamame, Veggie Sushi Rolls," Vegetarian bibimbap - 350 calories per portion, 4 portions, contains gluten and soy (Korea)
+"
+282,350.0,200.0,180.0,250.0,250.0, Vegan Breakfast Tacos, Tofu and Vegetable Stir-Fry, Crispy Tofu Bites, Vegetarian sushi bowl," Tofu and vegetable kabobs - 250 calories per portion, 4 portions, contains soy
+"
+283,200.0,200.0,100.0,750.0,300.0, Tomato Basil Tofu Scramble, Tofu Scramble with Veggies, Edamame, Tofu Pad Thai," Chickpea and vegetable stir-fry - 300 calories per portion, 4 portions, contains soy (Middle East)
+"
+284,200.0,200.0,180.0,350.0,350.0, Veggie Breakfast Wrap with Tofu Scramble, Tofu and Vegetable Stir-Fry, Crispy Tofu Bites, Vegetable Stir-Fry," Veggie stir-fried rice - 350 calories per portion, 4 portions, contains soy (China)
+"
+285,200.0,300.0,180.0,280.0,200.0, Tofu Scramble, Vegetable Potstickers with Soy Dipping Sauce, Crispy Tofu Bites," Tofu Stir-Fry - 280kcals per portion, 2 portions, contains soy (China)
+"," Veggie Stir-Fry with Tofu - 200 calories/portion, 4 portions, contains soy (China)
+"
+286,400.0,200.0,180.0,600.0,350.0, Veggie Sausage Breakfast Sandwich, Tofu and Vegetable Stir-Fry, Crispy Tofu Bites, Veggie Pho," Vegetarian bibimbap - 350 calories per portion, 4 portions, contains gluten and soy (Korea)
+"
+287,350.0,200.0,100.0,360.0,300.0, Vegan Protein Pancakes, Tofu Scramble with Veggies, Edamame," Veggie Sushi Bowl - 360kcals per portion, 2 portions, contains soy, gluten (Japan)
+"," Vegetable and tofu stir-fry - 300 calories per portion, 4 portions, contains soy
+"
+288,150.0,200.0,180.0,350.0,300.0, Scrambled Tofu, Tofu and Vegetable Stir-Fry, Crispy Tofu Bites," Veggie Bibimbap - 350kcals per portion, 2 portions, contains soy (Korea)
+"," Vegetable and tofu stir-fry - 300 calories per portion, 4 portions, contains soy
+"
+289,200.0,300.0,280.0,320.0,250.0, Veggie Breakfast Wrap with Tofu Scramble, Vegetable Potstickers with Soy Dipping Sauce, Vegan Nachos," Veggie Sushi Rolls - 320kcals per portion, 2 portions, contains soy, gluten (Japan)
+"," Tofu and vegetable kabobs - 250 calories per portion, 4 portions, contains soy
+"
+290,200.0,300.0,100.0,320.0,250.0, Veggie Breakfast Wrap with Tofu Scramble, Vegetable Potstickers with Soy Dipping Sauce, Edamame," Veggie Sushi Rolls - 320kcals per portion, 2 portions, contains soy, gluten (Japan)
+"," Tofu and vegetable kabobs - 250 calories per portion, 4 portions, contains soy
+"
+291,200.0,200.0,100.0,250.0,250.0, Veggie Breakfast Wrap with Tofu Scramble, Tofu Scramble with Veggies, Edamame, Vegetarian sushi bowl," Tofu and vegetable kabobs - 250 calories per portion, 4 portions, contains soy
+"
+292,350.0,200.0,100.0,350.0,350.0, Vegan Breakfast Burrito, Tofu Scramble with Veggies, Edamame, Vegetable and Tofu Skewers," Vegetarian bibimbap - 350 calories per portion, 4 portions, contains gluten and soy (Korea)
+"
+293,400.0,200.0,280.0,380.0,300.0, Veggie Sausage Breakfast Sandwich, Tofu and Vegetable Stir-Fry, Vegan Nachos," Veggie Bibimbap Bowl - 380kcals per portion, 2 portions, contains soy (Korea)
+"," Vegetable Sushi Rolls - 300 calories/portion, 4 portions, contains soy (Japan)
+
+"
+294,350.0,200.0,280.0,400.0,200.0, Vegan Protein Pancakes, Tofu and Vegetable Stir-Fry, Vegan Nachos," Veggie Sushi Burrito - 400kcals per portion, 1 portion, contains soy, gluten (Japan)
+"," Veggie Stir-Fry with Tofu - 200 calories/portion, 4 portions, contains soy (China)
+"
+295,200.0,200.0,180.0,600.0,350.0, Tomato Basil Tofu Scramble, Tofu and Vegetable Stir-Fry, Crispy Tofu Bites, Veggie Pho," Vegetarian bibimbap - 350 calories per portion, 4 portions, contains gluten and soy (Korea)
+"
+296,400.0,200.0,280.0,250.0,350.0, Veggie Sausage Breakfast Sandwich, Tofu Scramble with Veggies, Vegan Nachos, Veggie Sushi Rolls," Vegetarian bibimbap - 350 calories per portion, 4 portions, contains gluten and soy (Korea)
+"
+297,200.0,300.0,100.0,350.0,350.0, Veggie Breakfast Wrap with Tofu Scramble, Vegetable Potstickers with Soy Dipping Sauce, Edamame, Vegetable and Tofu Skewers," Vegetarian bibimbap - 350 calories per portion, 4 portions, contains gluten and soy (Korea)
+"
+298,400.0,200.0,280.0,320.0,300.0, Veggie Sausage Breakfast Sandwich, Tofu and Vegetable Stir-Fry, Vegan Nachos," Veggie Sushi Rolls - 320kcals per portion, 2 portions, contains soy, gluten (Japan)
+"," Chickpea and vegetable stir-fry - 300 calories per portion, 4 portions, contains soy (Middle East)
+"
+299,200.0,200.0,280.0,400.0,300.0, Tomato Basil Tofu Scramble, Tofu Scramble with Veggies, Vegan Nachos, Veggie Fried Rice," Vegetable and tofu stir-fry - 300 calories per portion, 4 portions, contains soy
+"
+300,350.0,300.0,100.0,400.0,300.0, Vegan Breakfast Tacos, Vegetable Potstickers with Soy Dipping Sauce, Edamame," Veggie Sushi Burrito - 400kcals per portion, 1 portion, contains soy, gluten (Japan)
+"," Chickpea and vegetable stir-fry - 300 calories per portion, 4 portions, contains soy (Middle East)
+"
+301,200.0,300.0,280.0,350.0,300.0, Tofu Scramble, Vegetable Potstickers with Soy Dipping Sauce, Vegan Nachos," Veggie Bibimbap - 350kcals per portion, 2 portions, contains soy (Korea)
+"," Vegetable Sushi Rolls - 300 calories/portion, 4 portions, contains soy (Japan)
+
+"
+302,400.0,200.0,280.0,350.0,200.0, Veggie Sausage Breakfast Sandwich, Tofu Scramble with Veggies, Vegan Nachos, Vegetable Stir-Fry," Veggie Stir-Fry with Tofu - 200 calories/portion, 4 portions, contains soy (China)
+"
+303,400.0,300.0,180.0,250.0,200.0, Veggie Sausage Breakfast Sandwich, Vegetable Potstickers with Soy Dipping Sauce, Crispy Tofu Bites, Vegetarian sushi rolls," Cauliflower Fried Rice - 200 calories/portion, 4 portions, contains soy (China)
+"
+304,350.0,200.0,280.0,320.0,350.0, Vegan Breakfast Burrito, Tofu Scramble with Veggies, Vegan Nachos," Veggie Sushi Rolls - 320kcals per portion, 2 portions, contains soy, gluten (Japan)
+"," Vegetarian bibimbap - 350 calories per portion, 4 portions, contains gluten and soy (Korea)
+"
+305,200.0,200.0,180.0,250.0,300.0, Veggie Breakfast Wrap with Tofu Scramble, Tofu and Vegetable Stir-Fry, Crispy Tofu Bites, Veggie Sushi Rolls," Vegetable and tofu stir-fry - 300 calories per portion, 4 portions, contains soy
+"
+306,350.0,200.0,280.0,280.0,250.0, Vegan Breakfast Tacos, Tofu Scramble with Veggies, Vegan Nachos," Tofu Stir-Fry - 280kcals per portion, 2 portions, contains soy (China)
+"," Tofu and vegetable kabobs - 250 calories per portion, 4 portions, contains soy
+"
+307,400.0,200.0,100.0,450.0,300.0, Vegan Breakfast Hash, Tofu Scramble with Veggies, Edamame, Moroccan Couscous," Chickpea and vegetable stir-fry - 300 calories per portion, 4 portions, contains soy (Middle East)
+"
+308,150.0,200.0,280.0,320.0,350.0, Scrambled Tofu, Tofu and Vegetable Stir-Fry, Vegan Nachos," Veggie Stir-Fry - 320kcals per portion, 2 portions, contains soy
+"," Veggie stir-fried rice - 350 calories per portion, 4 portions, contains soy (China)
+"
+309,200.0,300.0,180.0,250.0,300.0, Veggie Breakfast Wrap with Tofu Scramble, Vegetable Potstickers with Soy Dipping Sauce, Crispy Tofu Bites, Veggie Sushi Rolls," Vegetable and tofu stir-fry - 300 calories per portion, 4 portions, contains soy
+"
+310,350.0,200.0,180.0,750.0,350.0, Vegan Breakfast Tacos, Tofu Scramble with Veggies, Crispy Tofu Bites, Tofu Pad Thai," Vegetarian bibimbap - 350 calories per portion, 4 portions, contains gluten and soy (Korea)
+"
+311,150.0,300.0,280.0,500.0,250.0, Scrambled Tofu, Vegetable Potstickers with Soy Dipping Sauce, Vegan Nachos, Veggie Soba Noodle Stir-Fry," Tofu and vegetable kabobs - 250 calories per portion, 4 portions, contains soy
+"
+312,200.0,200.0,180.0,360.0,300.0, Veggie Breakfast Wrap with Tofu Scramble, Tofu Scramble with Veggies, Crispy Tofu Bites," Veggie Sushi Bowl - 360kcals per portion, 2 portions, contains soy, gluten (Japan)
+"," Vegetable and tofu stir-fry - 300 calories per portion, 4 portions, contains soy
+"
+313,350.0,300.0,280.0,350.0,300.0, Vegan Protein Pancakes, Vegetable Potstickers with Soy Dipping Sauce, Vegan Nachos," Veggie Bibimbap - 350kcals per portion, 2 portions, contains soy (Korea)
+"," Chickpea and vegetable stir-fry - 300 calories per portion, 4 portions, contains soy (Middle East)
+"
+314,200.0,300.0,180.0,400.0,150.0, Veggie Breakfast Wrap with Tofu Scramble, Vegetable Potstickers with Soy Dipping Sauce, Crispy Tofu Bites, Veggie Fried Rice," Greek Salad with Tofu - 150 calories/portion, 4 portions, contains soy (Greece)
+"
+315,200.0,300.0,280.0,250.0,200.0, Tomato Basil Tofu Scramble, Vegetable Potstickers with Soy Dipping Sauce, Vegan Nachos, Vegetarian sushi bowl," Veggie Stir-Fry with Tofu - 200 calories/portion, 4 portions, contains soy (China)
+"
+316,400.0,200.0,100.0,350.0,300.0, Vegan Breakfast Hash, Tofu and Vegetable Stir-Fry, Edamame," Veggie Bibimbap - 350kcals per portion, 2 portions, contains soy (Korea)
+"," Vegetable Sushi Rolls - 300 calories/portion, 4 portions, contains soy (Japan)
+
+"
+317,150.0,300.0,100.0,380.0,300.0, Scrambled Tofu, Vegetable Potstickers with Soy Dipping Sauce, Edamame," Veggie Bibimbap Bowl - 380kcals per portion, 2 portions, contains soy (Korea)
+"," Vegetable and tofu stir-fry - 300 calories per portion, 4 portions, contains soy
+"
+318,150.0,200.0,100.0,600.0,350.0, Scrambled Tofu, Tofu Scramble with Veggies, Edamame, Veggie Pho," Vegetarian bibimbap - 350 calories per portion, 4 portions, contains gluten and soy (Korea)
+"
+319,350.0,200.0,280.0,400.0,350.0, Vegan Protein Pancakes, Tofu Scramble with Veggies, Vegan Nachos, Vegetarian Spring Rolls," Vegetarian bibimbap - 350 calories per portion, 4 portions, contains gluten and soy (Korea)
+"
+320,400.0,200.0,100.0,380.0,350.0, Veggie Sausage Breakfast Sandwich, Tofu Scramble with Veggies, Edamame," Veggie Bibimbap Bowl - 380kcals per portion, 2 portions, contains soy (Korea)
+"," Vegetarian bibimbap - 350 calories per portion, 4 portions, contains gluten and soy (Korea)
+"
+321,400.0,200.0,100.0,400.0,150.0, Tofu Benedict, Tofu and Vegetable Stir-Fry, Edamame, Vegetarian Spring Rolls," Greek Salad with Tofu - 150 calories/portion, 4 portions, contains soy (Greece)
+"
+322,400.0,200.0,180.0,400.0,300.0, Tofu Benedict, Tofu and Vegetable Stir-Fry, Crispy Tofu Bites," Veggie Sushi Burrito - 400kcals per portion, 1 portion, contains soy, gluten (Japan)
+"," Chickpea and vegetable stir-fry - 300 calories per portion, 4 portions, contains soy (Middle East)
+"
+323,400.0,300.0,180.0,380.0,350.0, Vegan Breakfast Hash, Vegetable Potstickers with Soy Dipping Sauce, Crispy Tofu Bites," Veggie Bibimbap Bowl - 380kcals per portion, 2 portions, contains soy (Korea)
+"," Vegetarian bibimbap - 350 calories per portion, 4 portions, contains gluten and soy (Korea)
+"
+324,400.0,300.0,180.0,250.0,300.0, Veggie Sausage Breakfast Sandwich, Vegetable Potstickers with Soy Dipping Sauce, Crispy Tofu Bites, Vegetarian sushi bowl," Chickpea and vegetable stir-fry - 300 calories per portion, 4 portions, contains soy (Middle East)
+"
+325,200.0,300.0,100.0,400.0,350.0, Tofu Scramble, Vegetable Potstickers with Soy Dipping Sauce, Edamame, Vegetarian Spring Rolls," Vegetarian bibimbap - 350 calories per portion, 4 portions, contains gluten and soy (Korea)
+"
+326,400.0,200.0,180.0,320.0,350.0, Veggie Sausage Breakfast Sandwich, Tofu Scramble with Veggies, Crispy Tofu Bites," Veggie Stir-Fry - 320kcals per portion, 2 portions, contains soy
+"," Vegetarian bibimbap - 350 calories per portion, 4 portions, contains gluten and soy (Korea)
+"
+327,200.0,200.0,100.0,650.0,350.0, Veggie Breakfast Wrap with Tofu Scramble, Tofu Scramble with Veggies, Edamame, Veggie Lo Mein," Vegetarian bibimbap - 350 calories per portion, 4 portions, contains gluten and soy (Korea)
+"
+328,400.0,200.0,180.0,450.0,200.0, Tofu Benedict, Tofu and Vegetable Stir-Fry, Crispy Tofu Bites, Moroccan Couscous," Tofu and Broccoli Stir-Fry - 200 calories/portion, 4 portions, contains soy (China)
+"
+329,200.0,200.0,180.0,400.0,200.0, Tomato Basil Tofu Scramble, Tofu Scramble with Veggies, Crispy Tofu Bites, Veggie Fried Rice," Tofu and Broccoli Stir-Fry - 200 calories/portion, 4 portions, contains soy (China)
+"
+330,200.0,200.0,100.0,380.0,150.0, Tofu Scramble, Tofu and Vegetable Stir-Fry, Edamame," Veggie Bibimbap Bowl - 380kcals per portion, 2 portions, contains soy (Korea)
+"," Greek Salad with Tofu - 150 calories/portion, 4 portions, contains soy (Greece)
+"
+331,400.0,200.0,100.0,320.0,300.0, Veggie Sausage Breakfast Sandwich, Tofu Scramble with Veggies, Edamame," Veggie Stir-Fry - 320kcals per portion, 2 portions, contains soy
+"," Vegetable and tofu stir-fry - 300 calories per portion, 4 portions, contains soy
+"
+332,200.0,200.0,180.0,350.0,200.0, Tofu Scramble, Tofu Scramble with Veggies, Crispy Tofu Bites, Vegetable and Tofu Skewers," Tofu and Broccoli Stir-Fry - 200 calories/portion, 4 portions, contains soy (China)
+"
+333,200.0,200.0,100.0,450.0,200.0, Tofu Scramble, Tofu and Vegetable Stir-Fry, Edamame, Moroccan Couscous," Veggie Stir-Fry with Tofu - 200 calories/portion, 4 portions, contains soy (China)
+"
+334,350.0,200.0,180.0,450.0,350.0, Vegan Breakfast Burrito, Tofu and Vegetable Stir-Fry, Crispy Tofu Bites, Vegetarian Sushi Bowl," Vegetarian bibimbap - 350 calories per portion, 4 portions, contains gluten and soy (Korea)
+"
+335,350.0,200.0,280.0,250.0,200.0, Vegan Protein Pancakes, Tofu Scramble with Veggies, Vegan Nachos, Veggie Sushi Rolls," Tofu and Broccoli Stir-Fry - 200 calories/portion, 4 portions, contains soy (China)
+"
+336,400.0,200.0,280.0,280.0,350.0, Vegan Breakfast Hash, Tofu Scramble with Veggies, Vegan Nachos," Tofu Stir-Fry - 280kcals per portion, 2 portions, contains soy (China)
+"," Vegetarian bibimbap - 350 calories per portion, 4 portions, contains gluten and soy (Korea)
+"
+337,200.0,200.0,100.0,400.0,350.0, Veggie Breakfast Wrap with Tofu Scramble, Tofu Scramble with Veggies, Edamame, Vegetarian Spring Rolls," Veggie stir-fried rice - 350 calories per portion, 4 portions, contains soy (China)
+"
+338,350.0,200.0,100.0,350.0,250.0, Vegan Breakfast Tacos, Tofu and Vegetable Stir-Fry, Edamame, Vegetable and Tofu Skewers," Tofu and vegetable kabobs - 250 calories per portion, 4 portions, contains soy
+"
+339,350.0,300.0,280.0,350.0,200.0, Vegan Breakfast Burrito, Vegetable Potstickers with Soy Dipping Sauce, Vegan Nachos," Veggie Bibimbap - 350kcals per portion, 2 portions, contains soy (Korea)
+"," Tofu and Broccoli Stir-Fry - 200 calories/portion, 4 portions, contains soy (China)
+"
+340,200.0,200.0,280.0,360.0,200.0, Veggie Breakfast Wrap with Tofu Scramble, Tofu Scramble with Veggies, Vegan Nachos," Veggie Sushi Bowl - 360kcals per portion, 2 portions, contains soy, gluten (Japan)
+"," Veggie Stir-Fry with Tofu - 200 calories/portion, 4 portions, contains soy (China)
+"
+341,150.0,200.0,180.0,320.0,300.0, Scrambled Tofu, Tofu Scramble with Veggies, Crispy Tofu Bites," Veggie Sushi Rolls - 320kcals per portion, 2 portions, contains soy, gluten (Japan)
+"," Vegetable Sushi Rolls - 300 calories/portion, 4 portions, contains soy (Japan)
+
+"
+342,350.0,200.0,100.0,250.0,300.0, Vegan Breakfast Burrito, Tofu Scramble with Veggies, Edamame, Vegetarian sushi rolls," Vegetable and tofu stir-fry - 300 calories per portion, 4 portions, contains soy
+"
+343,400.0,300.0,100.0,350.0,350.0, Vegan Breakfast Hash, Vegetable Potstickers with Soy Dipping Sauce, Edamame, Vegetable and Tofu Skewers," Vegetarian bibimbap - 350 calories per portion, 4 portions, contains gluten and soy (Korea)
+"
+344,350.0,200.0,100.0,400.0,150.0, Vegan Breakfast Burrito, Tofu Scramble with Veggies, Edamame," Veggie Sushi Burrito - 400kcals per portion, 1 portion, contains soy, gluten (Japan)
+"," Greek Salad with Tofu - 150 calories/portion, 4 portions, contains soy (Greece)
+"
+345,200.0,300.0,280.0,500.0,300.0, Veggie Breakfast Wrap with Tofu Scramble, Vegetable Potstickers with Soy Dipping Sauce, Vegan Nachos, Veggie Soba Noodle Stir-Fry," Vegetable and tofu stir-fry - 300 calories per portion, 4 portions, contains soy
+"
+346,350.0,300.0,180.0,450.0,200.0, Vegan Breakfast Burrito, Vegetable Potstickers with Soy Dipping Sauce, Crispy Tofu Bites, Vegetarian Sushi Bowl," Cauliflower Fried Rice - 200 calories/portion, 4 portions, contains soy (China)
+"
+347,400.0,200.0,100.0,400.0,250.0, Vegan Breakfast Hash, Tofu Scramble with Veggies, Edamame," Veggie Sushi Burrito - 400kcals per portion, 1 portion, contains soy, gluten (Japan)
+"," Tofu and vegetable kabobs - 250 calories per portion, 4 portions, contains soy
+"
+348,200.0,200.0,180.0,400.0,350.0, Tofu Scramble, Tofu Scramble with Veggies, Crispy Tofu Bites," Veggie Sushi Burrito - 400kcals per portion, 1 portion, contains soy, gluten (Japan)
+"," Veggie stir-fried rice - 350 calories per portion, 4 portions, contains soy (China)
+"
+349,400.0,200.0,100.0,500.0,200.0, Tofu Benedict, Tofu Scramble with Veggies, Edamame, Veggie Soba Noodle Stir-Fry," Tofu and Broccoli Stir-Fry - 200 calories/portion, 4 portions, contains soy (China)
+"
+350,200.0,200.0,280.0,400.0,300.0, Tomato Basil Tofu Scramble, Tofu Scramble with Veggies, Vegan Nachos," Veggie Sushi Burrito - 400kcals per portion, 1 portion, contains soy, gluten (Japan)
+"," Vegetable and tofu stir-fry - 300 calories per portion, 4 portions, contains soy
+"
+351,400.0,200.0,180.0,400.0,200.0, Tofu Benedict, Tofu and Vegetable Stir-Fry, Crispy Tofu Bites," Veggie Sushi Burrito - 400kcals per portion, 1 portion, contains soy, gluten (Japan)
+"," Veggie Stir-Fry with Tofu - 200 calories/portion, 4 portions, contains soy (China)
+"
+352,400.0,200.0,180.0,750.0,300.0, Tofu Benedict, Tofu and Vegetable Stir-Fry, Crispy Tofu Bites, Tofu Pad Thai," Vegetable and tofu stir-fry - 300 calories per portion, 4 portions, contains soy
+"
+353,200.0,200.0,100.0,320.0,300.0, Tofu Scramble, Tofu and Vegetable Stir-Fry, Edamame," Veggie Stir-Fry - 320kcals per portion, 2 portions, contains soy
+"," Vegetable and tofu stir-fry - 300 calories per portion, 4 portions, contains soy
+"
+354,200.0,200.0,180.0,250.0,350.0, Veggie Breakfast Wrap with Tofu Scramble, Tofu and Vegetable Stir-Fry, Crispy Tofu Bites, Vegetarian sushi rolls," Vegetarian bibimbap - 350 calories per portion, 4 portions, contains gluten and soy (Korea)
+"
+355,200.0,200.0,280.0,650.0,300.0, Tomato Basil Tofu Scramble, Tofu Scramble with Veggies, Vegan Nachos, Veggie Lo Mein," Vegetable and tofu stir-fry - 300 calories per portion, 4 portions, contains soy
+"
+356,200.0,300.0,100.0,320.0,300.0, Tofu Scramble, Vegetable Potstickers with Soy Dipping Sauce, Edamame," Veggie Stir-Fry - 320kcals per portion, 2 portions, contains soy
+"," Vegetable and tofu stir-fry - 300 calories per portion, 4 portions, contains soy
+"
+357,400.0,300.0,180.0,280.0,350.0, Vegan Breakfast Hash, Vegetable Potstickers with Soy Dipping Sauce, Crispy Tofu Bites," Tofu Stir-Fry - 280kcals per portion, 2 portions, contains soy (China)
+"," Veggie stir-fried rice - 350 calories per portion, 4 portions, contains soy (China)
+"
+358,400.0,300.0,180.0,250.0,250.0, Veggie Sausage Breakfast Sandwich, Vegetable Potstickers with Soy Dipping Sauce, Crispy Tofu Bites, Veggie Sushi Rolls," Tofu and vegetable kabobs - 250 calories per portion, 4 portions, contains soy
+"
+359,350.0,300.0,100.0,450.0,300.0, Vegan Protein Pancakes, Vegetable Potstickers with Soy Dipping Sauce, Edamame, Vegetarian Sushi Bowl," Vegetable and tofu stir-fry - 300 calories per portion, 4 portions, contains soy
+"
+360,200.0,200.0,100.0,380.0,200.0, Veggie Breakfast Wrap with Tofu Scramble, Tofu and Vegetable Stir-Fry, Edamame," Veggie Bibimbap Bowl - 380kcals per portion, 2 portions, contains soy (Korea)
+"," Cauliflower Fried Rice - 200 calories/portion, 4 portions, contains soy (China)
+"
+361,400.0,200.0,180.0,450.0,200.0, Tofu Benedict, Tofu Scramble with Veggies, Crispy Tofu Bites, Moroccan Couscous," Cauliflower Fried Rice - 200 calories/portion, 4 portions, contains soy (China)
+"
+362,400.0,200.0,180.0,500.0,300.0, Veggie Sausage Breakfast Sandwich, Tofu and Vegetable Stir-Fry, Crispy Tofu Bites, Veggie Soba Noodle Stir-Fry," Vegetable and tofu stir-fry - 300 calories per portion, 4 portions, contains soy
+"
+363,200.0,200.0,180.0,360.0,200.0, Tomato Basil Tofu Scramble, Tofu and Vegetable Stir-Fry, Crispy Tofu Bites," Veggie Sushi Bowl - 360kcals per portion, 2 portions, contains soy, gluten (Japan)
+"," Cauliflower Fried Rice - 200 calories/portion, 4 portions, contains soy (China)
+"
+364,200.0,200.0,180.0,250.0,350.0, Tofu Scramble, Tofu and Vegetable Stir-Fry, Crispy Tofu Bites, Vegetarian sushi bowl," Veggie stir-fried rice - 350 calories per portion, 4 portions, contains soy (China)
+"
+365,350.0,200.0,280.0,400.0,150.0, Vegan Protein Pancakes, Tofu and Vegetable Stir-Fry, Vegan Nachos, Vegetarian Spring Rolls," Greek Salad with Tofu - 150 calories/portion, 4 portions, contains soy (Greece)
+"

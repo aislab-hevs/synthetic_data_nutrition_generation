@@ -39,7 +39,8 @@ from synthetic_data_generation.generators import (create_name_surname,
 from synthetic_data_generation.default_inputs import (person_entity,
                                                       user_entity,
                                                       BMI_probabilities_dict,
-                                                      meal_time_distribution
+                                                      meal_time_distribution,
+                                                      age_probabilities_dict
                                                       )
 
 
@@ -52,6 +53,7 @@ def faker():
 @pytest.fixture
 def personal_data():
     user_data = generate_personal_data(gender_probabilities={"M": 0.2, "F": 0.8},
+                                       age_probabilities=age_probabilities_dict,
                                        num_users=20,
                                        person_entity=person_entity,
                                        )
@@ -79,6 +81,7 @@ def allergies_proba():
 @pytest.fixture
 def user_life_style_data():
     p_data = generate_personal_data(gender_probabilities={"M": 0.2, "F": 0.8},
+                                    age_probabilities=age_probabilities_dict,
                                     num_users=20,
                                     person_entity=person_entity,
                                     )
@@ -166,6 +169,7 @@ def test_generate_localization(faker):
 
 def test_generate_personal_data():
     user_data = generate_personal_data(gender_probabilities={"M": 0.2, "F": 0.8},
+                                       age_probabilities=age_probabilities_dict,
                                        num_users=10,
                                        person_entity=person_entity,
                                        )

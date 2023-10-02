@@ -1,0 +1,366 @@
+,breakfast_calories,morning snacks_calories,afternoon snacks_calories,lunch_calories,dinner_calories,breakfast,morning snacks,afternoon snacks,lunch,dinner
+1,400.0,250.0,240.0,450.0,400.0, Vegan Pastrami Reuben Sandwich, Vegan Fettuccine Alfredo, Vegan Spinach Dip with Pita Chips, Mushroom Risotto, Lentil Bolognese
+2,400.0,450.0,360.0,300.0,400.0, Vegan Carbonara, Tomato Basil Pasta, Vegetable Tempura, Vegan Spaghetti Carbonara, Vegan Tamales
+3,350.0,250.0,720.0,300.0,300.0, Vegan Ravioli, Cauliflower Buffalo Wings, Vegan Black Bean Quesadillas, Veggie Spring Rolls, Veggie Fajitas
+4,300.0,1000.0,460.0,250.0,400.0, Veggie Fajitas, Vegan Banana Pancakes, Veggie Tacos, Vegan Fettuccine Alfredo, Vegan Pastrami Reuben Sandwich
+5,400.0,300.0,240.0,280.0,400.0, Falafel Wrap, Couscous Salad, Vegan Spinach Dip with Pita Chips, Vegan Lemon Poppy Seed Muffins, Spaghetti Aglio e Olio
+6,300.0,300.0,200.0,640.0,350.0, Vegan Spaghetti Carbonara, Vegan Spaghetti Carbonara, Stuffed Grape Leaves, Vegan Baked Falafel Bowl, Mushroom Tacos
+7,350.0,760.0,400.0,250.0,350.0, Vegan BBQ Sandwich, Vegan Indian Samosa Chaat, Zucchini Fritters, Cauliflower Buffalo Wings, Vegan Ravioli
+8,450.0,880.0,480.0,160.0,400.0, Ratatouille Tart, Jackfruit Tacos, Vegan Lentil Burgers, Vegan Spinach and Mushroom Puff Pastry, Vegan Meatballs with Marinara Sauce
+9,280.0,520.0,360.0,280.0,400.0, Vegan Lemon Poppy Seed Muffins, Vegan Spinach and Artichoke Crostini, Vegetable Tempura, Vegan Lemon Poppy Seed Muffins, Sweet Potato and Black Bean Enchiladas
+10,280.0,960.0,740.0,400.0,400.0, Vegan Lemon Poppy Seed Muffins, Vegan Meatballs with Marinara Sauce, Vegan Buffalo Cauliflower Wings, Vegan Tamales, Sweet Potato and Black Bean Enchiladas
+11,450.0,200.0,460.0,350.0,450.0, Tomato Basil Pasta, Vegan Goulash, Veggie Tacos, Veggie Burger, Ratatouille Tart
+12,640.0,450.0,480.0,450.0,350.0, Vegan Baked Falafel Bowl, Mushroom Risotto, Vegan Lentil Burgers, Mushroom Risotto, Mushroom Risotto Stuffed Peppers
+13,400.0,960.0,440.0,760.0,350.0, Vegan Lasagna, Vegan Meatballs with Marinara Sauce, Vegan Gyoza, Vegan Indian Samosa Chaat, Vegan BBQ Sandwich
+14,400.0,350.0,760.0,300.0,300.0, Vegan Pastrami Reuben Sandwich, Vegan Tacos, Vegan Indian Samosa Chaat, Veggie Fajitas, Veggie Fajitas
+15,350.0,820.0,760.0,760.0,350.0, Soba Noodle Stir-Fry, Vegan Lasagna, Moroccan Couscous, Vegan Indian Samosa Chaat, Vegan BBQ Sandwich
+16,440.0,380.0,320.0,820.0,400.0, Vegan Gyoza, Vegan Chocolate Chip Cookies, Quinoa Salad, Vegan Lasagna, Vegan Lasagna
+17,450.0,300.0,820.0,300.0,250.0, Ratatouille Tart, Vegan Gyros, Vegan Lasagna, Veggie Spring Rolls, Vegan Nachos
+18,200.0,480.0,320.0,740.0,450.0, Vegan Goulash, Vegan Lentil Burgers, Vegan Mediterranean Flatbread Pizza, Vegan Buffalo Cauliflower Wings, Chickpea Tacos
+19,300.0,760.0,200.0,560.0,350.0, Vegan Spaghetti Carbonara, Vegan Cinnamon Rolls, Stuffed Grape Leaves, Vegan Pancakes, Vegan BBQ Sandwich
+20,200.0,760.0,760.0,480.0,400.0, Vegan Goulash, Vegan Indian Samosa Chaat, Moroccan Couscous, Spinach and Mushroom Quesadillas, Vegan Ramen
+21,350.0,400.0,820.0,880.0,400.0, Mushroom Tacos, Vegan Lasagna, Vegan Lasagna, Jackfruit Tacos, Vegan Pastrami Reuben Sandwich
+22,400.0,350.0,320.0,880.0,350.0, Vegan Carbonara, Vegan Ravioli, Vegan Mediterranean Flatbread Pizza, Jackfruit Tacos, Mushroom Tacos
+23,400.0,440.0,520.0,640.0,400.0, Vegan Paella, Vegan Gyoza, Vegan Spinach and Artichoke Crostini, Vegan Baked Falafel Bowl, Lentil Bolognese
+24,300.0,250.0,160.0,300.0,400.0, Jackfruit Tacos, Vegan Fettuccine Alfredo, Vegan Spinach and Mushroom Puff Pastry, Veggie Fajitas, Vegan Meatballs with Marinara Sauce
+25,620.0,450.0,400.0,740.0,300.0, Bean Burritos, Chickpea Tacos, Zucchini Fritters, Vegan Buffalo Cauliflower Wings, Jackfruit Tacos
+26,200.0,300.0,640.0,350.0,400.0, Vegan Goulash, Jackfruit Tacos, Vegan Baked Falafel Bowl, Vegan BBQ Sandwich, Vegan Carbonara
+27,400.0,460.0,200.0,520.0,350.0, Vegan Sausage and Peppers, Veggie Tacos, Stuffed Grape Leaves, Vegan Mac and Cheese, Mushroom Tacos
+28,450.0,400.0,300.0,400.0,200.0, Ratatouille Tart, Vegan Ramen, Veggie Spring Rolls, Falafel Wrap, Lentil and Vegetable Bolognese
+29,360.0,760.0,320.0,450.0,400.0, Vegetable Tempura, Vegan Cinnamon Rolls, Vegan Mediterranean Flatbread Pizza, Chickpea Tacos, Vegan Pastrami Reuben Sandwich
+30,240.0,960.0,520.0,400.0,450.0, Vegan Spinach Dip with Pita Chips, Vegan Buffalo Cauliflower Pizza, Vegan Spinach and Artichoke Crostini, Vegan Jambalaya, Mushroom Risotto
+31,520.0,200.0,760.0,400.0,400.0, Vegan Mac and Cheese, Stuffed Grape Leaves, Vegan Cinnamon Rolls, Vegan Ramen, Sweet Potato and Black Bean Enchiladas
+32,450.0,820.0,800.0,350.0,400.0, Tomato Basil Pasta, Vegan Lasagna, Vegan Mexican Churros, Vegan BBQ Sandwich, Vegan Carbonara
+33,400.0,300.0,620.0,250.0,300.0, Lentil Bolognese, Vegan Bao Buns, Bean Burritos, Vegan Fettuccine Alfredo, Jackfruit Tacos
+34,400.0,400.0,520.0,320.0,350.0, Zucchini Fritters, Sweet Potato and Black Bean Enchiladas, Vegan Spinach and Artichoke Crostini, Vegan Breaded Zucchini Sticks, Mushroom Tacos
+35,460.0,320.0,840.0,200.0,350.0, Veggie Tacos, Quinoa Salad, Vegan Tomato Bruschetta, Stuffed Grape Leaves, Vegan Tacos
+36,360.0,400.0,280.0,320.0,350.0, Vegetable Tempura, Sweet Potato and Black Bean Enchiladas, Vegan Lemon Poppy Seed Muffins, Vegan Mediterranean Flatbread Pizza, Vegan BBQ Sandwich
+37,350.0,320.0,320.0,320.0,250.0, Mushroom Tacos, Quinoa Salad, Vegan Raspberry Oat Bars, Vegan Mediterranean Flatbread Pizza, Cauliflower Buffalo Wings
+38,520.0,720.0,720.0,300.0,450.0, Vegan Mac and Cheese, Vegan Black Bean Quesadillas, Vegan Black Bean Quesadillas, Jackfruit Tacos, Ratatouille Tart
+39,360.0,160.0,480.0,350.0,200.0, Vegetable Tempura, Vegan Spinach and Mushroom Puff Pastry, Spinach and Mushroom Quesadillas, Mushroom Risotto Stuffed Peppers, Vegan Goulash
+40,400.0,820.0,840.0,720.0,200.0, Falafel Wrap, Vegan Lasagna, Vegan Tomato Bruschetta, Vegan Black Bean Quesadillas, Vegan Goulash
+41,460.0,300.0,300.0,400.0,350.0, Veggie Tacos, Veggie Spring Rolls, Veggie Spring Rolls, Spaghetti Aglio e Olio, Veggie Burger
+42,300.0,460.0,720.0,740.0,400.0, Veggie Fajitas, Veggie Tacos, Vegetable Samosas, Vegan Buffalo Cauliflower Wings, Vegan Lasagna
+43,400.0,350.0,150.0,400.0,300.0, Zucchini Fritters, Vegan Tacos, Vegan Banana Bread, Vegan Pastrami Reuben Sandwich, Vegan Gyros
+44,560.0,520.0,400.0,440.0,350.0, Vegan Chickpea Salad Sandwich, Vegan Spinach and Artichoke Crostini, Zucchini Fritters, Vegan Gyoza, Mushroom Tacos
+45,320.0,360.0,460.0,400.0,400.0, Vegan Breaded Zucchini Sticks, Vegetable Tempura, Veggie Tacos, Vegan Paella, Vegan Ramen
+46,300.0,400.0,150.0,400.0,400.0, Vegan Gyros, Vegan Carbonara, Vegan Banana Bread, Vegan Lasagna, Vegan Lasagna
+47,350.0,380.0,480.0,760.0,400.0, Vegan BBQ Sandwich, Vegan Chocolate Chip Cookies, Spinach and Mushroom Quesadillas, Vegan Indian Samosa Chaat, Vegan Jambalaya
+48,400.0,400.0,320.0,400.0,400.0, Vegan Jambalaya, Vegan Tamales, Quinoa Salad, Vegan Ramen, Vegan Ramen
+49,350.0,400.0,560.0,300.0,400.0, Soba Noodle Stir-Fry, Vegan Lasagna, Vegan Pancakes, Vegan Bao Buns, Spaghetti Aglio e Olio
+50,360.0,250.0,480.0,400.0,400.0, Vegetable Tempura, Vegan Fettuccine Alfredo, Spinach and Mushroom Quesadillas, Vegan Paella, Vegan Jambalaya
+51,560.0,250.0,460.0,640.0,300.0, Vegan Chickpea Salad Sandwich, Vegan Nachos, Veggie Tacos, Vegan Baked Falafel Bowl, Couscous Salad
+52,450.0,320.0,360.0,300.0,350.0, Mushroom Risotto, Vegan Breaded Zucchini Sticks, Vegetable Tempura, Vegan Bao Buns, Veggie Burger
+53,200.0,760.0,160.0,1000.0,400.0, Stuffed Grape Leaves, Vegan Cinnamon Rolls, Vegan Spinach and Mushroom Puff Pastry, Vegan Banana Pancakes, Vegan Carbonara
+54,320.0,320.0,520.0,400.0,400.0, Vegan Raspberry Oat Bars, Vegan Raspberry Oat Bars, Vegan Spinach and Artichoke Crostini, Vegan Sausage and Peppers, Vegan Lasagna
+55,560.0,960.0,760.0,320.0,350.0, Vegan Pancakes, Vegan Meatballs with Marinara Sauce, Vegan Cinnamon Rolls, Vegan Breaded Zucchini Sticks, Veggie Burger
+56,240.0,250.0,520.0,300.0,350.0, Vegan Spinach Dip with Pita Chips, Vegan Nachos, Vegan Mac and Cheese, Jackfruit Tacos, Vegan BBQ Sandwich
+57,320.0,200.0,560.0,200.0,300.0, Vegan Breaded Zucchini Sticks, Vegan Goulash, Vegan Pancakes, Stuffed Grape Leaves, Vegan Bao Buns
+58,480.0,520.0,380.0,400.0,250.0, Spinach and Mushroom Quesadillas, Vegan Spinach and Artichoke Crostini, Vegan Chocolate Chip Cookies, Sweet Potato and Black Bean Enchiladas, Cauliflower Buffalo Wings
+59,300.0,400.0,740.0,240.0,350.0, Vegan Spaghetti Carbonara, Sweet Potato and Black Bean Enchiladas, Vegan Buffalo Cauliflower Wings, Vegan Spinach Dip with Pita Chips, Vegan Ravioli
+60,560.0,400.0,280.0,760.0,450.0, Vegan Chickpea Salad Sandwich, Vegan Ramen, Vegan Lemon Poppy Seed Muffins, Moroccan Couscous, Mushroom Risotto
+61,620.0,920.0,380.0,240.0,400.0, Bean Burritos, Vegan Thai Spring Rolls, Vegan Chocolate Chip Cookies, Vegan Spinach Dip with Pita Chips, Vegan Lasagna
+62,460.0,740.0,480.0,450.0,450.0, Veggie Tacos, Vegan Buffalo Cauliflower Wings, Spinach and Mushroom Quesadillas, Tomato Basil Pasta, Chickpea Tacos
+63,300.0,920.0,800.0,400.0,400.0, Veggie Fajitas, Vegan Thai Spring Rolls, Vegan Mexican Churros, Zucchini Fritters, Vegan Paella
+64,320.0,400.0,480.0,450.0,400.0, Quinoa Salad, Lentil Bolognese, Spinach and Mushroom Quesadillas, Chickpea Tacos, Vegan Tamales
+65,350.0,400.0,150.0,300.0,350.0, Vegan BBQ Sandwich, Falafel Wrap, Vegan Banana Bread, Vegan Bao Buns, Mushroom Tacos
+66,400.0,840.0,520.0,450.0,400.0, Vegan Lasagna, Vegan Tomato Bruschetta, Vegan Mac and Cheese, Tomato Basil Pasta, Vegan Jambalaya
+67,300.0,400.0,320.0,200.0,450.0, Veggie Fajitas, Vegan Tamales, Vegan Mediterranean Flatbread Pizza, Mexican Rice Bowl, Ratatouille Tart
+68,300.0,300.0,240.0,760.0,350.0, Veggie Fajitas, Jackfruit Tacos, Vegan Spinach Dip with Pita Chips, Moroccan Couscous, Vegan BBQ Sandwich
+69,400.0,450.0,240.0,320.0,400.0, Vegan Lasagna, Mushroom Risotto, Vegan Spinach Dip with Pita Chips, Vegan Breaded Zucchini Sticks, Vegan Paella
+70,440.0,560.0,800.0,350.0,350.0, Vegan Gyoza, Vegan Pancakes, Vegan Mexican Churros, Soba Noodle Stir-Fry, Vegan BBQ Sandwich
+71,400.0,350.0,240.0,960.0,400.0, Vegan Sausage and Peppers, Mushroom Tacos, Vegan Spinach Dip with Pita Chips, Vegan Meatballs with Marinara Sauce, Vegan Ramen
+72,400.0,350.0,480.0,300.0,400.0, Lentil Bolognese, Veggie Burger, Vegan Lentil Burgers, Vegan Spaghetti Carbonara, Sweet Potato and Black Bean Enchiladas
+73,460.0,720.0,820.0,320.0,400.0, Veggie Tacos, Vegetable Samosas, Vegan Lasagna, Vegan Mediterranean Flatbread Pizza, Sweet Potato and Black Bean Enchiladas
+74,200.0,1000.0,150.0,200.0,300.0, Lentil and Vegetable Bolognese, Vegan Banana Pancakes, Vegan Banana Bread, Lentil and Vegetable Bolognese, Couscous Salad
+75,300.0,350.0,560.0,400.0,250.0, Couscous Salad, Veggie Burger, Vegan Chickpea Salad Sandwich, Spaghetti Aglio e Olio, Cauliflower Buffalo Wings
+76,280.0,240.0,560.0,820.0,250.0, Vegan Lemon Poppy Seed Muffins, Vegan Spinach Dip with Pita Chips, Vegan Chickpea Salad Sandwich, Vegan Lasagna, Cauliflower Buffalo Wings
+77,560.0,200.0,320.0,300.0,400.0, Vegan Pancakes, Stuffed Grape Leaves, Quinoa Salad, Vegan Gyros, Vegan Pastrami Reuben Sandwich
+78,350.0,350.0,240.0,300.0,350.0, Mushroom Tacos, Mushroom Risotto Stuffed Peppers, Vegan Spinach Dip with Pita Chips, Veggie Fajitas, Mushroom Tacos
+79,300.0,200.0,380.0,350.0,350.0, Jackfruit Tacos, Vegan Goulash, Vegan Chocolate Chip Cookies, Vegan Ravioli, Mushroom Risotto Stuffed Peppers
+80,280.0,920.0,560.0,300.0,350.0, Vegan Lemon Poppy Seed Muffins, Vegan Thai Spring Rolls, Vegan Pancakes, Couscous Salad, Mushroom Risotto Stuffed Peppers
+81,350.0,400.0,320.0,350.0,200.0, Vegan Ravioli, Vegan Jambalaya, Vegan Breaded Zucchini Sticks, Vegan BBQ Sandwich, Vegan Goulash
+82,200.0,300.0,800.0,200.0,350.0, Lentil and Vegetable Bolognese, Vegan Spaghetti Carbonara, Vegan Mexican Churros, Stuffed Grape Leaves, Mushroom Risotto Stuffed Peppers
+83,250.0,400.0,400.0,400.0,400.0, Vegan Nachos, Vegan Meatballs with Marinara Sauce, Zucchini Fritters, Vegan Paella, Vegan Carbonara
+84,200.0,300.0,520.0,200.0,400.0, Mexican Rice Bowl, Couscous Salad, Vegan Spinach and Artichoke Crostini, Vegan Goulash, Vegan Sausage and Peppers
+85,400.0,760.0,560.0,620.0,250.0, Lentil Bolognese, Vegan Indian Samosa Chaat, Vegan Chickpea Salad Sandwich, Bean Burritos, Cauliflower Buffalo Wings
+86,320.0,720.0,520.0,350.0,300.0, Vegan Breaded Zucchini Sticks, Vegetable Samosas, Vegan Mac and Cheese, Vegan Ravioli, Vegan Spaghetti Carbonara
+87,350.0,760.0,760.0,840.0,200.0, Mushroom Risotto Stuffed Peppers, Moroccan Couscous, Moroccan Couscous, Vegan Tomato Bruschetta, Mexican Rice Bowl
+88,280.0,350.0,460.0,200.0,250.0, Vegan Lemon Poppy Seed Muffins, Vegan Tacos, Veggie Tacos, Stuffed Grape Leaves, Vegan Fettuccine Alfredo
+89,360.0,400.0,480.0,400.0,400.0, Vegetable Tempura, Vegan Meatballs with Marinara Sauce, Spinach and Mushroom Quesadillas, Falafel Wrap, Vegan Tamales
+90,160.0,400.0,520.0,300.0,300.0, Vegan Spinach and Mushroom Puff Pastry, Lentil Bolognese, Vegan Spinach and Artichoke Crostini, Jackfruit Tacos, Vegan Gyros
+91,400.0,200.0,320.0,400.0,400.0, Vegan Tamales, Stuffed Grape Leaves, Quinoa Salad, Vegan Jambalaya, Vegan Paella
+92,250.0,400.0,800.0,200.0,300.0, Cauliflower Buffalo Wings, Sweet Potato and Black Bean Enchiladas, Vegan Mexican Churros, Stuffed Grape Leaves, Vegan Gyros
+93,400.0,400.0,840.0,400.0,200.0, Vegan Tamales, Vegan Meatballs with Marinara Sauce, Vegan Tomato Bruschetta, Vegan Carbonara, Mexican Rice Bowl
+94,400.0,400.0,560.0,450.0,400.0, Vegan Lasagna, Lentil Bolognese, Vegan Chickpea Salad Sandwich, Mushroom Risotto, Spaghetti Aglio e Olio
+95,240.0,450.0,720.0,450.0,250.0, Vegan Spinach Dip with Pita Chips, Tomato Basil Pasta, Vegetable Samosas, Tomato Basil Pasta, Cauliflower Buffalo Wings
+96,320.0,320.0,760.0,820.0,250.0, Vegan Mediterranean Flatbread Pizza, Vegan Breaded Zucchini Sticks, Vegan Cinnamon Rolls, Vegan Lasagna, Vegan Nachos
+97,350.0,350.0,560.0,400.0,200.0, Vegan BBQ Sandwich, Veggie Burger, Vegan Chickpea Salad Sandwich, Vegan Tamales, Lentil and Vegetable Bolognese
+98,320.0,250.0,560.0,440.0,350.0, Vegan Mediterranean Flatbread Pizza, Vegan Nachos, Vegan Pancakes, Vegan Gyoza, Veggie Burger
+99,400.0,400.0,320.0,350.0,350.0, Vegan Pastrami Reuben Sandwich, Vegan Tamales, Quinoa Salad, Vegan Ravioli, Vegan Ravioli
+100,160.0,400.0,320.0,250.0,200.0, Vegan Spinach and Mushroom Puff Pastry, Vegan Paella, Quinoa Salad, Cauliflower Buffalo Wings, Mexican Rice Bowl
+101,450.0,840.0,720.0,400.0,300.0, Mushroom Risotto, Vegan Tomato Bruschetta, Vegetable Samosas, Vegan Paella, Vegan Bao Buns
+102,400.0,400.0,320.0,300.0,450.0, Vegan Carbonara, Vegan Pastrami Reuben Sandwich, Vegan Breaded Zucchini Sticks, Vegan Gyros, Chickpea Tacos
+103,400.0,350.0,440.0,350.0,400.0, Vegan Lasagna, Vegan BBQ Sandwich, Vegan Gyoza, Mushroom Tacos, Vegan Lasagna
+104,300.0,280.0,320.0,400.0,450.0, Vegan Spaghetti Carbonara, Vegan Lemon Poppy Seed Muffins, Quinoa Salad, Vegan Jambalaya, Mushroom Risotto
+105,320.0,250.0,200.0,450.0,400.0, Quinoa Salad, Vegan Fettuccine Alfredo, Stuffed Grape Leaves, Ratatouille Tart, Sweet Potato and Black Bean Enchiladas
+106,460.0,400.0,760.0,800.0,200.0, Veggie Tacos, Vegan Ramen, Vegan Indian Samosa Chaat, Vegan Mexican Churros, Vegan Goulash
+107,450.0,250.0,840.0,320.0,450.0, Tomato Basil Pasta, Cauliflower Buffalo Wings, Vegan Tomato Bruschetta, Vegan Raspberry Oat Bars, Tomato Basil Pasta
+108,350.0,400.0,720.0,160.0,350.0, Soba Noodle Stir-Fry, Vegan Paella, Vegan Black Bean Quesadillas, Vegan Spinach and Mushroom Puff Pastry, Veggie Burger
+109,450.0,300.0,380.0,760.0,350.0, Mushroom Risotto, Vegan Bao Buns, Vegan Chocolate Chip Cookies, Vegan Cinnamon Rolls, Vegan Tacos
+110,300.0,400.0,300.0,400.0,400.0, Veggie Spring Rolls, Vegan Lasagna, Veggie Spring Rolls, Vegan Pastrami Reuben Sandwich, Vegan Pastrami Reuben Sandwich
+111,200.0,440.0,360.0,450.0,400.0, Lentil and Vegetable Bolognese, Vegan Gyoza, Vegetable Tempura, Ratatouille Tart, Vegan Meatballs with Marinara Sauce
+112,480.0,840.0,400.0,520.0,350.0, Vegan Lentil Burgers, Vegan Tomato Bruschetta, Zucchini Fritters, Vegan Mac and Cheese, Soba Noodle Stir-Fry
+113,200.0,400.0,200.0,280.0,450.0, Lentil and Vegetable Bolognese, Vegan Tamales, Stuffed Grape Leaves, Vegan Lemon Poppy Seed Muffins, Ratatouille Tart
+114,250.0,300.0,760.0,200.0,250.0, Vegan Fettuccine Alfredo, Couscous Salad, Moroccan Couscous, Vegan Goulash, Vegan Nachos
+115,250.0,620.0,200.0,450.0,300.0, Vegan Fettuccine Alfredo, Bean Burritos, Stuffed Grape Leaves, Ratatouille Tart, Jackfruit Tacos
+116,620.0,720.0,360.0,400.0,300.0, Bean Burritos, Vegan Black Bean Quesadillas, Vegetable Tempura, Vegan Carbonara, Vegan Gyros
+117,400.0,560.0,520.0,200.0,250.0, Vegan Ramen, Vegan Chickpea Salad Sandwich, Vegan Mac and Cheese, Stuffed Grape Leaves, Vegan Fettuccine Alfredo
+118,280.0,440.0,200.0,400.0,350.0, Vegan Lemon Poppy Seed Muffins, Vegan Gyoza, Stuffed Grape Leaves, Vegan Lasagna, Veggie Burger
+119,300.0,280.0,460.0,400.0,450.0, Vegan Bao Buns, Vegan Lemon Poppy Seed Muffins, Veggie Tacos, Vegan Tamales, Ratatouille Tart
+120,450.0,350.0,480.0,360.0,200.0, Tomato Basil Pasta, Veggie Burger, Vegan Lentil Burgers, Vegetable Tempura, Lentil and Vegetable Bolognese
+121,450.0,350.0,760.0,620.0,250.0, Chickpea Tacos, Mushroom Tacos, Vegan Cinnamon Rolls, Bean Burritos, Cauliflower Buffalo Wings
+122,460.0,560.0,460.0,960.0,350.0, Veggie Tacos, Vegan Chickpea Salad Sandwich, Veggie Tacos, Vegan Buffalo Cauliflower Pizza, Mushroom Risotto Stuffed Peppers
+123,460.0,400.0,620.0,350.0,350.0, Veggie Tacos, Vegan Tamales, Bean Burritos, Mushroom Risotto Stuffed Peppers, Mushroom Risotto Stuffed Peppers
+124,400.0,820.0,720.0,250.0,450.0, Vegan Lasagna, Vegan Lasagna, Vegan Black Bean Quesadillas, Vegan Nachos, Chickpea Tacos
+125,400.0,200.0,560.0,300.0,350.0, Vegan Paella, Lentil and Vegetable Bolognese, Vegan Pancakes, Couscous Salad, Mushroom Tacos
+126,400.0,350.0,760.0,400.0,400.0, Zucchini Fritters, Vegan Ravioli, Moroccan Couscous, Sweet Potato and Black Bean Enchiladas, Falafel Wrap
+127,620.0,380.0,460.0,300.0,400.0, Bean Burritos, Vegan Chocolate Chip Cookies, Veggie Tacos, Vegan Spaghetti Carbonara, Vegan Paella
+128,300.0,350.0,560.0,400.0,300.0, Vegan Gyros, Mushroom Risotto Stuffed Peppers, Vegan Chickpea Salad Sandwich, Vegan Jambalaya, Jackfruit Tacos
+129,200.0,400.0,720.0,250.0,300.0, Stuffed Grape Leaves, Vegan Lasagna, Vegetable Samosas, Vegan Fettuccine Alfredo, Couscous Salad
+130,300.0,460.0,360.0,280.0,350.0, Vegan Gyros, Veggie Tacos, Vegetable Tempura, Vegan Lemon Poppy Seed Muffins, Mushroom Risotto Stuffed Peppers
+131,450.0,760.0,320.0,520.0,350.0, Chickpea Tacos, Moroccan Couscous, Quinoa Salad, Vegan Spinach and Artichoke Crostini, Mushroom Risotto Stuffed Peppers
+132,200.0,400.0,740.0,400.0,300.0, Vegan Goulash, Vegan Paella, Vegan Buffalo Cauliflower Wings, Vegan Sausage and Peppers, Jackfruit Tacos
+133,350.0,400.0,520.0,460.0,400.0, Soba Noodle Stir-Fry, Vegan Paella, Vegan Mac and Cheese, Veggie Tacos, Vegan Tamales
+134,150.0,280.0,480.0,400.0,350.0, Vegan Banana Bread, Vegan Lemon Poppy Seed Muffins, Vegan Lentil Burgers, Vegan Meatballs with Marinara Sauce, Veggie Burger
+135,400.0,460.0,200.0,640.0,350.0, Sweet Potato and Black Bean Enchiladas, Veggie Tacos, Stuffed Grape Leaves, Vegan Baked Falafel Bowl, Mushroom Risotto Stuffed Peppers
+136,440.0,300.0,560.0,300.0,350.0, Vegan Gyoza, Jackfruit Tacos, Vegan Pancakes, Vegan Gyros, Mushroom Tacos
+137,450.0,400.0,320.0,920.0,400.0, Mushroom Risotto, Vegan Meatballs with Marinara Sauce, Quinoa Salad, Vegan Thai Spring Rolls, Lentil Bolognese
+138,400.0,250.0,320.0,450.0,300.0, Sweet Potato and Black Bean Enchiladas, Vegan Nachos, Quinoa Salad, Tomato Basil Pasta, Vegan Gyros
+139,460.0,280.0,150.0,320.0,400.0, Veggie Tacos, Vegan Lemon Poppy Seed Muffins, Vegan Banana Bread, Vegan Raspberry Oat Bars, Vegan Lasagna
+140,480.0,720.0,520.0,400.0,250.0, Vegan Lentil Burgers, Vegetable Samosas, Vegan Spinach and Artichoke Crostini, Vegan Sausage and Peppers, Cauliflower Buffalo Wings
+141,450.0,300.0,760.0,160.0,350.0, Tomato Basil Pasta, Vegan Spaghetti Carbonara, Vegan Cinnamon Rolls, Vegan Spinach and Mushroom Puff Pastry, Veggie Burger
+142,200.0,400.0,560.0,350.0,400.0, Vegan Goulash, Spaghetti Aglio e Olio, Vegan Pancakes, Vegan BBQ Sandwich, Falafel Wrap
+143,200.0,350.0,480.0,320.0,450.0, Vegan Goulash, Mushroom Risotto Stuffed Peppers, Spinach and Mushroom Quesadillas, Quinoa Salad, Tomato Basil Pasta
+144,400.0,440.0,320.0,520.0,400.0, Vegan Paella, Vegan Gyoza, Vegan Mediterranean Flatbread Pizza, Vegan Mac and Cheese, Vegan Ramen
+145,400.0,320.0,760.0,200.0,400.0, Zucchini Fritters, Vegan Mediterranean Flatbread Pizza, Vegan Indian Samosa Chaat, Lentil and Vegetable Bolognese, Vegan Tamales
+146,300.0,440.0,280.0,300.0,400.0, Vegan Bao Buns, Vegan Gyoza, Vegan Lemon Poppy Seed Muffins, Couscous Salad, Lentil Bolognese
+147,300.0,300.0,400.0,1000.0,400.0, Veggie Fajitas, Jackfruit Tacos, Zucchini Fritters, Vegan Banana Pancakes, Vegan Tamales
+148,400.0,320.0,300.0,440.0,350.0, Sweet Potato and Black Bean Enchiladas, Vegan Raspberry Oat Bars, Veggie Spring Rolls, Vegan Gyoza, Vegan Ravioli
+149,200.0,300.0,320.0,250.0,250.0, Lentil and Vegetable Bolognese, Vegan Gyros, Vegan Breaded Zucchini Sticks, Vegan Fettuccine Alfredo, Cauliflower Buffalo Wings
+150,240.0,200.0,380.0,400.0,400.0, Vegan Spinach Dip with Pita Chips, Stuffed Grape Leaves, Vegan Chocolate Chip Cookies, Lentil Bolognese, Vegan Lasagna
+151,300.0,820.0,150.0,920.0,400.0, Jackfruit Tacos, Vegan Lasagna, Vegan Banana Bread, Vegan Thai Spring Rolls, Spaghetti Aglio e Olio
+152,300.0,350.0,520.0,640.0,450.0, Couscous Salad, Vegan BBQ Sandwich, Vegan Spinach and Artichoke Crostini, Vegan Baked Falafel Bowl, Tomato Basil Pasta
+153,320.0,400.0,320.0,320.0,400.0, Vegan Raspberry Oat Bars, Vegan Sausage and Peppers, Quinoa Salad, Vegan Breaded Zucchini Sticks, Falafel Wrap
+154,350.0,560.0,150.0,200.0,400.0, Soba Noodle Stir-Fry, Vegan Chickpea Salad Sandwich, Vegan Banana Bread, Lentil and Vegetable Bolognese, Vegan Carbonara
+155,300.0,640.0,360.0,250.0,450.0, Vegan Spaghetti Carbonara, Vegan Baked Falafel Bowl, Vegetable Tempura, Vegan Fettuccine Alfredo, Ratatouille Tart
+156,320.0,440.0,360.0,360.0,450.0, Vegan Mediterranean Flatbread Pizza, Vegan Gyoza, Vegetable Tempura, Vegetable Tempura, Ratatouille Tart
+157,560.0,740.0,840.0,460.0,400.0, Vegan Chickpea Salad Sandwich, Vegan Buffalo Cauliflower Wings, Vegan Tomato Bruschetta, Veggie Tacos, Falafel Wrap
+158,300.0,300.0,640.0,200.0,450.0, Vegan Gyros, Vegan Spaghetti Carbonara, Vegan Baked Falafel Bowl, Mexican Rice Bowl, Tomato Basil Pasta
+159,300.0,280.0,360.0,400.0,200.0, Vegan Spaghetti Carbonara, Vegan Lemon Poppy Seed Muffins, Vegetable Tempura, Vegan Tamales, Mexican Rice Bowl
+160,320.0,320.0,760.0,250.0,450.0, Vegan Mediterranean Flatbread Pizza, Vegan Breaded Zucchini Sticks, Vegan Cinnamon Rolls, Cauliflower Buffalo Wings, Mushroom Risotto
+161,400.0,880.0,520.0,350.0,350.0, Vegan Meatballs with Marinara Sauce, Jackfruit Tacos, Vegan Spinach and Artichoke Crostini, Veggie Burger, Mushroom Tacos
+162,320.0,400.0,720.0,400.0,200.0, Vegan Mediterranean Flatbread Pizza, Spaghetti Aglio e Olio, Vegetable Samosas, Zucchini Fritters, Vegan Goulash
+163,450.0,760.0,520.0,400.0,400.0, Tomato Basil Pasta, Moroccan Couscous, Vegan Spinach and Artichoke Crostini, Vegan Carbonara, Falafel Wrap
+164,300.0,200.0,460.0,350.0,400.0, Couscous Salad, Mexican Rice Bowl, Veggie Tacos, Soba Noodle Stir-Fry, Vegan Ramen
+165,300.0,760.0,150.0,400.0,400.0, Vegan Bao Buns, Vegan Cinnamon Rolls, Vegan Banana Bread, Spaghetti Aglio e Olio, Lentil Bolognese
+166,520.0,280.0,160.0,820.0,400.0, Vegan Spinach and Artichoke Crostini, Vegan Lemon Poppy Seed Muffins, Vegan Spinach and Mushroom Puff Pastry, Vegan Lasagna, Vegan Pastrami Reuben Sandwich
+167,200.0,400.0,320.0,320.0,300.0, Stuffed Grape Leaves, Vegan Paella, Vegan Mediterranean Flatbread Pizza, Vegan Mediterranean Flatbread Pizza, Vegan Spaghetti Carbonara
+168,350.0,400.0,480.0,380.0,300.0, Vegan Ravioli, Vegan Lasagna, Spinach and Mushroom Quesadillas, Vegan Chocolate Chip Cookies, Jackfruit Tacos
+169,400.0,840.0,560.0,400.0,400.0, Falafel Wrap, Vegan Tomato Bruschetta, Vegan Chickpea Salad Sandwich, Vegan Lasagna, Vegan Meatballs with Marinara Sauce
+170,200.0,720.0,640.0,800.0,350.0, Mexican Rice Bowl, Vegetable Samosas, Vegan Baked Falafel Bowl, Vegan Mexican Churros, Mushroom Risotto Stuffed Peppers
+171,400.0,400.0,280.0,400.0,300.0, Vegan Pastrami Reuben Sandwich, Sweet Potato and Black Bean Enchiladas, Vegan Lemon Poppy Seed Muffins, Vegan Meatballs with Marinara Sauce, Vegan Spaghetti Carbonara
+172,450.0,720.0,320.0,760.0,400.0, Mushroom Risotto, Vegetable Samosas, Vegan Mediterranean Flatbread Pizza, Vegan Cinnamon Rolls, Vegan Paella
+173,640.0,200.0,440.0,320.0,350.0, Vegan Baked Falafel Bowl, Stuffed Grape Leaves, Vegan Gyoza, Vegan Breaded Zucchini Sticks, Mushroom Tacos
+174,460.0,400.0,460.0,350.0,250.0, Veggie Tacos, Zucchini Fritters, Veggie Tacos, Vegan BBQ Sandwich, Cauliflower Buffalo Wings
+175,450.0,520.0,720.0,350.0,400.0, Ratatouille Tart, Vegan Spinach and Artichoke Crostini, Vegan Black Bean Quesadillas, Soba Noodle Stir-Fry, Vegan Pastrami Reuben Sandwich
+176,450.0,400.0,160.0,240.0,400.0, Tomato Basil Pasta, Zucchini Fritters, Vegan Spinach and Mushroom Puff Pastry, Vegan Spinach Dip with Pita Chips, Vegan Jambalaya
+177,320.0,350.0,440.0,250.0,400.0, Vegan Raspberry Oat Bars, Veggie Burger, Vegan Gyoza, Vegan Nachos, Vegan Meatballs with Marinara Sauce
+178,360.0,350.0,720.0,200.0,300.0, Vegetable Tempura, Veggie Burger, Vegetable Samosas, Vegan Goulash, Jackfruit Tacos
+179,400.0,380.0,720.0,250.0,200.0, Vegan Sausage and Peppers, Vegan Chocolate Chip Cookies, Vegan Black Bean Quesadillas, Vegan Nachos, Mexican Rice Bowl
+180,400.0,720.0,760.0,250.0,250.0, Vegan Jambalaya, Vegetable Samosas, Vegan Cinnamon Rolls, Vegan Nachos, Cauliflower Buffalo Wings
+181,250.0,920.0,320.0,920.0,400.0, Vegan Fettuccine Alfredo, Vegan Thai Spring Rolls, Vegan Mediterranean Flatbread Pizza, Vegan Thai Spring Rolls, Vegan Sausage and Peppers
+182,300.0,300.0,380.0,760.0,300.0, Jackfruit Tacos, Vegan Gyros, Vegan Chocolate Chip Cookies, Vegan Cinnamon Rolls, Vegan Bao Buns
+183,400.0,300.0,820.0,200.0,200.0, Vegan Paella, Vegan Spaghetti Carbonara, Vegan Lasagna, Stuffed Grape Leaves, Lentil and Vegetable Bolognese
+184,620.0,350.0,240.0,400.0,200.0, Bean Burritos, Mushroom Tacos, Vegan Spinach Dip with Pita Chips, Vegan Sausage and Peppers, Mexican Rice Bowl
+185,450.0,400.0,280.0,400.0,400.0, Chickpea Tacos, Vegan Sausage and Peppers, Vegan Lemon Poppy Seed Muffins, Falafel Wrap, Vegan Sausage and Peppers
+186,160.0,200.0,380.0,320.0,200.0, Vegan Spinach and Mushroom Puff Pastry, Lentil and Vegetable Bolognese, Vegan Chocolate Chip Cookies, Vegan Raspberry Oat Bars, Vegan Goulash
+187,400.0,760.0,320.0,880.0,400.0, Vegan Carbonara, Vegan Indian Samosa Chaat, Vegan Raspberry Oat Bars, Jackfruit Tacos, Vegan Pastrami Reuben Sandwich
+188,400.0,280.0,760.0,300.0,400.0, Vegan Carbonara, Vegan Lemon Poppy Seed Muffins, Vegan Indian Samosa Chaat, Jackfruit Tacos, Lentil Bolognese
+189,200.0,520.0,280.0,400.0,400.0, Vegan Goulash, Vegan Spinach and Artichoke Crostini, Vegan Lemon Poppy Seed Muffins, Spaghetti Aglio e Olio, Vegan Lasagna
+190,400.0,350.0,320.0,300.0,300.0, Vegan Pastrami Reuben Sandwich, Vegan BBQ Sandwich, Quinoa Salad, Vegan Bao Buns, Veggie Fajitas
+191,440.0,440.0,740.0,350.0,300.0, Vegan Gyoza, Vegan Gyoza, Vegan Buffalo Cauliflower Wings, Veggie Burger, Jackfruit Tacos
+192,400.0,820.0,740.0,480.0,200.0, Vegan Jambalaya, Vegan Lasagna, Vegan Buffalo Cauliflower Wings, Spinach and Mushroom Quesadillas, Lentil and Vegetable Bolognese
+193,200.0,400.0,480.0,400.0,400.0, Vegan Goulash, Zucchini Fritters, Spinach and Mushroom Quesadillas, Vegan Tamales, Vegan Carbonara
+194,400.0,400.0,240.0,300.0,350.0, Vegan Carbonara, Vegan Lasagna, Vegan Spinach Dip with Pita Chips, Veggie Fajitas, Veggie Burger
+195,400.0,400.0,620.0,960.0,450.0, Vegan Meatballs with Marinara Sauce, Sweet Potato and Black Bean Enchiladas, Bean Burritos, Vegan Meatballs with Marinara Sauce, Chickpea Tacos
+196,460.0,480.0,720.0,440.0,400.0, Veggie Tacos, Spinach and Mushroom Quesadillas, Vegan Black Bean Quesadillas, Vegan Gyoza, Spaghetti Aglio e Olio
+197,400.0,400.0,460.0,300.0,450.0, Vegan Carbonara, Zucchini Fritters, Veggie Tacos, Jackfruit Tacos, Mushroom Risotto
+198,200.0,400.0,150.0,880.0,300.0, Vegan Goulash, Vegan Ramen, Vegan Banana Bread, Jackfruit Tacos, Jackfruit Tacos
+199,350.0,280.0,320.0,620.0,350.0, Veggie Burger, Vegan Lemon Poppy Seed Muffins, Vegan Raspberry Oat Bars, Bean Burritos, Vegan Ravioli
+200,400.0,960.0,720.0,300.0,350.0, Sweet Potato and Black Bean Enchiladas, Vegan Buffalo Cauliflower Pizza, Vegan Black Bean Quesadillas, Jackfruit Tacos, Vegan BBQ Sandwich
+201,160.0,450.0,840.0,300.0,350.0, Vegan Spinach and Mushroom Puff Pastry, Chickpea Tacos, Vegan Tomato Bruschetta, Couscous Salad, Veggie Burger
+202,300.0,400.0,480.0,200.0,400.0, Couscous Salad, Vegan Ramen, Vegan Lentil Burgers, Lentil and Vegetable Bolognese, Vegan Lasagna
+203,400.0,560.0,640.0,350.0,350.0, Vegan Tamales, Vegan Pancakes, Vegan Baked Falafel Bowl, Mushroom Risotto Stuffed Peppers, Vegan Tacos
+204,320.0,800.0,280.0,300.0,300.0, Vegan Breaded Zucchini Sticks, Vegan Mexican Churros, Vegan Lemon Poppy Seed Muffins, Couscous Salad, Jackfruit Tacos
+205,200.0,300.0,160.0,480.0,400.0, Lentil and Vegetable Bolognese, Vegan Spaghetti Carbonara, Vegan Spinach and Mushroom Puff Pastry, Spinach and Mushroom Quesadillas, Vegan Lasagna
+206,450.0,250.0,440.0,200.0,400.0, Ratatouille Tart, Cauliflower Buffalo Wings, Vegan Gyoza, Mexican Rice Bowl, Vegan Pastrami Reuben Sandwich
+207,300.0,520.0,840.0,240.0,200.0, Jackfruit Tacos, Vegan Spinach and Artichoke Crostini, Vegan Tomato Bruschetta, Vegan Spinach Dip with Pita Chips, Vegan Goulash
+208,400.0,400.0,520.0,520.0,450.0, Vegan Carbonara, Vegan Sausage and Peppers, Vegan Mac and Cheese, Vegan Mac and Cheese, Tomato Basil Pasta
+209,200.0,250.0,620.0,250.0,400.0, Vegan Goulash, Vegan Fettuccine Alfredo, Bean Burritos, Vegan Nachos, Vegan Carbonara
+210,450.0,450.0,560.0,820.0,400.0, Mushroom Risotto, Ratatouille Tart, Vegan Pancakes, Vegan Lasagna, Falafel Wrap
+211,300.0,620.0,300.0,200.0,400.0, Vegan Bao Buns, Bean Burritos, Veggie Spring Rolls, Mexican Rice Bowl, Vegan Carbonara
+212,400.0,160.0,760.0,400.0,350.0, Vegan Ramen, Vegan Spinach and Mushroom Puff Pastry, Vegan Cinnamon Rolls, Vegan Ramen, Vegan Ravioli
+213,560.0,200.0,740.0,320.0,200.0, Vegan Chickpea Salad Sandwich, Lentil and Vegetable Bolognese, Vegan Buffalo Cauliflower Wings, Vegan Breaded Zucchini Sticks, Lentil and Vegetable Bolognese
+214,300.0,440.0,720.0,200.0,400.0, Couscous Salad, Vegan Gyoza, Vegan Black Bean Quesadillas, Mexican Rice Bowl, Spaghetti Aglio e Olio
+215,350.0,960.0,720.0,400.0,350.0, Veggie Burger, Vegan Meatballs with Marinara Sauce, Vegan Black Bean Quesadillas, Lentil Bolognese, Soba Noodle Stir-Fry
+216,560.0,400.0,520.0,760.0,350.0, Vegan Chickpea Salad Sandwich, Vegan Jambalaya, Vegan Spinach and Artichoke Crostini, Vegan Cinnamon Rolls, Mushroom Tacos
+217,280.0,560.0,560.0,920.0,300.0, Vegan Lemon Poppy Seed Muffins, Vegan Pancakes, Vegan Pancakes, Vegan Thai Spring Rolls, Veggie Fajitas
+218,520.0,350.0,280.0,250.0,200.0, Vegan Spinach and Artichoke Crostini, Vegan BBQ Sandwich, Vegan Lemon Poppy Seed Muffins, Vegan Fettuccine Alfredo, Mexican Rice Bowl
+219,350.0,1000.0,820.0,460.0,400.0, Vegan Tacos, Vegan Banana Pancakes, Vegan Lasagna, Veggie Tacos, Spaghetti Aglio e Olio
+220,460.0,280.0,760.0,300.0,450.0, Veggie Tacos, Vegan Lemon Poppy Seed Muffins, Vegan Indian Samosa Chaat, Vegan Bao Buns, Mushroom Risotto
+221,480.0,360.0,720.0,200.0,400.0, Spinach and Mushroom Quesadillas, Vegetable Tempura, Vegan Black Bean Quesadillas, Mexican Rice Bowl, Vegan Ramen
+222,320.0,350.0,240.0,200.0,300.0, Vegan Breaded Zucchini Sticks, Mushroom Tacos, Vegan Spinach Dip with Pita Chips, Mexican Rice Bowl, Vegan Spaghetti Carbonara
+223,400.0,640.0,480.0,620.0,350.0, Spaghetti Aglio e Olio, Vegan Baked Falafel Bowl, Vegan Lentil Burgers, Bean Burritos, Vegan Ravioli
+224,200.0,200.0,380.0,300.0,400.0, Mexican Rice Bowl, Stuffed Grape Leaves, Vegan Chocolate Chip Cookies, Vegan Bao Buns, Sweet Potato and Black Bean Enchiladas
+225,400.0,350.0,520.0,400.0,400.0, Vegan Carbonara, Soba Noodle Stir-Fry, Vegan Mac and Cheese, Vegan Jambalaya, Vegan Carbonara
+226,200.0,160.0,560.0,320.0,350.0, Vegan Goulash, Vegan Spinach and Mushroom Puff Pastry, Vegan Pancakes, Quinoa Salad, Vegan Tacos
+227,350.0,350.0,200.0,300.0,300.0, Soba Noodle Stir-Fry, Veggie Burger, Stuffed Grape Leaves, Veggie Fajitas, Couscous Salad
+228,400.0,350.0,720.0,350.0,350.0, Vegan Lasagna, Vegan BBQ Sandwich, Vegetable Samosas, Mushroom Risotto Stuffed Peppers, Veggie Burger
+229,450.0,400.0,480.0,300.0,300.0, Tomato Basil Pasta, Vegan Lasagna, Vegan Lentil Burgers, Vegan Bao Buns, Veggie Fajitas
+230,400.0,200.0,800.0,240.0,200.0, Vegan Meatballs with Marinara Sauce, Mexican Rice Bowl, Vegan Mexican Churros, Vegan Spinach Dip with Pita Chips, Vegan Goulash
+231,350.0,880.0,520.0,400.0,300.0, Vegan Tacos, Jackfruit Tacos, Vegan Mac and Cheese, Vegan Meatballs with Marinara Sauce, Veggie Fajitas
+232,520.0,640.0,400.0,740.0,400.0, Vegan Mac and Cheese, Vegan Baked Falafel Bowl, Zucchini Fritters, Vegan Buffalo Cauliflower Wings, Lentil Bolognese
+233,150.0,960.0,320.0,320.0,250.0, Vegan Banana Bread, Vegan Buffalo Cauliflower Pizza, Vegan Breaded Zucchini Sticks, Vegan Raspberry Oat Bars, Vegan Fettuccine Alfredo
+234,400.0,300.0,320.0,320.0,400.0, Vegan Pastrami Reuben Sandwich, Veggie Spring Rolls, Vegan Mediterranean Flatbread Pizza, Vegan Mediterranean Flatbread Pizza, Vegan Paella
+235,350.0,840.0,480.0,960.0,350.0, Mushroom Tacos, Vegan Tomato Bruschetta, Spinach and Mushroom Quesadillas, Vegan Meatballs with Marinara Sauce, Vegan Ravioli
+236,520.0,400.0,520.0,320.0,300.0, Vegan Mac and Cheese, Lentil Bolognese, Vegan Mac and Cheese, Quinoa Salad, Vegan Bao Buns
+237,400.0,560.0,760.0,450.0,400.0, Vegan Carbonara, Vegan Pancakes, Vegan Cinnamon Rolls, Ratatouille Tart, Vegan Jambalaya
+238,400.0,300.0,520.0,400.0,250.0, Lentil Bolognese, Veggie Spring Rolls, Vegan Mac and Cheese, Vegan Ramen, Vegan Nachos
+239,620.0,350.0,240.0,200.0,450.0, Bean Burritos, Mushroom Tacos, Vegan Spinach Dip with Pita Chips, Vegan Goulash, Mushroom Risotto
+240,320.0,350.0,560.0,380.0,250.0, Vegan Mediterranean Flatbread Pizza, Vegan BBQ Sandwich, Vegan Chickpea Salad Sandwich, Vegan Chocolate Chip Cookies, Cauliflower Buffalo Wings
+241,560.0,240.0,560.0,360.0,400.0, Vegan Pancakes, Vegan Spinach Dip with Pita Chips, Vegan Chickpea Salad Sandwich, Vegetable Tempura, Vegan Pastrami Reuben Sandwich
+242,400.0,760.0,560.0,350.0,400.0, Spaghetti Aglio e Olio, Vegan Indian Samosa Chaat, Vegan Chickpea Salad Sandwich, Vegan Ravioli, Vegan Tamales
+243,560.0,280.0,760.0,320.0,350.0, Vegan Chickpea Salad Sandwich, Vegan Lemon Poppy Seed Muffins, Vegan Cinnamon Rolls, Vegan Breaded Zucchini Sticks, Veggie Burger
+244,350.0,350.0,150.0,960.0,450.0, Veggie Burger, Vegan BBQ Sandwich, Vegan Banana Bread, Vegan Buffalo Cauliflower Pizza, Mushroom Risotto
+245,620.0,380.0,520.0,400.0,450.0, Bean Burritos, Vegan Chocolate Chip Cookies, Vegan Spinach and Artichoke Crostini, Spaghetti Aglio e Olio, Mushroom Risotto
+246,460.0,360.0,150.0,460.0,400.0, Veggie Tacos, Vegetable Tempura, Vegan Banana Bread, Veggie Tacos, Vegan Jambalaya
+247,300.0,400.0,520.0,450.0,350.0, Vegan Spaghetti Carbonara, Zucchini Fritters, Vegan Spinach and Artichoke Crostini, Chickpea Tacos, Vegan Tacos
+248,560.0,300.0,400.0,250.0,200.0, Vegan Pancakes, Veggie Spring Rolls, Zucchini Fritters, Vegan Nachos, Lentil and Vegetable Bolognese
+249,280.0,350.0,520.0,350.0,400.0, Vegan Lemon Poppy Seed Muffins, Mushroom Risotto Stuffed Peppers, Vegan Spinach and Artichoke Crostini, Vegan Ravioli, Vegan Paella
+250,400.0,520.0,720.0,760.0,350.0, Vegan Sausage and Peppers, Vegan Spinach and Artichoke Crostini, Vegan Black Bean Quesadillas, Vegan Cinnamon Rolls, Vegan Tacos
+251,400.0,400.0,720.0,300.0,350.0, Spaghetti Aglio e Olio, Vegan Pastrami Reuben Sandwich, Vegetable Samosas, Veggie Spring Rolls, Mushroom Tacos
+252,350.0,350.0,280.0,1000.0,400.0, Mushroom Tacos, Mushroom Tacos, Vegan Lemon Poppy Seed Muffins, Vegan Banana Pancakes, Lentil Bolognese
+253,300.0,200.0,840.0,960.0,400.0, Vegan Bao Buns, Vegan Goulash, Vegan Tomato Bruschetta, Vegan Meatballs with Marinara Sauce, Vegan Pastrami Reuben Sandwich
+254,320.0,450.0,760.0,240.0,400.0, Vegan Mediterranean Flatbread Pizza, Mushroom Risotto, Vegan Cinnamon Rolls, Vegan Spinach Dip with Pita Chips, Vegan Paella
+255,350.0,450.0,720.0,300.0,250.0, Vegan BBQ Sandwich, Tomato Basil Pasta, Vegan Black Bean Quesadillas, Veggie Fajitas, Cauliflower Buffalo Wings
+256,400.0,350.0,460.0,350.0,400.0, Spaghetti Aglio e Olio, Vegan Ravioli, Veggie Tacos, Mushroom Tacos, Vegan Tamales
+257,400.0,400.0,760.0,300.0,400.0, Vegan Pastrami Reuben Sandwich, Vegan Jambalaya, Vegan Indian Samosa Chaat, Vegan Bao Buns, Spaghetti Aglio e Olio
+258,400.0,350.0,640.0,200.0,300.0, Lentil Bolognese, Vegan BBQ Sandwich, Vegan Baked Falafel Bowl, Vegan Goulash, Vegan Gyros
+259,200.0,150.0,820.0,760.0,300.0, Vegan Goulash, Vegan Banana Bread, Vegan Lasagna, Vegan Cinnamon Rolls, Vegan Gyros
+260,520.0,200.0,760.0,760.0,350.0, Vegan Mac and Cheese, Vegan Goulash, Moroccan Couscous, Vegan Cinnamon Rolls, Veggie Burger
+261,280.0,450.0,320.0,240.0,200.0, Vegan Lemon Poppy Seed Muffins, Ratatouille Tart, Vegan Mediterranean Flatbread Pizza, Vegan Spinach Dip with Pita Chips, Vegan Goulash
+262,400.0,300.0,760.0,760.0,400.0, Vegan Tamales, Vegan Gyros, Vegan Indian Samosa Chaat, Moroccan Couscous, Vegan Sausage and Peppers
+263,450.0,250.0,380.0,460.0,400.0, Tomato Basil Pasta, Cauliflower Buffalo Wings, Vegan Chocolate Chip Cookies, Veggie Tacos, Lentil Bolognese
+264,350.0,800.0,840.0,440.0,400.0, Vegan Tacos, Vegan Mexican Churros, Vegan Tomato Bruschetta, Vegan Gyoza, Lentil Bolognese
+265,400.0,640.0,760.0,520.0,300.0, Vegan Carbonara, Vegan Baked Falafel Bowl, Moroccan Couscous, Vegan Mac and Cheese, Vegan Spaghetti Carbonara
+266,520.0,960.0,820.0,450.0,400.0, Vegan Mac and Cheese, Vegan Buffalo Cauliflower Pizza, Vegan Lasagna, Mushroom Risotto, Vegan Tamales
+267,400.0,200.0,320.0,200.0,250.0, Vegan Meatballs with Marinara Sauce, Vegan Goulash, Vegan Mediterranean Flatbread Pizza, Lentil and Vegetable Bolognese, Vegan Fettuccine Alfredo
+268,400.0,400.0,640.0,400.0,400.0, Vegan Lasagna, Vegan Ramen, Vegan Baked Falafel Bowl, Vegan Pastrami Reuben Sandwich, Vegan Carbonara
+269,350.0,520.0,240.0,300.0,200.0, Vegan Tacos, Vegan Spinach and Artichoke Crostini, Vegan Spinach Dip with Pita Chips, Vegan Gyros, Mexican Rice Bowl
+270,560.0,820.0,440.0,880.0,350.0, Vegan Chickpea Salad Sandwich, Vegan Lasagna, Vegan Gyoza, Jackfruit Tacos, Vegan Ravioli
+271,320.0,450.0,760.0,320.0,200.0, Quinoa Salad, Tomato Basil Pasta, Vegan Cinnamon Rolls, Quinoa Salad, Mexican Rice Bowl
+272,450.0,450.0,280.0,300.0,200.0, Ratatouille Tart, Tomato Basil Pasta, Vegan Lemon Poppy Seed Muffins, Vegan Gyros, Mexican Rice Bowl
+273,350.0,400.0,320.0,280.0,350.0, Mushroom Risotto Stuffed Peppers, Vegan Ramen, Vegan Raspberry Oat Bars, Vegan Lemon Poppy Seed Muffins, Vegan Tacos
+274,200.0,160.0,380.0,450.0,400.0, Vegan Goulash, Vegan Spinach and Mushroom Puff Pastry, Vegan Chocolate Chip Cookies, Ratatouille Tart, Vegan Paella
+275,480.0,880.0,320.0,760.0,400.0, Vegan Lentil Burgers, Jackfruit Tacos, Vegan Mediterranean Flatbread Pizza, Vegan Cinnamon Rolls, Sweet Potato and Black Bean Enchiladas
+276,350.0,360.0,160.0,400.0,300.0, Mushroom Risotto Stuffed Peppers, Vegetable Tempura, Vegan Spinach and Mushroom Puff Pastry, Vegan Sausage and Peppers, Jackfruit Tacos
+277,450.0,300.0,560.0,400.0,400.0, Ratatouille Tart, Jackfruit Tacos, Vegan Chickpea Salad Sandwich, Lentil Bolognese, Vegan Meatballs with Marinara Sauce
+278,320.0,520.0,320.0,400.0,250.0, Vegan Raspberry Oat Bars, Vegan Mac and Cheese, Vegan Mediterranean Flatbread Pizza, Vegan Sausage and Peppers, Cauliflower Buffalo Wings
+279,400.0,250.0,760.0,400.0,350.0, Spaghetti Aglio e Olio, Vegan Fettuccine Alfredo, Vegan Cinnamon Rolls, Vegan Pastrami Reuben Sandwich, Vegan Ravioli
+280,560.0,760.0,480.0,460.0,250.0, Vegan Pancakes, Vegan Indian Samosa Chaat, Spinach and Mushroom Quesadillas, Veggie Tacos, Cauliflower Buffalo Wings
+281,250.0,720.0,150.0,760.0,400.0, Vegan Fettuccine Alfredo, Vegan Black Bean Quesadillas, Vegan Banana Bread, Vegan Cinnamon Rolls, Vegan Sausage and Peppers
+282,450.0,350.0,720.0,480.0,300.0, Tomato Basil Pasta, Mushroom Tacos, Vegetable Samosas, Spinach and Mushroom Quesadillas, Vegan Spaghetti Carbonara
+283,480.0,320.0,200.0,300.0,400.0, Vegan Lentil Burgers, Quinoa Salad, Stuffed Grape Leaves, Veggie Fajitas, Vegan Pastrami Reuben Sandwich
+284,640.0,300.0,800.0,400.0,300.0, Vegan Baked Falafel Bowl, Vegan Gyros, Vegan Mexican Churros, Vegan Lasagna, Vegan Gyros
+285,350.0,400.0,620.0,400.0,400.0, Mushroom Tacos, Vegan Carbonara, Bean Burritos, Sweet Potato and Black Bean Enchiladas, Vegan Tamales
+286,350.0,800.0,460.0,150.0,350.0, Mushroom Tacos, Vegan Mexican Churros, Veggie Tacos, Vegan Banana Bread, Mushroom Risotto Stuffed Peppers
+287,400.0,250.0,800.0,400.0,200.0, Vegan Meatballs with Marinara Sauce, Cauliflower Buffalo Wings, Vegan Mexican Churros, Vegan Jambalaya, Mexican Rice Bowl
+288,320.0,800.0,300.0,400.0,300.0, Vegan Breaded Zucchini Sticks, Vegan Mexican Churros, Veggie Spring Rolls, Vegan Carbonara, Vegan Gyros
+289,360.0,350.0,480.0,250.0,400.0, Vegetable Tempura, Soba Noodle Stir-Fry, Spinach and Mushroom Quesadillas, Vegan Fettuccine Alfredo, Vegan Lasagna
+290,450.0,350.0,640.0,400.0,400.0, Mushroom Risotto, Vegan Tacos, Vegan Baked Falafel Bowl, Vegan Pastrami Reuben Sandwich, Vegan Carbonara
+291,400.0,300.0,480.0,760.0,350.0, Vegan Lasagna, Vegan Spaghetti Carbonara, Vegan Lentil Burgers, Moroccan Couscous, Vegan Ravioli
+292,300.0,240.0,400.0,450.0,400.0, Vegan Gyros, Vegan Spinach Dip with Pita Chips, Zucchini Fritters, Mushroom Risotto, Sweet Potato and Black Bean Enchiladas
+293,320.0,300.0,240.0,350.0,400.0, Quinoa Salad, Veggie Spring Rolls, Vegan Spinach Dip with Pita Chips, Mushroom Risotto Stuffed Peppers, Falafel Wrap
+294,200.0,960.0,520.0,720.0,400.0, Stuffed Grape Leaves, Vegan Meatballs with Marinara Sauce, Vegan Spinach and Artichoke Crostini, Vegetable Samosas, Vegan Lasagna
+295,300.0,400.0,820.0,740.0,250.0, Veggie Spring Rolls, Zucchini Fritters, Vegan Lasagna, Vegan Buffalo Cauliflower Wings, Cauliflower Buffalo Wings
+296,320.0,380.0,560.0,400.0,350.0, Vegan Mediterranean Flatbread Pizza, Vegan Chocolate Chip Cookies, Vegan Chickpea Salad Sandwich, Falafel Wrap, Soba Noodle Stir-Fry
+297,350.0,400.0,150.0,760.0,350.0, Vegan Ravioli, Vegan Meatballs with Marinara Sauce, Vegan Banana Bread, Moroccan Couscous, Vegan Ravioli
+298,300.0,300.0,200.0,400.0,250.0, Couscous Salad, Jackfruit Tacos, Stuffed Grape Leaves, Vegan Paella, Vegan Nachos
+299,320.0,1000.0,150.0,150.0,350.0, Vegan Raspberry Oat Bars, Vegan Banana Pancakes, Vegan Banana Bread, Vegan Banana Bread, Vegan Ravioli
+300,400.0,300.0,760.0,400.0,300.0, Zucchini Fritters, Jackfruit Tacos, Vegan Cinnamon Rolls, Vegan Tamales, Couscous Salad
+301,350.0,400.0,640.0,450.0,400.0, Mushroom Risotto Stuffed Peppers, Falafel Wrap, Vegan Baked Falafel Bowl, Tomato Basil Pasta, Falafel Wrap
+302,460.0,450.0,720.0,400.0,400.0, Veggie Tacos, Tomato Basil Pasta, Vegan Black Bean Quesadillas, Vegan Tamales, Vegan Tamales
+303,560.0,350.0,640.0,720.0,400.0, Vegan Pancakes, Mushroom Risotto Stuffed Peppers, Vegan Baked Falafel Bowl, Vegetable Samosas, Sweet Potato and Black Bean Enchiladas
+304,400.0,250.0,480.0,820.0,350.0, Vegan Sausage and Peppers, Vegan Fettuccine Alfredo, Spinach and Mushroom Quesadillas, Vegan Lasagna, Mushroom Risotto Stuffed Peppers
+305,350.0,350.0,360.0,400.0,250.0, Vegan Ravioli, Mushroom Risotto Stuffed Peppers, Vegetable Tempura, Vegan Tamales, Vegan Fettuccine Alfredo
+306,350.0,400.0,200.0,350.0,200.0, Mushroom Tacos, Vegan Lasagna, Stuffed Grape Leaves, Veggie Burger, Lentil and Vegetable Bolognese
+307,560.0,400.0,800.0,960.0,350.0, Vegan Chickpea Salad Sandwich, Vegan Tamales, Vegan Mexican Churros, Vegan Meatballs with Marinara Sauce, Soba Noodle Stir-Fry
+308,320.0,250.0,320.0,250.0,350.0, Vegan Raspberry Oat Bars, Vegan Fettuccine Alfredo, Vegan Breaded Zucchini Sticks, Vegan Fettuccine Alfredo, Vegan Tacos
+309,350.0,400.0,560.0,400.0,350.0, Soba Noodle Stir-Fry, Vegan Carbonara, Vegan Pancakes, Vegan Sausage and Peppers, Mushroom Tacos
+310,200.0,350.0,300.0,400.0,400.0, Mexican Rice Bowl, Veggie Burger, Veggie Spring Rolls, Sweet Potato and Black Bean Enchiladas, Vegan Lasagna
+311,300.0,920.0,480.0,720.0,400.0, Veggie Fajitas, Vegan Thai Spring Rolls, Spinach and Mushroom Quesadillas, Vegetable Samosas, Vegan Tamales
+312,200.0,300.0,280.0,960.0,450.0, Mexican Rice Bowl, Vegan Bao Buns, Vegan Lemon Poppy Seed Muffins, Vegan Meatballs with Marinara Sauce, Chickpea Tacos
+313,300.0,300.0,200.0,280.0,400.0, Couscous Salad, Couscous Salad, Stuffed Grape Leaves, Vegan Lemon Poppy Seed Muffins, Lentil Bolognese
+314,480.0,300.0,160.0,160.0,200.0, Spinach and Mushroom Quesadillas, Vegan Gyros, Vegan Spinach and Mushroom Puff Pastry, Vegan Spinach and Mushroom Puff Pastry, Mexican Rice Bowl
+315,320.0,400.0,720.0,400.0,300.0, Quinoa Salad, Vegan Sausage and Peppers, Vegan Black Bean Quesadillas, Vegan Jambalaya, Jackfruit Tacos
+316,400.0,400.0,520.0,350.0,400.0, Vegan Tamales, Vegan Carbonara, Vegan Mac and Cheese, Vegan Tacos, Vegan Sausage and Peppers
+317,520.0,740.0,760.0,400.0,300.0, Vegan Spinach and Artichoke Crostini, Vegan Buffalo Cauliflower Wings, Vegan Indian Samosa Chaat, Vegan Jambalaya, Vegan Gyros
+318,300.0,400.0,720.0,250.0,450.0, Veggie Fajitas, Vegan Tamales, Vegetable Samosas, Vegan Nachos, Ratatouille Tart
+319,240.0,920.0,320.0,640.0,350.0, Vegan Spinach Dip with Pita Chips, Vegan Thai Spring Rolls, Quinoa Salad, Vegan Baked Falafel Bowl, Vegan Ravioli
+320,200.0,450.0,760.0,350.0,250.0, Vegan Goulash, Tomato Basil Pasta, Vegan Cinnamon Rolls, Vegan Tacos, Cauliflower Buffalo Wings
+321,400.0,760.0,560.0,400.0,300.0, Vegan Sausage and Peppers, Vegan Cinnamon Rolls, Vegan Pancakes, Vegan Tamales, Vegan Gyros
+322,440.0,1000.0,840.0,400.0,400.0, Vegan Gyoza, Vegan Banana Pancakes, Vegan Tomato Bruschetta, Vegan Jambalaya, Vegan Jambalaya
+323,400.0,150.0,800.0,400.0,400.0, Vegan Lasagna, Vegan Banana Bread, Vegan Mexican Churros, Vegan Jambalaya, Vegan Ramen
+324,450.0,320.0,160.0,240.0,450.0, Chickpea Tacos, Vegan Raspberry Oat Bars, Vegan Spinach and Mushroom Puff Pastry, Vegan Spinach Dip with Pita Chips, Chickpea Tacos
+325,520.0,250.0,320.0,400.0,400.0, Vegan Spinach and Artichoke Crostini, Vegan Fettuccine Alfredo, Quinoa Salad, Spaghetti Aglio e Olio, Vegan Meatballs with Marinara Sauce
+326,450.0,350.0,280.0,360.0,450.0, Ratatouille Tart, Vegan Ravioli, Vegan Lemon Poppy Seed Muffins, Vegetable Tempura, Chickpea Tacos
+327,450.0,300.0,560.0,1000.0,350.0, Mushroom Risotto, Vegan Bao Buns, Vegan Chickpea Salad Sandwich, Vegan Banana Pancakes, Soba Noodle Stir-Fry
+328,250.0,920.0,240.0,960.0,300.0, Cauliflower Buffalo Wings, Vegan Thai Spring Rolls, Vegan Spinach Dip with Pita Chips, Vegan Meatballs with Marinara Sauce, Vegan Spaghetti Carbonara
+329,560.0,320.0,440.0,400.0,300.0, Vegan Chickpea Salad Sandwich, Quinoa Salad, Vegan Gyoza, Zucchini Fritters, Vegan Spaghetti Carbonara
+330,350.0,560.0,320.0,740.0,300.0, Mushroom Risotto Stuffed Peppers, Vegan Pancakes, Vegan Breaded Zucchini Sticks, Vegan Buffalo Cauliflower Wings, Couscous Salad
+331,560.0,320.0,720.0,320.0,250.0, Vegan Pancakes, Quinoa Salad, Vegan Black Bean Quesadillas, Quinoa Salad, Vegan Fettuccine Alfredo
+332,300.0,360.0,460.0,440.0,400.0, Veggie Spring Rolls, Vegetable Tempura, Veggie Tacos, Vegan Gyoza, Vegan Paella
+333,620.0,400.0,320.0,520.0,400.0, Bean Burritos, Vegan Pastrami Reuben Sandwich, Vegan Breaded Zucchini Sticks, Vegan Spinach and Artichoke Crostini, Lentil Bolognese
+334,160.0,740.0,320.0,350.0,400.0, Vegan Spinach and Mushroom Puff Pastry, Vegan Buffalo Cauliflower Wings, Vegan Mediterranean Flatbread Pizza, Mushroom Tacos, Vegan Ramen
+335,560.0,520.0,640.0,920.0,450.0, Vegan Chickpea Salad Sandwich, Vegan Mac and Cheese, Vegan Baked Falafel Bowl, Vegan Thai Spring Rolls, Mushroom Risotto
+336,250.0,840.0,820.0,560.0,300.0, Cauliflower Buffalo Wings, Vegan Tomato Bruschetta, Vegan Lasagna, Vegan Chickpea Salad Sandwich, Vegan Bao Buns
+337,300.0,350.0,720.0,450.0,400.0, Veggie Fajitas, Vegan Ravioli, Vegetable Samosas, Ratatouille Tart, Lentil Bolognese
+338,320.0,350.0,280.0,960.0,350.0, Vegan Breaded Zucchini Sticks, Vegan Ravioli, Vegan Lemon Poppy Seed Muffins, Vegan Buffalo Cauliflower Pizza, Mushroom Risotto Stuffed Peppers
+339,400.0,720.0,620.0,450.0,400.0, Spaghetti Aglio e Olio, Vegan Black Bean Quesadillas, Bean Burritos, Ratatouille Tart, Vegan Jambalaya
+340,450.0,400.0,520.0,400.0,300.0, Mushroom Risotto, Vegan Meatballs with Marinara Sauce, Vegan Spinach and Artichoke Crostini, Zucchini Fritters, Vegan Bao Buns
+341,480.0,450.0,560.0,760.0,400.0, Vegan Lentil Burgers, Mushroom Risotto, Vegan Chickpea Salad Sandwich, Vegan Indian Samosa Chaat, Vegan Carbonara
+342,400.0,400.0,360.0,400.0,350.0, Vegan Carbonara, Lentil Bolognese, Vegetable Tempura, Vegan Sausage and Peppers, Veggie Burger
+343,200.0,560.0,460.0,200.0,350.0, Lentil and Vegetable Bolognese, Vegan Pancakes, Veggie Tacos, Vegan Goulash, Vegan Ravioli
+344,150.0,320.0,560.0,400.0,400.0, Vegan Banana Bread, Vegan Raspberry Oat Bars, Vegan Chickpea Salad Sandwich, Zucchini Fritters, Vegan Tamales
+345,300.0,300.0,320.0,350.0,200.0, Vegan Spaghetti Carbonara, Vegan Spaghetti Carbonara, Quinoa Salad, Vegan Ravioli, Vegan Goulash
+346,400.0,300.0,520.0,480.0,200.0, Zucchini Fritters, Vegan Spaghetti Carbonara, Vegan Mac and Cheese, Vegan Lentil Burgers, Lentil and Vegetable Bolognese
+347,300.0,250.0,620.0,350.0,250.0, Vegan Spaghetti Carbonara, Vegan Nachos, Bean Burritos, Mushroom Tacos, Vegan Fettuccine Alfredo
+348,350.0,400.0,560.0,320.0,350.0, Vegan BBQ Sandwich, Zucchini Fritters, Vegan Pancakes, Vegan Raspberry Oat Bars, Vegan BBQ Sandwich
+349,400.0,1000.0,480.0,300.0,350.0, Lentil Bolognese, Vegan Banana Pancakes, Vegan Lentil Burgers, Vegan Gyros, Vegan Ravioli
+350,350.0,280.0,320.0,880.0,300.0, Soba Noodle Stir-Fry, Vegan Lemon Poppy Seed Muffins, Quinoa Salad, Jackfruit Tacos, Couscous Salad
+351,150.0,460.0,720.0,350.0,450.0, Vegan Banana Bread, Veggie Tacos, Vegetable Samosas, Mushroom Risotto Stuffed Peppers, Ratatouille Tart
+352,560.0,960.0,520.0,250.0,350.0, Vegan Pancakes, Vegan Meatballs with Marinara Sauce, Vegan Mac and Cheese, Cauliflower Buffalo Wings, Soba Noodle Stir-Fry
+353,400.0,450.0,320.0,250.0,200.0, Zucchini Fritters, Chickpea Tacos, Vegan Raspberry Oat Bars, Vegan Nachos, Vegan Goulash
+354,320.0,300.0,800.0,350.0,400.0, Quinoa Salad, Vegan Spaghetti Carbonara, Vegan Mexican Churros, Vegan BBQ Sandwich, Vegan Tamales
+355,150.0,150.0,840.0,200.0,300.0, Vegan Banana Bread, Vegan Banana Bread, Vegan Tomato Bruschetta, Stuffed Grape Leaves, Vegan Gyros
+356,400.0,1000.0,320.0,400.0,450.0, Vegan Lasagna, Vegan Banana Pancakes, Quinoa Salad, Vegan Tamales, Chickpea Tacos
+357,480.0,920.0,520.0,200.0,250.0, Vegan Lentil Burgers, Vegan Thai Spring Rolls, Vegan Spinach and Artichoke Crostini, Stuffed Grape Leaves, Cauliflower Buffalo Wings
+358,200.0,300.0,620.0,400.0,200.0, Vegan Goulash, Veggie Fajitas, Bean Burritos, Spaghetti Aglio e Olio, Mexican Rice Bowl
+359,350.0,740.0,380.0,720.0,200.0, Mushroom Risotto Stuffed Peppers, Vegan Buffalo Cauliflower Wings, Vegan Chocolate Chip Cookies, Vegan Black Bean Quesadillas, Vegan Goulash
+360,300.0,250.0,380.0,720.0,400.0, Vegan Spaghetti Carbonara, Cauliflower Buffalo Wings, Vegan Chocolate Chip Cookies, Vegan Black Bean Quesadillas, Sweet Potato and Black Bean Enchiladas
+361,350.0,560.0,150.0,300.0,350.0, Mushroom Tacos, Vegan Pancakes, Vegan Banana Bread, Jackfruit Tacos, Vegan Ravioli
+362,200.0,350.0,240.0,200.0,400.0, Vegan Goulash, Mushroom Tacos, Vegan Spinach Dip with Pita Chips, Vegan Goulash, Vegan Paella
+363,300.0,150.0,150.0,160.0,300.0, Vegan Bao Buns, Vegan Banana Bread, Vegan Banana Bread, Vegan Spinach and Mushroom Puff Pastry, Vegan Gyros
+364,320.0,300.0,320.0,150.0,350.0, Vegan Breaded Zucchini Sticks, Vegan Spaghetti Carbonara, Vegan Breaded Zucchini Sticks, Vegan Banana Bread, Vegan Tacos
+365,250.0,200.0,760.0,840.0,400.0, Cauliflower Buffalo Wings, Vegan Goulash, Vegan Indian Samosa Chaat, Vegan Tomato Bruschetta, Vegan Lasagna

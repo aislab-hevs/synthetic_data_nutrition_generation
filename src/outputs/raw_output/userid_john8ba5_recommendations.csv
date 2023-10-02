@@ -1,0 +1,958 @@
+,breakfast_calories,morning snacks_calories,afternoon snacks_calories,lunch_calories,dinner_calories,breakfast,morning snacks,afternoon snacks,lunch,dinner
+1,250.0,80.0,220.0,120.0,250.0, Veggie Omelette, Apple with Cinnamon, Mango Coconut Chia Pudding," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Ratatouille tart - 250 calories per portion, 6 portions, contains gluten (France)
+"
+2,250.0,80.0,200.0,120.0,350.0, Veggie Omelette, Fruit Salad, Pumpkin Bread," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Sweet Potato and Black Bean Enchiladas
+3,200.0,80.0,150.0,120.0,400.0, Caprese Avocado Toast, Baked Apple Chips, Tomato and Mozzarella Skewers," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Greek Moussaka
+4,250.0,100.0,150.0,120.0,250.0, Raspberry Chia Jam Toast, Kiwi and Strawberry Smoothie, Baked Vegetable Samosas," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Spinach and feta stuffed phyllo rolls - 250 calories per portion, 4 portions, contains gluten and dairy (Greece)
+"
+5,350.0,100.0,160.0,120.0,400.0, Vegan Breakfast Tacos, Caprese Skewers, Roasted Eggplant Dip," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Caprese Omelette - 400kcals per portion, 2 portions, contains dairy (Italy)
+"
+6,350.0,80.0,220.0,120.0,350.0, Cranberry Orange Muffins, Fruit Salad, Guacamole with Tortilla Chips," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Vegetable Korma - 350 calories/portion, 4 portions, contains nuts (India)
+"
+7,200.0,100.0,120.0,120.0,400.0, Roasted Vegetable Breakfast Tacos, Cucumber and Hummus Rolls, Pumpkin Hummus with Carrot Sticks," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Vegetable Lo Mein - 400 calories/portion, 4 portions, contains gluten and soy (China)
+"
+8,200.0,90.0,180.0,120.0,350.0, Papaya Boat with Lime, Rice Paper Rolls, Thai Fresh Spring Rolls," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Spinach and mushroom quesadillas - 350 calories per portion, 4 portions, contains dairy and gluten (Mexico)
+"
+9,250.0,80.0,150.0,120.0,250.0, Mozzarella and Tomato Bruschetta, Apple with Cinnamon, Zucchini Fritters," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Ratatouille tart - 250 calories per portion, 6 portions, contains gluten (France)
+"
+10,350.0,70.0,160.0,120.0,300.0, Lemon Poppy Seed Pancakes, Fresh Fruit Salad, Baked Tofu Fingers," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Black Bean Enchiladas - 300 calories/portion, 4 portions, Origin"
+11,200.0,90.0,300.0,120.0,250.0, Veggie Breakfast Fritters, Vegetarian Spring Rolls, Roasted Vegetable Pizza," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Veggie fajitas - 250 calories per portion, 4 portions, contains gluten (Mexico)
+"
+12,400.0,100.0,140.0,120.0,400.0, Tofu Benedict, Cucumber and Tomato Salad, Greek Yogurt with Apple and Cinnamon," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Lentil Curry
+13,250.0,100.0,120.0,120.0,350.0, Tomato Basil Bruschetta, Edamame, Peanut Butter Energy Balls," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Mediterranean Couscous - 350 calories/portion, 4 portions, Origin"
+14,400.0,90.0,100.0,120.0,350.0, Aloo Paratha (Potato Stuffed Flatbread), Vegetarian Spring Rolls, Chocolate Covered Strawberries," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Mexican Stuffed Sweet Potatoes - 350 calories/portion, 4 portions, contains black beans (Mexico)
+"
+15,350.0,100.0,200.0,120.0,380.0, Tomato and Basil Bruschetta Scramble, Som Tam (Papaya Salad), Baked Falafel," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Ratatouille Pasta - 380kcals per portion, 4 portions
+"
+16,300.0,100.0,220.0,120.0,250.0, Vegetable Frittata, Rice Paper Spring Rolls, Guacamole with Tortilla Chips," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Ratatouille Stuffed Portobello Mushrooms
+17,400.0,80.0,180.0,120.0,350.0, Vegan Breakfast Hash, Energy Balls, Greek Tzatziki with Pita Bread," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Mexican Rice Stuffed Peppers - 350 calories/portion, 4 portions, Origin"
+18,350.0,100.0,120.0,120.0,150.0, Vegan Protein Pancakes, Cucumber and Tomato Salad, Cucumber Avocado Rolls," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Spinach and Feta Stuffed Mushrooms
+19,400.0,100.0,100.0,120.0,350.0, Veggie Breakfast Pizza, Cucumber and Tomato Salad, Stuffed Mushrooms," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Vegetable korma with basmati rice - 350 calories per portion, 4 portions, contains nuts (India)
+"
+20,250.0,100.0,280.0,120.0,380.0, Raspberry Chia Pudding, Cucumber and Hummus Rolls, Veggie Sausage Rolls," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Quinoa Salad with Avocado and Black Beans - 380kcals per portion, 4 portions, contains legumes
+"
+21,200.0,80.0,200.0,120.0,350.0, Apple Cinnamon Porridge, Fruit Salad, Pumpkin Bread," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Stuffed Bell Peppers with Rice and Beans
+22,200.0,100.0,200.0,120.0,240.0, Vegan Banana Bread, Fruit Salad, Mini Quiche," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Caprese Stuffed Avocado - 240kcals per portion, 4 portions, contains dairy (Italy)
+"
+23,200.0,80.0,280.0,120.0,250.0, Oatmeal with Berries, Apple with Cinnamon, Vegan Nachos," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Greek Spinach Pie (Spanakopita) - 250 calories/portion, 6 portions, Origin"
+24,300.0,80.0,200.0,120.0,400.0, Avocado Toast, Kale Chips, Banana Bread," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Mexican Quinoa Stuffed Zucchini - 400 calories/portion, 4 portions, Origin"
+25,300.0,100.0,120.0,120.0,350.0, Chocolate Chia Protein Pudding, Cucumber and Tomato Salad, Cheese Stuffed Jalapenos," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Veggie Spring Rolls
+26,350.0,100.0,160.0,120.0,350.0, Cranberry Orange Muffins, Frozen Grapes, Roasted Sweet Potato Slices," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Veggie Pad See Ew - 350 calories/portion, 4 portions, Origin"
+27,200.0,80.0,260.0,120.0,200.0, Oatmeal with Berries, Fresh Squeezed Orange Juice, Greek Stuffed Mushrooms," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Spinach and Feta Stuffed Peppers - 200 calories/portion, 4 portions, Origin"
+28,400.0,100.0,200.0,120.0,370.0, Veggie Breakfast Skillet, Frozen Grapes, Hummus and Veggie Wrap," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Quinoa-Stuffed Butternut Squash - 370kcals per portion, 4 portions
+"
+29,350.0,100.0,280.0,120.0,250.0, Broccoli and Cheese Frittata, Rice Paper Spring Rolls, Apple and Cinnamon Muffins," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Greek Spinach Pie (Spanakopita) - 250 calories/portion, 6 portions, Origin"
+30,250.0,80.0,100.0,120.0,180.0, Middle Eastern Shakshuka, Apple with Cinnamon, Caprese Skewers," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Ratatouille
+31,300.0,80.0,70.0,120.0,220.0, Cheesy Grits, Baked Apple Chips, Veggie Spring Rolls," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Greek Salad - 220kcals per portion, 4 portions, contains dairy
+"
+32,300.0,100.0,100.0,120.0,400.0, Quinoa Breakfast Bowl, Greek Salad Skewers, Apple Chips," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Veggie Paella - 400 calories/portion, 4 portions, contains saffron (Spain)
+"
+33,200.0,100.0,120.0,120.0,400.0, Spinach and Feta Stuffed Portobello Mushrooms, Roasted Beetroot Chips, Dark Chocolate Energy Balls," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Coconut curry noodles - 400 calories per portion, 4 portions, contains gluten
+"
+34,350.0,100.0,250.0,120.0,390.0, Broccoli and Cheese Frittata, Guacamole Stuffed Cherry Tomatoes, Veggie Quesadillas," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Lentil Shepherd's Pie - 390kcals per portion, 4 portions, contains legumes (UK)
+"
+35,300.0,100.0,250.0,120.0,250.0, Vegan Berry Protein Smoothie Bowl, Cucumber and Hummus Rolls, Guacamole with Tortilla Chips," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Chickpea Curry - 250 calories/portion, 4 portions, contains garlic and onions (India)
+"
+36,250.0,90.0,150.0,120.0,350.0, Vegan Tofu Benedict, Rice Paper Rolls, Greek Yogurt Parfait," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Chinese Egg Fried Rice - 350 calories/portion, 4 portions, contains eggs and gluten (China)
+"
+37,400.0,90.0,160.0,120.0,300.0, Spinach and Feta Quiche, Rice Paper Rolls, Baked Tofu Fingers," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Veggie stir-fried noodles - 300 calories per portion, 4 portions, contains gluten (China)
+"
+38,300.0,100.0,300.0,120.0,400.0, Cheesy Grits, Carrot Sticks with Ranch Dip, Veggie Quesadilla," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Vegetarian Enchiladas
+39,300.0,100.0,200.0,120.0,200.0, Greek Yogurt with Honey and Pistachios, Caprese Skewers, Coconut Chia Pudding," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Tomato and mozzarella tart - 200 calories per portion, 4 portions, contains gluten and dairy (Italy)
+"
+40,400.0,100.0,220.0,120.0,350.0, Vegetarian Quiche Lorraine, Kiwi and Strawberry Smoothie, Vegan Banana Pancakes," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Mexican Quinoa Casserole
+41,300.0,100.0,150.0,120.0,450.0, Vegetable Frittata, Caprese Skewers, Veggie Sushi Rolls," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Mediterranean Roasted Vegetable Quiche - 450 calories/portion, 4 portions, contains gluten and dairy (Various)
+"
+42,250.0,100.0,200.0,120.0,200.0, Middle Eastern Shakshuka, Watermelon Fruit Pizza, Hummus and Veggie Wrap," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Caprese Skewers - 200 calories/portion, 4 portions, contains dairy (Italy)
+"
+43,300.0,100.0,100.0,120.0,400.0, Chocolate Chia Protein Pudding, Carrot Sticks with Ranch Dip, Baked Zucchini Fries," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Mushroom risotto - 400 calories per portion, 4 portions, contains dairy (Italy)
+"
+44,400.0,100.0,90.0,120.0,350.0, Veggie Sausage Breakfast Sandwich, Edamame, Cucumber Sandwiches," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Vegetable Dumplings
+45,300.0,100.0,150.0,120.0,400.0, Tropical Mango Chia Pudding, Greek Salad Skewers, Veggie Kabobs," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Eggplant Involtini - 400 calories/portion, 4 portions, Origin"
+46,300.0,100.0,80.0,120.0,300.0, Mexican Quinoa Breakfast Bowl, Berry Chia Detox Water, Stuffed Mini Peppers," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Greek Spanakopita Triangles
+47,400.0,100.0,220.0,120.0,350.0, Vegetarian Breakfast Casserole, Cucumber Sandwich, Roasted Red Pepper and Goat Cheese Crostini," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Chickpea and Sweet Potato Curry
+48,250.0,100.0,230.0,120.0,300.0, Vegan Protein Pancakes, Caprese Skewers, Sweet Potato and Black Bean Quesadillas," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Greek Stuffed Tomatoes - 300 calories/portion, 4 portions, Origin"
+49,300.0,100.0,220.0,120.0,400.0, Vegan Blueberry Muffins, Corn on the Cob, Cheese and Spinach Triangles," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Veggie Bibimbap
+50,300.0,80.0,100.0,120.0,400.0, Cheesy Grits, Hard-Boiled Eggs, Grilled Halloumi Skewers," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Vegetable Udon Stir-Fry
+51,200.0,100.0,100.0,120.0,320.0, Greek Yogurt Pancakes, Caprese Skewers, Tzatziki with Pita Bread," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Lentil Soup - 320kcals per portion, 4 portions, gluten-free (Various)
+"
+52,300.0,80.0,230.0,120.0,300.0, Chia Seed Pancakes, Fresh Squeezed Orange Juice, Sweet Potato and Black Bean Quesadillas," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Butternut Squash Risotto - 300 calories/portion, 4 portions, Origin"
+53,250.0,100.0,200.0,120.0,250.0, Greek Feta and Tomato Toast, Cucumber Sandwich, Pumpkin Bread," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Falafel salad with tahini dressing - 250 calories per portion, 4 portions, contains gluten (Middle East)
+
+Please note that these calorie estimates are approximate and can vary based on specific ingredients and portion sizes used"
+54,250.0,100.0,180.0,120.0,350.0, Vegan Tofu Benedict, Vegetable Crudité with Hummus, Veggie Stuffed Pita Bread," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Veggie enchiladas - 350 calories per portion, 4 portions, contains gluten (Mexico)
+"
+55,400.0,100.0,180.0,120.0,300.0, French Toast, Vegetable Crudité with Hummus, Stuffed Jalapeno Poppers," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Vegetable Fajitas - 300 calories/portion, 4 portions, contains gluten (Mexico)
+"
+56,200.0,100.0,140.0,120.0,350.0, Quinoa Veggie Breakfast Skillet, Roasted Beetroot Chips, Blueberry Oat Bars," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Sweet Potato, Black Bean, and Spinach Quesadillas - 350 calories/portion, 4 portions, contains gluten (Mexico)
+"
+57,350.0,90.0,190.0,120.0,300.0, Maple Pecan Granola with Yogurt, Rice Paper Rolls, Mini Falafel Bites," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Mediterranean Stuffed Eggplant - 300 calories/portion, 2 portions, Origin"
+58,200.0,80.0,180.0,120.0,200.0, Mexican Black Bean Breakfast Wrap, Cheesy Popcorn, Thai Fresh Spring Rolls," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Stuffed Zucchini Boats
+59,300.0,100.0,180.0,120.0,450.0, Greek Yogurt with Honey and Pistachios, Carrot Sticks with Ranch Dip, Stuffed Bell Peppers," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Baked Falafel Bowl - 450 calories/portion, 4 portions, contains gluten (Middle East)
+"
+60,400.0,100.0,180.0,120.0,300.0, Veggie Breakfast Burrito, Cucumber and Hummus Rolls, Quinoa Stuffed Mushrooms," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Cauliflower Fried Rice - 300 calories/portion, 4 portions, Origin"
+61,400.0,100.0,250.0,120.0,350.0, Sourdough Biscuits and Mushroom Gravy, Cucumber and Tomato Salad, Quinoa Stuffed Bell Peppers," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Vegetable Korma - 350kcals per portion, 4 portions, contains nuts (India)
+"
+62,300.0,80.0,200.0,120.0,350.0, Overnight Apple Pie Chia Pudding, Mango with Chili Powder, Avocado Toast," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Mexican Rice Casserole - 350 calories/portion, 4 portions, contains gluten (Mexico)
+"
+63,350.0,100.0,140.0,120.0,200.0, Cranberry Orange Muffins, Kiwi and Strawberry Smoothie, Greek Yogurt with Apple and Cinnamon," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Stuffed Portobello Mushrooms - 200 calories/portion, 2 portions, Origin"
+64,300.0,100.0,100.0,120.0,400.0, Raspberry Peach Chia Pudding, Som Tam (Papaya Salad), Grilled Vegetable Skewers," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Spicy Thai Noodle Soup
+65,250.0,100.0,160.0,120.0,300.0, Cucumber Sandwich, Roasted Beetroot Chips, Hummus with Veggie Sticks," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Mexican Quinoa Salad
+66,400.0,100.0,130.0,120.0,300.0, Vegan Chocolate Waffles, Caprese Skewers, Greek Yogurt with Cinnamon and Honey," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Lentil and vegetable shepherd's pie - 300 calories per portion, 4 portions, none
+"
+67,400.0,80.0,80.0,120.0,400.0, Veggie Breakfast Pizza Rolls, Baked Apple Chips, Asian Cucumber Salad," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Veggie Fajita Bowls - 400 calories/portion, 4 portions, Origin"
+68,250.0,80.0,280.0,120.0,300.0, Whole Wheat Veggie Breakfast Wrap, Avocado Deviled Eggs, Quinoa Stuffed Bell Peppers," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Spinach and Ricotta Stuffed Shells - 300 calories/portion, 4 portions, contains gluten and dairy (Italy)
+
+"
+69,350.0,90.0,200.0,120.0,400.0, Veggie Omelette, Vegetarian Spring Rolls, Apple Cinnamon Muffins," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Vegetarian Gyro
+70,250.0,80.0,250.0,120.0,400.0, Vegan Tofu Benedict, Fruit Salad, Sweet Potato Fries," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Coconut curry noodles - 400 calories per portion, 4 portions, contains gluten
+"
+71,400.0,100.0,150.0,120.0,400.0, Veggie Breakfast Skillet, Baked Apple Chips, Veggie Sushi Rolls," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Vegetable Udon Stir-Fry
+72,300.0,100.0,180.0,120.0,300.0, Pancakes with Maple Syrup, Watermelon Fruit Pizza, Spinach and Feta Pastry Triangles," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Baked Ziti - 300 calories/portion, 4 portions, Origin"
+73,200.0,80.0,200.0,120.0,480.0, Veggie Breakfast Couscous, Mango with Chili Powder, Pumpkin Bread," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Vegetarian Pad Thai - 480kcals per portion, 2 portions, contains peanuts (Thailand)
+"
+74,250.0,80.0,160.0,120.0,400.0, Raspberry Chia Pudding, Hard-Boiled Eggs, Roasted Eggplant Dip," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Mushroom Risotto - 400 calories/portion, 4 portions, Origin"
+75,350.0,100.0,220.0,120.0,450.0, Vegan Breakfast Burrito, Baked Apple Chips, Veggie Mediterranean Flatbread," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Thai Pineapple Fried Rice
+76,250.0,100.0,230.0,120.0,350.0, Tropical Green Smoothie, Baked Apple Chips, Sweet Potato and Black Bean Quesadillas," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Quinoa-Stuffed Bell Peppers - 350 calories/portion, 4 portions, contains nuts (Various)
+"
+77,250.0,80.0,250.0,120.0,300.0, Spinach and Mushroom Oatmeal, Fruit Salad, Greek Yogurt with Granola," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Mediterranean Pasta Salad - 300 calories/portion, 4 portions, Origin"
+78,250.0,100.0,150.0,120.0,300.0, Vegan Breakfast Enchiladas, Baked Apple Chips, Roasted Chickpeas," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Stuffed Bell Peppers with Quinoa and Black Beans - 300 calories/portion, 4 portions, contains gluten (Various)
+
+"
+79,250.0,100.0,250.0,120.0,400.0, Whole Wheat Veggie Breakfast Wrap, Frozen Grapes, Mini Pizzas," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Eggplant Involtini - 400 calories/portion, 4 portions, Origin"
+80,350.0,80.0,220.0,120.0,200.0, Mushroom and Spinach Breakfast Quesadilla, Fresh Squeezed Orange Juice, Roasted Red Pepper and Feta Crostini," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Cauliflower Fried Rice - 200 calories/portion, 4 portions, contains soy (China)
+"
+81,300.0,100.0,340.0,120.0,450.0, Hash Brown Casserole, Caprese Skewers, Greek Feta and Olive Bread," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Roasted Vegetable and Goat Cheese Tart - 450 calories/portion, 4 portions, contains gluten and dairy (Various)
+"
+82,250.0,80.0,200.0,120.0,290.0, Vegan Protein Pancakes, Mango with Chili Powder, Baked Zucchini Fries," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Black Bean Soup - 290kcals per portion, 4 portions, contains legumes (Various)
+
+"
+83,150.0,100.0,100.0,120.0,320.0, Fruit Salad, Quinoa Energy Bites, Greek Cucumber Dip with Pita Bread," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Eggplant Curry - 320kcals per portion, 4 portions, contains spices (India)
+"
+84,250.0,80.0,220.0,120.0,300.0, Banana Bread, Apple with Cinnamon, Tomato and Mozzarella Stuffed Portobello Mushrooms," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Lentil Sloppy Joes
+85,350.0,80.0,90.0,120.0,450.0, Mushroom and Spinach Breakfast Quesadilla, Hard-Boiled Eggs, Cucumber Sandwiches," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Spinach and Ricotta Stuffed Manicotti - 450 calories/portion, 4 portions, contains gluten and dairy (Italy)
+"
+86,300.0,100.0,160.0,120.0,380.0, Banana Nut Smoothie Bowl, Cucumber Sandwich, Greek Yogurt with Chocolate Chips," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Ratatouille Pasta - 380kcals per portion, 4 portions
+"
+87,250.0,100.0,100.0,120.0,400.0, Overnight Oats, Kiwi and Strawberry Smoothie, Apple Chips," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Mushroom and spinach lasagna - 400 calories per portion, 4 portions, contains gluten and dairy (Italy)
+"
+88,200.0,80.0,300.0,120.0,200.0, Mini Vegetable Quiche, Hard-Boiled Eggs, Vegetable Pizza Rolls," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Greek-style stuffed zucchini - 200 calories per portion, 4 portions, none (Greece)
+"
+89,250.0,100.0,90.0,120.0,400.0, Vegan Breakfast Sushi, Watermelon Fruit Pizza, Vegan Energy Balls," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Veggie Sushi Bowl - 400 calories/portion, 2 portions, Origin"
+90,400.0,100.0,150.0,120.0,300.0, Aloo Paratha (Potato Stuffed Flatbread), Cucumber Sandwiches, Greek Yogurt with Fresh Berries," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Greek Spinach and Feta Pie - 300 calories/portion, 4 portions, contains gluten and dairy (Greece)
+"
+91,300.0,80.0,120.0,120.0,300.0, Veggie Bagel Sandwich, Energy Balls, Dark Chocolate Energy Balls," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Vegetable Fajitas - 300 calories/portion, 4 portions, contains gluten (Mexico)
+"
+92,400.0,100.0,130.0,120.0,400.0, Vegetarian Quiche Lorraine, Caprese Skewers, Greek Yogurt with Cinnamon and Honey," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Mushroom and spinach lasagna - 400 calories per portion, 4 portions, contains gluten and dairy (Italy)
+"
+93,250.0,100.0,280.0,120.0,400.0, Quinoa Porridge, Baked Apple Chips, Veggie Sausage Rolls," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Portobello Mushroom Burger - 400 calories/portion, 2 portions, Origin"
+94,250.0,80.0,100.0,120.0,400.0, Banana Bread, Mango with Chili Powder, Guacamole Deviled Eggs," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Vegetable Udon Stir-Fry
+95,350.0,100.0,120.0,120.0,250.0, Mushroom and Spinach Breakfast Quesadilla, Tomato Basil Bruschetta, Spinach Balls," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Ratatouille tart - 250 calories per portion, 6 portions, contains gluten (France)
+"
+96,400.0,80.0,200.0,120.0,420.0, Mushroom Breakfast Burrito, Kale Chips, Veggie Sausage and Pepper Skewers," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Vegetable Lo Mein - 420kcals per portion, 2 portions, contains gluten (China)
+"
+97,250.0,100.0,200.0,120.0,350.0, Vegan Breakfast Sausage, Corn on the Cob, Baked Falafel," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Lentil Tacos - 350kcals per portion, 4 portions, contains legumes (Mexico)
+"
+98,350.0,80.0,160.0,120.0,180.0, Vegan Breakfast Tacos, Baked Apple Chips, Greek Yogurt with Honey and Nuts," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Greek salad - 180 calories per portion, 4 portions, contains dairy (Greece)
+"
+99,180.0,100.0,180.0,120.0,350.0, Overnight Chia Pudding, Caprese Skewers, Lentil Salad," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Eggplant Parmesan - 350 calories per portion, 4 portions, contains gluten and dairy (Italy)
+"
+100,300.0,80.0,180.0,120.0,350.0, Veggie Breakfast Quesadilla, Fruit Salad, Veggie Sausage Rolls," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Sweet potato and black bean tacos - 350 calories per portion, 4 portions, contains gluten
+"
+101,250.0,100.0,200.0,120.0,250.0, Vegan Breakfast Sushi Rolls, Roasted Beetroot Chips, Stuffed Eggplant," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Ratatouille tart - 250 calories per portion, 6 portions, contains gluten (France)
+"
+102,200.0,80.0,160.0,120.0,450.0, Zucchini Bread, Fruit Salad, Spinach and Artichoke Dip," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Tofu Pad Thai
+103,350.0,100.0,150.0,120.0,380.0, Coconut Milk Rice Pudding, Carrot Sticks with Ranch Dip, Edamame Salad," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Vegetable Curry with Chickpeas - 380kcals per portion, 4 portions, contains legumes
+"
+104,250.0,100.0,200.0,120.0,450.0, Vegan Sausage and Biscuits, Guacamole Stuffed Cherry Tomatoes, Almond Butter Banana Toast," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Butternut Squash and Sage Pasta - 450 calories/portion, 4 portions, contains gluten (Italy)
+"
+105,300.0,100.0,180.0,120.0,350.0, Vegetable Upma, Som Tam (Papaya Salad), Veggie Pancakes with Yogurt Dip," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Veggie Paella - 350 calories/portion, 4 portions, Origin"
+106,200.0,80.0,180.0,120.0,250.0, Caprese Avocado Toast, Fruit Salad, Quinoa Stuffed Mushrooms," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Caprese Stuffed Zucchini - 250 calories/portion, 4 portions, Origin"
+107,300.0,100.0,100.0,120.0,350.0, Tomato and Basil Omelette, Roasted Chickpeas, Grilled Halloumi Skewers," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Veggie Spring Rolls
+108,350.0,100.0,150.0,120.0,400.0, Veggie Omelette, Baked Apple Chips, Veggie Chips," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Butternut squash ravioli with brown butter sauce - 400 calories per portion, 4 portions, contains gluten and dairy (Italy)
+"
+109,250.0,80.0,200.0,120.0,300.0, Vegan Breakfast Quesadillas, Kale Chips, Baked Falafel," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Greek Gigantes Plaki - 300 calories/portion, 4 portions, contains garlic (Greece)
+"
+110,200.0,90.0,200.0,120.0,180.0, Tomato Basil Tofu Scramble, Fruit Salad, Avocado Toast," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Caprese stuffed portobello mushrooms - 180 calories per portion, 4 portions, contains dairy (Italy)
+"
+111,400.0,100.0,240.0,120.0,300.0, Vegetarian Breakfast Strata, Kiwi and Strawberry Smoothie, Spinach and Artichoke Dip," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Spinach and Feta Stuffed Phyllo Triangles - 300 calories/portion, 4 portions, contains gluten and dairy (Greece)
+"
+112,400.0,100.0,300.0,120.0,350.0, Vegan Breakfast Hash, Guacamole Stuffed Cherry Tomatoes, Veggie Sushi Bowls," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Mushroom and goat cheese flatbread - 350 calories per portion, 4 portions, contains gluten and dairy
+"
+113,250.0,100.0,120.0,120.0,350.0, Vegan Protein Pancakes, Baked Apple Chips, Tomato Mozzarella Skewers," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Roasted Vegetable Pasta
+114,300.0,80.0,80.0,120.0,180.0, Vegan French Toast, Fruit Salad, Stuffed Mini Peppers," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Caprese Salad - 180kcals per portion, 4 portions, contains dairy (Italy)
+"
+115,300.0,90.0,150.0,120.0,350.0, Veggie Breakfast Quesadilla, Fruit Salad, Roasted Brussels Sprouts," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Black Bean and Corn Salad - 350 calories/portion, 4 portions, Origin"
+116,250.0,100.0,250.0,120.0,350.0, Greek Yogurt Parfait Bowl, Caprese Skewers, Tomato Basil Bruschetta Pizza," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Quinoa Salad - 350 calories/portion, 4 portions, Origin"
+117,250.0,100.0,180.0,120.0,250.0, Vegan Breakfast Strata, Guacamole Stuffed Cherry Tomatoes, Oatmeal Raisin Cookies," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Mexican Corn Salad - 250 calories/portion, 4 portions, contains cilantro (Mexico)
+"
+118,300.0,100.0,100.0,120.0,450.0, Sweet Potato Hash Browns, Rice Paper Spring Rolls, Tzatziki with Pita Bread," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Spinach and Mushroom Lasagna - 450 calories/portion, 4 portions, contains gluten (Italy)
+"
+119,200.0,100.0,170.0,120.0,350.0, Quinoa Breakfast Burrito, Roasted Chickpeas, Vegetable Sushi Rolls," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Spaghetti Aglio e Olio (Garlic and Oil Pasta)
+120,400.0,100.0,210.0,120.0,350.0, Veggie Breakfast Pizza Rolls, Caprese Skewers, Veggie Pizza Bagels," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Eggplant Parmesan
+121,400.0,80.0,250.0,120.0,250.0, Spinach and Feta Quiche, Apple with Cinnamon, Mini Pizzas," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Mediterranean Quinoa Salad
+122,300.0,100.0,120.0,120.0,550.0, Quinoa Breakfast Bowl, Caprese Skewers, Greek Yogurt with Berries," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Thai Green Curry Noodle Soup
+123,250.0,100.0,150.0,120.0,250.0, Vegetable Scramble, Berry Chia Detox Water, Cauliflower Buffalo Wings," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Falafel salad with tahini dressing - 250 calories per portion, 4 portions, contains gluten (Middle East)
+"
+124,350.0,100.0,200.0,120.0,180.0, Bread Upma, Som Tam (Papaya Salad), Almond Butter Banana Toast," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Caprese Salad - 180kcals per portion, 4 portions, contains dairy (Italy)
+"
+125,300.0,100.0,300.0,120.0,350.0, Tropical Mango Chia Pudding, Caprese Skewers, Veggie Sushi Bowls," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Veggie Enchiladas - 350 calories/portion, 4 portions, contains gluten (Mexico)
+
+"
+126,350.0,100.0,140.0,120.0,500.0, Cranberry Orange Muffins, Cucumber Sandwiches, Greek Yogurt Bark," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Vegetable Laksa Curry
+127,200.0,80.0,280.0,120.0,290.0, Vegetable Frittata, Energy Balls, Quinoa Stuffed Bell Peppers," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Black Bean Soup - 290kcals per portion, 4 portions, contains legumes (Various)
+
+"
+128,350.0,100.0,120.0,120.0,420.0, Quinoa Breakfast Bake, Quinoa Energy Bites, Greek Feta Dip with Veggies," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Quinoa and Vegetable Stir-Fry - 420kcals per portion, 4 portions
+"
+129,400.0,100.0,190.0,120.0,400.0, Aloo Paratha (Potato Stuffed Flatbread), Edamame, Mini Falafel Bites," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Portobello Mushroom Burger - 400 calories/portion, 2 portions, Origin"
+130,250.0,80.0,220.0,120.0,500.0, Smoothie Bowl, Hard-Boiled Eggs, Cheese and Spinach Triangles," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Vegetable Massaman Curry
+131,250.0,70.0,120.0,120.0,450.0, Cucumber Sandwich, Fresh Fruit Salad, Yogurt Covered Strawberries," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Tofu Tikka Masala
+132,200.0,100.0,250.0,120.0,200.0, Mediterranean Vegetable Omelette, Baked Apple Chips, Quinoa Stuffed Bell Peppers," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Miso Soup - 200 calories/portion, 2 portions, Origin"
+133,300.0,100.0,120.0,120.0,400.0, Apple Cinnamon Porridge, Edamame, Dark Chocolate Energy Balls," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Quinoa and black bean burgers - 400 calories per portion, 4 portions, contains gluten
+"
+134,300.0,80.0,140.0,120.0,450.0, Cheesy Grits, Baked Apple Chips, Roasted Red Pepper Dip with Pita Chips," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Tofu Tikka Masala
+135,250.0,100.0,80.0,120.0,450.0, Greek Feta and Tomato Toast, Quinoa Energy Bites, Vegetable Soup," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Vegetable Korma
+136,300.0,80.0,200.0,120.0,280.0, Vegan Chocolate Chip Pancakes, Apple with Cinnamon, Greek Yogurt with Mango and Pistachios," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Lentil Curry - 280kcals per portion, 4 portions, contains legumes (India)
+"
+137,350.0,80.0,300.0,120.0,200.0, Chocolate Chip Muffins, Hard-Boiled Eggs, Roasted Vegetable Wrap," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Cauliflower Fried Rice - 200 calories/portion, 4 portions, contains soy (China)
+"
+138,300.0,100.0,200.0,120.0,300.0, Chocolate Peanut Butter Overnight Oats, Cucumber and Tomato Salad, Chickpea Salad," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Mediterranean Pasta Salad - 300 calories/portion, 4 portions, Origin"
+139,200.0,100.0,280.0,120.0,250.0, Veggie Breakfast Fritters, Cucumber Sandwiches, Sweet Potato and Black Bean Quesadillas," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Mexican Corn Salad - 250 calories/portion, 4 portions, contains cilantro (Mexico)
+"
+140,300.0,80.0,200.0,120.0,350.0, Apple Cinnamon French Toast Casserole, Apple with Cinnamon, Spinach Dip," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Vegetable Korma - 350kcals per portion, 4 portions, contains nuts (India)
+"
+141,400.0,80.0,200.0,120.0,400.0, Almond Croissant, Baked Apple Chips, Egg Salad Lettuce Wraps," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Veggie Pot Pie
+142,300.0,100.0,280.0,120.0,200.0, Cheesy Grits, Tomato Basil Bruschetta, Veggie Flatbread Pizza," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Tofu and Broccoli Stir-Fry - 200 calories/portion, 4 portions, contains soy (China)
+"
+143,150.0,80.0,220.0,120.0,250.0, Fruit Salad, Fruit Salad, Veggie-Stuffed Pita Pockets," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Veggie Pho with Tofu - 250 calories/portion, 4 portions, Origin"
+144,200.0,100.0,200.0,120.0,410.0, Apple Cinnamon Porridge, Quinoa Energy Bites, Banana Bread," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Eggplant Rollatini - 410kcals per portion, 4 portions, contains dairy (Italy)
+"
+145,200.0,80.0,150.0,120.0,400.0, Blueberry Muffins, Apple with Cinnamon, Bruschetta," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Thai Green Curry with Vegetables - 400 calories/portion, 4 portions, contains garlic (Thailand)
+"
+146,350.0,90.0,120.0,120.0,310.0, Ricotta Pancakes, Fruit Salad, Tomato Mozzarella Skewers," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Spinach and Feta Stuffed Peppers - 310kcals per portion, 4 portions, contains dairy
+"
+147,200.0,80.0,260.0,120.0,300.0, Veggie Breakfast Couscous, Kale Chips, Black Bean Nachos," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Mediterranean Veggie Pizza
+148,300.0,100.0,100.0,120.0,400.0, Tomato Basil Avocado Toast, Tomato Basil Bruschetta, Zucchini Tomato Bites," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Veggie Pad Thai - 400 calories/portion, 4 portions, Origin"
+149,350.0,100.0,130.0,120.0,390.0, Tomato and Basil Bruschetta Scramble, Carrot Sticks with Ranch Dip, Veggie Taco Cups," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Eggplant Lasagna - 390kcals per portion, 4 portions, contains dairy (Italy)
+"
+150,350.0,100.0,220.0,120.0,350.0, Coconut Chia Pudding, Caprese Skewers, Cauliflower and Chickpea Salad," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Lentil Tacos - 350kcals per portion, 4 portions, contains legumes (Mexico)
+"
+151,400.0,100.0,80.0,120.0,300.0, Veggie English Breakfast, Kiwi and Strawberry Smoothie, Baked Kale Chips," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Lentil and vegetable shepherd's pie - 300 calories per portion, 4 portions, none
+"
+152,250.0,80.0,120.0,120.0,250.0, Cucumber Sandwich, Baked Apple Chips, Tomato Mozzarella Skewers," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Ratatouille tart - 250 calories per portion, 6 portions, contains gluten (France)
+"
+153,300.0,70.0,80.0,120.0,350.0, Blueberry Banana Breakfast Bars, Fresh Fruit Salad, Greek Salad Skewers," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Vegetarian Bibimbap - 350 calories/portion, 4 portions, Origin"
+154,150.0,100.0,230.0,120.0,350.0, Fruit Smoothie, Rice Cake with Hummus and Cucumber, Sweet Potato and Black Bean Quesadillas," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Sweet Potato, Black Bean, and Spinach Quesadillas - 350 calories/portion, 4 portions, contains gluten (Mexico)
+"
+155,450.0,100.0,150.0,120.0,340.0, Nutella Stuffed French Toast, Roasted Beetroot Chips, Bruschetta," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Caprese Stuffed Portobello Mushrooms - 340kcals per portion, 2 portions, contains dairy
+"
+156,250.0,100.0,250.0,120.0,400.0, Vegan Pancake Skewers, Guacamole Stuffed Cherry Tomatoes, Peanut Butter Banana Roll-Ups," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Eggplant and Zucchini Gratin - 400 calories/portion, 4 portions, Origin"
+157,300.0,80.0,220.0,120.0,350.0, Veggie Breakfast Quesadilla, Kale Chips, Tomato and Mozzarella Stuffed Portobello Mushrooms," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Greek Pasta Salad - 350 calories/portion, 4 portions, Origin"
+158,300.0,100.0,180.0,120.0,400.0, Country Style Potatoes with Veggies, Watermelon Fruit Pizza, Homemade Veggie Pizza Rolls," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Quinoa Stuffed Mushrooms with Feta - 400 calories/portion, 4 portions, Origin"
+159,150.0,80.0,250.0,120.0,300.0, Chia Pudding, Mango with Chili Powder, Tomato Basil Bruschetta Pizza," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Spinach and feta phyllo triangles - 300 calories per portion, 4 portions, contains gluten and dairy (Greece)
+"
+160,200.0,100.0,180.0,120.0,200.0, Poha (Flattened Rice), Guacamole Stuffed Cherry Tomatoes, Grilled Halloumi Skewers," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Greek stuffed bell peppers - 200 calories per portion, 4 portions, none (Greece)
+"
+161,350.0,80.0,250.0,120.0,250.0, Chocolate Peanut Butter Overnight Oats, Hard-Boiled Eggs, Veggie Quesadillas," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Falafel salad with tahini dressing - 250 calories per portion, 4 portions, contains gluten (Middle East)
+"
+162,200.0,100.0,70.0,120.0,250.0, Tomato Basil Tofu Scramble, Cucumber and Hummus Rolls, Greek Cucumber Cups," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Vegetable Curry Puffs - 250 calories/portion, 4 portions, contains gluten (Various)
+"
+163,400.0,80.0,80.0,120.0,450.0, Veggie Breakfast Burrito, Mango with Chili Powder, Veggie Noodle Salad," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Vegetarian Paella - 450kcals per portion, 4 portions (Spain)
+"
+164,300.0,100.0,180.0,120.0,400.0, Quinoa Breakfast Bowl, Tomato Basil Bruschetta, Stuffed Jalapeno Poppers," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Caprese tortellini skillet - 400 calories per portion, 4 portions, contains gluten and dairy (Italy)
+"
+165,400.0,100.0,120.0,120.0,200.0, Veggie English Breakfast, Cucumber Sandwiches, Tomato Bruschetta," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Indian Vegetable Samosas - 200 calories/portion, 4 portions, contains gluten (India)
+"
+166,350.0,100.0,120.0,120.0,150.0, Mushroom and Spinach Breakfast Quesadilla, Cucumber and Tomato Salad, Hummus with Carrot Sticks," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Greek Salad with Tofu - 150 calories/portion, 4 portions, contains soy (Greece)
+"
+167,250.0,80.0,140.0,120.0,400.0, Vegan Pancake Skewers, Baked Apple Chips, Greek Yogurt with Apple and Cinnamon," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Spinach and Ricotta Stuffed Shells
+168,400.0,100.0,140.0,120.0,450.0, Nutella Banana Croissant, Cucumber Sandwich, Greek Yogurt with Apple and Cinnamon," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Tofu Pad Thai
+169,350.0,80.0,160.0,120.0,350.0, Banana Chia Pancakes, Fresh Squeezed Orange Juice, Roasted Sweet Potato Slices," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Eggplant and Chickpea Curry - 350 calories/portion, 4 portions, Origin"
+170,400.0,90.0,180.0,120.0,300.0, Sourdough Biscuits and Mushroom Gravy, Rice Paper Rolls, Greek Yogurt Parfait," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Mexican Quinoa Bowl - 300 calories/portion, 4 portions, contains cilantro (Mexico)
+"
+171,250.0,100.0,150.0,120.0,200.0, Vegan Pancake Skewers, Carrot Sticks with Ranch Dip, Bruschetta with Mozzarella," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Ratatouille Stuffed Zucchini - 200 calories/portion, 4 portions, Origin"
+172,200.0,100.0,180.0,120.0,250.0, Caprese Avocado Toast, Caprese Skewers, Greek Olive Breadsticks," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Vegetable Curry Puffs - 250 calories/portion, 4 portions, contains gluten (Various)
+"
+173,150.0,90.0,200.0,120.0,390.0, Fruit Salad, Vegetarian Spring Rolls, Quinoa Salad," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Spinach and Ricotta Stuffed Shells with Marinara Sauce - 390kcals per portion, 4 portions, contains dairy
+"
+174,350.0,100.0,150.0,120.0,300.0, Ricotta Pancakes, Roasted Beetroot Chips, Baked Parmesan Zucchini Fries," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Veggie Chili - 300 calories/portion, 4 portions, Origin"
+175,200.0,100.0,250.0,120.0,300.0, Oatmeal with Berries, Rice Cake with Hummus and Cucumber, Avocado Chocolate Mousse," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Butternut Squash Risotto - 300 calories/portion, 4 portions, Origin"
+176,300.0,100.0,180.0,120.0,400.0, Baked Egg in Avocado, Cucumber and Hummus Rolls, Baba Ganoush with Pita Chips," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Quinoa and black bean burgers - 400 calories per portion, 4 portions, contains gluten
+"
+177,300.0,100.0,150.0,120.0,400.0, Mushroom and Tomato Omelette, Greek Salad Skewers, Vegetable Frittata," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Quinoa Stuffed Mushrooms with Feta - 400 calories/portion, 4 portions, Origin"
+178,300.0,80.0,220.0,120.0,200.0, Vegan Breakfast Burrito, Cheesy Popcorn, Strawberry Banana Smoothie," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Lentil Soup - 200 calories/portion, 6 portions, Origin"
+179,400.0,80.0,180.0,120.0,280.0, Tofu Benedict, Hard-Boiled Eggs, Thai Fresh Spring Rolls," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Lentil Curry - 280kcals per portion, 4 portions, contains legumes (India)
+"
+180,400.0,80.0,140.0,120.0,400.0, Almond Croissant, Baked Apple Chips, Roasted Red Pepper Dip with Pita Chips," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Mexican Quinoa Stuffed Zucchini - 400 calories/portion, 4 portions, Origin"
+181,150.0,70.0,40.0,120.0,250.0, Chia Pudding, Fresh Fruit Salad, Cucumber Roll-Ups," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Ratatouille tart - 250 calories per portion, 6 portions, contains gluten (France)
+"
+182,250.0,100.0,180.0,120.0,350.0, Quinoa Porridge, Rice Paper Spring Rolls, Quinoa Stuffed Mushrooms," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Roasted Vegetable Quinoa Bowls
+183,350.0,80.0,120.0,120.0,300.0, Mushroom and Spinach Breakfast Quesadilla, Cheesy Popcorn, Mediterranean Salad," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Zucchini noodles with pesto - 300 calories per portion, 4 portions, contains nuts (Italy)
+"
+184,400.0,100.0,200.0,120.0,400.0, Vegetarian Breakfast Strata, Quinoa Energy Bites, Veggie Sushi Burrito," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Veggie Pot Pie
+185,250.0,100.0,100.0,120.0,450.0, Veggie Omelette, Cucumber and Hummus Rolls, Tzatziki with Pita Bread," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Veggie Pad See Ew
+186,250.0,80.0,200.0,120.0,250.0, Vegan Breakfast BLT Sandwich, Hard-Boiled Eggs, Baked Falafel," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Eggplant and Tomato Gratin
+187,200.0,100.0,180.0,120.0,300.0, Mini Vegetable Quiche, Frozen Grapes, Baked Mozzarella Sticks," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Lentil and vegetable shepherd's pie - 300 calories per portion, 4 portions, none
+"
+188,350.0,80.0,130.0,120.0,400.0, Veggie Breakfast Wrap, Cheesy Popcorn, Greek Yogurt with Cinnamon and Honey," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Lentil Shepherd's Pie - 400 calories/portion, 4 portions, contains gluten (United Kingdom)
+"
+189,150.0,100.0,100.0,120.0,400.0, Fruit Salad, Tomato Basil Bruschetta, Fruit Salad," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Quinoa Stuffed Mushrooms with Feta - 400 calories/portion, 4 portions, Origin"
+190,250.0,90.0,220.0,120.0,180.0, Greek Yogurt with Honey and Nuts, Rice Paper Rolls, Quinoa and Black Bean Salad," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Caprese Salad - 180kcals per portion, 4 portions, contains dairy (Italy)
+"
+191,300.0,100.0,100.0,120.0,300.0, Veggie Bagel Sandwich, Rice Cake with Hummus and Cucumber, Bruschetta," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Vegetable Fajitas
+192,350.0,100.0,180.0,120.0,350.0, Banana Chia Pancakes, Cucumber and Tomato Salad, Black Bean Brownies," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Veggie enchiladas - 350 calories per portion, 4 portions, contains gluten (Mexico)
+"
+193,300.0,100.0,250.0,120.0,350.0, Overnight Apple Pie Chia Pudding, Berry Chia Detox Water, Avocado Chocolate Mousse," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Mushroom and Pea Risotto
+194,400.0,100.0,100.0,120.0,280.0, Aloo Paratha (Potato Stuffed Flatbread), Quinoa Energy Bites, Stuffed Mushrooms," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Lentil Curry - 280kcals per portion, 4 portions, contains legumes (India)
+"
+195,200.0,100.0,120.0,120.0,200.0, Peanut Butter and Banana Smoothie, Cucumber and Tomato Salad, Yogurt Covered Strawberries," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Roasted Vegetable Frittata - 200 calories/portion, 4 portions, Origin"
+196,400.0,70.0,120.0,120.0,480.0, Strawberry Banana Pancakes, Fresh Fruit Salad, Greek Yogurt Dip with Veggies," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Vegetarian Pad Thai - 480kcals per portion, 2 portions, contains peanuts (Thailand)
+"
+197,250.0,100.0,220.0,120.0,400.0, Quinoa Porridge, Baked Apple Chips, Sesame Ginger Edamame," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Coconut curry noodles - 400 calories per portion, 4 portions, contains gluten
+"
+198,350.0,80.0,150.0,120.0,350.0, Chocolate Banana Smoothie Bowl, Energy Balls, Black Bean and Corn Salsa," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Quinoa Stuffed Bell Peppers - 350 calories/portion, 4 portions, Origin"
+199,300.0,100.0,120.0,120.0,400.0, Vegan Smoothie Bowl, Roasted Chickpeas, Greek Yogurt Dip with Veggies," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Vegan Lentil Bolognese - 400 calories/portion, 4 portions, contains gluten (Italy)
+"
+200,300.0,100.0,150.0,120.0,300.0, Overnight Cherry Almond Oats, Som Tam (Papaya Salad), Roasted Chickpeas," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Caprese Stuffed Portobello Mushrooms
+201,350.0,80.0,200.0,120.0,300.0, Huevos Rancheros, Avocado Deviled Eggs, Quinoa Salad," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Mexican Rice and Beans - 300 calories/portion, 4 portions, contains cilantro (Mexico)
+"
+202,300.0,100.0,100.0,120.0,200.0, Vegetable Frittata, Vegetable Crudité with Hummus, Apple Chips," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Stuffed grape leaves (Dolmas) - 200 calories per portion, 4 portions, contains nuts (Middle East)
+"
+203,250.0,100.0,120.0,120.0,220.0, Vegan Protein Pancakes, Watermelon Fruit Pizza, Mediterranean Salad," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Greek Lemon Potatoes - 220kcals per portion, 4 portions
+"
+204,400.0,100.0,250.0,120.0,250.0, Spinach and Feta Quiche, Cucumber Sandwiches, Thai Peanut Noodle Salad," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Stuffed Zucchini Boats - 250 calories/portion, 4 portions, contains dairy (Italy)
+"
+205,350.0,100.0,250.0,120.0,350.0, Bread Upma, Edamame, Tomato Basil Bruschetta Pizza," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Eggplant and Chickpea Curry - 350 calories/portion, 4 portions, Origin"
+206,400.0,90.0,280.0,120.0,330.0, Vegan Chocolate Waffles, Rice Paper Rolls, Cheese and Tomato Nachos," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Lentil Burgers - 330kcals per portion, 4 portions, contains legumes
+"
+207,300.0,100.0,70.0,120.0,300.0, Savory Oatmeal with Vegetables, Tomato Basil Bruschetta, Stuffed Cucumbers," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Chana masala - 300 calories per portion, 4 portions, contains nuts (India)
+"
+208,350.0,100.0,280.0,120.0,250.0, Baked Oatmeal, Quinoa Energy Bites, Greek Spinach and Cheese Rolls," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Vegetable Stir-Fry
+209,200.0,100.0,100.0,120.0,180.0, Poha (Flattened Rice), Som Tam (Papaya Salad), Baked Kale Chips," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Greek Roasted Vegetables - 180kcals per portion, 4 portions
+"
+210,350.0,100.0,150.0,120.0,300.0, Bread Upma, Guacamole Stuffed Cherry Tomatoes, Carrot Hummus with Pita Chips," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Zucchini Noodles with Pesto - 300 calories/portion, 4 portions, Origin"
+211,200.0,100.0,120.0,120.0,450.0, Banana Pancakes, Caprese Skewers, Cheese Stuffed Jalapenos," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Baked Falafel Bowl - 450 calories/portion, 4 portions, contains gluten (Middle East)
+"
+212,250.0,70.0,120.0,120.0,200.0, Vegan Breakfast Sushi Rolls, Fresh Fruit Salad, Greek Yogurt Fruit Dip," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Lentil Soup - 200 calories/portion, 6 portions, Origin"
+213,350.0,100.0,200.0,120.0,350.0, Zucchini and Parmesan Muffins, Baked Apple Chips, Tofu Vegetable Skewers," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Vegetable korma with basmati rice - 350 calories per portion, 4 portions, contains nuts (India)
+"
+214,250.0,100.0,220.0,120.0,300.0, Raspberry Chia Pudding, Guacamole Stuffed Cherry Tomatoes, Sesame Ginger Edamame," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Zucchini Noodles with Pesto - 300 calories/portion, 4 portions, Origin"
+215,250.0,100.0,250.0,120.0,350.0, Vegan Breakfast Sushi, Vegetable Crudité with Hummus, Sweet Potato Fries," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Stuffed Bell Peppers with Rice and Beans
+216,300.0,100.0,160.0,120.0,350.0, Vegan Blueberry Muffins, Berry Chia Detox Water, Roasted Eggplant Dip," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Roasted Vegetable Quinoa Bowls
+217,250.0,80.0,100.0,120.0,300.0, Quinoa Porridge, Kale Chips, Greek Cucumber Dip with Pita Bread," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Caprese Stuffed Portobello Mushrooms
+218,300.0,100.0,340.0,120.0,450.0, Tropical Mango Chia Pudding, Guacamole Stuffed Cherry Tomatoes, Greek Feta and Olive Bread," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Spinach and Ricotta Stuffed Manicotti - 450 calories/portion, 4 portions, contains gluten and dairy (Italy)
+"
+219,250.0,90.0,80.0,120.0,300.0, Ragi (Finger Millet) Pancakes, Vegetarian Spring Rolls, Stuffed Dates with Almond Butter," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Mediterranean Vegetable Tart
+220,250.0,100.0,220.0,120.0,360.0, Vegan Breakfast Quesadillas, Caprese Skewers, Vegan Banana Pancakes," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Lentil Sloppy Joes - 360kcals per portion, 4 portions, contains legumes (USA)
+"
+221,300.0,80.0,220.0,120.0,420.0, Country Style Potatoes with Veggies, Apple with Cinnamon, Indian Samosa Chaat," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Caprese Pasta Salad - 420kcals per portion, 2 portions, contains dairy (Italy)
+"
+222,400.0,100.0,200.0,120.0,200.0, Mushroom Breakfast Burrito, Kiwi and Strawberry Smoothie, Almond Butter Banana Toast," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Baked Falafel - 200 calories/portion, 4 portions, Origin"
+223,250.0,100.0,180.0,120.0,400.0, Vegan Banana Muffins, Baked Apple Chips, Quinoa Stuffed Mushrooms," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Greek Veggie Burger - 400 calories/portion, 2 portions, Origin"
+224,350.0,100.0,180.0,120.0,310.0, Coconut Milk Rice Pudding, Kiwi and Strawberry Smoothie, Greek Yogurt Parfait," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Spinach and Feta Stuffed Peppers - 310kcals per portion, 4 portions, contains dairy
+"
+225,150.0,100.0,180.0,120.0,250.0, Fruit Salad, Cucumber Sandwiches, Stuffed Jalapeno Poppers," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Vegetable Curry Puffs - 250 calories/portion, 4 portions, contains gluten (Various)
+"
+226,300.0,80.0,280.0,120.0,350.0, Vegetable Upma, Energy Balls, Veggie and Cream Cheese Roll-ups," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Mushroom and goat cheese flatbread - 350 calories per portion, 4 portions, contains gluten and dairy
+"
+227,350.0,100.0,200.0,120.0,390.0, Chocolate Chip Muffins, Som Tam (Papaya Salad), Mini Bagel Pizzas," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Eggplant Lasagna - 390kcals per portion, 4 portions, contains dairy (Italy)
+"
+228,200.0,100.0,100.0,120.0,290.0, Spinach and Mushroom Breakfast Tacos, Cucumber Sandwiches, Greek Cucumber Dip with Pita Bread," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Spinach and Ricotta Stuffed Tomatoes - 290kcals per portion, 4 portions, contains dairy
+"
+229,150.0,100.0,200.0,120.0,430.0, Fruit Salad, Cucumber and Tomato Salad, Ratatouille," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Caprese Stuffed Garlic Bread - 430kcals per portion, 2 portions, contains dairy (Italy)
+"
+230,300.0,100.0,80.0,120.0,380.0, Feta and Spinach Muffins, Cucumber and Hummus Rolls, Zucchini Chips," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Quinoa-Stuffed Bell Peppers with Cheese - 380kcals per portion, 4 portions, contains dairy
+"
+231,200.0,80.0,220.0,120.0,210.0, Quinoa Breakfast Skillet, Fruit Salad, Caprese Bruschetta," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Greek Briam - 210kcals per portion, 4 portions
+"
+232,200.0,100.0,100.0,120.0,400.0, Vegan Blueberry Pancakes, Cucumber Sandwich, Caprese Skewers," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Greek Moussaka - 400 calories/portion, 4 portions, contains dairy (Greece)
+"
+233,350.0,100.0,300.0,120.0,300.0, Broccoli and Cheese Frittata, Berry Chia Detox Water, Veggie Nachos," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Aloo Gobi - 300 calories/portion, 4 portions, contains turmeric (India)
+"
+234,200.0,100.0,150.0,120.0,200.0, Spinach and Mushroom Breakfast Tacos, Watermelon Fruit Pizza, Bruschetta," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Avocado and Tomato Salad - 200 calories/portion, 2 portions, Origin"
+235,200.0,80.0,180.0,120.0,400.0, Quinoa Breakfast Skillet, Baked Apple Chips, Oatmeal Raisin Cookies," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Mushroom Risotto - 400 calories/portion, 4 portions, Origin"
+236,300.0,100.0,150.0,120.0,300.0, Vegan French Toast, Rice Cake with Hummus and Cucumber, Cauliflower Buffalo Wings," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Mediterranean Vegetable Tart
+237,250.0,100.0,190.0,120.0,350.0, Sourdough Toast with Almond Butter, Greek Salad Skewers, Roasted Beet Hummus with Crackers," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Mexican Quinoa Salad - 350 calories/portion, 4 portions, contains cilantro (Mexico)
+"
+238,300.0,100.0,200.0,120.0,400.0, Idli and Sambar, Carrot Sticks with Ranch Dip, Coconut Chia Pudding," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Vegetarian Lasagna
+239,300.0,100.0,90.0,120.0,210.0, Vegan Berry Protein Smoothie Bowl, Berry Chia Detox Water, Watermelon Feta Bites," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Greek Stuffed Tomatoes - 210kcals per portion, 4 portions
+"
+240,300.0,100.0,200.0,120.0,280.0, Overnight Cherry Almond Oats, Cucumber and Tomato Salad, Tomato and Avocado Bruschetta," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Greek Tomato Fritters - 280kcals per portion, 4 portions
+"
+241,350.0,100.0,100.0,120.0,380.0, Lemon Poppy Seed Pancakes, Cucumber Sandwiches, Tomato Basil Bruschetta with Feta," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Ratatouille Pasta - 380kcals per portion, 4 portions
+"
+242,200.0,100.0,190.0,120.0,300.0, Avocado Toast, Cucumber and Tomato Salad, Greek Yogurt with Honey and Nuts," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Vegetable Curry with Coconut Milk - 300 calories/portion, 4 portions, contains nuts (India)
+
+"
+243,350.0,100.0,150.0,120.0,300.0, Cranberry Orange Muffins, Berry Chia Detox Water, Veggie Kabobs," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Greek Chickpea Patties - 300 calories/portion, 4 portions, contains gluten (Greece)
+"
+244,250.0,100.0,70.0,120.0,250.0, Vegan Tofu Benedict, Greek Salad Skewers, Stuffed Cucumbers," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Falafel salad with tahini dressing - 250 calories per portion, 4 portions, contains gluten (Middle East)
+
+Please note that these calorie estimates are approximate and can vary based on specific ingredients and portion sizes used"
+245,250.0,100.0,160.0,120.0,350.0, Greek Yogurt with Honey and Nuts, Tomato Basil Bruschetta, Greek Yogurt with Honey and Nuts," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Mexican Quinoa Casserole
+246,250.0,100.0,120.0,120.0,350.0, Overnight Chia Oats, Carrot Sticks with Ranch Dip, Vegan Chia Seed Pudding," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Spinach and Artichoke Dip Stuffed Bread - 350 calories/portion, 4 portions, contains gluten and dairy (United States)
+"
+247,350.0,100.0,220.0,120.0,260.0, Apple Cinnamon Muffins, Quinoa Energy Bites, Strawberry Banana Smoothie," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Greek Spanakopita - 260kcals per portion, 4 portions, contains dairy (Greece)
+"
+248,300.0,80.0,300.0,120.0,250.0, Apple Cinnamon French Toast Casserole, Cheesy Popcorn, Veggie Sushi Bowls," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Ratatouille tart - 250 calories per portion, 6 portions, contains gluten (France)
+"
+249,300.0,80.0,240.0,120.0,400.0, Blueberry Coconut Overnight Oats, Cheesy Popcorn, Chickpea and Vegetable Curry," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Vegetable Biryani - 400 calories/portion, 4 portions, contains nuts (India)
+"
+250,300.0,80.0,250.0,120.0,260.0, Chia Seed Smoothie, Kale Chips, Quinoa Stuffed Bell Peppers," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Greek Style Lemon Potatoes - 260kcals per portion, 4 portions
+"
+251,200.0,80.0,120.0,120.0,300.0, Vegan Pumpkin Pancakes, Cheesy Popcorn, Cheese and Spinach Stuffed Mushrooms," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Falafel with Tzatziki Sauce
+252,250.0,100.0,100.0,120.0,200.0, Cheesy Spinach Pita Pocket, Caprese Skewers, Guacamole Deviled Eggs," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Caprese Stuffed Avocado - 200 calories/portion, 4 portions, contains dairy (Italy)
+"
+253,200.0,100.0,150.0,120.0,400.0, Vegetable Frittata, Som Tam (Papaya Salad), Roasted Brussels Sprouts," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Vegetarian Lasagna
+254,400.0,100.0,120.0,120.0,400.0, Veggie Breakfast Burrito, Tomato Basil Bruschetta, Greek Yogurt with Berries," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Sweet potato gnocchi with sage butter - 400 calories per portion, 4 portions, contains gluten and dairy (Italy)
+"
+255,350.0,70.0,220.0,120.0,250.0, Spinach and Goat Cheese Omelette, Fresh Fruit Salad, Sesame Ginger Edamame," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Spinach and Goat Cheese Stuffed Portobello Mushrooms
+256,300.0,90.0,200.0,120.0,340.0, Raspberry Peach Chia Pudding, Vegetarian Spring Rolls, Mango Salsa with Chips," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Caprese Stuffed Portobello Mushrooms - 340kcals per portion, 2 portions, contains dairy
+"
+257,150.0,80.0,180.0,120.0,280.0, Scrambled Tofu, Cheesy Popcorn, Grilled Halloumi Skewers," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Lentil Curry - 280kcals per portion, 4 portions, contains legumes (India)
+"
+258,200.0,100.0,150.0,120.0,300.0, Apple Cinnamon Porridge, Rice Paper Spring Rolls, Edamame Salad," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Falafel with Tzatziki Sauce
+259,300.0,100.0,180.0,120.0,250.0, Tropical Mango Chia Pudding, Cucumber Sandwiches, Veggie Sausage Rolls," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Stuffed bell peppers - 250 calories per portion, 4 portions, none
+"
+260,300.0,100.0,180.0,120.0,320.0, Baked Egg in Avocado, Caprese Skewers, Blueberry Muffins," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Eggplant Curry - 320kcals per portion, 4 portions, contains spices (India)
+"
+261,400.0,100.0,120.0,120.0,200.0, Mexican Sopes, Rice Cake with Hummus and Cucumber, Cheese Stuffed Jalapenos," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Indian Vegetable Samosas - 200 calories/portion, 4 portions, contains gluten (India)
+"
+262,350.0,100.0,150.0,120.0,280.0, Lemon Poppy Seed Pancakes, Quinoa Energy Bites, Mini Quiche," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Chickpea Salad - 280kcals per portion, 4 portions, gluten-free (Middle East)
+"
+263,250.0,100.0,150.0,120.0,280.0, Vegan Breakfast Enchiladas, Roasted Beetroot Chips, Greek Yogurt with Fresh Berries," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Lentil Curry - 280kcals per portion, 4 portions, contains legumes (India)
+"
+264,300.0,100.0,200.0,120.0,300.0, Irish Soda Bread, Watermelon Fruit Pizza, Mini Bagel Pizzas," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Greek Spinach and Feta Pie - 300 calories/portion, 4 portions, contains gluten and dairy (Greece)
+"
+265,200.0,100.0,210.0,120.0,350.0, Quinoa Veggie Breakfast Skillet, Vegetable Crudité with Hummus, Greek Feta and Olive Tapenade Crostini," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Thai Red Curry - 350 calories/portion, 4 portions, Origin"
+266,300.0,100.0,200.0,120.0,400.0, Vegan Cranberry Orange Muffins, Watermelon Fruit Pizza, Hummus and Veggie Wrap," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Vegetable Udon Stir-Fry
+267,150.0,100.0,150.0,120.0,300.0, Scrambled Tofu, Caprese Skewers, Roasted Brussels Sprouts," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Vegetarian Shepherd's Pie - 300 calories/portion, 6 portions, Origin"
+268,350.0,100.0,200.0,120.0,400.0, Chocolate Banana Smoothie Bowl, Fruit Salad, Tomato and Avocado Bruschetta," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Veggie Fajita Bowls - 400 calories/portion, 4 portions, Origin"
+269,250.0,80.0,180.0,120.0,350.0, Veggie Omelette, Hard-Boiled Eggs, Quinoa Stuffed Mushrooms," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Portobello Mushroom Burger
+270,300.0,100.0,80.0,120.0,350.0, Chia Seed Pancakes, Cucumber Rolls with Cream Cheese, Zucchini Chips," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Mushroom and goat cheese flatbread - 350 calories per portion, 4 portions, contains gluten and dairy
+"
+271,400.0,100.0,200.0,120.0,350.0, Vegetarian Breakfast Strata, Fruit Salad, Avocado Toast," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Mexican Rice and Bean Stuffed Peppers - 350kcals per portion, 4 portions, contains legumes (Mexico)
+"
+272,250.0,100.0,220.0,120.0,290.0, Vegan Banana Bread, Vegetable Crudité with Hummus, Veggie-Stuffed Pita Pockets," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Spinach and Feta Stuffed Mushrooms - 290kcals per portion, 4 portions, contains dairy
+"
+273,250.0,100.0,210.0,120.0,420.0, Vegan Breakfast Enchiladas, Caprese Skewers, Greek Feta and Olive Tapenade Crostini," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Sweet Potato and Black Bean Enchiladas - 420kcals per portion, 4 portions, contains legumes (Mexico)
+"
+274,350.0,100.0,250.0,120.0,380.0, Maple Pecan Granola with Yogurt, Caprese Skewers, Sweet Potato Fries," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Vegetable Biryani - 380kcals per portion, 4 portions, contains nuts (India)
+"
+275,250.0,100.0,120.0,120.0,350.0, Middle Eastern Shakshuka, Rice Paper Spring Rolls, Hummus Stuffed Mini Peppers," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Mushroom and Pea Risotto
+276,300.0,80.0,80.0,120.0,320.0, Mediterranean Chickpea Scramble, Avocado Deviled Eggs, Fresh Fruit Salad," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Quinoa-Stuffed Mushrooms - 320kcals per portion, 4 portions
+"
+277,400.0,100.0,120.0,120.0,300.0, Vegetarian Breakfast Strata, Edamame, Spinach Balls," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Ratatouille Tart
+278,400.0,80.0,250.0,120.0,400.0, Vegetarian Breakfast Strata, Cheesy Popcorn, Mini Pizzas," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Vegetarian Burrito Bowl - 400 calories/portion, 4 portions, contains gluten (Mexico)
+"
+279,250.0,100.0,190.0,120.0,200.0, Banana Bread, Som Tam (Papaya Salad), Black Bean Dip with Tortilla Chips," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Greek stuffed bell peppers - 200 calories per portion, 4 portions, none (Greece)
+"
+280,250.0,100.0,220.0,120.0,180.0, Overnight Oats, Cucumber Rolls with Cream Cheese, Cauliflower and Chickpea Salad," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Caprese Skewers - 180kcals per portion, 4 portions, contains dairy (Italy)
+"
+281,350.0,100.0,250.0,120.0,300.0, Vegan Breakfast Burrito, Som Tam (Papaya Salad), Mini Pizzas," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Quinoa and Vegetable Stuffed Bell Peppers
+282,350.0,100.0,180.0,120.0,350.0, Vegan Breakfast Tacos, Roasted Beetroot Chips, Apple with Peanut Butter," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Curried vegetable couscous - 350 calories per portion, 4 portions, contains gluten
+"
+283,200.0,100.0,150.0,120.0,500.0, Tofu Scramble, Rice Cake with Hummus and Cucumber, Roasted Brussels Sprouts," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Fettuccine Alfredo - 500 calories/portion, 4 portions, contains gluten and dairy (Italy)
+"
+284,250.0,80.0,250.0,120.0,350.0, Tomato Basil Bruschetta, Baked Apple Chips, Stuffed Avocado with Quinoa," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Quinoa-Stuffed Bell Peppers - 350 calories/portion, 4 portions, contains nuts (Various)
+"
+285,300.0,80.0,80.0,120.0,350.0, Vegan Blueberry Muffins, Fruit Salad, Veggie Spring Rolls," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Mexican Quinoa Stuffed Zucchini
+286,300.0,80.0,180.0,120.0,300.0, Tofu Scramble Breakfast Burrito, Fruit Salad, Stuffed Jalapeno Poppers," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Veggie stir-fried noodles - 300 calories per portion, 4 portions, contains gluten (China)
+"
+287,450.0,100.0,100.0,120.0,240.0, Nutella Stuffed French Toast, Cucumber and Hummus Rolls, Baked Kale Chips," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Citrus Quinoa Salad - 240kcals per portion, 4 portions
+"
+288,200.0,100.0,90.0,120.0,350.0, Vegan Pumpkin Pancakes, Carrot Sticks with Ranch Dip, Vegan Energy Balls," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Eggplant Parmesan - 350 calories per portion, 4 portions, contains gluten and dairy (Italy)
+"
+289,300.0,100.0,180.0,120.0,200.0, Chia Seed Pancakes, Frozen Grapes, Spinach and Feta Pastry Triangles," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Tomato and Mozzarella Stuffed Portobello Mushrooms - 200 calories/portion, 2 portions, Origin"
+290,300.0,100.0,180.0,120.0,360.0, Pancakes with Maple Syrup, Cucumber Sandwich, Greek Yogurt Parfait," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Lentil Sloppy Joes - 360kcals per portion, 4 portions, contains legumes (USA)
+"
+291,200.0,100.0,160.0,120.0,300.0, Spinach and Feta Stuffed Portobello Mushrooms, Cucumber and Hummus Rolls, Greek Yogurt with Chocolate Chips," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Spicy Black Bean Burgers - 300 calories/portion, 4 portions, Origin"
+292,200.0,100.0,100.0,120.0,200.0, Mediterranean Vegetable Omelette, Caprese Skewers, Apple Chips," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Stuffed grape leaves (Dolmas) - 200 calories per portion, 4 portions, contains nuts (Middle East)
+"
+293,400.0,100.0,200.0,120.0,300.0, Mexican Sopes, Greek Salad Skewers, Mini Bagel Pizzas," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Black Bean Enchiladas - 300 calories/portion, 4 portions, Origin"
+294,300.0,80.0,280.0,120.0,350.0, Classic Peanut Butter and Jelly, Energy Balls, Greek Spinach and Cheese Rolls," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Greek Spinach Pie - 350 calories/portion, 4 portions, contains gluten and dairy (Greece)
+"
+295,250.0,100.0,250.0,120.0,480.0, Blueberry Oatmeal Breakfast Bars, Cucumber Sandwiches, Mixed Berry Smoothie," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Vegetarian Pad Thai - 480kcals per portion, 2 portions, contains peanuts (Thailand)
+"
+296,200.0,100.0,90.0,120.0,400.0, Vegan Breakfast Tacos, Caprese Skewers, Zucchini Pizza Bites," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Coconut curry noodles - 400 calories per portion, 4 portions, contains gluten
+"
+297,400.0,100.0,180.0,120.0,200.0, Tofu Benedict, Som Tam (Papaya Salad), Black Bean Brownies," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Stuffed grape leaves (Dolmas) - 200 calories per portion, 4 portions, contains nuts (Middle East)
+"
+298,350.0,100.0,150.0,120.0,350.0, Zucchini and Parmesan Muffins, Fruit Salad, Carrot Hummus with Pita Chips," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Caprese Pasta Salad - 350 calories/portion, 4 portions, contains gluten (Italy)
+"
+299,300.0,100.0,200.0,120.0,300.0, Vegan Chocolate Chip Pancakes, Carrot Sticks with Ranch Dip, Avocado Toast," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Vegetarian chili - 300 calories per portion, 4 portions, none (Mexico)
+"
+300,350.0,100.0,180.0,120.0,450.0, Ricotta Pancakes, Roasted Beetroot Chips, Roasted Cauliflower Bites," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Eggplant Parmesan - 450 calories/portion, 4 portions, contains gluten and dairy (Italy)
+"
+301,200.0,80.0,180.0,120.0,390.0, Quinoa Breakfast Burrito, Apple with Cinnamon, Roasted Cauliflower Bites," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Spinach and Ricotta Stuffed Shells with Marinara Sauce - 390kcals per portion, 4 portions, contains dairy
+"
+302,400.0,80.0,200.0,120.0,350.0, Veggie Bagel Sandwich, Fruit Salad, Baked Zucchini Fries," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Lentil Tacos - 350kcals per portion, 4 portions, contains legumes (Mexico)
+"
+303,300.0,100.0,250.0,120.0,400.0, Mediterranean Chickpea Scramble, Tomato Basil Bruschetta, Stuffed Bell Peppers with Quinoa," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Vegetable Jalfrezi - 400 calories/portion, 4 portions, contains garlic (India)
+"
+304,350.0,100.0,220.0,120.0,300.0, Broccoli and Cheese Frittata, Greek Salad Skewers, Cheese and Spinach Triangles," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Mediterranean Vegetable Tart
+305,200.0,80.0,180.0,120.0,300.0, Zucchini Bread, Energy Balls, Apple with Peanut Butter," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Veggie Chili
+306,200.0,100.0,280.0,120.0,300.0, Tomato Basil Tofu Scramble, Vegetable Crudité with Hummus, Veggie Flatbread Pizza," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Veggie stir-fried noodles - 300 calories per portion, 4 portions, contains gluten (China)
+"
+307,350.0,90.0,140.0,120.0,400.0, Broccoli and Cheese Frittata, Fruit Salad, Melon and Prosciutto Skewers," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Eggplant and Tomato Pasta - 400 calories/portion, 4 portions, Origin"
+308,250.0,80.0,200.0,120.0,150.0, Tomato Basil Bruschetta, Fruit Salad, Hummus and Veggie Wrap," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Spinach and Feta Stuffed Mushrooms
+309,300.0,100.0,90.0,120.0,350.0, Veggie Breakfast Burrito Bowl, Roasted Chickpeas, Vegan Energy Balls," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Sweet Potato, Black Bean, and Spinach Quesadillas - 350 calories/portion, 4 portions, contains gluten (Mexico)
+"
+310,400.0,100.0,280.0,120.0,230.0, Veggie Breakfast Pizza, Cucumber Sandwiches, Greek Spinach and Cheese Rolls," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Quinoa-Stuffed Bell Peppers - 230kcals per portion, 4 portions, gluten-free
+"
+311,200.0,100.0,40.0,120.0,250.0, Zucchini Bread, Caprese Skewers, Cucumber Roll-Ups," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Black Bean Tacos - 250 calories/portion, 4 portions, Origin"
+312,300.0,80.0,80.0,120.0,280.0, Vegan Smoothie Bowl, Cheesy Popcorn, Cucumber Bites," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Greek Tomato Fritters - 280kcals per portion, 4 portions
+"
+313,400.0,100.0,200.0,120.0,300.0, Tomato Basil Quiche, Watermelon Fruit Pizza, Chickpea Salad," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Greek Stuffed Eggplant - 300 calories/portion, 4 portions, contains gluten and dairy (Greece)
+"
+314,250.0,90.0,150.0,120.0,200.0, Vegan Breakfast Strata, Fruit Salad, Greek Yogurt with Fresh Berries," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Caprese Salad - 200 calories/portion, 4 portions, contains dairy (Italy)
+"
+315,300.0,100.0,120.0,120.0,250.0, Vegetable Frittata, Corn on the Cob, Vegan Energy Balls," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Spinach and Goat Cheese Stuffed Portobello Mushrooms
+316,350.0,100.0,100.0,120.0,300.0, Veggie Breakfast Wrap, Corn on the Cob, Watermelon Salad," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Spinach and feta phyllo triangles - 300 calories per portion, 4 portions, contains gluten and dairy (Greece)
+"
+317,250.0,80.0,120.0,120.0,380.0, Vegetable Scramble, Fruit Salad, Greek Yogurt Dip with Veggies," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Lentil Stew - 380kcals per portion, 4 portions
+"
+318,400.0,100.0,150.0,120.0,200.0, Veggie English Breakfast, Caprese Skewers, Caprese Salad Skewers," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Caprese Salad - 200 calories/portion, 4 portions, contains dairy (Italy)
+"
+319,350.0,80.0,90.0,120.0,300.0, Chocolate Peanut Butter Overnight Oats, Fresh Squeezed Orange Juice, Zucchini Pizza Bites," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Greek Salad - 300 calories/portion, 4 portions, Origin"
+320,350.0,100.0,280.0,120.0,250.0, Huevos Rancheros, Caprese Skewers, Quinoa Stuffed Bell Peppers," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Vegetable Stir Fry - 250 calories/portion, 4 portions, Origin"
+321,250.0,70.0,180.0,120.0,300.0, Banana Bread, Fresh Fruit Salad, Guacamole and Salsa with Tortilla Chips," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Veggie stir-fried noodles - 300 calories per portion, 4 portions, contains gluten (China)
+"
+322,200.0,100.0,180.0,120.0,350.0, Blueberry Muffins, Cucumber Sandwiches, Spinach and Feta Pastry Triangles," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Caprese Quinoa Stuffed Peppers - 350 calories/portion, 4 portions, Origin"
+323,350.0,90.0,80.0,120.0,400.0, Baked Oatmeal, Fruit Salad, Asian Cucumber Salad," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Cauliflower and Chickpea Curry
+324,200.0,80.0,180.0,120.0,300.0, Spinach and Mushroom Breakfast Tacos, Hard-Boiled Eggs, Baked Mozzarella Sticks," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Mediterranean Quinoa Salad - 300 calories/portion, 4 portions, contains gluten (Greece)
+"
+325,200.0,100.0,250.0,120.0,350.0, Veggie Breakfast Couscous, Cucumber and Tomato Salad, Greek Yogurt with Granola," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Mexican Stuffed Bell Peppers - 350 calories/portion, 4 portions, Origin"
+326,350.0,100.0,90.0,120.0,350.0, Baked Oatmeal, Berry Chia Detox Water, Zucchini Pizza Bites," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Roasted Vegetable Quinoa Bowls
+327,300.0,100.0,90.0,120.0,180.0, Pancakes with Maple Syrup, Baked Apple Chips, Homemade Popcorn," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Caprese Skewers - 180kcals per portion, 4 portions, contains dairy (Italy)
+"
+328,350.0,70.0,160.0,120.0,350.0, Veggie Omelette, Fresh Fruit Salad, Roasted Eggplant Dip," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Vegetable Korma - 350kcals per portion, 4 portions, contains nuts (India)
+"
+329,400.0,100.0,220.0,120.0,180.0, Sourdough Biscuits and Mushroom Gravy, Guacamole Stuffed Cherry Tomatoes, Cauliflower and Chickpea Salad," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Ratatouille
+330,250.0,100.0,160.0,120.0,420.0, Vegan Breakfast Quesadillas, Cucumber and Tomato Salad, Roasted Eggplant Dip," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Caprese Pasta Salad - 420kcals per portion, 2 portions, contains dairy (Italy)
+"
+331,300.0,100.0,240.0,120.0,400.0, Mediterranean Chickpea Scramble, Frozen Grapes, Spinach and Artichoke Dip," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Veggie Sushi Bowl - 400 calories/portion, 2 portions, Origin"
+332,400.0,100.0,150.0,120.0,300.0, Veggie Bagel Sandwich, Cucumber and Tomato Salad, Mini Quiche," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Chana masala - 300 calories per portion, 4 portions, contains nuts (India)
+"
+333,200.0,100.0,100.0,120.0,400.0, Avocado Toast, Vegetable Crudité with Hummus, Baked Zucchini Fries," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Vegetable biryani - 400 calories per portion, 6 portions, contains nuts (India)
+"
+334,200.0,80.0,150.0,120.0,450.0, Banana Pancakes, Baked Apple Chips, Stuffed Grape Leaves," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Eggplant Parmesan - 450 calories/portion, 4 portions, contains gluten and dairy (Italy)
+"
+335,350.0,100.0,90.0,120.0,300.0, Cranberry Orange Muffins, Edamame, Zucchini Pizza Bites," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Ratatouille - 300 calories/portion, 4 portions, Origin"
+336,400.0,80.0,120.0,120.0,400.0, Almond Croissant, Energy Balls, Zucchini Fritters," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Coconut curry noodles - 400 calories per portion, 4 portions, contains gluten
+"
+337,400.0,80.0,200.0,120.0,80.0, Veggie Breakfast Burrito, Avocado Deviled Eggs, Avocado Toast," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Spinach and feta stuffed mushrooms - 80 calories per portion, 6 portions, contains dairy (Greece)
+"
+338,400.0,100.0,120.0,120.0,300.0, Mexican Sopes, Watermelon Fruit Pizza, Spinach and Ricotta Stuffed Mushrooms," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Vegetable Fajitas - 300 calories/portion, 4 portions, contains gluten (Mexico)
+"
+339,250.0,100.0,300.0,120.0,350.0, Spinach and Mushroom Oatmeal, Corn on the Cob, Vegetable Fajitas," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Sweet Potato and Black Bean Enchiladas
+340,300.0,80.0,180.0,120.0,200.0, Vegan French Toast, Fruit Salad, Apple with Peanut Butter," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Avocado and Tomato Salad - 200 calories/portion, 2 portions, Origin"
+341,200.0,100.0,160.0,120.0,320.0, Veggie Breakfast Wrap with Tofu Scramble, Roasted Chickpeas, Portobello Mushroom Pizza Bites," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Lentil and Vegetable Soup - 320kcals per portion, 4 portions, gluten-free
+"
+342,200.0,100.0,100.0,120.0,350.0, Spanish Tortilla, Caprese Skewers, Bruschetta," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Mexican Rice Casserole - 350 calories/portion, 4 portions, contains gluten (Mexico)
+"
+343,300.0,100.0,80.0,120.0,300.0, Veggie Bagel Sandwich, Vegetable Crudité with Hummus, Zucchini Chips," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Caprese Stuffed Portobello Mushrooms
+344,300.0,100.0,120.0,120.0,400.0, Vegetable Frittata, Caprese Skewers, Roasted Cauliflower Popcorn," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Veggie Enchilada Casserole
+345,250.0,100.0,150.0,120.0,250.0, Spinach and Mushroom Oatmeal, Fruit Salad, Greek Salad Skewers," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Spinach and feta stuffed phyllo rolls - 250 calories per portion, 4 portions, contains gluten and dairy (Greece)
+"
+346,200.0,80.0,240.0,120.0,390.0, Poha (Flattened Rice), Baked Apple Chips, Stuffed Bell Peppers with Quinoa," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Quinoa-Stuffed Acorn Squash - 390kcals per portion, 4 portions
+"
+347,350.0,100.0,180.0,120.0,350.0, Veggie Breakfast Strudel, Vegetable Crudité with Hummus, Sweet and Spicy Roasted Almonds," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Mexican Rice and Bean Stuffed Peppers - 350kcals per portion, 4 portions, contains legumes (Mexico)
+"
+348,400.0,100.0,100.0,120.0,100.0, Veggie Biscuits and Gravy, Caprese Skewers, Cinnamon Sugar Popcorn," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Ratatouille - 100 calories per portion, 4 portions, none (France)
+"
+349,350.0,80.0,120.0,120.0,350.0, Veggie Omelette, Energy Balls, Hummus Stuffed Mini Peppers," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Portobello Mushroom Burger
+350,200.0,100.0,280.0,120.0,300.0, Raspberry Coconut Breakfast Bars, Guacamole Stuffed Cherry Tomatoes, Greek Spinach Pie," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Mexican Rice and Beans - 300 calories/portion, 4 portions, contains cilantro (Mexico)
+"
+351,300.0,80.0,100.0,120.0,340.0, Veggie Bagel Sandwich, Fruit Salad, Caprese Skewers," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Caprese Couscous Salad - 340kcals per portion, 4 portions, contains dairy (Italy)
+"
+352,350.0,100.0,150.0,120.0,300.0, Veggie Breakfast Strudel, Tomato Basil Bruschetta, Edamame Salad," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Lentil and vegetable shepherd's pie - 300 calories per portion, 4 portions, none
+"
+353,300.0,100.0,300.0,120.0,100.0, Mushroom and Tomato Omelette, Guacamole Stuffed Cherry Tomatoes, Veggie Sushi Bowls," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Ratatouille - 100 calories per portion, 4 portions, none (France)
+"
+354,250.0,100.0,150.0,120.0,400.0, Tropical Green Smoothie, Caprese Skewers, Baked Sweet Potato Wedges," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Tofu and Vegetable Stir-Fry
+355,200.0,100.0,120.0,120.0,200.0, Quinoa Veggie Breakfast Skillet, Cucumber Sandwich, Pumpkin Hummus with Carrot Sticks," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Greek-style stuffed zucchini - 200 calories per portion, 4 portions, none (Greece)
+"
+356,250.0,100.0,80.0,120.0,350.0, Buckwheat Porridge, Kiwi and Strawberry Smoothie, Cucumber Bites," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Stuffed Bell Peppers with Quinoa and Corn - 350 calories/portion, 4 portions, Origin"
+357,250.0,80.0,200.0,120.0,350.0, Vegan Breakfast Quesadillas, Energy Balls, Nachos with Salsa and Cheese," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Vegetable Bolognese - 350 calories/portion, 4 portions, contains gluten (Italy)
+"
+358,200.0,100.0,230.0,120.0,400.0, Veggie Breakfast Wrap with Tofu Scramble, Rice Cake with Hummus and Cucumber, Avocado Toast," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Veggie Sushi Rolls
+359,250.0,100.0,180.0,120.0,450.0, Muesli with Almond Milk, Rice Paper Spring Rolls, Greek Olive Breadsticks," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Thai Basil Tofu Stir-Fry
+360,350.0,100.0,150.0,120.0,350.0, Veggie Omelette, Rice Cake with Hummus and Cucumber, Veggie Chips," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Vegetarian bibimbap - 350 calories per portion, 4 portions, contains gluten and soy (Korea)
+"
+361,200.0,100.0,200.0,120.0,450.0, Vegan Blueberry Pancakes, Som Tam (Papaya Salad), Tomato and Avocado Bruschetta," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Butternut Squash and Sage Pasta - 450 calories/portion, 4 portions, contains gluten (Italy)
+"
+362,200.0,90.0,180.0,120.0,250.0, Tomato Basil Tofu Scramble, Vegetarian Spring Rolls, Apple with Peanut Butter," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Ratatouille tart - 250 calories per portion, 6 portions, contains gluten (France)
+"
+363,300.0,100.0,200.0,120.0,300.0, Quinoa Breakfast Bowl, Roasted Beetroot Chips, Pumpkin Bread," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Lentil and vegetable shepherd's pie - 300 calories per portion, 4 portions, none
+"
+364,300.0,90.0,150.0,120.0,200.0, Chia Seed Pancakes, Vegetarian Spring Rolls, Vegetable Frittata," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Greek-style stuffed zucchini - 200 calories per portion, 4 portions, none (Greece)
+"
+365,250.0,100.0,200.0,120.0,420.0, Cheesy Spinach Pita Pocket, Cucumber Rolls with Cream Cheese, Fruit Kabobs with Chocolate Sauce," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Quinoa and Vegetable Stir-Fry - 420kcals per portion, 4 portions
+"

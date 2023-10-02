@@ -1,0 +1,803 @@
+,breakfast_calories,morning snacks_calories,afternoon snacks_calories,lunch_calories,dinner_calories,breakfast,morning snacks,afternoon snacks,lunch,dinner
+1,400.0,90.0,180.0,120.0,450.0, Aloo Paratha (Potato Stuffed Flatbread), Fruit Salad, Cheese and tomato bruschetta," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Spinach and Mushroom Lasagna - 450 calories/portion, 4 portions, contains gluten (Italy)
+"
+2,250.0,100.0,180.0,120.0,400.0, Vegan Chocolate Chia Seed Pudding - 250 calories per portion | 2 portions | None | Origin, Cucumber Sandwiches, Fruit skewers with yogurt dip," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Vegetable Biryani - 400 calories/portion, 4 portions, contains nuts (India)
+"
+3,300.0,90.0,200.0,120.0,400.0, Vegan Pumpkin Spice Granola - 300 calories per portion | 1 portion | Contains nuts | Origin, Fruit Salad, Almond butter energy bites," Greek Salad - 120kcals per portion, 4 portions, lactose-free, Greece
+", Chickpea and Spinach Curry
+4,300.0,90.0,70.0,20.0,250.0," Egyptian foul medames (fava bean stew) - 300 calories per portion, 2 portions, no allergic warnings, origin", Quinoa Energy Bites, Baked kale chips, Moroccan Mint Tea, Ratatouille
+5,150.0,100.0,100.0,120.0,350.0, Vegan Pancakes, Baked Apple Chips, Garlic parmesan roasted edamame," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Spinach and mushroom quesadillas - 350 calories per portion, 4 portions, contains dairy and gluten (Mexico)
+"
+6,350.0,70.0,150.0,120.0,350.0," Rwandan akabenz (fried plantains) with yogurt - 350 calories per portion, 2 portions, contains dairy, origin", Fresh Fruit Salad, Fried Plantain," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Vegan Lentil Loaf
+7,400.0,100.0,180.0,20.0,350.0, Vegan Breakfast Burrito Bowl - 400 calories per portion | 1 portion | None | Origin, Cucumber Slices with Tzatziki - Approx, Oatmeal Raisin Cookies, Moroccan Mint Tea, Chickpea and Spinach Stew
+8,500.0,50.0,200.0,20.0,350.0, Turkish Breakfast Platter, Baked Apple Chips - Approx," Vegan Broccoli Pesto Pasta - 200 kcals per portion, 4 portions, no allergic warnings, origin", Moroccan Mint Tea, Stuffed Bell Peppers with Rice and Beans
+9,200.0,60.0,100.0,120.0,300.0," Spinach and feta stuffed mushrooms - 200 calories per portion, 2 portions, contains dairy, origin", Fruit Salad - Approx," Mini caprese salad skewers (cherry tomatoes, mozzarella, basil)"," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Sesame Ginger Stir-Fry - 300 calories per portion, 4 portions, Soy, China
+"
+10,150.0,100.0,220.0,120.0,350.0," Vegemite on toast - 150 calories per portion, 1 portion, contains gluten, origin", Fruit salad, Cauliflower and Chickpea Salad," Greek Salad - 120kcals per portion, 4 portions, lactose-free, Greece
+", Buddha Bowl
+11,250.0,100.0,140.0,100.0,160.0, Vegan Chocolate Banana Smoothie, Rice Paper Spring Rolls," Cheese and Garlic Crackers - 140 kcals per portion, 3 portions, contains gluten, dairy (USA)", Israeli salad," Vegan Lentil and Vegetable Shepherd's Pie - 160 calories per portion, 4 portions, may contain gluten"
+12,500.0,100.0,180.0,120.0,350.0," Pancake cereal - 500 calories per portion, 2 portions, contains gluten and dairy, origin", Baked Apple Chips," Stuffed Grape Leaves - 180 kcals per portion, 5 portions, may contain nuts (Middle East)"," Greek Salad - 120kcals per portion, 4 portions, lactose-free, Greece
+"," Cheese and vegetable-stuffed bell peppers - 350 kcals per portion, 4 portions, vegetarian, contains lactose
+"
+13,200.0,80.0,80.0,20.0,300.0, Vegan Breakfast Enchiladas, Energy Balls," Baked Kale Chips - 80 kcals per portion, 4 portions, no allergic warnings, origin", Moroccan Mint Tea, Lentil Soup
+14,400.0,100.0,150.0,120.0,300.0, Veggie Sausage and Hash Browns - 400 calories per portion | 1 portion | Contains soy | Origin, Chilled Gazpacho, Stuffed mushrooms," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Vegetable curry with basmati rice - 300 kcals per portion, 4 portions, vegetarian, contains gluten
+"
+15,320.0,100.0,160.0,100.0,350.0," Whole wheat pancakes with fresh fruit compote (320 calories per portion, 2 portions, nut-free, American origin)
+", Som Tam (Papaya Salad)," Vegan Pesto Pasta Salad - 160 kcals per portion, 4 portions, no allergic warnings, origin", Israeli salad," Vegetable curry with basmati rice - 350 calories per portion, 4 portions, contains nuts (India)
+"
+16,350.0,90.0,90.0,100.0,350.0," Veggie-packed breakfast casserole (350 calories per portion, 2 portions, nut-free, American origin)
+", Quinoa Energy Bites," Israeli Salad - 90 kcals per portion, 4 portions, gluten-free (Israel)", Israeli salad, Fish Tacos with Lime Crema
+17,400.0,100.0,180.0,20.0,450.0, Turkish Pogaca, Rice Paper Spring Rolls, Pita Bread with Hummus, Moroccan Mint Tea, Veggie Paella
+18,550.0,100.0,100.0,20.0,450.0, Vegan Breakfast Cobbler, Corn on the Cob, Tomato Basil Soup, Moroccan Mint Tea," Chicken fajitas with peppers and onions – 450 calories per portion, 2 portions, contains poultry (origin"
+19,300.0,90.0,360.0,20.0,280.0," Indian poha cutlet - 300 calories per portion, 2 portions, contains gluten, origin", Stuffed Dates, Vegetable Tempura, Moroccan Mint Tea," Lentil Salad - 280kcals per portion, 4 portions
+"
+20,200.0,100.0,180.0,20.0,180.0, Caprese Avocado Toast, Frozen Grapes, Thai Fresh Spring Rolls, Moroccan Mint Tea, Vegan Ratatouille
+21,200.0,80.0,140.0,120.0,250.0, Tofu Scramble, Fresh Watermelon Slices - Approx, Mozzarella sticks served with marinara sauce," Greek Salad - 120kcals per portion, 4 portions, lactose-free, Greece
+"," Vegan Black Bean Soup - 250 calories per portion, 3 portions, may contain gluten"
+22,350.0,100.0,540.0,100.0,400.0," Muesli with yogurt and mixed fruits (350kcals per portion, 1 portion)
+", Chilled Gazpacho Soup - Approx, Stuffed Bell Peppers, Israeli salad, Vegan Ramen
+23,350.0,100.0,200.0,20.0,250.0, Banana Chia Pancakes," Mediterranean Style Feta Stuffed Dates - 100kcals per portion, 2 portions
+    Origin", Mini Quiches, Moroccan Mint Tea," Indian Vegan Baingan Bharta (250 calories/portion, 4 portions) - India
+"
+24,550.0,70.0,200.0,100.0,350.0, Sausage Gravy and Biscuits, Kale chips," Vegan Pumpkin Pancakes - 200 kcals per portion, 4 portions, no allergic warnings, origin", Israeli salad," Vegan Korean Bibimbap - 350 calories per portion, 4 portions, None, Korea
+"
+25,400.0,100.0,250.0,120.0,170.0, Nutella Banana Croissant," Cinnamon Apple Chips - 100kcals per portion, 2 portions
+    Origin", Tuna salad on whole grain crackers," Greek Salad - 120kcals per portion, 4 portions, lactose-free, Greece
+", Miso Soup with Tofu and Vegetables
+26,350.0,100.0,130.0,20.0,450.0," Veggie breakfast burrito with black beans (350 calories per portion, 2 portions, nut-free, Mexican origin)
+", Caprese Skewers, Veggie Taco Cups, Moroccan Mint Tea," Mexican Stuffed Bell Peppers (450 calories/portion, 2 portions) - Mexico
+"
+27,400.0,100.0,150.0,120.0,350.0," Shakshuka with crusty bread (400 calories per portion, 2 portions, contains eggs, Israeli origin)
+", Corn on the Cob, Greek-Style Feta and Olive Dip," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Vegan Gyros
+28,300.0,100.0,90.0,100.0,350.0, Vegan Chocolate Chip Pancakes, Som Tam (Papaya Salad), Baked Parmesan Zucchini Bites, Israeli salad," Quinoa-Stuffed Bell Peppers - 350 calories/portion, 4 portions, contains nuts (Various)
+"
+29,350.0,80.0,220.0,120.0,280.0," Grilled halloumi with tomatoes and cucumber (350kcals per portion, 2 portions, origin", Fresh Watermelon Slices - Approx, Chicken Satay Lettuce Wraps," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Vegan Barbecue Jackfruit Sandwiches
+30,200.0,90.0,170.0,120.0,400.0, Avocado Toast, Fruit Salad," Roasted Red Pepper Hummus with Pita Bread - 170 kcals per portion, 4 portions, no allergic warnings, origin"," Greek Salad - 120kcals per portion, 4 portions, lactose-free, Greece
+"," Vegan General Tso's Tofu - 400 calories per portion, 4 portions, None, China
+"
+31,700.0,100.0,180.0,20.0,350.0," English breakfast (eggs, bacon, sausage, beans, tomato) - 700 calories per portion, 2 portions, no allergic warnings, origin"," Mint Yogurt Dip with Vegetable Sticks - 100kcals per portion, 2 portions
+    Origin", Baked Falafel with Yogurt Sauce, Moroccan Mint Tea," Vegan Meatballs with Marinara Sauce - 350 calories per portion, 4 portions, Gluten, Italy
+"
+32,400.0,100.0,140.0,120.0,250.0," Brazilian tapioca pancake filled with cheese - 400 calories per portion, 2 portions, contains gluten and dairy, origin", Vegetable Crudité with Hummus," Vegan Lemon Bars - 140 kcals per portion, 4 portions, no allergic warnings, origin"," Greek Salad - 120kcals per portion, 4 portions, lactose-free, Greece
+"," Thai Pineapple Fried Rice - 250 calories per portion, 4 portions, None, Thailand
+"
+33,250.0,100.0,250.0,120.0,400.0," Overnight oats - 250 calories per portion, 2 portions, contains gluten, origin", Stuffed Dates - Approx, Zucchini and ricotta crostini," Greek Salad - 120kcals per portion, 4 portions, lactose-free, Greece
+"," Potato Gnocchi - 400 calories/portion, 4 portions, Origin"
+34,150.0,100.0,180.0,120.0,250.0, Vegan Breakfast Pita Pockets, Roasted Almonds," Sticky Coconut Rice Balls - 180 kcals per portion, 4 portions, no allergic warnings, origin"," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Grilled chicken breast with roasted vegetables - 250 kcals per portion, 4 portions, gluten-free
+"
+35,200.0,100.0,250.0,120.0,200.0, Avocado Toast, Quinoa Energy Bites, Baked Samosas," Greek Salad - 120kcals per portion, 4 portions, lactose-free, Greece
+"," Caprese Stuffed Avocado - 200 calories/portion, 4 portions, contains dairy (Italy)
+"
+36,400.0,100.0,180.0,20.0,250.0, Veggie Breakfast Casserole, Cucumber Rolls with Cream Cheese, Mini Pizza Bagels, Moroccan Mint Tea," Quinoa Stuffed Mushrooms - 250 calories per portion, 4 portions, no allergic warnings, Origin"
+37,400.0,80.0,180.0,120.0,300.0, Vegan Tofu Benedict - 400 calories per portion | 1 portion | Contains soy | Origin, Cheesy Popcorn," Yoga snack balls (oats, peanut butter, honey, nuts)"," Greek Salad - 120kcals per portion, 4 portions, lactose-free, Greece
+", Moroccan Vegetable Tagine
+38,400.0,100.0,200.0,120.0,350.0," Huevos Rancheros with refried beans and salsa (400kcals per portion, 2 portions, origin", Caprese Skewers, Caramelized Onion and Gruyere Tart," Greek Salad - 120kcals per portion, 4 portions, lactose-free, Greece
+"," Veggie enchiladas - 350 calories per portion, 4 portions, contains gluten (Mexico)
+"
+39,500.0,100.0,120.0,100.0,400.0, Turkish Breakfast Platter, Stuffed Dates - Approx, Vegan Mediterranean Hummus Bowl, Israeli salad," Butternut squash and lentil curry with basmati rice - 400 kcals per portion, 4 portions, vegetarian, contains gluten
+"
+40,400.0,100.0,180.0,100.0,250.0," Banana pancakes - 400 calories per portion, 2 portions, contains gluten and dairy, origin"," Mediterranean Style Feta Stuffed Dates - 100kcals per portion, 2 portions
+    Origin", Cucumber and Avocado Sushi Rolls, Israeli salad," Moroccan Chickpea Pancakes (250 calories/portion, 4 portions) - Morocco
+"
+41,300.0,70.0,150.0,100.0,450.0, Vegan Breakfast Tiramisu, Fresh Fruit Salad, Bruschetta with Mozzarella, Israeli salad, Chicken and Vegetable Skewers with Peanut Sauce
+42,200.0,80.0,100.0,20.0,450.0, Apple Cinnamon Porridge, Avocado Deviled Eggs, Hummus with Veggies, Moroccan Mint Tea, Greek Grilled Lamb Chops
+43,800.0,100.0,140.0,120.0,350.0, Vegan Breakfast Breakfast Tacos, Caprese Skewers, Melon and Prosciutto Skewers," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Lentil Mushroom Burgers - 350 calories per portion, 4 portions, Gluten, United States
+"
+44,350.0,100.0,250.0,120.0,400.0, Blueberry Muffins, Toasted Coconut Chips, Smoked Salmon and Cream Cheese on Rye Bread," Greek Salad - 120kcals per portion, 4 portions, lactose-free, Greece
+"," Mexican Quinoa Stuffed Zucchini - 400 calories/portion, 4 portions, Origin"
+45,250.0,100.0,150.0,120.0,245.0, Cucumber Sandwich," Dates Stuffed with Almond Butter - 100kcals per portion, 2 portions
+    Origin", Caprese skewers with balsamic glaze," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Tofu Stir Fry
+46,450.0,80.0,200.0,20.0,300.0, Veggie Breakfast Burritos, Kale Chips, Nachos with Salsa and Cheese, Moroccan Mint Tea, Couscous Salad
+47,400.0,100.0,180.0,100.0,150.0, Chorizo Breakfast Burrito, Roasted Edamame, Veggie Stuffed Pita Bread, Israeli salad," Lentil Soup - 150 calories per portion, 4 portions, may contain soy and gluten"
+48,400.0,100.0,240.0,100.0,200.0," Polish jajecznica (scrambled eggs with kielbasa) - 400 calories per portion, 2 portions, no allergic warnings, origin", Guacamole Stuffed Cherry Tomatoes, Peanut butter and banana sushi rolls, Israeli salad," Greek stuffed bell peppers - 200 calories per portion, 4 portions, none (Greece)
+"
+49,100.0,100.0,90.0,100.0,159.0, Vegan Breakfast Falafel," Dates Stuffed with Almond Butter - 100kcals per portion, 2 portions
+    Origin", Vegan Energy Balls, Israeli salad, Quinoa Stuffed Mushrooms
+50,300.0,100.0,250.0,100.0,300.0, Baked Egg in Avocado, Greek yogurt with berries, Mango Coconut Chia Pudding, Israeli salad, Quinoa Stuffed Bell Peppers with Cashew Cream
+51,300.0,100.0,120.0,100.0,150.0," Egyptian foul medames (fava bean stew) - 300 calories per portion, 2 portions, no allergic warnings, origin"," Cinnamon Apple Chips - 100kcals per portion, 2 portions
+    Origin"," Roasted Chickpeas - 120 kcals per portion, 4 portions, no allergic warnings, origin", Israeli salad, Greek Salad
+52,300.0,100.0,200.0,100.0,400.0," Blueberry almond smoothie (300 calories per portion, 2 portions, contains nuts, American origin)
+", Chilled Gazpacho Soup - Approx," Quinoa Salad with Roasted Vegetables - 200 kcals per portion, 4 portions, no allergic warnings, origin", Israeli salad, Teriyaki Salmon with Steamed Vegetables
+53,150.0,70.0,150.0,100.0,213.0, Chia Pudding - 150 calories per portion | 1 portion | None | Origin, Fresh Fruit Salad, Baked Vegetable Samosas, Israeli salad, Lentil Soup
+54,350.0,100.0,220.0,120.0,350.0," German-style potato pancakes with applesauce - 350 calories per portion, 2 portions, contains gluten, origin", Caprese Skewers, Cauliflower and Chickpea Salad," Greek Salad - 120kcals per portion, 4 portions, lactose-free, Greece
+"," Spinach and Mushroom Risotto - 350kcals per portion, 4 portions
+"
+55,250.0,100.0,210.0,120.0,300.0, Vegan Breakfast Sushi," Cinnamon Apple Chips - 100kcals per portion, 2 portions
+    Origin", Veggie Pizza Bagels," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Eggplant Parmesan Sliders
+56,250.0,100.0,120.0,120.0,350.0, Overnight Oats, Cucumber Rolls with Hummus - Approx," Vegan Chocolate Chip Cookies - 120 kcals per portion, 4 portions, no allergic warnings, origin"," Greek Salad - 120kcals per portion, 4 portions, lactose-free, Greece
+"," Quinoa Stuffed Bell Peppers - 350 calories/portion, 4 portions, Origin"
+57,300.0,100.0,80.0,120.0,450.0," Spinach and feta pastry turnovers (300kcals per portion, 2 portions, dairy allergies)
+"," Apple Slices with Caramel Dip - 100kcals per portion, 2 portions
+    Origin"," Chocolate Dipped Strawberries - 80 kcals per portion, 4 portions, contains dairy (USA)"," Greek Salad - 120kcals per portion, 4 portions, lactose-free, Greece
+"," Indian Vegan Paneer Tikka Masala (450 calories/portion, 3 portions) - India
+"
+58,280.0,80.0,150.0,120.0,400.0," Baked eggs in tomato cups (280 calories per portion, 2 portions, nut-free, Italian origin)
+", Cheesy Popcorn, Mini cheese and vegetable calzones," Greek Salad - 120kcals per portion, 4 portions, lactose-free, Greece
+"," Coconut curry noodles - 400 calories per portion, 4 portions, contains gluten
+"
+59,300.0,100.0,680.0,120.0,350.0, Tropical Mango Chia Pudding, Toasted Coconut Chips, Sweet and Sour Tofu," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Mexican Quinoa Salad - 350 calories/portion, 4 portions, contains cilantro (Mexico)
+"
+60,350.0,100.0,90.0,120.0,200.0," Swiss cheese and mushroom omelette (350 calories per portion, 2 portions, contains dairy, Swiss origin)
+"," Dates Stuffed with Almond Butter - 100kcals per portion, 2 portions
+    Origin"," Miso Soup - 90 kcals per portion, 4 portions, contains soy (Japan)"," Greek Salad - 120kcals per portion, 4 portions, lactose-free, Greece
+"," Miso Soup - 200 calories/portion, 2 portions, Origin"
+61,300.0,100.0,300.0,100.0,350.0," Moroccan mint tea with almond cookies (300kcals per portion, 2 portions, nut allergies, origin", Energy Balls - Approx, Mini Veggie Pizzas, Israeli salad," Quinoa Stuffed Bell Peppers - 350 calories per portion, 4 portions, None, Various
+"
+62,350.0,100.0,180.0,100.0,400.0, Vegan Breakfast Couscous - 350 calories per portion | 1 portion | Contains gluten | Origin, Chilled Gazpacho, Fruit and Yogurt Parfait, Israeli salad," Butternut squash and lentil curry with basmati rice - 400 kcals per portion, 4 portions, vegetarian, contains gluten
+"
+63,300.0,50.0,150.0,20.0,400.0, Vegetable Upma," Fruit Salad - 50kcals per portion, 2 portions
+   Origin", Guacamole with tortilla chips, Moroccan Mint Tea," Thai Pineapple Fried Rice - 400 calories per portion, 4 portions, contains shellfish, Origin"
+64,320.0,100.0,200.0,120.0,300.0," Baked eggs with asparagus and Parmesan (320 calories per portion, 2 portions, contains dairy, Italian origin)
+", Energy Balls - Approx, Baked Falafel," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Quinoa Stuffed Bell Peppers with Cashew Cream
+65,500.0,100.0,140.0,100.0,400.0, Israeli Breakfast Salad, Greek Salad Skewers," Roasted Chickpeas - 140 kcals per portion, 4 portions, gluten-free (World)", Israeli salad," Greek-style stuffed peppers with rice and feta – 400 calories per portion, 3 portions, contains dairy (origin"
+66,200.0,100.0,200.0,120.0,300.0, Vegan Breakfast Quinoa Salad, Zesty Lime Popcorn - Approx, Blueberry oat muffins," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Greek Stuffed Eggplant - 300 calories/portion, 4 portions, contains gluten and dairy (Greece)
+"
+67,400.0,100.0,70.0,100.0,200.0," Mexican-style breakfast wrap with eggs and black beans (400 calories per portion, 2 portions, contains eggs, Mexican origin)
+", Mini Frittatas - Approx," Watermelon and Mint Salad - 70 kcals per portion, 4 portions, no allergic warnings, origin", Israeli salad," Indian Vegetable Samosas - 200 calories/portion, 4 portions, contains gluten (India)
+"
+68,450.0,100.0,90.0,100.0,410.0, Vegan Blueberry Muffins, Frozen Grapes, Baked sweet potato chips, Israeli salad, Lentil and Vegetable Curry
+69,350.0,100.0,250.0,100.0,400.0," Greek yogurt and berry parfait (350 calories per portion, 2 portions, contains dairy, Greek origin)
+", Frozen Grapes, Mini Chicken Tacos, Israeli salad," Mexican Quinoa Stuffed Zucchini - 400 calories/portion, 4 portions, Origin"
+70,250.0,90.0,200.0,100.0,400.0," Coconut chia pudding with mango (250kcals per portion, 2 portions)
+", Turkish-style boiled eggs, Nachos with Salsa and Cheese, Israeli salad, Vegetable Chow Mein
+71,200.0,90.0,150.0,20.0,400.0, Vegan Matcha Chia Pudding - 200 calories per portion | 1 portion | None | Origin, Rice Paper Rolls, Blueberry Oat Muffins, Moroccan Mint Tea," Vegan Pesto Pizza - 400 calories per portion, 4 portions, Gluten, Italy
+"
+72,550.0,90.0,120.0,20.0,350.0," Eggs Benedict - 550 calories per portion, 2 portions, contains gluten and dairy, origin", Turkish-style boiled eggs, Greek tomato and cucumber salad, Moroccan Mint Tea, Greek Orzo Stuffed Peppers
+73,300.0,100.0,300.0,100.0,400.0," Thai coconut rice pudding with mango (300kcals per portion, 2 portions, origin"," Mint Yogurt Dip with Vegetable Sticks - 100kcals per portion, 2 portions
+    Origin", Chicken Satay with Peanut Sauce, Israeli salad, Lemon Herb Grilled Chicken
+74,300.0,100.0,180.0,120.0,200.0, Pancakes with Maple Syrup," Mint Yogurt Dip with Vegetable Sticks - 100kcals per portion, 2 portions
+    Origin", Baked Teriyaki Tofu Skewers," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Lentil Soup
+75,350.0,100.0,160.0,100.0,300.0," Swiss cheese and mushroom omelette (350 calories per portion, 2 portions, contains dairy, Swiss origin)
+", Roasted Beetroot Chips, Pita Bread and Hummus, Israeli salad, Greek Orzo Salad
+76,550.0,100.0,150.0,120.0,350.0, Quiche Lorraine, Caprese Skewers, Edamame Salad," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Mexican Quinoa Stuffed Bell Peppers
+77,200.0,100.0,200.0,120.0,340.0," Oatmeal with berries - 200 calories per portion, 2 portions, no allergic warnings, origin", Zesty Lime Popcorn - Approx, Caramelized Onion and Goat Cheese Tartlets," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Quinoa and Black Bean Burger - 340kcals per portion, 4 portions, contains legumes
+"
+78,50.0,90.0,200.0,120.0,250.0, Vegan Breakfast Stuffed Tomatoes, Fruit Salad, Baked buffalo cauliflower bites," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Bulgur Salad
+79,400.0,100.0,150.0,120.0,400.0, Veggie Breakfast Bagel Sandwich, Roasted Beetroot Chips, Stuffed Mini Bell Peppers," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Veggie Burrito Bowl
+80,300.0,100.0,180.0,20.0,380.0," Scottish porridge with honey and berries - 300 calories per portion, 2 portions, no allergic warnings, origin", Caprese Skewers, Greek Tzatziki with Pita Bread, Moroccan Mint Tea," Sushi rolls with avocado and cucumber – 380 calories per portion, 4 portions, contains fish (origin"
+81,500.0,80.0,180.0,100.0,200.0, Blueberry Pancakes, Fruit Salad, Grilled Halloumi Skewers, Israeli salad, Lentil Soup
+82,350.0,90.0,180.0,120.0,400.0, Mushroom and Spinach Breakfast Quesadilla, Vegetarian Spring Rolls, Stuffed Bell Peppers with Quinoa and Black Beans," Greek Salad - 120kcals per portion, 4 portions, lactose-free, Greece
+"," Vegan Mushroom Stroganoff - 400 calories per portion, 4 portions, None, Russia
+"
+83,350.0,100.0,200.0,100.0,400.0," Nigerian akara (bean fritters) with tomato sauce (350kcals per portion, 2 portions, origin", Rice Paper Spring Rolls, Green smoothie bowl, Israeli salad," Butternut squash ravioli with brown butter sauce - 400 calories per portion, 4 portions, contains gluten and dairy (Italy)
+"
+84,200.0,100.0,180.0,120.0,290.0, Banana Pancakes," Mint Yogurt Dip with Vegetable Sticks - 100kcals per portion, 2 portions
+    Origin", Veggie Stuffed Pita Bread," Greek Salad - 120kcals per portion, 4 portions, lactose-free, Greece
+"," Spinach and Ricotta Stuffed Tomatoes - 290kcals per portion, 4 portions, contains dairy
+"
+85,300.0,100.0,250.0,120.0,188.0, Banana Oat Pancakes, Fresh Fruit Salad, Spinach and Feta Rolls," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Lentil and Vegetable Stir Fry
+86,350.0,70.0,110.0,120.0,280.0," Veggie omelette with sweet potato hash (350 calories per portion, 2 portions, nut-free, American origin)
+", Kale chips," Sweet Potato Rounds - 110 kcals per portion, 4 portions, gluten-free (USA)"," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Greek Zucchini Fritters - 280kcals per portion, 4 portions
+"
+87,400.0,100.0,150.0,120.0,350.0, Almond Croissant," Rice Cake with Almond Butter - 100kcals per portion, 2 portions
+    Origin", Caprese Skewers," Greek Salad - 120kcals per portion, 4 portions, lactose-free, Greece
+"," Vegan Chili - 350 calories per portion, 4 portions, None, United States
+"
+88,250.0,100.0,300.0,100.0,400.0, Vegan Breakfast Sushi, Watermelon Fruit Pizza, Baked Buffalo Chicken Wings, Israeli salad," Moroccan Vegetable Paella (400 calories/portion, 2 portions) - Morocco
+"
+89,200.0,100.0,90.0,100.0,300.0, Mediterranean Vegetable Omelette, Cucumber and Tomato Salad, Chicken satay skewers, Israeli salad, Quinoa-Stuffed Bell Peppers
+90,200.0,80.0,160.0,120.0,400.0," Miso soup with tofu and seaweed (200kcals per portion, 2 portions, soy allergies, Japan)
+", Fresh Squeezed Orange Juice," Salsa Verde Hummus with Pita Chips - 160 kcals per portion, 4 portions, contains gluten (Various)"," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Quinoa and black bean burgers - 400 calories per portion, 4 portions, contains gluten
+"
+91,300.0,100.0,250.0,120.0,300.0, Mexican Quinoa Breakfast Bowl, Fruit Smoothie Popsicles - Approx, Baked Samosas," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Ratatouille Tart
+92,250.0,100.0,150.0,120.0,400.0, Vegan Pancakes - 250 calories per portion | 2 portions | Contains gluten | Origin, Mini Frittatas - Approx, Veggie Sushi Rolls," Greek Salad - 120kcals per portion, 4 portions, lactose-free, Greece
+"," Spaghetti Aglio e Olio - 400 calories/portion, 2 portions, Origin"
+93,250.0,100.0,150.0,120.0,400.0, Vegan Matcha Overnight Oats - 250 calories per portion | 2 portions | None | Origin, Greek yogurt with berries, Pineapple and Coconut Energy Balls," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Stuffed Portobello Mushrooms with Quinoa
+94,500.0,100.0,120.0,120.0,220.0," Breakfast pizza - 500 calories per portion, 1 portion, contains gluten, origin", Rice Cake with Hummus and Cucumber, Caprese Pasta Salad," Greek Salad - 120kcals per portion, 4 portions, lactose-free, Greece
+", Lentil and Vegetable Stir Fry
+95,450.0,100.0,100.0,100.0,400.0, Breakfast Frittata," Mediterranean Style Feta Stuffed Dates - 100kcals per portion, 2 portions
+    Origin"," Vegan Mushroom Soup - 100 kcals per portion, 4 portions, no allergic warnings, origin", Israeli salad, Tofu and Vegetable Stir-Fry
+96,160.0,100.0,250.0,120.0,450.0," Scrambled eggs with spinach and feta (160 calories per portion, 2 portions, contains dairy, Greek origin)
+", Fresh Juice - Approx, Tomato Basil Bruschetta Pizza," Greek Salad - 120kcals per portion, 4 portions, lactose-free, Greece
+", Roasted Vegetable Pasta
+97,500.0,100.0,180.0,120.0,400.0," Iranian kaleh pacheh (sheep's head and hoof soup) - 500 calories per portion, 2 portions, no allergic warnings, origin", Boiled chickpeas," Vegan Strawberry Shortcake - 180 kcals per portion, 4 portions, no allergic warnings, origin"," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Thai Green Curry
+98,350.0,80.0,210.0,120.0,350.0, Vegan Savory Breakfast Muffins - 350 calories per portion | 1 portion | Contains gluten | Origin, Apple with Cinnamon, Veggie Pizza Bagels," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Veggie Burger
+99,300.0,100.0,160.0,120.0,400.0, Tropical Mango Chia Pudding, Chilled Gazpacho, Sliced Apples with Peanut Butter," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Mushroom and Spinach Lasagna
+100,300.0,100.0,230.0,120.0,220.0," Brazilian pão de queijo (cheese bread) with coffee (300kcals per portion, 2 portions, dairy allergies, origin"," Raspberry Yogurt Popsicles - 100kcals per portion, 2 portions
+    Origin", Roasted Red Pepper Hummus with Pita Chips," Greek Salad - 120kcals per portion, 4 portions, lactose-free, Greece
+", Chickpea and Vegetable Stir Fry
+101,180.0,100.0,170.0,120.0,350.0, Overnight Chia Pudding, Greek Salad Skewers, Tuna Salad Lettuce Wraps," Greek Salad - 120kcals per portion, 4 portions, lactose-free, Greece
+"," Thai Pineapple Fried Rice (350 calories/portion, 3 portions) - Thailand
+"
+102,300.0,100.0,70.0,120.0,400.0, Saffron Yogurt with Fruit, Cucumber Rolls with Hummus - Approx," Fruit Salad - 70 kcals per portion, 4 portions, no allergic warnings, origin"," Greek Salad - 120kcals per portion, 4 portions, lactose-free, Greece
+"," Lemon herb roasted chicken with steamed green beans - 400 kcals per portion, 4 portions, contains lactose
+"
+103,350.0,100.0,120.0,120.0,300.0, Coconut Chia Pudding, Mini Frittatas - Approx," Ceviche - 120 kcals per portion, 2 portions, contains fish (Peru)"," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Greek Briam (Roasted Vegetables)
+104,200.0,80.0,160.0,100.0,350.0, Spinach and Feta Stuffed Portobello Mushrooms," Carrot Sticks with Hummus - 80kcals per portion, 2 portions
+   Origin"," Mini Bagel Pizzas - 160 kcals per portion, 4 portions, contains gluten, dairy (USA)", Israeli salad, Vegan Tacos
+105,150.0,50.0,160.0,100.0,300.0, Vegan Breakfast Pita Pockets, Baked Apple Chips - Approx, Asparagus and Goat Cheese Tartlets, Israeli salad, Chickpea Tikka Masala
+106,400.0,90.0,920.0,100.0,300.0, Turkish Pogaca, Turkish-style boiled eggs, Vegan Thai Spring Rolls, Israeli salad," Vegan Teriyaki Jackfruit - 300 calories per portion, 4 portions, None, Various
+"
+107,160.0,100.0,120.0,120.0,400.0," Scrambled eggs with spinach and feta (160 calories per portion, 2 portions, contains dairy, Greek origin)
+", Watermelon Fruit Pizza, Oven-Baked Sweet Potato Fries," Greek Salad - 120kcals per portion, 4 portions, lactose-free, Greece
+"," Vegetable Lo Mein - 400 calories/portion, 4 portions, contains gluten and soy (China)
+"
+108,350.0,100.0,150.0,120.0,260.0," Moroccan baghrir (semolina pancakes) with honey and melted butter (350kcals per portion, 2 portions, origin", Cucumber Rolls with Cream Cheese, Edamame Salad," Greek Salad - 120kcals per portion, 4 portions, lactose-free, Greece
+", Mexican Stuffed Zucchini
+109,300.0,100.0,920.0,100.0,350.0, Tomato and Basil Omelette, Cucumber Sandwich, Vegan Butter Chicken, Israeli salad," Vegan Chili - 350 calories per portion, 4 portions, None, United States
+"
+110,350.0,80.0,180.0,100.0,400.0, Zucchini Fritters with Yogurt Sauce, Fruit Salad," Yoga snack balls (oats, peanut butter, honey, nuts)", Israeli salad," Moroccan Vegetable Paella (400 calories/portion, 2 portions) - Morocco
+"
+111,400.0,100.0,140.0,100.0,250.0, Breakfast Stuffed Peppers, Toasted Coconut Chips," Stuffed Dates - 140 kcals per portion, 4 portions, contains nuts (Middle East)", Israeli salad, Caprese Quinoa Salad
+112,500.0,100.0,180.0,20.0,250.0, Breakfast Burrito, Cucumber Rolls with Cream Cheese, Veggie Stuffed Bell Peppers, Moroccan Mint Tea," Veggie Egg Fried Rice - 250 calories/portion, 4 portions, Origin"
+113,500.0,100.0,290.0,120.0,450.0, Waffles with Strawberries and Whipped Cream, Fresh Juice - Approx," Antipasto Skewers - 290 kcals per portion, 3 portions, contains dairy (Italy)"," Greek Salad - 120kcals per portion, 4 portions, lactose-free, Greece
+", Thai Green Curry with Chicken
+114,300.0,100.0,100.0,20.0,300.0," Greek yogurt parfait with mixed berries and honey (300kcals per portion, 1 portion, origin", Frozen Grapes, Zucchini Tomato Bites, Moroccan Mint Tea, Moroccan Vegetable Tagine
+115,400.0,80.0,150.0,20.0,200.0," Chilean completo (hot dog with toppings) - 400 calories per portion, 1 portion, contains gluten, origin", Kale Chips, Cucumber Sandwiches, Moroccan Mint Tea, Stuffed Zucchini Boats
+116,250.0,100.0,250.0,100.0,250.0," Almond butter and banana smoothie (250kcals per portion, 1 portion, nut allergies)
+", Cucumber Sandwich, Mini Falafel Burgers, Israeli salad," Veggie Sushi Rolls - 250 calories/portion, 4 portions, Origin"
+117,300.0,100.0,150.0,120.0,250.0, Vegan Breakfast Spring Rolls - 300 calories per portion | 1 portion | Contains soy | Origin, Toasted Coconut Chips, Mexican Street Corn," Greek Salad - 120kcals per portion, 4 portions, lactose-free, Greece
+"," Greek Vegan Revithokeftedes (250 calories/portion, 4 portions) - Greece
+
+Please note that the calorie counts are approximate and may vary based on specific ingredient choices and preparation methods"
+118,300.0,80.0,150.0,120.0,320.0, Greek Yogurt with Honey and Pistachios, Energy Balls, Beet and Goat Cheese Salad," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Cauliflower fried rice with tofu – 320 calories per portion, 3 portions, vegan-friendly
+"
+119,500.0,100.0,250.0,20.0,300.0," Filipino longganisa sausage with garlic rice and fried egg (500kcals per portion, 2 portions, origin"," Mint Yogurt Dip with Vegetable Sticks - 100kcals per portion, 2 portions
+    Origin", Mini chicken and vegetable skewers, Moroccan Mint Tea, Ratatouille
+120,320.0,100.0,150.0,100.0,300.0," Artichoke and feta tart (320 calories per portion, 2 portions, contains dairy, Greek origin)
+", Mini Frittatas - Approx, Beetroot Hummus with Crackers, Israeli salad," Lentil and vegetable shepherd's pie - 300 calories per portion, 4 portions, none
+"
+121,450.0,100.0,150.0,20.0,400.0," Spanish tortilla de patatas (potato omelet) with aioli (450kcals per portion, 2 portions, origin", Corn on the Cob, Fruit Skewers with Yogurt Dip, Moroccan Mint Tea," Mediterranean stuffed tomatoes with quinoa and olives (400 calories per portion, 3 portions, vegan-friendly, origin"
+122,350.0,80.0,150.0,120.0,300.0, Broccoli and Cheese Frittata, Energy Balls, Stuffed Mini Bell Peppers," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Thai Curry Noodle Soup - 300 calories per portion, 4 portions, None, Thailand
+"
+123,400.0,100.0,150.0,120.0,180.0, Vegan Breakfast Stuffed Sweet Potatoes - 400 calories per portion | 1 portion | None | Origin," Apple Slices with Caramel Dip - 100kcals per portion, 2 portions
+    Origin", Fruit Skewers with Yogurt Dip," Greek Salad - 120kcals per portion, 4 portions, lactose-free, Greece
+"," Caprese stuffed portobello mushrooms - 180 calories per portion, 4 portions, contains dairy (Italy)
+"
+124,450.0,80.0,70.0,120.0,250.0," Smoked turkey and cheese sandwich (450kcals per portion, 1 portion, turkey allergies, origin", Baked Apple Chips, Caprese Skewers," Greek Salad - 120kcals per portion, 4 portions, lactose-free, Greece
+"," Ratatouille - 250 calories per portion, 3 portions, may contain onions and garlic"
+125,250.0,80.0,160.0,20.0,250.0, Greek Feta and Tomato Toast, Stuffed Dates," Vegan Taco Lettuce Wraps - 160 kcals per portion, 4 portions, no allergic warnings, origin", Moroccan Mint Tea," Mexican Corn Salad - 250 calories/portion, 4 portions, contains cilantro (Mexico)
+"
+126,250.0,80.0,220.0,20.0,294.0, Spinach and Mushroom Oatmeal, Fresh Squeezed Orange Juice," Avocado Toast - 220 kcals per portion, 3 portions, contains gluten (Various)", Moroccan Mint Tea, Vegan Lentil Sloppy Joes
+127,250.0,100.0,110.0,20.0,250.0," Shakarkandi ki chaat (Indian sweet potato salad) - 250 calories per portion, 2 portions, no allergic warnings, origin", Stuffed Dates - Approx," Sweet Potato Rounds - 110 kcals per portion, 4 portions, gluten-free (USA)", Moroccan Mint Tea, Ratatouille-Stuffed Zucchini
+128,320.0,100.0,320.0,100.0,400.0," Baked eggs with spinach and mushrooms (320 calories per portion, 2 portions, nut-free, American origin)
+", Corn on the Cob, Vegan Breaded Zucchini Sticks, Israeli salad," Greek salad with grilled chicken and pita bread (400 calories per portion, 2 portions, contains gluten, origin"
+129,350.0,100.0,200.0,120.0,450.0," Israeli shakshuka with eggplant and tahini (350kcals per portion, 2 portions, origin", Fruit Salad, Stuffed dates with goat cheese and walnuts," Greek Salad - 120kcals per portion, 4 portions, lactose-free, Greece
+"," Spinach and Ricotta Stuffed Shells with Marinara Sauce - 450 calories/portion, 4 portions, contains gluten and dairy (Italy)
+"
+130,350.0,100.0,120.0,100.0,250.0, Veggie Breakfast Quinoa, Energy Balls - Approx, Beetroot Hummus with Crackers, Israeli salad, Mediterranean Quinoa Salad
+131,300.0,100.0,120.0,20.0,300.0, Vegan French Toast, Edamame, Tomato Bruschetta, Moroccan Mint Tea," Broccoli and Cheddar Stuffed Potatoes - 300 calories/portion, 4 portions, Origin"
+132,300.0,80.0,160.0,100.0,430.0," Brazilian pão de queijo (cheese bread) with coffee (300kcals per portion, 2 portions, dairy allergies, origin", Energy Balls, Vegan Mexican Street Corn, Israeli salad," Caprese Stuffed Garlic Bread - 430kcals per portion, 2 portions, contains dairy (Italy)
+"
+133,350.0,100.0,180.0,100.0,350.0, Huevos Rancheros, Corn on the Cob, Veggie Sausage Rolls, Israeli salad, Vegan Pesto Pasta
+134,200.0,100.0,160.0,100.0,400.0, Veggie Breakfast Wrap with Tofu Scramble, Cucumber Rolls with Cream Cheese, Mini Chicken Satay Skewers, Israeli salad, Vegan Carbonara
+135,300.0,100.0,180.0,120.0,400.0," Spinach and feta pastry turnovers (300kcals per portion, 2 portions, dairy allergies)
+", Fruit Smoothie Popsicles - Approx, Turkish Pide," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Stuffed Bell Peppers with Ground Turkey
+136,300.0,70.0,320.0,20.0,350.0, Vegan Coconut Chia Pancakes - 300 calories per portion | 1 portion | Contains gluten | Origin, Kale chips, Pesto and vegetable pasta salad, Moroccan Mint Tea, Mushroom Risotto Stuffed Peppers
+137,350.0,100.0,300.0,120.0,200.0, Vegan Breakfast Baked Potato - 350 calories per portion | 1 portion | None | Origin, Watermelon Fruit Pizza, Mini Beef Empanadas," Greek Salad - 120kcals per portion, 4 portions, lactose-free, Greece
+"," Caprese Stuffed Portobello Mushrooms - 200 calories/portion, 4 portions, contains dairy (Italy)
+"
+138,400.0,50.0,150.0,120.0,400.0," Venezuelan arepas with cheese and avocado - 400 calories per portion, 1 portion, contains gluten and dairy, origin"," Homemade Fruit Popsicles - 50kcals per portion, 2 portions
+    Origin", Edamame Salad," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Lentil Curry
+139,400.0,90.0,260.0,100.0,450.0," Turkish acma (soft bread rings) with feta cheese - 400 calories per portion, 2 portions, contains gluten and dairy, origin", Rice Paper Rolls," Stuffed Tomatoes with Couscous - 260 kcals per portion, 2 portions, contains gluten (Mediterranean)", Israeli salad, Veggie Paella
+140,400.0,100.0,170.0,120.0,400.0," Turkish acma (soft bread rings) with feta cheese - 400 calories per portion, 2 portions, contains gluten and dairy, origin", Greek yogurt with berries," Egg Salad Lettuce Wraps - 170 kcals per portion, 3 portions, contains egg (USA)"," Greek Salad - 120kcals per portion, 4 portions, lactose-free, Greece
+"," Mexican Vegan Quesadillas (400 calories/portion, 2 portions) - Mexico
+"
+141,500.0,100.0,840.0,20.0,450.0," Hawaiian loco moco with beef patty, rice, and egg (500kcals per portion, 2 portions, origin", Guacamole Stuffed Cherry Tomatoes, Tempeh Stir-Fry, Moroccan Mint Tea," Baked Falafel Bowl - 450 calories/portion, 4 portions, contains gluten (Middle East)
+"
+142,550.0,100.0,200.0,120.0,300.0, Breakfast Paella, Roasted Beetroot Chips, Spinach Dip," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Lentil Shepherd's Pie
+143,350.0,100.0,150.0,120.0,450.0, Vegan Tofu Scramble Breakfast Sandwich - 350 calories per portion | 1 portion | Contains soy | Origin," Dates Stuffed with Almond Butter - 100kcals per portion, 2 portions
+    Origin", Caprese Bruschetta," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Chicken and Vegetable Skewers with Peanut Sauce
+144,450.0,100.0,180.0,120.0,350.0, Vegan Breakfast Muffins, Guacamole Stuffed Cherry Tomatoes, Homemade Veggie Pizza Rolls," Greek Salad - 120kcals per portion, 4 portions, lactose-free, Greece
+"," Caprese Quinoa Stuffed Peppers - 350 calories/portion, 4 portions, Origin"
+145,350.0,100.0,150.0,100.0,400.0," Baked beans on toast (350kcals per portion, 2 portions, origin", Stuffed Dates - Approx, Vegetable samosa, Israeli salad, Lentil Biryani
+146,400.0,90.0,90.0,100.0,250.0," Italian caprese frittata with tomatoes, mozzarella, and basil (400kcals per portion, 2 portions, origin", Quinoa Energy Bites, Bruschetta, Israeli salad, Mushroom Risotto
+147,250.0,100.0,230.0,100.0,200.0, Vegetable Scramble," Cinnamon Apple Chips - 100kcals per portion, 2 portions
+    Origin", Roasted Red Pepper Hummus with Pita Chips, Israeli salad," Greek Veggie Skewers - 200 calories/portion, 4 portions, Origin"
+148,350.0,100.0,200.0,100.0,250.0, Apple Cinnamon Muffins, Mini Frittatas - Approx, Veggie Sushi Burrito, Israeli salad, Spinach and Goat Cheese Stuffed Portobello Mushrooms
+149,300.0,80.0,230.0,20.0,350.0," Blueberry almond smoothie (300 calories per portion, 2 portions, contains nuts, American origin)
+", Apple with Cinnamon, Roasted Red Pepper Hummus with Pita Chips, Moroccan Mint Tea," Vegan Thai Coconut Soup - 350 calories per portion, 2 portions, may contain soy"
+150,320.0,100.0,120.0,120.0,450.0," Yogurt pancakes with mixed berries (320 calories per portion, 2 portions, contains dairy, American origin)
+", Frozen Grapes, Vegan Chia Seed Pudding," Greek Salad - 120kcals per portion, 4 portions, lactose-free, Greece
+"," Spinach and cream cheese stuffed chicken breast with wild rice - 450 kcals per portion, 4 portions, contains lactose
+"
+151,600.0,100.0,180.0,120.0,300.0, Vegan Breakfast Tofu Bowl, Watermelon and feta skewers, Grilled Halloumi Skewers," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Vegetable Sushi Rolls - 300 calories/portion, 4 portions, contains soy (Japan)
+
+"
+152,350.0,100.0,180.0,20.0,320.0, Maple Pecan Granola with Yogurt, Greek yogurt with berries," Vegan Apple Cinnamon Granola Bars - 180 kcals per portion, 4 portions, no allergic warnings, origin", Moroccan Mint Tea," Mushroom and black bean tacos – 320 calories per portion, 4 portions, vegetarian-friendly
+"
+153,250.0,100.0,200.0,120.0,300.0, Raspberry Chia Pudding, Cucumber and Tomato Salad, Spinach Dip," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Zucchini Noodles with Pesto - 300 calories per portion, 4 portions, contains nuts (pine nuts), Origin"
+154,300.0,100.0,200.0,120.0,300.0, Irish Soda Bread, Boiled chickpeas, Spinach and Cheese Puffs," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Moroccan vegetable tagine with couscous - 300 kcals per portion, 4 portions, vegetarian, contains gluten
+"
+155,350.0,80.0,160.0,20.0,350.0, Blueberry Muffins, Fruit Salad, Cabbage Rolls, Moroccan Mint Tea, Mushroom Tacos
+156,300.0,100.0,200.0,120.0,400.0, Banana Nut Smoothie Bowl," Raspberry Yogurt Popsicles - 100kcals per portion, 2 portions
+    Origin", Stuffed Eggplant," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Eggplant Parmesan - 400 calories/portion, 4 portions, Origin"
+157,320.0,80.0,180.0,20.0,450.0," Sweet corn pancakes with tomato and avocado salsa (320 calories per portion, 2 portions, nut-free, American origin)
+", Cheesy Popcorn, Mini Margherita Skewers, Moroccan Mint Tea," Vegan Coconut Chickpea Curry - 450 calories per portion, 2 portions, may contain mustard"
+158,250.0,80.0,180.0,100.0,350.0," British eggy soldiers - 250 calories per portion, 1 portion, contains gluten, origin", Avocado Deviled Eggs, Baked Mozzarella Sticks, Israeli salad, Chickpea and Spinach Stew
+159,300.0,80.0,200.0,120.0,200.0," Nigerian moi moi (bean pudding) - 300 calories per portion, 2 portions, no allergic warnings, origin", Hard-Boiled Eggs, Fruit Kabobs with Chocolate Sauce," Greek Salad - 120kcals per portion, 4 portions, lactose-free, Greece
+", Stuffed Zucchini Boats
+160,400.0,70.0,180.0,120.0,400.0," Algerian msemen (pan fried dough) with honey - 400 calories per portion, 2 portions, contains gluten, origin", Kale chips," Tapioca Pudding - 180 kcals per portion, 3 portions, contains dairy (World)"," Greek Salad - 120kcals per portion, 4 portions, lactose-free, Greece
+", Spinach and Ricotta Stuffed Shells
+161,200.0,60.0,200.0,20.0,350.0, Blueberry Almond Baked Oatmeal, Cucumber and tomato salad, Greek Yogurt with Mango and Pistachios, Moroccan Mint Tea, Thai Red Curry with Tofu
+162,320.0,100.0,150.0,120.0,400.0," Sweet corn pancakes with tomato and avocado salsa (320 calories per portion, 2 portions, nut-free, American origin)
+", Quinoa Energy Bites," Beet Hummus with Carrot Sticks - 150 kcals per portion, 4 portions, may contain sesame (Middle East)"," Greek Salad - 120kcals per portion, 4 portions, lactose-free, Greece
+"," Caprese Omelette - 400kcals per portion, 2 portions, contains dairy (Italy)
+"
+163,400.0,100.0,150.0,120.0,210.0," American pancakes with maple syrup - 400 calories per portion, 2 portions, contains gluten and dairy, origin", Zesty Lime Popcorn - Approx, Zucchini chips," Greek Salad - 120kcals per portion, 4 portions, lactose-free, Greece
+", Quinoa Stuffed Portobello Mushrooms
+164,300.0,100.0,180.0,20.0,350.0," Rice porridge with cinnamon and sugar - 300 calories per portion, 2 portions, no allergic warnings, origin", Cucumber Slices with Tzatziki - Approx, Pita Bread with Hummus, Moroccan Mint Tea," Veggie Pad See Ew - 350 calories/portion, 4 portions, Origin"
+165,400.0,80.0,120.0,100.0,200.0, Vegan Breakfast Sushi - 400 calories per portion | 1 portion | Contains soy | Origin," Carrot Sticks with Hummus - 80kcals per portion, 2 portions
+   Origin", Caprese Pasta Salad, Israeli salad," Lentil Soup - 200 calories/portion, 6 portions, Origin"
+166,750.0,100.0,200.0,120.0,280.0, Vegan Breakfast Stuffed Mushrooms, Greek yogurt with berries, Bacon-Wrapped Dates with Goat Cheese," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Vegan Barbecue Jackfruit Sandwiches
+167,200.0,100.0,290.0,100.0,350.0, Roasted Vegetable Breakfast Tacos, Watermelon Fruit Pizza," Antipasto Skewers - 290 kcals per portion, 3 portions, contains dairy (Italy)", Israeli salad," Veggie enchiladas - 350 calories per portion, 4 portions, contains gluten (Mexico)
+"
+168,400.0,50.0,150.0,120.0,400.0, Chia Seed Pancakes," Fruit Salad - 50kcals per portion, 2 portions
+   Origin", Zucchini Pizza Bites with Goat Cheese," Greek Salad - 120kcals per portion, 4 portions, lactose-free, Greece
+"," Vegetable Lasagna - 400 calories/portion, 6 portions, Origin"
+169,250.0,100.0,150.0,120.0,350.0, Overnight Chia Oats, Baked Apple Chips, Roasted Chickpeas," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Vegan Shepherd's Pie
+170,350.0,100.0,120.0,120.0,160.0," French toast with cinnamon and maple syrup (350kcals per portion, 2 portions, origin", Kiwi and Strawberry Smoothie, Cheese and Spinach Stuffed Mushrooms," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Vegan Quinoa and Kale Salad - 160 calories per portion, 2 portions, may contain gluten"
+171,300.0,100.0,150.0,120.0,300.0, Tropical Mango Chia Pudding," Dates Stuffed with Almond Butter - 100kcals per portion, 2 portions
+    Origin"," Stuffed Mini Bell Peppers - 150 kcals per portion, 4 portions, gluten-free (Various)"," Greek Salad - 120kcals per portion, 4 portions, lactose-free, Greece
+", Quinoa Stuffed Bell Peppers with Cashew Cream
+172,250.0,100.0,160.0,120.0,250.0, Vegan Breakfast Quesadillas, Cucumber Rolls with Cream Cheese, Stuffed Jalapeno Poppers," Greek Salad - 120kcals per portion, 4 portions, lactose-free, Greece
+", Lentil Loaf
+173,350.0,80.0,250.0,100.0,220.0," Veggie fajita scramble with tofu (350 calories per portion, 2 portions, nut-free, Mexican origin)
+", Apple with Cinnamon, Mini chicken and vegetable skewers, Israeli salad, Lentil and Vegetable Stir Fry
+174,300.0,90.0,50.0,120.0,290.0, Chia Seed Smoothie, Stuffed Dates, Fruit Salad," Greek Salad - 120kcals per portion, 4 portions, lactose-free, Greece
+", Vegan Lentil Tacos
+175,450.0,50.0,760.0,120.0,300.0, Vegan Breakfast Muffins," Fruit Salad - 50kcals per portion, 2 portions
+   Origin", Vegan Indian Samosa Chaat," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Quinoa Stuffed Bell Peppers
+176,300.0,100.0,250.0,20.0,250.0, Country Style Potatoes with Veggies, Baked Zucchini Chips - Approx, Thai Mango Sticky Rice, Moroccan Mint Tea, Quinoa Veggie Stir-Fry
+177,400.0,100.0,250.0,20.0,400.0," Polish scrambled eggs with kielbasa and sauerkraut (400kcals per portion, 2 portions, pork allergies, origin", Frozen Grapes, Stuffed Bell Peppers with Quinoa, Moroccan Mint Tea," Teriyaki Chicken Skewers - 400 calories per portion, 4 portions, contains gluten (soy sauce), Origin"
+178,200.0,100.0,250.0,120.0,400.0, Veggie Breakfast Fritters, Rice Cake with Hummus and Cucumber, Spinach and Mushroom Stuffed Phyllo Triangles," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Chicken stir-fry with broccoli and brown rice – 400 calories per portion, 2 portions (origin"
+179,250.0,100.0,260.0,120.0,200.0," Pumpkin pie smoothie (250 calories per portion, 2 portions, nut-free, American origin)
+", Tomato Basil Bruschetta," Stuffed Tomatoes with Couscous - 260 kcals per portion, 2 portions, contains gluten (Mediterranean)"," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Veggie Stir-Fry with Tofu - 200 calories/portion, 4 portions, contains soy (China)
+"
+180,350.0,100.0,230.0,20.0,400.0, Chocolate Banana Smoothie Bowl, Chilled Gazpacho, Roasted red pepper hummus with pita chips, Moroccan Mint Tea," Lemon herb roasted chicken with steamed green beans - 400 kcals per portion, 4 portions, contains lactose
+"
+181,300.0,80.0,180.0,20.0,300.0," Avocado toast - 300 calories per portion, 2 portions, may contain gluten, origin", Fruit Salad," Vegan Pumpkin Muffins - 180 kcals per portion, 4 portions, no allergic warnings, origin", Moroccan Mint Tea, Ratatouille Tart
+182,250.0,70.0,150.0,120.0,100.0, Tofu Scramble - 250 calories per portion | 2 portions | None | Origin, Fresh Fruit Salad, Mango Salsa with Tortilla Chips," Greek Salad - 120kcals per portion, 4 portions, lactose-free, Greece
+"," Ratatouille - 100 calories per portion, 4 portions, none (France)
+"
+183,250.0,100.0,180.0,20.0,400.0, Vegan Breakfast Oats and Berries, Boiled chickpeas," Tapioca Pudding - 180 kcals per portion, 3 portions, contains dairy (World)", Moroccan Mint Tea," Mediterranean stuffed tomatoes with quinoa and olives (400 calories per portion, 3 portions, vegan-friendly, origin"
+184,300.0,100.0,160.0,100.0,350.0," Spinach and mushroom frittata (300kcals per portion, 2 portions)
+", Som Tam (Papaya Salad), Chocolate Dipped Pretzels, Israeli salad," Sweet Potato, Black Bean, and Spinach Quesadillas - 350 calories/portion, 4 portions, contains gluten (Mexico)
+"
+185,350.0,100.0,160.0,120.0,350.0, Vegan Protein Pancakes - 350 calories per portion | 1 portion | Contains gluten | Origin," Rice Cake with Almond Butter - 100kcals per portion, 2 portions
+    Origin"," Vegan Spinach and Mushroom Tartlets - 160 kcals per portion, 4 portions, no allergic warnings, origin"," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Eggplant rollatini – 350 calories per portion, 3 portions, vegetarian-friendly (origin"
+186,400.0,100.0,100.0,120.0,200.0," Veggie breakfast quesadilla (400 calories per portion, 2 portions, nut-free, Mexican origin)
+", Guacamole Stuffed Cherry Tomatoes," Vegan Mushroom Soup - 100 kcals per portion, 4 portions, no allergic warnings, origin"," Greek Salad - 120kcals per portion, 4 portions, lactose-free, Greece
+", Mexican Rice Bowl
+187,400.0,100.0,280.0,120.0,250.0, Turkish Pogaca, Caprese Skewers, Mini chicken lettuce wraps," Greek Salad - 120kcals per portion, 4 portions, lactose-free, Greece
+", Vegan Pizza
+188,400.0,100.0,150.0,20.0,250.0," Lebanese shakshouka with tomatoes, peppers, and eggs (400kcals per portion, 2 portions, origin", Frozen Grapes, Peanut Butter Banana Roll-Ups, Moroccan Mint Tea," Falafel salad with tahini dressing - 250 calories per portion, 4 portions, contains gluten (Middle East)
+"
+189,450.0,100.0,180.0,20.0,290.0, Nutella Stuffed French Toast, Caprese Skewers, Kale smoothie with pineapple and coconut water, Moroccan Mint Tea, Vegan Lentil Tacos
+190,500.0,100.0,200.0,120.0,400.0, Waffles with Strawberries and Whipped Cream, Boiled chickpeas, Cilantro Lime Shrimp Skewers," Greek Salad - 120kcals per portion, 4 portions, lactose-free, Greece
+"," Thai Red Curry with Vegetables - 400 calories/portion, 4 portions, contains garlic (Thailand)
+"
+191,400.0,100.0,250.0,120.0,250.0, Breakfast Bibimbap, Baked Apple Chips, Vegetable Samosas," Greek Salad - 120kcals per portion, 4 portions, lactose-free, Greece
+"," Falafel salad with tahini dressing - 250 calories per portion, 4 portions, contains gluten (Middle East)
+"
+192,850.0,80.0,180.0,120.0,250.0, Vegan Breakfast Empanadas, Mango with Chili Powder, Veggie spring rolls with peanut dipping sauce," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Grilled Chicken Caesar Salad - 250 calories per portion, 4 portions, contains dairy (cheese), Origin"
+193,200.0,80.0,120.0,120.0,292.0, Caprese Avocado Toast," Carrot Sticks with Hummus - 80kcals per portion, 2 portions
+   Origin", Caprese Skewers," Greek Salad - 120kcals per portion, 4 portions, lactose-free, Greece
+", Lentil Loaf
+194,300.0,100.0,80.0,120.0,400.0, Shakshuka, Baked Zucchini Chips - Approx," Edamame Beans - 80 kcals per portion, 4 portions, no allergic warnings, origin"," Greek Salad - 120kcals per portion, 4 portions, lactose-free, Greece
+", Stuffed Mushrooms
+195,400.0,80.0,120.0,120.0,350.0," Egyptian feteer meshaltet (layered pastry) with honey - 400 calories per portion, 2 portions, contains gluten, origin", Mango with Chili Powder, Greek tomato and cucumber salad," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Grilled Salmon with Mango Salsa
+196,500.0,100.0,200.0,20.0,400.0," Malaysian nasi lemak (coconut rice with condiments) - 500 calories per portion, 2 portions, contains gluten, origin", Roasted Pumpkin Seeds, Greek Yogurt Parfait, Moroccan Mint Tea, Vegan Pad Thai
+197,350.0,100.0,240.0,120.0,250.0, Ricotta Pancakes, Mini Frittatas - Approx, Vegan Spinach Dip with Pita Chips," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Falafel - 250 calories per portion, 4 portions, Gluten, Middle East
+
+"
+198,400.0,100.0,80.0,20.0,180.0," Venezuelan arepas with cheese and avocado - 400 calories per portion, 1 portion, contains gluten and dairy, origin", Zesty Lime Popcorn - Approx," Mini Vegetable Spring Rolls - 80 kcals per portion, 8 portions, contains gluten, soy (China)", Moroccan Mint Tea," Caprese Salad - 180kcals per portion, 4 portions, contains dairy (Italy)
+"
+199,500.0,90.0,80.0,100.0,300.0," Eggs Benedict with ham and hollandaise sauce (500kcals per portion, 2 portions)
+", Quinoa Energy Bites," Edamame Beans - 80 kcals per portion, 4 portions, no allergic warnings, origin", Israeli salad, Cauliflower Tikka Masala
+200,300.0,100.0,160.0,100.0,300.0, Classic Peanut Butter and Jelly, Watermelon Fruit Pizza, Hummus with Veggie Sticks, Israeli salad, Vegan Quesadillas
+201,300.0,100.0,200.0,100.0,400.0," Brazilian pão de queijo (cheese bread) with coffee (300kcals per portion, 2 portions, dairy allergies, origin", Fresh Fruit Salad, Cheese and Spinach Puffs, Israeli salad," Veggie Sushi Bowl - 400 calories/portion, 2 portions, Origin"
+202,500.0,100.0,250.0,20.0,400.0, Breakfast Sausage and Egg Casserole, Greek yogurt with berries, Eggplant and feta bruschetta, Moroccan Mint Tea," Baked coconut shrimp with pineapple fried rice - 400 kcals per portion, 2 portions, contains shellfish, lactose
+"
+203,300.0,100.0,200.0,20.0,450.0, Egg Salad Sandwich, Cucumber and Hummus Rolls, Vegetable Couscous Salad, Moroccan Mint Tea, Ratatouille Tart
+204,100.0,80.0,280.0,20.0,400.0, Vegan Breakfast Bagel, Kale Chips, Baked Tofu Nuggets, Moroccan Mint Tea, Vegetable Paella
+205,300.0,100.0,150.0,120.0,119.0, Aloo Paratha," Raspberry Yogurt Popsicles - 100kcals per portion, 2 portions
+    Origin", Strawberry Bruschetta," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Vegan Gazpacho
+206,500.0,80.0,200.0,120.0,200.0," Eggs Benedict with ham and hollandaise sauce (500kcals per portion, 2 portions)
+", Energy Balls, Fruit and Yogurt Parfait," Greek Salad - 120kcals per portion, 4 portions, lactose-free, Greece
+"," Black Bean and Corn Salad - 200 calories per portion, 4 portions, None, Various
+"
+207,500.0,100.0,300.0,20.0,240.0," Breakfast pizza - 500 calories per portion, 1 portion, contains gluten, origin", Watermelon Fruit Pizza, Roasted Vegetable Pizza, Moroccan Mint Tea, Spaghetti Aglio e Olio
+208,400.0,100.0,280.0,120.0,250.0," Chicken sausage and vegetable stir-fry (400kcals per portion, 2 portions, origin", Roasted Pumpkin Seeds, Baked Tofu Nuggets," Greek Salad - 120kcals per portion, 4 portions, lactose-free, Greece
+"," Falafel salad with tahini dressing - 250 calories per portion, 4 portions, contains gluten (Middle East)
+"
+209,350.0,100.0,80.0,120.0,300.0," Sourdough toast with nut butter and banana - 350 calories per portion, 1 portion, contains gluten and nuts, origin"," Mint Yogurt Dip with Vegetable Sticks - 100kcals per portion, 2 portions
+    Origin", Zucchini Chips," Greek Salad - 120kcals per portion, 4 portions, lactose-free, Greece
+"," Lentil Samosas - 300 calories per portion, 4 portions, None, India
+"
+210,400.0,70.0,100.0,120.0,200.0, Turkish Menemen with Feta Cheese, Fresh Fruit Salad, Spinach and feta triangles," Greek Salad - 120kcals per portion, 4 portions, lactose-free, Greece
+"," Caprese Stuffed Portobello Mushrooms - 200 calories/portion, 4 portions, contains dairy (Italy)
+"
+211,300.0,100.0,120.0,20.0,350.0," Poha (Indian flattened rice dish) - 300 calories per portion, 2 portions, no allergic warnings, origin", Chilled Gazpacho Soup - Approx," Vegan Lentil Soup - 120 kcals per portion, 4 portions, no allergic warnings, origin", Moroccan Mint Tea," Stuffed zucchini boats with ground turkey - 350 kcals per portion, 4 portions, gluten-free, contains lactose
+"
+212,300.0,100.0,200.0,120.0,450.0," Strawberry banana overnight oats (300 calories per portion, 2 portions, nut-free, American origin)
+", Roasted Pumpkin Seeds, Chicken Satay Skewers," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Vegetarian Lasagna - 450 calories per portion, 4 portions, contains gluten (pasta), Origin"
+213,350.0,100.0,100.0,100.0,400.0," Afghan bolani (stuffed flatbread) with yogurt sauce - 350 calories per portion, 2 portions, contains gluten and dairy, origin", Greek yogurt with berries, Grilled Vegetable Skewers, Israeli salad," Vegan Pesto Pizza - 400 calories per portion, 4 portions, Gluten, Italy
+"
+214,250.0,100.0,220.0,100.0,400.0, Vegan Oatmeal Raisin Overnight Oats - 250 calories per portion | 2 portions | Contains gluten | Origin, Fresh Juice - Approx, Greek tzatziki with pita chips, Israeli salad," Vegetable Jalfrezi - 400 calories/portion, 4 portions, contains garlic (India)
+"
+215,500.0,100.0,250.0,20.0,380.0, Turkish Simit," Rice Cake with Almond Butter - 100kcals per portion, 2 portions
+    Origin", Baked Samosas, Moroccan Mint Tea," Vegetable Curry with Coconut Milk - 380kcals per portion, 4 portions, contains nuts
+"
+216,250.0,100.0,180.0,120.0,400.0," Overnight oats with berries and almond milk (250 calories per portion, 2 portions, nut-free, American origin)
+", Rice Paper Spring Rolls, Lentil Salad," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Vegan Curry Laksa
+217,500.0,60.0,280.0,20.0,450.0," Breakfast pizza - 500 calories per portion, 1 portion, contains gluten, origin", Fruit Salad - Approx, Mediterranean Hummus Wrap, Moroccan Mint Tea, Thai Basil Tofu Stir-Fry
+218,300.0,80.0,90.0,120.0,159.0, Fruit Smoothie Bowl - 300 calories per portion | 1 portion | None | Origin, Fruit Salad, Baked sweet potato chips," Greek Salad - 120kcals per portion, 4 portions, lactose-free, Greece
+", Quinoa Stuffed Mushrooms
+219,500.0,80.0,190.0,100.0,350.0," Belgian waffles with fruit compote - 500 calories per portion, 2 portions, contains gluten, origin", Cheesy Popcorn, Cucumber and Avocado Gazpacho, Israeli salad," Vegan Cauliflower Fried Rice - 350 calories per portion, 4 portions, None, China
+"
+220,350.0,100.0,200.0,120.0,200.0, Sweet Potato and Spinach Breakfast Hash, Cucumber and Tomato Salad, Stuffed Bell Peppers," Greek Salad - 120kcals per portion, 4 portions, lactose-free, Greece
+", Ratatouille
+221,400.0,80.0,250.0,20.0,350.0, Vegan Breakfast Tamales - 400 calories per portion | 1 portion | Contains gluten | Origin, Fresh Watermelon Slices - Approx, Mini chicken quesadilla, Moroccan Mint Tea," Ratatouille Quinoa Bowl - 350 calories/portion, 4 portions, contains garlic (France)
+"
+222,400.0,100.0,140.0,120.0,340.0, Turkish Pogaca," Mint Yogurt Dip with Vegetable Sticks - 100kcals per portion, 2 portions
+    Origin", Greek Yogurt with Apple and Cinnamon," Greek Salad - 120kcals per portion, 4 portions, lactose-free, Greece
+"," Spinach and Mushroom Quiche - 340kcals per portion, 4 portions, contains dairy
+"
+223,300.0,80.0,150.0,120.0,270.0, Vegan Pumpkin Spice Pancakes - 300 calories per portion | 1 portion | Contains gluten | Origin, Cheesy Popcorn, Stuffed mushrooms," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Spinach and Feta Puff Pastry Bites - 270kcals per portion, 4 portions, contains dairy
+"
+224,200.0,100.0,200.0,20.0,400.0, Vegetable Frittata, Caprese Skewers, Baked Zucchini Fries, Moroccan Mint Tea, Vegan Sausage and Peppers
+225,300.0,100.0,90.0,120.0,360.0, Egg Salad Sandwich, Cucumber Sandwiches, Parmesan zucchini chips," Greek Salad - 120kcals per portion, 4 portions, lactose-free, Greece
+"," Lentil Sloppy Joes - 360kcals per portion, 4 portions, contains legumes (USA)
+"
+226,280.0,80.0,120.0,100.0,450.0," Cinnamon raisin oatmeal with apples (280 calories per portion, 2 portions, nut-free, American origin)
+", Fruit Salad, Greek Yogurt Parfait, Israeli salad," Portobello mushroom burgers with sweet potato fries – 450 calories per portion, 4 portions, vegetarian-friendly
+"
+227,400.0,80.0,120.0,120.0,250.0," South African boerewors sausage with tomato chutney (400kcals per portion, 2 portions, origin"," Carrot Sticks with Hummus - 80kcals per portion, 2 portions
+   Origin"," Caprese salad skewers (cherry tomatoes, mozzarella, basil)"," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Stuffed Acorn Squash
+228,400.0,100.0,100.0,100.0,400.0," Shakshuka with bell peppers and tomatoes (400kcals per portion, 2 portions, origin", Caprese Skewers, Baba Ganoush, Israeli salad," Mexican Vegan Fajitas (400 calories/portion, 2 portions) - Mexico
+"
+229,200.0,50.0,300.0,20.0,350.0, Vegan Breakfast Quinoa Salad," Homemade Fruit Popsicles - 50kcals per portion, 2 portions
+    Origin", Chicken Gyro Wraps, Moroccan Mint Tea," Greek Spinach Pie - 350 calories/portion, 4 portions, contains gluten and dairy (Greece)
+"
+230,350.0,100.0,960.0,120.0,450.0," Italian ciambella (simple breakfast cake) with coffee (350kcals per portion, 2 portions, origin", Cucumber Sandwich, Vegan Buffalo Cauliflower Pizza," Greek Salad - 120kcals per portion, 4 portions, lactose-free, Greece
+"," Thai Vegan Panang Curry (450 calories/portion, 2 portions) - Thailand
+"
+231,300.0,80.0,160.0,20.0,240.0," Shakshuka - 300 calories per portion, 2 portions, no allergic warnings, origin", Apple with Cinnamon, Roasted Sweet Potato Slices, Moroccan Mint Tea, Spaghetti Aglio e Olio
+232,70.0,60.0,320.0,20.0,300.0, Fruit Salad, Cucumber and tomato salad, Vegan Mediterranean Flatbread Pizza, Moroccan Mint Tea," Lentil and vegetable shepherd's pie - 300 calories per portion, 4 portions, none
+"
+233,400.0,100.0,160.0,20.0,300.0," Mexican molletes with refried beans, cheese, and salsa (400kcals per portion, 2 portions, origin", Cucumber Sandwich, Goat Cheese and Honey Crostini, Moroccan Mint Tea, Quinoa Fried Rice
+234,250.0,100.0,150.0,20.0,350.0, Vegan Banana Bread, Roasted Almonds, Mango salsa with tortilla chips, Moroccan Mint Tea," Chinese Vegan Kung Pao Tofu (350 calories/portion, 2 portions) - China
+"
+235,200.0,100.0,180.0,120.0,350.0, Vegan Breakfast Quiche Lorraine, Baked Apple Chips, Spinach and Feta Pinwheels," Greek Salad - 120kcals per portion, 4 portions, lactose-free, Greece
+"," Veggie stir-fry with tofu and brown rice - 350 kcals per portion, 4 portions, vegetarian, contains gluten, soy
+"
+236,200.0,100.0,130.0,100.0,250.0, Spinach and Mushroom Breakfast Tacos, Zesty Lime Popcorn - Approx," Baked Falafel with Tahini Sauce - 130 kcals per portion, 4 portions, allergic warning (sesame), origin", Israeli salad," Falafel - 250 calories per portion, 4 portions, Gluten, Middle East
+
+"
+237,250.0,100.0,200.0,120.0,420.0, Vegan Banana Muffins, Mini Frittatas - Approx, Mini Crab Cakes," Greek Salad - 120kcals per portion, 4 portions, lactose-free, Greece
+"," Pesto Pasta - 420kcals per portion, 2 portions, contains nuts (Italy)
+"
+238,700.0,100.0,180.0,120.0,200.0, Vegan Breakfast Bibimbap, Watermelon and feta skewers, Beetroot and Feta Cheese Salad," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Lentil Soup - 200 calories/portion, 6 portions, Origin"
+239,400.0,50.0,220.0,120.0,300.0, Avocado and Egg Breakfast Salad," Homemade Fruit Popsicles - 50kcals per portion, 2 portions
+    Origin", Baked Mini Samosas with Mint Chutney," Greek Salad - 120kcals per portion, 4 portions, lactose-free, Greece
+"," Chinese Vegan Eggplant with Garlic Sauce (300 calories/portion, 3 portions) - China
+"
+240,250.0,100.0,480.0,20.0,200.0, Vegan Oatmeal Raisin Overnight Oats - 250 calories per portion | 2 portions | Contains gluten | Origin, Greek Salad Skewers, Vegan Cucumber Sushi Rolls, Moroccan Mint Tea, Lentil Spinach Soup
+241,350.0,100.0,200.0,100.0,250.0," Veggie breakfast wrap with scrambled eggs (350kcals per portion, 2 portions, origin", Guacamole Stuffed Cherry Tomatoes, Guacamole with Tortilla Chips, Israeli salad," Mediterranean Quinoa Salad (250 calories/portion, 2 portions) - Greece
+"
+242,400.0,80.0,440.0,120.0,300.0," Huevos rancheros - 400 calories per portion, 2 portions, contains gluten, origin", Apple with Cinnamon, Vegan Gyoza," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Cauliflower Tikka Masala - 300 calories per portion, 4 portions, None, India
+
+"
+243,300.0,50.0,640.0,20.0,320.0, Greek Yogurt with Honey and Pistachios," Homemade Fruit Popsicles - 50kcals per portion, 2 portions
+    Origin", Vegan Ratatouille, Moroccan Mint Tea, Sweet and Sour Tofu
+244,300.0,100.0,200.0,100.0,234.0, Chia Seed Pancakes, Fruit Smoothie Popsicles - Approx, Hummus and Veggie Wrap, Israeli salad, Vegan Stuffed Cabbage Rolls
+245,550.0,80.0,200.0,120.0,300.0," Eggs Benedict - 550 calories per portion, 2 portions, contains gluten and dairy, origin", Stuffed Dates, Quinoa Salad," Greek Salad - 120kcals per portion, 4 portions, lactose-free, Greece
+", Greek Orzo Salad
+246,350.0,100.0,880.0,100.0,400.0, Quinoa Porridge - 350 calories per portion | 1 portion | Contains nuts | Origin, Som Tam (Papaya Salad), Jackfruit Tacos, Israeli salad," Lentil and vegetable stir-fry with noodles (400 calories per portion, 3 portions, vegan-friendly, origin"
+247,200.0,100.0,300.0,100.0,400.0, Vegetable Frittata, Chilled Gazpacho Soup - Approx, Roasted Vegetable Pizza, Israeli salad," Lentil and vegetable stir-fry with noodles (400 calories per portion, 3 portions, vegan-friendly, origin"
+248,550.0,100.0,200.0,20.0,250.0, Sausage and Cheese Quiche, Edamame, Grilled Chicken Skewers, Moroccan Mint Tea," Vegan Caesar Salad - 250 calories per portion, 4 portions, None, United States
+"
+249,500.0,100.0,180.0,20.0,350.0," Vietnamese banh mi sandwich with eggs, pickled carrots, and cilantro (500kcals per portion, 2 portions, origin", Quinoa Energy Bites, Sweet and Spicy Roasted Almonds, Moroccan Mint Tea, Lentil Loaf
+250,250.0,100.0,180.0,120.0,420.0," Fruit smoothie bowl topped with granola (250kcals per portion, 2 portions, nut allergies, origin", Cucumber and Tomato Salad," Vegan Strawberry Shortcake - 180 kcals per portion, 4 portions, no allergic warnings, origin"," Greek Salad - 120kcals per portion, 4 portions, lactose-free, Greece
+", Vegan Pad Thai
+251,200.0,100.0,120.0,20.0,420.0, Poha (Flattened Rice), Roasted Chickpeas, Veggie Egg Muffins, Moroccan Mint Tea," Sweet Potato and Black Bean Enchiladas - 420kcals per portion, 4 portions, contains legumes (Mexico)
+"
+252,250.0,90.0,150.0,120.0,400.0, Quinoa Porridge, Turkish-style boiled eggs, Mixed berry salad with honey citrus dressing," Greek Salad - 120kcals per portion, 4 portions, lactose-free, Greece
+", Vegan Mushroom Risotto
+253,750.0,100.0,200.0,120.0,450.0, Vegan Breakfast Stuffed Mushrooms, Carrot Sticks with Ranch Dip, Baked Falafel," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Thai Basil Tofu Stir-Fry
+254,300.0,100.0,140.0,120.0,250.0, Quinoa Breakfast Cookies, Caprese Skewers," Roasted Chickpeas - 140 kcals per portion, 4 portions, gluten-free (World)"," Greek Salad - 120kcals per portion, 4 portions, lactose-free, Greece
+"," Ratatouille tart - 250 calories per portion, 6 portions, contains gluten (France)
+"
+255,350.0,80.0,150.0,120.0,300.0," Israeli shakshuka with eggplant and tahini (350kcals per portion, 2 portions, origin", Baked Apple Chips, Veggie Sushi Rolls," Greek Salad - 120kcals per portion, 4 portions, lactose-free, Greece
+"," Quinoa Salad with Roasted Vegetables - 300 calories per portion, 4 portions, no allergic warnings, Origin"
+256,400.0,80.0,150.0,120.0,212.0," Breakfast quesadilla - 400 calories per portion, 1 portion, contains gluten and dairy, origin", Fruit Salad, Stuffed Mini Bell Peppers," Greek Salad - 120kcals per portion, 4 portions, lactose-free, Greece
+", Vegan Caesar Salad
+257,400.0,80.0,760.0,100.0,350.0, Breakfast Tacos with Avocado Salsa, Apple with Cinnamon, Moroccan Couscous, Israeli salad," Mexican Rice Casserole - 350 calories/portion, 4 portions, contains gluten (Mexico)
+"
+258,400.0,100.0,160.0,120.0,300.0, Chorizo Breakfast Burrito, Berry Chia Detox Water, Mini Vegetable Frittatas," Greek Salad - 120kcals per portion, 4 portions, lactose-free, Greece
+", Quinoa Fried Rice
+259,300.0,100.0,200.0,100.0,300.0," Rice porridge with cinnamon and sugar - 300 calories per portion, 2 portions, no allergic warnings, origin", Cucumber and Tomato Salad, Banana Bread, Israeli salad, Chickpea Tikka Masala
+260,400.0,80.0,90.0,120.0,400.0," Indonesian nasi goreng (fried rice) with chicken and vegetables (400kcals per portion, 2 portions, origin", Fresh Watermelon Slices - Approx," Vegan Sweet Potato Toast - 90 kcals per portion, 4 portions, no allergic warnings, origin"," Greek Salad - 120kcals per portion, 4 portions, lactose-free, Greece
+"," Stuffed Bell Peppers with Quinoa - 400 calories per portion, 4 portions, None, Various
+"
+261,400.0,100.0,150.0,120.0,350.0, Vegan Breakfast Sushi - 400 calories per portion | 1 portion | Contains soy | Origin, Quinoa Energy Bites, Cucumber and Cream Cheese Sandwiches," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Coconut Shrimp Curry - 350 calories per portion, 4 portions, contains shellfish, Origin"
+262,400.0,90.0,250.0,120.0,400.0, Breakfast Tacos with Chorizo, Turkish-style boiled eggs, Vegetarian Chili," Greek Salad - 120kcals per portion, 4 portions, lactose-free, Greece
+", Italian Panzanella Salad
+263,300.0,100.0,220.0,20.0,350.0, Feta and Spinach Muffins, Caprese Skewers, Roasted red pepper and feta dip with crackers, Moroccan Mint Tea," Vegetable curry with basmati rice - 350 calories per portion, 4 portions, contains nuts (India)
+"
+264,600.0,70.0,180.0,120.0,400.0, Vegan Breakfast BLT, Kale chips, Baked Falafel with Yogurt Sauce," Greek Salad - 120kcals per portion, 4 portions, lactose-free, Greece
+", Vegan Shepherd's Pie
+265,300.0,100.0,100.0,100.0,420.0, Chia Seed Pancakes, Rice Cake with Hummus and Cucumber, Garlic parmesan roasted edamame, Israeli salad, Vegan Alfredo Pasta
+266,350.0,100.0,160.0,20.0,200.0, Bread Upma, Caprese Skewers," Mini Spinach and Feta Quiches - 160 kcals per portion, 4 portions, contains dairy (Greece)", Moroccan Mint Tea," Spinach and Goat Cheese Stuffed Tomatoes - 200 calories/portion, 4 portions, Origin"
+267,400.0,100.0,440.0,100.0,250.0, Turkish Menemen with Feta Cheese, Stuffed Dates - Approx, Vegan Roasted Red Pepper Dip, Israeli salad," Panzanella salad - 250 calories per portion, 4 portions, contains gluten (Italy)
+"
+268,450.0,100.0,180.0,100.0,221.0," Breakfast quesadilla with eggs, cheese, and vegetables (450kcals per portion, 2 portions)
+", Energy Balls - Approx, Shrimp Summer Rolls, Israeli salad, Zucchini Noodles with Pesto
+269,300.0,100.0,200.0,20.0,301.0, Mediterranean Chickpea Scramble, Cucumber Rolls with Cream Cheese, Mini mushroom and cheese tartlets, Moroccan Mint Tea, Vegan Gnocchi
+270,250.0,100.0,100.0,120.0,250.0, Vegan Oatmeal Raisin Overnight Oats - 250 calories per portion | 2 portions | Contains gluten | Origin, Fresh Fruit Salad, Baba Ganoush," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Lentil Spinach Curry - 250 calories per portion, 4 portions, None, India
+"
+271,320.0,80.0,100.0,100.0,350.0," Zucchini and goat cheese frittata (320 calories per portion, 2 portions, contains dairy, Italian origin)
+", Kale Chips, Greek Cucumber Dip with Pita Bread, Israeli salad," Greek Pasta Salad - 350 calories/portion, 4 portions, Origin"
+272,300.0,100.0,180.0,20.0,350.0," Rice porridge with cinnamon and sugar - 300 calories per portion, 2 portions, no allergic warnings, origin", Fresh Juice - Approx, Mini cauliflower pizza bites, Moroccan Mint Tea, Veggie Spring Rolls
+273,380.0,100.0,320.0,120.0,320.0," Breakfast BLT with avocado (380 calories per portion, 2 portions, contains dairy, American origin)
+", Greek yogurt with berries, Mini bagel pizzas," Greek Salad - 120kcals per portion, 4 portions, lactose-free, Greece
+", Roasted Vegetable Pasta
+274,400.0,80.0,120.0,120.0,300.0," Veggie-packed breakfast tacos with tofu scramble (400 calories per portion, 2 portions, nut-free, Mexican origin)
+"," Carrot Sticks with Hummus - 80kcals per portion, 2 portions
+   Origin"," Vegan Cheesy Popcorn - 120 kcals per portion, 4 portions, no allergic warnings, origin"," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Tofu and Vegetable Curry
+275,550.0,50.0,120.0,120.0,350.0, Granola with Soy Milk," Homemade Fruit Popsicles - 50kcals per portion, 2 portions
+    Origin", No-Bake Energy Bars," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Mediterranean Couscous - 350 calories/portion, 4 portions, Origin"
+276,350.0,100.0,150.0,120.0,330.0," Turkish borek (savory pastry) filled with cheese - 350 calories per portion, 2 portions, contains gluten and dairy, origin", Cucumber Sandwiches, Guacamole with tortilla chips," Greek Salad - 120kcals per portion, 4 portions, lactose-free, Greece
+"," Greek Chickpea Salad - 330kcals per portion, 4 portions, contains legumes
+"
+277,250.0,100.0,150.0,120.0,250.0, Vegan Green Breakfast Bowl - 250 calories per portion | 2 portions | None | Origin, Cucumber Slices with Tzatziki - Approx, Lentil Soup," Greek Salad - 120kcals per portion, 4 portions, lactose-free, Greece
+"," Vegetable Curry Puffs - 250 calories/portion, 4 portions, contains gluten (Various)
+"
+278,350.0,100.0,200.0,20.0,300.0," Italian ciambella (simple breakfast cake) with coffee (350kcals per portion, 2 portions, origin", Roasted Almonds, Chicken Fajita Skewers, Moroccan Mint Tea," British Vegan Ploughman's Lunch (300 calories/portion, 3 portions) - United Kingdom
+"
+279,400.0,80.0,400.0,120.0,320.0, Vegan Breakfast Tamales - 400 calories per portion | 1 portion | Contains gluten | Origin, Kale Chips, Zucchini Fritters," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Zucchini and Carrot Noodles with Peanut Sauce
+280,250.0,60.0,240.0,120.0,250.0," Coconut chia pudding with mango (250kcals per portion, 2 portions)
+", Cucumber and tomato salad, Veggie Sushi Rolls," Greek Salad - 120kcals per portion, 4 portions, lactose-free, Greece
+", Eggplant and Tomato Gratin
+281,350.0,70.0,150.0,120.0,120.0, Acai Bowl, Kale chips," Zucchini Fritters - 150 kcals per portion, 4 portions, no allergic warnings, origin"," Greek Salad - 120kcals per portion, 4 portions, lactose-free, Greece
+", Cucumber and Tomato Salad
+282,150.0,100.0,170.0,120.0,400.0, Vegan Breakfast Pita Pockets," Rice Cake with Almond Butter - 100kcals per portion, 2 portions
+    Origin", Roasted Beetroot and Goat Cheese Crostini," Greek Salad - 120kcals per portion, 4 portions, lactose-free, Greece
+"," Vegan Tamales - 400 calories per portion, 4 portions, None, Mexico
+"
+283,300.0,100.0,130.0,20.0,350.0, Acai Bowl, Fruit Smoothie Popsicles - Approx," Veggie Sushi Rolls with Spicy Tofu - 130 kcals per portion, 4 portions, no allergic warnings, origin", Moroccan Mint Tea," Lentil Walnut Veggie Burger - 350 calories per portion, 4 portions, Nuts, United States
+"
+284,200.0,80.0,200.0,20.0,150.0," Yogurt and fruit smoothie (200 calories per portion, 2 portions, contains dairy, American origin)
+", Fruit Salad, Blueberry oat muffins, Moroccan Mint Tea," Ratatouille - 150 calories per portion, 6 portions, None, France
+"
+285,250.0,100.0,250.0,20.0,400.0," Blueberry almond muffins (250 calories per portion, 2 portions, contains nuts, American origin)
+", Roasted Almonds," Cheese Puffs - 250 kcals per portion, 2 portions, contains gluten, dairy (France)", Moroccan Mint Tea," Vegetable Biryani - 400 calories/portion, 4 portions, contains nuts (India)
+"
+286,350.0,80.0,240.0,120.0,300.0," Greek yogurt and berry parfait (350 calories per portion, 2 portions, contains dairy, Greek origin)
+", Fruit Salad, Chickpea and Vegetable Curry," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Tofu and Vegetable Curry
+287,450.0,100.0,120.0,120.0,350.0, Spinach and Feta Breakfast Wrap, Fruit salad, Tomato Bruschetta," Greek Salad - 120kcals per portion, 4 portions, lactose-free, Greece
+"," Caprese Tortellini Skewers - 350 calories/portion, 4 portions, contains gluten and dairy (Italy)
+"
+288,300.0,100.0,1000.0,120.0,400.0," Scottish porridge with honey and berries - 300 calories per portion, 2 portions, no allergic warnings, origin"," Mint Yogurt Dip with Vegetable Sticks - 100kcals per portion, 2 portions
+    Origin", Vegan Paella," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Italian Panzanella Salad
+289,400.0,100.0,150.0,20.0,400.0," Huevos rancheros - 400 calories per portion, 2 portions, contains gluten, origin"," Mint Yogurt Dip with Vegetable Sticks - 100kcals per portion, 2 portions
+    Origin", Greek Olive Tapenade with Pita Bread, Moroccan Mint Tea," Burrito Bowl with Grilled Chicken - 400 calories per portion, 4 portions, contains gluten (rice), Origin"
+290,800.0,90.0,180.0,120.0,200.0, Vegan Breakfast Cassava Cake, Rice Paper Rolls, Baked Teriyaki Tofu Skewers," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Quinoa Stuffed Mushrooms
+291,300.0,100.0,220.0,120.0,450.0, Vegan Breakfast Potato Hash - 300 calories per portion | 1 portion | None | Origin, Cucumber and Hummus Rolls, Caramelized Onion Tart," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," British Vegan Cornish Pasty (450 calories/portion, 2 portions) - United Kingdom
+"
+292,550.0,80.0,150.0,120.0,400.0, Vegan Breakfast Pesto Pasta, Fruit Salad, Zucchini and Goat Cheese Tartlets," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Ratatouille with crusty bread (400 calories per portion, 3 portions, vegan-friendly, origin"
+293,250.0,100.0,180.0,120.0,300.0, Ragi (Finger Millet) Pancakes," Dates Stuffed with Almond Butter - 100kcals per portion, 2 portions
+    Origin", Apple Slices with Cinnamon Yogurt Dip," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Quinoa and black bean stuffed peppers - 300 calories per portion, 4 portions, none
+"
+294,550.0,100.0,240.0,120.0,200.0," Eggs Benedict - 550 calories per portion, 2 portions, contains gluten and dairy, origin", Cucumber Slices with Tzatziki - Approx, Veggie Sushi Rolls," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Miso soup with tofu and seaweed – 200 calories per portion, 6 portions, vegan-friendly (origin"
+295,350.0,100.0,180.0,120.0,290.0," Veggie breakfast wrap with scrambled eggs (350kcals per portion, 2 portions, origin", Caprese Skewers, Greek Stuffed Grape Leaves (Dolmas)," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Vegan Lentil Tacos
+296,300.0,90.0,480.0,120.0,400.0," Yogurt and fruit smoothie with almond milk (300kcals per portion, 1 portion, nut allergies)
+", Fruit Salad, Vegan Cucumber Sushi Rolls," Greek Salad - 120kcals per portion, 4 portions, lactose-free, Greece
+"," Mediterranean grilled vegetables with feta cheese and orzo (400 calories per portion, 3 portions, contains gluten and dairy, origin"
+297,400.0,100.0,240.0,20.0,200.0, Breakfast Tacos with Chorizo," Rice Cake with Almond Butter - 100kcals per portion, 2 portions
+    Origin", Veggie Couscous Salad, Moroccan Mint Tea," Greek-style stuffed zucchini - 200 calories per portion, 4 portions, none (Greece)
+"
+298,400.0,80.0,150.0,100.0,400.0," Indian idli with coconut chutney and sambar (400kcals per portion, 2 portions, origin", Hard-Boiled Eggs, Baked Buffalo Cauliflower Bites, Israeli salad," Vegan General Tso's Tofu - 400 calories per portion, 4 portions, None, China
+"
+299,400.0,100.0,80.0,20.0,350.0, Vegan Breakfast Burrito Bowl - 400 calories per portion | 1 portion | None | Origin, Guacamole Stuffed Cherry Tomatoes, Stuffed Dates with Almond Butter, Moroccan Mint Tea," Caprese Tortellini Skewers - 350 calories/portion, 4 portions, contains gluten and dairy (Italy)
+"
+300,300.0,100.0,400.0,120.0,400.0, Chocolate Peanut Butter Overnight Oats, Fruit Salad, Vegan Tzatziki and Pita Bread," Greek Salad - 120kcals per portion, 4 portions, lactose-free, Greece
+", Greek Stuffed Bell Peppers
+301,400.0,100.0,640.0,20.0,250.0, Shakshuka with Feta Cheese, Vegetable Crudité with Hummus, Vegan Baked Falafel Bowl, Moroccan Mint Tea," Indian Vegan Baingan Bharta (250 calories/portion, 4 portions) - India
+"
+302,300.0,100.0,150.0,100.0,380.0, Berry Quinoa Breakfast Bowl - 300 calories per portion | 1 portion | Contains nuts | Origin, Rice Paper Spring Rolls, Greek Yogurt Parfait, Israeli salad," Quinoa-Stuffed Cabbage Rolls - 380kcals per portion, 4 portions
+"
+303,320.0,100.0,160.0,120.0,250.0," Vegetable and cheese strata (320 calories per portion, 2 portions, contains dairy, American origin)
+", Caprese Skewers, Spinach and Feta Triangles," Greek Salad - 120kcals per portion, 4 portions, lactose-free, Greece
+"," Vegan Korean Bibimbap - 250 calories per portion, 2 portions, may contain soy"
+304,550.0,100.0,280.0,100.0,450.0, Breakfast Paella, Frozen Grapes, Cheese and Tomato Nachos, Israeli salad, Ginger Soy Glazed Salmon
+305,350.0,100.0,200.0,120.0,450.0, Vegan Breakfast Polenta - 350 calories per portion | 1 portion | None | Origin," Dates Stuffed with Almond Butter - 100kcals per portion, 2 portions
+    Origin", Chicken lettuce wraps with teriyaki sauce," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Beef Tacos with Salsa
+306,400.0,80.0,80.0,120.0,460.0, Veggie Breakfast Skillet, Fruit Salad, Greek Salad Skewers," Greek Salad - 120kcals per portion, 4 portions, lactose-free, Greece
+", Creamy Vegan Mushroom Pasta
+307,500.0,100.0,200.0,100.0,300.0," Breakfast burrito with scrambled eggs and avocado (500kcals per portion, 2 portions, origin", Energy Balls - Approx, Coconut Chia Pudding, Israeli salad," Vegetable Sushi Rolls - 300 calories/portion, 4 portions, contains soy (Japan)
+
+"
+308,350.0,100.0,900.0,100.0,390.0, Vegan Bagel with Tofu Cream Cheese - 350 calories per portion | 1 portion | Contains gluten | Origin, Energy Balls, Vegan Stuffed Mushrooms, Israeli salad," Lentil Shepherd's Pie - 390kcals per portion, 4 portions, contains legumes (UK)
+"
+309,600.0,100.0,180.0,120.0,300.0, Vegan Waffles, Berry Chia Detox Water, Caprese Bruschetta," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Spinach and feta phyllo triangles - 300 calories per portion, 4 portions, contains gluten and dairy (Greece)
+"
+310,500.0,80.0,740.0,120.0,320.0, Breakfast Sausage and Egg Casserole, Avocado Deviled Eggs, Vegan Buffalo Cauliflower Wings," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Thai Green Curry Noodles
+311,400.0,100.0,760.0,20.0,380.0," Breakfast quesadilla with eggs and cheese (400 calories per portion, 2 portions, contains dairy, Mexican origin)
+", Roasted Chickpeas, Moroccan Couscous, Moroccan Mint Tea," Lemon garlic grilled tofu with quinoa and roasted vegetables – 380 calories per portion, 3 portions, vegan-friendly
+"
+312,400.0,100.0,220.0,100.0,400.0," Thai mango sticky rice (400kcals per portion, 2 portions, origin", Cucumber Sandwiches, Stuffed Bell Peppers, Israeli salad, Vegan Sushi Burrito
+313,350.0,100.0,240.0,100.0,420.0," Pita bread with hummus and vegetables - 350 calories per portion, 2 portions, contains gluten, origin", Baked Apple Chips, Stuffed Bell Peppers with Quinoa, Israeli salad," Caprese Pasta - 420kcals per portion, 2 portions, contains dairy (Italy)
+"
+314,200.0,60.0,100.0,20.0,200.0, Veggie Breakfast Couscous, Cucumber and tomato salad, Chocolate-dipped strawberries, Moroccan Mint Tea, Quinoa Salad
+315,250.0,100.0,200.0,120.0,350.0," Smoothie bowl - 250 calories per portion, 1 portion, may contain nuts, origin", Watermelon and feta skewers, Mini Vegetable Spring Rolls," Greek Salad - 120kcals per portion, 4 portions, lactose-free, Greece
+", Vegan Chili
+316,300.0,100.0,140.0,120.0,450.0, Vegan Peanut Butter Banana Smoothie - 300 calories per portion | 1 portion | Contains nuts | Origin, Caprese Skewers, Mozzarella sticks served with marinara sauce," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Spinach and ricotta stuffed chicken breast with quinoa - 450 kcals per portion, 4 portions, contains lactose
+"
+317,250.0,80.0,300.0,20.0,400.0, Mozzarella and Tomato Bruschetta, Apple with Cinnamon, Vegetable Fajitas, Moroccan Mint Tea," Mushroom risotto - 400 calories per portion, 4 portions, contains dairy (Italy)
+"
+318,500.0,100.0,120.0,100.0,350.0, Israeli Breakfast Salad, Cucumber Sandwich, Cucumber Sandwiches, Israeli salad, Mexican Quinoa Casserole
+319,350.0,80.0,250.0,120.0,300.0," Baked beans on toast (350kcals per portion, 2 portions, origin", Avocado Deviled Eggs, Guacamole with Tortilla Chips," Greek Salad - 120kcals per portion, 4 portions, lactose-free, Greece
+", Vegan Fajitas
+320,250.0,90.0,300.0,120.0,200.0, Tofu Scramble - 250 calories per portion | 2 portions | None | Origin, Vegetarian Spring Rolls, Mini black bean and cheese quesadillas," Greek Salad - 120kcals per portion, 4 portions, lactose-free, Greece
+", Lentil Soup
+321,250.0,100.0,200.0,120.0,225.0, Overnight Oats, Roasted Chickpeas, Stuffed bell peppers with quinoa and black beans," Greek Salad - 120kcals per portion, 4 portions, lactose-free, Greece
+", Vegan Stuffed Mushrooms
+322,400.0,80.0,300.0,100.0,200.0, Vegetarian Breakfast Strata, Fruit Salad, Baked Buffalo Chicken Wings, Israeli salad," Stuffed Portobello Mushrooms - 200 calories/portion, 2 portions, Origin"
+323,400.0,100.0,100.0,120.0,400.0," Vietnamese banh mi sandwich with eggs - 400 calories per portion, 2 portions, contains gluten, origin", Cucumber Sandwich, Garlic parmesan roasted edamame," Greek Salad - 120kcals per portion, 4 portions, lactose-free, Greece
+"," Veggie Paella - 400 calories/portion, 4 portions, contains saffron (Spain)
+"
+324,350.0,100.0,200.0,120.0,300.0, Vegan Breakfast Croissant, Zesty Lime Popcorn - Approx, Quinoa Salad," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Sesame Ginger Stir-Fry - 300 calories per portion, 4 portions, Soy, China
+"
+325,500.0,100.0,100.0,20.0,350.0," Breakfast pizza - 500 calories per portion, 1 portion, contains gluten, origin"," Dates Stuffed with Almond Butter - 100kcals per portion, 2 portions
+    Origin", Baked Kale Chips, Moroccan Mint Tea," Chinese Vegan General Tso's Cauliflower (350 calories/portion, 3 portions) - China
+"
+326,350.0,80.0,180.0,120.0,350.0, Vegan Chocolate Peanut Butter Smoothie - 350 calories per portion | 1 portion | Contains nuts | Origin, Fresh Watermelon Slices - Approx, Chicken Salad Lettuce Wraps," Greek Salad - 120kcals per portion, 4 portions, lactose-free, Greece
+"," Mexican Tortilla Soup - 350 calories/portion, 4 portions, contains gluten (Mexico)
+"
+327,250.0,100.0,900.0,20.0,350.0, Vegan Breakfast Sushi Rolls," Raspberry Yogurt Popsicles - 100kcals per portion, 2 portions
+    Origin", Vegan Stuffed Mushrooms, Moroccan Mint Tea," Vegan Kimchi Fried Rice - 350 calories per portion, 4 portions, None, Korea
+"
+328,400.0,100.0,150.0,20.0,300.0, Tofu Benedict, Mini Frittatas - Approx, Watermelon and feta skewers, Moroccan Mint Tea," Grilled Salmon with Dill Sauce - 300 calories per portion, 4 portions, no allergic warnings, Origin"
+329,300.0,100.0,80.0,120.0,300.0," Spinach and feta pastry turnovers (300kcals per portion, 2 portions, dairy allergies)
+"," Cinnamon Apple Chips - 100kcals per portion, 2 portions
+    Origin"," Chocolate Dipped Strawberries - 80 kcals per portion, 4 portions, contains dairy (USA)"," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Lentil and Vegetable Curry
+330,400.0,100.0,160.0,120.0,350.0, Vegan Breakfast Stuffed Peppers - 400 calories per portion | 1 portion | None | Origin, Tomato Basil Bruschetta, Hummus with Veggie Sticks," Greek Salad - 120kcals per portion, 4 portions, lactose-free, Greece
+"," Tofu Stir-Fry - 350 calories per portion, 2 portions, may contain soy"
+331,320.0,100.0,200.0,100.0,450.0," Zucchini and goat cheese frittata (320 calories per portion, 2 portions, contains dairy, Italian origin)
+"," Dates Stuffed with Almond Butter - 100kcals per portion, 2 portions
+    Origin", Caramelized Onion and Goat Cheese Tartlets, Israeli salad," Beef and vegetable stir-fry with udon noodles - 450 kcals per portion, 3 portions, contains gluten, soy
+"
+332,250.0,80.0,120.0,120.0,250.0," Almond butter and banana smoothie (250kcals per portion, 1 portion, nut allergies)
+", Fruit Salad, Apple slices with peanut butter," Greek Salad - 120kcals per portion, 4 portions, lactose-free, Greece
+", Bulgur Salad
+333,380.0,90.0,150.0,100.0,450.0," Baked avocado eggs with bacon (380 calories per portion, 2 portions, contains eggs, American origin)
+", Vegetarian Spring Rolls," Cucumber and Avocado Sushi Rolls - 150 kcals per portion, 4 portions, allergic warning (avocado), origin", Israeli salad," Chicken Enchiladas - 450 calories per portion, 4 portions, contains gluten (tortillas), Origin"
+334,250.0,100.0,60.0,20.0,290.0," Fruit smoothie bowl topped with granola (250kcals per portion, 2 portions, nut allergies, origin", Fruit Salad, Caprese Skewers, Moroccan Mint Tea, Vegan Lentil Tacos
+335,300.0,100.0,500.0,120.0,250.0, Vegan Mango Coconut Chia Pudding - 300 calories per portion | 1 portion | None | Origin, Watermelon Fruit Pizza, Roasted Vegetable Skewers," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+"," Caprese Stuffed Zucchini - 250 calories/portion, 4 portions, Origin"
+336,400.0,80.0,200.0,120.0,250.0," Italian caprese frittata with tomatoes, mozzarella, and basil (400kcals per portion, 2 portions, origin", Avocado Deviled Eggs, Veggie Quesadillas," Greek Salad - 120kcals per portion, 4 portions, lactose-free, Greece
+"," Black Bean Tacos - 250 calories/portion, 4 portions, Origin"
+337,400.0,80.0,200.0,120.0,200.0, Breakfast Tacos with Chorizo, Cheesy Popcorn," Smoothie bowl (banana, spinach, almond milk, toppings)"," Greek Salad - 120kcals per portion, 4 portions, lactose-free, Greece
+"," Italian Vegan Bruschetta (200 calories/portion, 4 portions) - Italy
+"
+338,320.0,100.0,170.0,20.0,270.0," Spinach and mushroom breakfast wrap (320 calories per portion, 2 portions, nut-free, American origin)
+", Tomato Basil Bruschetta, Mexican Bean Dip, Moroccan Mint Tea," Greek Briam with Feta Cheese - 270kcals per portion, 4 portions, contains dairy
+"
+339,400.0,100.0,160.0,20.0,450.0, Vegan French Toast, Tomato Basil Bruschetta," Vegan Spinach and Artichoke Stuffed Breadsticks - 160 kcals per portion, 4 portions, no allergic warnings, origin", Moroccan Mint Tea, Thai Pineapple Fried Rice
+340,450.0,50.0,140.0,100.0,220.0," Bagel with cream cheese and smoked salmon - 450 calories per portion, 1 portion, contains gluten and dairy, origin"," Fruit Salad - 50kcals per portion, 2 portions
+   Origin"," Maple Roasted Nuts - 140 kcals per portion, 4 portions, no allergic warnings, origin", Israeli salad, Quinoa and Vegetable Stir Fry
+341,250.0,80.0,250.0,100.0,200.0, Greek Yogurt Parfait Bowl, Kale Chips, Chicken and vegetable lettuce wraps, Israeli salad, Lentil and Vegetable Soup
+342,200.0,100.0,180.0,120.0,300.0, Spinach Tomato Feta Frittata, Fresh Juice - Approx, Mini Lemon Bars," Caprese Salad - 120kcals per portion, 2 portions, contains dairy (Italy)
+", Lentil and Vegetable Soup
+343,600.0,90.0,80.0,100.0,399.0, Homemade Cinnamon Rolls, Fruit Salad, Baked Kale Chips, Israeli salad, Vegan Mac and Cheese
+344,300.0,100.0,150.0,100.0,400.0, Banana Pancakes, Baked Apple Chips, Mango Salsa with Tortilla Chips, Israeli salad," Beef Tostadas - 400 calories per portion, 4 portions, contains gluten (tortillas), Origin"
+345,550.0,80.0,230.0,120.0,300.0, Sausage and Cheese Quiche," Carrot Sticks with Hummus - 80kcals per portion, 2 portions
+   Origin", Roasted red pepper hummus with pita chips," Greek Salad - 120kcals per portion, 4 portions, lactose-free, Greece
+"," Moroccan Vegetable Lentil Stew (300 calories/portion, 4 portions) - Morocco
+"
+346,450.0,100.0,150.0,20.0,350.0," Lebanese markouk bread with za'atar and olive oil (450kcals per portion, 2 portions, origin", Corn on the Cob, Vegan Banana Bread, Moroccan Mint Tea, Vegetarian Sushi Rolls
+347,250.0,100.0,220.0,100.0,120.0, Vegan Matcha Overnight Oats - 250 calories per portion | 2 portions | None | Origin," Mint Yogurt Dip with Vegetable Sticks - 100kcals per portion, 2 portions
+    Origin", Banana bread muffins, Israeli salad, Cucumber and Tomato Salad
+348,380.0,80.0,440.0,100.0,450.0," Breakfast BLT with avocado (380 calories per portion, 2 portions, contains dairy, American origin)
+", Fresh Watermelon Slices - Approx, Vegan Chili, Israeli salad, Beef Tacos with Salsa
+349,400.0,100.0,160.0,100.0,350.0," Breakfast tacos with egg, cheese, and salsa (400 calories per portion, 2 portions, contains dairy, Mexican origin)
+", Roasted Edamame, Pita Bread and Hummus, Israeli salad, Fish Tacos with Lime Crema
+350,500.0,90.0,150.0,120.0,350.0, Blueberry Pancakes, Stuffed Dates, Caprese skewers with balsamic glaze," Greek Salad - 120kcals per portion, 4 portions, lactose-free, Greece
+"," Eggplant rollatini – 350 calories per portion, 3 portions, vegetarian-friendly (origin"
+351,350.0,100.0,200.0,20.0,208.0, Vegan Sweet Potato Hash Browns - 350 calories per portion | 1 portion | None | Origin, Baked Apple Chips, Cheese and Spinach Puffs, Moroccan Mint Tea, Spinach and Mushroom Quesadillas
+352,350.0,80.0,220.0,120.0,210.0," Egg and cheese breakfast sandwich - 350 calories per portion, 2 portions, contains gluten and dairy, origin", Energy Balls, Teriyaki Chicken Skewers," Greek Salad - 120kcals per portion, 4 portions, lactose-free, Greece
+", Lentil and Vegetable Stir Fry
+353,400.0,100.0,120.0,120.0,220.0," Apple cinnamon baked oatmeal (400kcals per portion, 2 portions)
+", Quinoa Energy Bites, Hummus and Pita," Greek Salad - 120kcals per portion, 4 portions, lactose-free, Greece
+", Quinoa and Vegetable Stir Fry
+354,300.0,70.0,180.0,20.0,400.0," Turkish-style scrambled eggs with tomatoes (300 calories per portion, 2 portions, contains eggs, Turkish origin)
+", Kale chips, Avocado Cucumber Sushi Rolls, Moroccan Mint Tea," Eggplant and Zucchini Gratin - 400 calories/portion, 4 portions, Origin"
+355,200.0,60.0,160.0,20.0,300.0, Spinach and Mushroom Breakfast Tacos, Cucumber and tomato salad, Tomato and Mozzarella Skewers, Moroccan Mint Tea, Moroccan Vegetable Tagine
+356,400.0,100.0,150.0,120.0,350.0, Shakshuka with Feta Cheese, Zesty Lime Popcorn - Approx, Caprese skewers with balsamic glaze," Greek Salad - 120kcals per portion, 4 portions, lactose-free, Greece
+"," Vegetarian sushi rolls with avocado and cucumber – 350 calories per portion, 4 portions, vegetarian-friendly (origin"
+357,550.0,100.0,120.0,20.0,450.0, Breakfast Paella, Boiled chickpeas, Zucchini Fritters, Moroccan Mint Tea," Chicken quesadillas with guacamole - 450 kcals per portion, 4 portions, contains gluten
+"
+358,300.0,100.0,220.0,120.0,350.0, Mexican Quinoa Breakfast Bowl, Guacamole Stuffed Cherry Tomatoes, Mini Chicken Pot Pies," Greek Salad - 120kcals per portion, 4 portions, lactose-free, Greece
+", Vegan Butternut Squash Ravioli
+359,300.0,90.0,160.0,100.0,400.0, Cheesy Grits, Vegetarian Spring Rolls, Pita Bread and Hummus, Israeli salad," Herb-marinated grilled chicken with roasted potatoes - 400 kcals per portion, 4 portions, gluten-free
+"
+360,350.0,100.0,240.0,20.0,400.0," Swiss cheese and mushroom omelette (350 calories per portion, 2 portions, contains dairy, Swiss origin)
+", Edamame, Chickpea and Vegetable Curry, Moroccan Mint Tea, Honey Glazed Salmon with Asparagus
+361,350.0,50.0,150.0,100.0,350.0," English crumpets with butter and jam (350kcals per portion, 2 portions, dairy allergies, origin"," Fruit Salad - 50kcals per portion, 2 portions
+   Origin", Bruschetta, Israeli salad," Chinese Vegan Sweet and Sour Tofu (350 calories/portion, 2 portions) - China
+"
+362,250.0,100.0,90.0,100.0,350.0, Vegan Breakfast Quesadilla, Roasted Beetroot Chips, Watermelon Feta Bites, Israeli salad, Baked Cod with Lemon and Herbs
+363,450.0,90.0,120.0,100.0,400.0," Pancakes with maple syrup and blueberries (450kcals per portion, 2 portions, origin", Rice Paper Rolls, Greek yogurt with mixed nuts and honey, Israeli salad," Lentil Shepherd's Pie - 400 calories/portion, 4 portions, contains gluten (United Kingdom)
+"
+364,700.0,100.0,320.0,120.0,400.0, Vegan Scones, Cucumber and Tomato Salad, Greek Spanakopita," Greek Salad - 120kcals per portion, 4 portions, lactose-free, Greece
+", Spanish Tortilla (Potato Omelette)
+365,450.0,50.0,680.0,20.0,400.0," Nigerian moi moi (steamed bean pudding) with fish (450kcals per portion, 2 portions, origin"," Fruit Salad - 50kcals per portion, 2 portions
+   Origin", Sweet and Sour Tofu, Moroccan Mint Tea, Spinach and Ricotta Stuffed Shells
