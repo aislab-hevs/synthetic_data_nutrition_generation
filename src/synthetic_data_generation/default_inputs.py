@@ -123,15 +123,17 @@ flexi_probabilities_dict = {
     "flexi_vegie": {
         "vegan_observant": 0.60,
         "vegetarian_observant": 0.20,
-        "halal_observant": 0.05,
-        "kosher_observant": 0.05,
-        "None": 0.10
+        "halal_observant": 0.10,
+        "kosher_observant": 0.1,
+        "None": 0.0
     },
     "flexi_vegetarian": {
+        #no meanginful flexi for this class:
+        # vegetarian -> vegan
         "vegan_observant": 0.00,
         "vegetarian_observant": 0.60,
-        "halal_observant": 0.05,
-        "kosher_observant": 0.05,
+        "halal_observant": 0.0,
+        "kosher_observant": 0.1,
         "None": 0.30
     },
     "flexi_halal": {
