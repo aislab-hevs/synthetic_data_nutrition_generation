@@ -40,16 +40,50 @@ To run the simulation several parameters can be setter trough the GUI in the mai
 ## Code Organization
 
 Code is organized in the following setup:
-* In the src folder 
+
+* The source code is stored in the **src**. In the src folder the modules are grouped according their function.
+* The documentation is 
 
 ## Documentation
 
-Todo
+Documentation has been automatic generated with Sphinx from inline python documentation in files and is stored in **docs** folder.
 
 ## Execution
 
-Todo
+To execute the notebook is required a python environment that can be created with spec-file.txt.example using the following command in a OS-x machine:
+
+```bash
+conda create --name <env> --file <this file>
+```
+
+Where `<env>` should be replaced by the name of the environment and `<this file>` should be replaced by the spec-file.txt.example. Once the environment has been created successfully it should be activated with the following command:
+
+```bash
+conda activate <env>
+```
+
+where `<env>` should be replaced by the environment name. With the environment activated please execute the following installation commands:
+
+```bash
+sudo apt-get install graphviz
+pip install graphviz
+pip install faker
+```
+
+Additionally to the method above mentioned the environment can be create with different tools like venv the only requirement is to ensure that the Python version used is 3.9, once the environment is created you must install the libraries defined in the requirements.txt.example file using the following command with the environment enabled:
+
+```bash
+pip install -r requirements.txt.example
+```
+
+Once the environment has been fully configured and activated please run the notebook server executing in the terminal with the environment activated the following command:
+
+```bash
+jupyter notebook
+```
+
+Open the browser in the address indicated in the terminal and open the notebook main_generator_notebook.ipynb in the src folder.
 
 ## Develop
 
-Todo
+To contribute in the development please make a fork  or create a new branch of this repository, develop your changes and test it. Once your changes has been tested and documented ask for a pull request that should be approved by repository administrators.
