@@ -1373,14 +1373,12 @@ def run_full_simulation(num_users: int,
                                                        df_personal_data=df_personal_data,
                                                        df_user_entity=df_user_entity,
                                                        df_user_goals=df_user_goals)
-    # Simulate the transition matrix
-    counts = df_user_entity.groupby(by="BMI").count()["userId"]
-    # unify all the dataframes
+    # unify all the DataFrames
     df_user_join = df_user_data.merge(df_treatment, on="userId")
     df_user_join = df_user_join.merge(df_cultural_factors,  on="userId")
     df_user_join = df_user_join.merge(df_health_conditions,  on="userId")
     df_user_join = df_user_join.merge(
-        df_user_entity[["userId", "BMI"]],  on="userId")
+        df_user_entity,  on="userId")
     # Load recipes database
     df_recipes_filter = df_recipes[df_recipes["calories"] >= 0.0]
     # Generates meals plan

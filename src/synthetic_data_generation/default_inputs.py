@@ -76,7 +76,7 @@ meals_calorie_dict = {"breakfast": 0.3,
 
 # Initializers
 age_probabilities_dict = {
-    "20-29": 0.20,
+    "18-29": 0.20,
     "30-39": 0.20,
     "40-49": 0.10,
     "50-59": 0.10,
@@ -128,7 +128,7 @@ flexi_probabilities_dict = {
         "None": 0.0
     },
     "flexi_vegetarian": {
-        #no meanginful flexi for this class:
+        # no meanginful flexi for this class:
         # vegetarian -> vegan
         "vegan_observant": 0.00,
         "vegetarian_observant": 0.60,
