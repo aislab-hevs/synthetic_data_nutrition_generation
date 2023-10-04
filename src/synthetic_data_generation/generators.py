@@ -768,10 +768,32 @@ def generate_meals_plan_per_user(users: List[str], probability_dict: Dict[str, f
     return meal_presence
 
 
+def generate_delta_values(chose_dist: str, parameters: Dict[str, Any], size=1):
+    if chose_dist == 'Normal':
+        result = np.random.normal(
+            loc=parameters['mean'], scale=parameters['std'], size=size)
+        result[result < 0.2] = 0.2
+        result[result > 1] = 1
+        return result
+    else:
+        # choose distribution list
+        dist_list = np.random.choice([1, 2], p=[0.4, 0.6], size=size)
+        output_list = []
+        for i in dist_list:
+            output_list.append(np.random.normal(
+                loc=parameters[f"mean_{i}"], scale=parameters[f"std_{i}"]))
+        result = np.array(output_list)
+        result[result < 0.2] = 0.2
+        result[result > 1] = 1
+        return result
+
+
 def generate_recommendations(df_user: pd.DataFrame,
                              transition_matrix: np.array,
                              df_recipes_db: pd.DataFrame,
                              meals_plan: Any,
+                             chose_dist: str,
+                             delta_dist_params: Dict[str, Any],
                              flexi_probabilities_dict: dict[str, Any],
                              meals_calorie_dict: Dict[str,
                                                       float] = meals_calorie_dict,
@@ -871,6 +893,7 @@ def generate_recommendations(df_user: pd.DataFrame,
             flexi_probas = None
             df_recommendations = pd.DataFrame(columns=[f"{k}_calories" for k in meals_calorie_dict.keys()] +
                                               [f"{k}_time" for k in meals_calorie_dict.keys()] +
+                                              [f"{k}_delta" for k in meals_calorie_dict.keys()] +
                                               list(meals_calorie_dict.keys()),
                                               index=np.arange(0, days_to_simulated))
             # filter cultural factor and allergies
@@ -948,16 +971,21 @@ def generate_recommendations(df_user: pd.DataFrame,
                     df_recommendations[f"{meal_tp}_time"] = np.random.normal(loc=meals_time_dict[meal_tp]['mean'],
                                                                              scale=meals_time_dict[meal_tp]['std'],
                                                                              size=days_to_simulated)
+                    df_recommendations[f"{meal_tp}_delta"] = generate_delta_values(chose_dist=chose_dist,
+                                                                                   parameters=delta_dist_params,
+                                                                                   size=days_to_simulated)
                     df_recommendations[meal_tp] = total_simulations['title']
                 else:
                     df_recommendations[meal_tp] = [
                         "N/A" for i in range(days_to_simulated)]
                     df_recommendations[f"{meal_tp}_calories"] = [
                         0 for i in range(days_to_simulated)]
+                    df_recommendations[f"{meal_tp}_time"] = 0.0
+                    df_recommendations[f"{meal_tp}_delta"] = np.NaN
             simulation_results[f"{user_db.userId}"] = df_recommendations
         except Exception as e:
             # print(f"Error processing user: {df_user.iloc[i, 0]}, {e}")
-            # print(traceback.print_exc())
+            print(traceback.print_exc())
             continue
     # print(f"Simulation len: {len(simulation_results)}")
     return simulation_results
@@ -1307,6 +1335,8 @@ def save_outputs(base_path: str, output_folder: str, files: Dict[str, Any]):
 
 # Full pipeline to simulation
 def run_full_simulation(num_users: int,
+                        delta_dist_dict: Dict[str, Any],
+                        chose_dist: str,
                         age_probabilities: Dict[str, Any],
                         gender_probabilities: Dict[str, Any],
                         BMI_probabilities: Dict[str, Any],
@@ -1375,10 +1405,19 @@ def run_full_simulation(num_users: int,
                                                        df_user_goals=df_user_goals)
     # unify all the DataFrames
     df_user_join = df_user_data.merge(df_treatment, on="userId")
+    df_user_join = df_user_join.merge(df_personal_data[["userId",
+                                                        "country_of_origin",
+                                                        "living_country",
+                                                        "current_location"
+                                                        ]], on="userId")
     df_user_join = df_user_join.merge(df_cultural_factors,  on="userId")
     df_user_join = df_user_join.merge(df_health_conditions,  on="userId")
     df_user_join = df_user_join.merge(
-        df_user_entity,  on="userId")
+        df_user_entity[["userId",
+                        "current_working_status",
+                        "marital_status",
+                        "ethnicity",
+                        "BMI"]],  on="userId")
     # Load recipes database
     df_recipes_filter = df_recipes[df_recipes["calories"] >= 0.0]
     # Generates meals plan
@@ -1390,6 +1429,8 @@ def run_full_simulation(num_users: int,
     # Execute simulation
     simulation_results = generate_recommendations(df_user_join,
                                                   transition_matrix=probability_transition_matrix,
+                                                  chose_dist=chose_dist,
+                                                  delta_dist_params=delta_dist_dict,
                                                   df_recipes_db=df_recipes_filter,
                                                   meals_plan=meals_plan,
                                                   flexi_probabilities_dict=flexi_probabilities,

@@ -126,6 +126,7 @@ class FloatProgressBar:
 
 def execute_simulation(num_users: int,
                        num_days: int,
+                       chose_dist: str,
                        dictionaries: Dict[str, Any],
                        probability_transition_matrix: np.array,
                        df_recipes: pd.DataFrame,
@@ -134,6 +135,9 @@ def execute_simulation(num_users: int,
     # Todo: Get values from dictionaries and send to the simulation function
     simulation_results, df_user_join, table = run_full_simulation(
         num_users=num_users,
+        chose_dist=chose_dist,
+        delta_dist_dict=values_from_dictionary(
+            dictionaries['delta_probabilities'][chose_dist]),
         age_probabilities=values_from_dictionary(
             dictionaries['age']),
         gender_probabilities=values_from_dictionary(
@@ -283,6 +287,75 @@ class DownloadButton:
         return html_button
 
 
+class DistributionSelector:
+    def __init__(self, distribution_options_dict: Dict[str, Any],
+                 chose_dist: str,
+                 widget_control: Any,
+                 **kwargs) -> None:
+        self.kwargs = kwargs
+        self.chose_dist = chose_dist
+        self.dict = distribution_options_dict
+        self.widget_control = widget_control
+        self.out = widgets.Output()
+        self.combo = widgets.Dropdown(description="Distribution: ")
+        self._fill_the_drop_down()
+        self.make_visible()
+
+    def get_output(self):
+        return self.out
+
+    def display(self):
+        display(self.out)
+
+    def make_visible(self):
+        with self.out:
+            display(self.combo)
+            widget_dict = self.dict.get(self.combo.value)
+            if widget_dict is not None:
+                if len(widget_dict) > 2:
+                    container = widgets.VBox(
+                        [widget_dict[k] for k in widget_dict.keys()])
+                else:
+                    container = widgets.Box([widget_dict[k]
+                                            for k in widget_dict.keys()])
+                display(container)
+
+    def _fill_the_drop_down(self):
+        options = list(self.dict.keys())
+        self.combo.options = options
+        self.combo.value = options[0]
+        self.chose_dist = self.combo.value
+        self.combo.observe(self.on_option_change, names='value')
+        # create the graph part
+        for k in self.dict.keys():
+            for sk in self.dict[k].keys():
+                self.dict[k][sk] = self.widget_control(value=self.dict[k][sk],
+                                                       description=sk,
+                                                       **self.kwargs)
+
+    def on_option_change(self, change):
+        new_value = change.new
+        self.chose_dist = self.combo.value
+        self.out.clear_output()
+        widget_dict = self.dict.get(new_value)
+        if widget_dict is not None:
+            with self.out:
+                display(self.combo)
+                if len(widget_dict) > 2:
+                    container = widgets.VBox(
+                        [widget_dict[k] for k in widget_dict.keys()])
+                else:
+                    container = widgets.Box([widget_dict[k]
+                                            for k in widget_dict.keys()])
+                display(container)
+        else:
+            pass
+
+    def get_current_values(self):
+        current_selection = self.combo.value
+        return current_selection, self.dict
+
+
 class NotebookUIBuilder:
     def __init__(self, probability_dictionary: OrderedDict) -> None:
         self.proba_dict = probability_dictionary
@@ -313,8 +386,10 @@ class NotebookUIBuilder:
 class ExecuteButton:
     def __init__(self, progress_bar: FloatProgressBar,
                  num_users, num_days, dictionaries,
+                 delta_dist_chose: str,
                  out: widgets.Output = None,
                  round_digits=2) -> None:
+        self.delta_dist_chose = delta_dist_chose
         self.round_digits = round_digits
         self.progress_bar = progress_bar
         self.num_users = num_users
@@ -417,6 +492,7 @@ class ExecuteButton:
             df_recipes = pd.read_csv(os.path.join(current_dir, default_path_recipes),
                                      sep="|")
             simulation_results, df_user_join, table = execute_simulation(num_users=self.num_users.value,
+                                                                         chose_dist=self.delta_dist_chose,
                                                                          dictionaries=self.dictionaries,
                                                                          probability_transition_matrix=probability_transition_matrix,
                                                                          df_recipes=df_recipes,
@@ -492,7 +568,7 @@ class ExecuteButton:
             else:
                 display(button_box)
         except Exception as e:
-            # print(traceback.format_exc())
+            print(traceback.format_exc())
             exceptionOut = widgets.Output(layout={'border': '1px solid red'})
             if self.out is not None:
                 with self.out:
@@ -525,6 +601,15 @@ def build_full_ui():
     meals_proba = copy.deepcopy(defaultValues.meals_proba_dict)
     bmi_transition_probabilities = copy.deepcopy(
         defaultValues.bmi_probability_transition_dict)
+    delta_dict = copy.deepcopy(defaultValues.delta_distribution_dict)
+    chose_dist = list(delta_dict.keys())[0]
+    # distribute selector
+    distribution_selector = DistributionSelector(delta_dict,
+                                                 chose_dist=chose_dist,
+                                                 widget_control=widgets.FloatSlider,
+                                                 min=0,
+                                                 max=1,
+                                                 step=0.05)
     # UI building
     # Starting
     # Prepare dictionaries
@@ -579,6 +664,8 @@ def build_full_ui():
                                                                                    step=1) for k in meals_time_distribution.keys()],
                                                    titles=[k.replace("_", " ") for k in meals_time_distribution.keys()]),
                                  "titles": "Meal time"}
+    dict_widgets['delta_distribution'] = {"widget_list": distribution_selector.get_output(),
+                                          "titles": "Delta distribution"}
     # UI displaying
     style = {'description_width': 'initial'}
     NUM_USERS = widgets.IntText(
@@ -594,7 +681,9 @@ def build_full_ui():
     p_bar = FloatProgressBar()
     # parameters
     # Test the function general
+
     general_dict = {
+        'delta_probabilities': delta_dict,
         'age': age_probabilities,
         'gender_probabilities': gender_probabilities,
         'BMI_probabilities': BMI_probabilities,
@@ -610,6 +699,7 @@ def build_full_ui():
     button_control = ExecuteButton(p_bar,
                                    num_users=NUM_USERS,
                                    num_days=NUM_DAYS,
+                                   delta_dist_chose=chose_dist,
                                    dictionaries=general_dict,
                                    out=out)
 

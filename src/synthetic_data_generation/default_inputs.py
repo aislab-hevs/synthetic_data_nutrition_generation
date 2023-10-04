@@ -162,6 +162,33 @@ meals_proba_dict = {
     "dinner": 0.85
 }
 
+# Social context probabilities
+place_proba_dict = {
+    "restaurant": 0.3,
+    "home": 0.5,
+    "nature": 0.2
+}
+
+social_situation_proba_dict = {
+    "alone": 0.3,
+    "family": 0.3,
+    "friends": 0.2,
+    "colleges": 0.2
+}
+
+delta_distribution_dict = {
+    'Normal': {
+        'mean': 0.7,
+        'std': 0.1
+    },
+    'Bimodal': {
+        'mean_1': 0.3,
+        'std_1': 0.1,
+        'mean_2': 0.8,
+        'std_2': 0.2
+    }
+}
+
 DEFAULT_NUM_USERS = 500
 
 DEFAULT_NUM_DAYS = 365
