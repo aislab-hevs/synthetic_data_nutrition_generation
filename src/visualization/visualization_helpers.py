@@ -138,6 +138,12 @@ def execute_simulation(num_users: int,
         chose_dist=chose_dist,
         delta_dist_dict=values_from_dictionary(
             dictionaries['delta_probabilities'][chose_dist]),
+        place_probabilities=values_from_dictionary(
+            dictionaries["places_meal"]
+        ),
+        social_situation_probabilities=values_from_dictionary(
+            dictionaries["social_situation_meal"]
+        ),
         age_probabilities=values_from_dictionary(
             dictionaries['age']),
         gender_probabilities=values_from_dictionary(
@@ -430,6 +436,12 @@ class ExecuteButton:
                 raise Exception("BMI probabilities should sum up 1.0")
             if not check_sum_proba(self.dictionaries['allergies_probability_dict']):
                 raise Exception("Allergies probabilities should sum up 1.0")
+            if not check_sum_proba(self.dictionaries["places_meal"]):
+                raise Exception(
+                    "Place of meal consumption probabilities should sum up 1.0")
+            if not check_sum_proba(self.dictionaries["social_situation_meal"]):
+                raise Exception(
+                    "Social situation of meal consumption probabilities should sum up 1.0")
             if not check_sum_proba(self.dictionaries['food_restriction_probability_dict']):
                 raise Exception(
                     "Food restrictions probabilities should sum up 1.0")
@@ -601,6 +613,9 @@ def build_full_ui():
     meals_proba = copy.deepcopy(defaultValues.meals_proba_dict)
     bmi_transition_probabilities = copy.deepcopy(
         defaultValues.bmi_probability_transition_dict)
+    places_dict = copy.deepcopy(defaultValues.place_proba_dict)
+    social_situation_dict = copy.deepcopy(
+        defaultValues.social_situation_proba_dict)
     delta_dict = copy.deepcopy(defaultValues.delta_distribution_dict)
     chose_dist = list(delta_dict.keys())[0]
     # distribute selector
@@ -664,8 +679,24 @@ def build_full_ui():
                                                                                    step=1) for k in meals_time_distribution.keys()],
                                                    titles=[k.replace("_", " ") for k in meals_time_distribution.keys()]),
                                  "titles": "Meal time"}
+    dict_widgets['places_meal'] = {
+        "widget_list": form_probability_dict(places_dict,
+                                             widgets.FloatSlider,
+                                             min=0.0,
+                                             max=1.0,
+                                             step=0.1),
+        "titles": "Place of meal consumption probability"
+    }
+    dict_widgets['social_situation_meal'] = {
+        "widget_list": form_probability_dict(social_situation_dict,
+                                             widgets.FloatSlider,
+                                             min=0.0,
+                                             max=1.0,
+                                             step=0.1),
+        "titles": "Social situation of meal consumption probability"
+    }
     dict_widgets['delta_distribution'] = {"widget_list": distribution_selector.get_output(),
-                                          "titles": "Delta distribution"}
+                                          "titles": "Appreciation feedback (delta)"}
     # UI displaying
     style = {'description_width': 'initial'}
     NUM_USERS = widgets.IntText(
@@ -692,6 +723,8 @@ def build_full_ui():
         'flexi_probabilities': flexi_probabilities,
         'meals_proba': meals_proba,
         "bmi_transition_proba": bmi_transition_probabilities,
+        "places_meal": places_dict,
+        "social_situation_meal": social_situation_dict,
         "meal_time": meals_time_distribution
     }
 

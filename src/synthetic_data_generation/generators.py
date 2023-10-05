@@ -791,6 +791,8 @@ def generate_delta_values(chose_dist: str, parameters: Dict[str, Any], size=1):
 def generate_recommendations(df_user: pd.DataFrame,
                              transition_matrix: np.array,
                              df_recipes_db: pd.DataFrame,
+                             place_probabilities: Dict[str, Any],
+                             social_situation_probabilities: Dict[str, Any],
                              meals_plan: Any,
                              chose_dist: str,
                              delta_dist_params: Dict[str, Any],
@@ -858,6 +860,14 @@ def generate_recommendations(df_user: pd.DataFrame,
         mask_nan = df_user["next_BMI"].isna()
         df_user.loc[mask_nan, "next_BMI"] = ""
     # Start processing
+    temp_df = pd.DataFrame(columns=["day_number",
+                                    "meal_type",
+                                    "userId",
+                                    "foodId",
+                                    "time_of_meal_consumption",
+                                    "place_of_meal_consumption",
+                                    "social_situation_of_meal_consumption",
+                                    "appreciation_feedback (delta)"])
     for i in range(len(df_user)):
         # Generate recommendations for each user
         try:
@@ -894,6 +904,8 @@ def generate_recommendations(df_user: pd.DataFrame,
             df_recommendations = pd.DataFrame(columns=[f"{k}_calories" for k in meals_calorie_dict.keys()] +
                                               [f"{k}_time" for k in meals_calorie_dict.keys()] +
                                               [f"{k}_delta" for k in meals_calorie_dict.keys()] +
+                                              [f"{k}_place" for k in meals_calorie_dict.keys()] +
+                                              [f"{k}_social_situation" for k in meals_calorie_dict.keys()] +
                                               list(meals_calorie_dict.keys()),
                                               index=np.arange(0, days_to_simulated))
             # filter cultural factor and allergies
@@ -965,6 +977,7 @@ def generate_recommendations(df_user: pd.DataFrame,
                         # update counter
                         daily_calories_list[j] = daily_calories_list[j] - \
                             choose_recipes['calories'].values[0]
+
                     total_simulations = pd.concat(meal_chosen)
                     total_simulations.reset_index(inplace=True)
                     df_recommendations[f"{meal_tp}_calories"] = total_simulations['calories']
@@ -975,7 +988,21 @@ def generate_recommendations(df_user: pd.DataFrame,
                                                                                    parameters=delta_dist_params,
                                                                                    size=days_to_simulated)
                     df_recommendations[meal_tp] = total_simulations['title']
+                    df_recommendations[f"{meal_tp}_place"] = np.random.choice(
+                        a=list(place_probabilities.keys()),
+                        p=list(place_probabilities.values()),
+                        size=days_to_simulated
+                    )
+                    df_recommendations[f"{meal_tp}_social_situation"] = np.random.choice(
+                        a=list(social_situation_probabilities.keys()),
+                        p=list(social_situation_probabilities.values()),
+                        size=days_to_simulated
+                    )
                 else:
+                    df_recommendations[f"{meal_tp}_place"] = [
+                        "N/A" for i in range(days_to_simulated)]
+                    df_recommendations[f"{meal_tp}_social_situation"] = [
+                        "N/A" for i in range(days_to_simulated)]
                     df_recommendations[meal_tp] = [
                         "N/A" for i in range(days_to_simulated)]
                     df_recommendations[f"{meal_tp}_calories"] = [
@@ -1337,6 +1364,8 @@ def save_outputs(base_path: str, output_folder: str, files: Dict[str, Any]):
 def run_full_simulation(num_users: int,
                         delta_dist_dict: Dict[str, Any],
                         chose_dist: str,
+                        place_probabilities: Dict[str, Any],
+                        social_situation_probabilities: Dict[str, Any],
                         age_probabilities: Dict[str, Any],
                         gender_probabilities: Dict[str, Any],
                         BMI_probabilities: Dict[str, Any],
@@ -1430,6 +1459,8 @@ def run_full_simulation(num_users: int,
     simulation_results = generate_recommendations(df_user_join,
                                                   transition_matrix=probability_transition_matrix,
                                                   chose_dist=chose_dist,
+                                                  social_situation_probabilities=social_situation_probabilities,
+                                                  place_probabilities=place_probabilities,
                                                   delta_dist_params=delta_dist_dict,
                                                   df_recipes_db=df_recipes_filter,
                                                   meals_plan=meals_plan,

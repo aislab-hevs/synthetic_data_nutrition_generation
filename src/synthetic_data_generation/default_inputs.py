@@ -166,7 +166,7 @@ meals_proba_dict = {
 place_proba_dict = {
     "restaurant": 0.3,
     "home": 0.5,
-    "nature": 0.2
+    "outdoor": 0.2
 }
 
 social_situation_proba_dict = {
