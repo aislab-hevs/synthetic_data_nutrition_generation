@@ -860,14 +860,15 @@ def generate_recommendations(df_user: pd.DataFrame,
         mask_nan = df_user["next_BMI"].isna()
         df_user.loc[mask_nan, "next_BMI"] = ""
     # Start processing
-    temp_df = pd.DataFrame(columns=["day_number",
-                                    "meal_type",
-                                    "userId",
-                                    "foodId",
-                                    "time_of_meal_consumption",
-                                    "place_of_meal_consumption",
-                                    "social_situation_of_meal_consumption",
-                                    "appreciation_feedback (delta)"])
+    columns_tracking = ["day_number",
+                        "meal_type",
+                        "userId",
+                        "foodId",
+                        "time_of_meal_consumption",
+                        "place_of_meal_consumption",
+                        "social_situation_of_meal_consumption",
+                        "appreciation_feedback"]
+    track_df_list = []
     for i in range(len(df_user)):
         # Generate recommendations for each user
         try:
@@ -942,6 +943,7 @@ def generate_recommendations(df_user: pd.DataFrame,
             for meal_tp in ["lunch", "dinner", "breakfast", "morning snacks", "afternoon snacks"]:
                 # generate recommendations
                 # generate meals according to meals plan
+                temp_df = pd.DataFrame(columns=columns_tracking)
                 meal = meals_plan[meal_tp]
                 if meal[i] != 0:
                     meal_db = filtered_recipe_db[filtered_recipe_db["meal_type"] == meal_tp]
@@ -973,13 +975,38 @@ def generate_recommendations(df_user: pd.DataFrame,
                         choose_recipes = possible_recipes.sample(
                             1, replace=True)
                         meal_chosen.append(
-                            choose_recipes[["title", "calories"]])
+                            choose_recipes[["title", "calories", "recipeId"]])
                         # update counter
                         daily_calories_list[j] = daily_calories_list[j] - \
                             choose_recipes['calories'].values[0]
 
                     total_simulations = pd.concat(meal_chosen)
                     total_simulations.reset_index(inplace=True)
+                    # add data to the dataframe
+                    temp_df[columns_tracking[0]] = np.arange(
+                        0, days_to_simulated)
+                    temp_df[columns_tracking[1]] = meal_tp
+                    temp_df[columns_tracking[2]] = user_db.userId
+                    temp_df[columns_tracking[3]
+                            ] = total_simulations["recipeId"]
+                    temp_df[columns_tracking[4]] = np.random.normal(loc=meals_time_dict[meal_tp]['mean'],
+                                                                    scale=meals_time_dict[meal_tp]['std'],
+                                                                    size=days_to_simulated)
+                    temp_df[columns_tracking[5]] = np.random.choice(
+                        a=list(place_probabilities.keys()),
+                        p=list(place_probabilities.values()),
+                        size=days_to_simulated
+                    )
+                    temp_df[columns_tracking[6]] = np.random.choice(
+                        a=list(social_situation_probabilities.keys()),
+                        p=list(social_situation_probabilities.values()),
+                        size=days_to_simulated
+                    )
+                    temp_df[columns_tracking[7]] = generate_delta_values(chose_dist=chose_dist,
+                                                                         parameters=delta_dist_params,
+                                                                         size=days_to_simulated)
+                    track_df_list.append(temp_df)
+                    # old dataframe
                     df_recommendations[f"{meal_tp}_calories"] = total_simulations['calories']
                     df_recommendations[f"{meal_tp}_time"] = np.random.normal(loc=meals_time_dict[meal_tp]['mean'],
                                                                              scale=meals_time_dict[meal_tp]['std'],
@@ -999,6 +1026,17 @@ def generate_recommendations(df_user: pd.DataFrame,
                         size=days_to_simulated
                     )
                 else:
+                    temp_df[columns_tracking[0]] = np.arange(
+                        0, days_to_simulated)
+                    temp_df[columns_tracking[1]] = meal_tp
+                    temp_df[columns_tracking[2]] = user_db.userId
+                    temp_df[columns_tracking[3]] = np.NaN
+                    temp_df[columns_tracking[4]] = np.NaN
+                    temp_df[columns_tracking[5]] = np.NaN
+                    temp_df[columns_tracking[6]] = np.NaN
+                    temp_df[columns_tracking[7]] = np.NaN
+                    track_df_list.append(temp_df)
+                    # old dataframe
                     df_recommendations[f"{meal_tp}_place"] = [
                         "N/A" for i in range(days_to_simulated)]
                     df_recommendations[f"{meal_tp}_social_situation"] = [
@@ -1015,7 +1053,10 @@ def generate_recommendations(df_user: pd.DataFrame,
             print(traceback.print_exc())
             continue
     # print(f"Simulation len: {len(simulation_results)}")
-    return simulation_results
+    # join all the DataFrames
+    track_df = pd.concat(track_df_list, axis=0)
+    track_df.reset_index(inplace=True, drop=True)
+    return simulation_results, track_df
 
 
 def generate_table_template(max_cols: int,
@@ -1058,6 +1099,16 @@ def generate_table_template(max_cols: int,
                 <td style=\"text-align: left;\" colspan=\"{colspan}\">{overweight_cultural}</td>
                 <td style=\"text-align: left;\" colspan=\"{colspan}\">{obesity_cultural}</td>
                 </tr>""")
+    # add Contextual information
+    table.add_row(
+        "<tr><th style=\"text-align: center;\" colspan=\"{span_cols}\"><strong>Context Information</strong></th></tr>")
+    table.add_row("""<tr>
+                  <td style=\"text-align: left;\" colspan=\"{colspan}\">{underweight_context}</td>
+                <td style=\"text-align: left;\" colspan=\"{colspan}\">{healthy_context}</td>
+                <td style=\"text-align: left;\" colspan=\"{colspan}\">{overweight_context}</td>
+                <td style=\"text-align: left;\" colspan=\"{colspan}\">{obesity_context}</td>
+                  </tr>
+                  """)
     # add food summary
     table.add_row(
         "<tr><th style=\"text-align: center;\" colspan=\"{span_cols}\"><strong>Food Summary</strong></th></tr>")
@@ -1231,8 +1282,71 @@ def create_a_summary_table(df_total_user: pd.DataFrame,
                     fill_dict[key] = "N/A"
         fill_dict["colspan"] = 1
         table.set_value(7, fill_dict)
-        # fill food summary
+        # fill contextual data
+        fill_dict = {"underweight_context": "",
+                     "healthy_context": "",
+                     "overweight_context": "",
+                     "obesity_context": ""}
+        df_counts = df_total_user["BMI"].value_counts()
+        for condition in conditions:
+            if condition in df_counts.index:
+                # summarize track food
+                selected_users = df_total_user[df_total_user["BMI"] == condition]["userId"].tolist(
+                )
+                # print(len(selected_users))
+                df_users_list = []
+                for u in selected_users:
+                    if u in dict_recommendations.keys():
+                        df_users_list.append(dict_recommendations[u])
+                # print(len(df_users_list))
+                # check objects to concat
+                if len(df_users_list) > 1:
+                    temp_df = pd.concat(df_users_list, axis=0)
+                elif len(df_users_list) == 1:
+                    # one user
+                    # print("One user detected")
+                    temp_df = df_users_list[0]
+                else:
+                    temp_df = pd.DataFrame()
+                temp_list = []
+                for meal in list(meals_calorie_dict.keys()):
+                    social_situation_count = 0.0
+                    places_count = 0.0
+                    delta_count = 0.0
+                    if not temp_df.empty:
+                        social_situation_count = temp_df[f"{meal}_social_situation"].value_counts(
+                        )
+                        places_count = temp_df[f"{meal}_place"].value_counts()
+                        delta_count = {
+                            "mean": temp_df[f"{meal}_delta"].mean(),
+                            "std": temp_df[f"{meal}_delta"].std()
+                        }
+                        temp_list.append(f"""<li><strong>{meal.capitalize()}:</strong>
+                                        <p>social situations consume meal: {', '.join([ind+':'+str(social_situation_count[ind]) if ind != "N/A" else "N/A" for ind in social_situation_count.index])}</p> 
+                                        <p>places consume meal: {', '.join([ind+':'+str(places_count[ind]) if ind != "N/A" else "N/A" for ind in places_count.index])}</p>
+                                        <p>appreciation: {delta_count['mean']} &plusmn; {delta_count['std']}</p>
+                                        </li>""")
+                        # print(
+                        # f"calculated values condition {condition}: {meal} mean {mean} std {std}")
+                    else:
+                        social_situation_count = 0.0
+                        places_count = 0.0
+                        delta_count = 0.0
+                        temp_list.append(f"""<li>{meal.capitalize()}: 
+                                        social situations consume meal: N/A, 
+                                        places consume meal:  N/A, 
+                                        appreciation: N/A
+                                        </li>""")
+                    fill_dict[f"{condition}_context"] = template_text.format(
+                        list_items='\n'.join(temp_list))
+            else:
+                fill_dict[f"{condition}_context"] = "N/A"
         table.set_value(8, {"span_cols": max_cols})
+        fill_dict["colspan"] = 1
+        # print(fill_dict)
+        table.set_value(9, fill_dict)
+        # fill food summary
+        table.set_value(10, {"span_cols": max_cols})
         fill_dict = {"underweight_totals": "",
                      "healthy_totals": "",
                      "overweight_totals": "",
@@ -1284,9 +1398,9 @@ def create_a_summary_table(df_total_user: pd.DataFrame,
             else:
                 fill_dict[f"{condition}_totals"] = "N/A"
         fill_dict["colspan"] = 1
-        table.set_value(9, fill_dict)
+        table.set_value(11, fill_dict)
         # fill totals
-        table.set_value(10, {"span_cols": max_cols})
+        table.set_value(12, {"span_cols": max_cols})
         fill_dict["Totals"] = ""
         temp_list = []
         for u in dict_recommendations.keys():
@@ -1320,7 +1434,7 @@ def create_a_summary_table(df_total_user: pd.DataFrame,
         fill_dict["Totals"] = template_text.format(
             list_items='\n'.join(temp_list))
         fill_dict["colspan"] = max_cols
-        table.set_value(11, fill_dict)
+        table.set_value(13, fill_dict)
     except Exception as e:
         # print(f"table error: {e}")
         raise Exception(f"Error generating table: {e}")
@@ -1456,19 +1570,19 @@ def run_full_simulation(num_users: int,
     if progress_bar is not None:
         progress_bar.update(10.0)
     # Execute simulation
-    simulation_results = generate_recommendations(df_user_join,
-                                                  transition_matrix=probability_transition_matrix,
-                                                  chose_dist=chose_dist,
-                                                  social_situation_probabilities=social_situation_probabilities,
-                                                  place_probabilities=place_probabilities,
-                                                  delta_dist_params=delta_dist_dict,
-                                                  df_recipes_db=df_recipes_filter,
-                                                  meals_plan=meals_plan,
-                                                  flexi_probabilities_dict=flexi_probabilities,
-                                                  days_to_simulated=num_days,
-                                                  progress_bar=progress_bar,
-                                                  meals_time_dict=meals_time_dict)
+    simulation_results, new_tracking_df = generate_recommendations(df_user_join,
+                                                                   transition_matrix=probability_transition_matrix,
+                                                                   chose_dist=chose_dist,
+                                                                   social_situation_probabilities=social_situation_probabilities,
+                                                                   place_probabilities=place_probabilities,
+                                                                   delta_dist_params=delta_dist_dict,
+                                                                   df_recipes_db=df_recipes_filter,
+                                                                   meals_plan=meals_plan,
+                                                                   flexi_probabilities_dict=flexi_probabilities,
+                                                                   days_to_simulated=num_days,
+                                                                   progress_bar=progress_bar,
+                                                                   meals_time_dict=meals_time_dict)
     # Create a summary table
     table = create_a_summary_table(df_user_join, simulation_results)
     # return the files
-    return simulation_results, df_user_join, table
+    return simulation_results, df_user_join, table, new_tracking_df
