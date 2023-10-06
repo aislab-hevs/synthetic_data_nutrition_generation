@@ -1314,18 +1314,30 @@ def create_a_summary_table(df_total_user: pd.DataFrame,
                     places_count = 0.0
                     delta_count = 0.0
                     if not temp_df.empty:
-                        social_situation_count = temp_df[f"{meal}_social_situation"].value_counts(
+                        filter_nan_out = temp_df[~temp_df[f"{meal}_social_situation"].isin([
+                                                                                           'N/A'])]
+                        social_situation_count = filter_nan_out[f"{meal}_social_situation"].value_counts(
                         )
-                        places_count = temp_df[f"{meal}_place"].value_counts()
+                        filter_nan_out = temp_df[~temp_df[f"{meal}_place"].isin([
+                                                                                'N/A'])]
+                        places_count = filter_nan_out[f"{meal}_place"].value_counts(
+                        )
                         delta_count = {
                             "mean": temp_df[f"{meal}_delta"].mean(),
                             "std": temp_df[f"{meal}_delta"].std()
                         }
-                        temp_list.append(f"""<li><strong>{meal.capitalize()}:</strong>
-                                        <p>social situations consume meal: {', '.join([ind+':'+str(social_situation_count[ind]) if ind != "N/A" else "N/A" for ind in social_situation_count.index])}</p> 
-                                        <p>places consume meal: {', '.join([ind+':'+str(places_count[ind]) if ind != "N/A" else "N/A" for ind in places_count.index])}</p>
-                                        <p>appreciation: {delta_count['mean']} &plusmn; {delta_count['std']}</p>
+                        if len(places_count) == 0 and len(social_situation_count) == 0:
+                            temp_list.append(f"""<li><strong>{meal.capitalize()}:</strong>
+                                        <p>social situations consume meal: N/A</p> 
+                                        <p>places consume meal: N/A</p>
+                                        <p>appreciation: N/A</p>
                                         </li>""")
+                        else:
+                            temp_list.append(f"""<li><strong>{meal.capitalize()}:</strong>
+                                            <p>social situations consume meal: {', '.join([ind+':'+str(social_situation_count[ind]) if ind != "N/A" else "N/A" for ind in social_situation_count.index])}</p> 
+                                            <p>places consume meal: {', '.join([ind+':'+str(places_count[ind]) if ind != "N/A" else "N/A" for ind in places_count.index])}</p>
+                                            <p>appreciation: {delta_count['mean']} &plusmn; {delta_count['std']}</p>
+                                            </li>""")
                         # print(
                         # f"calculated values condition {condition}: {meal} mean {mean} std {std}")
                     else:
