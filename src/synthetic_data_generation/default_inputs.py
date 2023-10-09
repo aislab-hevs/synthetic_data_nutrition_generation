@@ -13,6 +13,16 @@ person_entity = {
     "country_of_origin": []
 }
 
+# dictionary allergy queries with synonyms
+allergies_queries = {'tree nuts': ['tree', 'nuts', 'nut', 'tree nuts'],
+                     'wheat': ['wheat', 'grain', 'gluten'],
+                     'eggs': ['eggs', 'egg'],
+                     'soy': ['soy', 'soya', 'Glycine max'],
+                     'fish': ['fish', 'salmon', 'seafood', 'tuna'],
+                     'peanut': ['peanut', 'groundnut', 'mani'],
+                     'shellfish': ['shellfish', 'clam', 'lobster', 'scallop', 'mollusk', 'snail'],
+                     "cow's milk": ["cow's milk", "milk", "lactose"]}
+
 user_entity = {
     "current_working_status": ["Half-time-worker", "Full-time-worker", "Self-employee", "Unemployed"],
     "marital_status": ["Single", "Married"],

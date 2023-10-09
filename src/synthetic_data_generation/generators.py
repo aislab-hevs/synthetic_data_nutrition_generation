@@ -16,7 +16,8 @@ from .default_inputs import (person_entity,
                              user_entity,
                              meals_calorie_dict,
                              height_distribution,
-                             meal_time_distribution)
+                             meal_time_distribution,
+                             allergies_queries)
 
 
 # Classes
@@ -788,6 +789,25 @@ def generate_delta_values(chose_dist: str, parameters: Dict[str, Any], size=1):
         return result
 
 
+def generate_allergy_oriented_food_dataset(food_db: pd.DataFrame,
+                                           allergies_queries: Dict[str,
+                                                                   List[str]] =
+                                           allergies_queries
+                                           ):
+    allergy_food_ids = {}
+    for allergy in allergies_queries.keys():
+        allergy_food_ids[allergy] = []
+        for w in allergies_queries[allergy]:
+            # print(w)
+            # choose ids that contain the world
+            recipes_id = food_db[food_db.allergies.str.contains(
+                w, case=False, na="NotRestriction")]['recipeId'].tolist()
+            allergy_food_ids[allergy].extend(recipes_id)
+        # eliminate duplicates
+        allergy_food_ids[allergy] = list(set(allergy_food_ids[allergy]))
+    return allergy_food_ids
+
+
 def generate_recommendations(df_user: pd.DataFrame,
                              transition_matrix: np.array,
                              df_recipes_db: pd.DataFrame,
@@ -868,6 +888,10 @@ def generate_recommendations(df_user: pd.DataFrame,
                         "place_of_meal_consumption",
                         "social_situation_of_meal_consumption",
                         "appreciation_feedback"]
+    # create filtered allergies dataset
+    allergies_food_ids_dict = generate_allergy_oriented_food_dataset(
+        food_db=df_recipes_db)
+
     track_df_list = []
     for i in range(len(df_user)):
         # Generate recommendations for each user
@@ -912,11 +936,17 @@ def generate_recommendations(df_user: pd.DataFrame,
             # filter cultural factor and allergies
             # allergy restrictions filter
             allergies_factor = user_db.allergy
+            # if allergies_factor != "None":
+            #     filtered_recipe_db = df_recipes_db[~df_recipes_db["allergies"].str.contains(
+            #         allergies_factor)]
             if allergies_factor != "None":
-                filtered_recipe_db = df_recipes_db[~df_recipes_db["allergies"].str.contains(
-                    allergies_factor)]
+                filtered_recipe_db = df_recipes_db.loc[
+                    ~df_recipes_db["recipeId"].isin(
+                        allergies_food_ids_dict[allergies_factor]),
+                    :]
             else:
                 filtered_recipe_db = df_recipes_db
+            # check dataset viability
             if filtered_recipe_db.shape[0] == 0:
                 # Remove filter if it is empty
                 filtered_recipe_db = df_recipes_db
