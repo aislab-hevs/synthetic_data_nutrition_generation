@@ -13,15 +13,26 @@ person_entity = {
     "country_of_origin": []
 }
 
+# columns for tracking DataFrame
+columns_tracking = ["day_number",
+                    "meal_type",
+                    "userId",
+                    "foodId",
+                    "time_of_meal_consumption",
+                    "place_of_meal_consumption",
+                    "social_situation_of_meal_consumption",
+                    "appreciation_feedback"]
+
+
 # dictionary allergy queries with synonyms
-allergies_queries = {'tree nuts': ['tree', 'nuts', 'nut', 'tree nuts'],
-                     'wheat': ['wheat', 'grain', 'gluten'],
-                     'eggs': ['eggs', 'egg'],
-                     'soy': ['soy', 'soya', 'Glycine max'],
-                     'fish': ['fish', 'salmon', 'seafood', 'tuna'],
-                     'peanut': ['peanut', 'groundnut', 'mani'],
-                     'shellfish': ['shellfish', 'clam', 'lobster', 'scallop', 'mollusk', 'snail'],
-                     "cow's milk": ["cow's milk", "milk", "lactose"]}
+allergies_queries_dict = {'tree nuts': ['tree', 'nuts', 'nut', 'tree nuts'],
+                          'wheat': ['wheat', 'grain', 'gluten'],
+                          'eggs': ['eggs', 'egg'],
+                          'soy': ['soy', 'soya', 'Glycine max'],
+                          'fish': ['fish', 'salmon', 'seafood', 'tuna'],
+                          'peanut': ['peanut', 'groundnut', 'mani'],
+                          'shellfish': ['shellfish', 'clam', 'lobster', 'scallop', 'mollusk', 'snail'],
+                          "cow's milk": ["cow's milk", "milk", "lactose"]}
 
 user_entity = {
     "current_working_status": ["Half-time-worker", "Full-time-worker", "Self-employee", "Unemployed"],
@@ -30,6 +41,13 @@ user_entity = {
     "weight": [],
     "ethnicity": ["White", "Black", "Latino", "Asian"],
     "height": []
+}
+
+cultural_query_text = {
+    "vegan_observant": "cultural_restriction =='vegan'",
+    "vegetarian_observant": "cultural_restriction =='vegan' |  cultural_restriction =='vegetarian'",
+    "halal_observant": "cultural_restriction =='halal'",
+    "kosher_observant": "cultural_restriction =='kosher'"
 }
 
 cultural_factors = {
@@ -78,11 +96,48 @@ meal_time_distribution = {
     }
 }
 
+# Calorie distribution across meals
 meals_calorie_dict = {"breakfast": 0.3,
                       "morning snacks": 0.05,
-                      "afternoon snacks": 0.4,
-                      "lunch": 0.05,
+                      "afternoon snacks": 0.05,
+                      "lunch": 0.4,
                       "dinner": 0.2}
+
+
+meals_queries_dict = {
+    "breakfast": {"breakfast": 0.7,
+                  "morning snacks": 0.2,
+                  "afternoon snacks": 0.1,
+                  "lunch": 0.0,
+                  "dinner": 0.0
+                  },
+    "morning snacks": {"breakfast": 0.2,
+                       "morning snacks": 0.7,
+                       "afternoon snacks": 0.1,
+                       "lunch": 0.0,
+                       "dinner": 0.0
+                       },
+
+    "afternoon snacks": {"breakfast": 0.3,
+                         "morning snacks": 0.05,
+                         "afternoon snacks": 0.05,
+                         "lunch": 0.4,
+                         "dinner": 0.2},
+    "lunch": {
+        "breakfast": 0.3,
+        "morning snacks": 0.05,
+        "afternoon snacks": 0.05,
+        "lunch": 0.4,
+        "dinner": 0.2
+    },
+    "dinner": {
+        "breakfast": 0.3,
+        "morning snacks": 0.05,
+        "afternoon snacks": 0.05,
+        "lunch": 0.4,
+        "dinner": 0.2
+    }
+}
 
 # Initializers
 age_probabilities_dict = {

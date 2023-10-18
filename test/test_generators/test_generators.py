@@ -5,6 +5,7 @@ import configparser
 import os
 from unittest.mock import Mock
 import pandas as pd
+import pathlib
 from synthetic_data_generation.generators import (create_name_surname,
                                                   generate_country,
                                                   generate_email_from_name,
@@ -26,7 +27,14 @@ from synthetic_data_generation.generators import (create_name_surname,
                                                   define_daily_calorie_plan,
                                                   generate_diet_plan,
                                                   generate_therapy_data,
+                                                  generate_daily_calories_requirement_according_next_BMI,
+                                                  distribute_calories_in_meal,
                                                   generate_meals_plan_per_user,
+                                                  generate_user_simulation,
+                                                  generate_allergy_oriented_food_dataset,
+                                                  generate_cultural_factor_oriented_dataset,
+                                                  generate_meal_type_oriented_dataset,
+                                                  generate_delta_values,
                                                   generate_recommendations,
                                                   create_a_summary_table,
                                                   run_full_simulation,
@@ -40,7 +48,17 @@ from synthetic_data_generation.default_inputs import (person_entity,
                                                       user_entity,
                                                       BMI_probabilities_dict,
                                                       meal_time_distribution,
-                                                      age_probabilities_dict
+                                                      age_probabilities_dict,
+                                                      meals_proba_dict,
+                                                      meals_calorie_dict,
+                                                      gender_probabilities_dict,
+                                                      allergies_probability_dict,
+                                                      flexi_probabilities_dict,
+                                                      food_restriction_probability_dict,
+                                                      place_proba_dict,
+                                                      social_situation_proba_dict,
+                                                      delta_distribution_dict,
+                                                      cultural_query_text
                                                       )
 
 
@@ -134,6 +152,65 @@ def load_recipes():
     # df_recipes = pd.read_csv(recipes_location)
     # return df_recipes
     pass
+
+
+@pytest.fixture
+def get_food_db():
+    file_path = pathlib.Path(
+        "/home/victor/Documents/Expectation_data_generation/test/test_data/processed_recipes_dataset_id.csv")
+    df_food = pd.read_csv(file_path, sep='|', index_col=0)
+    return df_food
+
+
+@pytest.fixture
+def full_user_pipeline():
+    print("Starting user generation")
+    # Generate user data
+    df_personal_data = generate_personal_data(num_users=5,
+                                              age_probabilities=age_probabilities_dict,
+                                              person_entity=person_entity,
+                                              gender_probabilities=gender_probabilities_dict)
+    # Generate user status
+    df_user_entity = generate_user_life_style_data(df_personal_data["userId"].tolist(),
+                                                   user_entity=user_entity,
+                                                   df_personal_data=df_personal_data,
+                                                   BMI_probabilities_dict=BMI_probabilities_dict)
+    # Generate health conditions
+    df_health_conditions = generate_health_condition_data(df_personal_data["userId"].tolist(),
+                                                          allergies_probability_dict=allergies_probability_dict)
+
+    # Generate user goals
+    df_user_goals = generate_user_goals(df_personal_data["userId"].tolist(),
+                                        df_user_entity=df_user_entity)
+
+    # Generate cultural factors
+    df_cultural_factors = generate_cultural_data(df_personal_data["userId"].tolist(),
+                                                 food_restriction_probability_dict=food_restriction_probability_dict,
+                                                 flexi_probability_dict=flexi_probabilities_dict)
+    # Generate therapy
+    df_treatment, df_user_data = generate_therapy_data(df_personal_data["userId"].tolist(),
+                                                       df_personal_data=df_personal_data,
+                                                       df_user_entity=df_user_entity,
+                                                       df_user_goals=df_user_goals)
+    # unify all the DataFrames
+    df_user_join = df_user_data.merge(df_treatment, on="userId")
+    df_user_join = df_user_join.merge(df_personal_data[["userId",
+                                                        "country_of_origin",
+                                                        "living_country",
+                                                        "current_location"
+                                                        ]], on="userId")
+    df_user_join = df_user_join.merge(df_cultural_factors,  on="userId")
+    df_user_join = df_user_join.merge(df_health_conditions,  on="userId")
+    df_user_join = df_user_join.merge(
+        df_user_entity[["userId",
+                        "current_working_status",
+                        "marital_status",
+                        "ethnicity",
+                        "BMI"]],  on="userId")
+    # Generates meals plan
+    meals_plan = generate_meals_plan_per_user(
+        df_user_join["userId"].tolist(), meals_proba_dict)
+    return df_user_join, meals_plan
 
 
 def test_create_name_surname(faker):
@@ -265,13 +342,13 @@ def test_define_daily_calorie_plan():
 
 def test_generate_diet_plan():
     daily_calorie_needs = 1218.34
-    diet_plan = generate_diet_plan(weight=82,
-                                   height=1.65,
-                                   age_range="30-40",
-                                   clinical_gender="M",
-                                   activity_level=ActivityLevel.moderate_active,
-                                   nutrition_goal=NutritionGoals.lose_weight
-                                   )
+    diet_plan, _ = generate_diet_plan(weight=82,
+                                      height=1.65,
+                                      age_range="30-40",
+                                      clinical_gender="M",
+                                      activity_level=ActivityLevel.moderate_active,
+                                      nutrition_goal=NutritionGoals.lose_weight
+                                      )
     assert np.round(diet_plan, 2) == np.round(daily_calorie_needs, 2)
 
 
@@ -286,3 +363,164 @@ def test_generate_therapy_data(user_life_style_data):
                                                 df_user_entity=life_style
                                                 )
     assert df_therapy.shape[0] == len(list_users)
+
+
+def test_generate_daily_calories_requirement_according_next_BMI(user_life_style_data):
+    life_style, p_data = user_life_style_data
+    list_users = life_style['userId'].tolist()
+    user_goals = generate_user_goals(list_user_id=list_users,
+                                     df_user_entity=life_style)
+    days_to_simulate = 20
+    df_therapy, df_user = generate_therapy_data(list_user_id=list_users,
+                                                df_personal_data=p_data,
+                                                df_user_goals=user_goals,
+                                                df_user_entity=life_style
+                                                )
+    # user dataset updated with next state
+    bmi_conditions = [BMI_constants.underweight,
+                      BMI_constants.healthy,
+                      BMI_constants.overweight,
+                      BMI_constants.obesity]
+    results = \
+        generate_daily_calories_requirement_according_next_BMI(
+            df_therapy["current_daily_calories"],
+            bmi_conditions,
+            current_state=BMI_constants.overweight.value,
+            next_state=BMI_constants.healthy.value,
+            days_to_simulated=days_to_simulate)
+    # print(results)
+    assert len(results) == days_to_simulate
+
+
+def test_generate_meals_plan_per_user():
+    meals_plan = generate_meals_plan_per_user(users=['test_user'],
+                                              probability_dict=meals_proba_dict)
+    # print(meals_plan)
+    assert len(meals_plan.keys()) == 5
+
+
+def test_distribute_calories_in_meal():
+    meals_plan = generate_meals_plan_per_user(users=['test_user'],
+                                              probability_dict=meals_proba_dict)
+    result = distribute_calories_in_meal(meals_plan=meals_plan,
+                                         meals_calorie_distribution=meals_calorie_dict
+                                         )
+
+    # print(result)
+    assert abs(sum(result.values()) - 1.0) <= 0.0001
+
+
+def test_load_food_db(get_food_db):
+    df_food = get_food_db
+    # print(df_food.head(4))
+    assert df_food is not None
+
+
+def test_generate_cultural_factor_oriented_dataset(get_food_db):
+    food_db = get_food_db
+    cultural_ids = generate_cultural_factor_oriented_dataset(
+        food_db=food_db
+    )
+    # print({k: len(cultural_ids[k]) for k in cultural_ids.keys()})
+    assert len(cultural_ids.keys()) > 0
+
+
+def test_generate_allergy_oriented_food_dataset(get_food_db):
+    food_db = get_food_db
+    allergy_ids = generate_allergy_oriented_food_dataset(
+        food_db=food_db
+    )
+    # print({k: len(allergy_ids[k]) for k in allergy_ids.keys()})
+    assert len(allergy_ids.keys()) > 0
+
+
+def test_generate_meal_type_oriented_dataset(get_food_db):
+    food_db = get_food_db
+    meal_type_ids = generate_meal_type_oriented_dataset(
+        food_db=food_db
+    )
+    # print({k: len(meal_type_ids[k]) for k in meal_type_ids.keys()})
+    assert len(meal_type_ids.keys()) > 0
+
+
+@pytest.mark.parametrize("chosen_dist, days_to_simulate", [
+    ("Normal", 10),
+    ("Normal", 20),
+    ("Bimodal", 10),
+    ("Bimodal", 20)
+])
+def test_generate_delta_values(chosen_dist: str,
+                               days_to_simulate: int):
+    result = generate_delta_values(chose_dist=chosen_dist,
+                                   parameters=delta_distribution_dict[chosen_dist],
+                                   size=days_to_simulate)
+    # print(result)
+    assert len(result) == days_to_simulate
+
+# @pytest.mark.parametrize("full_user_pipeline", [1, 2], indirect=True)
+
+
+def test_generate_user_simulation(full_user_pipeline, get_food_db):
+    # test the new function to generate data.
+    df_user_join, meals_plan = full_user_pipeline
+    food_db = get_food_db
+    bmi_conditions = [BMI_constants.underweight,
+                      BMI_constants.healthy,
+                      BMI_constants.overweight,
+                      BMI_constants.obesity]
+    cultural_ids = generate_cultural_factor_oriented_dataset(
+        food_db=food_db
+    )
+    allergy_ids = generate_allergy_oriented_food_dataset(
+        food_db=food_db
+    )
+    meal_type_ids = generate_meal_type_oriented_dataset(
+        food_db=food_db
+    )
+    df_user_join["next_BMI"] = df_user_join["BMI"]
+    result = generate_user_simulation(
+        user_id=df_user_join["userId"][0],
+        df_user=df_user_join,
+        food_db=food_db,
+        meals_probability_dict=meals_proba_dict,
+        meals_calorie_distribution=meals_calorie_dict,
+        allergies_food_ids=allergy_ids,
+        cultural_food_ids=cultural_ids,
+        meal_type_food_ids=meal_type_ids,
+        place_probabilities=place_proba_dict,
+        social_situation_probabilities=social_situation_proba_dict,
+        chose_dist="Bimodal",
+        meals_time_dict=meal_time_distribution,
+        delta_dist_params=delta_distribution_dict,
+        dict_flexi_probas=flexi_probabilities_dict,
+        days_to_simulated=10,
+        bmi_conditions=bmi_conditions)
+    # print(result)
+    assert result is not None
+
+
+def test_generate_recommendations(full_user_pipeline, get_food_db):
+    df_user_join, meals_plan = full_user_pipeline
+    food_db = get_food_db
+    meals_plan = generate_meals_plan_per_user(
+        df_user_join["userId"].tolist(),
+        meals_proba_dict)
+    # Execute the function
+    chosen_dist = "Bimodal"
+    tracking_result = generate_recommendations(
+        df_user=df_user_join,
+        transition_matrix=None,
+        df_recipes_db=food_db,
+        place_probabilities=place_proba_dict,
+        social_situation_probabilities=social_situation_proba_dict,
+        meals_plan=meals_plan,
+        chose_dist=chosen_dist,
+        delta_dist_params=delta_distribution_dict[chosen_dist],
+        flexi_probabilities_dict=flexi_probabilities_dict,
+        meals_calorie_dict=meals_calorie_dict,
+        meals_time_dict=meal_time_distribution,
+        days_to_simulated=10,
+        progress_bar=None
+    )
+    print(tracking_result)
+    assert tracking_result is not None

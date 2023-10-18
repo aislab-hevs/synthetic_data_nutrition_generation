@@ -17,7 +17,6 @@ from functools import partial
 from synthetic_data_generation.generators import (person_entity,
                                                   HTML_Table,
                                                   BMI_constants,
-                                                  process_simulation_results,
                                                   save_outputs,
                                                   run_full_simulation)
 
@@ -133,7 +132,7 @@ def execute_simulation(num_users: int,
                        progress_bar: FloatProgressBar = None) -> Tuple[Any, Any, Any]:
     # Todo check dictionaries probabilities
     # Todo: Get values from dictionaries and send to the simulation function
-    simulation_results, df_user_join, table, new_tracking = run_full_simulation(
+    df_user_join, table, new_tracking = run_full_simulation(
         num_users=num_users,
         chose_dist=chose_dist,
         delta_dist_dict=values_from_dictionary(
@@ -165,7 +164,7 @@ def execute_simulation(num_users: int,
         progress_bar=progress_bar,
         num_days=num_days
     )
-    return simulation_results, df_user_join, table, new_tracking
+    return df_user_join, table, new_tracking
 
 
 def check_sum_proba(dict_proba, round_digits=1):
@@ -503,24 +502,21 @@ class ExecuteButton:
             default_path_recipes = "recipes/processed_recipes_dataset_id.csv"
             df_recipes = pd.read_csv(os.path.join(current_dir, default_path_recipes),
                                      sep="|", index_col=0)
-            simulation_results, df_user_join, table, new_tracking_df = execute_simulation(num_users=self.num_users.value,
-                                                                                          chose_dist=self.delta_dist_chose,
-                                                                                          dictionaries=self.dictionaries,
-                                                                                          probability_transition_matrix=probability_transition_matrix,
-                                                                                          df_recipes=df_recipes,
-                                                                                          progress_bar=self.progress_bar,
-                                                                                          num_days=self.num_days.value)
-            self.simulation_results = simulation_results
+            df_user_join, table, new_tracking_df = execute_simulation(num_users=self.num_users.value,
+                                                                      chose_dist=self.delta_dist_chose,
+                                                                      dictionaries=self.dictionaries,
+                                                                      probability_transition_matrix=probability_transition_matrix,
+                                                                      df_recipes=df_recipes,
+                                                                      progress_bar=self.progress_bar,
+                                                                      num_days=self.num_days.value)
             self.df_user_join = df_user_join
             self.table = table
             # save result to a temporal  directory
             base_output_path = os.path.join(os.getcwd(), "outputs")
             folder_output_name = dt.datetime.now().strftime('%d-%m-%Y_%H-%M-%S')
-            simulation_df = process_simulation_results(simulation_results)
             files_dict = {
                 "users_dataset.csv": df_user_join,
-                "users_tracking.csv": simulation_df,
-                "new_users_tracking.csv": new_tracking_df,
+                "tracking.csv": new_tracking_df,
                 "summary_table.html": table.render(),
                 "transition_graph.png": transition_graph
             }
@@ -530,8 +526,6 @@ class ExecuteButton:
                 files_dict
             )
             # Show download buttons
-            df_tracking = process_simulation_results(
-                simulation_results_dict=simulation_results)
             csv_buffer = df_user_join.to_csv()
             tracking_csv = new_tracking_df.to_csv()
             button_1 = DownloadButton(

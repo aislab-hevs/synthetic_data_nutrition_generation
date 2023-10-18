@@ -2,10 +2,12 @@ import pandas as pd
 import numpy as np
 from faker import Faker
 from enum import Enum
-from typing import List, Any, Tuple, Dict
+from typing import List, Any, Tuple, Dict, Union, Set
+from functools import partial
 import string
 import os
 import uuid
+from parfor import parfor
 import seaborn as sns
 import matplotlib.pyplot as plt
 from html import escape
@@ -17,7 +19,11 @@ from .default_inputs import (person_entity,
                              meals_calorie_dict,
                              height_distribution,
                              meal_time_distribution,
-                             allergies_queries)
+                             allergies_queries_dict,
+                             cultural_query_text,
+                             columns_tracking,
+                             meals_queries_dict,
+                             meals_proba_dict)
 
 
 # Classes
@@ -28,7 +34,7 @@ class HTML_Table:
     def __init__(self,
                  cols: int = 4,
                  rows: List[str] = None) -> None:
-        """Constructor method to create HTML_table object able to render an static HTML page with the summary table. 
+        """Constructor method to create HTML_table object able to render an static HTML page with the summary table.
 
         :param cols: maximum number of columns in the table, defaults to 4
         :type cols: int, optional
@@ -50,7 +56,7 @@ class HTML_Table:
         self.rows.extend(new_rows)
 
     def add_row(self, row: str) -> None:
-        """Add one row to the HTML table. 
+        """Add one row to the HTML table.
 
         :param row: row to be added to the table.
         :type row: str
@@ -101,18 +107,18 @@ class HTML_Table:
     </html>""".format(row="\n".join(self.rows))
 
     def render(self) -> str:
-        """Returns the HTML str that represents the summary table. 
+        """Returns the HTML str that represents the summary table.
 
-        :return: HTML string representing the HTML summary table. 
+        :return: HTML string representing the HTML summary table.
         :rtype: str
         """
         return self._repr_html_()
 
 
 class Gender(str, Enum):
-    """Enumeration to maintain clinical genders M for male and F for female. 
+    """Enumeration to maintain clinical genders M for male and F for female.
 
-    :param str: str class to save string constants representing the clinical gender. 
+    :param str: str class to save string constants representing the clinical gender.
     :type str: str
     :param Enum: Enumeration interface
     :type Enum: Enum
@@ -177,13 +183,13 @@ class ActivityLevel(str, Enum):
 
 def create_name_surname(gender: Gender,
                         fake: Faker) -> List[str]:
-    """Returns a list of string with a simulated name and surname based on clinical gender parameter. 
+    """Returns a list of string with a simulated name and surname based on clinical gender parameter.
 
-    :param gender: Clinical gender M for male F for female. 
+    :param gender: Clinical gender M for male F for female.
     :type gender: Gender
-    :param fake: Faker object 
+    :param fake: Faker object
     :type fake: Faker
-    :return: List of string in first position the name and in second position the surname. 
+    :return: List of string in first position the name and in second position the surname.
     :rtype: List[str]
     """
     if gender == Gender.male:
@@ -195,9 +201,9 @@ def create_name_surname(gender: Gender,
 
 def generate_country(samples: int,
                      fake: Faker) -> List[str]:
-    """Generates a country name. 
+    """Generates a country name.
 
-    :param samples: Number of country samples to generate. 
+    :param samples: Number of country samples to generate.
     :type samples: int
     :param fake: Faker object
     :type fake: Faker
@@ -210,9 +216,9 @@ def generate_country(samples: int,
 def generate_email_from_name(name: str,
                              surname: str,
                              domain: str = "fake.com") -> str:
-    """Returns an email address from a given name and surname. 
+    """Returns an email address from a given name and surname.
 
-    :param name: user's name 
+    :param name: user's name
     :type name: str
     :param surname: user's surname
     :type surname: str
@@ -225,9 +231,9 @@ def generate_email_from_name(name: str,
 
 
 def password_generation(length: int) -> str:
-    """Generates a password from a given length. 
+    """Generates a password from a given length.
 
-    :param length: Password's length 
+    :param length: Password's length
     :type length: int
     :return: Generated password with len length
     :rtype: str
@@ -240,7 +246,7 @@ def password_generation(length: int) -> str:
 
 def generate_age_range(probabilities: List[float] = None,
                        list_age_range: List[str] = person_entity.get("age_range")) -> str:
-    """Randomly chose an age range from a given age range's list and probabilities' list. 
+    """Randomly chose an age range from a given age range's list and probabilities' list.
 
     :param probabilities: List of probabilities to chose one age range, probabilities should sum up 1, defaults to None
     :type probabilities: List[float], optional
@@ -356,7 +362,11 @@ def choose_one_from_list(list_values: List[Any],
     :return: List of choices
     :rtype: _type_
     """
-    return list(map(lambda x: np.random.choice(list_values, size=size, replace=replace, p=probabilities), range(samples)))
+    return list(map(lambda x: np.random.choice(list_values,
+                                               size=size,
+                                               replace=replace,
+                                               p=probabilities),
+                    range(samples)))
 
 
 # set the weight
@@ -464,13 +474,13 @@ def generate_user_life_style_data(list_user_id: List[str],
 
 def generate_health_condition_data(list_user_id: List[str],
                                    allergies_probability_dict: Dict[str, Any]):
-    """Generate users health conditions (allergies) based on probability dictionary. 
+    """Generate users health conditions (allergies) based on probability dictionary.
 
     :param list_user_id: users' IDs
     :type list_user_id: List[str]
     :param allergies_probability_dict: Probability dictionary where keys are allergy conditions and values their probabilities, total probabilities should sum up 1
     :type allergies_probability_dict: Dict[str, Any]
-    :return: Pandas Dataframe with users IDs and their assigned health condition. 
+    :return: Pandas Dataframe with users IDs and their assigned health condition.
     :rtype: _type_
     """
     df_health_conditions = pd.DataFrame(data=[], columns=["userId", "allergy"])
@@ -493,7 +503,7 @@ def define_user_goal_according_BMI(bmi: BMI_constants) -> NutritionGoals:
 
     :param bmi: Current BMI condition
     :type bmi: BMI_constants
-    :return: A proposed nutrition goal to improve their health condition. 
+    :return: A proposed nutrition goal to improve their health condition.
     :rtype: NutritionGoals
     """
     if bmi == BMI_constants.underweight:
@@ -508,7 +518,7 @@ def define_user_goal_according_BMI(bmi: BMI_constants) -> NutritionGoals:
 
 
 def generate_user_goals(list_user_id: List[str], df_user_entity: pd.DataFrame) -> pd.DataFrame:
-    """Generate a Dataframe with users' goals. 
+    """Generate a Dataframe with users' goals.
 
     :param list_user_id: users' IDs
     :type list_user_id: List[str]
@@ -615,7 +625,7 @@ def generate_preferences_data(list_user_id: List[str],
 
 
 def calculate_basal_metabolic_rate(weight: float, height: float, age: int, clinical_gender: str) -> float:
-    """Calculate basal metabolic rate (BMR) based on user's weight, height, age and clinical gender. 
+    """Calculate basal metabolic rate (BMR) based on user's weight, height, age and clinical gender.
 
     :param weight: user's weight
     :type weight: float
@@ -638,7 +648,7 @@ def calculate_basal_metabolic_rate(weight: float, height: float, age: int, clini
 
 
 def calculate_daily_calorie_needs(BMR: float, activity_level: ActivityLevel) -> float:
-    """Calculate the daily calorie needs given the BMR and the activity level. 
+    """Calculate the daily calorie needs given the BMR and the activity level.
 
     :param BMR: Basal Metabolic Rate (BMR)
     :type BMR: float
@@ -647,7 +657,7 @@ def calculate_daily_calorie_needs(BMR: float, activity_level: ActivityLevel) -> 
     :return: Daily calorie needs
     :rtype: float
     """
-    calories_daily = 0
+    calories_daily = 1200
     if activity_level == ActivityLevel.sedentary:
         calories_daily = 1.2 * BMR
     elif activity_level == ActivityLevel.light_active:
@@ -656,7 +666,7 @@ def calculate_daily_calorie_needs(BMR: float, activity_level: ActivityLevel) -> 
         calories_daily = 1.725 * BMR
     else:
         calories_daily = 1.9 * BMR
-    return calories_daily
+    return np.max([calories_daily, 1200])
 
 
 def define_daily_calorie_plan(nutrition_goal: NutritionGoals, daily_calorie_need: float) -> float:
@@ -669,7 +679,7 @@ def define_daily_calorie_plan(nutrition_goal: NutritionGoals, daily_calorie_need
     :return: projected daily user's calories needs to reach the nutrition goal
     :rtype: float
     """
-    projected_calories_need = 0
+    projected_calories_need = 1200
     if nutrition_goal == NutritionGoals.gain_weight:
         # Add or remove calories to create metabolic deficit
         projected_calories_need = daily_calorie_need + 500
@@ -677,7 +687,7 @@ def define_daily_calorie_plan(nutrition_goal: NutritionGoals, daily_calorie_need
         projected_calories_need = daily_calorie_need
     else:
         projected_calories_need = daily_calorie_need - 500
-    return projected_calories_need
+    return np.max(np.array([projected_calories_need, 1200]))
 
 
 def generate_diet_plan(weight: float,
@@ -686,7 +696,7 @@ def generate_diet_plan(weight: float,
                        clinical_gender: Gender,
                        activity_level: ActivityLevel,
                        nutrition_goal: NutritionGoals) -> float:
-    """Generate a full diet plan from an user given their current age range, weight, height, clinical gender, activity level and nutrition goal. 
+    """Generate a full diet plan from an user given their current age range, weight, height, clinical gender, activity level and nutrition goal.
 
     :param weight: user's weight
     :type weight: float
@@ -696,7 +706,7 @@ def generate_diet_plan(weight: float,
     :type age_range: str
     :param clinical_gender: user's clinical gender
     :type clinical_gender: Gender
-    :param activity_level: user's activity level 
+    :param activity_level: user's activity level
     :type activity_level: ActivityLevel
     :param nutrition_goal: user's nutrition goal
     :type nutrition_goal: NutritionGoals
@@ -710,7 +720,7 @@ def generate_diet_plan(weight: float,
     calorie_needs = calculate_daily_calorie_needs(bmr, activity_level)
     projected_calorie_needs = define_daily_calorie_plan(
         nutrition_goal, calorie_needs)
-    return projected_calorie_needs
+    return projected_calorie_needs, calorie_needs
 
 
 def generate_therapy_data(list_user_id: List[str],
@@ -725,7 +735,7 @@ def generate_therapy_data(list_user_id: List[str],
     :type df_personal_data: pd.DataFrame
     :param df_user_goals: Dataframe with users' nutritional goals.
     :type df_user_goals: pd.DataFrame
-    :param df_user_entity: Dataframe with additional users' features. 
+    :param df_user_entity: Dataframe with additional users' features.
     :type df_user_entity: pd.DataFrame
     :return: Dataframe with the therapies for each user.
     :rtype: pd.DataFrame
@@ -739,21 +749,22 @@ def generate_therapy_data(list_user_id: List[str],
                                        on="userId")
     df_user_data = df_user_data.merge(df_user_entity[["userId", "life_style", "weight", "height"]],
                                       on="userId")
-    df_treatment["projected_daily_calories"] = np.ceil(df_user_data.apply(lambda row: generate_diet_plan(weight=row["weight"],
-                                                                                                         height=row["height"],
-                                                                                                         age_range=row["age_range"],
-                                                                                                         clinical_gender=row[
-                                                                                                             "clinical_gender"],
-                                                                                                         activity_level=row[
-                                                                                                             "life_style"],
-                                                                                                         nutrition_goal=row[
-                                                                                                             "nutrition_goal"]
-                                                                                                         ), axis=1))
-    return df_treatment, df_user_data
+    df_total = pd.concat(
+        (df_treatment,
+         pd.DataFrame(np.ceil(list(df_user_data.apply(lambda row: generate_diet_plan(weight=row["weight"],
+                                                                                     height=row["height"],
+                                                                                     age_range=row["age_range"],
+                                                                                     clinical_gender=row["clinical_gender"],
+                                                                                     activity_level=row["life_style"],
+                                                                                     nutrition_goal=row["nutrition_goal"]), axis=1))),
+                      columns=["projected_daily_calories", "current_daily_calories"])),
+        axis=1
+    )
+    return df_total, df_user_data
 
 
 def generate_meals_plan_per_user(users: List[str], probability_dict: Dict[str, float]) -> Dict[str, Any]:
-    """Generate meals plan per user with meals to consume or not based on meals probabilities. 
+    """Generate meals plan per user with meals to consume or not based on meals probabilities.
 
     :param users: users' IDs list.
     :type users: List[str]
@@ -778,7 +789,10 @@ def generate_delta_values(chose_dist: str, parameters: Dict[str, Any], size=1):
         return result
     else:
         # choose distribution list
-        dist_list = np.random.choice([1, 2], p=[0.4, 0.6], size=size)
+        dist_list = np.random.choice([1, 2],
+                                     p=[0.4, 0.6],
+                                     size=size,
+                                     replace=True)
         output_list = []
         for i in dist_list:
             output_list.append(np.random.normal(
@@ -792,7 +806,7 @@ def generate_delta_values(chose_dist: str, parameters: Dict[str, Any], size=1):
 def generate_allergy_oriented_food_dataset(food_db: pd.DataFrame,
                                            allergies_queries: Dict[str,
                                                                    List[str]] =
-                                           allergies_queries
+                                           allergies_queries_dict
                                            ):
     allergy_food_ids = {}
     for allergy in allergies_queries.keys():
@@ -800,12 +814,264 @@ def generate_allergy_oriented_food_dataset(food_db: pd.DataFrame,
         for w in allergies_queries[allergy]:
             # print(w)
             # choose ids that contain the world
-            recipes_id = food_db[food_db.allergies.str.contains(
-                w, case=False, na="NotRestriction")]['recipeId'].tolist()
+            recipes_id = food_db.loc[food_db.allergies.str.contains(
+                w, case=False, na=False), 'recipeId'].tolist()
             allergy_food_ids[allergy].extend(recipes_id)
         # eliminate duplicates
         allergy_food_ids[allergy] = list(set(allergy_food_ids[allergy]))
     return allergy_food_ids
+
+
+def generate_cultural_factor_oriented_dataset(food_db: pd.DataFrame,
+                                              cultural_factor_query:
+                                                  Dict[str, Any] = cultural_query_text,
+                                              ):
+    cultural_food_ids = {}
+    for cultural_factor in cultural_factor_query.keys():
+        filtered_food_db = food_db.query(
+            cultural_factor_query[cultural_factor])
+        cultural_food_ids[cultural_factor] = list(
+            set(filtered_food_db['recipeId'].tolist())
+        )
+    return cultural_food_ids
+
+
+def generate_meal_type_oriented_dataset(food_db: pd.DataFrame,
+                                        meal_type_query: Dict[str, Any] = meals_queries_dict):
+    # choose meals types
+    meal_ids = {}
+    for meal_tp in meal_type_query.keys():
+        meal_ids[meal_tp] = food_db.loc[food_db["meal_type"]
+                                        == meal_tp, "recipeId"].tolist()
+    return meal_ids
+
+
+def generate_next_BMI_based_on_transition_matrix(bmi_conditions: List[BMI_constants],
+                                                 df_user: pd.DataFrame,
+                                                 transition_matrix: np.array = None):
+    # Generate users probabilities to success or fail the process
+    df_user_copy = df_user.copy()
+    df_user_copy["next_BMI"] = ""
+    if transition_matrix is not None:
+        bmi_list_str = [bmi.value for bmi in bmi_conditions]
+        for idx, bmi in enumerate(bmi_conditions):
+            # choose users from that condition
+            users_bmi_condition = df_user.query(f"BMI == '{bmi.value}'")
+            if len(users_bmi_condition) > 0:
+                # choose probabilities to this user
+                next_states = np.random.choice(bmi_list_str,
+                                               size=len(users_bmi_condition),
+                                               p=transition_matrix[idx, :]
+                                               )
+                # set the next value
+                df_user_copy.loc[users_bmi_condition.index,
+                                 "next_BMI"] = next_states
+    else:
+        df_user_copy["next_BMI"] = df_user_copy["BMI"]
+    return df_user_copy
+
+
+def generate_daily_calories_requirement_according_next_BMI(
+        current_daily_calories: float,
+        bmi_conditions: List[BMI_constants],
+        current_state: str,
+        next_state: str,
+        days_to_simulated: int) -> Union[List, np.array]:
+    # choose daily calories
+    daily_calories_list = []
+    # print(f"current state: {current_state} and next state: {next_state}")
+    # print(
+    #    f"current state type: {type(current_state)} and next state type: {type(next_state)}")
+    if current_state == next_state:
+        # maintain state
+        daily_calories_list = np.random.normal(loc=current_daily_calories,
+                                               scale=20,
+                                               size=days_to_simulated)
+    # gain weight
+    elif bmi_conditions.index(current_state) < bmi_conditions.index(next_state):
+        daily_calories_list = np.full(days_to_simulated, current_daily_calories) + np.random.normal(
+            loc=500,
+            scale=100,
+            size=days_to_simulated
+        )
+        print(f"daily calories list: {daily_calories_list}")
+        print(f"daily calories list len: {len(daily_calories_list)}")
+    # lose weight
+    else:
+        daily_calories_list = np.full(days_to_simulated, current_daily_calories) - np.random.normal(
+            loc=500,
+            scale=100,
+            size=days_to_simulated
+        )
+    return daily_calories_list
+
+
+def distribute_calories_in_meal(meals_plan: Dict[str, float],
+                                meals_calorie_distribution: Dict[str, float]
+                                ) -> Dict[str, float]:
+    # Generate calorie distribution per meal
+    meals_calorie_dict = {}
+    for key in meals_calorie_distribution.keys():
+        if meals_plan[key] == 1:
+            meals_calorie_dict[key] = meals_calorie_distribution[key]
+    current_percentages = sum(meals_calorie_dict.values())
+    difference = 1.0 - current_percentages
+    # print(f"difference: {difference}")
+    if difference > 0:
+        # redistribute percentages
+        meals_count = len(meals_calorie_dict.keys())
+        difference_meal = difference/meals_count
+        for k in meals_calorie_dict.keys():
+            meals_calorie_dict[k] += difference_meal
+    elif difference < 0:
+        # redistribute percentages reducing them
+        meals_count = len(meals_calorie_dict.keys())
+        difference_meal = difference/meals_count
+        for k in meals_calorie_dict.keys():
+            meals_calorie_dict[k] -= difference_meal
+    else:
+        pass
+    return meals_calorie_dict
+
+
+def choose_meal(all_food_ids_set: Set,
+                allergies: Union[str, List[str]],
+                cultural_factor: str,
+                allergy_dataset: Dict[str, List[str]],
+                cultural_factors_dataset: Dict[str, List[str]]
+                ):
+    all_food_ids = set()
+    allergy_set = set()
+    if isinstance(allergies, list):
+        # process allergies one by one
+        for allergy in allergies:
+            allergy_set = allergy_set.union(
+                set(
+                    allergy_dataset.get(allergy, [])
+                )
+            )
+    else:
+        allergy_set = allergy_set.union(
+            set(
+                allergy_dataset.get(allergies, [])
+            )
+        )
+    # remove allergies
+    all_food_ids = all_food_ids_set - allergy_set
+    # get food that comply the cultural factor
+    print(f"cultural factor: {cultural_factor}")
+    if cultural_factor[0] is not None and cultural_factor[0] != "None":
+        all_food_ids = all_food_ids.intersection(
+            cultural_factors_dataset.get(cultural_factor[0],
+                                         all_food_ids_set))
+    print(f"number of candidates: {len(all_food_ids)}")
+    return all_food_ids
+
+
+def generate_user_simulation(
+        user_id: str,
+        df_user: pd.DataFrame,
+        food_db: pd.DataFrame,
+        meals_probability_dict: Dict[str, Any],
+        meals_calorie_distribution: Dict[str, Any],
+        allergies_food_ids: Dict[str, Any],
+        cultural_food_ids: Dict[str, Any],
+        meal_type_food_ids: Dict[str, Any],
+        place_probabilities: Dict[str, Any],
+        social_situation_probabilities: Dict[str, Any],
+        chose_dist: str,
+        meals_time_dict: Dict[str, Any],
+        delta_dist_params: Dict[str, Any],
+        dict_flexi_probas: Dict[str, Any],
+        days_to_simulated: int,
+        bmi_conditions: List[BMI_constants]):
+    # get basic dataset from the user
+    user_db = df_user.loc[df_user.userId == user_id, :]
+    # print(f"user db: {user_db}")
+    # check that user is found
+    if user_db.empty:
+        raise Exception(f"User: {user_id} not found in users database")
+    # calculate daily calories requirement per day
+    daily_calories_per_day_list = \
+        generate_daily_calories_requirement_according_next_BMI(
+            current_daily_calories=user_db["current_daily_calories"],
+            bmi_conditions=bmi_conditions,
+            current_state=user_db['BMI'].tolist()[0],
+            next_state=user_db["next_BMI"].tolist()[0],
+            days_to_simulated=days_to_simulated
+        )
+    # distribute daily calories need into meals plan
+    meals_plan = generate_meals_plan_per_user(
+        users=[user_db.userId],
+        probability_dict=meals_probability_dict
+    )
+    meals_calorie_dict = distribute_calories_in_meal(
+        meals_plan=meals_plan,
+        meals_calorie_distribution=meals_calorie_distribution
+    )
+    # distribute the calories in the daily calorie need
+    temp_df = pd.DataFrame(columns=columns_tracking)
+    # iterate over the meals plan and cross meal type, allergies, cultural and filter by calories
+    candidate_set = choose_meal(all_food_ids_set=set(food_db["recipeId"].tolist()),
+                                allergies=user_db.allergy.tolist(),
+                                cultural_factor=user_db.cultural_factor.tolist(),
+                                allergy_dataset=allergies_food_ids,
+                                cultural_factors_dataset=cultural_food_ids
+                                )
+    for meal_tp in meals_calorie_dict.keys():
+        # choose meal type
+        meal_type_candidates = set(meal_type_food_ids.get(meal_tp, []))
+        # join candidates
+        candidates_ids = candidate_set.intersection(meal_type_candidates)
+        if len(candidates_ids) == 0:
+            raise Exception(
+                "No candidates found to this user, meal type and restriction")
+        # calculate calories distance
+        # daily calorie
+        calories_available_per_day =\
+            daily_calories_per_day_list *\
+            meals_calorie_dict.get(meal_tp, 0)
+        # print(f"Len available calories per dar: {len(calories_available_per_day)}")
+        selected_food_df = food_db.query("recipeId in @candidates_ids").copy()
+        # print(f"selected food candidates: {selected_food_df.columns}")
+        for day, calories in enumerate(calories_available_per_day):
+            selected_food_df.loc[:, "calorie_distance"] =\
+                selected_food_df.loc[:, "calories"].apply(
+                    lambda x: np.abs(calories - x)
+            )
+            # sort by nearest
+            sorted_candidates = selected_food_df.sort_values(
+                by="calorie_distance",
+                ascending=True
+            )
+            # choose top
+            top_candidates = sorted_candidates.iloc[:20, :]
+            # print(f"Top candidates len: {len(top_candidates)}")
+            row = len(temp_df)
+            temp_df.loc[row, "day_number"] = day
+            temp_df.loc[row, "meal_type"] = meal_tp
+            temp_df.loc[row, "foodId"] = top_candidates["recipeId"].sample(n=1).tolist()[
+                0]
+            temp_df.loc[row, "time_of_meal_consumption"] = np.random.normal(loc=meals_time_dict[meal_tp]['mean'],
+                                                                            scale=meals_time_dict[meal_tp]['std'],
+                                                                            size=1)
+
+    temp_df.loc[:, "userId"] = user_id
+    temp_df.loc[:, "place_of_meal_consumption"] = np.random.choice(
+        a=list(place_probabilities.keys()),
+        p=list(place_probabilities.values()),
+        size=len(temp_df)
+    )
+    temp_df.loc[:, "social_situation_of_meal_consumption"] = np.random.choice(
+        a=list(social_situation_probabilities.keys()),
+        p=list(social_situation_probabilities.values()),
+        size=len(temp_df)
+    )
+    temp_df.loc[:, "appreciation_feedback"] = generate_delta_values(chose_dist=chose_dist,
+                                                                    parameters=delta_dist_params,
+                                                                    size=len(temp_df))
+    return temp_df
+    # TODO: consider the flexi case day by day
 
 
 def generate_recommendations(df_user: pd.DataFrame,
@@ -844,249 +1110,75 @@ def generate_recommendations(df_user: pd.DataFrame,
     :return: Simulated meals per user during num_days_to_simulate each key is an user and each value is the tracking Dataframe
     :rtype: Dict[str, pd.DataFrame]
     """
-
-    query_text = {
-        "vegan_observant": "cultural_restriction =='vegan'",
-        "vegetarian_observant": "cultural_restriction =='vegan' |  cultural_restriction =='vegetarian'",
-        "halal_observant": "cultural_restriction =='halal'",
-        "kosher_observant": "cultural_restriction =='kosher'"
-    }
-    dict_flexi_probas = flexi_probabilities_dict
-    simulation_results = {}
+    update_amount = 90.0/len(df_user)
+    # Prepare food database
     df_recipes_db = df_recipes_db.copy()
     df_recipes_db["allergies"] = df_recipes_db["allergies"].fillna("")
-    update_amount = 90.0/len(df_user)
+    # generate filtered datasets
+    # user dataset updated with next state
     bmi_conditions = [BMI_constants.underweight,
                       BMI_constants.healthy,
                       BMI_constants.overweight,
                       BMI_constants.obesity]
-    if transition_matrix is not None:
-        # Generate users probabilities to success or fail the process
-        for idx, bmi in enumerate(bmi_conditions):
-            # choose users from that condition
-            users_bmi_condition = df_user.query(f"BMI == '{bmi.value}'")
-            if len(users_bmi_condition) > 0:
-                # choose probabilities to this user
-                next_state = np.random.choice([BMI_constants.underweight.value,
-                                               BMI_constants.healthy.value,
-                                               BMI_constants.overweight.value,
-                                               BMI_constants.obesity.value],
-                                              size=len(users_bmi_condition),
-                                              p=transition_matrix[idx, :]
-                                              )
-                # set the next value
-                df_user.loc[users_bmi_condition.index, "next_BMI"] = next_state
-        # check df_integrity
-        mask_nan = df_user["next_BMI"].isna()
-        df_user.loc[mask_nan, "next_BMI"] = ""
-    # Start processing
-    columns_tracking = ["day_number",
-                        "meal_type",
-                        "userId",
-                        "foodId",
-                        "time_of_meal_consumption",
-                        "place_of_meal_consumption",
-                        "social_situation_of_meal_consumption",
-                        "appreciation_feedback"]
-    # create filtered allergies dataset
-    allergies_food_ids_dict = generate_allergy_oriented_food_dataset(
-        food_db=df_recipes_db)
-
+    df_user_db = generate_next_BMI_based_on_transition_matrix(
+        bmi_conditions=bmi_conditions,
+        df_user=df_user,
+        transition_matrix=transition_matrix
+    )
+    # create a functools partial user function
+    cultural_ids = generate_cultural_factor_oriented_dataset(
+        food_db=df_recipes_db
+    )
+    allergy_ids = generate_allergy_oriented_food_dataset(
+        food_db=df_recipes_db
+    )
+    meal_type_ids = generate_meal_type_oriented_dataset(
+        food_db=df_recipes_db
+    )
+    partial_user_generator = partial(
+        generate_user_simulation,
+        df_user=df_user_db,
+        food_db=df_recipes_db,
+        meals_probability_dict=meals_proba_dict,
+        meals_calorie_distribution=meals_calorie_dict,
+        allergies_food_ids=allergy_ids,
+        cultural_food_ids=cultural_ids,
+        meal_type_food_ids=meal_type_ids,
+        place_probabilities=place_probabilities,
+        social_situation_probabilities=social_situation_probabilities,
+        chose_dist=chose_dist,
+        meals_time_dict=meals_time_dict,
+        delta_dist_params=delta_dist_params,
+        dict_flexi_probas=flexi_probabilities_dict,
+        days_to_simulated=days_to_simulated,
+        bmi_conditions=bmi_conditions
+    )
+    # Generate user simulation
     track_df_list = []
-    for i in range(len(df_user)):
-        # Generate recommendations for each user
-        try:
-            if progress_bar is not None:
-                progress_bar.update(update_amount)
-            user_db = df_user.iloc[i, :]
-            daily_calories = user_db.projected_daily_calories
-            current_state = user_db.BMI
-            next_state = user_db.next_BMI
-            if next_state == "":
-                next_state = current_state
-            # re-asses daily calories
-            # maintain weight
-            # daily required
-            if current_state == BMI_constants.overweight or current_state != BMI_constants.obesity:
-                daily_required_calories = daily_calories+500
-            elif current_state == BMI_constants.healthy:
-                daily_required_calories = daily_calories
-            else:
-                daily_required_calories = daily_calories-500
-            # choose daily calories
-            if current_state == next_state:
-                daily_calories_list = [
-                    daily_required_calories for i in range(days_to_simulated)]
-            # gain weight
-            elif bmi_conditions.index(current_state) < bmi_conditions.index(next_state):
-                daily_calories_list = [
-                    daily_required_calories+500 for i in range(days_to_simulated)]
-            # lose weight
-            else:
-                daily_calories_list = [
-                    daily_required_calories-500 for i in range(days_to_simulated)]
-            flexi_probas = None
-            df_recommendations = pd.DataFrame(columns=[f"{k}_calories" for k in meals_calorie_dict.keys()] +
-                                              [f"{k}_time" for k in meals_calorie_dict.keys()] +
-                                              [f"{k}_delta" for k in meals_calorie_dict.keys()] +
-                                              [f"{k}_place" for k in meals_calorie_dict.keys()] +
-                                              [f"{k}_social_situation" for k in meals_calorie_dict.keys()] +
-                                              list(meals_calorie_dict.keys()),
-                                              index=np.arange(0, days_to_simulated))
-            # filter cultural factor and allergies
-            # allergy restrictions filter
-            allergies_factor = user_db.allergy
-            # if allergies_factor != "None":
-            #     filtered_recipe_db = df_recipes_db[~df_recipes_db["allergies"].str.contains(
-            #         allergies_factor)]
-            if allergies_factor != "None":
-                filtered_recipe_db = df_recipes_db.loc[
-                    ~df_recipes_db["recipeId"].isin(
-                        allergies_food_ids_dict[allergies_factor]),
-                    :]
-            else:
-                filtered_recipe_db = df_recipes_db
-            # check dataset viability
-            if filtered_recipe_db.shape[0] == 0:
-                # Remove filter if it is empty
-                filtered_recipe_db = df_recipes_db
-            # cultural restrictions filter
-            cultural_factor = user_db.cultural_factor
-            if cultural_factor is not None or cultural_factor != "None":
-                if cultural_factor != "None" and cultural_factor != "flexi_observant":
-                    # new method
-                    # print(f"Cultural factor: {cultural_factor}")
-                    filtered_recipe_db = filtered_recipe_db.query(query_text.get(cultural_factor,
-                                                                                 ""
-                                                                                 ))
-                elif cultural_factor == "flexi_observant":
-                    # get flexi_proba
-                    flexi_class = df_user.loc[i, "probabilities"]
-                    flexi_probas = dict_flexi_probas[flexi_class]
-                else:
-                    filtered_recipe_db = df_recipes_db
-            else:
-                filtered_recipe_db = df_recipes_db
-            if filtered_recipe_db.shape[0] == 0:
-                # remove filter if it is empty
-                filtered_recipe_db = df_recipes_db
-            for meal_tp in ["lunch", "dinner", "breakfast", "morning snacks", "afternoon snacks"]:
-                # generate recommendations
-                # generate meals according to meals plan
-                temp_df = pd.DataFrame(columns=columns_tracking)
-                meal = meals_plan[meal_tp]
-                if meal[i] != 0:
-                    meal_db = filtered_recipe_db[filtered_recipe_db["meal_type"] == meal_tp]
-                    if meal_db.shape[0] == 0:
-                        meal_db = filtered_recipe_db
-                    meal_chosen = []
-                    for j in range(days_to_simulated):
-                        # flexi
-                        if flexi_probas is not None:
-                            # print("Flexi proba...")
-                            list_flexi_classes = [
-                                k for k in flexi_probas.keys()]
-                            list_flexi_probas = [flexi_probas[k]
-                                                 for k in list_flexi_classes]
-                            flexi_meal = np.random.choice(
-                                list_flexi_classes, p=list_flexi_probas)
-                            if flexi_meal != "None":
-                                flexi_meal = flexi_meal.split("_")[0]
-                                meal_db = meal_db[meal_db["cultural_restriction"]
-                                                  == flexi_meal]
-                            if meal_db.shape[0] == 0:
-                                meal_db = filtered_recipe_db[filtered_recipe_db["meal_type"] == meal_tp]
-                        max_calories_meal = daily_calories_list[j] * \
-                            meals_calorie_dict[meal_tp]
-                        possible_recipes = meal_db[meal_db["calories"]
-                                                   <= max_calories_meal+np.random.normal(0, 50)]
-                        if possible_recipes.shape[0] == 0:
-                            possible_recipes = meal_db
-                        choose_recipes = possible_recipes.sample(
-                            1, replace=True)
-                        meal_chosen.append(
-                            choose_recipes[["title", "calories", "recipeId"]])
-                        # update counter
-                        daily_calories_list[j] = daily_calories_list[j] - \
-                            choose_recipes['calories'].values[0]
 
-                    total_simulations = pd.concat(meal_chosen)
-                    total_simulations.reset_index(inplace=True)
-                    # add data to the dataframe
-                    temp_df[columns_tracking[0]] = np.arange(
-                        0, days_to_simulated)
-                    temp_df[columns_tracking[1]] = meal_tp
-                    temp_df[columns_tracking[2]] = user_db.userId
-                    temp_df[columns_tracking[3]
-                            ] = total_simulations["recipeId"]
-                    temp_df[columns_tracking[4]] = np.random.normal(loc=meals_time_dict[meal_tp]['mean'],
-                                                                    scale=meals_time_dict[meal_tp]['std'],
-                                                                    size=days_to_simulated)
-                    temp_df[columns_tracking[5]] = np.random.choice(
-                        a=list(place_probabilities.keys()),
-                        p=list(place_probabilities.values()),
-                        size=days_to_simulated
-                    )
-                    temp_df[columns_tracking[6]] = np.random.choice(
-                        a=list(social_situation_probabilities.keys()),
-                        p=list(social_situation_probabilities.values()),
-                        size=days_to_simulated
-                    )
-                    temp_df[columns_tracking[7]] = generate_delta_values(chose_dist=chose_dist,
-                                                                         parameters=delta_dist_params,
-                                                                         size=days_to_simulated)
-                    track_df_list.append(temp_df)
-                    # old dataframe
-                    df_recommendations[f"{meal_tp}_calories"] = total_simulations['calories']
-                    df_recommendations[f"{meal_tp}_time"] = np.random.normal(loc=meals_time_dict[meal_tp]['mean'],
-                                                                             scale=meals_time_dict[meal_tp]['std'],
-                                                                             size=days_to_simulated)
-                    df_recommendations[f"{meal_tp}_delta"] = generate_delta_values(chose_dist=chose_dist,
-                                                                                   parameters=delta_dist_params,
-                                                                                   size=days_to_simulated)
-                    df_recommendations[meal_tp] = total_simulations['title']
-                    df_recommendations[f"{meal_tp}_place"] = np.random.choice(
-                        a=list(place_probabilities.keys()),
-                        p=list(place_probabilities.values()),
-                        size=days_to_simulated
-                    )
-                    df_recommendations[f"{meal_tp}_social_situation"] = np.random.choice(
-                        a=list(social_situation_probabilities.keys()),
-                        p=list(social_situation_probabilities.values()),
-                        size=days_to_simulated
-                    )
-                else:
-                    temp_df[columns_tracking[0]] = np.arange(
-                        0, days_to_simulated)
-                    temp_df[columns_tracking[1]] = meal_tp
-                    temp_df[columns_tracking[2]] = user_db.userId
-                    temp_df[columns_tracking[3]] = np.NaN
-                    temp_df[columns_tracking[4]] = np.NaN
-                    temp_df[columns_tracking[5]] = np.NaN
-                    temp_df[columns_tracking[6]] = np.NaN
-                    temp_df[columns_tracking[7]] = np.NaN
-                    track_df_list.append(temp_df)
-                    # old dataframe
-                    df_recommendations[f"{meal_tp}_place"] = [
-                        "N/A" for i in range(days_to_simulated)]
-                    df_recommendations[f"{meal_tp}_social_situation"] = [
-                        "N/A" for i in range(days_to_simulated)]
-                    df_recommendations[meal_tp] = [
-                        "N/A" for i in range(days_to_simulated)]
-                    df_recommendations[f"{meal_tp}_calories"] = [
-                        0 for i in range(days_to_simulated)]
-                    df_recommendations[f"{meal_tp}_time"] = 0.0
-                    df_recommendations[f"{meal_tp}_delta"] = np.NaN
-            simulation_results[f"{user_db.userId}"] = df_recommendations
-        except Exception as e:
-            # print(f"Error processing user: {df_user.iloc[i, 0]}, {e}")
-            print(traceback.print_exc())
-            continue
-    # print(f"Simulation len: {len(simulation_results)}")
-    # join all the DataFrames
-    track_df = pd.concat(track_df_list, axis=0)
-    track_df.reset_index(inplace=True, drop=True)
-    return simulation_results, track_df
+    @parfor(df_user_db['userId'].tolist())
+    def execute_parallel(user_id):
+        return partial_user_generator(user_id)
+    track_df_list = execute_parallel
+    # for user in df_user_db['userId'].tolist():
+    #     try:
+    #         print(f"processing user: {user}")
+    #         track_df_list.append(partial_user_generator(user))
+    #     except Exception as e:
+    #         print(f"Error: {e}")
+    #         print(traceback.print_exc())
+    #         continue
+    # process output
+    if len(track_df_list) > 1:
+        final_tracking_df = pd.concat(track_df_list,
+                                      axis=0,
+                                      ignore_index=True)
+        final_tracking_df.reset_index(inplace=True, drop=True)
+    elif len(track_df_list) == 1:
+        final_tracking_df = track_df_list[0]
+    else:
+        final_tracking_df = pd.DataFrame(columns=columns_tracking)
+    return final_tracking_df
 
 
 def generate_table_template(max_cols: int,
@@ -1157,7 +1249,8 @@ def generate_table_template(max_cols: int,
 
 
 def create_a_summary_table(df_total_user: pd.DataFrame,
-                           dict_recommendations: Dict[str, pd.DataFrame],
+                           tracking_df: pd.DataFrame,
+                           food_df: pd.DataFrame,
                            max_cols: int = 4,
                            round_digits: int = 0,
                            meals_calorie_dict: Dict[str, float] = meals_calorie_dict) -> HTML_Table:
@@ -1177,11 +1270,12 @@ def create_a_summary_table(df_total_user: pd.DataFrame,
     :rtype: HTML_Table
     """
     # health conditions
+    # TODO: update to work with the new format
     try:
         conditions = [BMI_constants.underweight, BMI_constants.healthy,
                       BMI_constants.overweight, BMI_constants.obesity]
-        random_user = np.random.choice(list(dict_recommendations.keys()))
-        simulation_days = dict_recommendations.get(random_user).shape[0]
+
+        simulation_days = len(np.unique(tracking_df.loc[:, "day_number"]))
         total_users = df_total_user.shape[0]
         # Create table
         table = generate_table_template(max_cols=4,
@@ -1321,41 +1415,29 @@ def create_a_summary_table(df_total_user: pd.DataFrame,
         for condition in conditions:
             if condition in df_counts.index:
                 # summarize track food
-                selected_users = df_total_user[df_total_user["BMI"] == condition]["userId"].tolist(
-                )
-                # print(len(selected_users))
-                df_users_list = []
-                for u in selected_users:
-                    if u in dict_recommendations.keys():
-                        df_users_list.append(dict_recommendations[u])
-                # print(len(df_users_list))
-                # check objects to concat
-                if len(df_users_list) > 1:
-                    temp_df = pd.concat(df_users_list, axis=0)
-                elif len(df_users_list) == 1:
-                    # one user
-                    # print("One user detected")
-                    temp_df = df_users_list[0]
-                else:
-                    temp_df = pd.DataFrame()
+                selected_users = df_total_user[df_total_user["BMI"]
+                                               == condition]["userId"].tolist()
+                selected_tracking = tracking_df.query(
+                    "userId in @selected_users").copy()
                 temp_list = []
                 for meal in list(meals_calorie_dict.keys()):
                     social_situation_count = 0.0
                     places_count = 0.0
                     delta_count = 0.0
-                    if not temp_df.empty:
-                        filter_nan_out = temp_df[~temp_df[f"{meal}_social_situation"].isin([
-                                                                                           'N/A'])]
-                        social_situation_count = filter_nan_out[f"{meal}_social_situation"].value_counts(
-                        )
-                        filter_nan_out = temp_df[~temp_df[f"{meal}_place"].isin([
-                                                                                'N/A'])]
-                        places_count = filter_nan_out[f"{meal}_place"].value_counts(
-                        )
+                    meal_tracking = selected_tracking.query(
+                        "meal_type == @meal")
+                    if not meal_tracking.empty:
+                        social_situation_count =\
+                            meal_tracking["social_situation_of_meal_consumption"].value_counts(
+                            )
+                        places_count = \
+                            meal_tracking["place_of_meal_consumption"].value_counts(
+                            )
                         delta_count = {
-                            "mean": temp_df[f"{meal}_delta"].mean(),
-                            "std": temp_df[f"{meal}_delta"].std()
+                            "mean": meal_tracking["appreciation_feedback"].mean(),
+                            "std": meal_tracking["appreciation_feedback"].std()
                         }
+                        # Visualization
                         if len(places_count) == 0 and len(social_situation_count) == 0:
                             temp_list.append(f"""<li><strong>{meal.capitalize()}:</strong>
                                         <p>social situations consume meal: N/A</p> 
@@ -1368,8 +1450,6 @@ def create_a_summary_table(df_total_user: pd.DataFrame,
                                             <p>places consume meal: {', '.join([ind+':'+str(places_count[ind]) if ind != "N/A" else "N/A" for ind in places_count.index])}</p>
                                             <p>appreciation: {delta_count['mean']} &plusmn; {delta_count['std']}</p>
                                             </li>""")
-                        # print(
-                        # f"calculated values condition {condition}: {meal} mean {mean} std {std}")
                     else:
                         social_situation_count = 0.0
                         places_count = 0.0
@@ -1399,32 +1479,20 @@ def create_a_summary_table(df_total_user: pd.DataFrame,
                 # summarize track food
                 selected_users = df_total_user[df_total_user["BMI"] == condition]["userId"].tolist(
                 )
-                # print(len(selected_users))
-                df_users_list = []
-                for u in selected_users:
-                    if u in dict_recommendations.keys():
-                        df_users_list.append(dict_recommendations[u])
-                # print(len(df_users_list))
-                # check objects to concat
-                if len(df_users_list) > 1:
-                    temp_df = pd.concat(df_users_list, axis=0)
-                elif len(df_users_list) == 1:
-                    # one user
-                    # print("One user detected")
-                    temp_df = df_users_list[0]
-                else:
-                    temp_df = pd.DataFrame()
-                # print(len(temp_df))
-                # summarize
+                selected_tracking = tracking_df.query(
+                    "userId in @selected_users").copy()
                 temp_list = []
                 for meal in list(meals_calorie_dict.keys()):
-                    if not temp_df.empty:
-                        mean = temp_df[f"{meal}_calories"].mean()
-                        std = temp_df[f"{meal}_calories"].std()
-                        recipes = len(temp_df[meal])
-                        unique_recipes = len(temp_df[meal].unique())
-                        # print(
-                        # f"calculated values condition {condition}: {meal} mean {mean} std {std}")
+                    meal_tracking = selected_tracking.query(
+                        "meal_type == @meal")
+                    meal_tracking_food = meal_tracking.merge(
+                        food_df, right_on="recipeId", left_on="foodId")
+                    if not meal_tracking_food.empty:
+                        mean = meal_tracking_food["calories"].mean()
+                        std = meal_tracking_food["calories"].std()
+                        recipes = len(meal_tracking_food["recipeId"])
+                        unique_recipes = len(
+                            meal_tracking_food["recipeId"].unique())
                     else:
                         mean = 0.0
                         std = 0.0
@@ -1445,21 +1513,16 @@ def create_a_summary_table(df_total_user: pd.DataFrame,
         table.set_value(12, {"span_cols": max_cols})
         fill_dict["Totals"] = ""
         temp_list = []
-        for u in dict_recommendations.keys():
-            df_users_list.append(dict_recommendations[u])
-        # calculate totals
-        if len(df_users_list) > 1:
-            temp_df = pd.concat(df_users_list, axis=0)
-        elif len(df_users_list) == 1:
-            temp_df = df_users_list[0]
-        else:
-            temp_df = pd.DataFrame()
         for meal in meals_calorie_dict.keys():
-            if not temp_df.empty:
-                mean = temp_df[f"{meal}_calories"].mean()
-                std = temp_df[f"{meal}_calories"].std()
-                recipes = len(temp_df[meal])
-                unique_recipes = len(temp_df[meal].unique())
+            meal_tracking = tracking_df.query(
+                "meal_type == @meal")
+            meal_tracking_food = meal_tracking.merge(
+                food_df, right_on="recipeId", left_on="foodId")
+            if not meal_tracking_food.empty:
+                mean = meal_tracking_food["calories"].mean()
+                std = meal_tracking_food["calories"].std()
+                recipes = len(meal_tracking_food)
+                unique_recipes = len(meal_tracking_food["recipeId"].unique())
                 if unique_recipes == 1:
                     recipes = 0.0
                     unique_recipes = 0.0
@@ -1482,18 +1545,6 @@ def create_a_summary_table(df_total_user: pd.DataFrame,
         raise Exception(f"Error generating table: {e}")
         # print(traceback.format_exc())
     return table
-
-
-def process_simulation_results(simulation_results_dict):
-    list_dataframes = []
-    for k in simulation_results_dict.keys():
-        temp_df = simulation_results_dict.get(k)
-        if temp_df is not None:
-            temp_df["userId"] = k
-            list_dataframes.append(temp_df)
-    # concatenate dataframes
-    final_df = pd.concat(list_dataframes, axis=0)
-    return final_df
 
 
 def save_outputs(base_path: str, output_folder: str, files: Dict[str, Any]):
@@ -1612,19 +1663,19 @@ def run_full_simulation(num_users: int,
     if progress_bar is not None:
         progress_bar.update(10.0)
     # Execute simulation
-    simulation_results, new_tracking_df = generate_recommendations(df_user_join,
-                                                                   transition_matrix=probability_transition_matrix,
-                                                                   chose_dist=chose_dist,
-                                                                   social_situation_probabilities=social_situation_probabilities,
-                                                                   place_probabilities=place_probabilities,
-                                                                   delta_dist_params=delta_dist_dict,
-                                                                   df_recipes_db=df_recipes_filter,
-                                                                   meals_plan=meals_plan,
-                                                                   flexi_probabilities_dict=flexi_probabilities,
-                                                                   days_to_simulated=num_days,
-                                                                   progress_bar=progress_bar,
-                                                                   meals_time_dict=meals_time_dict)
+    new_tracking_df = generate_recommendations(df_user_join,
+                                               transition_matrix=probability_transition_matrix,
+                                               chose_dist=chose_dist,
+                                               social_situation_probabilities=social_situation_probabilities,
+                                               place_probabilities=place_probabilities,
+                                               delta_dist_params=delta_dist_dict,
+                                               df_recipes_db=df_recipes_filter,
+                                               meals_plan=meals_plan,
+                                               flexi_probabilities_dict=flexi_probabilities,
+                                               days_to_simulated=num_days,
+                                               progress_bar=progress_bar,
+                                               meals_time_dict=meals_time_dict)
     # Create a summary table
-    table = create_a_summary_table(df_user_join, simulation_results)
+    table = create_a_summary_table(df_user_join, new_tracking_df, df_recipes)
     # return the files
-    return simulation_results, df_user_join, table, new_tracking_df
+    return df_user_join, table, new_tracking_df
