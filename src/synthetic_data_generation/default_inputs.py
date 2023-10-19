@@ -139,6 +139,113 @@ meals_queries_dict = {
     }
 }
 
+age_presets_dict = {
+    "Flat": {
+        "18-29": 0.10,
+        "30-39": 0.10,
+        "40-49": 0.10,
+        "50-59": 0.20,
+        "60-69": 0.20,
+        "70-79": 0.10,
+        "80-89": 0.10,
+        "90-100": 0.10
+    },
+    "Young": {
+        "18-29": 0.30,
+        "30-39": 0.30,
+        "40-49": 0.10,
+        "50-59": 0.10,
+        "60-69": 0.10,
+        "70-79": 0.10,
+        "80-89": 0.0,
+        "90-100": 0.0
+    },
+    "Adult": {
+        "18-29": 0.10,
+        "30-39": 0.10,
+        "40-49": 0.20,
+        "50-59": 0.30,
+        "60-69": 0.10,
+        "70-79": 0.10,
+        "80-89": 0.10,
+        "90-100": 0.0
+    },
+    "Elder": {
+        "18-29": 0.0,
+        "30-39": 0.0,
+        "40-49": 0.10,
+        "50-59": 0.10,
+        "60-69": 0.20,
+        "70-79": 0.20,
+        "80-89": 0.20,
+        "90-100": 0.20
+    }
+}
+
+allergies_presets_dict = {
+    "North America": {
+        "cow's milk": 0.0,
+        "eggs":  0.0,
+        "peanut": 0.2,
+        "soy": 0.1,
+        "fish":  0.1,
+        "tree nuts": 0.0,
+        "shellfish": 0.2,
+        "wheat": 0.1,
+        "None": 0.2,
+        "Multiple": 0.1
+    },
+
+    "South America": {
+        "cow's milk": 0.1,
+        "eggs":  0.0,
+        "peanut": 0.1,
+        "soy": 0.1,
+        "fish":  0.2,
+        "tree nuts": 0.1,
+        "shellfish": 0.1,
+        "wheat": 0.1,
+        "None": 0.1,
+        "Multiple": 0.1
+    },
+    "Europe": {
+        "cow's milk": 0.2,
+        "eggs":  0.0,
+        "peanut": 0.1,
+        "soy": 0.1,
+        "fish":  0.1,
+        "tree nuts": 0.0,
+        "shellfish": 0.1,
+        "wheat": 0.1,
+        "None": 0.2,
+        "Multiple": 0.1
+    },
+    "Asia": {
+        "cow's milk": 0.1,
+        "eggs":  0.2,
+        "peanut": 0.2,
+        "soy": 0.0,
+        "fish":  0.0,
+        "tree nuts": 0.1,
+        "shellfish": 0.0,
+        "wheat": 0.1,
+        "None": 0.2,
+        "Multiple": 0.1
+    },
+    "Africa": {
+        "cow's milk": 0.2,
+        "eggs":  0.2,
+        "peanut": 0.1,
+        "soy": 0.1,
+        "fish":  0.0,
+        "tree nuts": 0.1,
+        "shellfish": 0.0,
+        "wheat": 0.1,
+        "None": 0.1,
+        "Multiple": 0.1
+    }
+}
+
 # Initializers
 age_probabilities_dict = {
     "18-29": 0.20,
@@ -172,7 +279,8 @@ allergies_probability_dict = {
     "tree nuts": 0.1,
     "shellfish": 0.1,
     "wheat": 0.1,
-    "None": 0.2
+    "None": 0.1,
+    "Multiple": 0.1
 }
 
 food_restriction_probability_dict = {

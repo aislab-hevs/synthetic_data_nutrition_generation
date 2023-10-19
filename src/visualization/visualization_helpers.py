@@ -388,6 +388,21 @@ class NotebookUIBuilder:
         return self.main_accordion
 
 
+class UpdateDropdown:
+    def __init__(self, value_dict, presets_dict) -> None:
+        self.value_dict = value_dict
+        self.presets_dict = presets_dict
+
+    def dropDownChange(self, change):
+        new_value = change.new
+        # print(f"received value: {new_value}")
+        # get preset and update the controls
+        current_preset_dict = self.presets_dict.get(new_value, None)
+        if current_preset_dict is not None:
+            for k in current_preset_dict.keys():
+                self.value_dict[k].value = current_preset_dict[k]
+
+
 class ExecuteButton:
     def __init__(self, progress_bar: FloatProgressBar,
                  num_users, num_days, dictionaries,
@@ -622,12 +637,30 @@ def build_full_ui():
     # UI building
     # Starting
     # Prepare dictionaries
+    # add combo for presets
+    age_preset_combo = widgets.Dropdown(
+        options=[k for k in defaultValues.age_presets_dict.keys()],
+        value="Flat",
+        description="Age preset: ",
+        disable=False
+    )
+    # layout = widgets.Layout(width='auto', height='40px')
+    allergies_preset_combo = widgets.Dropdown(
+        options=[k for k in defaultValues.allergies_presets_dict.keys()],
+        value="Europe",
+        description="Allergies presets: ",
+        disable=False,
+        style={'description_width': 'initial'}
+    )
+    # Created ordered dict
     dict_widgets = OrderedDict()
-    dict_widgets['age'] = {"widget_list":
-                           form_probability_dict(
-                               age_probabilities, widgets.SelectionSlider, options=np.round(np.arange(0.0, 1.1, 0.1), 1).tolist()),
+    dict_widgets['age'] = {"widget_list": widgets.VBox(
+        [age_preset_combo,
+         form_probability_dict(
+             age_probabilities, widgets.SelectionSlider, options=np.round(np.arange(0.0, 1.1, 0.1), 1).tolist())
+         ]),
 
-                           "titles": "Age"}
+        "titles": "Age"}
     dict_widgets['gender'] = {"widget_list":
                               form_probability_dict(
                                   gender_probabilities, widgets.FloatSlider, min=0, max=1.0, step=0.1),
@@ -637,8 +670,13 @@ def build_full_ui():
                                BMI_probabilities, widgets.FloatSlider, min=0, max=1.0, step=0.1),
                            "titles": "BMI"}
     dict_widgets['allergies'] = {"widget_list":
-                                 form_probability_dict(
-                                     allergies_probability, widgets.FloatSlider, min=0, max=1.0, step=0.1),
+                                 widgets.VBox(
+                                     [allergies_preset_combo,
+                                      form_probability_dict(allergies_probability,
+                                                            widgets.FloatSlider,
+                                                            min=0, max=1.0, step=0.05)
+                                      ]
+                                 ),
                                  "titles": "Allergies"}
     dict_widgets['food_restrictions'] = {"widget_list":
                                          form_probability_dict(
@@ -698,6 +736,19 @@ def build_full_ui():
     NUM_DAYS = widgets.IntText(
         defaultValues.DEFAULT_NUM_DAYS, description="Days to generate:", style=style)
     top_box = widgets.Box([NUM_USERS, NUM_DAYS], style=style)
+    # Connect signals
+    age_preset_event_handler = UpdateDropdown(
+        value_dict=age_probabilities,
+        presets_dict=defaultValues.age_presets_dict
+    )
+    allergies_preset_event_handler = UpdateDropdown(
+        value_dict=allergies_probability,
+        presets_dict=defaultValues.allergies_presets_dict
+    )
+    age_preset_combo.observe(age_preset_event_handler.dropDownChange,
+                             names='value')
+    allergies_preset_combo.observe(allergies_preset_event_handler.dropDownChange,
+                                   names='value')
     main_widget = NotebookUIBuilder(dict_widgets)
     # Create button to execute the simulation
     execution_button = widgets.Button(description="Start Generation",
