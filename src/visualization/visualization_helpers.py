@@ -129,7 +129,8 @@ def execute_simulation(num_users: int,
                        dictionaries: Dict[str, Any],
                        probability_transition_matrix: np.array,
                        df_recipes: pd.DataFrame,
-                       progress_bar: FloatProgressBar = None) -> Tuple[Any, Any, Any]:
+                       progress_bar: FloatProgressBar = None,
+                       num_simultaneous_allergies: int = 2) -> Tuple[Any, Any, Any]:
     # Todo check dictionaries probabilities
     # Todo: Get values from dictionaries and send to the simulation function
     df_user_join, table, new_tracking = run_full_simulation(
@@ -162,7 +163,8 @@ def execute_simulation(num_users: int,
         df_recipes=df_recipes,
         meals_proba=values_from_dictionary(dictionaries['meals_proba']),
         progress_bar=progress_bar,
-        num_days=num_days
+        num_days=num_days,
+        multiple_allergies_number=num_simultaneous_allergies
     )
     return df_user_join, table, new_tracking
 
@@ -405,11 +407,12 @@ class UpdateDropdown:
 
 class ExecuteButton:
     def __init__(self, progress_bar: FloatProgressBar,
-                 num_users, num_days, dictionaries,
+                 num_users, num_days, num_simultaneous_allergies, dictionaries,
                  delta_dist_chose: str,
                  out: widgets.Output = None,
                  round_digits=2) -> None:
         self.delta_dist_chose = delta_dist_chose
+        self.num_simultaneous_allergies = num_simultaneous_allergies
         self.round_digits = round_digits
         self.progress_bar = progress_bar
         self.num_users = num_users
@@ -523,7 +526,8 @@ class ExecuteButton:
                                                                       probability_transition_matrix=probability_transition_matrix,
                                                                       df_recipes=df_recipes,
                                                                       progress_bar=self.progress_bar,
-                                                                      num_days=self.num_days.value)
+                                                                      num_days=self.num_days.value,
+                                                                      num_simultaneous_allergies=self.num_simultaneous_allergies.value)
             self.df_user_join = df_user_join
             self.table = table
             # save result to a temporal  directory
@@ -652,6 +656,14 @@ def build_full_ui():
         disable=False,
         style={'description_width': 'initial'}
     )
+    multiple_allergies_number = widgets.IntSlider(
+        value=2,
+        min=2,
+        max=7,
+        step=1,
+        description="Multiple allergies number: ",
+        style={'description_width': 'initial'}
+    )
     # Created ordered dict
     dict_widgets = OrderedDict()
     dict_widgets['age'] = {"widget_list": widgets.VBox(
@@ -669,14 +681,15 @@ def build_full_ui():
                            form_probability_dict(
                                BMI_probabilities, widgets.FloatSlider, min=0, max=1.0, step=0.1),
                            "titles": "BMI"}
-    dict_widgets['allergies'] = {"widget_list":
-                                 widgets.VBox(
+    dict_widgets['allergies'] = {"widget_list": widgets.Box(
+                                 [widgets.VBox(
                                      [allergies_preset_combo,
                                       form_probability_dict(allergies_probability,
                                                             widgets.FloatSlider,
                                                             min=0, max=1.0, step=0.05)
                                       ]
-                                 ),
+                                 ), multiple_allergies_number
+                                 ]),
                                  "titles": "Allergies"}
     dict_widgets['food_restrictions'] = {"widget_list":
                                          form_probability_dict(
@@ -777,6 +790,7 @@ def build_full_ui():
     button_control = ExecuteButton(p_bar,
                                    num_users=NUM_USERS,
                                    num_days=NUM_DAYS,
+                                   num_simultaneous_allergies=multiple_allergies_number,
                                    delta_dist_chose=chose_dist,
                                    dictionaries=general_dict,
                                    out=out)

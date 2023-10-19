@@ -477,6 +477,7 @@ def test_generate_user_simulation(full_user_pipeline, get_food_db):
     meal_type_ids = generate_meal_type_oriented_dataset(
         food_db=food_db
     )
+    chose_dist = "Bimodal"
     df_user_join["next_BMI"] = df_user_join["BMI"]
     result = generate_user_simulation(
         user_id=df_user_join["userId"][0],
@@ -489,9 +490,9 @@ def test_generate_user_simulation(full_user_pipeline, get_food_db):
         meal_type_food_ids=meal_type_ids,
         place_probabilities=place_proba_dict,
         social_situation_probabilities=social_situation_proba_dict,
-        chose_dist="Bimodal",
+        chose_dist=chose_dist,
         meals_time_dict=meal_time_distribution,
-        delta_dist_params=delta_distribution_dict,
+        delta_dist_params=delta_distribution_dict[chose_dist],
         dict_flexi_probas=flexi_probabilities_dict,
         days_to_simulated=10,
         bmi_conditions=bmi_conditions)

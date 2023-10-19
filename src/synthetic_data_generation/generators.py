@@ -473,7 +473,8 @@ def generate_user_life_style_data(list_user_id: List[str],
 
 
 def generate_health_condition_data(list_user_id: List[str],
-                                   allergies_probability_dict: Dict[str, Any]):
+                                   allergies_probability_dict: Dict[str, Any],
+                                   multiple_allergies_number: int = 2):
     """Generate users health conditions (allergies) based on probability dictionary.
 
     :param list_user_id: users' IDs
@@ -483,7 +484,8 @@ def generate_health_condition_data(list_user_id: List[str],
     :return: Pandas Dataframe with users IDs and their assigned health condition.
     :rtype: _type_
     """
-    df_health_conditions = pd.DataFrame(data=[], columns=["userId", "allergy"])
+    df_health_conditions = pd.DataFrame(
+        data=[], columns=["userId", "allergy", "Multi-allergy"])
     df_health_conditions["userId"] = list_user_id
     num_users = len(list_user_id)
     # Allergy array and probabilities
@@ -495,6 +497,18 @@ def generate_health_condition_data(list_user_id: List[str],
     user_allergies = np.random.choice(
         allergies, size=num_users, replace=True, p=allergies_prob)
     df_health_conditions["allergy"] = user_allergies
+    # generate multiple allergies users
+    allergies_list = list(allergies_queries_dict.keys())
+    # sampling
+    multi_allergies = np.random.choice(a=allergies_list,
+                                       size=multiple_allergies_number
+                                       )
+    df_health_conditions["Multi-allergy"] = df_health_conditions["allergy"].apply(
+        lambda x: ";".join(np.random.choice(a=allergies_list,
+                                            size=multiple_allergies_number,
+                                            replace=False
+                                            ).tolist()) if x == "Multiple" else "N/A"
+    )
     return df_health_conditions
 
 
@@ -781,6 +795,7 @@ def generate_meals_plan_per_user(users: List[str], probability_dict: Dict[str, f
 
 
 def generate_delta_values(chose_dist: str, parameters: Dict[str, Any], size=1):
+    # print(f"received parameter: {parameters}")
     if chose_dist == 'Normal':
         result = np.random.normal(
             loc=parameters['mean'], scale=parameters['std'], size=size)
@@ -894,8 +909,8 @@ def generate_daily_calories_requirement_according_next_BMI(
             scale=100,
             size=days_to_simulated
         )
-        print(f"daily calories list: {daily_calories_list}")
-        print(f"daily calories list len: {len(daily_calories_list)}")
+        # print(f"daily calories list: {daily_calories_list}")
+        # print(f"daily calories list len: {len(daily_calories_list)}")
     # lose weight
     else:
         daily_calories_list = np.full(days_to_simulated, current_daily_calories) - np.random.normal(
@@ -945,12 +960,14 @@ def choose_meal(all_food_ids_set: Set,
     if isinstance(allergies, list):
         # process allergies one by one
         for allergy in allergies:
+            # print(f"Multiple fail")
             allergy_set = allergy_set.union(
                 set(
                     allergy_dataset.get(allergy, [])
                 )
             )
     else:
+        # print(f"I arrive here")
         allergy_set = allergy_set.union(
             set(
                 allergy_dataset.get(allergies, [])
@@ -959,12 +976,12 @@ def choose_meal(all_food_ids_set: Set,
     # remove allergies
     all_food_ids = all_food_ids_set - allergy_set
     # get food that comply the cultural factor
-    print(f"cultural factor: {cultural_factor}")
+    # print(f"cultural factor: {cultural_factor}")
     if cultural_factor[0] is not None and cultural_factor[0] != "None":
         all_food_ids = all_food_ids.intersection(
             cultural_factors_dataset.get(cultural_factor[0],
                                          all_food_ids_set))
-    print(f"number of candidates: {len(all_food_ids)}")
+    # print(f"number of candidates: {len(all_food_ids)}")
     return all_food_ids
 
 
@@ -1012,8 +1029,16 @@ def generate_user_simulation(
     # distribute the calories in the daily calorie need
     temp_df = pd.DataFrame(columns=columns_tracking)
     # iterate over the meals plan and cross meal type, allergies, cultural and filter by calories
+    allergy_list = []
+    user_db_series = user_db.squeeze()
+    # print(f"user db: {user_db_series}, type: {type(user_db_series)}")
+    # print(f"allergy: {user_db_series.get(key='allergy')}")
+    if user_db_series.get(key='allergy') == "Multiple":
+        allergy_list = user_db_series.get(key="Multi-allergy").split(";")
+    else:
+        allergy_list = user_db_series.get(key='allergy')
     candidate_set = choose_meal(all_food_ids_set=set(food_db["recipeId"].tolist()),
-                                allergies=user_db.allergy.tolist(),
+                                allergies=allergy_list,
                                 cultural_factor=user_db.cultural_factor.tolist(),
                                 allergy_dataset=allergies_food_ids,
                                 cultural_factors_dataset=cultural_food_ids
@@ -1024,8 +1049,10 @@ def generate_user_simulation(
         # join candidates
         candidates_ids = candidate_set.intersection(meal_type_candidates)
         if len(candidates_ids) == 0:
-            raise Exception(
-                "No candidates found to this user, meal type and restriction")
+            print(f"No candidates found for: {user_id}, {candidates_ids}")
+            continue
+            # raise Exception(
+            # "No candidates found to this user, meal type and restriction")
         # calculate calories distance
         # daily calorie
         calories_available_per_day =\
@@ -1155,19 +1182,26 @@ def generate_recommendations(df_user: pd.DataFrame,
     )
     # Generate user simulation
     track_df_list = []
-
-    @parfor(df_user_db['userId'].tolist())
-    def execute_parallel(user_id):
-        return partial_user_generator(user_id)
-    track_df_list = execute_parallel
-    # for user in df_user_db['userId'].tolist():
-    #     try:
-    #         print(f"processing user: {user}")
-    #         track_df_list.append(partial_user_generator(user))
-    #     except Exception as e:
-    #         print(f"Error: {e}")
-    #         print(traceback.print_exc())
-    #         continue
+    if len(df_user_db['userId'].unique()) > 100:
+        @parfor(df_user_db['userId'].tolist())
+        def execute_parallel(user_id):
+            try:
+                return partial_user_generator(user_id)
+            except Exception as e:
+                print(f"Error processing user: {user_id}")
+                # print(traceback.print_exc())
+        track_df_list = execute_parallel
+    else:
+        for user in df_user_db['userId'].tolist():
+            try:
+                # print(f"processing user: {user}")
+                track_df_list.append(partial_user_generator(user))
+                if progress_bar is not None:
+                    progress_bar.update(update_amount)
+            except Exception as e:
+                print(f"Error: {e}")
+                # print(traceback.print_exc())
+                continue
     # process output
     if len(track_df_list) > 1:
         final_tracking_df = pd.concat(track_df_list,
@@ -1585,7 +1619,8 @@ def run_full_simulation(num_users: int,
                         meals_time_dict: Dict[str,
                                               Any] = meal_time_distribution,
                         progress_bar=None,
-                        num_days: int = 365
+                        num_days: int = 365,
+                        multiple_allergies_number: int = 2
                         ) -> Tuple[pd.DataFrame, pd.DataFrame, HTML_Table]:
     """
 
@@ -1626,7 +1661,8 @@ def run_full_simulation(num_users: int,
                                                    BMI_probabilities_dict=BMI_probabilities)
     # Generate health conditions
     df_health_conditions = generate_health_condition_data(df_personal_data["userId"].tolist(),
-                                                          allergies_probability_dict=allergies_probability_dict)
+                                                          allergies_probability_dict=allergies_probability_dict,
+                                                          multiple_allergies_number=multiple_allergies_number)
     # Generate user goals
     df_user_goals = generate_user_goals(df_personal_data["userId"].tolist(),
                                         df_user_entity=df_user_entity)
