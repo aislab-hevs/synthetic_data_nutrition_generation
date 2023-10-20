@@ -1,0 +1,24 @@
+name: data_gen
+channels:
+  - defaults
+dependencies:
+  - anaconda
+  - python=3.9
+  - nodejs
+  - pip
+  - pip:
+    - jupyter
+    - numpy
+    - pandas
+    - faker
+    - parfor
+    - matplotlib
+    - seaborn
+    - scipy
+    - scikit-learn
+    - graphviz
+    - ipywidgets
+    - pytest
+    - pathlib
+
+
