@@ -755,16 +755,15 @@ def generate_therapy_data(list_user_id: List[str],
     :rtype: pd.DataFrame
     """
     # generate treatment for the users
-    df_treatment = pd.DataFrame(
-        data=[], columns=["userId", "projected_daily_calories"])
-    df_treatment["userId"] = list_user_id
     # prepare data
     df_user_data = df_user_goals.merge(df_personal_data[["userId", "clinical_gender", "age_range"]],
                                        on="userId")
     df_user_data = df_user_data.merge(df_user_entity[["userId", "life_style", "weight", "height"]],
                                       on="userId")
+    # temp df
+
     df_total = pd.concat(
-        (df_treatment,
+        (df_user_data['userId'],
          pd.DataFrame(np.ceil(list(df_user_data.apply(lambda row: generate_diet_plan(weight=row["weight"],
                                                                                      height=row["height"],
                                                                                      age_range=row["age_range"],
@@ -985,6 +984,25 @@ def choose_meal(all_food_ids_set: Set,
     return all_food_ids
 
 
+def generate_food_day(selected_food_df: pd.DataFrame,
+                      calories: float):
+    selected_food_df.loc[:, "calorie_distance"] =\
+        selected_food_df.loc[:, "calories"].apply(
+            lambda x: np.abs(calories - x)
+    )
+    # sort by nearest
+    sorted_candidates = selected_food_df.sort_values(
+        by="calorie_distance",
+        ascending=True
+    )
+    # choose top
+    top_candidates = sorted_candidates.iloc[:20, :]
+    # print(f"Top candidates len: {len(top_candidates)}")
+
+    choose_recipe = top_candidates["recipeId"].sample(n=1).tolist()[0]
+    return choose_recipe
+
+
 def generate_user_simulation(
         user_id: str,
         df_user: pd.DataFrame,
@@ -1043,7 +1061,9 @@ def generate_user_simulation(
                                 allergy_dataset=allergies_food_ids,
                                 cultural_factors_dataset=cultural_food_ids
                                 )
+    meals_dfs = []
     for meal_tp in meals_calorie_dict.keys():
+        temp_meal_df = pd.DataFrame(columns=columns_tracking)
         # choose meal type
         meal_type_candidates = set(meal_type_food_ids.get(meal_tp, []))
         # join candidates
@@ -1061,27 +1081,74 @@ def generate_user_simulation(
         # print(f"Len available calories per dar: {len(calories_available_per_day)}")
         selected_food_df = food_db.query("recipeId in @candidates_ids").copy()
         # print(f"selected food candidates: {selected_food_df.columns}")
-        for day, calories in enumerate(calories_available_per_day):
-            selected_food_df.loc[:, "calorie_distance"] =\
-                selected_food_df.loc[:, "calories"].apply(
-                    lambda x: np.abs(calories - x)
-            )
-            # sort by nearest
-            sorted_candidates = selected_food_df.sort_values(
-                by="calorie_distance",
-                ascending=True
-            )
-            # choose top
-            top_candidates = sorted_candidates.iloc[:20, :]
-            # print(f"Top candidates len: {len(top_candidates)}")
-            row = len(temp_df)
-            temp_df.loc[row, "day_number"] = day
-            temp_df.loc[row, "meal_type"] = meal_tp
-            temp_df.loc[row, "foodId"] = top_candidates["recipeId"].sample(n=1).tolist()[
-                0]
-            temp_df.loc[row, "time_of_meal_consumption"] = np.random.normal(loc=meals_time_dict[meal_tp]['mean'],
-                                                                            scale=meals_time_dict[meal_tp]['std'],
-                                                                            size=1)
+        calories_df = pd.DataFrame(columns=["days", "calories"])
+        calories_df["days"] = np.arange(0, days_to_simulated)
+        calories_df["calories"] = calories_available_per_day
+        partial_daily_calorie_recipe = partial(generate_food_day,
+                                               selected_food_df=selected_food_df)
+        # print(f"calorie df: {calories_df.columns}")
+        # print(f"Calories df size: {calories_df.shape}")
+        calories_df["recipeId"] = calories_df["calories"].apply(lambda x:
+                                                                partial_daily_calorie_recipe(
+                                                                    calories=x)
+                                                                )
+        # temp_df = temp_df.append(food_dfs, ignore_index=True)
+        # fill  the data frame
+        temp_meal_df["day_number"] = np.arange(0, days_to_simulated)
+        temp_meal_df["meal_type"] = meal_tp
+        temp_meal_df["userId"] = user_id
+        temp_meal_df["foodId"] = calories_df["recipeId"]
+        temp_meal_df["time_of_meal_consumption"] = np.random.normal(
+            loc=meals_time_dict[meal_tp]['mean'],
+            scale=meals_time_dict[meal_tp]['std'],
+            size=len(temp_meal_df)
+        )
+        temp_meal_df["place_of_meal_consumption"] = np.random.choice(
+            a=list(place_probabilities.keys()),
+            p=list(place_probabilities.values()),
+            size=len(temp_meal_df)
+        )
+        temp_meal_df["social_situation_of_meal_consumption"] = np.random.choice(
+            a=list(social_situation_probabilities.keys()),
+            p=list(social_situation_probabilities.values()),
+            size=len(temp_meal_df)
+        )
+
+        temp_meal_df["appreciation_feedback"] = generate_delta_values(chose_dist=chose_dist,
+                                                                      parameters=delta_dist_params,
+                                                                      size=len(temp_meal_df))
+
+        meals_dfs.append(temp_meal_df)
+
+    temp_df = pd.concat(meals_dfs, ignore_index=True).reset_index(drop=True)
+    return temp_df
+    temp_df = pd.concat([temp_df, food_dfs],
+                        axis=0,
+                        ignore_index=True).reset_index(drop=True)
+    print(f"joined Dataframe: {temp_df.shape}")
+
+    # # replace for by a vectorized operation
+    # for day, calories in enumerate(calories_available_per_day):
+    #     selected_food_df.loc[:, "calorie_distance"] =\
+    #         selected_food_df.loc[:, "calories"].apply(
+    #             lambda x: np.abs(calories - x)
+    #     )
+    #     # sort by nearest
+    #     sorted_candidates = selected_food_df.sort_values(
+    #         by="calorie_distance",
+    #         ascending=True
+    #     )
+    #     # choose top
+    #     top_candidates = sorted_candidates.iloc[:20, :]
+    #     # print(f"Top candidates len: {len(top_candidates)}")
+    #     row = len(temp_df)
+    #     temp_df.loc[row, "day_number"] = day
+    #     temp_df.loc[row, "meal_type"] = meal_tp
+    #     temp_df.loc[row, "foodId"] = top_candidates["recipeId"].sample(n=1).tolist()[
+    #         0]
+    #     temp_df.loc[row, "time_of_meal_consumption"] = np.random.normal(loc=meals_time_dict[meal_tp]['mean'],
+    #                                                                     scale=meals_time_dict[meal_tp]['std'],
+    #                                                                     size=1)
 
     temp_df.loc[:, "userId"] = user_id
     temp_df.loc[:, "place_of_meal_consumption"] = np.random.choice(

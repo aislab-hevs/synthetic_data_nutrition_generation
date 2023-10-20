@@ -36,6 +36,7 @@ from synthetic_data_generation.generators import (create_name_surname,
                                                   generate_meal_type_oriented_dataset,
                                                   generate_delta_values,
                                                   generate_recommendations,
+                                                  generate_food_day,
                                                   create_a_summary_table,
                                                   run_full_simulation,
                                                   Gender,
@@ -458,6 +459,17 @@ def test_generate_delta_values(chosen_dist: str,
     assert len(result) == days_to_simulate
 
 # @pytest.mark.parametrize("full_user_pipeline", [1, 2], indirect=True)
+
+
+def test_generate_food_day(get_food_db):
+    selected_food_df = get_food_db
+    result = generate_food_day(
+        selected_food_df=selected_food_df,
+        calories=600
+    )
+    # print(f"Dataframe size: {result.shape}")
+    print(result)
+    assert result is not None
 
 
 def test_generate_user_simulation(full_user_pipeline, get_food_db):
