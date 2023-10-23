@@ -950,9 +950,7 @@ def distribute_calories_in_meal(meals_plan: Dict[str, float],
 
 def choose_meal(all_food_ids_set: Set,
                 allergies: Union[str, List[str]],
-                cultural_factor: str,
                 allergy_dataset: Dict[str, List[str]],
-                cultural_factors_dataset: Dict[str, List[str]]
                 ):
     all_food_ids = set()
     allergy_set = set()
@@ -974,20 +972,16 @@ def choose_meal(all_food_ids_set: Set,
         )
     # remove allergies
     all_food_ids = all_food_ids_set - allergy_set
-    # get food that comply the cultural factor
-    # print(f"cultural factor: {cultural_factor}")
-    if cultural_factor[0] is not None and cultural_factor[0] != "None":
-        all_food_ids = all_food_ids.intersection(
-            cultural_factors_dataset.get(cultural_factor[0],
-                                         all_food_ids_set))
-    # print(f"number of candidates: {len(all_food_ids)}")
     return all_food_ids
 
 
 def generate_food_day(selected_food_df: pd.DataFrame,
-                      calories: float):
-    selected_food_df.loc[:, "calorie_distance"] =\
-        selected_food_df.loc[:, "calories"].apply(
+                      calories: float,
+                      cultural_factor: str):
+    # filter by cultural factor
+    cultural_mask = selected_food_df["cultural_restriction"] == cultural_factor
+    selected_food_df.loc[cultural_mask, "calorie_distance"] =\
+        selected_food_df.loc[cultural_mask, "calories"].apply(
             lambda x: np.abs(calories - x)
     )
     # sort by nearest
@@ -1035,6 +1029,7 @@ def generate_user_simulation(
             next_state=user_db["next_BMI"].tolist()[0],
             days_to_simulated=days_to_simulated
         )
+    # Generate flexi probabilities
     # distribute daily calories need into meals plan
     meals_plan = generate_meals_plan_per_user(
         users=[user_db.userId],
@@ -1057,10 +1052,23 @@ def generate_user_simulation(
         allergy_list = user_db_series.get(key='allergy')
     candidate_set = choose_meal(all_food_ids_set=set(food_db["recipeId"].tolist()),
                                 allergies=allergy_list,
-                                cultural_factor=user_db.cultural_factor.tolist(),
-                                allergy_dataset=allergies_food_ids,
-                                cultural_factors_dataset=cultural_food_ids
+                                allergy_dataset=allergies_food_ids
                                 )
+    daily_food_cultural = None
+    if user_db.cultural_factor.tolist()[0] == "flexi_observant":
+        probas = user_db.probabilities.tolist()[0]
+        if probas is not None:
+            chosen_probas = dict_flexi_probas.get(probas, None)
+            if chosen_probas is not None:
+                daily_food_cultural = np.random.choice(
+                    a=list(chosen_probas.keys()),
+                    p=list(chosen_probas.values()),
+                    replace=True,
+                    size=days_to_simulated
+                )
+    else:
+        daily_food_cultural = np.full(days_to_simulated,
+                                      user_db.cultural_factor.tolist()[0])
     meals_dfs = []
     for meal_tp in meals_calorie_dict.keys():
         temp_meal_df = pd.DataFrame(columns=columns_tracking)
@@ -1068,11 +1076,8 @@ def generate_user_simulation(
         meal_type_candidates = set(meal_type_food_ids.get(meal_tp, []))
         # join candidates
         candidates_ids = candidate_set.intersection(meal_type_candidates)
-        if len(candidates_ids) == 0:
-            print(f"No candidates found for: {user_id}, {candidates_ids}")
-            continue
-            # raise Exception(
-            # "No candidates found to this user, meal type and restriction")
+        # raise Exception(
+        # "No candidates found to this user, meal type and restriction")
         # calculate calories distance
         # daily calorie
         calories_available_per_day =\
@@ -1084,14 +1089,16 @@ def generate_user_simulation(
         calories_df = pd.DataFrame(columns=["days", "calories"])
         calories_df["days"] = np.arange(0, days_to_simulated)
         calories_df["calories"] = calories_available_per_day
+        calories_df["cultural_factor"] = daily_food_cultural
         partial_daily_calorie_recipe = partial(generate_food_day,
                                                selected_food_df=selected_food_df)
         # print(f"calorie df: {calories_df.columns}")
         # print(f"Calories df size: {calories_df.shape}")
-        calories_df["recipeId"] = calories_df["calories"].apply(lambda x:
-                                                                partial_daily_calorie_recipe(
-                                                                    calories=x)
-                                                                )
+        calories_df["recipeId"] = calories_df.apply(lambda row:
+                                                    partial_daily_calorie_recipe(
+                                                        calories=row["calories"],
+                                                        cultural_factor=row["cultural_factor"]),
+                                                    axis=1)
         # temp_df = temp_df.append(food_dfs, ignore_index=True)
         # fill  the data frame
         temp_meal_df["day_number"] = np.arange(0, days_to_simulated)

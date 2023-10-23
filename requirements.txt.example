@@ -184,9 +184,11 @@ pandas==2.0.3
 pandocfilters==1.5.0
 panel==1.2.0
 param==1.13.0
+parfor==2023.9.0
 parsel==1.8.1
 parso==0.8.3
 partd==1.4.0
+pathlib==1.0.1
 pathspec==0.11.1
 patsy==0.5.3
 pep8==1.7.1
