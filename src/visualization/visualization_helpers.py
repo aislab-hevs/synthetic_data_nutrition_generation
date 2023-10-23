@@ -108,6 +108,9 @@ class FloatProgressBar:
     def display(self):
         display(self.progress_bar)
 
+    def get_progress_bar(self) -> widgets.FloatProgress:
+        return self.progress_bar
+
     def reset_progress_bar(self):
         self.progress_bar.value = 0.0
         self.progress_bar.description = self.description

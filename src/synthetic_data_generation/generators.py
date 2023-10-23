@@ -1255,9 +1255,18 @@ def generate_recommendations(df_user: pd.DataFrame,
         bmi_conditions=bmi_conditions
     )
     # Generate user simulation
+    # handle progress bar
+
+    def handle_progress_bar(iteration):
+        # print(f"Iteration: {iteration}")
+        # print(f"update amount: {update_amount}")
+        if progress_bar is not None:
+            progress_bar.update(update_amount)
+
+    # collect results
     track_df_list = []
-    if len(df_user_db['userId'].unique()) > 100:
-        @parfor(df_user_db['userId'].tolist())
+    if len(df_user_db['userId'].unique()) > 60:
+        @parfor(df_user_db['userId'].tolist(), bar=handle_progress_bar)
         def execute_parallel(user_id):
             try:
                 return partial_user_generator(user_id)
@@ -1286,6 +1295,13 @@ def generate_recommendations(df_user: pd.DataFrame,
         final_tracking_df = track_df_list[0]
     else:
         final_tracking_df = pd.DataFrame(columns=columns_tracking)
+    # update bar in case is not updated
+    if progress_bar is not None:
+        pbar = progress_bar.get_progress_bar()
+        if pbar.value < 100.0:
+            update_value = 100.0 - pbar.value
+            progress_bar.update(update_value,
+                                bar_status='success' if len(final_tracking_df) > 0 else 'danger')
     return final_tracking_df
 
 
