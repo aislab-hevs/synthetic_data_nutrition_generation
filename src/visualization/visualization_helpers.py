@@ -480,7 +480,7 @@ class ExecuteButton:
                                 f"Current value: {[v.value for v in self.dictionaries['age'].values()]}")
             if not check_sum_proba(self.dictionaries['BMI_probabilities']):
                 raise Exception("BMI probabilities should sum up 1.0")
-            if not check_sum_proba(self.dictionaries['allergies_probability_dict']):
+            if not check_sum_proba(self.dictionaries['allergies_probability_dict'], round_digits=2):
                 raise Exception("Allergies probabilities should sum up 1.0")
             if not check_sum_proba(self.dictionaries["places_meal"]):
                 raise Exception(

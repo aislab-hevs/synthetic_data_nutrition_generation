@@ -1521,8 +1521,8 @@ def create_a_summary_table(df_total_user: pd.DataFrame,
                         users_count = df_counts.loc[(
                             condition, cultural_fact), 'userId']
                         temp_list.append(f"""<li>{cultural_fact.capitalize()}: {users_count}  
-                                         <font color=\"red\">({np.round((users_count/total_users)*100, 2)} % total)</font> 
-                                         <font color=\"green\">({np.round((users_count/per_condition_patient)*100, 2)} % relative)</font>
+                                         <font color=\"red\">({np.round((users_count/total_users)*100, 2)} %)</font> 
+                                         <font color=\"green\">({np.round((users_count/per_condition_patient)*100, 2)} %)</font>
                                          </li>""")
                     fill_dict[key] = template_text.format(
                         list_items='\n'.join(temp_list))
