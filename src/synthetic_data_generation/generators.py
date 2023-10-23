@@ -90,9 +90,6 @@ class HTML_Table:
     </title>
     </head>
     <body>
-    <table border=\"1\">
-        {row}
-    </table>
     <p>
     <ul>
     <li>
@@ -103,6 +100,9 @@ class HTML_Table:
     </li>
     </ul>
     </p>
+    <table border=\"1\">
+        {row}
+    </table>
     </body>
     </html>""".format(row="\n".join(self.rows))
 
@@ -1409,7 +1409,7 @@ def create_a_summary_table(df_total_user: pd.DataFrame,
         table.set_value(1, {"span_cols": max_cols, "total_users": total_users})
         # fill gender stats
         clinical_gender_count = df_total_user["clinical_gender"].value_counts()
-        gender_text_template = "Clinical gender {gender}: {num_users} users ({percentage} %)"
+        gender_text_template = "Medical gender {gender}: {num_users} users ({percentage} %)"
         male_text = ""
         female_text = ""
         for idx, item in clinical_gender_count.items():
@@ -1490,8 +1490,8 @@ def create_a_summary_table(df_total_user: pd.DataFrame,
                         users_count = df_counts.loc[(
                             condition, allergy), 'userId']
                         temp_list.append(f"""<li>{allergy.capitalize()}: {users_count}  
-                                         <font color=\"red\">({np.round((users_count/total_users)*100, 2)} % total)</font>
-                                         <font color=\"green\">({np.round((users_count/per_condition_patient)*100, 2)} % relative)</font>
+                                         <font color=\"red\">({np.round((users_count/total_users)*100, 2)} %)</font>
+                                         <font color=\"green\">({np.round((users_count/per_condition_patient)*100, 2)} %)</font>
                                          </li>""")
                     fill_dict[key] = template_text.format(
                         list_items='\n'.join(temp_list))

@@ -224,11 +224,10 @@ class DictValidator:
         self.label.value = f"Total probability: {self.sum_values()}"
 
 
-def form_probability_dict(proba_dict, widget_class, exclude_validator=False, **kwargs):
+def form_probability_dict(proba_dict, widget_class, exclude_validator=False, round_digits=1, **kwargs):
     # layout = widgets.Layout(width='auto', height='40px')
     style = {'description_width': 'initial'}
-    list_widgets = []
-    validator = DictValidator(proba_dict)
+    validator = DictValidator(proba_dict, round_digits=round_digits)
     for k, v in proba_dict.items():
         if kwargs is not None:
             proba_dict[k] = widget_class(
@@ -251,17 +250,44 @@ def form_probability_dict(proba_dict, widget_class, exclude_validator=False, **k
         if not exclude_validator:
             proba_dict[k].observe(validator.validator_event)
     # create visualization
+    list_widgets = []
     if not exclude_validator:
-        list_widgets = list(proba_dict.values()) + \
-            [validator.get_validator_widget()]
+        if len(proba_dict.keys()) > 2:
+            list_widgets = widgets.VBox(
+                list(proba_dict.values()) +
+                [validator.get_validator_widget()]
+            )
+        else:
+            list_widgets = widgets.VBox(
+                [
+                    widgets.Box(list(proba_dict.values())),
+                    validator.get_validator_widget()
+                ]
+            )
+        # list_widgets = list(proba_dict.values()) + \
+        #     [validator.get_validator_widget()]
     else:
+        # print(f"I should be here not validator {exclude_validator}")
         label = widgets.Label(
             "The probabilities are independent and can sum more than 1.")
-        list_widgets = list(proba_dict.values()) + [label]
-    if len(proba_dict.keys()) > 3:
-        vbox = widgets.VBox(list_widgets)
-        return vbox
-    return widgets.VBox([widgets.Box(list(proba_dict.values())), validator.get_validator_widget()])
+        if len(proba_dict.keys()) > 2:
+            list_widgets = widgets.VBox(
+                list(proba_dict.values()) +
+                [label]
+            )
+        else:
+            list_widgets = widgets.VBox(
+                [
+                    widgets.Box(list(proba_dict.values())),
+                    label
+                ]
+            )
+    #     list_widgets = list(proba_dict.values()) + [label]
+    # if len(proba_dict.keys()) > 3:
+    #     vbox = widgets.VBox(list_widgets)
+    # else:
+    #     vbox = widgets.Box(list_widgets)
+    return list_widgets
 
 
 class DownloadButton:
@@ -464,7 +490,7 @@ class ExecuteButton:
                     "Social situation of meal consumption probabilities should sum up 1.0")
             if not check_sum_proba(self.dictionaries['food_restriction_probability_dict']):
                 raise Exception(
-                    "Food restrictions probabilities should sum up 1.0")
+                    "Cultural restrictions probabilities should sum up 1.0")
             for k in self.dictionaries['flexi_probabilities'].keys():
                 if not check_sum_proba(self.dictionaries['flexi_probabilities'][k]):
                     raise Exception(
@@ -651,6 +677,18 @@ def build_full_ui():
         description="Age preset: ",
         disable=False
     )
+    bmi_preset_combo = widgets.Dropdown(
+        options=[k for k in defaultValues.bmi_presets_dict.keys()],
+        value="Flat",
+        description="BMI preset: ",
+        disable=False
+    )
+    cultural_preset_combo = widgets.Dropdown(
+        options=[k for k in defaultValues.cultural_restriction_presets_dict.keys()],
+        value="Flat",
+        description="Cultural factor preset: ",
+        disable=False
+    )
     # layout = widgets.Layout(width='auto', height='40px')
     allergies_preset_combo = widgets.Dropdown(
         options=[k for k in defaultValues.allergies_presets_dict.keys()],
@@ -681,23 +719,30 @@ def build_full_ui():
                                   gender_probabilities, widgets.FloatSlider, min=0, max=1.0, step=0.1),
                               "titles": "Gender"}
     dict_widgets['bmi'] = {"widget_list":
-                           form_probability_dict(
-                               BMI_probabilities, widgets.FloatSlider, min=0, max=1.0, step=0.1),
+                           widgets.VBox([
+                               bmi_preset_combo,
+                               form_probability_dict(
+                                   BMI_probabilities, widgets.FloatSlider, min=0, max=1.0, step=0.1)
+                           ]),
                            "titles": "BMI"}
     dict_widgets['allergies'] = {"widget_list": widgets.Box(
                                  [widgets.VBox(
                                      [allergies_preset_combo,
                                       form_probability_dict(allergies_probability,
                                                             widgets.FloatSlider,
+                                                            round_digits=2,
                                                             min=0, max=1.0, step=0.05)
                                       ]
                                  ), multiple_allergies_number
                                  ]),
                                  "titles": "Allergies"}
     dict_widgets['food_restrictions'] = {"widget_list":
-                                         form_probability_dict(
-                                             food_restriction_probability, widgets.FloatSlider, min=0, max=1.0, step=0.1),
-                                         "titles": "Food restrictions"}
+                                         widgets.VBox([
+                                             cultural_preset_combo,
+                                             form_probability_dict(
+                                                 food_restriction_probability, widgets.FloatSlider, min=0, max=1.0, step=0.1)
+                                         ]),
+                                         "titles": "Cultural restrictions"}
     dict_widgets['meal_probabilities'] = {"widget_list":
                                           form_probability_dict(
                                               meals_proba, widgets.FloatSlider, exclude_validator=True, min=0, max=1.0, step=0.1),
@@ -718,9 +763,10 @@ def build_full_ui():
                                                                                  titles=[k.replace("_", " ") for k in bmi_transition_probabilities.keys()]),
                                                 "titles": "BMI transition probability"
                                                 }
+    print("executing meal time")
     dict_widgets['meal_time'] = {"widget_list":
-                                 widgets.Accordion(children=[form_probability_dict(meals_time_distribution[k],
-                                                                                   widgets.IntSlider,
+                                 widgets.Accordion(children=[form_probability_dict(proba_dict=meals_time_distribution[k],
+                                                                                   widget_class=widgets.IntSlider,
                                                                                    exclude_validator=True,
                                                                                    min=0,
                                                                                    max=24,
@@ -765,6 +811,21 @@ def build_full_ui():
                              names='value')
     allergies_preset_combo.observe(allergies_preset_event_handler.dropDownChange,
                                    names='value')
+    # BMI preset connection
+    bmi_preset_event_handler = UpdateDropdown(
+        value_dict=BMI_probabilities,
+        presets_dict=defaultValues.bmi_presets_dict
+    )
+    bmi_preset_combo.observe(bmi_preset_event_handler.dropDownChange,
+                             names='value')
+    # Cultural factor connection
+    cultural_preset_event_handler = UpdateDropdown(
+        value_dict=food_restriction_probability,
+        presets_dict=defaultValues.cultural_restriction_presets_dict
+    )
+    cultural_preset_combo.observe(cultural_preset_event_handler.dropDownChange,
+                                  names='value')
+    # Create main widgets
     main_widget = NotebookUIBuilder(dict_widgets)
     # Create button to execute the simulation
     execution_button = widgets.Button(description="Start Generation",
