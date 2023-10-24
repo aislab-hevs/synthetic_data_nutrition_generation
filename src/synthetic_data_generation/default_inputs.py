@@ -139,6 +139,97 @@ meals_queries_dict = {
     }
 }
 
+cultural_restriction_presets_dict = {
+    "Flat": {
+        "vegan_observant": 0.2,
+        "vegetarian_observant": 0.2,
+        "halal_observant": 0.10,
+        "kosher_observant": 0.10,
+        "flexi_observant": 0.10,
+        "None": 0.30
+    },
+    "Europe": {
+        "vegan_observant": 0.1,
+        "vegetarian_observant": 0.1,
+        "halal_observant": 0.1,
+        "kosher_observant": 0.1,
+        "flexi_observant": 0.30,
+        "None": 0.30
+    },
+    "Asia": {
+        "vegan_observant": 0.1,
+        "vegetarian_observant": 0.2,
+        "halal_observant": 0.4,
+        "kosher_observant": 0.2,
+        "flexi_observant": 0.0,
+        "None": 0.1
+    },
+    "North America": {
+        "vegan_observant": 0.1,
+        "vegetarian_observant": 0.1,
+        "halal_observant": 0.10,
+        "kosher_observant": 0.10,
+        "flexi_observant": 0.20,
+        "None": 0.40
+    },
+    "South America": {
+        "vegan_observant": 0.1,
+        "vegetarian_observant": 0.1,
+        "halal_observant": 0.1,
+        "kosher_observant": 0.1,
+        "flexi_observant": 0.2,
+        "None": 0.4
+    },
+    "Africa": {
+        "vegan_observant": 0.1,
+        "vegetarian_observant": 0.2,
+        "halal_observant": 0.40,
+        "kosher_observant": 0.0,
+        "flexi_observant": 0.10,
+        "None": 0.20
+    },
+}
+
+
+bmi_presets_dict = {
+    "Flat": {
+        "underweight": 0.10,
+        "healthy": 0.30,
+        "overweight": 0.30,
+        "obesity": 0.30
+    },
+    "Europe": {
+        "underweight": 0.10,
+        "healthy": 0.30,
+        "overweight": 0.40,
+        "obesity": 0.20
+    },
+    "Asia": {
+        "underweight": 0.10,
+        "healthy": 0.20,
+        "overweight": 0.50,
+        "obesity": 0.20
+    },
+    "North America": {
+        "underweight": 0.10,
+        "healthy": 0.20,
+        "overweight": 0.40,
+        "obesity": 0.30
+    },
+    "South America": {
+        "underweight": 0.10,
+        "healthy": 0.20,
+        "overweight": 0.50,
+        "obesity": 0.20
+    },
+    "Africa": {
+        "underweight": 0.30,
+        "healthy": 0.30,
+        "overweight": 0.30,
+        "obesity": 0.10
+    },
+}
+
 age_presets_dict = {
     "Flat": {
         "18-29": 0.10,
@@ -179,6 +270,56 @@ age_presets_dict = {
         "70-79": 0.20,
         "80-89": 0.20,
         "90-100": 0.20
+    },
+    "Europe": {
+        "18-29": 0.10,
+        "30-39": 0.10,
+        "40-49": 0.20,
+        "50-59": 0.20,
+        "60-69": 0.10,
+        "70-79": 0.10,
+        "80-89": 0.10,
+        "90-100": 0.10
+    },
+    "Asia": {
+        "18-29": 0.2,
+        "30-39": 0.2,
+        "40-49": 0.1,
+        "50-59": 0.1,
+        "60-69": 0.1,
+        "70-79": 0.1,
+        "80-89": 0.1,
+        "90-100": 0.1
+    },
+    "North America": {
+        "18-29": 0.1,
+        "30-39": 0.1,
+        "40-49": 0.1,
+        "50-59": 0.2,
+        "60-69": 0.2,
+        "70-79": 0.1,
+        "80-89": 0.1,
+        "90-100": 0.1
+    },
+    "South America": {
+        "18-29": 0.2,
+        "30-39": 0.2,
+        "40-49": 0.1,
+        "50-59": 0.1,
+        "60-69": 0.1,
+        "70-79": 0.1,
+        "80-89": 0.1,
+        "90-100": 0.1
+    },
+    "Africa": {
+        "18-29": 0.3,
+        "30-39": 0.2,
+        "40-49": 0.1,
+        "50-59": 0.1,
+        "60-69": 0.1,
+        "70-79": 0.1,
+        "80-89": 0.1,
+        "90-100": 0.0
     }
 }
 
