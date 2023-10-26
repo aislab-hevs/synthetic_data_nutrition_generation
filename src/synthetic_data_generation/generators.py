@@ -504,7 +504,7 @@ def generate_health_condition_data(list_user_id: List[str],
                                        size=multiple_allergies_number
                                        )
     df_health_conditions["Multi-allergy"] = df_health_conditions["allergy"].apply(
-        lambda x: ";".join(np.random.choice(a=allergies_list,
+        lambda x: " ".join(np.random.choice(a=allergies_list,
                                             size=multiple_allergies_number,
                                             replace=False
                                             ).tolist()) if x == "Multiple" else "N/A"
@@ -1047,7 +1047,7 @@ def generate_user_simulation(
     # print(f"user db: {user_db_series}, type: {type(user_db_series)}")
     # print(f"allergy: {user_db_series.get(key='allergy')}")
     if user_db_series.get(key='allergy') == "Multiple":
-        allergy_list = user_db_series.get(key="Multi-allergy").split(";")
+        allergy_list = user_db_series.get(key="Multi-allergy").split(" ")
     else:
         allergy_list = user_db_series.get(key='allergy')
     candidate_set = choose_meal(all_food_ids_set=set(food_db["recipeId"].tolist()),
