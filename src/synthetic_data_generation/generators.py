@@ -864,7 +864,7 @@ def generate_next_BMI_based_on_transition_matrix(bmi_conditions: List[BMI_consta
                                                  df_user: pd.DataFrame,
                                                  transition_matrix: np.array = None):
     # Generate users probabilities to success or fail the process
-    df_user_copy = df_user.copy()
+    df_user_copy = df_user
     df_user_copy["next_BMI"] = ""
     if transition_matrix is not None:
         bmi_list_str = [bmi.value for bmi in bmi_conditions]
