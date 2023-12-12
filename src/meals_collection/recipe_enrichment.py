@@ -11,6 +11,16 @@ import argparse
 def generate_nutrition_plans(user_text: str,
                              samples_to_generated: int = 10,
                              model: str = "gpt-3.5-turbo"):
+    # Load environment variables
+    load_dotenv()
+    # get api key from environment variable
+    api_key = os.getenv("API_KEY")
+    # create a openai object
+    openai.api_key = api_key
+    # get the list of available models
+    models = openai.Model.list()
+    # print available models
+    print(f"Available models: {models}")
     response = openai.ChatCompletion.create(
         model=model,
         n=samples_to_generated,
@@ -19,6 +29,7 @@ def generate_nutrition_plans(user_text: str,
             {"role": "user", "content": user_text}
         ]
     )
+
     return response
 
 
@@ -146,7 +157,8 @@ def enrich_recipes_numeric_data(model: str = "gpt-4-1106-preview",
                                 start_index: int = 0,
                                 end_index: int = 1000,
                                 chunk_size: int = 50,
-                                additional_data: bool = True):
+                                additional_data: bool = True,
+                                list_of_recipes: List[str] = None):
     # Load environment variables
     load_dotenv()
     # get api key from environment variable
@@ -170,7 +182,10 @@ def enrich_recipes_numeric_data(model: str = "gpt-4-1106-preview",
     if additional_data:
         filtered_titles = list(
             filter(lambda x: len(x) > 2, recipes_ds["title"].tolist()))
-        recipes_list = list(np.unique(filtered_titles))
+        if list_of_recipes is None:
+            recipes_list = list(np.unique(filtered_titles))
+        else:
+            recipes_list = list_of_recipes
 
         ingredients_ds = recipes_ds[recipes_ds["title"].isin(recipes_list)]
         ingredients_ds = ingredients_ds.drop_duplicates(subset="title")
@@ -188,44 +203,54 @@ def enrich_recipes_numeric_data(model: str = "gpt-4-1106-preview",
                                                                                              chunk_size],
                                                                  model=model
                                                                  )
-            with open(f"Additional_info_recipes_{start_index}_{end_index}_{i}.json", 'w') as fp:
+            with open(f"Additional_info_recipes_missing_{start_index}_{end_index}_{i}.json", 'w') as fp:
                 json.dump(ingredients_dict, fp)
 
 
 if __name__ == '__main__':
     # Create a parser object
     print("Starting...")
-    parser = argparse.ArgumentParser(
-        description="Enrich recipes with command-line arguments.")
+    # parser = argparse.ArgumentParser(
+    #     description="Enrich recipes with command-line arguments.")
 
-    # Define command-line arguments
-    parser.add_argument('--start_index', type=int, default=0,
-                        help='Start index (default: 0)')
-    parser.add_argument('--end_index', type=int, default=9000,
-                        help='End index (default: 9000)')
-    parser.add_argument('--chunk_size', type=int, default=500,
-                        help='Chunk size (default: 500)')
-    parser.add_argument('--model', type=str, default='gpt-3.5-turbo-16k',
-                        help='Model name (default: gpt-3.5-turbo-16k)')
-    parser.add_argument('--additional_data', action='store_true',
-                        help='Include additional data (default: True)')
+    # # Define command-line arguments
+    # parser.add_argument('--start_index', type=int, default=0,
+    #                     help='Start index (default: 0)')
+    # parser.add_argument('--end_index', type=int, default=9000,
+    #                     help='End index (default: 9000)')
+    # parser.add_argument('--chunk_size', type=int, default=500,
+    #                     help='Chunk size (default: 500)')
+    # parser.add_argument('--model', type=str, default='gpt-3.5-turbo-16k',
+    #                     help='Model name (default: gpt-3.5-turbo-16k)')
+    # parser.add_argument('--additional_data', action='store_true',
+    #                     help='Include additional data (default: True)')
+    # parser.add_argument('--load_file', action='store_true',
+    #                     help='Include list data (default: False)')
 
-    # Parse the command-line arguments
-    args = parser.parse_args()
+    # # Parse the command-line arguments
+    # args = parser.parse_args()
 
-    # Access the parsed arguments
-    start_index = args.start_index
-    end_index = args.end_index
-    chunk_size = args.chunk_size
-    model = args.model
-    additional_data = args.additional_data
+    # # Access the parsed arguments
+    # start_index = args.start_index
+    # end_index = args.end_index
+    # chunk_size = args.chunk_size
+    # model = args.model
+    # additional_data = args.additional_data
+    # missing_data = args.load_file
 
-    # Call the enrich_recipes function with the captured parameters
-    enrich_recipes_numeric_data(start_index=start_index,
-                                end_index=end_index,
-                                chunk_size=chunk_size,
-                                model=model,
-                                additional_data=additional_data)
+    # data_loading = None
+    # if missing_data:
+    #     with open("/home/victor/Documents/Expectation_data_generation/src/meals_collection/missing_recipes.txt") as fp:
+    #         data_loading = json.load(fp)
+    #     print(f"loaded files: {len(data_loading)}")
+
+    # # Call the enrich_recipes function with the captured parameters
+    # enrich_recipes_numeric_data(start_index=start_index,
+    #                             end_index=end_index,
+    #                             chunk_size=chunk_size,
+    #                             model=model,
+    #                             additional_data=additional_data,
+    #                             list_of_recipes=data_loading)
 
     # parser = argparse.ArgumentParser(
     #     description="Generate additional data for recipes.")
@@ -241,4 +266,18 @@ if __name__ == '__main__':
     #                chunk_size=args.chunk_size,
     #                model=args.model,
     #                additional_data=True)
+
+    # get new recipes
+    user_text = """
+    Give me {n_recipes} different recipes from {place} with ingredients, 
+    preparation steps, allergens, and carbohydrates, protein, fat, fiber and 
+    calories per 100g portion and also tell me if it is appropriate for 
+    breakfast, lunch or dinner.
+    """
+    new_recipes = generate_nutrition_plans(user_text.format(n_recipes=15,
+                                                            place="China"),
+                                           samples_to_generated=10,
+                                           model="gpt-4-1106-preview")
+    with open("new_china_recipes_1.json", "w") as fp:
+        json.dump(new_recipes, fp)
     print("Finished")
