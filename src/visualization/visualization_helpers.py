@@ -546,7 +546,8 @@ class ExecuteButton:
                 self.progress_bar.display()
             # load recipes data todo make this parametrizable
             current_dir = os.getcwd()
-            default_path_recipes = "recipes/extended_processed_recipes_dataset_id.csv"
+            default_path_recipes = 'recipes/recipes_sampling_1000.csv'
+            # default_path_recipes = "recipes/extended_processed_recipes_dataset_id.csv"
             df_recipes = pd.read_csv(os.path.join(current_dir, default_path_recipes),
                                      sep="|", index_col=0)
             df_user_join, table, new_tracking_df = execute_simulation(num_users=self.num_users.value,
