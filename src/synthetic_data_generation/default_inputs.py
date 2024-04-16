@@ -434,7 +434,7 @@ food_restriction_probability_dict = {
 }
 
 flexi_probabilities_dict = {
-    "flexi_vegie": {
+    "flexi_vegan": {
         "vegan_observant": 0.60,
         "vegetarian_observant": 0.20,
         "halal_observant": 0.10,
@@ -442,7 +442,7 @@ flexi_probabilities_dict = {
         "None": 0.0
     },
     "flexi_vegetarian": {
-        # no meanginful flexi for this class:
+        # no meaningful flexi for this class:
         # vegetarian -> vegan
         "vegan_observant": 0.00,
         "vegetarian_observant": 0.60,
@@ -487,7 +487,7 @@ social_situation_proba_dict = {
     "alone": 0.3,
     "family": 0.3,
     "friends": 0.2,
-    "colleges": 0.2
+    "colleagues": 0.2
 }
 
 delta_distribution_dict = {

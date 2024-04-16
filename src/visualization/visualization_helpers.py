@@ -134,8 +134,9 @@ def execute_simulation(num_users: int,
                        df_recipes: pd.DataFrame,
                        progress_bar: FloatProgressBar = None,
                        num_simultaneous_allergies: int = 2) -> Tuple[Any, Any, Any]:
-    # Todo check dictionaries probabilities
-    # Todo: Get values from dictionaries and send to the simulation function
+    #TODO: check dictionaries probabilities
+    #TODO: Get values from dictionaries and send to the simulation function
+    #TODO: Save simulation parameters. 
     df_user_join, table, new_tracking = run_full_simulation(
         num_users=num_users,
         chose_dist=chose_dist,
@@ -544,7 +545,8 @@ class ExecuteButton:
             else:
                 print("simulation starting")
                 self.progress_bar.display()
-            # load recipes data todo make this parametrizable
+            # load recipes data
+            #TODO: make this parametrizable
             current_dir = os.getcwd()
             default_path_recipes = 'recipes/recipes_sampling_1000.csv'
             # default_path_recipes = "recipes/extended_processed_recipes_dataset_id.csv"

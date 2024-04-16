@@ -1,11 +1,13 @@
 import pandas as pd
 import numpy as np
+import time
 from faker import Faker
 from enum import Enum
 from typing import List, Any, Tuple, Dict, Union, Set
 from functools import partial
 import string
 import os
+import json
 import uuid
 from parfor import parfor
 import seaborn as sns
@@ -1689,6 +1691,19 @@ def save_outputs(base_path: str, output_folder: str, files: Dict[str, Any]):
                     fs.write(files[k])
     else:
         raise Exception(f"Output folder: {base_path} not found")
+    
+def save_simulation_parameters(save_path: str, 
+                               simulation_parameters: Dict[str, Any]) -> None:
+    """Save simulation parameters to replicate the simulation process. 
+
+    :param save_path: Path to save simulation parameters. 
+    :type save_path: str
+    :param simulation_parameters: Dictionary containing all the simulation parameters. 
+    :type simulation_parameters: Dict[str, Any]
+    """
+    # Save simulation parameters 
+    with open(save_path, 'w') as f:
+        json.dump(simulation_parameters, f, indent=4)
 
 
 # Full pipeline to simulation
@@ -1739,6 +1754,8 @@ def run_full_simulation(num_users: int,
     :return: Tuple with Tracking DataFrame, Users join DataFrame, and Summary HTML table.
     :rtype: Tuple[pd.DataFrame, pd.DataFrame, HTML_Table]
     """
+    # count time 
+    start_time = time.time()
     # Generate user data
     df_personal_data = generate_personal_data(num_users=num_users,
                                               age_probabilities=age_probabilities,
@@ -1804,4 +1821,6 @@ def run_full_simulation(num_users: int,
     # Create a summary table
     table = create_a_summary_table(df_user_join, new_tracking_df, df_recipes)
     # return the files
+    end_time = time.time() - start_time
+    print(f"Simulation finished in {end_time} seconds")
     return df_user_join, table, new_tracking_df
