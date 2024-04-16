@@ -1,5 +1,6 @@
 import pandas as pd
 import numpy as np
+import datetime as dt
 import time
 from faker import Faker
 from enum import Enum
@@ -1396,7 +1397,6 @@ def create_a_summary_table(df_total_user: pd.DataFrame,
     :rtype: HTML_Table
     """
     # health conditions
-    # TODO: update to work with the new format
     try:
         conditions = [BMI_constants.underweight, BMI_constants.healthy,
                       BMI_constants.overweight, BMI_constants.obesity]
@@ -1683,6 +1683,10 @@ def save_outputs(base_path: str, output_folder: str, files: Dict[str, Any]):
             # print(f"key: {k}, extension: {k.split('.')[-1]}")
             if k.split(".")[-1] == "csv":
                 files[k].to_csv(os.path.join(target_path, k))
+            elif k.split(".")[-1] == "npy":
+                # save parameters 
+                save_path = os.path.join(target_path, k)
+                np.save(save_path, files[k])
             elif k.split(".")[-1] == "png":
                 files[k].render(filename=os.path.join(
                     target_path, k), format='png')
@@ -1691,19 +1695,6 @@ def save_outputs(base_path: str, output_folder: str, files: Dict[str, Any]):
                     fs.write(files[k])
     else:
         raise Exception(f"Output folder: {base_path} not found")
-    
-def save_simulation_parameters(save_path: str, 
-                               simulation_parameters: Dict[str, Any]) -> None:
-    """Save simulation parameters to replicate the simulation process. 
-
-    :param save_path: Path to save simulation parameters. 
-    :type save_path: str
-    :param simulation_parameters: Dictionary containing all the simulation parameters. 
-    :type simulation_parameters: Dict[str, Any]
-    """
-    # Save simulation parameters 
-    with open(save_path, 'w') as f:
-        json.dump(simulation_parameters, f, indent=4)
 
 
 # Full pipeline to simulation
@@ -1754,6 +1745,27 @@ def run_full_simulation(num_users: int,
     :return: Tuple with Tracking DataFrame, Users join DataFrame, and Summary HTML table.
     :rtype: Tuple[pd.DataFrame, pd.DataFrame, HTML_Table]
     """
+    # Save simulation parameters 
+    simulation_parameters = {
+                'simulation_date': dt.datetime.now().strftime('%d-%m-%Y_%H-%M-%S'),
+                "total_users": num_users,
+                "simulation_days": num_days,
+                'age_ranges': age_probabilities,
+                'gender': gender_probabilities,
+                'bmi': BMI_probabilities,
+                'allergies': allergies_probability_dict,
+                'cultural_restriction': food_restriction_probability_dict, 
+                'meal_probabilities': meals_proba, 
+                'flexible_probabilities': flexi_probabilities,
+                'bmi_transition_probabilities': probability_transition_matrix,
+                'meal_time': meals_time_dict, 
+                'meals_probability': meals_proba,
+                'place_of_meal_consumption': place_probabilities,
+                'social_situation_of_meal_consumption': social_situation_probabilities,
+                'appreciation_feedback': delta_dist_dict,
+                "num_simultaneous_allergies": multiple_allergies_number,
+                "delta_dist_chose": chose_dist,
+    }
     # count time 
     start_time = time.time()
     # Generate user data
@@ -1822,5 +1834,7 @@ def run_full_simulation(num_users: int,
     table = create_a_summary_table(df_user_join, new_tracking_df, df_recipes)
     # return the files
     end_time = time.time() - start_time
-    print(f"Simulation finished in {end_time} seconds")
-    return df_user_join, table, new_tracking_df
+    # print(f"Simulation finished in {end_time} seconds")
+    if progress_bar:
+        progress_bar.update_tail_text(f"Simulation finished in {np.round(end_time, 3)} seconds")
+    return df_user_join, table, new_tracking_df, simulation_parameters
