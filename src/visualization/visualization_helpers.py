@@ -13,6 +13,7 @@ import copy
 import graphviz as graphv
 import traceback
 from functools import partial
+import io
 
 from synthetic_data_generation.generators import (person_entity,
                                                   HTML_Table,
@@ -85,10 +86,12 @@ class FloatProgressBar:
                  step=1.0,
                  description='generating...',
                  bar_style='info',
-                 orientation='horizontal') -> None:
+                 orientation='horizontal',
+                 tail_text: str = '') -> None:
         self.min_val = min_value
         self.max_val = max_values
         self.description = description
+        self.tail_text = tail_text
         self.progress_bar = widgets.FloatProgress(
             value=initial_value,
             min=min_value,
@@ -98,6 +101,17 @@ class FloatProgressBar:
             bar_style=bar_style,
             orientation=orientation
         )
+        self.tail_label = widgets.Label(self.tail_text)
+        self.progress_widget = widgets.Box(
+            [
+            self.progress_bar,
+            self.tail_label
+            ]
+        )
+        
+    def update_tail_text(self, new_text: str):
+        self.tail_text = new_text
+        self.tail_label.value = new_text
 
     def update(self, value: float, bar_status: str = 'info'):
         if value <= self.max_val and value >= self.min_val:
@@ -106,7 +120,7 @@ class FloatProgressBar:
             self._respond_calculus()
 
     def display(self):
-        display(self.progress_bar)
+        display(self.progress_widget)
 
     def get_progress_bar(self) -> widgets.FloatProgress:
         return self.progress_bar
@@ -115,9 +129,10 @@ class FloatProgressBar:
         self.progress_bar.value = 0.0
         self.progress_bar.description = self.description
         self.progress_bar.bar_style = 'info'
+        self.tail_text = ''
 
     def hide(self):
-        self.progress_bar.layout.display = "none"
+        self.progress_widget.layout.display = "none"
 
     def _respond_calculus(self, default_description='success'):
         value = self.progress_bar.value
@@ -134,9 +149,8 @@ def execute_simulation(num_users: int,
                        df_recipes: pd.DataFrame,
                        progress_bar: FloatProgressBar = None,
                        num_simultaneous_allergies: int = 2) -> Tuple[Any, Any, Any]:
-    # Todo check dictionaries probabilities
-    # Todo: Get values from dictionaries and send to the simulation function
-    df_user_join, table, new_tracking = run_full_simulation(
+    # Execute simulation 
+    df_user_join, table, new_tracking, simulation_parameters = run_full_simulation(
         num_users=num_users,
         chose_dist=chose_dist,
         delta_dist_dict=values_from_dictionary(
@@ -169,7 +183,7 @@ def execute_simulation(num_users: int,
         num_days=num_days,
         multiple_allergies_number=num_simultaneous_allergies
     )
-    return df_user_join, table, new_tracking
+    return df_user_join, table, new_tracking, simulation_parameters
 
 
 def check_sum_proba(dict_proba, round_digits=1):
@@ -544,13 +558,14 @@ class ExecuteButton:
             else:
                 print("simulation starting")
                 self.progress_bar.display()
-            # load recipes data todo make this parametrizable
+            # load recipes data
+            #TODO: make this parametrize
             current_dir = os.getcwd()
             default_path_recipes = 'recipes/recipes_sampling_1000.csv'
             # default_path_recipes = "recipes/extended_processed_recipes_dataset_id.csv"
             df_recipes = pd.read_csv(os.path.join(current_dir, default_path_recipes),
                                      sep="|", index_col=0)
-            df_user_join, table, new_tracking_df = execute_simulation(num_users=self.num_users.value,
+            df_user_join, table, new_tracking_df, sim_parameters = execute_simulation(num_users=self.num_users.value,
                                                                       chose_dist=self.delta_dist_chose,
                                                                       dictionaries=self.dictionaries,
                                                                       probability_transition_matrix=probability_transition_matrix,
@@ -562,8 +577,9 @@ class ExecuteButton:
             self.table = table
             # save result to a temporal  directory
             base_output_path = os.path.join(os.getcwd(), "outputs")
-            folder_output_name = dt.datetime.now().strftime('%d-%m-%Y_%H-%M-%S')
+            folder_output_name = dt.datetime.now().strftime('%d-%m-%Y_%H-%M-%S') 
             files_dict = {
+                "simulation_parameters.npy": sim_parameters,
                 "users_dataset.csv": df_user_join,
                 "tracking.csv": new_tracking_df,
                 "summary_table.html": table.render(),
@@ -638,7 +654,19 @@ class ExecuteButton:
 
     def button_callback(self, b):
         self.execute_simulation()
+        
+def process_uploaded_file(uploaded_file):
+    content = io.StringIO(uploaded_file.decode('utf-8'))
+    df = pd.read_csv(content, sep="|", index_col=0)
+    print(df.head(3))
+    return df
 
+def on_file_change(change):
+    print(change)
+    uploaded_filename = next(iter(change.new))
+    print(f"File uploaded: {uploaded_filename}")
+    uploaded_file = change.new[uploaded_filename]['content']
+    process_uploaded_file(uploaded_file)
 
 def build_full_ui():
     # Get initializers
@@ -792,6 +820,26 @@ def build_full_ui():
     }
     dict_widgets['delta_distribution'] = {"widget_list": distribution_selector.get_output(),
                                           "titles": "Appreciation feedback (delta)"}
+    recipes_file_upload = widgets.FileUpload(
+        accept='.csv',
+        multiple=False,
+        description='Upload recipes:')
+    sep_char = '|'
+    # dict_widgets['upload_recipes'] = {"widget_list": widgets.VBox(
+    #     [
+    #     widgets.Label('Upload a recipe in a csv file and specify the separator.'),
+    #     widgets.Box([
+    #     recipes_file_upload,
+    #     widgets.Text(
+    #         value=sep_char,
+    #         placeholder='Introduce the csv separator',
+    #         description='Separator:',
+    #         disabled=False,
+    #         style={'description_width': 'initial'}
+    #     )
+    #         ])
+    #     ]),
+    #     "titles": "Upload recipes (Optional)"}
     # UI displaying
     style = {'description_width': 'initial'}
     NUM_USERS = widgets.IntText(
@@ -812,6 +860,7 @@ def build_full_ui():
                              names='value')
     allergies_preset_combo.observe(allergies_preset_event_handler.dropDownChange,
                                    names='value')
+    recipes_file_upload.observe(on_file_change, names='value')
     # BMI preset connection
     bmi_preset_event_handler = UpdateDropdown(
         value_dict=BMI_probabilities,
