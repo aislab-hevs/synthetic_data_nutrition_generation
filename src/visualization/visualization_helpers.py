@@ -16,10 +16,10 @@ from functools import partial
 import io
 
 from synthetic_data_generation.generators import (person_entity,
-                                                  HTML_Table,
                                                   BMI_constants,
                                                   save_outputs,
                                                   run_full_simulation)
+from synthetic_data_generation.html_utilities import HTML_Table
 
 import synthetic_data_generation.default_inputs as defaultValues
 # import warnings
