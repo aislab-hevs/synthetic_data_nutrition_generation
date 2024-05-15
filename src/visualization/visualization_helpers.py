@@ -752,7 +752,7 @@ def build_full_ui():
                            widgets.VBox([
                                bmi_preset_combo,
                                form_probability_dict(
-                                   BMI_probabilities, widgets.FloatSlider, min=0, max=1.0, step=0.1)
+                                   BMI_probabilities, widgets.FloatSlider, round_digits=2, min=0, max=1.0, step=0.05)
                            ]),
                            "titles": "BMI"}
     dict_widgets['allergies'] = {"widget_list": widgets.Box(
@@ -770,26 +770,36 @@ def build_full_ui():
                                          widgets.VBox([
                                              cultural_preset_combo,
                                              form_probability_dict(
-                                                 food_restriction_probability, widgets.FloatSlider, min=0, max=1.0, step=0.1)
+                                                 food_restriction_probability, widgets.FloatSlider, 
+                                                 round_digits=2, 
+                                                 min=0, 
+                                                 max=1.0, 
+                                                 step=0.05)
                                          ]),
                                          "titles": "Cultural restrictions"}
     dict_widgets['meal_probabilities'] = {"widget_list":
                                           form_probability_dict(
-                                              meals_proba, widgets.FloatSlider, exclude_validator=True, min=0, max=1.0, step=0.1),
+                                              meals_proba, widgets.FloatSlider, exclude_validator=True, 
+                                              round_digits=2,
+                                              min=0, 
+                                              max=1.0, 
+                                              step=0.05),
                                           "titles": "Meal probabilities"}
     dict_widgets['flexible_probabilities'] = {"widget_list":
                                               widgets.Accordion(children=[form_probability_dict(flexi_probabilities[k],
                                                                                                 widgets.FloatSlider,
+                                                                                                round_digits=2,
                                                                                                 min=0,
                                                                                                 max=1.0,
-                                                                                                step=0.1) for k in flexi_probabilities.keys()],
+                                                                                                step=0.05) for k in flexi_probabilities.keys()],
                                                                 titles=[k.replace("_", " ") for k in flexi_probabilities.keys()]),
                                               "titles": "Flexible probability"}
     dict_widgets['transition_probabilities'] = {"widget_list": widgets.Accordion(children=[form_probability_dict(bmi_transition_probabilities[k],
                                                                                                                  widgets.FloatSlider,
+                                                                                                                 round_digits=2,
                                                                                                                  min=0,
                                                                                                                  max=1.0,
-                                                                                                                 step=0.1) for k in bmi_transition_probabilities.keys()],
+                                                                                                                 step=0.05) for k in bmi_transition_probabilities.keys()],
                                                                                  titles=[k.replace("_", " ") for k in bmi_transition_probabilities.keys()]),
                                                 "titles": "BMI transition probability"
                                                 }
@@ -806,17 +816,19 @@ def build_full_ui():
     dict_widgets['places_meal'] = {
         "widget_list": form_probability_dict(places_dict,
                                              widgets.FloatSlider,
+                                             round_digits=2,
                                              min=0.0,
                                              max=1.0,
-                                             step=0.1),
+                                             step=0.05),
         "titles": "Place of meal consumption probability"
     }
     dict_widgets['social_situation_meal'] = {
         "widget_list": form_probability_dict(social_situation_dict,
                                              widgets.FloatSlider,
+                                             round_digits=2,
                                              min=0.0,
                                              max=1.0,
-                                             step=0.1),
+                                             step=0.05),
         "titles": "Social situation of meal consumption probability"
     }
     dict_widgets['delta_distribution'] = {"widget_list": distribution_selector.get_output(),
