@@ -29,6 +29,7 @@ from .default_inputs import (person_entity,
                              meals_proba_dict)
 
 from .html_utilities import HTML_Table
+from .json_utilities import JsonSerializationHelper
 
 class Gender(str, Enum):
     """Enumeration to maintain clinical genders M for male and F for female.
@@ -961,10 +962,12 @@ def generate_user_simulation(
     user_db_series = user_db.squeeze()
     # print(f"user db: {user_db_series}, type: {type(user_db_series)}")
     # print(f"allergy: {user_db_series.get(key='allergy')}")
+    #TODO: Generate positive and negative based on sampling
     if user_db_series.get(key='allergy') == "Multiple":
         allergy_list = user_db_series.get(key="Multi-allergy").split(" ")
     else:
         allergy_list = user_db_series.get(key='allergy')
+    
     candidate_set = choose_meal(all_food_ids_set=set(food_db["recipeId"].tolist()),
                                 allergies=allergy_list,
                                 allergy_dataset=allergies_food_ids
@@ -1595,6 +1598,11 @@ def save_outputs(base_path: str, output_folder: str, files: Dict[str, Any]):
             # print(f"key: {k}, extension: {k.split('.')[-1]}")
             if k.split(".")[-1] == "csv":
                 files[k].to_csv(os.path.join(target_path, k))
+            elif k.split(".")[-1] == "json":
+                # save parameters in json format
+                raw_parameters = files[k]
+                with open(os.path.join(target_path, k), 'w') as fs:
+                    json.dump(raw_parameters, fs, cls=JsonSerializationHelper)
             elif k.split(".")[-1] == "npy":
                 # save parameters 
                 save_path = os.path.join(target_path, k)

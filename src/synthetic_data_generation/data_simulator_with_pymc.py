@@ -49,7 +49,11 @@ def generate_user_data(user_parameters: Dict):
     
 def simulate_meal_context(context_parameters: Dict):
     # Capture parameters and return the context sampled dataframe for an user. 
-    pass
+    days_to_simulate = context_parameters.get('days_to_simulate', 0)
+    social_situation_probabilities = context_parameters.get('social_situation_probabilities', None)
+    place_probabilities = context_parameters.get('place_probabilities', None)
+    meal_probabilities = context_parameters.get('meal_probabilities', None)
+    
 
 def simulate_feedback(feedback_parameters: Dict, df_recipes, df_user_data, df_context):
     pass

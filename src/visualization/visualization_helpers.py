@@ -559,7 +559,7 @@ class ExecuteButton:
                 print("simulation starting")
                 self.progress_bar.display()
             # load recipes data
-            #TODO: make this parametrize
+            #TODO: make the recipes file reading parametrize
             current_dir = os.getcwd()
             default_path_recipes = 'recipes/recipes_sampling_1000.csv'
             # default_path_recipes = "recipes/extended_processed_recipes_dataset_id.csv"
@@ -579,6 +579,7 @@ class ExecuteButton:
             base_output_path = os.path.join(os.getcwd(), "outputs")
             folder_output_name = dt.datetime.now().strftime('%d-%m-%Y_%H-%M-%S') 
             files_dict = {
+                "simulation_parameters.json": sim_parameters,
                 "simulation_parameters.npy": sim_parameters,
                 "users_dataset.csv": df_user_join,
                 "tracking.csv": new_tracking_df,
