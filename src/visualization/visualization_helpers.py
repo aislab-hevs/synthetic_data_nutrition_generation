@@ -561,7 +561,8 @@ class ExecuteButton:
             # load recipes data
             #TODO: make the recipes file reading parametrize
             current_dir = os.getcwd()
-            default_path_recipes = 'recipes/recipes_sampling_1000.csv'
+            # default_path_recipes = 'recipes/recipes_sampling_1000.csv'
+            default_path_recipes = 'recipes/recipes_dataset_final.csv'
             # default_path_recipes = "recipes/extended_processed_recipes_dataset_id.csv"
             df_recipes = pd.read_csv(os.path.join(current_dir, default_path_recipes),
                                      sep="|", index_col=0)

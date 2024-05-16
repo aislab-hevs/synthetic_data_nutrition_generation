@@ -1103,7 +1103,11 @@ def generate_recommendations(df_user: pd.DataFrame,
     update_amount = 90.0/len(df_user)
     # Prepare food database
     df_recipes_db = df_recipes_db.copy()
-    df_recipes_db["allergies"] = df_recipes_db["allergies"].fillna("")
+    # allergies key 
+    if 'allergens' in df_recipes_db.columns:
+        df_recipes_db['allergies'] = df_recipes_db['allergens']
+    current_key = 'allergies'
+    df_recipes_db[current_key] = df_recipes_db[current_key].fillna("")
     # generate filtered datasets
     # user dataset updated with next state
     bmi_conditions = [BMI_constants.underweight,
