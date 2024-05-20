@@ -1,6 +1,7 @@
 from IPython.display import display, clear_output
 from IPython.display import HTML
 import base64
+import codecs
 import ipywidgets as widgets
 from collections import OrderedDict
 from typing import Any
@@ -657,6 +658,14 @@ class ExecuteButton:
     def button_callback(self, b):
         self.execute_simulation()
         
+def load_parameters_from_file(button: Any, file_object: widgets.FileUpload):
+    #TODO: Load parameters from uploaded file
+    print(f'file_object: {file_object.value}')
+    f_object = file_object.value[0]
+    data = np.load(io.BytesIO(f_object.content), allow_pickle=True)
+    dict_parameters = data.item()
+    print(dict_parameters)
+        
 def process_uploaded_file(uploaded_file):
     content = io.StringIO(uploaded_file.decode('utf-8'))
     df = pd.read_csv(content, sep="|", index_col=0)
@@ -804,7 +813,6 @@ def build_full_ui():
                                                                                  titles=[k.replace("_", " ") for k in bmi_transition_probabilities.keys()]),
                                                 "titles": "BMI transition probability"
                                                 }
-    print("executing meal time")
     dict_widgets['meal_time'] = {"widget_list":
                                  widgets.Accordion(children=[form_probability_dict(proba_dict=meals_time_distribution[k],
                                                                                    widget_class=widgets.IntSlider,
@@ -834,10 +842,32 @@ def build_full_ui():
     }
     dict_widgets['delta_distribution'] = {"widget_list": distribution_selector.get_output(),
                                           "titles": "Appreciation feedback (delta)"}
+    button_layout = widgets.Layout(width='auto', height='auto')
     recipes_file_upload = widgets.FileUpload(
         accept='.csv',
         multiple=False,
         description='Upload recipes:')
+    file_parameters_upload = widgets.FileUpload(
+        accept='.npy',
+        multiple=False,
+        description='Upload parameters file:',
+        layout=button_layout
+    )
+    parameters_upload_button = widgets.Button(
+                     description = "Set parameters",
+                     style={'description_width': 'initial'},
+                     layout=button_layout
+                 )
+    dict_widgets[''] = {
+        "widget_list": widgets.VBox(
+            [widgets.Label('Upload a parameters file (.npy)'),
+             widgets.Box([
+                file_parameters_upload,
+                parameters_upload_button
+             ])
+             ]),
+        "titles": "Upload parameter file (Optional)"
+    }
     sep_char = '|'
     # dict_widgets['upload_recipes'] = {"widget_list": widgets.VBox(
     #     [
@@ -922,7 +952,9 @@ def build_full_ui():
                                    delta_dist_chose=chose_dist,
                                    dictionaries=general_dict,
                                    out=out)
-
+    partial_function_load_parameters = partial(load_parameters_from_file, 
+                                               file_object=file_parameters_upload)
+    parameters_upload_button.on_click(partial_function_load_parameters)
     execution_button.on_click(button_control.button_callback)
     display(top_box)
     main_widget.display()
