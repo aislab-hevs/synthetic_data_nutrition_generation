@@ -1,6 +1,7 @@
 from IPython.display import display, clear_output
 from IPython.display import HTML
 import base64
+import codecs
 import ipywidgets as widgets
 from collections import OrderedDict
 from typing import Any
@@ -16,10 +17,10 @@ from functools import partial
 import io
 
 from synthetic_data_generation.generators import (person_entity,
-                                                  HTML_Table,
                                                   BMI_constants,
                                                   save_outputs,
                                                   run_full_simulation)
+from synthetic_data_generation.html_utilities import HTML_Table
 
 import synthetic_data_generation.default_inputs as defaultValues
 # import warnings
@@ -559,9 +560,10 @@ class ExecuteButton:
                 print("simulation starting")
                 self.progress_bar.display()
             # load recipes data
-            #TODO: make this parametrize
+            #TODO: make the recipes file reading parametrize
             current_dir = os.getcwd()
-            default_path_recipes = 'recipes/recipes_sampling_1000.csv'
+            # default_path_recipes = 'recipes/recipes_sampling_1000.csv'
+            default_path_recipes = 'recipes/recipes_dataset_final.csv'
             # default_path_recipes = "recipes/extended_processed_recipes_dataset_id.csv"
             df_recipes = pd.read_csv(os.path.join(current_dir, default_path_recipes),
                                      sep="|", index_col=0)
@@ -579,6 +581,7 @@ class ExecuteButton:
             base_output_path = os.path.join(os.getcwd(), "outputs")
             folder_output_name = dt.datetime.now().strftime('%d-%m-%Y_%H-%M-%S') 
             files_dict = {
+                "simulation_parameters.json": sim_parameters,
                 "simulation_parameters.npy": sim_parameters,
                 "users_dataset.csv": df_user_join,
                 "tracking.csv": new_tracking_df,
@@ -654,6 +657,14 @@ class ExecuteButton:
 
     def button_callback(self, b):
         self.execute_simulation()
+        
+def load_parameters_from_file(button: Any, file_object: widgets.FileUpload):
+    #TODO: Load parameters from uploaded file
+    print(f'file_object: {file_object.value}')
+    f_object = file_object.value[0]
+    data = np.load(io.BytesIO(f_object.content), allow_pickle=True)
+    dict_parameters = data.item()
+    print(dict_parameters)
         
 def process_uploaded_file(uploaded_file):
     content = io.StringIO(uploaded_file.decode('utf-8'))
@@ -751,7 +762,7 @@ def build_full_ui():
                            widgets.VBox([
                                bmi_preset_combo,
                                form_probability_dict(
-                                   BMI_probabilities, widgets.FloatSlider, min=0, max=1.0, step=0.1)
+                                   BMI_probabilities, widgets.FloatSlider, round_digits=2, min=0, max=1.0, step=0.05)
                            ]),
                            "titles": "BMI"}
     dict_widgets['allergies'] = {"widget_list": widgets.Box(
@@ -769,30 +780,39 @@ def build_full_ui():
                                          widgets.VBox([
                                              cultural_preset_combo,
                                              form_probability_dict(
-                                                 food_restriction_probability, widgets.FloatSlider, min=0, max=1.0, step=0.1)
+                                                 food_restriction_probability, widgets.FloatSlider, 
+                                                 round_digits=2, 
+                                                 min=0, 
+                                                 max=1.0, 
+                                                 step=0.05)
                                          ]),
                                          "titles": "Cultural restrictions"}
     dict_widgets['meal_probabilities'] = {"widget_list":
                                           form_probability_dict(
-                                              meals_proba, widgets.FloatSlider, exclude_validator=True, min=0, max=1.0, step=0.1),
+                                              meals_proba, widgets.FloatSlider, exclude_validator=True, 
+                                              round_digits=2,
+                                              min=0, 
+                                              max=1.0, 
+                                              step=0.05),
                                           "titles": "Meal probabilities"}
     dict_widgets['flexible_probabilities'] = {"widget_list":
                                               widgets.Accordion(children=[form_probability_dict(flexi_probabilities[k],
                                                                                                 widgets.FloatSlider,
+                                                                                                round_digits=2,
                                                                                                 min=0,
                                                                                                 max=1.0,
-                                                                                                step=0.1) for k in flexi_probabilities.keys()],
+                                                                                                step=0.05) for k in flexi_probabilities.keys()],
                                                                 titles=[k.replace("_", " ") for k in flexi_probabilities.keys()]),
                                               "titles": "Flexible probability"}
     dict_widgets['transition_probabilities'] = {"widget_list": widgets.Accordion(children=[form_probability_dict(bmi_transition_probabilities[k],
                                                                                                                  widgets.FloatSlider,
+                                                                                                                 round_digits=2,
                                                                                                                  min=0,
                                                                                                                  max=1.0,
-                                                                                                                 step=0.1) for k in bmi_transition_probabilities.keys()],
+                                                                                                                 step=0.05) for k in bmi_transition_probabilities.keys()],
                                                                                  titles=[k.replace("_", " ") for k in bmi_transition_probabilities.keys()]),
                                                 "titles": "BMI transition probability"
                                                 }
-    print("executing meal time")
     dict_widgets['meal_time'] = {"widget_list":
                                  widgets.Accordion(children=[form_probability_dict(proba_dict=meals_time_distribution[k],
                                                                                    widget_class=widgets.IntSlider,
@@ -805,25 +825,49 @@ def build_full_ui():
     dict_widgets['places_meal'] = {
         "widget_list": form_probability_dict(places_dict,
                                              widgets.FloatSlider,
+                                             round_digits=2,
                                              min=0.0,
                                              max=1.0,
-                                             step=0.1),
+                                             step=0.05),
         "titles": "Place of meal consumption probability"
     }
     dict_widgets['social_situation_meal'] = {
         "widget_list": form_probability_dict(social_situation_dict,
                                              widgets.FloatSlider,
+                                             round_digits=2,
                                              min=0.0,
                                              max=1.0,
-                                             step=0.1),
+                                             step=0.05),
         "titles": "Social situation of meal consumption probability"
     }
     dict_widgets['delta_distribution'] = {"widget_list": distribution_selector.get_output(),
                                           "titles": "Appreciation feedback (delta)"}
+    button_layout = widgets.Layout(width='auto', height='auto')
     recipes_file_upload = widgets.FileUpload(
         accept='.csv',
         multiple=False,
         description='Upload recipes:')
+    file_parameters_upload = widgets.FileUpload(
+        accept='.npy',
+        multiple=False,
+        description='Upload parameters file:',
+        layout=button_layout
+    )
+    parameters_upload_button = widgets.Button(
+                     description = "Set parameters",
+                     style={'description_width': 'initial'},
+                     layout=button_layout
+                 )
+    dict_widgets[''] = {
+        "widget_list": widgets.VBox(
+            [widgets.Label('Upload a parameters file (.npy)'),
+             widgets.Box([
+                file_parameters_upload,
+                parameters_upload_button
+             ])
+             ]),
+        "titles": "Upload parameter file (Optional)"
+    }
     sep_char = '|'
     # dict_widgets['upload_recipes'] = {"widget_list": widgets.VBox(
     #     [
@@ -908,7 +952,9 @@ def build_full_ui():
                                    delta_dist_chose=chose_dist,
                                    dictionaries=general_dict,
                                    out=out)
-
+    partial_function_load_parameters = partial(load_parameters_from_file, 
+                                               file_object=file_parameters_upload)
+    parameters_upload_button.on_click(partial_function_load_parameters)
     execution_button.on_click(button_control.button_callback)
     display(top_box)
     main_widget.display()

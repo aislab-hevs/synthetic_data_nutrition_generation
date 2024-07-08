@@ -492,14 +492,14 @@ social_situation_proba_dict = {
 
 delta_distribution_dict = {
     'Normal': {
-        'mean': 0.7,
-        'std': 0.1
+        'mean': 0.5,
+        'std': 0.4
     },
     'Bimodal': {
-        'mean_1': 0.3,
+        'mean_1': 0.4,
         'std_1': 0.1,
         'mean_2': 0.8,
-        'std_2': 0.2
+        'std_2': 0.4
     }
 }
 

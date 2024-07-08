@@ -28,95 +28,8 @@ from .default_inputs import (person_entity,
                              meals_queries_dict,
                              meals_proba_dict)
 
-
-# Classes
-class HTML_Table:
-    """This classes produces and static html page that visualizes the summary table after data generation.
-    """
-
-    def __init__(self,
-                 cols: int = 4,
-                 rows: List[str] = None) -> None:
-        """Constructor method to create HTML_table object able to render an static HTML page with the summary table.
-
-        :param cols: maximum number of columns in the table, defaults to 4
-        :type cols: int, optional
-        :param rows: List of rows to incorporate in the table, each row is a string containing HTML tags <tr> <th>, defaults to None
-        :type rows: List[str], optional
-        """
-        self.cols = cols
-        if rows is not None:
-            self.rows = rows
-        else:
-            self.rows = []
-
-    def add_rows(self, new_rows: List[str]) -> None:
-        """Add a list of rows to the HTML table.
-
-        :param new_rows:  List of rows to be added to the HTML table
-        :type new_rows: List[str]
-        """
-        self.rows.extend(new_rows)
-
-    def add_row(self, row: str) -> None:
-        """Add one row to the HTML table.
-
-        :param row: row to be added to the table.
-        :type row: str
-        """
-        self.rows.append(row)
-
-    def get_row(self, row_index: int):
-        if row_index >= 0 and row_index < len(self.rows):
-            return self.rows[row_index]
-
-    def get_row_count(self):
-        return len(self.rows)
-
-    def get_rows(self):
-        return self.rows
-
-    def set_value(self, row_number: int, dict_parameters: Dict[str, Any]):
-        # check index
-        if row_number >= 0 and row_number < len(self.rows):
-            self.rows[row_number] = self.rows[row_number].format(
-                **dict_parameters)
-
-    def _repr_html_(self) -> str:
-        return """
-    <!DOCTYPE HTML PUBLIC
-	 	"-//W3 Organization//DTD W3 HTML 2.0//EN">
-    <html>
-    <head>
-    <title>
-    Summary Table
-    </title>
-    </head>
-    <body>
-    <p>
-    <ul>
-    <li>
-    Percentage in <font color="red">red color</font> represent the total percentage respect to all users.
-    </li>
-    <li>
-    Percentage in <font color="green">green color</font> represent the percentage respect to health conditions.
-    </li>
-    </ul>
-    </p>
-    <table border=\"1\">
-        {row}
-    </table>
-    </body>
-    </html>""".format(row="\n".join(self.rows))
-
-    def render(self) -> str:
-        """Returns the HTML str that represents the summary table.
-
-        :return: HTML string representing the HTML summary table.
-        :rtype: str
-        """
-        return self._repr_html_()
-
+from .html_utilities import HTML_Table
+from .json_utilities import JsonSerializationHelper
 
 class Gender(str, Enum):
     """Enumeration to maintain clinical genders M for male and F for female.
@@ -801,8 +714,8 @@ def generate_delta_values(chose_dist: str, parameters: Dict[str, Any], size=1):
     if chose_dist == 'Normal':
         result = np.random.normal(
             loc=parameters['mean'], scale=parameters['std'], size=size)
-        result[result < 0.2] = 0.2
-        result[result > 1] = 1
+        result[result < 0.0] = 0.0
+        result[result > 1] = 1.0
         return result
     else:
         # choose distribution list
@@ -815,8 +728,8 @@ def generate_delta_values(chose_dist: str, parameters: Dict[str, Any], size=1):
             output_list.append(np.random.normal(
                 loc=parameters[f"mean_{i}"], scale=parameters[f"std_{i}"]))
         result = np.array(output_list)
-        result[result < 0.2] = 0.2
-        result[result > 1] = 1
+        result[result < 0.0] = 0.0
+        result[result > 1] = 1.0
         return result
 
 
@@ -980,23 +893,45 @@ def choose_meal(all_food_ids_set: Set,
 
 def generate_food_day(selected_food_df: pd.DataFrame,
                       calories: float,
-                      cultural_factor: str):
-    # filter by cultural factor
-    cultural_mask = selected_food_df["cultural_restriction"] == cultural_factor
-    selected_food_df.loc[cultural_mask, "calorie_distance"] =\
-        selected_food_df.loc[cultural_mask, "calories"].apply(
-            lambda x: np.abs(calories - x)
-    )
-    # sort by nearest
-    sorted_candidates = selected_food_df.sort_values(
-        by="calorie_distance",
-        ascending=True
-    )
-    # choose top
-    top_candidates = sorted_candidates.iloc[:20, :]
-    # print(f"Top candidates len: {len(top_candidates)}")
+                      appreciation_feedback: float,
+                      cultural_factor: str, 
+                      allergies_food_ids: Dict[str, List[str]] = None,
+                      allergy_factors: List[str] = [],
+                      threshold: float = 0.5):
+    # positive feedback
+    if appreciation_feedback >= threshold:   
+        # Filter by allergy factor
+        if allergies_food_ids is not None:
+            candidate_set = choose_meal(all_food_ids_set=set(selected_food_df["recipeId"].tolist()),
+                                allergies=allergy_factors,
+                                allergy_dataset=allergies_food_ids
+                                )
+            candidates_ids = candidate_set
+            selected_food_df_safe = selected_food_df.query("recipeId in @candidates_ids").copy()
+        else:
+            selected_food_df_safe = selected_food_df.copy()
+        if len(selected_food_df_safe) == 0:
+            selected_food_df_safe = selected_food_df
+        # filter by cultural factor
+        cultural_mask = selected_food_df_safe["cultural_restriction"] == cultural_factor
+        selected_food_df_safe.loc[cultural_mask, "calorie_distance"] =\
+            selected_food_df_safe.loc[cultural_mask, "calories"].apply(
+                lambda x: np.abs(calories - x)
+        )
+        # sort by nearest
+        sorted_candidates = selected_food_df_safe.sort_values(
+            by="calorie_distance",
+            ascending=True
+        )
+        # choose top
+        top_candidates = sorted_candidates.iloc[:20, :]
+        # print(f"Top candidates len: {len(top_candidates)}")
 
-    choose_recipe = top_candidates["recipeId"].sample(n=1).tolist()[0]
+        choose_recipe = top_candidates["recipeId"].sample(n=1).tolist()[0]
+    else: 
+        # Negative feedback
+        top_candidates = selected_food_df.sample(frac=1.)
+        choose_recipe = top_candidates["recipeId"].sample(n=1).tolist()[0]
     return choose_recipe
 
 
@@ -1047,16 +982,10 @@ def generate_user_simulation(
     # iterate over the meals plan and cross meal type, allergies, cultural and filter by calories
     allergy_list = []
     user_db_series = user_db.squeeze()
-    # print(f"user db: {user_db_series}, type: {type(user_db_series)}")
-    # print(f"allergy: {user_db_series.get(key='allergy')}")
     if user_db_series.get(key='allergy') == "Multiple":
         allergy_list = user_db_series.get(key="Multi-allergy").split(" ")
     else:
         allergy_list = user_db_series.get(key='allergy')
-    candidate_set = choose_meal(all_food_ids_set=set(food_db["recipeId"].tolist()),
-                                allergies=allergy_list,
-                                allergy_dataset=allergies_food_ids
-                                )
     daily_food_cultural = None
     if user_db.cultural_factor.tolist()[0] == "flexi_observant":
         probas = user_db.probabilities.tolist()[0]
@@ -1075,10 +1004,12 @@ def generate_user_simulation(
     meals_dfs = []
     for meal_tp in meals_calorie_dict.keys():
         temp_meal_df = pd.DataFrame(columns=columns_tracking)
-        # choose meal type
-        meal_type_candidates = set(meal_type_food_ids.get(meal_tp, []))
-        # join candidates
-        candidates_ids = candidate_set.intersection(meal_type_candidates)
+        # Generate appreciation feedback
+        appreciation_feedback = generate_delta_values(chose_dist=chose_dist,
+                                                      parameters=delta_dist_params,
+                                                      size=days_to_simulated)
+        #print(f"generated feedback shape: {appreciation_feedback.shape}")
+        temp_meal_df["appreciation_feedback"] = appreciation_feedback
         # raise Exception(
         # "No candidates found to this user, meal type and restriction")
         # calculate calories distance
@@ -1087,20 +1018,24 @@ def generate_user_simulation(
             daily_calories_per_day_list *\
             meals_calorie_dict.get(meal_tp, 0)
         # print(f"Len available calories per dar: {len(calories_available_per_day)}")
-        selected_food_df = food_db.query("recipeId in @candidates_ids").copy()
         # print(f"selected food candidates: {selected_food_df.columns}")
         calories_df = pd.DataFrame(columns=["days", "calories"])
         calories_df["days"] = np.arange(0, days_to_simulated)
         calories_df["calories"] = calories_available_per_day
         calories_df["cultural_factor"] = daily_food_cultural
+        calories_df['appreciation_feedback'] = appreciation_feedback
         partial_daily_calorie_recipe = partial(generate_food_day,
-                                               selected_food_df=selected_food_df)
+                                               selected_food_df=food_db,
+                                               allergy_factors=allergy_list,
+                                               allergies_food_ids=allergies_food_ids
+                                               )
         # print(f"calorie df: {calories_df.columns}")
         # print(f"Calories df size: {calories_df.shape}")
         calories_df["recipeId"] = calories_df.apply(lambda row:
                                                     partial_daily_calorie_recipe(
                                                         calories=row["calories"],
-                                                        cultural_factor=row["cultural_factor"]),
+                                                        cultural_factor=row["cultural_factor"],
+                                                        appreciation_feedback=row['appreciation_feedback']),
                                                     axis=1)
         # temp_df = temp_df.append(food_dfs, ignore_index=True)
         # fill  the data frame
@@ -1123,59 +1058,10 @@ def generate_user_simulation(
             p=list(social_situation_probabilities.values()),
             size=len(temp_meal_df)
         )
-
-        temp_meal_df["appreciation_feedback"] = generate_delta_values(chose_dist=chose_dist,
-                                                                      parameters=delta_dist_params,
-                                                                      size=len(temp_meal_df))
-
         meals_dfs.append(temp_meal_df)
 
     temp_df = pd.concat(meals_dfs, ignore_index=True).reset_index(drop=True)
     return temp_df
-    temp_df = pd.concat([temp_df, food_dfs],
-                        axis=0,
-                        ignore_index=True).reset_index(drop=True)
-    print(f"joined Dataframe: {temp_df.shape}")
-
-    # # replace for by a vectorized operation
-    # for day, calories in enumerate(calories_available_per_day):
-    #     selected_food_df.loc[:, "calorie_distance"] =\
-    #         selected_food_df.loc[:, "calories"].apply(
-    #             lambda x: np.abs(calories - x)
-    #     )
-    #     # sort by nearest
-    #     sorted_candidates = selected_food_df.sort_values(
-    #         by="calorie_distance",
-    #         ascending=True
-    #     )
-    #     # choose top
-    #     top_candidates = sorted_candidates.iloc[:20, :]
-    #     # print(f"Top candidates len: {len(top_candidates)}")
-    #     row = len(temp_df)
-    #     temp_df.loc[row, "day_number"] = day
-    #     temp_df.loc[row, "meal_type"] = meal_tp
-    #     temp_df.loc[row, "foodId"] = top_candidates["recipeId"].sample(n=1).tolist()[
-    #         0]
-    #     temp_df.loc[row, "time_of_meal_consumption"] = np.random.normal(loc=meals_time_dict[meal_tp]['mean'],
-    #                                                                     scale=meals_time_dict[meal_tp]['std'],
-    #                                                                     size=1)
-
-    temp_df.loc[:, "userId"] = user_id
-    temp_df.loc[:, "place_of_meal_consumption"] = np.random.choice(
-        a=list(place_probabilities.keys()),
-        p=list(place_probabilities.values()),
-        size=len(temp_df)
-    )
-    temp_df.loc[:, "social_situation_of_meal_consumption"] = np.random.choice(
-        a=list(social_situation_probabilities.keys()),
-        p=list(social_situation_probabilities.values()),
-        size=len(temp_df)
-    )
-    temp_df.loc[:, "appreciation_feedback"] = generate_delta_values(chose_dist=chose_dist,
-                                                                    parameters=delta_dist_params,
-                                                                    size=len(temp_df))
-    return temp_df
-    # TODO: consider the flexi case day by day
 
 
 def generate_recommendations(df_user: pd.DataFrame,
@@ -1217,7 +1103,11 @@ def generate_recommendations(df_user: pd.DataFrame,
     update_amount = 90.0/len(df_user)
     # Prepare food database
     df_recipes_db = df_recipes_db.copy()
-    df_recipes_db["allergies"] = df_recipes_db["allergies"].fillna("")
+    # allergies key 
+    if 'allergens' in df_recipes_db.columns:
+        df_recipes_db['allergies'] = df_recipes_db['allergens']
+    current_key = 'allergies'
+    df_recipes_db[current_key] = df_recipes_db[current_key].fillna("")
     # generate filtered datasets
     # user dataset updated with next state
     bmi_conditions = [BMI_constants.underweight,
@@ -1683,6 +1573,11 @@ def save_outputs(base_path: str, output_folder: str, files: Dict[str, Any]):
             # print(f"key: {k}, extension: {k.split('.')[-1]}")
             if k.split(".")[-1] == "csv":
                 files[k].to_csv(os.path.join(target_path, k))
+            elif k.split(".")[-1] == "json":
+                # save parameters in json format
+                raw_parameters = files[k]
+                with open(os.path.join(target_path, k), 'w') as fs:
+                    json.dump(raw_parameters, fs, cls=JsonSerializationHelper)
             elif k.split(".")[-1] == "npy":
                 # save parameters 
                 save_path = os.path.join(target_path, k)

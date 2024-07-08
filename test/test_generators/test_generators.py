@@ -466,7 +466,8 @@ def test_generate_food_day(get_food_db):
     result = generate_food_day(
         selected_food_df=selected_food_df,
         calories=600,
-        cultural_factor=list(food_restriction_probability_dict.keys())[0]
+        cultural_factor=list(food_restriction_probability_dict.keys())[0],
+        appreciation_feedback=0.6
     )
     # print(f"Dataframe size: {result.shape}")
     print(result)
